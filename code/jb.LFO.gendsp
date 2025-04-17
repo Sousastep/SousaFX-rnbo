@@ -10,9 +10,20 @@
 		}
 ,
 		"classnamespace" : "dsp.gen",
-		"rect" : [ 455.0, 241.0, 1240.0, 825.0 ],
+		"rect" : [ 110.0, 362.0, 1240.0, 825.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 23.0, 1234.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
@@ -32,7 +43,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 139.0, 1173.0, 235.0, 33.0 ],
-					"presentation_linecount" : 3,
 					"text" : "whenever main_subdiv or invert changes, temporarily increase slide amount"
 				}
 
@@ -317,16 +327,13 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.125, 0.125, 0.125, 1.0 ],
-					"color" : [ 0.458595350062755, 0.458595237564901, 0.458595266962388, 1.0 ],
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.0, 275.0, 55.0, 22.0 ],
-					"text" : "wrap 0 1",
-					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
+					"text" : "wrap 0 1"
 				}
 
 			}
@@ -368,8 +375,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.125, 0.125, 0.125, 1.0 ],
-					"color" : [ 0.458595350062755, 0.458595237564901, 0.458595266962388, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-56",
@@ -378,8 +383,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.0, 133.0, 52.0, 22.0 ],
-					"text" : "+",
-					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
+					"text" : "+"
 				}
 
 			}
@@ -619,6 +623,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
 					"source" : [ "obj-93", 0 ]
 				}
@@ -639,7 +650,7 @@
 
 			}
  ],
-		"originid" : "pat-9205"
+		"originid" : "pat-24"
 	}
 
 }
