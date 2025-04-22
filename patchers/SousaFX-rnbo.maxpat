@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 360.0, 87.0, 2101.0, 1319.0 ],
+		"rect" : [ 34.0, 87.0, 2492.0, 1319.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -29,11 +29,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-98",
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1229.0, 760.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1174.0, 754.0, 50.0, 62.0 ],
+					"text" : "compens 0.666667"
 				}
 
 			}
@@ -44,7 +46,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1067.0, 808.0, 50.0, 22.0 ]
+					"patching_rect" : [ 1012.0, 802.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -55,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1134.0, 808.0, 88.0, 22.0 ],
+					"patching_rect" : [ 1079.0, 802.0, 88.0, 22.0 ],
 					"text" : "0."
 				}
 
@@ -80,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 978.0, 808.0, 69.0, 22.0 ],
+					"patching_rect" : [ 923.0, 802.0, 69.0, 22.0 ],
 					"text" : "-0.000006"
 				}
 
@@ -92,20 +94,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 982.0, 758.0, 181.0, 22.0 ],
+					"patching_rect" : [ 927.0, 752.0, 181.0, 22.0 ],
 					"text" : "route atten atten_limi atten_gate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-104",
-					"maxclass" : "live.scope~",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 530.666682481765747, 918.666694045066833, 500.000014901161194, 356.00001060962677 ],
-					"range" : [ 0.0, 1.0 ]
 				}
 
 			}
@@ -674,7 +664,7 @@
 ,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"outletInfo" : 					{
 						"IOInfo" : [ 							{
 								"type" : "signal",
@@ -682,122 +672,20 @@
 								"tag" : "out1",
 								"comment" : ""
 							}
-, 							{
-								"type" : "signal",
-								"index" : 2,
-								"tag" : "out2",
-								"comment" : ""
-							}
  ]
 					}
 ,
-					"outlettype" : [ "signal", "signal", "list" ],
+					"outlettype" : [ "signal", "list" ],
 					"patching_rect" : [ 616.0, 723.0, 211.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"BTN_SOUTH" : 						{
-							"label" : "BTN_SOUTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-110/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_HAT0X" : 						{
-							"label" : "ABS_HAT0X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-34/midfreq" : 						{
-							"label" : "midfreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"rnbo~/color" : 						{
-							"label" : "color",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-34/bass" : 						{
-							"label" : "bass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TL" : 						{
-							"label" : "BTN_TL",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-34/drive" : 						{
-							"label" : "drive",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-110/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"ABS_Z" : 						{
 							"label" : "ABS_Z",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-34/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"rnbo~/regen" : 						{
-							"label" : "regen",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-110/attack" : 						{
-							"label" : "attack",
+						"metronome_volume" : 						{
+							"label" : "metronome_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -808,56 +696,8 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-34/highcut" : 						{
-							"label" : "highcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-34/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_X" : 						{
-							"label" : "ABS_X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"rnbo~/volume" : 						{
 							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_HAT0Y" : 						{
-							"label" : "ABS_HAT0Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_SELECT" : 						{
-							"label" : "BTN_SELECT",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-34/treble" : 						{
-							"label" : "treble",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_GAS" : 						{
-							"label" : "ABS_GAS",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -868,26 +708,8 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-110/knee" : 						{
-							"label" : "knee",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"rnbo~/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_Y" : 						{
-							"label" : "ABS_Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_NORTH" : 						{
-							"label" : "BTN_NORTH",
+						"p_obj-239/comp" : 						{
+							"label" : "comp",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -898,26 +720,8 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-34/lowcut" : 						{
-							"label" : "lowcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"noise gate thresh" : 						{
-							"label" : "noise gate thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_START" : 						{
-							"label" : "BTN_START",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TR" : 						{
-							"label" : "BTN_TR",
+						"rnbo~/color" : 						{
+							"label" : "color",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -928,26 +732,8 @@
 							"parsestring" : ""
 						}
 ,
-						"rnbo~/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_EAST" : 						{
-							"label" : "BTN_EAST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_BRAKE" : 						{
-							"label" : "ABS_BRAKE",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"rnbo~/send" : 						{
-							"label" : "send",
+						"p_obj-34/drive" : 						{
+							"label" : "drive",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -958,14 +744,272 @@
 							"parsestring" : ""
 						}
 ,
+						"rnbo~/regen" : 						{
+							"label" : "regen",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-34/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-34/treble" : 						{
+							"label" : "treble",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_Y" : 						{
+							"label" : "ABS_Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_HAT0X" : 						{
+							"label" : "ABS_HAT0X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_START" : 						{
+							"label" : "BTN_START",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-239/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_BRAKE" : 						{
+							"label" : "ABS_BRAKE",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-34/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-239/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_HAT0Y" : 						{
+							"label" : "ABS_HAT0Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-110/knee" : 						{
+							"label" : "knee",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-239/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-34/lowcut" : 						{
+							"label" : "lowcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-34/bass" : 						{
+							"label" : "bass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"rnbo~/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-110/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"pre-limi_gain" : 						{
 							"label" : "pre-limi_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"metronome_volume" : 						{
-							"label" : "metronome_volume",
+						"p_obj-110/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_X" : 						{
+							"label" : "ABS_X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_GAS" : 						{
+							"label" : "ABS_GAS",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_NORTH" : 						{
+							"label" : "BTN_NORTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-34/midfreq" : 						{
+							"label" : "midfreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_TR" : 						{
+							"label" : "BTN_TR",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_TL" : 						{
+							"label" : "BTN_TL",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"rnbo~/send" : 						{
+							"label" : "send",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-239/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-34/highcut" : 						{
+							"label" : "highcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_SELECT" : 						{
+							"label" : "BTN_SELECT",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_SOUTH" : 						{
+							"label" : "BTN_SOUTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"rnbo~/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-110/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"noise gate thresh" : 						{
+							"label" : "noise gate thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-239/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_EAST" : 						{
+							"label" : "BTN_EAST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/stutter gated or thru" : 						{
+							"label" : "stutter gated or thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/stutter window size ms" : 						{
+							"label" : "stutter window size ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/bypass stutter bandpass" : 						{
+							"label" : "bypass stutter bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/enable scatter" : 						{
+							"label" : "enable scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/stutter output volume" : 						{
+							"label" : "stutter output volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/stutter offset" : 						{
+							"label" : "stutter offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/staircase amount" : 						{
+							"label" : "staircase amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/staircase enable" : 						{
+							"label" : "staircase enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/stutter accel vol dip amt" : 						{
+							"label" : "stutter accel vol dip amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/autopan amount" : 						{
+							"label" : "autopan amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1021,6 +1065,10 @@
 						"snapshot" : 						{
 							"__sps" : 							{
 								"p_obj-155" : 								{
+
+								}
+,
+								"p_obj-98" : 								{
 
 								}
 ,
@@ -1088,7 +1136,46 @@
 
 								}
 ,
-								"p_obj-98" : 								{
+								"p_obj-48" : 								{
+									"stutter accel vol dip amt" : 									{
+										"value" : 0.5
+									}
+,
+									"autopan amount" : 									{
+										"value" : 0.5
+									}
+,
+									"staircase amount" : 									{
+										"value" : 0.0
+									}
+,
+									"stutter offset" : 									{
+										"value" : 0.0
+									}
+,
+									"stutter output volume" : 									{
+										"value" : -2.0
+									}
+,
+									"enable scatter" : 									{
+										"value" : 0.0
+									}
+,
+									"bypass stutter bandpass" : 									{
+										"value" : 0.0
+									}
+,
+									"staircase enable" : 									{
+										"value" : 0.0
+									}
+,
+									"stutter window size ms" : 									{
+										"value" : 16.0
+									}
+,
+									"stutter gated or thru" : 									{
+										"value" : 1.0
+									}
 
 								}
 ,
@@ -1271,6 +1358,10 @@
 
 											}
 ,
+											"p_obj-98" : 											{
+
+											}
+,
 											"rnbo~" : 											{
 												"send" : 												{
 													"value" : 0.0
@@ -1335,7 +1426,46 @@
 
 											}
 ,
-											"p_obj-98" : 											{
+											"p_obj-48" : 											{
+												"stutter accel vol dip amt" : 												{
+													"value" : 0.5
+												}
+,
+												"autopan amount" : 												{
+													"value" : 0.5
+												}
+,
+												"staircase amount" : 												{
+													"value" : 0.0
+												}
+,
+												"stutter offset" : 												{
+													"value" : 0.0
+												}
+,
+												"stutter output volume" : 												{
+													"value" : -2.0
+												}
+,
+												"enable scatter" : 												{
+													"value" : 0.0
+												}
+,
+												"bypass stutter bandpass" : 												{
+													"value" : 0.0
+												}
+,
+												"staircase enable" : 												{
+													"value" : 0.0
+												}
+,
+												"stutter window size ms" : 												{
+													"value" : 16.0
+												}
+,
+												"stutter gated or thru" : 												{
+													"value" : 1.0
+												}
 
 											}
 ,
@@ -2043,7 +2173,7 @@
 
 							}
  ],
-						"originid" : "pat-106"
+						"originid" : "pat-104"
 					}
 ,
 					"patching_rect" : [ 1640.0, 1365.0, 65.0, 22.0 ],
@@ -2818,15 +2948,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-104", 0 ],
-					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-2", 2 ]
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}

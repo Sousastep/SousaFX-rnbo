@@ -20,6 +20,35 @@
 		"title" : "gp.noisegate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 500.0, 700.0, 111.0, 23.0 ],
+					"rnbo_classname" : "s~",
+					"rnbo_serial" : 1,
+					"rnbo_uniqueid" : "s~_obj-4",
+					"text" : "s~ noisegate_active"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 500.0, 660.0, 39.0, 23.0 ],
+					"rnbo_classname" : "==~",
+					"rnbo_serial" : 1,
+					"rnbo_uniqueid" : "==~_obj-2",
+					"text" : "==~ 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -249,22 +278,22 @@
 					"patching_rect" : [ 320.0, 80.0, 77.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"unit" : "ms",
-						"tonormalized" : "",
-						"exponent" : 1.0,
-						"order" : "3",
-						"preset" : 1,
 						"minimum" : 1.0,
+						"order" : "3",
 						"maximum" : 500.0,
+						"enum" : "",
+						"preset" : 1,
+						"tonormalized" : "",
 						"value" : 1.0,
-						"sendinit" : 1,
-						"meta" : "",
-						"fromnormalized" : "",
-						"steps" : 0.0,
-						"displayname" : "Attack",
 						"ctlin" : 3.0,
+						"displayname" : "Attack",
 						"displayorder" : "-",
-						"enum" : ""
+						"steps" : 0.0,
+						"fromnormalized" : "",
+						"meta" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"unit" : "ms"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -714,7 +743,7 @@
 						"meta" : ""
 					}
 ,
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "outport_obj-78",
 					"text" : "outport atten_gate"
 				}
@@ -876,22 +905,22 @@
 					"patching_rect" : [ 410.0, 320.0, 70.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"unit" : "dB",
-						"tonormalized" : "",
-						"exponent" : 1.0,
-						"order" : "2",
-						"preset" : 1,
 						"minimum" : -24.0,
+						"order" : "2",
 						"maximum" : -1.0,
+						"enum" : "",
+						"preset" : 1,
+						"tonormalized" : "",
 						"value" : -12.0,
-						"sendinit" : 1,
-						"meta" : "",
-						"fromnormalized" : "",
-						"steps" : 0.0,
-						"displayname" : "Knee",
 						"ctlin" : 2.0,
+						"displayname" : "Knee",
 						"displayorder" : "-",
-						"enum" : ""
+						"steps" : 0.0,
+						"fromnormalized" : "",
+						"meta" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"unit" : "dB"
 					}
 ,
 					"rnbo_serial" : 2,
@@ -1297,22 +1326,22 @@
 					"patching_rect" : [ 280.0, 320.0, 78.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"unit" : "dB",
-						"tonormalized" : "",
-						"exponent" : 1.0,
-						"order" : "1",
-						"preset" : 1,
 						"minimum" : -60.0,
+						"order" : "1",
 						"maximum" : 0.0,
+						"enum" : "",
+						"preset" : 1,
+						"tonormalized" : "",
 						"value" : -30.0,
-						"sendinit" : 1,
-						"meta" : "",
-						"fromnormalized" : "",
-						"steps" : 0.0,
-						"displayname" : "Threshold",
 						"ctlin" : 1.0,
+						"displayname" : "Threshold",
 						"displayorder" : "-",
-						"enum" : ""
+						"steps" : 0.0,
+						"fromnormalized" : "",
+						"meta" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"unit" : "dB"
 					}
 ,
 					"rnbo_serial" : 3,
@@ -1806,7 +1835,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 50.0, 650.0, 29.5, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "*~_obj-47",
 					"text" : "*~"
 				}
@@ -2034,7 +2063,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 320.0, 490.0, 28.5, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "*~_obj-39",
 					"text" : "*~"
 				}
@@ -2050,22 +2079,22 @@
 					"patching_rect" : [ 450.0, 140.0, 75.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"unit" : "ms",
-						"tonormalized" : "",
-						"exponent" : 1.0,
-						"order" : "4",
-						"preset" : 1,
 						"minimum" : 10.0,
+						"order" : "4",
 						"maximum" : 1000.0,
+						"enum" : "",
+						"preset" : 1,
+						"tonormalized" : "",
 						"value" : 500.0,
-						"sendinit" : 1,
-						"meta" : "",
-						"fromnormalized" : "",
-						"steps" : 0.0,
-						"displayname" : "Decay",
 						"ctlin" : 4.0,
+						"displayname" : "Decay",
 						"displayorder" : "-",
-						"enum" : ""
+						"steps" : 0.0,
+						"fromnormalized" : "",
+						"meta" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"unit" : "ms"
 					}
 ,
 					"rnbo_serial" : 4,
@@ -2613,7 +2642,7 @@
 						"meta" : ""
 					}
 ,
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "out~_obj-3",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -2710,7 +2739,7 @@
 						"meta" : ""
 					}
 ,
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "in~_obj-1",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -2815,7 +2844,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 620.0, 120.0, 271.0, 395.0 ],
+					"patching_rect" : [ 620.0, 120.0, 274.0, 395.0 ],
 					"text" : "Dynamics processors can be constructed using signal processing algorithms that take an envelope follower output as their control signal. The circuit in this patcher starts on the same premise of a compressor: that of an envelope follower and a threshold.\n\nThe attack and decay controls set how fast the envelope follower allows the envelope to rise and fall based on the incoming signal.\n\nRather than reducing the gain of audio energy that exceeds the threshold, like in a compressor unit, this circuit attenuates signals that fall below it. This type of dynamics compression is called a gate or a \"noise gate\". \n\nUnlike a compressor, the gate has a knee setting instead of a compression ratio. This setting is a proportion of the threshold within which the audio is attenuated rather than cut altogether. We can expect the following results:\n\nSound above threshold are left alone (gain = 1).\nSound below threshold and above <threshold * knee> are scaled between 0 and 1.\nSound below knee are gated out (gain = 0)."
 				}
 
@@ -3329,6 +3358,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
@@ -3446,8 +3482,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -3455,7 +3499,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -3545,7 +3589,7 @@
 
 			}
  ],
-		"originid" : "pat-42"
+		"originid" : "pat-40"
 	}
 
 }
