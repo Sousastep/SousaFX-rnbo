@@ -19,7 +19,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 81.0, 426.0, 73.0, 22.0 ],
+					"patching_rect" : [ 136.0, 426.0, 73.0, 22.0 ],
 					"text" : "clip 20 9700"
 				}
 
@@ -31,7 +31,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 168.0, 426.0, 47.0, 22.0 ],
+					"patching_rect" : [ 169.0, 506.0, 47.0, 22.0 ],
 					"text" : "clip 0 1"
 				}
 
@@ -43,7 +43,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 168.0, 393.0, 28.0, 22.0 ],
+					"patching_rect" : [ 169.0, 466.0, 28.0, 22.0 ],
 					"text" : "in 3"
 				}
 
@@ -54,7 +54,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 36.0, 507.0, 35.0, 22.0 ],
+					"patching_rect" : [ 37.0, 586.0, 35.0, 22.0 ],
 					"text" : "out 1"
 				}
 
@@ -66,7 +66,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 393.0, 28.0, 22.0 ],
+					"patching_rect" : [ 37.0, 506.0, 28.0, 22.0 ],
 					"text" : "in 1"
 				}
 
@@ -78,7 +78,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 460.0, 151.0, 22.0 ],
+					"patching_rect" : [ 37.0, 546.0, 151.0, 22.0 ],
 					"text" : "smFilterPack_ladder_wrap"
 				}
 
@@ -90,7 +90,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 362.0, 32.0, 22.0 ],
+					"patching_rect" : [ 136.0, 386.0, 32.0, 22.0 ],
 					"text" : "+ 20"
 				}
 
@@ -102,14 +102,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 326.0, 43.0, 22.0 ],
+					"patching_rect" : [ 136.0, 346.0, 43.0, 22.0 ],
 					"text" : "* 9680"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"code" : "// from the ease package, pow from 2 to 1.93 to better match Moog MF-101S Filter\r\n\r\n// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after the exponential function y = 2^(10(x - 1))\r\n\nExponentialEaseIn(value)\n{\n\treturn (value == 0.0) ? value : pow(1.93, 10 * (value - 1));\n}\r\n\r\nout1 = ExponentialEaseIn(in1);\r\n\r\n",
+					"code" : "// from the ease package, pow changed from 2 to 1.93 to better match Moog MF-101S filter freq taper\r\n\r\n// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after the exponential function y = 2^(10(x - 1))\r\n\nExponentialEaseIn(value)\n{\n\treturn (value == 0.0) ? value : pow(1.93, 10 * (value - 1));\n}\r\n\r\nout1 = ExponentialEaseIn(in1);\r\n\r\n",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
 					"fontsize" : 12.0,
@@ -118,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 69.0, 632.0, 240.0 ]
+					"patching_rect" : [ 136.0, 67.0, 785.0, 261.0 ]
 				}
 
 			}
@@ -129,7 +129,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 30.0, 28.0, 22.0 ],
+					"patching_rect" : [ 136.0, 27.0, 28.0, 22.0 ],
 					"text" : "in 2"
 				}
 
@@ -199,7 +199,7 @@
 
 			}
  ],
-		"originid" : "pat-9114"
+		"originid" : "pat-18"
 	}
 
 }
