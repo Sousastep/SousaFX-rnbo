@@ -10,4 +10,8 @@
 
 SousaFX-rnbo ports [SousaFX](https://sousastep.github.io/SousaFX-docs/index.html) from Max to [RNBO](https://rnbo.cycling74.com/) so it can run on a microcontroller instead of a mac.
 
-<a href="#">![rainbow](./media/rainbow.png)</a>
+<a href="#control_knobs-hardware">![rainbow](./media/rainbow.png)</a>
+
+# :control_knobs: Hardware
+
+![rainbow](./media/layout.webp)
