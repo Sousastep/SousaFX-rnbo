@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1289.0, 295.0, 922.0, 928.0 ],
+		"rect" : [ 1199.0, 179.0, 953.0, 928.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -115,13 +115,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-98",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 758.0, 646.0, 50.0, 62.0 ],
-					"text" : "compens 28.914316"
+					"patching_rect" : [ 758.0, 646.0, 50.0, 35.0 ],
+					"text" : "vfx_env 0."
 				}
 
 			}
@@ -794,86 +794,26 @@
 					"outlettype" : [ "signal", "list" ],
 					"patching_rect" : [ 465.0, 541.0, 211.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"p_obj-263/pre-comp_gain" : 						{
-							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_WEST" : 						{
-							"label" : "BTN_WEST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/finalY" : 						{
-							"label" : "finalY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_NORTH" : 						{
-							"label" : "BTN_NORTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"p_obj-247/p_obj-244/window" : 						{
 							"label" : "window",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-238/p_obj-34/highcut" : 						{
-							"label" : "highcut",
+						"p_obj-48/midY" : 						{
+							"label" : "midY",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"ABS_RZ" : 						{
-							"label" : "ABS_RZ",
+						"p_obj-233/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
+						"p_obj-234/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -884,26 +824,20 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-233/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
+						"p_obj-210/rnbo~[1]/color" : 						{
+							"label" : "color",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-448/metronome_volume" : 						{
-							"label" : "metronome_volume",
+						"p_obj-48/firstY" : 						{
+							"label" : "firstY",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-110/attack" : 						{
-							"label" : "attack",
+						"p_obj-48/firstCurve" : 						{
+							"label" : "firstCurve",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -914,26 +848,20 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-48/firstX" : 						{
-							"label" : "firstX",
+						"p_obj-234/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-146/rnbo~[1]/color" : 						{
-							"label" : "color",
+						"p_obj-146/rnbo~[1]/send" : 						{
+							"label" : "send",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-260/p_obj-523/knee" : 						{
-							"label" : "knee",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -944,26 +872,14 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-210/rnbo~[1]/time" : 						{
-							"label" : "time",
+						"p_obj-247/p_obj-244/transp" : 						{
+							"label" : "transp",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"ABS_HAT0Y" : 						{
-							"label" : "ABS_HAT0Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/time" : 						{
-							"label" : "time",
+						"p_obj-233/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -974,26 +890,20 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-54/drum_volume" : 						{
-							"label" : "drum_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-247/p_obj-244/mix" : 						{
+						"p_obj-238/p_obj-34/mix" : 						{
 							"label" : "mix",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-461/rnbo~[1]/send" : 						{
-							"label" : "send",
+						"p_obj-48/finalY" : 						{
+							"label" : "finalY",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"ABS_HAT0X" : 						{
-							"label" : "ABS_HAT0X",
+						"p_obj-212/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1004,25 +914,25 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
+						"ABS_Z" : 						{
+							"label" : "ABS_Z",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-238/p_obj-34/volume" : 						{
-							"label" : "volume",
+						"p_obj-233/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
+						"p_obj-260/p_obj-110/knee" : 						{
+							"label" : "knee",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
+						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
 							"label" : "bypass_stutter_bandpass",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -1034,188 +944,14 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-260/noise gate thresh" : 						{
-							"label" : "noise gate thresh",
+						"p_obj-48/midX" : 						{
+							"label" : "midX",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TR" : 						{
-							"label" : "BTN_TR",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-523/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-133/p_obj-160/Env Sens" : 						{
-							"label" : "Env Sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/firstCurve" : 						{
-							"label" : "firstCurve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/regen" : 						{
-							"label" : "regen",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/finalX" : 						{
-							"label" : "finalX",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/drive" : 						{
-							"label" : "drive",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_GAS" : 						{
-							"label" : "ABS_GAS",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/mid" : 						{
-							"label" : "mid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_accel" : 						{
+						"p_obj-234/p_obj-48/stutter_accel" : 						{
 							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-110/knee" : 						{
-							"label" : "knee",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/midY" : 						{
-							"label" : "midY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-523/decay" : 						{
-							"label" : "decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1226,26 +962,20 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-48/secondCurve" : 						{
-							"label" : "secondCurve",
+						"p_obj-260/p_obj-110/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-210/rnbo~[1]/color" : 						{
-							"label" : "color",
+						"p_obj-260/p_obj-523/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-233/p_obj-48/staircase_amount" : 						{
+						"p_obj-212/p_obj-48/staircase_amount" : 						{
 							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/himid" : 						{
-							"label" : "himid",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1256,26 +986,20 @@
 							"parsestring" : ""
 						}
 ,
-						"BTN_SELECT" : 						{
-							"label" : "BTN_SELECT",
+						"p_obj-233/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
+						"p_obj-48/finalX" : 						{
+							"label" : "finalX",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-247/p_obj-244/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/lowcut" : 						{
-							"label" : "lowcut",
+						"p_obj-260/p_obj-523/knee" : 						{
+							"label" : "knee",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1286,128 +1010,20 @@
 							"parsestring" : ""
 						}
 ,
-						"pre-limi_gain" : 						{
-							"label" : "pre-limi_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/midfreq" : 						{
-							"label" : "midfreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-110/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TL" : 						{
-							"label" : "BTN_TL",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/firstY" : 						{
-							"label" : "firstY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-523/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/endY" : 						{
-							"label" : "endY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/send" : 						{
-							"label" : "send",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/thirdCurve" : 						{
-							"label" : "thirdCurve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"p_obj-210/rnbo~[1]/regen" : 						{
 							"label" : "regen",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"BTN_EAST" : 						{
-							"label" : "BTN_EAST",
+						"p_obj-461/rnbo~[1]/spread" : 						{
+							"label" : "spread",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-247/p_obj-244/transp" : 						{
-							"label" : "transp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/regen" : 						{
-							"label" : "regen",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_START" : 						{
-							"label" : "BTN_START",
+						"p_obj-263/p_obj-239/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1418,26 +1034,14 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
+						"p_obj-233/p_obj-48/stutter_window_size_ms" : 						{
 							"label" : "stutter_window_size_ms",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-238/p_obj-34/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_Y" : 						{
-							"label" : "ABS_Y",
+						"p_obj-461/rnbo~[1]/send" : 						{
+							"label" : "send",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1448,26 +1052,20 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-238/p_obj-34/bass" : 						{
-							"label" : "bass",
+						"p_obj-263/p_obj-239/himidfq" : 						{
+							"label" : "himidfq",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"ABS_Z" : 						{
-							"label" : "ABS_Z",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel" : 						{
+						"p_obj-233/p_obj-48/stutter_accel" : 						{
 							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1478,20 +1076,428 @@
 							"parsestring" : ""
 						}
 ,
-						"BTN_SOUTH" : 						{
-							"label" : "BTN_SOUTH",
+						"p_obj-238/p_obj-34/highcut" : 						{
+							"label" : "highcut",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-48/midX" : 						{
-							"label" : "midX",
+						"p_obj-146/rnbo~[1]/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_TR" : 						{
+							"label" : "BTN_TR",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/regen" : 						{
+							"label" : "regen",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/firstX" : 						{
+							"label" : "firstX",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-247/p_obj-244/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/regen" : 						{
+							"label" : "regen",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/pre-comp_gain" : 						{
+							"label" : "pre-comp_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-54/drum_volume" : 						{
+							"label" : "drum_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/mid" : 						{
+							"label" : "mid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_NORTH" : 						{
+							"label" : "BTN_NORTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/midfreq" : 						{
+							"label" : "midfreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/noise gate thresh" : 						{
+							"label" : "noise gate thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
 						"p_obj-146/rnbo~[1]/spread" : 						{
 							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/secondCurve" : 						{
+							"label" : "secondCurve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_TL" : 						{
+							"label" : "BTN_TL",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-133/p_obj-160/Env Sens" : 						{
+							"label" : "Env Sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-110/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_SELECT" : 						{
+							"label" : "BTN_SELECT",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/endY" : 						{
+							"label" : "endY",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_EAST" : 						{
+							"label" : "BTN_EAST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_WEST" : 						{
+							"label" : "BTN_WEST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_GAS" : 						{
+							"label" : "ABS_GAS",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_HAT0X" : 						{
+							"label" : "ABS_HAT0X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/bass" : 						{
+							"label" : "bass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-limi_gain" : 						{
+							"label" : "pre-limi_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_SOUTH" : 						{
+							"label" : "BTN_SOUTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_RZ" : 						{
+							"label" : "ABS_RZ",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-523/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-448/metronome_volume" : 						{
+							"label" : "metronome_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-523/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/color" : 						{
+							"label" : "color",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/lowcut" : 						{
+							"label" : "lowcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/thirdCurve" : 						{
+							"label" : "thirdCurve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_HAT0Y" : 						{
+							"label" : "ABS_HAT0Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_START" : 						{
+							"label" : "BTN_START",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/drive" : 						{
+							"label" : "drive",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-247/p_obj-244/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_Y" : 						{
+							"label" : "ABS_Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-58/framesPerSecond" : 						{
+							"label" : "framesPerSecond",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1921,62 +1927,6 @@
 
 								}
 ,
-								"p_obj-263" : 								{
-									"__sps" : 									{
-										"p_obj-239" : 										{
-											"__sps" : 											{
-												"Compensation~" : 												{
-
-												}
-,
-												"Compression~" : 												{
-
-												}
-,
-												"HighMid~" : 												{
-
-												}
-,
-												"Lookahead~" : 												{
-
-												}
-
-											}
-,
-											"attack" : 											{
-												"value" : 2.0
-											}
-,
-											"comp" : 											{
-												"value" : 60.0
-											}
-,
-											"sustain" : 											{
-												"value" : 360.0
-											}
-,
-											"himidfq" : 											{
-												"value" : 2526.0
-											}
-,
-											"himid" : 											{
-												"value" : 15.0
-											}
-,
-											"lookahead" : 											{
-												"value" : 2.0
-											}
-
-										}
-
-									}
-,
-									"pre-comp_gain" : 									{
-										"value" : 0.0
-									}
-
-								}
-,
 								"p_obj-133" : 								{
 									"__sps" : 									{
 										"p_obj-160" : 										{
@@ -2056,11 +2006,74 @@
 
 								}
 ,
-								"p_obj-175" : 								{
+								"p_obj-263" : 								{
+									"__sps" : 									{
+										"p_obj-239" : 										{
+											"__sps" : 											{
+												"Compensation~" : 												{
+
+												}
+,
+												"Compression~" : 												{
+
+												}
+,
+												"HighMid~" : 												{
+
+												}
+,
+												"Lookahead~" : 												{
+
+												}
+
+											}
+,
+											"attack" : 											{
+												"value" : 2.0
+											}
+,
+											"comp" : 											{
+												"value" : 60.0
+											}
+,
+											"sustain" : 											{
+												"value" : 360.0
+											}
+,
+											"himidfq" : 											{
+												"value" : 2526.0
+											}
+,
+											"himid" : 											{
+												"value" : 15.0
+											}
+,
+											"lookahead" : 											{
+												"value" : 2.0
+											}
+
+										}
+
+									}
+,
+									"pre-comp_gain" : 									{
+										"value" : 0.0
+									}
 
 								}
 ,
-								"p_obj-448" : 								{
+								"p_obj-80" : 								{
+
+								}
+,
+								"p_obj-283" : 								{
+
+								}
+,
+								"p_obj-58" : 								{
+									"framesPerSecond" : 									{
+										"value" : 120.0
+									}
 
 								}
 ,
@@ -2123,6 +2136,14 @@
 
 								}
 ,
+								"p_obj-448" : 								{
+
+								}
+,
+								"p_obj-175" : 								{
+
+								}
+,
 								"p_obj-189" : 								{
 
 								}
@@ -2135,7 +2156,7 @@
 											}
 ,
 											"autopan_amount" : 											{
-												"value" : 0.0
+												"value" : 0.5
 											}
 ,
 											"staircase_enable" : 											{
@@ -2143,7 +2164,7 @@
 											}
 ,
 											"bypass_stutter_bandpass" : 											{
-												"value" : 1.0
+												"value" : 0.0
 											}
 ,
 											"stutter_accel_vol_dip_amt" : 											{
@@ -2179,7 +2200,7 @@
 											}
 ,
 											"stutter_gated_or_thru" : 											{
-												"value" : 0.0
+												"value" : 1.0
 											}
 
 										}
@@ -2189,14 +2210,6 @@
 								}
 ,
 								"p_obj-124" : 								{
-
-								}
-,
-								"p_obj-80" : 								{
-
-								}
-,
-								"p_obj-283" : 								{
 
 								}
 ,
@@ -2687,62 +2700,6 @@
 
 											}
 ,
-											"p_obj-263" : 											{
-												"__sps" : 												{
-													"p_obj-239" : 													{
-														"__sps" : 														{
-															"Compensation~" : 															{
-
-															}
-,
-															"Compression~" : 															{
-
-															}
-,
-															"HighMid~" : 															{
-
-															}
-,
-															"Lookahead~" : 															{
-
-															}
-
-														}
-,
-														"attack" : 														{
-															"value" : 2.0
-														}
-,
-														"comp" : 														{
-															"value" : 60.0
-														}
-,
-														"sustain" : 														{
-															"value" : 360.0
-														}
-,
-														"himidfq" : 														{
-															"value" : 2526.0
-														}
-,
-														"himid" : 														{
-															"value" : 15.0
-														}
-,
-														"lookahead" : 														{
-															"value" : 2.0
-														}
-
-													}
-
-												}
-,
-												"pre-comp_gain" : 												{
-													"value" : 0.0
-												}
-
-											}
-,
 											"p_obj-133" : 											{
 												"__sps" : 												{
 													"p_obj-160" : 													{
@@ -2822,11 +2779,74 @@
 
 											}
 ,
-											"p_obj-175" : 											{
+											"p_obj-263" : 											{
+												"__sps" : 												{
+													"p_obj-239" : 													{
+														"__sps" : 														{
+															"Compensation~" : 															{
+
+															}
+,
+															"Compression~" : 															{
+
+															}
+,
+															"HighMid~" : 															{
+
+															}
+,
+															"Lookahead~" : 															{
+
+															}
+
+														}
+,
+														"attack" : 														{
+															"value" : 2.0
+														}
+,
+														"comp" : 														{
+															"value" : 60.0
+														}
+,
+														"sustain" : 														{
+															"value" : 360.0
+														}
+,
+														"himidfq" : 														{
+															"value" : 2526.0
+														}
+,
+														"himid" : 														{
+															"value" : 15.0
+														}
+,
+														"lookahead" : 														{
+															"value" : 2.0
+														}
+
+													}
+
+												}
+,
+												"pre-comp_gain" : 												{
+													"value" : 0.0
+												}
 
 											}
 ,
-											"p_obj-448" : 											{
+											"p_obj-80" : 											{
+
+											}
+,
+											"p_obj-283" : 											{
+
+											}
+,
+											"p_obj-58" : 											{
+												"framesPerSecond" : 												{
+													"value" : 120.0
+												}
 
 											}
 ,
@@ -2889,6 +2909,14 @@
 
 											}
 ,
+											"p_obj-448" : 											{
+
+											}
+,
+											"p_obj-175" : 											{
+
+											}
+,
 											"p_obj-189" : 											{
 
 											}
@@ -2901,7 +2929,7 @@
 														}
 ,
 														"autopan_amount" : 														{
-															"value" : 0.0
+															"value" : 0.5
 														}
 ,
 														"staircase_enable" : 														{
@@ -2909,7 +2937,7 @@
 														}
 ,
 														"bypass_stutter_bandpass" : 														{
-															"value" : 1.0
+															"value" : 0.0
 														}
 ,
 														"stutter_accel_vol_dip_amt" : 														{
@@ -2945,7 +2973,7 @@
 														}
 ,
 														"stutter_gated_or_thru" : 														{
-															"value" : 0.0
+															"value" : 1.0
 														}
 
 													}
@@ -2955,14 +2983,6 @@
 											}
 ,
 											"p_obj-124" : 											{
-
-											}
-,
-											"p_obj-80" : 											{
-
-											}
-,
-											"p_obj-283" : 											{
 
 											}
 ,
@@ -4934,114 +4954,37 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "IFC_D_Kick_One_Shot_Basin.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
+				"name" : "clap1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "IFC_D_Kick_One_Shot_Depth.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
+				"name" : "clap2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "IFC_D_Kick_One_Shot_Focal.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
+				"name" : "clap3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "IFC_D_Kick_One_Shot_Geodetic.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
+				"name" : "clap4.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "IFC_F_Kick_One_Shot_Aftershock.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_F_Kick_One_Shot_Aseismic.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_F_Kick_One_Shot_Basin.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_F_Kick_One_Shot_Belt.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kicks",
-				"patcherrelativepath" : "../media/kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Awakened.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Chronology.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Depiction.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Effigy.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Geological.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Labyrinth.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Mandala.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "IFC_Snare_One_Shot_Patterns.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snares",
-				"patcherrelativepath" : "../media/snares",
+				"name" : "clap5.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5060,6 +5003,27 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "cym1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
+				"patcherrelativepath" : "../media/cym",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cym2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
+				"patcherrelativepath" : "../media/cym",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cym3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
+				"patcherrelativepath" : "../media/cym",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "gamepad_input.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
 				"patcherrelativepath" : "../data",
@@ -5074,10 +5038,101 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "kick1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick4.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick5.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare4.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare5.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "sousa mic at35 0014 [2025-03-03 162026].aif",
 				"bootpath" : "~/Documents/Max 8/Projects/sousastep/SousaPlayback Project/Samples/Recorded",
 				"patcherrelativepath" : "../../sousastep/SousaPlayback Project/Samples/Recorded",
 				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tom1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
+				"patcherrelativepath" : "../media/tom",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tom2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
+				"patcherrelativepath" : "../media/tom",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tom3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
+				"patcherrelativepath" : "../media/tom",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
