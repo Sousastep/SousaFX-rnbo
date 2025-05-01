@@ -8,8 +8,9 @@ import sys
 import serial
 import time
 
+
 # Replace with the correct serial port, often /dev/ttyACM0 or /dev/ttyUSB0 for Teensy
-SERIAL_PORT = '/dev/cu.usbmodem40590801'
+SERIAL_PORT = '/dev/ttyACM0'
 BAUD_RATE = 9600  # Match the baud rate with what's on your Teensy
 
 # Try to open serial connection
@@ -22,13 +23,6 @@ except serial.SerialException as e:
     print(f"Error opening serial port {SERIAL_PORT}: {e}")
     sys.exit(1)  # Exit with error code
 
-# set up OSC client - send all messages to port 1234 on the local machine (rnbo runner)
-try:
-    target = OSC.Address(1234)
-except OSC.AddressError as err:
-    print(err)
-    sys.exit() # set up OSC server - listening on port 4321
-
 try:
     server = OSC.Server(4321)
 except OSC.ServerError as err:
@@ -36,7 +30,6 @@ except OSC.ServerError as err:
 
 def handle_step(path, args):
     i = args[0]
-    print("current step:", i)
     
     # Ensure i is a valid byte, and not a start or end marker, by clipping
     i_byte = max(0, min(253, int(i)))
@@ -44,15 +37,17 @@ def handle_step(path, args):
     # Create a byte sequence with start marker (254), data byte, and end marker (255)
     message = bytes([254, i_byte, 255])
     ser.write(message)
+    # time.sleep(0.001)  # 1ms delay to allow processing
 
 def fallback(path, args, types, src):
-    print("got unknown message '%s' from '%s'" % (path, src.url))
-    print("don't panic - probably just the runner echoing back your changes :)")
-    for a, t in zip(args, types):
-        print("argument of type '%s': %s" % (t, a))
+    pass
+    # print("got unknown message '%s' from '%s'" % (path, src.url))
+    # print("don't panic - probably just the runner echoing back your changes :)")
+    # for a, t in zip(args, types):
+    #     print("argument of type '%s': %s" % (t, a))
 
 # register callback methods for server routes
-server.add_method("/rnbo/inst/0/messages/out/testing", 'i', handle_step)
+server.add_method("/rnbo/inst/0/messages/out/vfx_env", 'i', handle_step)
 
 # Finally add fallback method for unhandled OSC addrs
 server.add_method(None, None, fallback)
@@ -62,7 +57,7 @@ OSC.send(target, "/rnbo/listeners/add", f"127.0.0.1:4321")
 
 try:
     while True:
-        server.recv(100)        
+        server.recv(8)        
         
 except KeyboardInterrupt:
     print("exiting cleanly...")
