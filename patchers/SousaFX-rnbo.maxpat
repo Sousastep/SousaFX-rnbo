@@ -10,9 +10,47 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1199.0, 179.0, 953.0, 928.0 ],
+		"rect" : [ 952.0, 87.0, 1509.0, 1212.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-139",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 855.0, 387.0, 29.5, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-137",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 815.0, 379.0, 29.5, 22.0 ],
+					"text" : "0.2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "p_obj-54/drum_volume",
+					"id" : "obj-134",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 649.0, 421.0, 222.0, 22.0 ],
+					"text_width" : 156.0
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-135",
 					"maxclass" : "comment",
@@ -107,7 +145,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 616.0, 386.0, 192.0, 22.0 ],
+					"patching_rect" : [ 613.0, 382.5, 192.0, 22.0 ],
 					"text_width" : 144.0
 				}
 
@@ -120,7 +158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 758.0, 646.0, 50.0, 35.0 ],
+					"patching_rect" : [ 758.0, 646.0, 53.0, 35.0 ],
 					"text" : "vfx_env 0."
 				}
 
@@ -503,8 +541,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 534.0, 287.0, 201.0, 22.0 ],
-					"text_width" : 142.0
+					"patching_rect" : [ 534.0, 287.0, 242.0, 22.0 ],
+					"text_width" : 180.0
 				}
 
 			}
@@ -760,7 +798,7 @@
 			}
 , 			{
 				"box" : 				{
-					"autosave" : 1,
+					"autosave" : 0,
 					"id" : "obj-2",
 					"inletInfo" : 					{
 						"IOInfo" : [ 							{
@@ -792,88 +830,10 @@
 					}
 ,
 					"outlettype" : [ "signal", "list" ],
-					"patching_rect" : [ 465.0, 541.0, 211.0, 22.0 ],
+					"patching_rect" : [ 465.0, 541.0, 483.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"p_obj-247/p_obj-244/window" : 						{
-							"label" : "window",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/midY" : 						{
-							"label" : "midY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/treble" : 						{
-							"label" : "treble",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/color" : 						{
-							"label" : "color",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/firstY" : 						{
-							"label" : "firstY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/firstCurve" : 						{
-							"label" : "firstCurve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_X" : 						{
-							"label" : "ABS_X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/send" : 						{
-							"label" : "send",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/endX" : 						{
-							"label" : "endX",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-247/p_obj-244/transp" : 						{
-							"label" : "transp",
+						"p_obj-54/drum_volume" : 						{
+							"label" : "drum_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -884,32 +844,14 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-210/rnbo~[1]/send" : 						{
-							"label" : "send",
+						"p_obj-133/p_obj-160/Env Sens" : 						{
+							"label" : "Env Sens",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-238/p_obj-34/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/finalY" : 						{
-							"label" : "finalY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_BRAKE" : 						{
-							"label" : "ABS_BRAKE",
+						"ABS_RZ" : 						{
+							"label" : "ABS_RZ",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -920,86 +862,26 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-233/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"p_obj-238/p_obj-34/lowcut" : 						{
+							"label" : "lowcut",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-260/p_obj-110/knee" : 						{
-							"label" : "knee",
+						"p_obj-48/endX" : 						{
+							"label" : "endX",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
+						"ABS_Y" : 						{
+							"label" : "ABS_Y",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/stutter_offset" : 						{
+						"p_obj-233/p_obj-48/stutter_offset" : 						{
 							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/midX" : 						{
-							"label" : "midX",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-110/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-523/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/color" : 						{
-							"label" : "color",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/finalX" : 						{
-							"label" : "finalX",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-523/knee" : 						{
-							"label" : "knee",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1010,8 +892,500 @@
 							"parsestring" : ""
 						}
 ,
+						"ABS_HAT0X" : 						{
+							"label" : "ABS_HAT0X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/send" : 						{
+							"label" : "send",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/midY" : 						{
+							"label" : "midY",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-58/framesPerSecond" : 						{
+							"label" : "framesPerSecond",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_HAT0Y" : 						{
+							"label" : "ABS_HAT0Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-523/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_NORTH" : 						{
+							"label" : "BTN_NORTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-110/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_GAS" : 						{
+							"label" : "ABS_GAS",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/regen" : 						{
+							"label" : "regen",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_START" : 						{
+							"label" : "BTN_START",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/regen" : 						{
+							"label" : "regen",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-523/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/finalX" : 						{
+							"label" : "finalX",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-247/p_obj-244/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_EAST" : 						{
+							"label" : "BTN_EAST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/firstCurve" : 						{
+							"label" : "firstCurve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_SELECT" : 						{
+							"label" : "BTN_SELECT",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/color" : 						{
+							"label" : "color",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/bass" : 						{
+							"label" : "bass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-448/metronome_volume" : 						{
+							"label" : "metronome_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-523/knee" : 						{
+							"label" : "knee",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/firstY" : 						{
+							"label" : "firstY",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"p_obj-210/rnbo~[1]/regen" : 						{
 							"label" : "regen",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/mid" : 						{
+							"label" : "mid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/endY" : 						{
+							"label" : "endY",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/noise gate thresh" : 						{
+							"label" : "noise gate thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/midX" : 						{
+							"label" : "midX",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/finalY" : 						{
+							"label" : "finalY",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-limi_gain" : 						{
+							"label" : "pre-limi_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/secondCurve" : 						{
+							"label" : "secondCurve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/color" : 						{
+							"label" : "color",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-110/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/firstX" : 						{
+							"label" : "firstX",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-247/p_obj-244/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_TL" : 						{
+							"label" : "BTN_TL",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-110/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_BRAKE" : 						{
+							"label" : "ABS_BRAKE",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-523/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/send" : 						{
+							"label" : "send",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/drive" : 						{
+							"label" : "drive",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/color" : 						{
+							"label" : "color",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/volume" : 						{
+							"label" : "volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1022,8 +1396,92 @@
 							"parsestring" : ""
 						}
 ,
+						"p_obj-238/p_obj-34/highcut" : 						{
+							"label" : "highcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"ABS_X" : 						{
+							"label" : "ABS_X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_WEST" : 						{
+							"label" : "BTN_WEST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"p_obj-263/p_obj-239/attack" : 						{
 							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-48/thirdCurve" : 						{
+							"label" : "thirdCurve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-260/p_obj-110/knee" : 						{
+							"label" : "knee",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-238/p_obj-34/treble" : 						{
+							"label" : "treble",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-233/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_SOUTH" : 						{
+							"label" : "BTN_SOUTH",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1034,7 +1492,19 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-233/p_obj-48/stutter_window_size_ms" : 						{
+						"p_obj-263/p_obj-239/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"BTN_TR" : 						{
+							"label" : "BTN_TR",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
 							"label" : "stutter_window_size_ms",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -1046,176 +1516,8 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-110/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/highcut" : 						{
-							"label" : "highcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TR" : 						{
-							"label" : "BTN_TR",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/regen" : 						{
-							"label" : "regen",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/firstX" : 						{
-							"label" : "firstX",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-247/p_obj-244/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/regen" : 						{
-							"label" : "regen",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"p_obj-263/pre-comp_gain" : 						{
 							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-54/drum_volume" : 						{
-							"label" : "drum_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/mid" : 						{
-							"label" : "mid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_NORTH" : 						{
-							"label" : "BTN_NORTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1226,286 +1528,22 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-260/noise gate thresh" : 						{
-							"label" : "noise gate thresh",
+						"p_obj-247/p_obj-244/transp" : 						{
+							"label" : "transp",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-146/rnbo~[1]/spread" : 						{
-							"label" : "spread",
+						"p_obj-247/p_obj-244/window" : 						{
+							"label" : "window",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
+						"p_obj-54/kick_volume" : 						{
+							"label" : "kick_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
-						}
-,
-						"p_obj-48/secondCurve" : 						{
-							"label" : "secondCurve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TL" : 						{
-							"label" : "BTN_TL",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-133/p_obj-160/Env Sens" : 						{
-							"label" : "Env Sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-110/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_SELECT" : 						{
-							"label" : "BTN_SELECT",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/endY" : 						{
-							"label" : "endY",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_EAST" : 						{
-							"label" : "BTN_EAST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-233/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_WEST" : 						{
-							"label" : "BTN_WEST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_GAS" : 						{
-							"label" : "ABS_GAS",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_HAT0X" : 						{
-							"label" : "ABS_HAT0X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/bass" : 						{
-							"label" : "bass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-limi_gain" : 						{
-							"label" : "pre-limi_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_SOUTH" : 						{
-							"label" : "BTN_SOUTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_RZ" : 						{
-							"label" : "ABS_RZ",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-523/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-448/metronome_volume" : 						{
-							"label" : "metronome_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-260/p_obj-523/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/color" : 						{
-							"label" : "color",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/lowcut" : 						{
-							"label" : "lowcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-48/thirdCurve" : 						{
-							"label" : "thirdCurve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_HAT0Y" : 						{
-							"label" : "ABS_HAT0Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_START" : 						{
-							"label" : "BTN_START",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/drive" : 						{
-							"label" : "drive",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-247/p_obj-244/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_Y" : 						{
-							"label" : "ABS_Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-238/p_obj-34/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-58/framesPerSecond" : 						{
-							"label" : "framesPerSecond",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/scale" : 						{
-							"label" : "scale",
-							"isEnum" : 1,
-							"parsestring" : "\"16th\" \"8th\" \"dot_8th\" \"quarter\" \"dot_quarter\" \"half\" \"whole\""
 						}
 ,
 						"p_obj-461/rnbo~[1]/filter" : 						{
@@ -1520,12 +1558,6 @@
 							"parsestring" : "\"0\" \"1\""
 						}
 ,
-						"p_obj-146/rnbo~[1]/scale" : 						{
-							"label" : "scale",
-							"isEnum" : 1,
-							"parsestring" : "\"16th\" \"8th\" \"dot_8th\" \"quarter\" \"dot_quarter\" \"half\" \"whole\""
-						}
-,
 						"p_obj-146/rnbo~[1]/filter" : 						{
 							"label" : "filter",
 							"isEnum" : 1,
@@ -1536,12 +1568,6 @@
 							"label" : "fb",
 							"isEnum" : 1,
 							"parsestring" : "\"0\" \"1\""
-						}
-,
-						"p_obj-210/rnbo~[1]/scale" : 						{
-							"label" : "scale",
-							"isEnum" : 1,
-							"parsestring" : "\"16th\" \"8th\" \"dot_8th\" \"quarter\" \"dot_quarter\" \"half\" \"whole\""
 						}
 ,
 						"p_obj-210/rnbo~[1]/filter" : 						{
@@ -1559,21 +1585,10 @@
 					}
 ,
 					"rnboversion" : "1.3.4",
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "rnbo~",
-							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
-							"parameter_shortname" : "rnbo~",
-							"parameter_type" : 3
-						}
-
-					}
-,
 					"saved_object_attributes" : 					{
+						"autosave" : 0,
 						"optimization" : "O1",
-						"parameter_enable" : 1,
+						"parameter_enable" : 0,
 						"uuid" : "ddbf784d-18cf-11f0-b84d-a2f417e70586"
 					}
 ,
@@ -1636,10 +1651,6 @@
 												"value" : 1.0
 											}
 ,
-											"scale" : 											{
-												"value" : 1.0
-											}
-,
 											"spread" : 											{
 												"value" : 12.0
 											}
@@ -1667,76 +1678,6 @@
 								}
 ,
 								"p_obj-155" : 								{
-
-								}
-,
-								"p_obj-146" : 								{
-									"__sps" : 									{
-										"rnbo~[1]" : 										{
-											"send" : 											{
-												"value" : 0.0
-											}
-,
-											"regen" : 											{
-												"value" : 0.0
-											}
-,
-											"__sps" : 											{
-												"DelayCalc" : 												{
-
-												}
-,
-												"FilterDelay~" : 												{
-													"__sps" : 													{
-														"Filter~" : 														{
-
-														}
-,
-														"Filter~[1]" : 														{
-
-														}
-
-													}
-
-												}
-,
-												"Volume~" : 												{
-
-												}
-
-											}
-,
-											"filter" : 											{
-												"value" : 2.0
-											}
-,
-											"fb" : 											{
-												"value" : 1.0
-											}
-,
-											"scale" : 											{
-												"value" : 1.0
-											}
-,
-											"spread" : 											{
-												"value" : 12.0
-											}
-,
-											"time" : 											{
-												"value" : 469.0
-											}
-,
-											"volume" : 											{
-												"value" : -33.0
-											}
-,
-											"color" : 											{
-												"value" : 0.0
-											}
-
-										}
-
-									}
 
 								}
 ,
@@ -1789,10 +1730,6 @@
 											}
 ,
 											"fb" : 											{
-												"value" : 1.0
-											}
-,
-											"scale" : 											{
 												"value" : 1.0
 											}
 ,
@@ -1870,7 +1807,7 @@
 											}
 ,
 											"stutter_gated_or_thru" : 											{
-												"value" : 1.0
+												"value" : 0.0
 											}
 
 										}
@@ -1924,6 +1861,10 @@
 										}
 
 									}
+
+								}
+,
+								"p_obj-66" : 								{
 
 								}
 ,
@@ -2002,6 +1943,10 @@
 
 								}
 ,
+								"p_obj-68" : 								{
+
+								}
+,
 								"p_obj-408" : 								{
 
 								}
@@ -2057,7 +2002,7 @@
 									}
 ,
 									"pre-comp_gain" : 									{
-										"value" : 0.0
+										"value" : 9.0
 									}
 
 								}
@@ -2077,62 +2022,69 @@
 
 								}
 ,
-								"p_obj-98" : 								{
+								"p_obj-146" : 								{
+									"__sps" : 									{
+										"rnbo~[1]" : 										{
+											"send" : 											{
+												"value" : 0.0
+											}
+,
+											"regen" : 											{
+												"value" : 0.0
+											}
+,
+											"__sps" : 											{
+												"DelayCalc" : 												{
 
-								}
+												}
 ,
-								"p_obj-40" : 								{
+												"FilterDelay~" : 												{
+													"__sps" : 													{
+														"Filter~" : 														{
 
-								}
+														}
 ,
-								"p_obj-48" : 								{
-									"thirdCurve" : 									{
-										"value" : -0.895
-									}
-,
-									"finalY" : 									{
-										"value" : 1.0
-									}
-,
-									"endX" : 									{
-										"value" : 1.0
-									}
-,
-									"secondCurve" : 									{
-										"value" : 0.75
-									}
-,
-									"endY" : 									{
-										"value" : 0.45283
-									}
-,
-									"firstCurve" : 									{
-										"value" : -0.7
-									}
-,
-									"midY" : 									{
-										"value" : 0.0
-									}
-,
-									"firstX" : 									{
-										"value" : 0.0
-									}
-,
-									"midX" : 									{
-										"value" : 1.0
-									}
-,
-									"finalX" : 									{
-										"value" : 1.0
-									}
-,
-									"firstY" : 									{
-										"value" : 1.0
-									}
+														"Filter~[1]" : 														{
 
-								}
+														}
+
+													}
+
+												}
 ,
-								"p_obj-206" : 								{
+												"Volume~" : 												{
+
+												}
+
+											}
+,
+											"filter" : 											{
+												"value" : 2.0
+											}
+,
+											"fb" : 											{
+												"value" : 1.0
+											}
+,
+											"spread" : 											{
+												"value" : 12.0
+											}
+,
+											"time" : 											{
+												"value" : 469.0
+											}
+,
+											"volume" : 											{
+												"value" : -33.0
+											}
+,
+											"color" : 											{
+												"value" : 0.0
+											}
+
+										}
+
+									}
 
 								}
 ,
@@ -2141,6 +2093,18 @@
 								}
 ,
 								"p_obj-175" : 								{
+
+								}
+,
+								"p_obj-98" : 								{
+
+								}
+,
+								"p_obj-40" : 								{
+
+								}
+,
+								"p_obj-25" : 								{
 
 								}
 ,
@@ -2172,7 +2136,7 @@
 											}
 ,
 											"stutter_output_volume" : 											{
-												"value" : -2.5
+												"value" : -2.0
 											}
 ,
 											"stutter_reverse" : 											{
@@ -2180,7 +2144,7 @@
 											}
 ,
 											"stutter_offset" : 											{
-												"value" : 0.2
+												"value" : 0.0
 											}
 ,
 											"enable_scatter" : 											{
@@ -2188,7 +2152,7 @@
 											}
 ,
 											"stutter_window_size_ms" : 											{
-												"value" : 18.0
+												"value" : 16.0
 											}
 ,
 											"staircase_amount" : 											{
@@ -2206,14 +2170,6 @@
 										}
 
 									}
-
-								}
-,
-								"p_obj-124" : 								{
-
-								}
-,
-								"p_obj-25" : 								{
 
 								}
 ,
@@ -2315,7 +2271,7 @@
 											}
 ,
 											"thresh" : 											{
-												"value" : -26.0
+												"value" : -18.0
 											}
 
 										}
@@ -2334,11 +2290,62 @@
 											}
 ,
 											"thresh" : 											{
-												"value" : -26.0
+												"value" : -18.0
 											}
 
 										}
 
+									}
+
+								}
+,
+								"p_obj-206" : 								{
+
+								}
+,
+								"p_obj-48" : 								{
+									"thirdCurve" : 									{
+										"value" : -0.895
+									}
+,
+									"finalY" : 									{
+										"value" : 1.0
+									}
+,
+									"endX" : 									{
+										"value" : 1.0
+									}
+,
+									"secondCurve" : 									{
+										"value" : 0.75
+									}
+,
+									"endY" : 									{
+										"value" : 0.45283
+									}
+,
+									"firstCurve" : 									{
+										"value" : -0.7
+									}
+,
+									"midY" : 									{
+										"value" : 0.0
+									}
+,
+									"firstX" : 									{
+										"value" : 0.0
+									}
+,
+									"midX" : 									{
+										"value" : 1.0
+									}
+,
+									"finalX" : 									{
+										"value" : 1.0
+									}
+,
+									"firstY" : 									{
+										"value" : 1.0
 									}
 
 								}
@@ -2409,10 +2416,6 @@
 															"value" : 1.0
 														}
 ,
-														"scale" : 														{
-															"value" : 1.0
-														}
-,
 														"spread" : 														{
 															"value" : 12.0
 														}
@@ -2440,76 +2443,6 @@
 											}
 ,
 											"p_obj-155" : 											{
-
-											}
-,
-											"p_obj-146" : 											{
-												"__sps" : 												{
-													"rnbo~[1]" : 													{
-														"send" : 														{
-															"value" : 0.0
-														}
-,
-														"regen" : 														{
-															"value" : 0.0
-														}
-,
-														"__sps" : 														{
-															"DelayCalc" : 															{
-
-															}
-,
-															"FilterDelay~" : 															{
-																"__sps" : 																{
-																	"Filter~" : 																	{
-
-																	}
-,
-																	"Filter~[1]" : 																	{
-
-																	}
-
-																}
-
-															}
-,
-															"Volume~" : 															{
-
-															}
-
-														}
-,
-														"filter" : 														{
-															"value" : 2.0
-														}
-,
-														"fb" : 														{
-															"value" : 1.0
-														}
-,
-														"scale" : 														{
-															"value" : 1.0
-														}
-,
-														"spread" : 														{
-															"value" : 12.0
-														}
-,
-														"time" : 														{
-															"value" : 469.0
-														}
-,
-														"volume" : 														{
-															"value" : -33.0
-														}
-,
-														"color" : 														{
-															"value" : 0.0
-														}
-
-													}
-
-												}
 
 											}
 ,
@@ -2562,10 +2495,6 @@
 														}
 ,
 														"fb" : 														{
-															"value" : 1.0
-														}
-,
-														"scale" : 														{
 															"value" : 1.0
 														}
 ,
@@ -2643,7 +2572,7 @@
 														}
 ,
 														"stutter_gated_or_thru" : 														{
-															"value" : 1.0
+															"value" : 0.0
 														}
 
 													}
@@ -2697,6 +2626,10 @@
 													}
 
 												}
+
+											}
+,
+											"p_obj-66" : 											{
 
 											}
 ,
@@ -2775,6 +2708,10 @@
 
 											}
 ,
+											"p_obj-68" : 											{
+
+											}
+,
 											"p_obj-408" : 											{
 
 											}
@@ -2830,7 +2767,7 @@
 												}
 ,
 												"pre-comp_gain" : 												{
-													"value" : 0.0
+													"value" : 9.0
 												}
 
 											}
@@ -2850,62 +2787,69 @@
 
 											}
 ,
-											"p_obj-98" : 											{
+											"p_obj-146" : 											{
+												"__sps" : 												{
+													"rnbo~[1]" : 													{
+														"send" : 														{
+															"value" : 0.0
+														}
+,
+														"regen" : 														{
+															"value" : 0.0
+														}
+,
+														"__sps" : 														{
+															"DelayCalc" : 															{
 
-											}
+															}
 ,
-											"p_obj-40" : 											{
+															"FilterDelay~" : 															{
+																"__sps" : 																{
+																	"Filter~" : 																	{
 
-											}
+																	}
 ,
-											"p_obj-48" : 											{
-												"thirdCurve" : 												{
-													"value" : -0.895
-												}
-,
-												"finalY" : 												{
-													"value" : 1.0
-												}
-,
-												"endX" : 												{
-													"value" : 1.0
-												}
-,
-												"secondCurve" : 												{
-													"value" : 0.75
-												}
-,
-												"endY" : 												{
-													"value" : 0.45283
-												}
-,
-												"firstCurve" : 												{
-													"value" : -0.7
-												}
-,
-												"midY" : 												{
-													"value" : 0.0
-												}
-,
-												"firstX" : 												{
-													"value" : 0.0
-												}
-,
-												"midX" : 												{
-													"value" : 1.0
-												}
-,
-												"finalX" : 												{
-													"value" : 1.0
-												}
-,
-												"firstY" : 												{
-													"value" : 1.0
-												}
+																	"Filter~[1]" : 																	{
 
-											}
+																	}
+
+																}
+
+															}
 ,
-											"p_obj-206" : 											{
+															"Volume~" : 															{
+
+															}
+
+														}
+,
+														"filter" : 														{
+															"value" : 2.0
+														}
+,
+														"fb" : 														{
+															"value" : 1.0
+														}
+,
+														"spread" : 														{
+															"value" : 12.0
+														}
+,
+														"time" : 														{
+															"value" : 469.0
+														}
+,
+														"volume" : 														{
+															"value" : -33.0
+														}
+,
+														"color" : 														{
+															"value" : 0.0
+														}
+
+													}
+
+												}
 
 											}
 ,
@@ -2914,6 +2858,18 @@
 											}
 ,
 											"p_obj-175" : 											{
+
+											}
+,
+											"p_obj-98" : 											{
+
+											}
+,
+											"p_obj-40" : 											{
+
+											}
+,
+											"p_obj-25" : 											{
 
 											}
 ,
@@ -2945,7 +2901,7 @@
 														}
 ,
 														"stutter_output_volume" : 														{
-															"value" : -2.5
+															"value" : -2.0
 														}
 ,
 														"stutter_reverse" : 														{
@@ -2953,7 +2909,7 @@
 														}
 ,
 														"stutter_offset" : 														{
-															"value" : 0.2
+															"value" : 0.0
 														}
 ,
 														"enable_scatter" : 														{
@@ -2961,7 +2917,7 @@
 														}
 ,
 														"stutter_window_size_ms" : 														{
-															"value" : 18.0
+															"value" : 16.0
 														}
 ,
 														"staircase_amount" : 														{
@@ -2979,14 +2935,6 @@
 													}
 
 												}
-
-											}
-,
-											"p_obj-124" : 											{
-
-											}
-,
-											"p_obj-25" : 											{
 
 											}
 ,
@@ -3088,7 +3036,7 @@
 														}
 ,
 														"thresh" : 														{
-															"value" : -26.0
+															"value" : -18.0
 														}
 
 													}
@@ -3107,11 +3055,62 @@
 														}
 ,
 														"thresh" : 														{
-															"value" : -26.0
+															"value" : -18.0
 														}
 
 													}
 
+												}
+
+											}
+,
+											"p_obj-206" : 											{
+
+											}
+,
+											"p_obj-48" : 											{
+												"thirdCurve" : 												{
+													"value" : -0.895
+												}
+,
+												"finalY" : 												{
+													"value" : 1.0
+												}
+,
+												"endX" : 												{
+													"value" : 1.0
+												}
+,
+												"secondCurve" : 												{
+													"value" : 0.75
+												}
+,
+												"endY" : 												{
+													"value" : 0.45283
+												}
+,
+												"firstCurve" : 												{
+													"value" : -0.7
+												}
+,
+												"midY" : 												{
+													"value" : 0.0
+												}
+,
+												"firstX" : 												{
+													"value" : 0.0
+												}
+,
+												"midX" : 												{
+													"value" : 1.0
+												}
+,
+												"finalX" : 												{
+													"value" : 1.0
+												}
+,
+												"firstY" : 												{
+													"value" : 1.0
 												}
 
 											}
@@ -3135,7 +3134,7 @@
 
 					}
 ,
-					"text" : "rnbo~ @patchername gamepad_input",
+					"text" : "rnbo~ @patchername gamepad_input @parameter_enable 0 @autosave 0 @autobuild 0",
 					"varname" : "rnbo~[1]"
 				}
 
@@ -4337,6 +4336,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"source" : [ "obj-139", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
@@ -4940,7 +4960,6 @@
  ],
 		"originid" : "pat-6",
 		"parameters" : 		{
-			"obj-2" : [ "rnbo~", "rnbo~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -5021,13 +5040,6 @@
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
 				"patcherrelativepath" : "../media/cym",
 				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gamepad_input.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
-				"patcherrelativepath" : "../data",
-				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
