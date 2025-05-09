@@ -2,7 +2,7 @@
 	"name" : "SousaFX-rnbo",
 	"version" : 1,
 	"creationdate" : 3827413226,
-	"modificationdate" : 3828223967,
+	"modificationdate" : 3829497653,
 	"viewrect" : [ 75.0, 156.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -19,10 +19,6 @@
 		}
 ,
 		"media" : 		{
-
-		}
-,
-		"data" : 		{
 
 		}
 
