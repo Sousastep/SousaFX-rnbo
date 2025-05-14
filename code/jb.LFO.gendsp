@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -13,6 +13,40 @@
 		"rect" : [ 110.0, 362.0, 1240.0, 825.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 555.0, 1185.0, 115.0, 20.0 ],
+					"text" : "bypass scale for vfx"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 437.0, 1184.0, 110.0, 22.0 ],
+					"text" : "slide"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 437.0, 1223.0, 35.0, 22.0 ],
+					"text" : "out 2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -465,7 +499,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 2 ],
+					"destination" : [ "obj-6", 2 ],
 					"order" : 0,
 					"source" : [ "obj-204", 0 ]
 				}
@@ -473,8 +507,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
+					"destination" : [ "obj-6", 1 ],
 					"order" : 1,
+					"source" : [ "obj-204", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 2 ],
+					"order" : 2,
+					"source" : [ "obj-204", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"order" : 3,
 					"source" : [ "obj-204", 0 ]
 				}
 
@@ -568,6 +618,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"order" : 1,
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 32.5, 781.0, 446.5, 781.0 ],
+					"order" : 0,
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -597,6 +657,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -649,8 +716,7 @@
 				}
 
 			}
- ],
-		"originid" : "pat-24"
+ ]
 	}
 
 }
