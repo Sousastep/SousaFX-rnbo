@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -36,7 +36,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 574.0, 395.0, 127.0, 78.0 ],
-					"presentation_linecount" : 5,
 					"text" : "reset phase every tap. fwiw, one single tap will reset the phase without changing the bpm"
 				}
 
@@ -50,7 +49,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 743.0, 395.0, 72.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "r_obj-45",
 					"text" : "r tap_tempo"
 				}
@@ -171,7 +170,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 703.0, 327.0, 70.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "r_obj-30",
 					"text" : "r tapped_hz"
 				}
@@ -334,6 +333,10 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 214.0, 224.0, 30.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "t_obj-159",
 					"rnboinfo" : 					{
@@ -466,6 +469,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 304.0, 224.0, 52.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "t_obj-33",
 					"rnboinfo" : 					{
@@ -747,9 +754,9 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 214.0, 144.0, 77.0, 23.0 ],
 					"rnbo_classname" : "split",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "split_obj-50",
-					"text" : "split 0. 2000."
+					"text" : "split 0. 1000."
 				}
 
 			}
@@ -796,7 +803,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 214.0, 44.0, 72.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "r_obj-42",
 					"text" : "r tap_tempo"
 				}
@@ -910,7 +917,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 361.0, 213.0, 141.0, 64.0 ],
-					"text" : "Empty list accumulator if interval is > 2s (i.e. force output with gate closed, then re-open the gate)"
+					"text" : "Empty list accumulator if interval is > 1s (i.e. force output with gate closed, then re-open the gate)"
 				}
 
 			}
@@ -922,7 +929,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 294.0, 144.0, 114.0, 21.0 ],
-					"text" : "Reject intervals > 2s"
+					"text" : "Reject intervals > 1s"
 				}
 
 			}
@@ -1176,8 +1183,7 @@
 				}
 
 			}
- ],
-		"originid" : "pat-176"
+ ]
 	}
 
 }
