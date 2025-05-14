@@ -4,17 +4,32 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "rnbo",
-		"rect" : [ 34.0, 106.0, 1025.0, 1300.0 ],
+		"rect" : [ 393.0, 106.0, 1025.0, 1300.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
 		"title" : "jb.envelope",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 50.0, 687.0, 54.0, 23.0 ],
+					"rnbo_classname" : "clip~",
+					"rnbo_serial" : 2,
+					"rnbo_uniqueid" : "clip~_obj-1",
+					"text" : "clip~ 0 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-153",
 					"maxclass" : "newobj",
@@ -36,7 +51,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 741.0, 100.0, 23.0 ],
+					"patching_rect" : [ 90.0, 548.0, 100.0, 23.0 ],
 					"rnbo_classname" : "s~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "s~_obj-137",
@@ -51,7 +66,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.0, 576.0, 115.0, 23.0 ],
+					"patching_rect" : [ 110.0, 611.0, 115.0, 23.0 ],
 					"rnbo_classname" : "r",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "r_obj-133",
@@ -66,7 +81,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 82.0, 656.0, 54.0, 23.0 ],
+					"patching_rect" : [ 50.0, 834.0, 54.0, 23.0 ],
 					"rnbo_classname" : "clip~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "clip~_obj-131",
@@ -81,24 +96,24 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 106.0, 480.0, 339.0, 23.0 ],
+					"patching_rect" : [ 71.0, 760.0, 339.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"displayname" : "",
 						"sendinit" : 1,
-						"exponent" : 1.0,
+						"enum" : "",
 						"unit" : "",
-						"fromnormalized" : "",
-						"ctlin" : 0.0,
+						"meta" : "",
+						"displayname" : "",
+						"steps" : 0.0,
 						"order" : "0",
 						"displayorder" : "-",
-						"meta" : "",
 						"tonormalized" : "",
-						"steps" : 0.0,
-						"enum" : ""
+						"ctlin" : 0.0,
+						"fromnormalized" : "",
+						"exponent" : 1.0
 					}
 ,
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "Env Sens",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -486,7 +501,7 @@
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "param \"Env Sens\" 2.8 @minimum 0.1 @maximum 10 @preset 0",
+					"text" : "param \"Env Sens\" 1.8 @minimum 0.1 @maximum 10 @preset 0",
 					"varname" : "Env Sens"
 				}
 
@@ -498,7 +513,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 82.0, 616.0, 94.000002801418304, 23.0 ],
+					"patching_rect" : [ 50.0, 651.0, 94.000002801418304, 23.0 ],
 					"rnbo_classname" : "scale~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "scale~_obj-954",
@@ -513,7 +528,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 82.0, 576.0, 46.00000137090683, 23.0 ],
+					"patching_rect" : [ 50.0, 611.0, 46.00000137090683, 23.0 ],
 					"rnbo_classname" : "atodb~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "atodb~_obj-951",
@@ -529,7 +544,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 194.0, 612.0, 220.0, 93.0 ],
+					"patching_rect" : [ 162.0, 647.0, 220.0, 93.0 ],
 					"suppressinlet" : 1,
 					"text" : "tuba_env is sent to:\n    1. Visuals\n    2. Noise Gate\n    3. Crossfade\n    4. Mod Params: floor, ceiling, spread\n    5. Transient Detector"
 				}
@@ -542,7 +557,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 50.0, 524.0, 40.000001192092896, 23.0 ],
+					"patching_rect" : [ 50.0, 796.0, 40.000001192092896, 23.0 ],
 					"rnbo_classname" : "*~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "*~_obj-490",
@@ -557,7 +572,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 700.0, 110.0, 23.0 ],
+					"patching_rect" : [ 50.0, 871.0, 110.0, 23.0 ],
 					"rnbo_classname" : "s~",
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "s~_obj-162",
@@ -844,8 +859,8 @@
 					"patching_rect" : [ 50.0, 40.0, 35.0, 23.0 ],
 					"rnbo_classname" : "in~",
 					"rnbo_extra_attributes" : 					{
-						"comment" : "",
-						"meta" : ""
+						"meta" : "",
+						"comment" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -933,6 +948,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-490", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-852", 0 ],
 					"source" : [ "obj-114", 0 ]
 				}
@@ -975,24 +997,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-490", 0 ],
+					"destination" : [ "obj-137", 0 ],
+					"order" : 0,
 					"source" : [ "obj-489", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-137", 0 ],
+					"destination" : [ "obj-951", 0 ],
 					"order" : 1,
-					"source" : [ "obj-490", 0 ]
+					"source" : [ "obj-489", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.029666677117348, 0.0, 0.064068667590618, 1.0 ],
-					"destination" : [ "obj-951", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-131", 0 ],
 					"source" : [ "obj-490", 0 ]
 				}
 
@@ -1093,13 +1114,12 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-131", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-954", 0 ]
 				}
 
 			}
- ],
-		"originid" : "pat-172"
+ ]
 	}
 
 }
