@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "rnbo",
-		"rect" : [ 122.0, 384.0, 1491.0, 780.0 ],
+		"rect" : [ 849.0, 367.0, 1491.0, 780.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
 		"title" : "jb.drums",
@@ -41,42 +41,42 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 89.0, 263.0, 201.0, 37.0 ],
+					"patching_rect" : [ 89.0, 263.0, 203.0, 37.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"ctlin" : 0.0,
-						"tonormalized" : "",
+						"sendinit" : 1,
+						"enum" : "",
+						"unit" : "",
+						"meta" : "",
 						"displayname" : "",
 						"steps" : 0.0,
-						"displayorder" : "-",
-						"meta" : "",
-						"unit" : "",
-						"enum" : "",
 						"order" : "0",
+						"displayorder" : "-",
+						"tonormalized" : "",
+						"ctlin" : 0.0,
 						"fromnormalized" : "",
-						"sendinit" : 1,
 						"exponent" : 1.0
 					}
 ,
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "kick_volume",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
 						"argnames" : 						{
 							"value" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Parameter value",
+								"attrOrProp" : 2,
+								"digest" : "Set initial value",
 								"defaultarg" : 2,
 								"isalias" : 0,
 								"aliases" : [  ],
 								"settable" : 1,
 								"attachable" : 0,
-								"isparam" : 1,
+								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
 								"type" : "number",
-								"defaultValue" : "-10"
+								"defaultValue" : "0",
+								"label" : "Initial Value",
+								"displayorder" : 3
 							}
 ,
 							"normalizedvalue" : 							{
@@ -87,7 +87,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number"
 							}
@@ -100,7 +99,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -112,7 +110,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number"
 							}
@@ -127,7 +124,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "Parameter Name",
 								"mandatory" : 1
@@ -142,7 +138,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "list",
 								"label" : "Enum Values",
 								"displayorder" : 6
@@ -157,7 +152,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0",
 								"label" : "Minimum",
@@ -174,7 +168,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0",
 								"label" : "Minimum",
@@ -190,7 +183,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1",
 								"label" : "Maximum",
@@ -207,7 +199,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1",
 								"label" : "Maximum",
@@ -223,7 +214,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1",
 								"label" : "Exponent",
@@ -239,7 +229,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0",
 								"label" : "Steps",
@@ -255,7 +244,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 1,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "Display Name"
 							}
@@ -269,7 +257,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "",
 								"label" : "Display Name",
@@ -285,7 +272,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "",
 								"label" : "Unit",
@@ -294,14 +280,13 @@
 ,
 							"tonormalized" : 							{
 								"attrOrProp" : 2,
-								"digest" : "Converts a real parameter value to its normalized form",
+								"digest" : "Converts a real parameter value to its normalized form.",
 								"isalias" : 0,
 								"aliases" : [  ],
 								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "To Normalized Expression",
 								"displayorder" : 10
@@ -309,14 +294,13 @@
 ,
 							"fromnormalized" : 							{
 								"attrOrProp" : 2,
-								"digest" : "Converts a normalized parameter into its actual parameter value",
+								"digest" : "Converts a normalized parameter into its actual parameter value.",
 								"isalias" : 0,
 								"aliases" : [  ],
 								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "From Normalized Expression",
 								"displayorder" : 9
@@ -331,7 +315,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "0",
 								"label" : "Restore Order",
@@ -347,7 +330,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "-",
 								"label" : "Display Order",
@@ -363,7 +345,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "true",
 								"label" : "Send Init",
@@ -379,9 +360,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
-								"defaultValue" : "-1",
 								"label" : "MIDI Controller Number.",
 								"displayorder" : 16
 							}
@@ -395,7 +374,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "",
 								"label" : "Metadata",
@@ -411,7 +389,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 1,
-								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "false"
 							}
@@ -425,7 +402,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "true",
 								"label" : "Include In Preset",
@@ -438,7 +414,6 @@
 								"name" : "value",
 								"type" : "number",
 								"digest" : "Parameter value",
-								"defaultarg" : 2,
 								"hot" : 1,
 								"docked" : 0
 							}
@@ -453,7 +428,6 @@
 								"name" : "value",
 								"type" : "number",
 								"digest" : "Parameter value",
-								"defaultarg" : 2,
 								"hot" : 1,
 								"docked" : 0
 							}
@@ -468,11 +442,11 @@
 						"aliasOf" : "param",
 						"classname" : "param",
 						"operator" : 0,
-						"versionId" : 624541924,
+						"versionId" : 301681565,
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "param kick_volume @minimum -22 @maximum 0. @preset 0 @value -10",
+					"text" : "param kick_volume @minimum -22 @maximum 0. @preset 0 @value -13",
 					"varname" : "kick_volume"
 				}
 
@@ -609,6 +583,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 684.0, 447.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "t_obj-46",
 					"rnboinfo" : 					{
@@ -623,7 +601,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "bang"
 							}
@@ -638,7 +615,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -664,7 +640,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : 1624904035,
+						"versionId" : -1133428571,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -696,6 +672,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 857.0, 309.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "t_obj-44",
 					"rnboinfo" : 					{
@@ -710,7 +690,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "bang"
 							}
@@ -725,7 +704,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -751,7 +729,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : 1624904035,
+						"versionId" : -1133428571,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -783,6 +761,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 971.0, 134.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "t_obj-42",
 					"rnboinfo" : 					{
@@ -797,7 +779,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "bang"
 							}
@@ -812,7 +793,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -838,7 +818,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : 1624904035,
+						"versionId" : -1133428571,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -889,7 +869,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -915,7 +894,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 1197449671,
+						"versionId" : 2121358407,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -947,7 +926,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -973,7 +951,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 1197449671,
+						"versionId" : 2121358407,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1005,7 +983,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1031,7 +1008,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 1197449671,
+						"versionId" : 2121358407,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1050,8 +1027,8 @@
 					"patching_rect" : [ 857.0, 352.0, 209.0, 37.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"synctype" : "relative",
+						"channels" : 1.0,
 						"syncmode" : "phase"
 					}
 ,
@@ -1069,24 +1046,9 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "1"
-							}
-,
-							"jumpto" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Jump to position (ms) and start playback.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "-1"
 							}
 ,
 							"begin" : 							{
@@ -1098,7 +1060,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -1113,7 +1074,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "-1"
@@ -1128,7 +1088,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -1142,7 +1101,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -1156,7 +1114,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -1170,7 +1127,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1183,7 +1139,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -1195,7 +1150,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1210,7 +1164,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1225,7 +1178,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -1239,7 +1191,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "phase", "samples", "ms" ],
 								"type" : "enum",
 								"defaultValue" : "phase"
@@ -1254,7 +1205,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "relative", "absolute" ],
 								"type" : "enum",
 								"defaultValue" : "relative"
@@ -1299,7 +1249,7 @@
 						"aliasOf" : "groove~",
 						"classname" : "groove~",
 						"operator" : 0,
-						"versionId" : -147380827,
+						"versionId" : -1161749990,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1318,8 +1268,8 @@
 					"patching_rect" : [ 684.0, 494.0, 206.0, 37.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"synctype" : "relative",
+						"channels" : 1.0,
 						"syncmode" : "phase"
 					}
 ,
@@ -1337,24 +1287,9 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "1"
-							}
-,
-							"jumpto" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Jump to position (ms) and start playback.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "-1"
 							}
 ,
 							"begin" : 							{
@@ -1366,7 +1301,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -1381,7 +1315,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "-1"
@@ -1396,7 +1329,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -1410,7 +1342,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -1424,7 +1355,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -1438,7 +1368,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1451,7 +1380,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -1463,7 +1391,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1478,7 +1405,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1493,7 +1419,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -1507,7 +1432,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "phase", "samples", "ms" ],
 								"type" : "enum",
 								"defaultValue" : "phase"
@@ -1522,7 +1446,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "relative", "absolute" ],
 								"type" : "enum",
 								"defaultValue" : "relative"
@@ -1567,7 +1490,7 @@
 						"aliasOf" : "groove~",
 						"classname" : "groove~",
 						"operator" : 0,
-						"versionId" : -147380827,
+						"versionId" : -1161749990,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1586,8 +1509,8 @@
 					"patching_rect" : [ 971.0, 183.0, 208.0, 37.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"synctype" : "relative",
+						"channels" : 1.0,
 						"syncmode" : "phase"
 					}
 ,
@@ -1605,24 +1528,9 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "1"
-							}
-,
-							"jumpto" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Jump to position (ms) and start playback.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "-1"
 							}
 ,
 							"begin" : 							{
@@ -1634,7 +1542,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -1649,7 +1556,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "-1"
@@ -1664,7 +1570,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -1678,7 +1583,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -1692,7 +1596,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -1706,7 +1609,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1719,7 +1621,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -1731,7 +1632,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1746,7 +1646,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1761,7 +1660,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -1775,7 +1673,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "phase", "samples", "ms" ],
 								"type" : "enum",
 								"defaultValue" : "phase"
@@ -1790,7 +1687,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "relative", "absolute" ],
 								"type" : "enum",
 								"defaultValue" : "relative"
@@ -1835,7 +1731,7 @@
 						"aliasOf" : "groove~",
 						"classname" : "groove~",
 						"operator" : 0,
-						"versionId" : -147380827,
+						"versionId" : -1161749990,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1853,11 +1749,9 @@
 					"patching_rect" : [ 115.0, 696.0, 164.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -1874,7 +1768,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -1889,7 +1782,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -1903,7 +1795,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -1917,7 +1808,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -1933,7 +1823,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1949,7 +1838,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1963,7 +1851,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1978,7 +1865,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -1991,7 +1877,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -2004,7 +1889,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -2019,7 +1903,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -2034,7 +1917,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -2048,7 +1930,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2061,7 +1955,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2075,7 +1968,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2089,7 +1981,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2102,40 +1993,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -2172,7 +2031,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -2190,11 +2049,9 @@
 					"patching_rect" : [ 100.0, 660.0, 164.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 2,
@@ -2211,7 +2068,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -2226,7 +2082,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2240,7 +2095,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2254,7 +2108,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2270,7 +2123,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2286,7 +2138,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2300,7 +2151,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2315,7 +2165,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2328,7 +2177,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -2341,7 +2189,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -2356,7 +2203,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -2371,7 +2217,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -2385,7 +2230,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2398,7 +2255,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2412,7 +2268,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2426,7 +2281,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2439,40 +2293,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -2509,7 +2331,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -2527,11 +2349,9 @@
 					"patching_rect" : [ 85.0, 625.0, 164.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 3,
@@ -2548,7 +2368,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -2563,7 +2382,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2577,7 +2395,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2591,7 +2408,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2607,7 +2423,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2623,7 +2438,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2637,7 +2451,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2652,7 +2465,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2665,7 +2477,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -2678,7 +2489,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -2693,7 +2503,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -2708,7 +2517,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -2722,7 +2530,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2735,7 +2555,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2749,7 +2568,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2763,7 +2581,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -2776,40 +2593,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -2846,7 +2631,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -2864,11 +2649,9 @@
 					"patching_rect" : [ 70.0, 590.0, 164.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 4,
@@ -2885,7 +2668,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -2900,7 +2682,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2914,7 +2695,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2928,7 +2708,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -2944,7 +2723,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2960,7 +2738,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2974,7 +2751,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -2989,7 +2765,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3002,7 +2777,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -3015,7 +2789,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -3030,7 +2803,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -3045,7 +2817,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -3059,7 +2830,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3072,7 +2855,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3086,7 +2868,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3100,7 +2881,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3113,40 +2893,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -3183,7 +2931,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3201,11 +2949,9 @@
 					"patching_rect" : [ 55.0, 555.0, 164.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 5,
@@ -3222,7 +2968,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -3237,7 +2982,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3251,7 +2995,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3265,7 +3008,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3281,7 +3023,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3297,7 +3038,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3311,7 +3051,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3326,7 +3065,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3339,7 +3077,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -3352,7 +3089,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -3367,7 +3103,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -3382,7 +3117,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -3396,7 +3130,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3409,7 +3155,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3423,7 +3168,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3437,7 +3181,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3450,40 +3193,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -3520,7 +3231,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3538,11 +3249,9 @@
 					"patching_rect" : [ 819.0, 619.0, 165.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 6,
@@ -3559,7 +3268,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -3574,7 +3282,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3588,7 +3295,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3602,7 +3308,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3618,7 +3323,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3634,7 +3338,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3648,7 +3351,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3663,7 +3365,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3676,7 +3377,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -3689,7 +3389,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -3704,7 +3403,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -3719,7 +3417,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -3733,7 +3430,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3746,7 +3455,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3760,7 +3468,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3774,7 +3481,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3787,40 +3493,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -3857,7 +3531,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3875,11 +3549,9 @@
 					"patching_rect" : [ 804.0, 587.0, 165.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 7,
@@ -3896,7 +3568,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -3911,7 +3582,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3925,7 +3595,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3939,7 +3608,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3955,7 +3623,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3971,7 +3638,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -3985,7 +3651,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4000,7 +3665,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4013,7 +3677,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -4026,7 +3689,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -4041,7 +3703,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -4056,7 +3717,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -4070,7 +3730,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4083,7 +3755,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4097,7 +3768,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4111,7 +3781,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4124,40 +3793,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -4194,7 +3831,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -4212,11 +3849,9 @@
 					"patching_rect" : [ 784.0, 555.0, 165.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 8,
@@ -4233,7 +3868,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -4248,7 +3882,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4262,7 +3895,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4276,7 +3908,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4292,7 +3923,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4308,7 +3938,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4322,7 +3951,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4337,7 +3965,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4350,7 +3977,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -4363,7 +3989,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -4378,7 +4003,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -4393,7 +4017,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -4407,7 +4030,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4420,7 +4055,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4434,7 +4068,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4448,7 +4081,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4461,40 +4093,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -4531,7 +4131,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -4549,11 +4149,9 @@
 					"patching_rect" : [ 635.0, 619.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 9,
@@ -4570,7 +4168,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -4585,7 +4182,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4599,7 +4195,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4613,7 +4208,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4629,7 +4223,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4645,7 +4238,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4659,7 +4251,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4674,7 +4265,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4687,7 +4277,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -4700,7 +4289,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -4715,7 +4303,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -4730,7 +4317,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -4744,7 +4330,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4757,7 +4355,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4771,7 +4368,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4785,7 +4381,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -4798,40 +4393,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -4868,7 +4431,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -4886,11 +4449,9 @@
 					"patching_rect" : [ 620.0, 587.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 10,
@@ -4907,7 +4468,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -4922,7 +4482,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4936,7 +4495,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4950,7 +4508,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -4966,7 +4523,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4982,7 +4538,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -4996,7 +4551,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5011,7 +4565,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5024,7 +4577,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -5037,7 +4589,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -5052,7 +4603,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -5067,7 +4617,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -5081,7 +4630,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5094,7 +4655,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5108,7 +4668,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5122,7 +4681,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5135,40 +4693,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -5205,7 +4731,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -5223,11 +4749,9 @@
 					"patching_rect" : [ 600.0, 555.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 11,
@@ -5244,7 +4768,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -5259,7 +4782,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -5273,7 +4795,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -5287,7 +4808,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -5303,7 +4823,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5319,7 +4838,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5333,7 +4851,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5348,7 +4865,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5361,7 +4877,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -5374,7 +4889,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -5389,7 +4903,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -5404,7 +4917,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -5418,7 +4930,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5431,7 +4955,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5445,7 +4968,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5459,7 +4981,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5472,40 +4993,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -5542,7 +5031,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -5604,7 +5093,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -5630,7 +5118,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 1197449671,
+						"versionId" : 2121358407,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -5662,7 +5150,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -5688,7 +5175,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 1197449671,
+						"versionId" : 2121358407,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -5706,11 +5193,9 @@
 					"patching_rect" : [ 475.0, 683.0, 178.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 12,
@@ -5727,7 +5212,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -5742,7 +5226,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -5756,7 +5239,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -5770,7 +5252,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -5786,7 +5267,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5802,7 +5282,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5816,7 +5295,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5831,7 +5309,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5844,7 +5321,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -5857,7 +5333,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -5872,7 +5347,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -5887,7 +5361,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -5901,7 +5374,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5914,7 +5399,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5928,7 +5412,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -5942,7 +5425,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -5955,40 +5437,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -6025,7 +5475,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -6043,11 +5493,9 @@
 					"patching_rect" : [ 460.0, 651.0, 178.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 13,
@@ -6064,7 +5512,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -6079,7 +5526,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6093,7 +5539,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6107,7 +5552,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6123,7 +5567,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6139,7 +5582,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6153,7 +5595,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6168,7 +5609,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6181,7 +5621,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -6194,7 +5633,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -6209,7 +5647,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -6224,7 +5661,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -6238,7 +5674,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6251,7 +5699,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6265,7 +5712,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6279,7 +5725,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6292,40 +5737,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -6362,7 +5775,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -6380,11 +5793,9 @@
 					"patching_rect" : [ 445.0, 619.0, 178.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 14,
@@ -6401,7 +5812,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -6416,7 +5826,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6430,7 +5839,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6444,7 +5852,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6460,7 +5867,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6476,7 +5882,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6490,7 +5895,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6505,7 +5909,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6518,7 +5921,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -6531,7 +5933,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -6546,7 +5947,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -6561,7 +5961,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -6575,7 +5974,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6588,7 +5999,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6602,7 +6012,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6616,7 +6025,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6629,40 +6037,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -6699,7 +6075,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -6717,11 +6093,9 @@
 					"patching_rect" : [ 430.0, 587.0, 178.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 15,
@@ -6738,7 +6112,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -6753,7 +6126,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6767,7 +6139,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6781,7 +6152,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -6797,7 +6167,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6813,7 +6182,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6827,7 +6195,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6842,7 +6209,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6855,7 +6221,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -6868,7 +6233,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -6883,7 +6247,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -6898,7 +6261,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -6912,7 +6274,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6925,7 +6299,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6939,7 +6312,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -6953,7 +6325,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -6966,40 +6337,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -7036,7 +6375,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -7054,11 +6393,9 @@
 					"patching_rect" : [ 410.0, 555.0, 178.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 16,
@@ -7075,7 +6412,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -7090,7 +6426,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7104,7 +6439,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7118,7 +6452,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7134,7 +6467,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7150,7 +6482,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7164,7 +6495,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7179,7 +6509,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7192,7 +6521,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -7205,7 +6533,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -7220,7 +6547,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -7235,7 +6561,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -7249,7 +6574,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7262,7 +6599,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7276,7 +6612,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7290,7 +6625,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7303,40 +6637,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -7373,7 +6675,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -7403,11 +6705,9 @@
 					"patching_rect" : [ 295.0, 696.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 17,
@@ -7424,7 +6724,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -7439,7 +6738,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7453,7 +6751,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7467,7 +6764,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7483,7 +6779,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7499,7 +6794,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7513,7 +6807,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7528,7 +6821,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7541,7 +6833,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -7554,7 +6845,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -7569,7 +6859,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -7584,7 +6873,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -7598,7 +6886,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7611,7 +6911,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7625,7 +6924,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7639,7 +6937,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7652,40 +6949,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -7722,7 +6987,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -7740,11 +7005,9 @@
 					"patching_rect" : [ 280.0, 660.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 18,
@@ -7761,7 +7024,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -7776,7 +7038,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7790,7 +7051,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7804,7 +7064,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -7820,7 +7079,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7836,7 +7094,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7850,7 +7107,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7865,7 +7121,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7878,7 +7133,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -7891,7 +7145,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -7906,7 +7159,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -7921,7 +7173,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -7935,7 +7186,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7948,7 +7211,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7962,7 +7224,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -7976,7 +7237,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -7989,40 +7249,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -8059,7 +7287,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -8077,11 +7305,9 @@
 					"patching_rect" : [ 265.0, 625.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 19,
@@ -8098,7 +7324,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -8113,7 +7338,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -8127,7 +7351,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -8141,7 +7364,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -8157,7 +7379,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8173,7 +7394,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8187,7 +7407,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8202,7 +7421,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8215,7 +7433,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -8228,7 +7445,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -8243,7 +7459,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -8258,7 +7473,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -8272,7 +7486,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -8285,7 +7511,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -8299,7 +7524,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8313,7 +7537,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -8326,40 +7549,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -8396,7 +7587,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -8414,11 +7605,9 @@
 					"patching_rect" : [ 250.0, 590.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 20,
@@ -8435,7 +7624,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -8450,7 +7638,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -8464,7 +7651,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -8478,7 +7664,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -8494,7 +7679,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8510,7 +7694,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8524,7 +7707,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8539,7 +7721,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8552,7 +7733,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -8565,7 +7745,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -8580,7 +7759,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -8595,7 +7773,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -8609,7 +7786,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -8622,7 +7811,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -8636,7 +7824,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -8650,7 +7837,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -8663,40 +7849,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -8733,7 +7887,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -8780,6 +7934,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 565.0, 159.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "t_obj-3",
 					"rnboinfo" : 					{
@@ -8794,7 +7952,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "bang"
 							}
@@ -8809,7 +7966,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -8835,7 +7991,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : 1624904035,
+						"versionId" : -1133428571,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -8852,6 +8008,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 68.0, 159.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "t_obj-2",
 					"rnboinfo" : 					{
@@ -8866,7 +8026,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "bang"
 							}
@@ -8881,7 +8040,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -8907,7 +8065,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : 1624904035,
+						"versionId" : -1133428571,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -8942,42 +8100,42 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 301.0, 263.0, 203.0, 37.0 ],
+					"patching_rect" : [ 301.0, 263.0, 210.0, 37.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"ctlin" : 0.0,
-						"tonormalized" : "",
+						"sendinit" : 1,
+						"enum" : "",
+						"unit" : "",
+						"meta" : "",
 						"displayname" : "",
 						"steps" : 0.0,
-						"displayorder" : "-",
-						"meta" : "",
-						"unit" : "",
-						"enum" : "",
 						"order" : "0",
+						"displayorder" : "-",
+						"tonormalized" : "",
+						"ctlin" : 0.0,
 						"fromnormalized" : "",
-						"sendinit" : 1,
 						"exponent" : 1.0
 					}
 ,
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "drum_volume",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
 						"argnames" : 						{
 							"value" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Parameter value",
+								"attrOrProp" : 2,
+								"digest" : "Set initial value",
 								"defaultarg" : 2,
 								"isalias" : 0,
 								"aliases" : [  ],
 								"settable" : 1,
 								"attachable" : 0,
-								"isparam" : 1,
+								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
 								"type" : "number",
-								"defaultValue" : "-15"
+								"defaultValue" : "0",
+								"label" : "Initial Value",
+								"displayorder" : 3
 							}
 ,
 							"normalizedvalue" : 							{
@@ -8988,7 +8146,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number"
 							}
@@ -9001,7 +8158,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -9013,7 +8169,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number"
 							}
@@ -9028,7 +8183,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "Parameter Name",
 								"mandatory" : 1
@@ -9043,7 +8197,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "list",
 								"label" : "Enum Values",
 								"displayorder" : 6
@@ -9058,7 +8211,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0",
 								"label" : "Minimum",
@@ -9075,7 +8227,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0",
 								"label" : "Minimum",
@@ -9091,7 +8242,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1",
 								"label" : "Maximum",
@@ -9108,7 +8258,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1",
 								"label" : "Maximum",
@@ -9124,7 +8273,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1",
 								"label" : "Exponent",
@@ -9140,7 +8288,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0",
 								"label" : "Steps",
@@ -9156,7 +8303,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 1,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "Display Name"
 							}
@@ -9170,7 +8316,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "",
 								"label" : "Display Name",
@@ -9186,7 +8331,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "",
 								"label" : "Unit",
@@ -9195,14 +8339,13 @@
 ,
 							"tonormalized" : 							{
 								"attrOrProp" : 2,
-								"digest" : "Converts a real parameter value to its normalized form",
+								"digest" : "Converts a real parameter value to its normalized form.",
 								"isalias" : 0,
 								"aliases" : [  ],
 								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "To Normalized Expression",
 								"displayorder" : 10
@@ -9210,14 +8353,13 @@
 ,
 							"fromnormalized" : 							{
 								"attrOrProp" : 2,
-								"digest" : "Converts a normalized parameter into its actual parameter value",
+								"digest" : "Converts a normalized parameter into its actual parameter value.",
 								"isalias" : 0,
 								"aliases" : [  ],
 								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"label" : "From Normalized Expression",
 								"displayorder" : 9
@@ -9232,7 +8374,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "0",
 								"label" : "Restore Order",
@@ -9248,7 +8389,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "-",
 								"label" : "Display Order",
@@ -9264,7 +8404,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "true",
 								"label" : "Send Init",
@@ -9280,9 +8419,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
-								"defaultValue" : "-1",
 								"label" : "MIDI Controller Number.",
 								"displayorder" : 16
 							}
@@ -9296,7 +8433,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "",
 								"label" : "Metadata",
@@ -9312,7 +8448,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 1,
-								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "false"
 							}
@@ -9326,7 +8461,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "true",
 								"label" : "Include In Preset",
@@ -9339,7 +8473,6 @@
 								"name" : "value",
 								"type" : "number",
 								"digest" : "Parameter value",
-								"defaultarg" : 2,
 								"hot" : 1,
 								"docked" : 0
 							}
@@ -9354,7 +8487,6 @@
 								"name" : "value",
 								"type" : "number",
 								"digest" : "Parameter value",
-								"defaultarg" : 2,
 								"hot" : 1,
 								"docked" : 0
 							}
@@ -9369,11 +8501,11 @@
 						"aliasOf" : "param",
 						"classname" : "param",
 						"operator" : 0,
-						"versionId" : 624541924,
+						"versionId" : 301681565,
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "param drum_volume @minimum -22 @maximum 0. @preset 0 @value -15",
+					"text" : "param drum_volume @minimum -22 @maximum 0. @preset 0 @value -18",
 					"varname" : "drum_volume"
 				}
 
@@ -9404,8 +8536,8 @@
 					"patching_rect" : [ 565.0, 208.0, 214.0, 37.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"synctype" : "relative",
+						"channels" : 1.0,
 						"syncmode" : "phase"
 					}
 ,
@@ -9423,24 +8555,9 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "1"
-							}
-,
-							"jumpto" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Jump to position (ms) and start playback.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "-1"
 							}
 ,
 							"begin" : 							{
@@ -9452,7 +8569,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -9467,7 +8583,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "-1"
@@ -9482,7 +8597,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -9496,7 +8610,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -9510,7 +8623,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -9524,7 +8636,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -9537,7 +8648,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -9549,7 +8659,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -9564,7 +8673,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -9579,7 +8687,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -9593,7 +8700,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "phase", "samples", "ms" ],
 								"type" : "enum",
 								"defaultValue" : "phase"
@@ -9608,7 +8714,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "relative", "absolute" ],
 								"type" : "enum",
 								"defaultValue" : "relative"
@@ -9653,7 +8758,7 @@
 						"aliasOf" : "groove~",
 						"classname" : "groove~",
 						"operator" : 0,
-						"versionId" : -147380827,
+						"versionId" : -1161749990,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -9672,8 +8777,8 @@
 					"patching_rect" : [ 68.0, 208.0, 207.0, 37.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"synctype" : "relative",
+						"channels" : 1.0,
 						"syncmode" : "phase"
 					}
 ,
@@ -9691,24 +8796,9 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "1"
-							}
-,
-							"jumpto" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Jump to position (ms) and start playback.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "-1"
 							}
 ,
 							"begin" : 							{
@@ -9720,7 +8810,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -9735,7 +8824,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "-1"
@@ -9750,7 +8838,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -9764,7 +8851,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -9778,7 +8864,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -9792,7 +8877,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -9805,7 +8889,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -9817,7 +8900,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -9832,7 +8914,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -9847,7 +8928,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -9861,7 +8941,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "phase", "samples", "ms" ],
 								"type" : "enum",
 								"defaultValue" : "phase"
@@ -9876,7 +8955,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"enum" : [ "relative", "absolute" ],
 								"type" : "enum",
 								"defaultValue" : "relative"
@@ -9921,7 +8999,7 @@
 						"aliasOf" : "groove~",
 						"classname" : "groove~",
 						"operator" : 0,
-						"versionId" : -147380827,
+						"versionId" : -1161749990,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -9939,11 +9017,9 @@
 					"patching_rect" : [ 235.0, 555.0, 163.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
-						"fill" : "",
 						"samplerate" : 0.0,
-						"meta" : "",
 						"type" : "",
-						"preset" : 0
+						"fill" : ""
 					}
 ,
 					"rnbo_serial" : 21,
@@ -9960,7 +9036,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -9975,7 +9050,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -9989,7 +9063,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -10003,7 +9076,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -10019,7 +9091,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -10035,7 +9106,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -10049,7 +9119,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -10064,7 +9133,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -10077,7 +9145,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -10090,7 +9157,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0.995"
 							}
@@ -10105,7 +9171,6 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -10120,7 +9185,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -10134,7 +9198,19 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
+								"type" : "symbol"
+							}
+,
+							"url" : 							{
+								"attrOrProp" : 2,
+								"digest" : "The name of an audio file to load",
+								"isalias" : 1,
+								"aliasOf" : "file",
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -10147,7 +9223,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -10161,7 +9236,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "0"
 							}
@@ -10175,7 +9249,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -10188,40 +9261,8 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "bool",
 								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
 							}
 
 						}
@@ -10258,7 +9299,7 @@
 						"aliasOf" : "data",
 						"classname" : "buffer~",
 						"operator" : 0,
-						"versionId" : -72996304,
+						"versionId" : 51756089,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -10275,8 +9316,8 @@
 					"patching_rect" : [ 138.0, 482.0, 43.0, 23.0 ],
 					"rnbo_classname" : "out~",
 					"rnbo_extra_attributes" : 					{
-						"comment" : "",
-						"meta" : ""
+						"meta" : "",
+						"comment" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -10293,7 +9334,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"inlet" : 1,
 								"type" : "signal"
 							}
@@ -10308,7 +9348,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "number",
 								"mandatory" : 1
 							}
@@ -10322,7 +9361,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -10335,7 +9373,6 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
-								"touched" : 0,
 								"type" : "symbol",
 								"defaultValue" : "",
 								"label" : "Metadata",
@@ -10358,7 +9395,7 @@
 						"aliasOf" : "out~",
 						"classname" : "out~",
 						"operator" : 0,
-						"versionId" : 1989326771,
+						"versionId" : 374499139,
 						"changesPatcherIO" : 1
 					}
 ,
