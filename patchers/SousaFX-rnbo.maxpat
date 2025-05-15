@@ -222,7 +222,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 496.0, 573.0, 69.0, 22.0 ],
-					"text" : "-0."
+					"text" : "-2.36188"
 				}
 
 			}
@@ -912,6 +912,12 @@
 							"parsestring" : ""
 						}
 ,
+						"p_obj-173/p_obj-121/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"BTN_TR" : 						{
 							"label" : "BTN_TR",
 							"isEnum" : 0,
@@ -926,6 +932,12 @@
 ,
 						"p_obj-238/p_obj-34/bass" : 						{
 							"label" : "bass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-173/p_obj-121/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -968,6 +980,12 @@
 ,
 						"p_obj-48/firstCurve" : 						{
 							"label" : "firstCurve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-173/p_obj-121/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1032,6 +1050,12 @@
 							"parsestring" : ""
 						}
 ,
+						"p_obj-173/p_obj-121/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"p_obj-233/p_obj-48/stutter_gated_or_thru" : 						{
 							"label" : "stutter_gated_or_thru",
 							"isEnum" : 0,
@@ -1046,6 +1070,12 @@
 ,
 						"p_obj-234/p_obj-48/stutter_accel" : 						{
 							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-173/p_obj-121/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1080,14 +1110,14 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-210/rnbo~[1]/color" : 						{
-							"label" : "color",
+						"p_obj-210/rnbo~[1]/send" : 						{
+							"label" : "send",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-210/rnbo~[1]/send" : 						{
-							"label" : "send",
+						"p_obj-173/p_obj-121/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1122,14 +1152,14 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-146/rnbo~[1]/color" : 						{
-							"label" : "color",
+						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
+						"p_obj-173/p_obj-121/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1142,6 +1172,12 @@
 ,
 						"p_obj-54/drum_volume" : 						{
 							"label" : "drum_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-173/framesPerSecond" : 						{
+							"label" : "framesPerSecond",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1200,6 +1236,12 @@
 							"parsestring" : ""
 						}
 ,
+						"p_obj-173/p_obj-121/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
 							"label" : "stutter_gated_or_thru",
 							"isEnum" : 0,
@@ -1214,12 +1256,6 @@
 ,
 						"p_obj-234/p_obj-48/enable_scatter" : 						{
 							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/color" : 						{
-							"label" : "color",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1250,6 +1286,12 @@
 ,
 						"p_obj-263/p_obj-239/himidfq" : 						{
 							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-173/p_obj-121/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1320,6 +1362,12 @@
 							"parsestring" : ""
 						}
 ,
+						"p_obj-173/p_obj-121/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"BTN_WEST" : 						{
 							"label" : "BTN_WEST",
 							"isEnum" : 0,
@@ -1370,6 +1418,12 @@
 ,
 						"p_obj-133/p_obj-160/Env Sens" : 						{
 							"label" : "Env Sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-173/p_obj-121/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1446,6 +1500,12 @@
 							"parsestring" : ""
 						}
 ,
+						"p_obj-173/p_obj-121/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
 							"label" : "stutter_accel_vol_dip_amt",
 							"isEnum" : 0,
@@ -1494,346 +1554,10 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-6/pre-comp_gain" : 						{
-							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-263/pre-comp_gain" : 						{
-							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-6/pre-comp_gain" : 						{
-							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-263/pre-comp_gain" : 						{
-							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/framesPerSecond" : 						{
-							"label" : "framesPerSecond",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"p_obj-173/p_obj-121/p_obj-48/staircase_amount" : 						{
 							"label" : "staircase_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-173/p_obj-121/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-6/pre-comp_gain" : 						{
-							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-6/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-263/pre-comp_gain" : 						{
-							"label" : "pre-comp_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/FilterDelay~/p_obj-263/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/filter" : 						{
-							"label" : "filter",
-							"isEnum" : 1,
-							"parsestring" : "\"None\" \"LP\" \"HP\" \"BP\" \"Notch\""
 						}
 ,
 						"p_obj-461/rnbo~[1]/fb" : 						{
@@ -1842,22 +1566,10 @@
 							"parsestring" : "\"0\" \"1\""
 						}
 ,
-						"p_obj-146/rnbo~[1]/filter" : 						{
-							"label" : "filter",
-							"isEnum" : 1,
-							"parsestring" : "\"None\" \"LP\" \"HP\" \"BP\" \"Notch\""
-						}
-,
 						"p_obj-146/rnbo~[1]/fb" : 						{
 							"label" : "fb",
 							"isEnum" : 1,
 							"parsestring" : "\"0\" \"1\""
-						}
-,
-						"p_obj-210/rnbo~[1]/filter" : 						{
-							"label" : "filter",
-							"isEnum" : 1,
-							"parsestring" : "\"None\" \"LP\" \"HP\" \"BP\" \"Notch\""
 						}
 ,
 						"p_obj-210/rnbo~[1]/fb" : 						{
@@ -3690,76 +3402,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "clap1.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
-				"patcherrelativepath" : "../media/clap",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clap2.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
-				"patcherrelativepath" : "../media/clap",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clap3.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
-				"patcherrelativepath" : "../media/clap",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clap4.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
-				"patcherrelativepath" : "../media/clap",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clap5.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
-				"patcherrelativepath" : "../media/clap",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "click.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/sousastep/SousaFX/media",
-				"patcherrelativepath" : "../../sousastep/SousaFX/media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "clickUp.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/sousastep/SousaFX/media",
-				"patcherrelativepath" : "../../sousastep/SousaFX/media",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cym1.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
-				"patcherrelativepath" : "../media/cym",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cym2.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
-				"patcherrelativepath" : "../media/cym",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cym3.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
-				"patcherrelativepath" : "../media/cym",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "gamepad_input.rnbopat",
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
 				"patcherrelativepath" : ".",
@@ -3767,101 +3409,10 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "kick1.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
-				"patcherrelativepath" : "../media/kick",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "kick2.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
-				"patcherrelativepath" : "../media/kick",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "kick3.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
-				"patcherrelativepath" : "../media/kick",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "kick4.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
-				"patcherrelativepath" : "../media/kick",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "kick5.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
-				"patcherrelativepath" : "../media/kick",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "snare1.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
-				"patcherrelativepath" : "../media/snare",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "snare2.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
-				"patcherrelativepath" : "../media/snare",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "snare3.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
-				"patcherrelativepath" : "../media/snare",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "snare4.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
-				"patcherrelativepath" : "../media/snare",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "snare5.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
-				"patcherrelativepath" : "../media/snare",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "sousa mic at35 0014 [2025-03-03 162026].aif",
 				"bootpath" : "~/Documents/Max 8/Projects/sousastep/SousaPlayback Project/Samples/Recorded",
 				"patcherrelativepath" : "../../sousastep/SousaPlayback Project/Samples/Recorded",
 				"type" : "AIFF",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tom1.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
-				"patcherrelativepath" : "../media/tom",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tom2.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
-				"patcherrelativepath" : "../media/tom",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tom3.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
-				"patcherrelativepath" : "../media/tom",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
