@@ -15,3 +15,9 @@ SousaFX-rnbo ports [SousaFX](https://sousastep.github.io/SousaFX-docs/index.html
 # :control_knobs: Hardware
 
 ![rainbow](./media/layout.webp)
+
+<a href="#scroll-scripts">![rainbow](./media/rainbow.png)</a>
+
+# :scroll: Scripts
+
+The python scripts for converting gamepad to osc, and osc to serial, [are available in the sousaFX-rpi-scripts repository](https://github.com/Sousastep/sousaFX-rpi-scripts).
