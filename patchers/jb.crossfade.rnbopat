@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 0,
-			"revision" : 7,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -15,6 +15,20 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"title" : "jb.crossfade",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 777.0, 1754.0, 106.0, 23.0 ],
+					"rnbo_classname" : "s~",
+					"rnbo_serial" : 3,
+					"rnbo_uniqueid" : "s~_obj-14",
+					"text" : "s~ amp_mod_floor"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -174,11 +188,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 700.0, 1900.0, 43.0, 23.0 ],
+					"patching_rect" : [ 700.0, 1964.0, 43.0, 23.0 ],
 					"rnbo_classname" : "out~",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"comment" : ""
+						"comment" : "",
+						"meta" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -275,7 +289,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 661.0, 1817.0, 30.0, 23.0 ],
+					"patching_rect" : [ 661.0, 1881.0, 30.0, 23.0 ],
 					"rnbo_classname" : "*~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "*~_obj-6",
@@ -290,7 +304,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 766.0, 1817.0, 30.0, 23.0 ],
+					"patching_rect" : [ 766.0, 1881.0, 30.0, 23.0 ],
 					"rnbo_classname" : "*~",
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "*~_obj-7",
@@ -305,11 +319,11 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 661.0, 1745.0, 35.0, 23.0 ],
+					"patching_rect" : [ 661.0, 1809.0, 35.0, 23.0 ],
 					"rnbo_classname" : "in~",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"comment" : ""
+						"comment" : "",
+						"meta" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -405,11 +419,11 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 766.0, 1745.0, 35.0, 23.0 ],
+					"patching_rect" : [ 766.0, 1809.0, 35.0, 23.0 ],
 					"rnbo_classname" : "in~",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"comment" : ""
+						"comment" : "",
+						"meta" : ""
 					}
 ,
 					"rnbo_serial" : 2,
@@ -619,6 +633,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -633,6 +648,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "list",
 								"defaultValue" : ""
@@ -646,6 +662,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "bang"
 							}
 
@@ -702,6 +719,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -716,6 +734,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "list",
 								"defaultValue" : ""
@@ -729,6 +748,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "bang"
 							}
 
@@ -776,8 +796,8 @@
 						"maximum" : "<none>",
 						"minimum" : "<none>",
 						"preset" : 0,
-						"initialFormat" : "float",
-						"order" : ""
+						"order" : "",
+						"initialFormat" : "float"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -799,8 +819,8 @@
 						"maximum" : "<none>",
 						"minimum" : "<none>",
 						"preset" : 0,
-						"initialFormat" : "float",
-						"order" : ""
+						"order" : "",
+						"initialFormat" : "float"
 					}
 ,
 					"rnbo_serial" : 2,
@@ -1608,8 +1628,8 @@
 						"maximum" : 100.0,
 						"minimum" : 0.0,
 						"preset" : 0,
-						"initialFormat" : "float",
-						"order" : ""
+						"order" : "",
+						"initialFormat" : "float"
 					}
 ,
 					"rnbo_serial" : 3,
@@ -1643,8 +1663,8 @@
 						"maximum" : 100.0,
 						"minimum" : 0.0,
 						"preset" : 0,
-						"initialFormat" : "float",
-						"order" : ""
+						"order" : "",
+						"initialFormat" : "float"
 					}
 ,
 					"rnbo_serial" : 4,
@@ -1664,8 +1684,8 @@
 							"fileversion" : 1,
 							"appversion" : 							{
 								"major" : 9,
-								"minor" : 0,
-								"revision" : 7,
+								"minor" : 1,
+								"revision" : 0,
 								"architecture" : "x64",
 								"modernui" : 1
 							}
@@ -1678,12 +1698,12 @@
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
 										"fontface" : 0,
+										"outlettype" : [ "" ],
 										"id" : "obj-7",
 										"fontsize" : 12.0,
 										"numinlets" : 1,
-										"numoutlets" : 1,
 										"fontname" : "<Monospaced>",
-										"outlettype" : [ "" ],
+										"numoutlets" : 1,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
 
@@ -1693,12 +1713,12 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"id" : "obj-1",
 										"fontsize" : 12.0,
 										"numinlets" : 0,
-										"numoutlets" : 1,
 										"fontname" : "Arial",
-										"outlettype" : [ "" ]
+										"numoutlets" : 1
 									}
 
 								}
@@ -1710,23 +1730,23 @@
 										"id" : "obj-4",
 										"fontsize" : 12.0,
 										"numinlets" : 1,
-										"numoutlets" : 0,
-										"fontname" : "Arial"
+										"fontname" : "Arial",
+										"numoutlets" : 0
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
@@ -1763,6 +1783,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number"
 							}
@@ -1775,6 +1796,7 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -1786,6 +1808,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -1799,6 +1822,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"doNotShowInMaxInspector" : 1
 							}
@@ -1812,6 +1836,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"doNotShowInMaxInspector" : 1
 							}
@@ -1826,6 +1851,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"doNotShowInMaxInspector" : 1
 							}
@@ -1841,6 +1867,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -1853,6 +1880,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "false"
 							}
@@ -2986,6 +3014,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "bang"
 							}
@@ -3000,6 +3029,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "list",
 								"defaultValue" : ""
@@ -3013,6 +3043,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "bang"
 							}
 
@@ -3129,7 +3160,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 432.0, 1817.0, 30.0, 23.0 ],
+					"patching_rect" : [ 432.0, 1881.0, 30.0, 23.0 ],
 					"rnbo_classname" : "*~",
 					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "*~_obj-518",
@@ -3144,7 +3175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 537.0, 1817.0, 30.0, 23.0 ],
+					"patching_rect" : [ 537.0, 1881.0, 30.0, 23.0 ],
 					"rnbo_classname" : "*~",
 					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "*~_obj-520",
@@ -3161,8 +3192,8 @@
 							"fileversion" : 1,
 							"appversion" : 							{
 								"major" : 9,
-								"minor" : 0,
-								"revision" : 7,
+								"minor" : 1,
+								"revision" : 0,
 								"architecture" : "x64",
 								"modernui" : 1
 							}
@@ -3175,12 +3206,12 @@
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
 										"fontface" : 0,
+										"outlettype" : [ "" ],
 										"id" : "obj-7",
 										"fontsize" : 12.0,
 										"numinlets" : 1,
-										"numoutlets" : 1,
 										"fontname" : "<Monospaced>",
-										"outlettype" : [ "" ],
+										"numoutlets" : 1,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
 
@@ -3190,12 +3221,12 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
+										"outlettype" : [ "" ],
 										"id" : "obj-1",
 										"fontsize" : 12.0,
 										"numinlets" : 0,
-										"numoutlets" : 1,
 										"fontname" : "Arial",
-										"outlettype" : [ "" ]
+										"numoutlets" : 1
 									}
 
 								}
@@ -3207,23 +3238,23 @@
 										"id" : "obj-4",
 										"fontsize" : 12.0,
 										"numinlets" : 1,
-										"numoutlets" : 0,
-										"fontname" : "Arial"
+										"fontname" : "Arial",
+										"numoutlets" : 0
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
@@ -3260,6 +3291,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number"
 							}
@@ -3272,6 +3304,7 @@
 								"attachable" : 1,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "bang"
 							}
 ,
@@ -3283,6 +3316,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "signal"
 							}
@@ -3296,6 +3330,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"doNotShowInMaxInspector" : 1
 							}
@@ -3309,6 +3344,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"doNotShowInMaxInspector" : 1
 							}
@@ -3323,6 +3359,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"doNotShowInMaxInspector" : 1
 							}
@@ -3338,6 +3375,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol"
 							}
 ,
@@ -3350,6 +3388,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "bool",
 								"defaultValue" : "false"
 							}
@@ -3421,11 +3460,11 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 432.0, 1745.0, 35.0, 23.0 ],
+					"patching_rect" : [ 432.0, 1809.0, 35.0, 23.0 ],
 					"rnbo_classname" : "in~",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"comment" : ""
+						"comment" : "",
+						"meta" : ""
 					}
 ,
 					"rnbo_serial" : 3,
@@ -3521,11 +3560,11 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 537.0, 1745.0, 35.0, 23.0 ],
+					"patching_rect" : [ 537.0, 1809.0, 35.0, 23.0 ],
 					"rnbo_classname" : "in~",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"comment" : ""
+						"comment" : "",
+						"meta" : ""
 					}
 ,
 					"rnbo_serial" : 4,
@@ -3620,11 +3659,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 1900.0, 43.0, 23.0 ],
+					"patching_rect" : [ 479.0, 1964.0, 43.0, 23.0 ],
 					"rnbo_classname" : "out~",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"comment" : ""
+						"comment" : "",
+						"meta" : ""
 					}
 ,
 					"rnbo_serial" : 2,
@@ -3828,8 +3867,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
+					"destination" : [ "obj-14", 0 ],
 					"order" : 1,
+					"source" : [ "obj-522", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"order" : 2,
 					"source" : [ "obj-522", 0 ]
 				}
 
