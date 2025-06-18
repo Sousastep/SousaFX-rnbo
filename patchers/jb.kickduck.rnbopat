@@ -10,13 +10,13 @@
 		}
 ,
 		"classnamespace" : "rnbo",
-		"rect" : [ 34.0, 87.0, 2031.0, 1319.0 ],
+		"rect" : [ 226.0, 87.0, 1570.0, 1319.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
 		"title" : "jb.kickduck",
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\r\n// this emulates max's function object with three, countem, three curved lines\r\nx = in1;\n\nfirstY = in2;\nfirstX = in3;\n\nmidY = in4;\nmidX = in5;\nfirstCurve = in6;\n\nendY = in7;\nendX = in8;\nsecondCurve = in9;\n\nfinalY = in10;\nfinalX = in11;\nthirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    tmpRange = midY - firstY;\n    tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        gx = (midX - x) / tmpDomain;\n        hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        gx = (x - firstX) / tmpDomain;\n        hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    tmpRange = endY - midY;\n    tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        gx = (endX - x) / tmpDomain;\n        hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        gx = (x - midX) / tmpDomain;\n        hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    tmpRange = finalY - endY;\n    tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        gx = (finalX - x) / tmpDomain;\n        hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        gx = (x - endX) / tmpDomain;\n        hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
+					"code" : "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
 					"fontsize" : 12.0,
@@ -28,13 +28,13 @@
 					"patching_rect" : [ 261.0, 751.0, 526.0, 296.0 ],
 					"rnbo_classname" : "codebox~",
 					"rnbo_extra_attributes" : 					{
-						"code" : "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\r\n// this emulates max's function object with three, countem, three curved lines\r\nx = in1;\n\nfirstY = in2;\nfirstX = in3;\n\nmidY = in4;\nmidX = in5;\nfirstCurve = in6;\n\nendY = in7;\nendX = in8;\nsecondCurve = in9;\n\nfinalY = in10;\nfinalX = in11;\nthirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    tmpRange = midY - firstY;\n    tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        gx = (midX - x) / tmpDomain;\n        hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        gx = (x - firstX) / tmpDomain;\n        hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    tmpRange = endY - midY;\n    tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        gx = (endX - x) / tmpDomain;\n        hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        gx = (x - midX) / tmpDomain;\n        hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    tmpRange = finalY - endY;\n    tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        gx = (finalX - x) / tmpDomain;\n        hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        gx = (x - endX) / tmpDomain;\n        hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        fp = hp / (1.0 - hp);\n        gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
-						"safemath" : 1,
+						"code" : "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
 						"expr" : "",
-						"nocache" : 0
+						"nocache" : 0,
+						"safemath" : 1
 					}
 ,
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "codebox~_obj-80",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -376,14 +376,13 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 307.090909090909008, 617.0, 412.0, 23.0 ],
-					"presentation_linecount" : 12,
 					"rnbo_classname" : "message",
 					"rnbo_extra_attributes" : 					{
 						"storeempty" : 0,
 						"text" : "1. 0. 0. 0. 351.851852 0. 0.556604 648.148148 0."
 					}
 ,
-					"rnbo_serial" : 8,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "message_obj-78",
 					"text" : "1 0 0 0 92.592593 -0.7 0.490566 263.888889 0.75 1 643.518519 -0.895"
 				}
@@ -398,7 +397,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 261.0, 545.0, 51.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "*~_obj-77",
 					"text" : "*~ 1000"
 				}
@@ -416,11 +415,11 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "scope~_obj-38"
 				}
 
@@ -437,11 +436,11 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "scope~_obj-37"
 				}
 
@@ -458,11 +457,11 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "scope~_obj-33"
 				}
 
@@ -481,7 +480,7 @@
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "list.reg_obj-32",
 					"text" : "list.reg"
 				}
@@ -497,11 +496,11 @@
 					"patching_rect" : [ 285.0, 417.0, 65.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
-					"rnbo_serial" : 8,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "pak_obj-30",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -666,7 +665,7 @@
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 261.0, 508.0, 68.0, 23.0 ],
 					"rnbo_classname" : "line~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "foo[1]",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -827,7 +826,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 261.0, 286.0, 41.0, 23.0 ],
 					"rnbo_classname" : "edge~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "edge~_obj-23",
 					"text" : "edge~"
 				}
@@ -1005,11 +1004,11 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "scope~_obj-43"
 				}
 
@@ -1026,11 +1025,11 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "scope~_obj-36"
 				}
 
@@ -1064,7 +1063,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 261.0, 1115.0, 75.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "*~_obj-208",
 					"text" : "*~ 3.141593"
 				}
@@ -1109,7 +1108,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 261.0, 1068.0, 40.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "*~_obj-185",
 					"text" : "*~ 0.5"
 				}
@@ -1169,7 +1168,7 @@
 						"hot" : 0
 					}
 ,
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "*_obj-369",
 					"text" : "* 1.25"
 				}
@@ -1804,9 +1803,9 @@
 										"maxclass" : "newobj",
 										"text" : "out 2",
 										"patching_rect" : [ 563.0, 304.0, 35.0, 22.0 ],
-										"id" : "obj-2",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-2"
 									}
 
 								}
@@ -1816,9 +1815,9 @@
 										"text" : "interpolate toward the new peak in n samples",
 										"linecount" : 2,
 										"patching_rect" : [ 287.0, 429.0, 134.0, 33.0 ],
-										"id" : "obj-3",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-3"
 									}
 
 								}
@@ -1827,10 +1826,10 @@
 										"maxclass" : "newobj",
 										"text" : "history",
 										"patching_rect" : [ 74.0, 216.0, 46.0, 22.0 ],
-										"id" : "obj-17",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 1,
+										"id" : "obj-17"
 									}
 
 								}
@@ -1839,9 +1838,9 @@
 										"maxclass" : "comment",
 										"text" : "Envelope Follower",
 										"patching_rect" : [ 121.5, 120.0, 109.0, 20.0 ],
-										"id" : "obj-40",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-40"
 									}
 
 								}
@@ -1851,9 +1850,9 @@
 										"text" : "Take the absolute value of the input; if it is greater than the previous peak, or if the count i is greater than or equal to n, then set the previous output as the starting point and use the input as the new peak, and ramp to the new peak in n samples.",
 										"linecount" : 11,
 										"patching_rect" : [ 51.0, 363.0, 141.0, 154.0 ],
-										"id" : "obj-31",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-31"
 									}
 
 								}
@@ -1862,9 +1861,9 @@
 										"maxclass" : "comment",
 										"text" : "The current sample count (i) as the output ramps to the new peak",
 										"patching_rect" : [ 266.0, 144.0, 358.0, 20.0 ],
-										"id" : "obj-26",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-26"
 									}
 
 								}
@@ -1873,9 +1872,9 @@
 										"maxclass" : "comment",
 										"text" : "The number of samples (n) in which to ramp to the new peak",
 										"patching_rect" : [ 266.0, 128.0, 333.0, 20.0 ],
-										"id" : "obj-22",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-22"
 									}
 
 								}
@@ -1884,9 +1883,9 @@
 										"maxclass" : "comment",
 										"text" : "The previous peak amplitude",
 										"patching_rect" : [ 266.0, 112.0, 165.0, 20.0 ],
-										"id" : "obj-19",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-19"
 									}
 
 								}
@@ -1895,9 +1894,9 @@
 										"maxclass" : "comment",
 										"text" : "The new peak amplitude",
 										"patching_rect" : [ 266.0, 96.0, 150.0, 20.0 ],
-										"id" : "obj-18",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-18"
 									}
 
 								}
@@ -1906,9 +1905,9 @@
 										"maxclass" : "comment",
 										"text" : "In effect, there are four variables in this algorithm:",
 										"patching_rect" : [ 266.0, 80.0, 272.0, 20.0 ],
-										"id" : "obj-9",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-9"
 									}
 
 								}
@@ -1917,9 +1916,9 @@
 										"maxclass" : "comment",
 										"text" : "current peak",
 										"patching_rect" : [ 112.0, 176.0, 77.0, 20.0 ],
-										"id" : "obj-39",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-39"
 									}
 
 								}
@@ -1928,10 +1927,10 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 250.0, 440.0, 35.0, 22.0 ],
-										"id" : "obj-37",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-37"
 									}
 
 								}
@@ -1940,10 +1939,10 @@
 										"maxclass" : "newobj",
 										"text" : "latch",
 										"patching_rect" : [ 281.5, 336.0, 36.0, 22.0 ],
-										"id" : "obj-12",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-12"
 									}
 
 								}
@@ -1952,10 +1951,10 @@
 										"maxclass" : "newobj",
 										"text" : "-",
 										"patching_rect" : [ 266.0, 376.0, 34.5, 22.0 ],
-										"id" : "obj-36",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-36"
 									}
 
 								}
@@ -1964,10 +1963,10 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 266.0, 408.0, 83.0, 22.0 ],
-										"id" : "obj-35",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-35"
 									}
 
 								}
@@ -1976,9 +1975,9 @@
 										"maxclass" : "comment",
 										"text" : "divided by n ",
 										"patching_rect" : [ 367.0, 376.0, 78.0, 20.0 ],
-										"id" : "obj-34",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-34"
 									}
 
 								}
@@ -1987,9 +1986,9 @@
 										"maxclass" : "comment",
 										"text" : "current value of the count i",
 										"patching_rect" : [ 360.0, 329.0, 150.0, 20.0 ],
-										"id" : "obj-32",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-32"
 									}
 
 								}
@@ -1998,10 +1997,10 @@
 										"maxclass" : "newobj",
 										"text" : "/",
 										"patching_rect" : [ 330.0, 376.0, 35.0, 22.0 ],
-										"id" : "obj-30",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-30"
 									}
 
 								}
@@ -2011,9 +2010,9 @@
 										"text" : "n number of samples of smoothing to get to new value",
 										"linecount" : 2,
 										"patching_rect" : [ 474.0, 232.0, 196.0, 33.0 ],
-										"id" : "obj-29",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-29"
 									}
 
 								}
@@ -2023,9 +2022,9 @@
 										"text" : "previous value of the count i",
 										"linecount" : 2,
 										"patching_rect" : [ 353.0, 181.0, 96.0, 33.0 ],
-										"id" : "obj-27",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-27"
 									}
 
 								}
@@ -2035,9 +2034,9 @@
 										"text" : "or we've already arrived at the old peak",
 										"linecount" : 2,
 										"patching_rect" : [ 95.0, 290.5, 144.0, 33.0 ],
-										"id" : "obj-25",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-25"
 									}
 
 								}
@@ -2046,9 +2045,9 @@
 										"maxclass" : "comment",
 										"text" : "if this sample is a new peak",
 										"patching_rect" : [ 95.0, 248.0, 162.0, 20.0 ],
-										"id" : "obj-23",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-23"
 									}
 
 								}
@@ -2058,9 +2057,9 @@
 										"text" : "peak value received in the last n samples",
 										"linecount" : 2,
 										"patching_rect" : [ 159.0, 328.0, 126.0, 33.0 ],
-										"id" : "obj-21",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-21"
 									}
 
 								}
@@ -2069,10 +2068,10 @@
 										"maxclass" : "newobj",
 										"text" : "||",
 										"patching_rect" : [ 58.0, 296.0, 35.0, 22.0 ],
-										"id" : "obj-16",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-16"
 									}
 
 								}
@@ -2081,10 +2080,10 @@
 										"maxclass" : "newobj",
 										"text" : "abs",
 										"patching_rect" : [ 58.0, 128.0, 30.0, 22.0 ],
-										"id" : "obj-15",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 1,
+										"id" : "obj-15"
 									}
 
 								}
@@ -2093,10 +2092,10 @@
 										"maxclass" : "newobj",
 										"text" : "+ 1",
 										"patching_rect" : [ 330.0, 328.0, 28.0, 22.0 ],
-										"id" : "obj-14",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 1,
+										"id" : "obj-14"
 									}
 
 								}
@@ -2105,10 +2104,10 @@
 										"maxclass" : "newobj",
 										"text" : ">=",
 										"patching_rect" : [ 378.0, 248.0, 83.0, 22.0 ],
-										"id" : "obj-13",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-13"
 									}
 
 								}
@@ -2117,10 +2116,10 @@
 										"maxclass" : "newobj",
 										"text" : "latch",
 										"patching_rect" : [ 74.0, 176.0, 36.0, 22.0 ],
-										"id" : "obj-11",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-11"
 									}
 
 								}
@@ -2129,10 +2128,10 @@
 										"maxclass" : "newobj",
 										"text" : "history",
 										"patching_rect" : [ 378.0, 216.0, 46.0, 22.0 ],
-										"id" : "obj-10",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 1,
+										"id" : "obj-10"
 									}
 
 								}
@@ -2141,10 +2140,10 @@
 										"maxclass" : "newobj",
 										"text" : "history",
 										"patching_rect" : [ 202.0, 480.0, 46.0, 22.0 ],
-										"id" : "obj-8",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 1
+										"numinlets" : 1,
+										"numoutlets" : 1,
+										"id" : "obj-8"
 									}
 
 								}
@@ -2153,10 +2152,10 @@
 										"maxclass" : "newobj",
 										"text" : ">",
 										"patching_rect" : [ 58.0, 248.0, 35.0, 22.0 ],
-										"id" : "obj-7",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 2
+										"numinlets" : 2,
+										"numoutlets" : 1,
+										"id" : "obj-7"
 									}
 
 								}
@@ -2165,10 +2164,10 @@
 										"maxclass" : "newobj",
 										"text" : "counter @init -1",
 										"patching_rect" : [ 330.0, 296.0, 115.0, 22.0 ],
-										"id" : "obj-20",
-										"numoutlets" : 3,
 										"outlettype" : [ "", "", "" ],
-										"numinlets" : 3
+										"numinlets" : 3,
+										"numoutlets" : 3,
+										"id" : "obj-20"
 									}
 
 								}
@@ -2177,10 +2176,10 @@
 										"maxclass" : "newobj",
 										"text" : "param rampsamples 1 @min 1",
 										"patching_rect" : [ 442.0, 193.0, 173.0, 22.0 ],
-										"id" : "obj-5",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"id" : "obj-5"
 									}
 
 								}
@@ -2189,10 +2188,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1 @comment signal",
 										"patching_rect" : [ 58.0, 96.0, 129.0, 22.0 ],
-										"id" : "obj-1",
-										"numoutlets" : 1,
 										"outlettype" : [ "" ],
-										"numinlets" : 0
+										"numinlets" : 0,
+										"numoutlets" : 1,
+										"id" : "obj-1"
 									}
 
 								}
@@ -2201,9 +2200,9 @@
 										"maxclass" : "newobj",
 										"text" : "out 1 @comment \"envelope of input signal\"",
 										"patching_rect" : [ 250.0, 480.0, 240.0, 22.0 ],
-										"id" : "obj-4",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-4"
 									}
 
 								}
@@ -2213,118 +2212,111 @@
 										"text" : "by Christopher Dobrian\nhttps://music.arts.uci.edu/dobrian/maxcookbook/envelope-follower-minimal-latency",
 										"linecount" : 3,
 										"patching_rect" : [ 12.0, 9.0, 271.0, 47.0 ],
-										"id" : "obj-6",
+										"numinlets" : 1,
 										"numoutlets" : 0,
-										"numinlets" : 1
+										"id" : "obj-6"
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-15", 0 ]
+										"source" : [ "obj-8", 0 ],
+										"destination" : [ "obj-12", 0 ],
+										"midpoints" : [ 211.5, 511.0, 194.75, 511.0, 194.75, 319.0, 291.0, 319.0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-10", 0 ],
-										"destination" : [ "obj-13", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-16", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-11", 0 ],
-										"destination" : [ "obj-17", 0 ],
-										"order" : 1
+										"source" : [ "obj-5", 0 ],
+										"destination" : [ "obj-30", 1 ],
+										"midpoints" : [ 451.5, 239.0, 467.0, 239.0, 467.0, 359.0, 355.5, 359.0 ],
+										"order" : 2
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-11", 0 ],
-										"destination" : [ "obj-36", 0 ],
-										"midpoints" : [ 83.5, 207.0, 275.5, 207.0 ],
+										"source" : [ "obj-5", 0 ],
+										"destination" : [ "obj-2", 0 ],
 										"order" : 0
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-12", 0 ],
-										"destination" : [ "obj-36", 1 ],
-										"order" : 0
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-12", 0 ],
-										"destination" : [ "obj-37", 0 ],
-										"midpoints" : [ 291.0, 367.0, 259.5, 367.0 ],
+										"source" : [ "obj-5", 0 ],
+										"destination" : [ "obj-13", 1 ],
 										"order" : 1
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-13", 0 ],
-										"destination" : [ "obj-16", 1 ],
-										"midpoints" : [ 387.5, 278.5, 83.5, 278.5 ],
+										"source" : [ "obj-37", 0 ],
+										"destination" : [ "obj-8", 0 ],
+										"midpoints" : [ 259.5, 470.5, 211.5, 470.5 ],
 										"order" : 1
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-13", 0 ],
-										"destination" : [ "obj-20", 1 ],
+										"source" : [ "obj-37", 0 ],
+										"destination" : [ "obj-4", 0 ],
 										"order" : 0
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-14", 0 ],
-										"destination" : [ "obj-10", 0 ],
-										"midpoints" : [ 339.5, 359.0, 323.0, 359.0, 323.0, 208.0, 387.5, 208.0 ],
-										"order" : 0
+										"source" : [ "obj-36", 0 ],
+										"destination" : [ "obj-35", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-14", 0 ],
-										"destination" : [ "obj-30", 0 ],
-										"order" : 1
+										"source" : [ "obj-35", 0 ],
+										"destination" : [ "obj-37", 1 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-15", 0 ],
-										"destination" : [ "obj-11", 0 ],
-										"midpoints" : [ 67.5, 159.0, 83.5, 159.0 ],
-										"order" : 0
+										"source" : [ "obj-30", 0 ],
+										"destination" : [ "obj-35", 1 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-15", 0 ],
-										"destination" : [ "obj-7", 0 ],
-										"order" : 1
+										"source" : [ "obj-20", 0 ],
+										"destination" : [ "obj-14", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-17", 0 ],
+										"destination" : [ "obj-7", 1 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
 										"source" : [ "obj-16", 0 ],
-										"destination" : [ "obj-11", 1 ],
-										"midpoints" : [ 67.5, 328.0, 50.0, 328.0, 50.0, 167.0, 100.5, 167.0 ],
-										"order" : 2
+										"destination" : [ "obj-20", 1 ],
+										"midpoints" : [ 67.5, 328.0, 299.0, 328.0, 299.0, 288.0, 387.5, 288.0 ],
+										"order" : 0
 									}
 
 								}
@@ -2340,101 +2332,108 @@
 , 								{
 									"patchline" : 									{
 										"source" : [ "obj-16", 0 ],
-										"destination" : [ "obj-20", 1 ],
-										"midpoints" : [ 67.5, 328.0, 299.0, 328.0, 299.0, 288.0, 387.5, 288.0 ],
-										"order" : 0
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-17", 0 ],
-										"destination" : [ "obj-7", 1 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-20", 0 ],
-										"destination" : [ "obj-14", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-30", 0 ],
-										"destination" : [ "obj-35", 1 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-35", 0 ],
-										"destination" : [ "obj-37", 1 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-36", 0 ],
-										"destination" : [ "obj-35", 0 ]
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-37", 0 ],
-										"destination" : [ "obj-4", 0 ],
-										"order" : 0
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-37", 0 ],
-										"destination" : [ "obj-8", 0 ],
-										"midpoints" : [ 259.5, 470.5, 211.5, 470.5 ],
-										"order" : 1
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-5", 0 ],
-										"destination" : [ "obj-13", 1 ],
-										"order" : 1
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-5", 0 ],
-										"destination" : [ "obj-2", 0 ],
-										"order" : 0
-									}
-
-								}
-, 								{
-									"patchline" : 									{
-										"source" : [ "obj-5", 0 ],
-										"destination" : [ "obj-30", 1 ],
-										"midpoints" : [ 451.5, 239.0, 467.0, 239.0, 467.0, 359.0, 355.5, 359.0 ],
+										"destination" : [ "obj-11", 1 ],
+										"midpoints" : [ 67.5, 328.0, 50.0, 328.0, 50.0, 167.0, 100.5, 167.0 ],
 										"order" : 2
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-16", 0 ]
+										"source" : [ "obj-15", 0 ],
+										"destination" : [ "obj-7", 0 ],
+										"order" : 1
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-8", 0 ],
-										"destination" : [ "obj-12", 0 ],
-										"midpoints" : [ 211.5, 511.0, 194.75, 511.0, 194.75, 319.0, 291.0, 319.0 ]
+										"source" : [ "obj-15", 0 ],
+										"destination" : [ "obj-11", 0 ],
+										"midpoints" : [ 67.5, 159.0, 83.5, 159.0 ],
+										"order" : 0
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-14", 0 ],
+										"destination" : [ "obj-30", 0 ],
+										"order" : 1
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-14", 0 ],
+										"destination" : [ "obj-10", 0 ],
+										"midpoints" : [ 339.5, 359.0, 323.0, 359.0, 323.0, 208.0, 387.5, 208.0 ],
+										"order" : 0
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-13", 0 ],
+										"destination" : [ "obj-20", 1 ],
+										"order" : 0
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-13", 0 ],
+										"destination" : [ "obj-16", 1 ],
+										"midpoints" : [ 387.5, 278.5, 83.5, 278.5 ],
+										"order" : 1
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-12", 0 ],
+										"destination" : [ "obj-37", 0 ],
+										"midpoints" : [ 291.0, 367.0, 259.5, 367.0 ],
+										"order" : 1
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-12", 0 ],
+										"destination" : [ "obj-36", 1 ],
+										"order" : 0
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-11", 0 ],
+										"destination" : [ "obj-36", 0 ],
+										"midpoints" : [ 83.5, 207.0, 275.5, 207.0 ],
+										"order" : 0
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-11", 0 ],
+										"destination" : [ "obj-17", 0 ],
+										"order" : 1
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-10", 0 ],
+										"destination" : [ "obj-13", 0 ]
+									}
+
+								}
+, 								{
+									"patchline" : 									{
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-15", 0 ]
 									}
 
 								}
@@ -2451,17 +2450,13 @@
 					"patching_rect" : [ 261.0, 1256.0, 163.0, 23.0 ],
 					"rnbo_classname" : "gen~",
 					"rnbo_extra_attributes" : 					{
-						"rampsamples" : 1.0,
-						"history_3" : 0.0,
-						"history_1" : 0.0,
 						"exposeparams" : 0,
-						"history_2" : 0.0,
-						"gencode" : "Param rampsamples(1, min=1);\nHistory history_1(0);\nHistory history_2(0);\nHistory history_3(0);\nout2 = rampsamples;\ngte_4 = history_2 >= rampsamples;\nabs_5 = abs(in1);\ngt_6 = abs_5 > history_1;\nor_7 = gt_6 || gte_4;\nlatch_8 = latch(abs_5, or_7);\nlatch_9 = latch(history_3, or_7);\nsub_10 = latch_8 - latch_9;\ncounter_11, counter_12, counter_13 = counter(1, gte_4 + or_7, 0, init=-1);\nadd_14 = counter_11 + 1;\ndiv_15 = add_14 / rampsamples;\nmul_16 = sub_10 * div_15;\nadd_17 = latch_9 + mul_16;\nout1 = add_17;\nhistory_1_next_18 = fixdenorm(latch_8);\nhistory_2_next_19 = fixdenorm(add_14);\nhistory_3_next_20 = fixdenorm(add_17);\nhistory_1 = history_1_next_18;\nhistory_3 = history_3_next_20;\nhistory_2 = history_2_next_19;",
+						"gencode" : "Param rampsamples(1, min=1);\nHistory history_1(0);\nHistory history_2(0);\nHistory history_3(0);\nout2 = rampsamples;\nabs_4 = abs(in1);\ngt_5 = abs_4 > history_1;\ngte_6 = history_2 >= rampsamples;\nor_7 = gt_5 || gte_6;\nlatch_8 = latch(abs_4, or_7);\nlatch_9 = latch(history_3, or_7);\nsub_10 = latch_8 - latch_9;\ncounter_11, counter_12, counter_13 = counter(1, or_7 + gte_6, 0, init=-1);\nadd_14 = counter_11 + 1;\ndiv_15 = add_14 / rampsamples;\nmul_16 = sub_10 * div_15;\nadd_17 = latch_9 + mul_16;\nout1 = add_17;\nhistory_1_next_18 = fixdenorm(latch_8);\nhistory_2_next_19 = fixdenorm(add_14);\nhistory_3_next_20 = fixdenorm(add_17);\nhistory_1 = history_1_next_18;\nhistory_3 = history_3_next_20;\nhistory_2 = history_2_next_19;",
 						"geninlets" : 1,
 						"genoutlets" : 2
 					}
 ,
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "envelopefollower",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -2762,7 +2757,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 261.0, 212.0, 73.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "slide~_obj-373",
 					"text" : "slide~ 0 960"
 				}
