@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 0,
-			"revision" : 4,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -15,6 +15,20 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"title" : "jb.diagonally",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1017.0, 909.0, 89.0, 23.0 ],
+					"rnbo_classname" : "s",
+					"rnbo_serial" : 11,
+					"rnbo_uniqueid" : "s_obj-1",
+					"text" : "s dpad_pressed"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "newobj",
@@ -293,8 +307,8 @@
 					"id" : "obj-43",
 					"maxclass" : "number",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 80.0, 1072.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
@@ -302,8 +316,8 @@
 						"maximum" : "<none>",
 						"minimum" : "<none>",
 						"initialFormat" : "integer",
-						"preset" : 0,
-						"order" : ""
+						"order" : "",
+						"preset" : 0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -399,6 +413,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "list"
 							}
@@ -409,13 +424,12 @@
 								"defaultarg" : 1,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in2" : 							{
@@ -424,13 +438,12 @@
 								"defaultarg" : 2,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in3" : 							{
@@ -439,13 +452,12 @@
 								"defaultarg" : 3,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in4" : 							{
@@ -454,13 +466,12 @@
 								"defaultarg" : 4,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"length" : 							{
@@ -472,6 +483,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "number"
 							}
 ,
@@ -484,6 +496,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -491,7 +504,7 @@
 ,
 						"inputs" : [ 							{
 								"name" : "in1",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 1",
 								"defaultarg" : 1,
 								"hot" : 1,
@@ -499,7 +512,7 @@
 							}
 , 							{
 								"name" : "in2",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 2",
 								"defaultarg" : 2,
 								"hot" : 1,
@@ -507,7 +520,7 @@
 							}
 , 							{
 								"name" : "in3",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 3",
 								"defaultarg" : 3,
 								"hot" : 1,
@@ -515,7 +528,7 @@
 							}
 , 							{
 								"name" : "in4",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 4",
 								"defaultarg" : 4,
 								"hot" : 1,
@@ -533,7 +546,7 @@
 						"aliasOf" : "pack",
 						"classname" : "pak",
 						"operator" : 0,
-						"versionId" : 2113152561,
+						"versionId" : 1331432417,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -682,6 +695,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "list"
 							}
@@ -692,13 +706,12 @@
 								"defaultarg" : 1,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in2" : 							{
@@ -707,13 +720,12 @@
 								"defaultarg" : 2,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in3" : 							{
@@ -722,13 +734,12 @@
 								"defaultarg" : 3,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in4" : 							{
@@ -737,13 +748,12 @@
 								"defaultarg" : 4,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"length" : 							{
@@ -755,6 +765,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "number"
 							}
 ,
@@ -767,6 +778,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -774,7 +786,7 @@
 ,
 						"inputs" : [ 							{
 								"name" : "in1",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 1",
 								"defaultarg" : 1,
 								"hot" : 1,
@@ -782,7 +794,7 @@
 							}
 , 							{
 								"name" : "in2",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 2",
 								"defaultarg" : 2,
 								"hot" : 1,
@@ -790,7 +802,7 @@
 							}
 , 							{
 								"name" : "in3",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 3",
 								"defaultarg" : 3,
 								"hot" : 1,
@@ -798,7 +810,7 @@
 							}
 , 							{
 								"name" : "in4",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 4",
 								"defaultarg" : 4,
 								"hot" : 1,
@@ -816,7 +828,7 @@
 						"aliasOf" : "pack",
 						"classname" : "pak",
 						"operator" : 0,
-						"versionId" : 2113152561,
+						"versionId" : 1331432417,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -889,6 +901,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "list"
 							}
@@ -899,13 +912,12 @@
 								"defaultarg" : 1,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in2" : 							{
@@ -914,13 +926,12 @@
 								"defaultarg" : 2,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in3" : 							{
@@ -929,13 +940,12 @@
 								"defaultarg" : 3,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"in4" : 							{
@@ -944,13 +954,12 @@
 								"defaultarg" : 4,
 								"isalias" : 0,
 								"aliases" : [  ],
-								"settable" : 1,
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
+								"type" : "number"
 							}
 ,
 							"length" : 							{
@@ -962,6 +971,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "number"
 							}
 ,
@@ -974,6 +984,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -981,7 +992,7 @@
 ,
 						"inputs" : [ 							{
 								"name" : "in1",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 1",
 								"defaultarg" : 1,
 								"hot" : 1,
@@ -989,7 +1000,7 @@
 							}
 , 							{
 								"name" : "in2",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 2",
 								"defaultarg" : 2,
 								"hot" : 1,
@@ -997,7 +1008,7 @@
 							}
 , 							{
 								"name" : "in3",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 3",
 								"defaultarg" : 3,
 								"hot" : 1,
@@ -1005,7 +1016,7 @@
 							}
 , 							{
 								"name" : "in4",
-								"type" : "number",
+								"type" : [ "number", "bang" ],
 								"digest" : "number to be list element 4",
 								"defaultarg" : 4,
 								"hot" : 1,
@@ -1023,7 +1034,7 @@
 						"aliasOf" : "pack",
 						"classname" : "pak",
 						"operator" : 0,
-						"versionId" : 2113152561,
+						"versionId" : 1331432417,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1127,6 +1138,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 890.0, 1268.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "t_obj-794",
 					"rnboinfo" : 					{
@@ -1141,6 +1156,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number"
 							}
@@ -1155,6 +1171,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -1180,7 +1197,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : -1133428571,
+						"versionId" : 1624904035,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1194,7 +1211,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 873.0, 1006.0, 97.0, 23.0 ],
+					"patching_rect" : [ 899.5, 1016.0, 97.0, 23.0 ],
 					"rnbo_classname" : "s",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "s_obj-154",
@@ -1455,6 +1472,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1480,7 +1498,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 2121358407,
+						"versionId" : 1197449671,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1512,6 +1530,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1537,7 +1556,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 2121358407,
+						"versionId" : 1197449671,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1569,6 +1588,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1594,7 +1614,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 2121358407,
+						"versionId" : 1197449671,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -1626,6 +1646,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "symbol",
 								"mandatory" : 1
 							}
@@ -1651,7 +1672,7 @@
 						"aliasOf" : "set",
 						"classname" : "set",
 						"operator" : 0,
-						"versionId" : 2121358407,
+						"versionId" : 1197449671,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -2915,6 +2936,10 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 845.0, 1224.0, 33.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "t_obj-368",
 					"rnboinfo" : 					{
@@ -2929,6 +2954,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "bang"
 							}
@@ -2942,6 +2968,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number"
 							}
@@ -2956,6 +2983,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -2988,7 +3016,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : -1133428571,
+						"versionId" : 1624904035,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3005,6 +3033,10 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 469.0, 1388.0, 33.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "t_obj-369",
 					"rnboinfo" : 					{
@@ -3019,6 +3051,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number"
 							}
@@ -3032,6 +3065,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"outlet" : 1,
 								"type" : "number"
 							}
@@ -3046,6 +3080,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "list"
 							}
 
@@ -3078,7 +3113,7 @@
 						"aliasOf" : "trigger",
 						"classname" : "t",
 						"operator" : 0,
-						"versionId" : -1133428571,
+						"versionId" : 1624904035,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3110,6 +3145,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3125,6 +3161,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -3157,7 +3194,7 @@
 						"aliasOf" : "gate",
 						"classname" : "gate",
 						"operator" : 0,
-						"versionId" : 1220277655,
+						"versionId" : -1253073831,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3189,6 +3226,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3204,6 +3242,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -3236,7 +3275,7 @@
 						"aliasOf" : "gate",
 						"classname" : "gate",
 						"operator" : 0,
-						"versionId" : 1220277655,
+						"versionId" : -1253073831,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3268,6 +3307,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3283,6 +3323,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -3315,7 +3356,7 @@
 						"aliasOf" : "gate",
 						"classname" : "gate",
 						"operator" : 0,
-						"versionId" : 1220277655,
+						"versionId" : -1253073831,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -3347,6 +3388,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"inlet" : 1,
 								"type" : "number",
 								"defaultValue" : "0"
@@ -3362,6 +3404,7 @@
 								"attachable" : 0,
 								"isparam" : 0,
 								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "number",
 								"defaultValue" : "1"
 							}
@@ -3394,7 +3437,7 @@
 						"aliasOf" : "gate",
 						"classname" : "gate",
 						"operator" : 0,
-						"versionId" : 1220277655,
+						"versionId" : -1253073831,
 						"changesPatcherIO" : 0
 					}
 ,
@@ -4036,7 +4079,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"order" : 0,
+					"source" : [ "obj-361", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-345", 0 ],
+					"order" : 1,
 					"source" : [ "obj-361", 0 ]
 				}
 
@@ -4457,8 +4509,7 @@
 				}
 
 			}
- ],
-		"originid" : "pat-238"
+ ]
 	}
 
 }
