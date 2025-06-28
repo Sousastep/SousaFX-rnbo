@@ -42,8 +42,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.0, 818.0, 133.0, 22.0 ],
-					"text" : "prepend BTN_SELECT"
+					"patching_rect" : [ 328.0, 818.0, 159.0, 22.0 ],
+					"text" : "prepend gpin/BTN_SELECT"
 				}
 
 			}
@@ -54,8 +54,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 250.0, 779.0, 125.0, 22.0 ],
-					"text" : "prepend BTN_START"
+					"patching_rect" : [ 250.0, 779.0, 151.0, 22.0 ],
+					"text" : "prepend gpin/BTN_START"
 				}
 
 			}
@@ -66,8 +66,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 784.0, 445.0, 103.0, 22.0 ],
-					"text" : "prepend BTN_TR"
+					"patching_rect" : [ 784.0, 445.0, 129.0, 22.0 ],
+					"text" : "prepend gpin/BTN_TR"
 				}
 
 			}
@@ -78,8 +78,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 708.0, 475.0, 101.0, 22.0 ],
-					"text" : "prepend BTN_TL"
+					"patching_rect" : [ 708.0, 475.0, 127.0, 22.0 ],
+					"text" : "prepend gpin/BTN_TL"
 				}
 
 			}
@@ -90,8 +90,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 634.0, 523.0, 111.0, 22.0 ],
-					"text" : "prepend ABS_GAS"
+					"patching_rect" : [ 634.0, 523.0, 138.0, 22.0 ],
+					"text" : "prepend gpin/ABS_GAS"
 				}
 
 			}
@@ -102,8 +102,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 557.0, 475.0, 127.0, 22.0 ],
-					"text" : "prepend ABS_BRAKE"
+					"patching_rect" : [ 557.0, 475.0, 153.0, 22.0 ],
+					"text" : "prepend gpin/ABS_BRAKE"
 				}
 
 			}
@@ -114,8 +114,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 482.0, 621.0, 102.0, 22.0 ],
-					"text" : "prepend ABS_RZ"
+					"patching_rect" : [ 482.0, 621.0, 129.0, 22.0 ],
+					"text" : "prepend gpin/ABS_RZ"
 				}
 
 			}
@@ -126,8 +126,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 406.0, 517.0, 93.0, 22.0 ],
-					"text" : "prepend ABS_Z"
+					"patching_rect" : [ 406.0, 517.0, 120.0, 22.0 ],
+					"text" : "prepend gpin/ABS_Z"
 				}
 
 			}
@@ -138,8 +138,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 331.0, 621.0, 94.0, 22.0 ],
-					"text" : "prepend ABS_Y"
+					"patching_rect" : [ 331.0, 621.0, 121.0, 22.0 ],
+					"text" : "prepend gpin/ABS_Y"
 				}
 
 			}
@@ -150,8 +150,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 522.0, 94.0, 22.0 ],
-					"text" : "prepend ABS_X"
+					"patching_rect" : [ 255.0, 522.0, 121.0, 22.0 ],
+					"text" : "prepend gpin/ABS_X"
 				}
 
 			}
@@ -162,8 +162,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 885.0, 248.0, 124.0, 22.0 ],
-					"text" : "prepend ABS_HAT0X"
+					"patching_rect" : [ 885.0, 248.0, 150.0, 22.0 ],
+					"text" : "prepend gpin/ABS_HAT0X"
 				}
 
 			}
@@ -174,8 +174,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 713.0, 248.0, 124.0, 22.0 ],
-					"text" : "prepend ABS_HAT0Y"
+					"patching_rect" : [ 713.0, 248.0, 150.0, 22.0 ],
+					"text" : "prepend gpin/ABS_HAT0Y"
 				}
 
 			}
@@ -186,8 +186,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 562.0, 233.0, 129.0, 22.0 ],
-					"text" : "prepend BTN_NORTH"
+					"patching_rect" : [ 562.0, 240.0, 155.0, 22.0 ],
+					"text" : "prepend gpin/BTN_NORTH"
 				}
 
 			}
@@ -198,8 +198,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.0, 203.0, 121.0, 22.0 ],
-					"text" : "prepend BTN_WEST"
+					"patching_rect" : [ 476.0, 203.0, 147.0, 22.0 ],
+					"text" : "prepend gpin/BTN_WEST"
 				}
 
 			}
@@ -210,8 +210,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 173.0, 118.0, 22.0 ],
-					"text" : "prepend BTN_EAST"
+					"patching_rect" : [ 390.0, 173.0, 144.0, 22.0 ],
+					"text" : "prepend gpin/BTN_EAST"
 				}
 
 			}
@@ -222,8 +222,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 304.0, 143.0, 129.0, 22.0 ],
-					"text" : "prepend BTN_SOUTH"
+					"patching_rect" : [ 304.0, 143.0, 155.0, 22.0 ],
+					"text" : "prepend gpin/BTN_SOUTH"
 				}
 
 			}

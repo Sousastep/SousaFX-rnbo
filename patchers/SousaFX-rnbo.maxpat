@@ -10,11 +10,3726 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1348.0, 1138.0 ],
+		"rect" : [ 277.0, 129.0, 2153.0, 1117.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"enabletransparentbgwithtitlebar" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"autosave" : 1,
+					"id" : "obj-151",
+					"inletInfo" : 					{
+						"IOInfo" : [  ]
+					}
+,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outletInfo" : 					{
+						"IOInfo" : [  ]
+					}
+,
+					"outlettype" : [ "list" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 9,
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "rnbo",
+						"rect" : [ 595.0, 280.0, 1223.0, 1009.0 ],
+						"default_fontname" : "Lato",
+						"gridsize" : [ 15.0, 15.0 ],
+						"title" : "untitled",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-97",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 485.0, 1978.0, 100.0, 23.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-96",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 485.0, 1928.0, 42.0, 23.0 ],
+									"rnbo_classname" : "delta~",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "delta~_obj-96",
+									"text" : "delta~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-94",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 269.0, 2211.5, 29.5, 23.0 ],
+									"rnbo_classname" : "*~",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "*~_obj-94",
+									"text" : "*~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-79",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 414.0, 1754.0, 90.0, 23.0 ],
+									"rnbo_classname" : "loadmess",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "loadmess_obj-79",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"input" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Bang to trigger message.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"inlet" : 1,
+												"type" : "bang"
+											}
+,
+											"message" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "list",
+												"defaultValue" : ""
+											}
+,
+											"startupbang" : 											{
+												"attrOrProp" : 1,
+												"digest" : "startupbang",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bang"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : "bang",
+												"digest" : "Bang to trigger message.",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "message",
+												"type" : "list",
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "loadmess",
+										"aliasOf" : "loadmess",
+										"classname" : "loadmess",
+										"operator" : 0,
+										"versionId" : -361086158,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "loadmess 4800"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-80",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 468.0, 1791.0, 150.0, 21.0 ],
+									"text" : "glissando time in samples"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-30",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 414.0, 1790.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "number_obj-30"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-81",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 332.0, 1890.0, 101.0, 23.0 ],
+									"rnbo_classname" : "slide~",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "slide~_obj-81",
+									"text" : "slide~ 1000 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-82",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 269.0, 1853.0, 101.0, 23.0 ],
+									"rnbo_classname" : "slide~",
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "slide~_obj-82",
+									"text" : "slide~ 1000 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-83",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 211.0, 1819.0, 101.0, 23.0 ],
+									"rnbo_classname" : "slide~",
+									"rnbo_serial" : 3,
+									"rnbo_uniqueid" : "slide~_obj-83",
+									"text" : "slide~ 1000 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-84",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 242.0, 1464.0, 70.0, 23.0 ],
+									"rnbo_classname" : "loadmess",
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "loadmess_obj-84",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"input" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Bang to trigger message.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"inlet" : 1,
+												"type" : "bang"
+											}
+,
+											"message" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "list",
+												"defaultValue" : ""
+											}
+,
+											"startupbang" : 											{
+												"attrOrProp" : 1,
+												"digest" : "startupbang",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bang"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : "bang",
+												"digest" : "Bang to trigger message.",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "message",
+												"type" : "list",
+												"digest" : "Message when patcher is loaded.",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "loadmess",
+										"aliasOf" : "loadmess",
+										"classname" : "loadmess",
+										"operator" : 0,
+										"versionId" : -361086158,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "loadmess 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-85",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 294.0, 1509.0, 72.0, 21.0 ],
+									"text" : "detune amt"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 242.0, 1547.0, 30.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "t_obj-21",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 2 (bang).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "bang"
+											}
+,
+											"out2" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 2,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "bang",
+												"digest" : "Output order 2 (bang).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+, 											{
+												"name" : "out2",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 2,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t b f"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-86",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 242.0, 1508.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "number_obj-86"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-87",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 211.0, 1933.0, 43.0, 23.0 ],
+									"rnbo_classname" : "cycle~",
+									"rnbo_extra_attributes" : 									{
+										"buffername" : "RNBODefaultSinus",
+										"index" : "freq",
+										"interp" : "linear"
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "cycle~_obj-87",
+									"text" : "cycle~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 211.0, 1781.0, 31.0, 23.0 ],
+									"rnbo_classname" : "sig~",
+									"rnbo_extra_attributes" : 									{
+										"unit" : "ms"
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "sig~_obj-18",
+									"text" : "sig~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 211.0, 1743.0, 29.5, 23.0 ],
+									"rnbo_classname" : "-",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "-_obj-16",
+									"text" : "- 3."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-88",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 269.0, 1978.0, 40.0, 23.0 ],
+									"rnbo_classname" : "*~",
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "*~_obj-88",
+									"text" : "*~ 0.2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-89",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 269.0, 1933.0, 43.0, 23.0 ],
+									"rnbo_classname" : "cycle~",
+									"rnbo_extra_attributes" : 									{
+										"buffername" : "RNBODefaultSinus",
+										"index" : "freq",
+										"interp" : "linear"
+									}
+,
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "cycle~_obj-89",
+									"text" : "cycle~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-90",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 269.0, 1781.0, 31.0, 23.0 ],
+									"rnbo_classname" : "sig~",
+									"rnbo_extra_attributes" : 									{
+										"unit" : "ms"
+									}
+,
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "sig~_obj-90",
+									"text" : "sig~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-91",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 269.0, 1743.0, 29.5, 23.0 ],
+									"rnbo_classname" : "+",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "+_obj-91",
+									"text" : "+ 3."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-92",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 332.0, 1933.0, 43.0, 23.0 ],
+									"rnbo_classname" : "cycle~",
+									"rnbo_extra_attributes" : 									{
+										"buffername" : "RNBODefaultSinus",
+										"index" : "freq",
+										"interp" : "linear"
+									}
+,
+									"rnbo_serial" : 3,
+									"rnbo_uniqueid" : "cycle~_obj-92",
+									"text" : "cycle~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 332.0, 1781.0, 31.0, 23.0 ],
+									"rnbo_classname" : "sig~",
+									"rnbo_extra_attributes" : 									{
+										"unit" : "ms"
+									}
+,
+									"rnbo_serial" : 3,
+									"rnbo_uniqueid" : "sig~_obj-3",
+									"text" : "sig~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-74",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 298.0, 572.0, 27.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "t_obj-74",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t -1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-75",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 246.0, 584.0, 27.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 3,
+									"rnbo_uniqueid" : "t_obj-75",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t -2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-76",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 194.0, 596.0, 27.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 4,
+									"rnbo_uniqueid" : "t_obj-76",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t -3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-77",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 141.0, 608.0, 27.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 5,
+									"rnbo_uniqueid" : "t_obj-77",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t -4"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-78",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 89.0, 620.0, 27.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 6,
+									"rnbo_uniqueid" : "t_obj-78",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t -5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-70",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 578.0, 613.0, 23.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 7,
+									"rnbo_uniqueid" : "t_obj-70",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t 5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-69",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 525.0, 603.0, 23.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 8,
+									"rnbo_uniqueid" : "t_obj-69",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t 4"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-68",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 472.0, 593.0, 23.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 9,
+									"rnbo_uniqueid" : "t_obj-68",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-67",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 419.0, 582.0, 23.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 10,
+									"rnbo_uniqueid" : "t_obj-67",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-66",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 366.0, 572.0, 24.0, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 11,
+									"rnbo_uniqueid" : "t_obj-66",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-65",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 525.0, 819.0, 172.0, 21.0 ],
+									"text" : "bp.scales from BEAP Quantize"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-63",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 557.0, 1316.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 3,
+									"rnbo_uniqueid" : "number_obj-63"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-59",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 559.0, 1396.0, 48.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 4,
+									"rnbo_uniqueid" : "number_obj-59"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-57",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 557.0, 1354.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 5,
+									"rnbo_uniqueid" : "number_obj-57"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-55",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 257.0, 1296.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 6,
+									"rnbo_uniqueid" : "number_obj-55"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-54",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 302.0, 1244.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 7,
+									"rnbo_uniqueid" : "number_obj-54"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-52",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 394.0, 1244.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 8,
+									"rnbo_uniqueid" : "number_obj-52"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-49",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 421.0, 1142.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 9,
+									"rnbo_uniqueid" : "number_obj-49"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-47",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 257.0, 980.0, 32.0, 23.0 ],
+									"rnbo_classname" : "+",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "+_obj-47",
+									"text" : "+ 60"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-44",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 323.0, 980.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 10,
+									"rnbo_uniqueid" : "number_obj-44"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-40",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 323.0, 930.0, 29.5, 23.0 ],
+									"rnbo_classname" : "+",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 3,
+									"rnbo_uniqueid" : "+_obj-40",
+									"text" : "+ 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-35",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 257.0, 1077.0, 29.5, 23.0 ],
+									"rnbo_classname" : "t",
+									"rnbo_serial" : 12,
+									"rnbo_uniqueid" : "t_obj-35",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 2 (number).",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"out2" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 2,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "number"
+											}
+,
+											"triggers" : 											{
+												"attrOrProp" : 2,
+												"digest" : "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "input",
+												"type" : [ "bang", "number", "list" ],
+												"digest" : "input to distribute",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "number",
+												"digest" : "Output order 2 (number).",
+												"defaultarg" : 1,
+												"docked" : 0
+											}
+, 											{
+												"name" : "out2",
+												"type" : "number",
+												"digest" : "Output order 1 (number).",
+												"defaultarg" : 2,
+												"docked" : 0
+											}
+ ],
+										"helpname" : "trigger",
+										"aliasOf" : "trigger",
+										"classname" : "t",
+										"operator" : 0,
+										"versionId" : 1624904035,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "t i i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-34",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 257.0, 1244.0, 31.0, 23.0 ],
+									"rnbo_classname" : "*",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "*_obj-34",
+									"text" : "* 12"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-33",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 485.0, 1324.0, 29.5, 23.0 ],
+									"rnbo_classname" : "+",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 4,
+									"rnbo_uniqueid" : "+_obj-33",
+									"text" : "+"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 427.0, 1203.0, 75.0, 21.0 ],
+									"text" : "scale degree"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 289.0, 1203.0, 46.0, 21.0 ],
+									"text" : "octave"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 257.0, 1202.0, 29.5, 23.0 ],
+									"rnbo_classname" : "/",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "/_obj-28",
+									"text" : "/"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 485.0, 1363.0, 33.0, 23.0 ],
+									"rnbo_classname" : "mtof",
+									"rnbo_extra_attributes" : 									{
+										"filter" : 1.0,
+										"scalename" : ""
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "mtof_obj-26",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"midivalue" : 											{
+												"attrOrProp" : 1,
+												"digest" : "MIDI Note Number",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"inlet" : 1,
+												"type" : "list"
+											}
+,
+											"tuning" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Set base frequency",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"inlet" : 1,
+												"type" : "number"
+											}
+,
+											"scale" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Scala scl formatted list",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+,
+											"map" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Scala kbm formatted list",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "list"
+											}
+,
+											"ref" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Reference note for which the 'base' frequency is given",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "number",
+												"defaultValue" : "69"
+											}
+,
+											"mid" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Middle note where the first scale degree is mapped",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "number",
+												"defaultValue" : "60"
+											}
+,
+											"base" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Frequency to tune 'ref' note to",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "number",
+												"defaultValue" : "440"
+											}
+,
+											"out" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Frequency (Hz)",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "list"
+											}
+,
+											"scalename" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Scale Name",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "symbol"
+											}
+,
+											"filter" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Filter unmapped values",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "number",
+												"defaultValue" : "1"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "midivalue",
+												"type" : "list",
+												"digest" : "MIDI Note Number",
+												"hot" : 1,
+												"docked" : 0
+											}
+, 											{
+												"name" : "tuning",
+												"type" : "number",
+												"digest" : "Set base frequency",
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out",
+												"type" : "list",
+												"digest" : "Frequency (Hz)",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "mtof",
+										"aliasOf" : "mtof",
+										"classname" : "mtof",
+										"operator" : 0,
+										"versionId" : 950896033,
+										"changesPatcherIO" : 0
+									}
+,
+									"text" : "mtof"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 549.0, 1277.0, 77.0, 21.0 ],
+									"text" : "scale degree"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 309.0, 1037.0, 81.0, 21.0 ],
+									"text" : "scale degree"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-17",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 257.0, 1036.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 11,
+									"rnbo_uniqueid" : "number_obj-17"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 394.0, 1202.0, 29.5, 23.0 ],
+									"rnbo_classname" : "%",
+									"rnbo_extra_attributes" : 									{
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "%_obj-15",
+									"text" : "%"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 485.0, 1276.0, 62.0, 23.0 ],
+									"rnbo_classname" : "list.lookup",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "list.lookup_obj-14",
+									"text" : "list.lookup"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 404.0, 1108.0, 42.0, 23.0 ],
+									"rnbo_classname" : "list.len",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "list.len_obj-9",
+									"text" : "list.len"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 257.0, 893.0, 29.5, 23.0 ],
+									"rnbo_classname" : "int",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "int_obj-7",
+									"text" : "0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 18.714927048260382,
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 677.0, 1181.0, 179.0, 29.0 ],
+									"text" : "C3, middle C = 60"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 0,
+									"id" : "obj-19",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 466.0, 799.0, 50.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "integer",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 12,
+									"rnbo_uniqueid" : "number_obj-19"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 35.786519408680135,
+									"id" : "obj-12",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 612.0, 1094.0, 293.0, 51.0 ],
+									"rnbo_classname" : "message",
+									"rnbo_extra_attributes" : 									{
+										"storeempty" : 0,
+										"text" : ""
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "message_obj-12",
+									"text" : "0 2 3 5 7 9 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"code" : "function getMode(modeIndex) {\n    if (modeIndex == 0) return [ 0, 2, 4, 5, 7, 9, 11 ];    // ionian\n    if (modeIndex == 1) return [ 0, 2, 3, 5, 7, 9, 10 ];    // dorian\n    if (modeIndex == 2) return [ 0, 1, 3, 5, 7, 8, 10 ];    // phrygian\n    if (modeIndex == 3) return [ 0, 2, 4, 6, 7, 9, 11 ];    // lydian\n    if (modeIndex == 4) return [ 0, 2, 4, 5, 7, 9, 10 ];    // mixolydian\n    if (modeIndex == 5) return [ 0, 2, 3, 5, 7, 8, 10 ];    // aeolian\n    if (modeIndex == 6) return [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];    // chromatic\n    if (modeIndex == 7) return [ 0, 2, 3, 5, 7, 8, 11 ];    // harmonic-minor\n    if (modeIndex == 8) return [ 0, 2, 3, 5, 7, 9, 11 ];    // melodic-minor\n    if (modeIndex == 9) return [ 0, 2, 4, 7, 9 ];    // major-pentatonic\n    if (modeIndex == 10) return [ 0, 2, 3, 7, 8 ];    // minor-pentatonic\n    if (modeIndex == 11) return [ 0, 2, 4, 6, 8, 9, 11 ];    // lydian-augmented\n    if (modeIndex == 12) return [ 0, 2, 4, 5, 7, 8, 9, 11 ];    // major-bebop\n    if (modeIndex == 13) return [ 0, 2, 3, 5, 6, 8, 10 ];    // half-diminished\n    if (modeIndex == 14) return [ 0, 2, 4, 6, 7, 9, 10 ];    // lydian-dominant\n    if (modeIndex == 15) return [ 0, 2, 4, 5, 7, 8, 10 ];    // mixolydian-b6\n    if (modeIndex == 16) return [ 0, 1, 3, 4, 6, 8, 10 ];    // altered\n    if (modeIndex == 17) return [ 0, 1, 3, 5, 7, 9, 10 ];    // dorian-b2\n    if (modeIndex == 18) return [ 0, 3, 5, 6, 7, 10 ];    // blues\n    if (modeIndex == 19) return [ 0, 1, 4, 5, 7, 8, 10 ];    // 5th-mode-of-harmonic-minor\n    if (modeIndex == 20) return [ 0, 1, 4, 5, 7, 9, 10 ];    // 5th-mode-of-harmonic-major\n    if (modeIndex == 21) return [ 0, 2, 4, 5, 7, 9, 10, 11 ];    // dominant-bebop\n    if (modeIndex == 22) return [ 0, 1, 3, 4, 6, 7, 9, 10 ];    // dominant-diminished\n    if (modeIndex == 23) return [ 0, 2, 4, 6, 8, 10 ];    // whole-tone\n    if (modeIndex == 24) return [ 0, 4, 7 ];    // major-triad\n    if (modeIndex == 25) return [ 0, 3, 7 ];    // minor-triad\n    if (modeIndex == 26) return [ 0, 4, 8 ];    // augmented-triad\n    if (modeIndex == 27) return [ 0, 3, 6 ];    // diminished-triad\n    if (modeIndex == 28) return [ 0, 4, 7, 11 ];    // major-major-seventh\n    if (modeIndex == 29) return [ 0, 4, 7, 10 ];    // dominant-seventh\n    if (modeIndex == 30) return [ 0, 3, 7, 10 ];    // minor-seventh\n    if (modeIndex == 31) return [ 0, 3, 6, 10 ];    // half-diminished-seventh\n    if (modeIndex == 32) return [ 0, 3, 6, 9 ];    // fully-diminished-seventh\n    if (modeIndex == 33) return [ 1, 5, 8 ];    // neopolitan-sixth\n    if (modeIndex == 34) return [ 0, 6, 8, 11 ];    // french-augmented-sixth\n    if (modeIndex == 35) return [ 0, 4, 8 ];    // +\n    if (modeIndex == 36) return [ 0, 4, 7, 10, 14, 17 ];    // 11\n    if (modeIndex == 37) return [ 0, 4, 7, 10, 14, 17, 21 ];    // 13\n    if (modeIndex == 38) return [ 0, 2, 4, 7 ];    // 2\n    if (modeIndex == 39) return [ 0, 7 ];    // 5\n    if (modeIndex == 40) return [ 0, 4, 7, 9 ];    // 6\n    if (modeIndex == 41) return [ 0, 2, 4, 7, 9 ];    // 6/9\n    if (modeIndex == 42) return [ 0, 4, 7, 9, 14 ];    // 6add9\n    if (modeIndex == 43) return [  ];    // 6sus4\n    if (modeIndex == 44) return [ 0, 4, 8, 10 ];    // 7maj5\n    if (modeIndex == 45) return [ 0, 5, 7, 10 ];    // 7sus\n    if (modeIndex == 46) return [ 0, 5, 7, 10 ];    // 7sus4\n    if (modeIndex == 47) return [ 0, 4, 7, 10, 14 ];    // 9\n    if (modeIndex == 48) return [ 0, 5, 7, 10, 14 ];    // 9sus4\n    if (modeIndex == 49) return [ 0, 2, 4, 7 ];    // add2\n    if (modeIndex == 50) return [ 0, 4, 7, 14 ];    // add9\n    if (modeIndex == 51) return [ 0, 4, 8 ];    // aug\n    if (modeIndex == 52) return [ 0, 3, 6 ];    // dim\n    if (modeIndex == 53) return [ 0, 3, 6, 9 ];    // dim7\n    if (modeIndex == 54) return [ 0, 4, 10, 14, 21 ];    // dom13\n    if (modeIndex == 55) return [ 0, 4, 10 ];    // dom7\n    if (modeIndex == 56) return [ 0, 4, 10, 14 ];    // dom7(9)\n    if (modeIndex == 57) return [ 0, 4, 10, 18 ];    // dom7#11\n    if (modeIndex == 58) return [ 0, 4, 6, 10 ];    // dom7#5\n    if (modeIndex == 59) return [ 0, 4, 8, 10, 13 ];    // dom7#5#9\n    if (modeIndex == 60) return [ 0, 4, 10, 15 ];    // dom7#9\n    if (modeIndex == 61) return [ 0, 4, 6, 10 ];    // dom7b5\n    if (modeIndex == 62) return [ 0, 3, 4, 6, 10 ];    // dom7b5#9\n    if (modeIndex == 63) return [ 0, 4, 6, 10, 13 ];    // dom7b5b9\n    if (modeIndex == 64) return [ 0, 4, 10, 13, 20 ];    // dom7b9b13\n    if (modeIndex == 65) return [ 0, 2, 4, 10 ];    // dom9\n    if (modeIndex == 66) return [ 0, 3, 7, 9 ];    // m6\n    if (modeIndex == 67) return [ 0, 3, 7, 10, 14 ];    // m9\n    if (modeIndex == 68) return [ 0, 4, 7 ];    // maj\n    if (modeIndex == 69) return [ 0, 4, 7, 9 ];    // maj6\n    if (modeIndex == 70) return [ 0, 4, 7, 11 ];    // maj7\n    if (modeIndex == 71) return [ 0, 2, 4, 11 ];    // maj7(9)\n    if (modeIndex == 72) return [ 0, 2, 4, 11 ];    // maj7(9 13)\n    if (modeIndex == 73) return [ 0, 2, 4, 7, 11 ];    // maj9\n    if (modeIndex == 74) return [ 0, 4, 7, 10, 14 ];    // M9\n    if (modeIndex == 75) return [ 0, 4, 7, 10, 14, 17 ];    // M11\n    if (modeIndex == 76) return [ 0, 4, 7, 10, 14, 17, 21 ];    // M13\n    if (modeIndex == 77) return [ 0, 3, 7 ];    // min\n    if (modeIndex == 78) return [ 0, 2, 3, 10 ];    // min9\n    if (modeIndex == 79) return [ 0, 3, 5, 10 ];    // min11\n    if (modeIndex == 80) return [  ];    // min13\n    if (modeIndex == 81) return [ 0, 3, 7, 9 ];    // min6\n    if (modeIndex == 82) return [ 0, 3, 10 ];    // min7\n    if (modeIndex == 83) return [ 0, 3, 6, 10 ];    // min7b5\n    if (modeIndex == 84) return [ 0, 3, 6, 10 ];    // m7b5\n    if (modeIndex == 85) return [ 0, 5, 7 ];    // sus\n    if (modeIndex == 86) return [ 0, 2, 7 ];    // sus2\n    if (modeIndex == 87) return [ 0, 5, 7 ];    // sus4\r\n\treturn [0, 2, 4, 5, 7, 9, 11];  // ionian\n};\r\n\r\n// call the function and pass in1\r\nlet x = getMode(in1);\r\n\r\n// listout1 allows lists to be output\r\n// be aware that ints will be cast to double\r\nlistout1 = x;",
+									"fontface" : 0,
+									"fontname" : "<Monospaced>",
+									"fontsize" : 12.0,
+									"id" : "obj-8",
+									"maxclass" : "codebox",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 466.0, 845.0, 672.0, 201.0 ],
+									"rnbo_classname" : "codebox",
+									"rnbo_extra_attributes" : 									{
+										"code" : "function getMode(modeIndex) {\n    if (modeIndex == 0) return [ 0, 2, 4, 5, 7, 9, 11 ];    // ionian\n    if (modeIndex == 1) return [ 0, 2, 3, 5, 7, 9, 10 ];    // dorian\n    if (modeIndex == 2) return [ 0, 1, 3, 5, 7, 8, 10 ];    // phrygian\n    if (modeIndex == 3) return [ 0, 2, 4, 6, 7, 9, 11 ];    // lydian\n    if (modeIndex == 4) return [ 0, 2, 4, 5, 7, 9, 10 ];    // mixolydian\n    if (modeIndex == 5) return [ 0, 2, 3, 5, 7, 8, 10 ];    // aeolian\n    if (modeIndex == 6) return [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];    // chromatic\n    if (modeIndex == 7) return [ 0, 2, 3, 5, 7, 8, 11 ];    // harmonic-minor\n    if (modeIndex == 8) return [ 0, 2, 3, 5, 7, 9, 11 ];    // melodic-minor\n    if (modeIndex == 9) return [ 0, 2, 4, 7, 9 ];    // major-pentatonic\n    if (modeIndex == 10) return [ 0, 2, 3, 7, 8 ];    // minor-pentatonic\n    if (modeIndex == 11) return [ 0, 2, 4, 6, 8, 9, 11 ];    // lydian-augmented\n    if (modeIndex == 12) return [ 0, 2, 4, 5, 7, 8, 9, 11 ];    // major-bebop\n    if (modeIndex == 13) return [ 0, 2, 3, 5, 6, 8, 10 ];    // half-diminished\n    if (modeIndex == 14) return [ 0, 2, 4, 6, 7, 9, 10 ];    // lydian-dominant\n    if (modeIndex == 15) return [ 0, 2, 4, 5, 7, 8, 10 ];    // mixolydian-b6\n    if (modeIndex == 16) return [ 0, 1, 3, 4, 6, 8, 10 ];    // altered\n    if (modeIndex == 17) return [ 0, 1, 3, 5, 7, 9, 10 ];    // dorian-b2\n    if (modeIndex == 18) return [ 0, 3, 5, 6, 7, 10 ];    // blues\n    if (modeIndex == 19) return [ 0, 1, 4, 5, 7, 8, 10 ];    // 5th-mode-of-harmonic-minor\n    if (modeIndex == 20) return [ 0, 1, 4, 5, 7, 9, 10 ];    // 5th-mode-of-harmonic-major\n    if (modeIndex == 21) return [ 0, 2, 4, 5, 7, 9, 10, 11 ];    // dominant-bebop\n    if (modeIndex == 22) return [ 0, 1, 3, 4, 6, 7, 9, 10 ];    // dominant-diminished\n    if (modeIndex == 23) return [ 0, 2, 4, 6, 8, 10 ];    // whole-tone\n    if (modeIndex == 24) return [ 0, 4, 7 ];    // major-triad\n    if (modeIndex == 25) return [ 0, 3, 7 ];    // minor-triad\n    if (modeIndex == 26) return [ 0, 4, 8 ];    // augmented-triad\n    if (modeIndex == 27) return [ 0, 3, 6 ];    // diminished-triad\n    if (modeIndex == 28) return [ 0, 4, 7, 11 ];    // major-major-seventh\n    if (modeIndex == 29) return [ 0, 4, 7, 10 ];    // dominant-seventh\n    if (modeIndex == 30) return [ 0, 3, 7, 10 ];    // minor-seventh\n    if (modeIndex == 31) return [ 0, 3, 6, 10 ];    // half-diminished-seventh\n    if (modeIndex == 32) return [ 0, 3, 6, 9 ];    // fully-diminished-seventh\n    if (modeIndex == 33) return [ 1, 5, 8 ];    // neopolitan-sixth\n    if (modeIndex == 34) return [ 0, 6, 8, 11 ];    // french-augmented-sixth\n    if (modeIndex == 35) return [ 0, 4, 8 ];    // +\n    if (modeIndex == 36) return [ 0, 4, 7, 10, 14, 17 ];    // 11\n    if (modeIndex == 37) return [ 0, 4, 7, 10, 14, 17, 21 ];    // 13\n    if (modeIndex == 38) return [ 0, 2, 4, 7 ];    // 2\n    if (modeIndex == 39) return [ 0, 7 ];    // 5\n    if (modeIndex == 40) return [ 0, 4, 7, 9 ];    // 6\n    if (modeIndex == 41) return [ 0, 2, 4, 7, 9 ];    // 6/9\n    if (modeIndex == 42) return [ 0, 4, 7, 9, 14 ];    // 6add9\n    if (modeIndex == 43) return [  ];    // 6sus4\n    if (modeIndex == 44) return [ 0, 4, 8, 10 ];    // 7maj5\n    if (modeIndex == 45) return [ 0, 5, 7, 10 ];    // 7sus\n    if (modeIndex == 46) return [ 0, 5, 7, 10 ];    // 7sus4\n    if (modeIndex == 47) return [ 0, 4, 7, 10, 14 ];    // 9\n    if (modeIndex == 48) return [ 0, 5, 7, 10, 14 ];    // 9sus4\n    if (modeIndex == 49) return [ 0, 2, 4, 7 ];    // add2\n    if (modeIndex == 50) return [ 0, 4, 7, 14 ];    // add9\n    if (modeIndex == 51) return [ 0, 4, 8 ];    // aug\n    if (modeIndex == 52) return [ 0, 3, 6 ];    // dim\n    if (modeIndex == 53) return [ 0, 3, 6, 9 ];    // dim7\n    if (modeIndex == 54) return [ 0, 4, 10, 14, 21 ];    // dom13\n    if (modeIndex == 55) return [ 0, 4, 10 ];    // dom7\n    if (modeIndex == 56) return [ 0, 4, 10, 14 ];    // dom7(9)\n    if (modeIndex == 57) return [ 0, 4, 10, 18 ];    // dom7#11\n    if (modeIndex == 58) return [ 0, 4, 6, 10 ];    // dom7#5\n    if (modeIndex == 59) return [ 0, 4, 8, 10, 13 ];    // dom7#5#9\n    if (modeIndex == 60) return [ 0, 4, 10, 15 ];    // dom7#9\n    if (modeIndex == 61) return [ 0, 4, 6, 10 ];    // dom7b5\n    if (modeIndex == 62) return [ 0, 3, 4, 6, 10 ];    // dom7b5#9\n    if (modeIndex == 63) return [ 0, 4, 6, 10, 13 ];    // dom7b5b9\n    if (modeIndex == 64) return [ 0, 4, 10, 13, 20 ];    // dom7b9b13\n    if (modeIndex == 65) return [ 0, 2, 4, 10 ];    // dom9\n    if (modeIndex == 66) return [ 0, 3, 7, 9 ];    // m6\n    if (modeIndex == 67) return [ 0, 3, 7, 10, 14 ];    // m9\n    if (modeIndex == 68) return [ 0, 4, 7 ];    // maj\n    if (modeIndex == 69) return [ 0, 4, 7, 9 ];    // maj6\n    if (modeIndex == 70) return [ 0, 4, 7, 11 ];    // maj7\n    if (modeIndex == 71) return [ 0, 2, 4, 11 ];    // maj7(9)\n    if (modeIndex == 72) return [ 0, 2, 4, 11 ];    // maj7(9 13)\n    if (modeIndex == 73) return [ 0, 2, 4, 7, 11 ];    // maj9\n    if (modeIndex == 74) return [ 0, 4, 7, 10, 14 ];    // M9\n    if (modeIndex == 75) return [ 0, 4, 7, 10, 14, 17 ];    // M11\n    if (modeIndex == 76) return [ 0, 4, 7, 10, 14, 17, 21 ];    // M13\n    if (modeIndex == 77) return [ 0, 3, 7 ];    // min\n    if (modeIndex == 78) return [ 0, 2, 3, 10 ];    // min9\n    if (modeIndex == 79) return [ 0, 3, 5, 10 ];    // min11\n    if (modeIndex == 80) return [  ];    // min13\n    if (modeIndex == 81) return [ 0, 3, 7, 9 ];    // min6\n    if (modeIndex == 82) return [ 0, 3, 10 ];    // min7\n    if (modeIndex == 83) return [ 0, 3, 6, 10 ];    // min7b5\n    if (modeIndex == 84) return [ 0, 3, 6, 10 ];    // m7b5\n    if (modeIndex == 85) return [ 0, 5, 7 ];    // sus\n    if (modeIndex == 86) return [ 0, 2, 7 ];    // sus2\n    if (modeIndex == 87) return [ 0, 5, 7 ];    // sus4\r\n\treturn [0, 2, 4, 5, 7, 9, 11];  // ionian\n};\r\n\r\n// call the function and pass in1\r\nlet x = getMode(in1);\r\n\r\n// listout1 allows lists to be output\r\n// be aware that ints will be cast to double\r\nlistout1 = x;",
+										"nocache" : 0,
+										"safemath" : 1,
+										"hot" : 0
+									}
+,
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "codebox_obj-8",
+									"rnboinfo" : 									{
+										"needsInstanceInfo" : 1,
+										"argnames" : 										{
+											"reset" : 											{
+												"attrOrProp" : 1,
+												"digest" : "Reset all state and params to initial values",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 1,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bang"
+											}
+,
+											"in1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "in1",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"inlet" : 1,
+												"type" : "number"
+											}
+,
+											"out1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "out1",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 0,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"outlet" : 1,
+												"type" : "list"
+											}
+,
+											"expr" : 											{
+												"attrOrProp" : 2,
+												"digest" : "expr",
+												"defaultarg" : 1,
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "symbol",
+												"doNotShowInMaxInspector" : 1
+											}
+,
+											"hot" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Trigger computation on all inlets.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bool",
+												"defaultValue" : "false"
+											}
+,
+											"safemath" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Use safe math expressions (e.g.: division by 0 will not crash).",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bool",
+												"defaultValue" : "true"
+											}
+,
+											"nocache" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Do not use parsing cache. This is only useful with very very big code sizes. Code generation will then take a looooong time.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bool",
+												"defaultValue" : "false"
+											}
+
+										}
+,
+										"inputs" : [ 											{
+												"name" : "in1",
+												"type" : "number",
+												"digest" : "in1",
+												"hot" : 1,
+												"docked" : 0
+											}
+ ],
+										"outputs" : [ 											{
+												"name" : "out1",
+												"type" : "list",
+												"digest" : "out1",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "codebox",
+										"aliasOf" : "expr",
+										"classname" : "codebox",
+										"operator" : 0,
+										"versionId" : 835263063,
+										"changesPatcherIO" : 0
+									}
+
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 2,
+									"id" : "obj-62",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 881.0, 1942.0, 84.0, 40.0 ],
+									"text" : "Release (ms)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 2,
+									"id" : "obj-60",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 785.0, 1928.0, 81.25, 54.0 ],
+									"text" : "Sustain level \n(0. and 1. )"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 2,
+									"id" : "obj-56",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 703.0, 1938.0, 69.0, 54.0 ],
+									"text" : "Decay (ms )"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 2,
+									"id" : "obj-50",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 609.0, 1938.0, 73.0, 40.0 ],
+									"text" : "Attack (ms)"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"fontsize" : 12.0,
+									"id" : "obj-46",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 896.0, 2115.0, 107.0, 50.0 ],
+									"text" : "Bangs after envelope is finished"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-45",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 896.0, 2089.0, 24.0, 24.0 ],
+									"rnbo_classname" : "button",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "button_obj-45"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"id" : "obj-27",
+									"maxclass" : "flonum",
+									"maximum" : 1.0,
+									"minimum" : 0.0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 806.0, 1987.0, 54.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : 0.0,
+										"maximum" : 1.0,
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 13,
+									"rnbo_uniqueid" : "flonum",
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_initial" : [ 0.8 ],
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_longname" : "flonum",
+											"parameter_mmax" : 1.0,
+											"parameter_modmode" : 0,
+											"parameter_shortname" : "flonum",
+											"parameter_type" : 0
+										}
+
+									}
+,
+									"varname" : "flonum"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"id" : "obj-24",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 896.0, 1988.0, 54.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 14,
+									"rnbo_uniqueid" : "number[3]",
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_initial" : [ 1000 ],
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_longname" : "number[4]",
+											"parameter_modmode" : 0,
+											"parameter_shortname" : "number[2]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"varname" : "number[3]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"id" : "obj-23",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 715.0, 1983.0, 54.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 15,
+									"rnbo_uniqueid" : "number[2]",
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_initial" : [ 100 ],
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_longname" : "number[2]",
+											"parameter_modmode" : 0,
+											"parameter_shortname" : "number[2]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"varname" : "number[2]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"id" : "obj-22",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 625.0, 1983.0, 54.0, 23.0 ],
+									"rnbo_classname" : "number",
+									"rnbo_extra_attributes" : 									{
+										"minimum" : "<none>",
+										"maximum" : "<none>",
+										"order" : "",
+										"initialFormat" : "float",
+										"preset" : 0
+									}
+,
+									"rnbo_serial" : 16,
+									"rnbo_uniqueid" : "number[1]",
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_initial" : [ 10 ],
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_longname" : "number[3]",
+											"parameter_modmode" : 0,
+											"parameter_shortname" : "number[2]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"varname" : "number[1]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Lato",
+									"fontsize" : 12.0,
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "" ],
+									"patching_rect" : [ 534.0, 2049.0, 381.0, 23.0 ],
+									"rnbo_classname" : "adsr~",
+									"rnbo_serial" : 1,
+									"rnbo_uniqueid" : "adsr~_obj-5",
+									"text" : "adsr~ 10 100 0.8 1000"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 0 ],
+									"order" : 1,
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-63", 0 ],
+									"order" : 0,
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"order" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 0 ],
+									"order" : 1,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-83", 0 ],
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 1 ],
+									"order" : 1,
+									"source" : [ "obj-21", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"order" : 1,
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-91", 1 ],
+									"order" : 0,
+									"source" : [ "obj-21", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-91", 0 ],
+									"order" : 0,
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 1 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 2 ],
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 4 ],
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"order" : 3,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"order" : 1,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"order" : 0,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-91", 0 ],
+									"order" : 2,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 3 ],
+									"source" : [ "obj-27", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"order" : 1,
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"order" : 0,
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 2 ],
+									"order" : 0,
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 1 ],
+									"order" : 1,
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-82", 2 ],
+									"order" : 2,
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-82", 1 ],
+									"order" : 3,
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-83", 2 ],
+									"order" : 4,
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-83", 1 ],
+									"order" : 5,
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"order" : 1,
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-57", 0 ],
+									"order" : 0,
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 1 ],
+									"order" : 0,
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-55", 0 ],
+									"order" : 1,
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-35", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"order" : 0,
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 1,
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-47", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-45", 0 ],
+									"source" : [ "obj-5", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-94", 1 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-67", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-68", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-69", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 1 ],
+									"order" : 0,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-47", 0 ],
+									"order" : 1,
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-70", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-74", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-75", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-76", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-77", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-78", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"source" : [ "obj-79", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 1 ],
+									"order" : 0,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 1 ],
+									"midpoints" : [ 475.5, 1081.0, 537.5, 1081.0 ],
+									"order" : 1,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"order" : 2,
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-92", 0 ],
+									"source" : [ "obj-81", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-89", 0 ],
+									"source" : [ "obj-82", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-87", 0 ],
+									"source" : [ "obj-83", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-86", 0 ],
+									"source" : [ "obj-84", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-86", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-88", 0 ],
+									"source" : [ "obj-87", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-94", 0 ],
+									"source" : [ "obj-88", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-88", 0 ],
+									"source" : [ "obj-89", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 1 ],
+									"order" : 1,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 1 ],
+									"order" : 2,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-49", 0 ],
+									"order" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-82", 0 ],
+									"source" : [ "obj-90", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-90", 0 ],
+									"source" : [ "obj-91", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-88", 0 ],
+									"source" : [ "obj-92", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 2777.0, 903.0, 40.0, 22.0 ],
+					"rnboattrcache" : 					{
+
+					}
+,
+					"rnboversion" : "1.4.0",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "rnbo~",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "rnbo~",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"saved_object_attributes" : 					{
+						"optimization" : "O1",
+						"parameter_enable" : 1,
+						"uuid" : "40f74c1b-5187-11f0-8c1b-a2f417e70586"
+					}
+,
+					"snapshot" : 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "snapshotlist",
+						"origin" : "rnbo~",
+						"type" : "list",
+						"subtype" : "Undefined",
+						"embed" : 1,
+						"snapshot" : 						{
+							"__presetid" : "40f74c1b-5187-11f0-8c1b-a2f417e70586"
+						}
+,
+						"snapshotlist" : 						{
+							"current_snapshot" : 0,
+							"entries" : [ 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "untitled",
+									"origin" : "40f74c1b-5187-11f0-8c1b-a2f417e70586",
+									"type" : "rnbo",
+									"subtype" : "",
+									"embed" : 1,
+									"snapshot" : 									{
+										"__presetid" : "40f74c1b-5187-11f0-8c1b-a2f417e70586"
+									}
+,
+									"fileref" : 									{
+										"name" : "untitled",
+										"filename" : "untitled_20250626.maxsnap",
+										"filepath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
+										"filepos" : -1,
+										"snapshotfileid" : "cd2b7c6688f14704d71b3b610cfacf1f"
+									}
+
+								}
+ ]
+						}
+
+					}
+,
+					"text" : "rnbo~",
+					"varname" : "rnbo~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-88",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2389.5, 596.0, 34.0, 22.0 ],
+					"text" : "*~ 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-89",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2680.5, 536.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 2680.5, 451.0, 119.0, 22.0 ],
+					"text" : "qmetro 16 @active 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 10,
+					"outlettype" : [ "int", "int", "int", "int", "int", "int", "int", "float", "float", "list" ],
+					"patching_rect" : [ 2680.5, 490.0, 113.5, 22.0 ],
+					"text" : "mousestate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-93",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2567.5, 247.0, 50.0, 22.0 ],
+					"text" : "57"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-94",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 2955.5, 587.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-96",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2955.5, 617.0, 189.0, 22.0 ],
+					"text" : "600 100 0.5 1000 0 1 0 0 100 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 13.0,
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2680.5, 579.0, 33.0, 23.0 ],
+					"text" : "sig~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attack_time" : 600.0,
+					"decay_time" : 100.0,
+					"id" : "obj-98",
+					"maxclass" : "live.adsrui",
+					"numinlets" : 10,
+					"numoutlets" : 10,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 2710.5, 651.0, 298.348033250607671, 100.666667222976685 ],
+					"release_time" : 1000.0,
+					"sustain" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"format" : 6,
+					"id" : "obj-99",
+					"maxclass" : "flonum",
+					"maximum" : 1.0,
+					"minimum" : 0.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 2772.5, 588.0, 50.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0.5 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_longname" : "flonum[1]",
+							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "flonum",
+							"parameter_type" : 0
+						}
+
+					}
+,
+					"varname" : "flonum"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-100",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 2803.5, 617.0, 50.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 1000 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_longname" : "number[6]",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "number[2]",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"varname" : "number[3]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-104",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 2741.5, 559.0, 50.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 100 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_longname" : "number[7]",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "number[2]",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"varname" : "number[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-105",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 2710.5, 531.0, 50.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 600 ],
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_longname" : "number[8]",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "number[2]",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"varname" : "number[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-106",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2764.5, 532.0, 73.0, 21.0 ],
+					"text" : "attack (ms)",
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-107",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2794.5, 560.0, 73.0, 21.0 ],
+					"text" : "decay (ms)",
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-108",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2825.5, 589.0, 78.0, 21.0 ],
+					"text" : "sustain gain",
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-109",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2856.5, 618.0, 81.0, 21.0 ],
+					"text" : "release (ms)",
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 13.0,
+					"id" : "obj-110",
+					"maxclass" : "newobj",
+					"numinlets" : 11,
+					"numoutlets" : 3,
+					"outlettype" : [ "signal", "signal", "" ],
+					"patching_rect" : [ 2680.5, 763.0, 328.808350928680795, 23.0 ],
+					"text" : "live.adsr~ 600. 100. 0.5 1000."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2375.5, 703.0, 84.0, 22.0 ],
+					"text" : "loadmess -23."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-114",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2655.5, 353.0, 90.0, 22.0 ],
+					"text" : "loadmess 4800"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-116",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2709.5, 390.0, 150.0, 20.0 ],
+					"text" : "glissando time in samples"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-117",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2655.5, 389.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-119",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2394.5, 453.0, 100.0, 22.0 ],
+					"text" : "slide~ 1000 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-120",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2331.5, 450.0, 100.0, 22.0 ],
+					"text" : "slide~ 1000 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-122",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2273.5, 444.0, 100.0, 22.0 ],
+					"text" : "slide~ 1000 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-123",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2430.5, 243.0, 70.0, 22.0 ],
+					"text" : "loadmess 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-124",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2311.5, 220.0, 150.0, 20.0 ],
+					"text" : "detune amt"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-125",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "float" ],
+					"patching_rect" : [ 2430.5, 326.0, 72.0, 22.0 ],
+					"text" : "t b f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-136",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2430.5, 283.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-138",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2278.5, 490.0, 43.0, 22.0 ],
+					"text" : "cycle~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-139",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2278.5, 413.0, 31.0, 22.0 ],
+					"text" : "sig~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-140",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 2278.5, 381.0, 29.5, 22.0 ],
+					"text" : "- 3."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-141",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2366.5, 938.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-142",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 2375.5, 761.0, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-143",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2333.5, 553.0, 40.0, 22.0 ],
+					"text" : "*~ 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-144",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2333.5, 490.0, 43.0, 22.0 ],
+					"text" : "cycle~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-145",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2333.5, 413.0, 31.0, 22.0 ],
+					"text" : "sig~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-146",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 2333.5, 381.0, 29.5, 22.0 ],
+					"text" : "+ 3."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-147",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2393.5, 490.0, 43.0, 22.0 ],
+					"text" : "cycle~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-148",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 2393.5, 413.0, 31.0, 22.0 ],
+					"text" : "sig~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-149",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2333.5, 251.0, 45.0, 22.0 ],
+					"text" : "mtof 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-150",
+					"maxclass" : "kslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2333.5, 158.0, 336.0, 53.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -629,7 +4344,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1135.0, 531.0, 94.000002801418304, 22.0 ],
-					"restore" : [ -11.622047244094473 ],
+					"restore" : [ -22.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2143,188 +5858,14 @@
 					"outlettype" : [ "signal", "signal", "list" ],
 					"patching_rect" : [ 457.0, 470.0, 483.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"p_obj-173/framesPerSecond" : 						{
-							"label" : "framesPerSecond",
+						"gp_pitchshifterwrap_l/p_obj-34/mid" : 						{
+							"label" : "mid",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"BTN_SOUTH" : 						{
-							"label" : "BTN_SOUTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_Z" : 						{
-							"label" : "ABS_Z",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/kick_volume" : 						{
-							"label" : "kick_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_BRAKE" : 						{
-							"label" : "ABS_BRAKE",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_pitchshifterwrap_l/p_obj-34/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-55/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_EAST" : 						{
-							"label" : "BTN_EAST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_pitchshifterwrap_r/p_obj-244/window" : 						{
-							"label" : "window",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/staircase_enable" : 						{
+						"p_obj-212/p_obj-48/staircase_enable" : 						{
 							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_X" : 						{
-							"label" : "ABS_X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_HAT0Y" : 						{
-							"label" : "ABS_HAT0Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TL" : 						{
-							"label" : "BTN_TL",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/volume" : 						{
-							"label" : "volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2335,92 +5876,8 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-146/rnbo~[1]/send" : 						{
-							"label" : "send",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-55/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_START" : 						{
-							"label" : "BTN_START",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"compmonowrap/p_obj-239/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"compmonowrap/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/send" : 						{
-							"label" : "send",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_pitchshifterwrap_r/p_obj-244/transp" : 						{
-							"label" : "transp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_pitchshifterwrap_l/p_obj-34/mid" : 						{
-							"label" : "mid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_NORTH" : 						{
-							"label" : "BTN_NORTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_pitchshifterwrap_l/p_obj-34/lowcut" : 						{
-							"label" : "lowcut",
+						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2431,38 +5888,38 @@
 							"parsestring" : ""
 						}
 ,
-						"gp_pitchshifterwrap_r/p_obj-244/spread" : 						{
-							"label" : "spread",
+						"p_obj-263/p_obj-239/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"compmonowrap/p_obj-239/sustain" : 						{
-							"label" : "sustain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_offset" : 						{
+						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
 							"label" : "stutter_offset",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/stutter_output_volume" : 						{
+						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
 							"label" : "stutter_output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gp_pitchshifterwrap_l/p_obj-34/highcut" : 						{
-							"label" : "highcut",
+						"p_obj-234/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"ABS_Y" : 						{
-							"label" : "ABS_Y",
+						"synth_vol" : 						{
+							"label" : "synth_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2473,44 +5930,32 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"gpin/BTN_WEST" : 						{
+							"label" : "BTN_WEST",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
+						"gp_pitchshifterwrap_l/p_obj-34/lowcut" : 						{
+							"label" : "lowcut",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-55/p_obj-239/comp" : 						{
-							"label" : "comp",
+						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gp_pitchshifterwrap_l/p_obj-34/treble" : 						{
-							"label" : "treble",
+						"jb_metronome/metronome_volume" : 						{
+							"label" : "metronome_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gp_pitchshifterwrap_l/p_obj-34/midfreq" : 						{
-							"label" : "midfreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/send" : 						{
-							"label" : "send",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
+						"gpin/ABS_BRAKE" : 						{
+							"label" : "ABS_BRAKE",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2527,230 +5972,14 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-210/rnbo~[1]/time" : 						{
-							"label" : "time",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main_output_gain" : 						{
-							"label" : "main_output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"compmonowrap/p_obj-239/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_pitchshifterwrap_l/p_obj-34/bass" : 						{
-							"label" : "bass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_WEST" : 						{
-							"label" : "BTN_WEST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_GAS" : 						{
-							"label" : "ABS_GAS",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/drum_volume" : 						{
-							"label" : "drum_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-461/rnbo~[1]/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"p_obj-55/p_obj-239/lookahead" : 						{
 							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_micpre/jb_envelope/Env Sens" : 						{
-							"label" : "Env Sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_metronome/metronome_volume" : 						{
-							"label" : "metronome_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_RZ" : 						{
-							"label" : "ABS_RZ",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"ABS_HAT0X" : 						{
+						"gpin/ABS_HAT0X" : 						{
 							"label" : "ABS_HAT0X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"compmonowrap/p_obj-239/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-263/p_obj-239/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_SELECT" : 						{
-							"label" : "BTN_SELECT",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"compmonowrap/p_obj-239/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-146/rnbo~[1]/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_pitchshifterwrap_l/p_obj-34/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"BTN_TR" : 						{
-							"label" : "BTN_TR",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_metronome/alert_volume" : 						{
-							"label" : "alert_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_noisegatewrap/noise gate thresh" : 						{
-							"label" : "noise gate thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2761,8 +5990,188 @@
 							"parsestring" : ""
 						}
 ,
-						"gp_pitchshifterwrap_l/p_obj-34/drive" : 						{
-							"label" : "drive",
+						"gp_pitchshifterwrap_l/p_obj-34/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_l/p_obj-34/highcut" : 						{
+							"label" : "highcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_l/p_obj-34/midfreq" : 						{
+							"label" : "midfreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_noisegatewrap/noise gate thresh" : 						{
+							"label" : "noise gate thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_EAST" : 						{
+							"label" : "BTN_EAST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-55/p_obj-239/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Z" : 						{
+							"label" : "ABS_Z",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_TR" : 						{
+							"label" : "BTN_TR",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"compmonowrap/p_obj-239/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"compmonowrap/p_obj-239/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-55/p_obj-239/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_SELECT" : 						{
+							"label" : "BTN_SELECT",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2773,8 +6182,320 @@
 							"parsestring" : ""
 						}
 ,
+						"p_obj-234/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_X" : 						{
+							"label" : "ABS_X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/drum_volume" : 						{
+							"label" : "drum_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_GAS" : 						{
+							"label" : "ABS_GAS",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_metronome/alert_volume" : 						{
+							"label" : "alert_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_NORTH" : 						{
+							"label" : "BTN_NORTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"compmonowrap/p_obj-239/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_r/p_obj-244/transp" : 						{
+							"label" : "transp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"compmonowrap/p_obj-239/sustain" : 						{
+							"label" : "sustain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_r/p_obj-244/window" : 						{
+							"label" : "window",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_l/p_obj-34/bass" : 						{
+							"label" : "bass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_r/p_obj-244/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/send" : 						{
+							"label" : "send",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_SOUTH" : 						{
+							"label" : "BTN_SOUTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"gp_pitchshifterwrap_r/p_obj-244/mix" : 						{
 							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/send" : 						{
+							"label" : "send",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_RZ" : 						{
+							"label" : "ABS_RZ",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-263/p_obj-239/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-173/framesPerSecond" : 						{
+							"label" : "framesPerSecond",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_HAT0Y" : 						{
+							"label" : "ABS_HAT0Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"compmonowrap/p_obj-239/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_micpre/jb_envelope/Env Sens" : 						{
+							"label" : "Env Sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"compmonowrap/p_obj-239/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main_output_gain" : 						{
+							"label" : "main_output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/send" : 						{
+							"label" : "send",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-55/p_obj-239/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-461/rnbo~[1]/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-210/rnbo~[1]/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/kick_volume" : 						{
+							"label" : "kick_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_START" : 						{
+							"label" : "BTN_START",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_l/p_obj-34/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-146/rnbo~[1]/time" : 						{
+							"label" : "time",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Y" : 						{
+							"label" : "ABS_Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_l/p_obj-34/treble" : 						{
+							"label" : "treble",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_TL" : 						{
+							"label" : "BTN_TL",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_pitchshifterwrap_l/p_obj-34/drive" : 						{
+							"label" : "drive",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2799,7 +6520,7 @@
 
 					}
 ,
-					"rnboversion" : "1.4.0-beta.5",
+					"rnboversion" : "1.4.0",
 					"saved_object_attributes" : 					{
 						"autosave" : 0,
 						"optimization" : "O1",
@@ -2876,8 +6597,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-98", 3 ],
+					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 1 ],
+					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"source" : [ "obj-105", 0 ]
 				}
 
 			}
@@ -2890,8 +6632,77 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-88", 1 ],
+					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-142", 0 ],
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-112", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"source" : [ "obj-114", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-119", 2 ],
+					"order" : 0,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-119", 1 ],
+					"order" : 1,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-120", 2 ],
+					"order" : 2,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-120", 1 ],
+					"order" : 3,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 2 ],
+					"order" : 4,
+					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 1 ],
+					"order" : 5,
+					"source" : [ "obj-117", 0 ]
 				}
 
 			}
@@ -2904,6 +6715,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-147", 0 ],
+					"source" : [ "obj-119", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -2911,8 +6729,61 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-144", 0 ],
+					"source" : [ "obj-120", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-126", 0 ],
 					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-138", 0 ],
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-140", 1 ],
+					"order" : 1,
+					"source" : [ "obj-125", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-140", 0 ],
+					"order" : 1,
+					"source" : [ "obj-125", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 1 ],
+					"order" : 0,
+					"source" : [ "obj-125", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"order" : 0,
+					"source" : [ "obj-125", 0 ]
 				}
 
 			}
@@ -2995,8 +6866,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-125", 0 ],
+					"source" : [ "obj-136", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-143", 0 ],
+					"source" : [ "obj-138", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"source" : [ "obj-139", 0 ]
 				}
 
 			}
@@ -3009,8 +6901,111 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-139", 0 ],
+					"source" : [ "obj-140", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-141", 1 ],
+					"source" : [ "obj-142", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-141", 0 ],
+					"source" : [ "obj-142", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-88", 0 ],
+					"source" : [ "obj-143", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-143", 0 ],
+					"source" : [ "obj-144", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-120", 0 ],
+					"source" : [ "obj-145", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-145", 0 ],
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-143", 0 ],
+					"source" : [ "obj-147", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-119", 0 ],
+					"source" : [ "obj-148", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-140", 0 ],
+					"order" : 2,
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-146", 0 ],
+					"order" : 1,
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-148", 0 ],
+					"order" : 0,
+					"source" : [ "obj-149", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-149", 0 ],
+					"order" : 1,
+					"source" : [ "obj-150", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-93", 1 ],
+					"order" : 0,
+					"source" : [ "obj-150", 0 ]
 				}
 
 			}
@@ -3912,8 +7907,45 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-142", 1 ],
+					"order" : 0,
+					"source" : [ "obj-88", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-142", 0 ],
+					"order" : 1,
+					"source" : [ "obj-88", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-89", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-89", 0 ],
+					"source" : [ "obj-91", 0 ]
 				}
 
 			}
@@ -3926,22 +7958,132 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-94", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-95", 0 ]
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 0 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 10 ],
+					"source" : [ "obj-98", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 9 ],
+					"source" : [ "obj-98", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 8 ],
+					"source" : [ "obj-98", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 7 ],
+					"source" : [ "obj-98", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 6 ],
+					"source" : [ "obj-98", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 5 ],
+					"source" : [ "obj-98", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 4 ],
+					"source" : [ "obj-98", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 3 ],
+					"source" : [ "obj-98", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 2 ],
+					"source" : [ "obj-98", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-110", 1 ],
+					"source" : [ "obj-98", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 2 ],
+					"source" : [ "obj-99", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
+			"obj-100" : [ "number[6]", "number[2]", 0 ],
+			"obj-104" : [ "number[7]", "number[2]", 0 ],
+			"obj-105" : [ "number[8]", "number[2]", 0 ],
 			"obj-112" : [ "live.text[10]", "live.text", 0 ],
+			"obj-142" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-151" : [ "rnbo~", "rnbo~", 0 ],
 			"obj-165" : [ "Env Sens", "Env Sens", 0 ],
 			"obj-168" : [ "Noise Gate Thresh", "Noise Gate Thresh", 0 ],
 			"obj-170" : [ "Main Output Gain", "Main Output Gain", 0 ],
 			"obj-172" : [ "Kick Volume", "Kick Volume", 0 ],
 			"obj-174" : [ "Drum Volume", "Drum Volume", 0 ],
 			"obj-176" : [ "Metro Volume", "Metro Volume", 0 ],
+			"obj-22" : [ "number[11]", "number[2]", 0 ],
+			"obj-23" : [ "number[2]", "number[2]", 0 ],
+			"obj-24" : [ "number[4]", "number[2]", 0 ],
+			"obj-27" : [ "flonum[2]", "flonum", 0 ],
 			"obj-5" : [ "live.text[11]", "live.text", 0 ],
 			"obj-59" : [ "Alert Volume", "Alert Volume", 0 ],
+			"obj-99" : [ "flonum[1]", "flonum", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -4169,6 +8311,13 @@
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
 				"patcherrelativepath" : "../media/tom",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "untitled_20250626.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
+				"patcherrelativepath" : "../data",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
