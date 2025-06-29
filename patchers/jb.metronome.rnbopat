@@ -23,7 +23,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 697.0, 821.0, 110.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 11,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "r_obj-22",
 					"text" : "r synth_doubleclick"
 				}
@@ -36,615 +36,11 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 671.0, 721.0, 104.0, 23.0 ],
+					"patching_rect" : [ 1005.0, 1116.0, 104.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 10,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "r_obj-28",
 					"text" : "r synth_singleclick"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 671.0, 785.0, 133.0, 23.0 ],
-					"rnbo_classname" : "groove~",
-					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
-						"syncmode" : "phase",
-						"synctype" : "relative"
-					}
-,
-					"rnbo_serial" : 10,
-					"rnbo_uniqueid" : "groove~_obj-29",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"rate" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Playback rate.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-,
-							"jumpto" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Jump to position (ms) and start playback.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "-1"
-							}
-,
-							"begin" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Loop min (ms).",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"end" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Loop max (ms).",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number",
-								"defaultValue" : "-1"
-							}
-,
-							"out1" : 							{
-								"attrOrProp" : 1,
-								"digest" : "The sample output.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"sync" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Sync output (phase, samples, ms)",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"loop" : 							{
-								"attrOrProp" : 1,
-								"digest" : "The word loop, followed by a `0` or `1`, disables/enables looping.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-,
-							"crossfade" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Enable an attempted crossfade on loop jumpback. The fade depends on available sample material (ms).",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"stop" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Stops the playback of the buffer.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bang"
-							}
-,
-							"buffer" : 							{
-								"attrOrProp" : 1,
-								"digest" : "If multiple buffer names are declared to be used, this sets the currently active buffer using an index [0 based].",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"buffername" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Buffer to use",
-								"defaultarg" : 1,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"mandatory" : 1
-							}
-,
-							"channels" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Number of channels to read.",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-,
-							"syncmode" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Determines if the sync outlet reports phase (0..1), samples or milliseconds.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"enum" : [ "phase", "samples", "ms" ],
-								"type" : "enum",
-								"defaultValue" : "phase"
-							}
-,
-							"synctype" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Set the sync signal to be relative to the loop length or absolute to the clip length.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"enum" : [ "relative", "absolute" ],
-								"type" : "enum",
-								"defaultValue" : "relative"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "rate",
-								"type" : [ "bang", "auto" ],
-								"digest" : "Playback rate.",
-								"hot" : 1,
-								"docked" : 0
-							}
-, 							{
-								"name" : "begin",
-								"type" : "auto",
-								"digest" : "Loop min (ms).",
-								"docked" : 0
-							}
-, 							{
-								"name" : "end",
-								"type" : "auto",
-								"digest" : "Loop max (ms).",
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "out1",
-								"type" : "signal",
-								"digest" : "The sample output.",
-								"docked" : 0
-							}
-, 							{
-								"name" : "sync",
-								"type" : "signal",
-								"digest" : "Sync output (phase, samples, ms)",
-								"docked" : 0
-							}
- ],
-						"helpname" : "groove~",
-						"aliasOf" : "groove~",
-						"classname" : "groove~",
-						"operator" : 0,
-						"versionId" : -147380827,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "groove~ indigo @loop 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 699.0, 754.0, 172.0, 23.0 ],
-					"rnbo_classname" : "buffer~",
-					"rnbo_extra_attributes" : 					{
-						"fill" : "",
-						"type" : "",
-						"samplerate" : 0.0,
-						"meta" : "",
-						"preset" : 0
-					}
-,
-					"rnbo_serial" : 10,
-					"rnbo_uniqueid" : "buffer~_obj-30",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"info" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Bang to report buffer information.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "bang"
-							}
-,
-							"sizeout" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Size in Samples",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"chanout" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Number of Channels",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"srout" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Sample rate",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"size" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [ "samples" ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"samples" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-								"defaultarg" : 2,
-								"isalias" : 1,
-								"aliasOf" : "size",
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"sizems" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-								"isalias" : 0,
-								"aliases" : [ "ms" ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"ms" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-								"isalias" : 1,
-								"aliasOf" : "sizems",
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"clear" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Clear the contents of the buffer",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bang"
-							}
-,
-							"normalize" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Find Maximum and normalize to the value given.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0.995"
-							}
-,
-							"channels" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-								"defaultarg" : 3,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-,
-							"name" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Name of the data buffer",
-								"defaultarg" : 1,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"mandatory" : 1
-							}
-,
-							"file" : 							{
-								"attrOrProp" : 2,
-								"digest" : "File name/path or URL to load into buffer.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol"
-							}
-,
-							"type" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Type of Data (float32, float64)",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol"
-							}
-,
-							"samplerate" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Sample rate",
-								"defaultarg" : 4,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "0"
-							}
-,
-							"fill" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol"
-							}
-,
-							"external" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Await data from the outside world.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"doNotShowInMaxInspector" : 1
-							}
-,
-							"preset" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Add this value to the preset.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bool",
-								"defaultValue" : "false",
-								"label" : "Include In Preset",
-								"category" : "Preset"
-							}
-,
-							"meta" : 							{
-								"attrOrProp" : 2,
-								"digest" : "A JSON formatted string containing metadata for use by the exported code",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "symbol",
-								"defaultValue" : "",
-								"label" : "Metadata"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "info",
-								"type" : "bang",
-								"digest" : "Bang to report buffer information.",
-								"hot" : 1,
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "sizeout",
-								"type" : "number",
-								"digest" : "Size in Samples",
-								"defaultarg" : 2,
-								"docked" : 0
-							}
-, 							{
-								"name" : "chanout",
-								"type" : "number",
-								"digest" : "Number of Channels",
-								"docked" : 0
-							}
-, 							{
-								"name" : "srout",
-								"type" : "number",
-								"digest" : "Sample rate",
-								"docked" : 0
-							}
- ],
-						"helpname" : "buffer~",
-						"aliasOf" : "data",
-						"classname" : "buffer~",
-						"operator" : 0,
-						"versionId" : -72996304,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "buffer~ indigo @file indigo.wav"
 				}
 
 			}
@@ -658,12 +54,12 @@
 					"patching_rect" : [ 697.0, 885.0, 138.0, 23.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"syncmode" : "phase",
+						"channels" : 1.0,
 						"synctype" : "relative"
 					}
 ,
-					"rnbo_serial" : 9,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "groove~_obj-31",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -927,12 +323,12 @@
 					"rnbo_extra_attributes" : 					{
 						"fill" : "",
 						"type" : "",
-						"samplerate" : 0.0,
 						"meta" : "",
+						"samplerate" : 0.0,
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 9,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "buffer~_obj-32",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -1281,18 +677,18 @@
 					"patching_rect" : [ 373.0, 1347.0, 391.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"ctlin" : 0.0,
-						"sendinit" : 1,
-						"order" : "0",
-						"unit" : "",
-						"steps" : 0.0,
-						"enum" : "",
-						"tonormalized" : "",
-						"fromnormalized" : "",
-						"displayorder" : "-",
-						"displayname" : "",
 						"exponent" : 1.0,
-						"meta" : ""
+						"ctlin" : 0.0,
+						"enum" : "",
+						"unit" : "",
+						"order" : "0",
+						"tonormalized" : "",
+						"displayname" : "",
+						"steps" : 0.0,
+						"fromnormalized" : "",
+						"meta" : "",
+						"displayorder" : "-",
+						"sendinit" : 1
 					}
 ,
 					"rnbo_serial" : 1,
@@ -1743,18 +1139,18 @@
 					"patching_rect" : [ 335.0, 660.0, 422.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"ctlin" : 0.0,
-						"sendinit" : 1,
-						"order" : "0",
-						"unit" : "",
-						"steps" : 0.0,
-						"enum" : "",
-						"tonormalized" : "",
-						"fromnormalized" : "",
-						"displayorder" : "-",
-						"displayname" : "",
 						"exponent" : 1.0,
-						"meta" : ""
+						"ctlin" : 0.0,
+						"enum" : "",
+						"unit" : "",
+						"order" : "0",
+						"tonormalized" : "",
+						"displayname" : "",
+						"steps" : 0.0,
+						"fromnormalized" : "",
+						"meta" : "",
+						"displayorder" : "-",
+						"sendinit" : 1
 					}
 ,
 					"rnbo_serial" : 2,
@@ -2200,7 +1596,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 805.0, 1215.0, 108.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "r_obj-1",
 					"text" : "r drum_doubleclick"
 				}
@@ -2215,7 +1611,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 784.0, 1116.0, 103.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "r_obj-7",
 					"text" : "r drum_singleclick"
 				}
@@ -2230,7 +1626,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 757.0, 1018.0, 106.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "r_obj-92",
 					"text" : "r main_doubleclick"
 				}
@@ -2245,7 +1641,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 731.0, 918.0, 100.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "r_obj-90",
 					"text" : "r main_singleclick"
 				}
@@ -2261,12 +1657,12 @@
 					"patching_rect" : [ 784.0, 1179.0, 133.0, 23.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"syncmode" : "phase",
+						"channels" : 1.0,
 						"synctype" : "relative"
 					}
 ,
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "groove~_obj-20",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -2530,12 +1926,12 @@
 					"rnbo_extra_attributes" : 					{
 						"fill" : "",
 						"type" : "",
-						"samplerate" : 0.0,
 						"meta" : "",
+						"samplerate" : 0.0,
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 10,
 					"rnbo_uniqueid" : "buffer~_obj-21",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -2865,12 +2261,12 @@
 					"patching_rect" : [ 731.0, 982.0, 139.0, 23.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"syncmode" : "phase",
+						"channels" : 1.0,
 						"synctype" : "relative"
 					}
 ,
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "groove~_obj-18",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -3134,12 +2530,12 @@
 					"rnbo_extra_attributes" : 					{
 						"fill" : "",
 						"type" : "",
-						"samplerate" : 0.0,
 						"meta" : "",
+						"samplerate" : 0.0,
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "buffer~_obj-19",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -3469,12 +2865,12 @@
 					"patching_rect" : [ 805.0, 1280.0, 132.0, 23.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"syncmode" : "phase",
+						"channels" : 1.0,
 						"synctype" : "relative"
 					}
 ,
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "groove~_obj-12",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -3738,12 +3134,12 @@
 					"rnbo_extra_attributes" : 					{
 						"fill" : "",
 						"type" : "",
-						"samplerate" : 0.0,
 						"meta" : "",
+						"samplerate" : 0.0,
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "buffer~_obj-17",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -4085,12 +3481,12 @@
 					"patching_rect" : [ 757.0, 1082.0, 142.0, 23.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"syncmode" : "phase",
+						"channels" : 1.0,
 						"synctype" : "relative"
 					}
 ,
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "groove~_obj-6",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -4354,12 +3750,12 @@
 					"rnbo_extra_attributes" : 					{
 						"fill" : "",
 						"type" : "",
-						"samplerate" : 0.0,
 						"meta" : "",
+						"samplerate" : 0.0,
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "buffer~_obj-5",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -4792,7 +4188,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 428.0, 825.0, 114.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 7,
 					"rnbo_uniqueid" : "r_obj-11",
 					"text" : "r drum_looper_state"
 				}
@@ -4826,7 +4222,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 304.0, 825.0, 112.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 8,
 					"rnbo_uniqueid" : "r_obj-235",
 					"text" : "r main_looper_state"
 				}
@@ -4950,7 +4346,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 38.0, 444.0, 79.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 9,
 					"rnbo_uniqueid" : "r_obj-448",
 					"text" : "r where_click"
 				}
@@ -5325,12 +4721,12 @@
 					"patching_rect" : [ 318.0, 552.0, 139.0, 23.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"syncmode" : "phase",
+						"channels" : 1.0,
 						"synctype" : "relative"
 					}
 ,
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 7,
 					"rnbo_uniqueid" : "groove~_obj-467",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -5592,12 +4988,12 @@
 					"patching_rect" : [ 154.0, 552.0, 124.0, 23.0 ],
 					"rnbo_classname" : "groove~",
 					"rnbo_extra_attributes" : 					{
-						"channels" : 1.0,
 						"syncmode" : "phase",
+						"channels" : 1.0,
 						"synctype" : "relative"
 					}
 ,
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 8,
 					"rnbo_uniqueid" : "groove~_obj-468",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -5861,12 +5257,12 @@
 					"rnbo_extra_attributes" : 					{
 						"fill" : "",
 						"type" : "",
-						"samplerate" : 0.0,
 						"meta" : "",
+						"samplerate" : 0.0,
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 7,
 					"rnbo_uniqueid" : "buffer~_obj-469",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -6198,12 +5594,12 @@
 					"rnbo_extra_attributes" : 					{
 						"fill" : "",
 						"type" : "",
-						"samplerate" : 0.0,
 						"meta" : "",
+						"samplerate" : 0.0,
 						"preset" : 0
 					}
 ,
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 8,
 					"rnbo_uniqueid" : "buffer~_obj-228",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -6532,8 +5928,8 @@
 					"patching_rect" : [ 254.0, 1418.0, 43.0, 23.0 ],
 					"rnbo_classname" : "out~",
 					"rnbo_extra_attributes" : 					{
-						"comment" : "",
-						"meta" : ""
+						"meta" : "",
+						"comment" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -6759,15 +6155,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-29", 0 ]
 				}
 
 			}
