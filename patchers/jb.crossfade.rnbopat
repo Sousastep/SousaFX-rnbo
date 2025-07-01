@@ -16,13 +16,263 @@
 		"title" : "jb.crossfade",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1229.0, 228.0, 29.5, 23.0 ],
+					"rnbo_classname" : "*",
+					"rnbo_extra_attributes" : 					{
+						"hot" : 0
+					}
+,
+					"rnbo_serial" : 5,
+					"rnbo_uniqueid" : "*_obj-37",
+					"text" : "* 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1229.0, 262.0, 47.0, 23.0 ],
+					"rnbo_classname" : "clip",
+					"rnbo_extra_attributes" : 					{
+						"hot" : 0
+					}
+,
+					"rnbo_serial" : 4,
+					"rnbo_uniqueid" : "clip_obj-35",
+					"text" : "clip 0 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1229.0, 194.0, 48.0, 23.0 ],
+					"rnbo_classname" : "list.sum",
+					"rnbo_extra_attributes" : 					{
+						"hot" : 0
+					}
+,
+					"rnbo_serial" : 3,
+					"rnbo_uniqueid" : "list.sum_obj-34",
+					"text" : "list.sum"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1229.0, 163.0, 42.0, 23.0 ],
+					"rnbo_classname" : "pak",
+					"rnbo_extra_attributes" : 					{
+						"list" : "",
+						"length" : 0.0
+					}
+,
+					"rnbo_serial" : 3,
+					"rnbo_uniqueid" : "pak_obj-33",
+					"rnboinfo" : 					{
+						"needsInstanceInfo" : 1,
+						"argnames" : 						{
+							"out" : 							{
+								"attrOrProp" : 1,
+								"digest" : "out",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"outlet" : 1,
+								"type" : "list"
+							}
+,
+							"in1" : 							{
+								"attrOrProp" : 1,
+								"digest" : "number to be list element 1",
+								"defaultarg" : 1,
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"inlet" : 1,
+								"type" : "number"
+							}
+,
+							"in2" : 							{
+								"attrOrProp" : 1,
+								"digest" : "number to be list element 2",
+								"defaultarg" : 2,
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"inlet" : 1,
+								"type" : "number"
+							}
+,
+							"length" : 							{
+								"attrOrProp" : 2,
+								"digest" : "how many things to pack",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"type" : "number"
+							}
+,
+							"list" : 							{
+								"attrOrProp" : 2,
+								"digest" : "the list to initialize the {@objectname} object with",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"type" : "list"
+							}
+
+						}
+,
+						"inputs" : [ 							{
+								"name" : "in1",
+								"type" : [ "number", "bang" ],
+								"digest" : "number to be list element 1",
+								"defaultarg" : 1,
+								"hot" : 1,
+								"docked" : 0
+							}
+, 							{
+								"name" : "in2",
+								"type" : [ "number", "bang" ],
+								"digest" : "number to be list element 2",
+								"defaultarg" : 2,
+								"hot" : 1,
+								"docked" : 0
+							}
+ ],
+						"outputs" : [ 							{
+								"name" : "out",
+								"type" : "list",
+								"digest" : "out",
+								"docked" : 0
+							}
+ ],
+						"helpname" : "pak",
+						"aliasOf" : "pack",
+						"classname" : "pak",
+						"operator" : 0,
+						"versionId" : 1331432417,
+						"changesPatcherIO" : 0
+					}
+,
+					"text" : "pak f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1035.0, 185.0, 66.0, 23.0 ],
+					"rnbo_classname" : "+",
+					"rnbo_serial" : 1,
+					"rnbo_uniqueid" : "+_obj-32",
+					"text" : "+ 0 @hot 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-131",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1325.0, 120.0, 168.0, 23.0 ],
+					"rnbo_classname" : "r",
+					"rnbo_serial" : 2,
+					"rnbo_uniqueid" : "r_obj-131",
+					"text" : "r \"LFO Auto-Wah Pause (uni)\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-281",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1171.0, 120.0, 136.0, 23.0 ],
+					"rnbo_classname" : "r",
+					"rnbo_serial" : 3,
+					"rnbo_uniqueid" : "r_obj-281",
+					"text" : "r \"LFO Env Pause (uni)\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 0,
+					"id" : "obj-3",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 650.5, 881.0, 50.0, 23.0 ],
+					"rnbo_classname" : "number",
+					"rnbo_extra_attributes" : 					{
+						"minimum" : "<none>",
+						"maximum" : "<none>",
+						"preset" : 0,
+						"initialFormat" : "integer",
+						"order" : ""
+					}
+,
+					"rnbo_serial" : 6,
+					"rnbo_uniqueid" : "number_obj-3"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 777.0, 1754.0, 106.0, 23.0 ],
 					"rnbo_classname" : "s~",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "s~_obj-14",
 					"text" : "s~ amp_mod_floor"
 				}
@@ -35,7 +285,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1083.500003457069397, 1194.0, 40.0, 23.0 ],
+					"patching_rect" : [ 1118.5, 1128.0, 40.0, 23.0 ],
 					"rnbo_classname" : "sig~",
 					"rnbo_extra_attributes" : 					{
 						"unit" : "ms"
@@ -91,9 +341,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1101.200000000000045, 1561.0, 75.0, 23.0 ],
+					"patching_rect" : [ 1101.200000000000045, 1485.0, 75.0, 23.0 ],
 					"rnbo_classname" : "s~",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "s~_obj-10",
 					"text" : "s~ vfx_xfade"
 				}
@@ -106,7 +356,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 613.0, 910.0, 63.0, 23.0 ],
+					"patching_rect" : [ 567.5, 845.0, 63.0, 23.0 ],
 					"rnbo_classname" : "feedback~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "feedback~_obj-9",
@@ -534,7 +784,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 427.0, 991.0, 63.0, 23.0 ],
+					"patching_rect" : [ 427.0, 996.0, 63.0, 23.0 ],
 					"rnbo_classname" : "feedback~",
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "feedback~_obj-703",
@@ -784,52 +1034,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-699",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 901.0, 811.0, 50.0, 23.0 ],
-					"rnbo_classname" : "number",
-					"rnbo_extra_attributes" : 					{
-						"maximum" : "<none>",
-						"minimum" : "<none>",
-						"preset" : 0,
-						"order" : "",
-						"initialFormat" : "float"
-					}
-,
-					"rnbo_serial" : 1,
-					"rnbo_uniqueid" : "number_obj-699"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-697",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 804.0, 810.0, 50.0, 23.0 ],
-					"rnbo_classname" : "number",
-					"rnbo_extra_attributes" : 					{
-						"maximum" : "<none>",
-						"minimum" : "<none>",
-						"preset" : 0,
-						"order" : "",
-						"initialFormat" : "float"
-					}
-,
-					"rnbo_serial" : 2,
-					"rnbo_uniqueid" : "number_obj-697"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-690",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -873,7 +1077,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 900.0, 902.0, 30.0, 23.0 ],
+					"patching_rect" : [ 966.0, 792.0, 30.0, 23.0 ],
 					"rnbo_classname" : "sig~",
 					"rnbo_extra_attributes" : 					{
 						"unit" : "ms"
@@ -892,7 +1096,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 796.0, 902.0, 30.0, 23.0 ],
+					"patching_rect" : [ 777.0, 792.0, 30.0, 23.0 ],
 					"rnbo_classname" : "sig~",
 					"rnbo_extra_attributes" : 					{
 						"unit" : "ms"
@@ -911,7 +1115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1068.0, 186.0, 68.0, 23.0 ],
+					"patching_rect" : [ 1073.0, 281.0, 68.0, 23.0 ],
 					"rnbo_classname" : "change",
 					"rnbo_extra_attributes" : 					{
 						"mode" : "default"
@@ -930,7 +1134,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 987.0, 186.0, 68.0, 23.0 ],
+					"patching_rect" : [ 992.0, 281.0, 68.0, 23.0 ],
 					"rnbo_classname" : "change",
 					"rnbo_extra_attributes" : 					{
 						"mode" : "default"
@@ -949,7 +1153,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1068.0, 150.0, 53.0, 23.0 ],
+					"patching_rect" : [ 1073.0, 245.0, 53.0, 23.0 ],
 					"rnbo_classname" : "clip",
 					"rnbo_extra_attributes" : 					{
 						"hot" : 0
@@ -968,7 +1172,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 987.0, 150.0, 54.0, 23.0 ],
+					"patching_rect" : [ 992.0, 245.0, 54.0, 23.0 ],
 					"rnbo_classname" : "clip",
 					"rnbo_extra_attributes" : 					{
 						"hot" : 0
@@ -987,7 +1191,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1035.0, 96.0, 199.0, 23.0 ],
+					"patching_rect" : [ 1035.0, 70.0, 199.0, 23.0 ],
 					"rnbo_classname" : "r",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "r_obj-1382",
@@ -1625,11 +1829,11 @@
 					"presentation_rect" : [ 675.948503117445398, 341.829182855909949, 104.0, 53.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"maximum" : 100.0,
 						"minimum" : 0.0,
+						"maximum" : 100.0,
 						"preset" : 0,
-						"order" : "",
-						"initialFormat" : "float"
+						"initialFormat" : "float",
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 3,
@@ -1660,11 +1864,11 @@
 					"presentation_rect" : [ 675.948503117445398, 144.162514202421789, 104.0, 53.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"maximum" : 100.0,
 						"minimum" : 0.0,
+						"maximum" : 100.0,
 						"preset" : 0,
-						"order" : "",
-						"initialFormat" : "float"
+						"initialFormat" : "float",
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 4,
@@ -1697,12 +1901,12 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
-										"fontface" : 0,
-										"outlettype" : [ "" ],
 										"id" : "obj-7",
+										"outlettype" : [ "" ],
 										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "<Monospaced>",
+										"numinlets" : 1,
+										"fontface" : 0,
 										"numoutlets" : 1,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
@@ -1713,11 +1917,11 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"id" : "obj-1",
+										"outlettype" : [ "" ],
 										"fontsize" : 12.0,
-										"numinlets" : 0,
 										"fontname" : "Arial",
+										"numinlets" : 0,
 										"numoutlets" : 1
 									}
 
@@ -1729,8 +1933,8 @@
 										"patching_rect" : [ 81.0, 633.0, 37.0, 22.0 ],
 										"id" : "obj-4",
 										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "Arial",
+										"numinlets" : 1,
 										"numoutlets" : 0
 									}
 
@@ -1738,15 +1942,15 @@
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
@@ -1932,21 +2136,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-618",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1101.0, 1313.0, 33.0, 23.0 ],
-					"rnbo_classname" : "abs~",
-					"rnbo_serial" : 1,
-					"rnbo_uniqueid" : "abs~_obj-618",
-					"text" : "abs~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.325490196078431, 0.0, 0.545098039215686, 1.0 ],
 					"fontface" : 0,
 					"fontname" : "Ableton Sans Medium",
@@ -1978,288 +2167,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-547",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1178.0, 1159.0, 29.5, 23.0 ],
-					"rnbo_classname" : "<~",
-					"rnbo_serial" : 1,
-					"rnbo_uniqueid" : "<~_obj-547",
-					"text" : "<~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-548",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1178.0, 1194.0, 38.0, 23.0 ],
-					"rnbo_classname" : "gate~",
-					"rnbo_extra_attributes" : 					{
-						"outputs" : 1.0
-					}
-,
-					"rnbo_serial" : 1,
-					"rnbo_uniqueid" : "gate~_obj-548",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"onoff" : 							{
-								"attrOrProp" : 1,
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number"
-							}
-,
-							"input" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Incoming gated signal",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "signal"
-							}
-,
-							"out1" : 							{
-								"attrOrProp" : 1,
-								"digest" : "out1",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"ramptime" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Sets the ramp time to use for fading connections in milliseconds.",
-								"defaultarg" : 3,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number"
-							}
-,
-							"outputs" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Number of outlets",
-								"defaultarg" : 1,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "onoff",
-								"type" : "auto",
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"hot" : 1,
-								"docked" : 0
-							}
-, 							{
-								"name" : "input",
-								"type" : "signal",
-								"digest" : "Incoming gated signal",
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "out1",
-								"type" : "signal",
-								"digest" : "out1",
-								"docked" : 0
-							}
- ],
-						"helpname" : "gate~",
-						"aliasOf" : "gate~",
-						"classname" : "gate~",
-						"operator" : 0,
-						"versionId" : 1867125711,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "gate~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-549",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1135.0, 1194.0, 38.0, 23.0 ],
-					"rnbo_classname" : "gate~",
-					"rnbo_extra_attributes" : 					{
-						"outputs" : 1.0
-					}
-,
-					"rnbo_serial" : 2,
-					"rnbo_uniqueid" : "gate~_obj-549",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"onoff" : 							{
-								"attrOrProp" : 1,
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number"
-							}
-,
-							"input" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Incoming gated signal",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "signal"
-							}
-,
-							"out1" : 							{
-								"attrOrProp" : 1,
-								"digest" : "out1",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"ramptime" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Sets the ramp time to use for fading connections in milliseconds.",
-								"defaultarg" : 3,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number"
-							}
-,
-							"outputs" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Number of outlets",
-								"defaultarg" : 1,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "onoff",
-								"type" : "auto",
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"hot" : 1,
-								"docked" : 0
-							}
-, 							{
-								"name" : "input",
-								"type" : "signal",
-								"digest" : "Incoming gated signal",
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "out1",
-								"type" : "signal",
-								"digest" : "out1",
-								"docked" : 0
-							}
- ],
-						"helpname" : "gate~",
-						"aliasOf" : "gate~",
-						"classname" : "gate~",
-						"operator" : 0,
-						"versionId" : 1867125711,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "gate~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-550",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1135.0, 1159.0, 29.5, 23.0 ],
-					"rnbo_classname" : ">~",
-					"rnbo_serial" : 1,
-					"rnbo_uniqueid" : ">~_obj-550",
-					"text" : ">~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-552",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -2280,7 +2187,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1101.200000000000045, 1520.0, 67.0, 23.0 ],
+					"patching_rect" : [ 1101.200000000000045, 1444.0, 67.0, 23.0 ],
 					"rnbo_classname" : "clamp~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "clamp~_obj-555",
@@ -2298,7 +2205,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1169.200000000000045, 1520.0, 116.0, 21.0 ],
+					"patching_rect" : [ 1169.200000000000045, 1444.0, 116.0, 21.0 ],
 					"text" : "crossfade 0-1",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -2329,9 +2236,9 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 427.0, 1090.0, 87.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "slide~_obj-571",
-					"text" : "slide~ 0 24000"
+					"text" : "slide~ 0 12000"
 				}
 
 			}
@@ -2342,118 +2249,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 427.0, 1053.0, 48.0, 23.0 ],
-					"rnbo_classname" : "gate~",
-					"rnbo_serial" : 3,
-					"rnbo_uniqueid" : "gate~_obj-575",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"onoff" : 							{
-								"attrOrProp" : 1,
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number"
-							}
-,
-							"input" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Incoming gated signal",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "signal"
-							}
-,
-							"out1" : 							{
-								"attrOrProp" : 1,
-								"digest" : "out1",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"ramptime" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Sets the ramp time to use for fading connections in milliseconds.",
-								"defaultarg" : 3,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number"
-							}
-,
-							"outputs" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Number of outlets",
-								"defaultarg" : 1,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "onoff",
-								"type" : "auto",
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"hot" : 1,
-								"docked" : 0
-							}
-, 							{
-								"name" : "input",
-								"type" : "signal",
-								"digest" : "Incoming gated signal",
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "out1",
-								"type" : "signal",
-								"digest" : "out1",
-								"docked" : 0
-							}
- ],
-						"helpname" : "gate~",
-						"aliasOf" : "gate~",
-						"classname" : "gate~",
-						"operator" : 0,
-						"versionId" : 1867125711,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "gate~ 1"
+					"patching_rect" : [ 427.0, 1052.0, 31.0, 23.0 ],
+					"rnbo_classname" : "*~",
+					"rnbo_serial" : 8,
+					"rnbo_uniqueid" : "*~_obj-575",
+					"text" : "*~ 0"
 				}
 
 			}
@@ -2515,7 +2315,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 404.0, 1231.0, 133.0, 64.0 ],
+					"patching_rect" : [ 409.0, 1190.0, 133.0, 64.0 ],
 					"text" : "clip the top of the env so it can decay more quickly. Note that smoothing is post-clip",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -2528,7 +2328,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 796.0, 950.0, 87.0, 23.0 ],
+					"patching_rect" : [ 777.0, 950.0, 87.0, 23.0 ],
 					"rnbo_classname" : "slide~",
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "slide~_obj-589",
@@ -2543,293 +2343,11 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 900.0, 950.0, 87.0, 23.0 ],
+					"patching_rect" : [ 966.0, 950.0, 87.0, 23.0 ],
 					"rnbo_classname" : "slide~",
 					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "slide~_obj-590",
 					"text" : "slide~ 480 480"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-591",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 674.0, 1101.0, 29.5, 23.0 ],
-					"rnbo_classname" : "<~",
-					"rnbo_serial" : 2,
-					"rnbo_uniqueid" : "<~_obj-591",
-					"text" : "<~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-592",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 674.0, 1136.0, 38.0, 23.0 ],
-					"rnbo_classname" : "gate~",
-					"rnbo_extra_attributes" : 					{
-						"outputs" : 1.0
-					}
-,
-					"rnbo_serial" : 4,
-					"rnbo_uniqueid" : "gate~_obj-592",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"onoff" : 							{
-								"attrOrProp" : 1,
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number"
-							}
-,
-							"input" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Incoming gated signal",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "signal"
-							}
-,
-							"out1" : 							{
-								"attrOrProp" : 1,
-								"digest" : "out1",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"ramptime" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Sets the ramp time to use for fading connections in milliseconds.",
-								"defaultarg" : 3,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number"
-							}
-,
-							"outputs" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Number of outlets",
-								"defaultarg" : 1,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "onoff",
-								"type" : "auto",
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"hot" : 1,
-								"docked" : 0
-							}
-, 							{
-								"name" : "input",
-								"type" : "signal",
-								"digest" : "Incoming gated signal",
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "out1",
-								"type" : "signal",
-								"digest" : "out1",
-								"docked" : 0
-							}
- ],
-						"helpname" : "gate~",
-						"aliasOf" : "gate~",
-						"classname" : "gate~",
-						"operator" : 0,
-						"versionId" : 1867125711,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "gate~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-593",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 631.0, 1136.0, 38.0, 23.0 ],
-					"rnbo_classname" : "gate~",
-					"rnbo_extra_attributes" : 					{
-						"outputs" : 1.0
-					}
-,
-					"rnbo_serial" : 5,
-					"rnbo_uniqueid" : "gate~_obj-593",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"onoff" : 							{
-								"attrOrProp" : 1,
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "number"
-							}
-,
-							"input" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Incoming gated signal",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "signal"
-							}
-,
-							"out1" : 							{
-								"attrOrProp" : 1,
-								"digest" : "out1",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"ramptime" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Sets the ramp time to use for fading connections in milliseconds.",
-								"defaultarg" : 3,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number"
-							}
-,
-							"outputs" : 							{
-								"attrOrProp" : 2,
-								"digest" : "Number of outlets",
-								"defaultarg" : 1,
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 1,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "number",
-								"defaultValue" : "1"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "onoff",
-								"type" : "auto",
-								"digest" : "0 Closes gate, non-zero opens the corresponding gate outlet",
-								"defaultarg" : 2,
-								"hot" : 1,
-								"docked" : 0
-							}
-, 							{
-								"name" : "input",
-								"type" : "signal",
-								"digest" : "Incoming gated signal",
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "out1",
-								"type" : "signal",
-								"digest" : "out1",
-								"docked" : 0
-							}
- ],
-						"helpname" : "gate~",
-						"aliasOf" : "gate~",
-						"classname" : "gate~",
-						"operator" : 0,
-						"versionId" : 1867125711,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "gate~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-594",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 631.0, 1101.0, 29.5, 23.0 ],
-					"rnbo_classname" : ">~",
-					"rnbo_serial" : 2,
-					"rnbo_uniqueid" : ">~_obj-594",
-					"text" : ">~"
 				}
 
 			}
@@ -2972,7 +2490,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 550.0, 1293.0, 33.0, 23.0 ],
+					"patching_rect" : [ 562.0, 807.0, 33.0, 23.0 ],
 					"rnbo_classname" : "abs~",
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "abs~_obj-533",
@@ -2986,7 +2504,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 685.0, 936.0, 111.0, 21.0 ],
+					"patching_rect" : [ 646.5, 822.0, 111.0, 21.0 ],
 					"text" : "crossfade env sens"
 				}
 
@@ -2998,9 +2516,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 689.0, 963.0, 67.0, 23.0 ],
+					"patching_rect" : [ 650.5, 849.0, 67.0, 23.0 ],
 					"rnbo_classname" : "loadmess",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "loadmess_obj-530",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -3084,7 +2602,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 613.0, 963.0, 31.0, 23.0 ],
+					"patching_rect" : [ 567.5, 898.0, 31.0, 23.0 ],
 					"rnbo_classname" : "*~",
 					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "*~_obj-529",
@@ -3100,7 +2618,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 613.0, 862.0, 109.0, 23.0 ],
+					"patching_rect" : [ 562.0, 763.0, 109.0, 23.0 ],
 					"rnbo_classname" : "r~",
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "r~_obj-528",
@@ -3205,12 +2723,12 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
-										"fontface" : 0,
-										"outlettype" : [ "" ],
 										"id" : "obj-7",
+										"outlettype" : [ "" ],
 										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "<Monospaced>",
+										"numinlets" : 1,
+										"fontface" : 0,
 										"numoutlets" : 1,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
@@ -3221,11 +2739,11 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"id" : "obj-1",
+										"outlettype" : [ "" ],
 										"fontsize" : 12.0,
-										"numinlets" : 0,
 										"fontname" : "Arial",
+										"numinlets" : 0,
 										"numoutlets" : 1
 									}
 
@@ -3237,8 +2755,8 @@
 										"patching_rect" : [ 81.0, 633.0, 37.0, 22.0 ],
 										"id" : "obj-4",
 										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "Arial",
+										"numinlets" : 1,
 										"numoutlets" : 0
 									}
 
@@ -3246,15 +2764,15 @@
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
@@ -3756,16 +3274,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-623", 0 ],
-					"order" : 0,
-					"source" : [ "obj-1382", 0 ]
+					"destination" : [ "obj-33", 1 ],
+					"source" : [ "obj-131", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-624", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-1382", 0 ]
 				}
 
@@ -3804,6 +3320,64 @@
 				"patchline" : 				{
 					"destination" : [ "obj-552", 1 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-281", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-529", 1 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-623", 0 ],
+					"order" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-624", 0 ],
+					"order" : 1,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 1 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -3905,7 +3479,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-533", 0 ],
 					"source" : [ "obj-528", 0 ]
 				}
 
@@ -3928,14 +3502,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-529", 1 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-530", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-534", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-533", 0 ]
 				}
 
@@ -3963,37 +3537,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-548", 0 ],
-					"source" : [ "obj-547", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-546", 0 ],
-					"source" : [ "obj-548", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-546", 0 ],
-					"source" : [ "obj-549", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-549", 0 ],
-					"source" : [ "obj-550", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-618", 0 ],
+					"destination" : [ "obj-617", 0 ],
 					"source" : [ "obj-552", 0 ]
 				}
 
@@ -4036,7 +3580,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-575", 1 ],
-					"midpoints" : [ 633.5, 1216.00359060659548, 613.372083012264056, 1216.00359060659548, 613.372083012264056, 1168.00359060659548, 525.372083012264056, 1168.00359060659548, 525.372083012264056, 1037.00359060659548, 465.5, 1037.00359060659548 ],
+					"midpoints" : [ 633.5, 1216.00359060659548, 613.372083012264056, 1216.00359060659548, 613.372083012264056, 1168.00359060659548, 525.372083012264056, 1168.00359060659548, 525.372083012264056, 1037.00359060659548, 448.5, 1037.00359060659548 ],
 					"order" : 1,
 					"source" : [ "obj-586", 0 ]
 				}
@@ -4052,17 +3596,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-547", 1 ],
-					"order" : 1,
-					"source" : [ "obj-589", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-548", 1 ],
+					"destination" : [ "obj-567", 1 ],
 					"order" : 0,
 					"source" : [ "obj-589", 0 ]
 				}
@@ -4071,79 +3605,16 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-550", 1 ],
-					"order" : 3,
-					"source" : [ "obj-589", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-567", 1 ],
-					"order" : 2,
-					"source" : [ "obj-589", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-591", 1 ],
-					"order" : 5,
-					"source" : [ "obj-589", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-592", 1 ],
-					"order" : 4,
-					"source" : [ "obj-589", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-594", 1 ],
-					"order" : 6,
-					"source" : [ "obj-589", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
 					"destination" : [ "obj-605", 1 ],
-					"order" : 7,
+					"order" : 1,
 					"source" : [ "obj-589", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-547", 0 ],
+					"destination" : [ "obj-546", 0 ],
 					"order" : 1,
-					"source" : [ "obj-590", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-549", 1 ],
-					"order" : 2,
-					"source" : [ "obj-590", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-550", 0 ],
-					"order" : 3,
 					"source" : [ "obj-590", 0 ]
 				}
 
@@ -4158,27 +3629,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-591", 0 ],
-					"order" : 4,
-					"source" : [ "obj-590", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-593", 1 ],
-					"order" : 5,
-					"source" : [ "obj-590", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-594", 0 ],
-					"order" : 7,
+					"destination" : [ "obj-586", 0 ],
+					"order" : 3,
 					"source" : [ "obj-590", 0 ]
 				}
 
@@ -4187,38 +3639,8 @@
 				"patchline" : 				{
 					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
 					"destination" : [ "obj-605", 2 ],
-					"order" : 6,
+					"order" : 2,
 					"source" : [ "obj-590", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.114903390407562, 0.068398237228394, 0.700752258300781, 1.0 ],
-					"destination" : [ "obj-592", 0 ],
-					"source" : [ "obj-591", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-586", 0 ],
-					"source" : [ "obj-592", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-586", 0 ],
-					"source" : [ "obj-593", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.701977908611298, 0.683618903160095, 0.075521625578403, 1.0 ],
-					"destination" : [ "obj-593", 0 ],
-					"source" : [ "obj-594", 0 ]
 				}
 
 			}
@@ -4238,7 +3660,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-533", 0 ],
+					"destination" : [ "obj-534", 0 ],
 					"source" : [ "obj-600", 0 ]
 				}
 
@@ -4275,13 +3697,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-567", 0 ],
 					"source" : [ "obj-617", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-617", 0 ],
-					"source" : [ "obj-618", 0 ]
 				}
 
 			}
@@ -4499,15 +3914,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-683", 0 ],
-					"order" : 1,
-					"source" : [ "obj-689", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-697", 0 ],
-					"order" : 0,
 					"source" : [ "obj-689", 0 ]
 				}
 
@@ -4515,15 +3921,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-684", 0 ],
-					"order" : 0,
-					"source" : [ "obj-690", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-699", 0 ],
-					"order" : 1,
 					"source" : [ "obj-690", 0 ]
 				}
 
