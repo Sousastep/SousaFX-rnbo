@@ -16,99 +16,20 @@
 		"title" : "gp.overdrivewrap",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 543.0, 265.0, 63.0, 23.0 ],
-					"rnbo_classname" : "feedback~",
-					"rnbo_serial" : 1,
-					"rnbo_uniqueid" : "feedback~_obj-2",
-					"rnboinfo" : 					{
-						"needsInstanceInfo" : 1,
-						"argnames" : 						{
-							"input" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Signal to feed back.",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"inlet" : 1,
-								"type" : "signal"
-							}
-,
-							"output" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Signal that was fed back (with one signal buffer delay).",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"settable" : 0,
-								"attachable" : 0,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"outlet" : 1,
-								"type" : "signal"
-							}
-,
-							"reset" : 							{
-								"attrOrProp" : 1,
-								"digest" : "Clears/resets the feedback buffer",
-								"isalias" : 0,
-								"aliases" : [  ],
-								"attachable" : 1,
-								"isparam" : 0,
-								"deprecated" : 0,
-								"touched" : 0,
-								"type" : "bang"
-							}
-
-						}
-,
-						"inputs" : [ 							{
-								"name" : "input",
-								"type" : "signal",
-								"digest" : "Signal to feed back.",
-								"hot" : 1,
-								"docked" : 0
-							}
- ],
-						"outputs" : [ 							{
-								"name" : "output",
-								"type" : "signal",
-								"digest" : "Signal that was fed back (with one signal buffer delay).",
-								"docked" : 0
-							}
- ],
-						"helpname" : "feedback~",
-						"aliasOf" : "feedback~",
-						"classname" : "feedback~",
-						"operator" : 0,
-						"versionId" : -1677864334,
-						"changesPatcherIO" : 0
-					}
-,
-					"text" : "feedback~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 543.0, 229.0, 101.0, 23.0 ],
-					"rnbo_classname" : "r~",
+					"patching_rect" : [ 432.0, 254.0, 50.0, 23.0 ],
+					"rnbo_classname" : "sig~",
+					"rnbo_extra_attributes" : 					{
+						"unit" : "ms"
+					}
+,
 					"rnbo_serial" : 1,
-					"rnbo_uniqueid" : "r~_obj-1",
-					"text" : "r~ \"drive amount\""
+					"rnbo_uniqueid" : "sig~_obj-1",
+					"text" : "sig~ 0.5"
 				}
 
 			}
@@ -385,7 +306,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 48.5, 194.0, 74.0, 23.0 ],
 					"rnbo_classname" : "loadmess",
-					"rnbo_serial" : 10,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "loadmess_obj-65",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -471,7 +392,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 233.0, 67.0, 23.0 ],
 					"rnbo_classname" : "loadmess",
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "loadmess_obj-67",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -554,7 +475,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 273.0, 67.0, 23.0 ],
 					"rnbo_classname" : "loadmess",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "loadmess_obj-68",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -637,7 +558,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 313.0, 74.0, 23.0 ],
 					"rnbo_classname" : "loadmess",
-					"rnbo_serial" : 8,
+					"rnbo_serial" : 7,
 					"rnbo_uniqueid" : "loadmess_obj-69",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -720,7 +641,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 349.0, 74.0, 23.0 ],
 					"rnbo_classname" : "loadmess",
-					"rnbo_serial" : 9,
+					"rnbo_serial" : 8,
 					"rnbo_uniqueid" : "loadmess_obj-81",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -18406,7 +18327,7 @@
 										"meta" : ""
 									}
 ,
-									"rnbo_serial" : 3,
+									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "drive",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -18764,7 +18685,7 @@
 													"outlettype" : [ "signal" ],
 													"patching_rect" : [ 280.0, 210.0, 148.0, 23.0 ],
 													"rnbo_classname" : "scale~",
-													"rnbo_serial" : 3,
+													"rnbo_serial" : 1,
 													"rnbo_uniqueid" : "scale~_obj-46",
 													"text" : "scale~ 0. 1. 1. 1256. 3.664"
 												}
@@ -18805,7 +18726,7 @@
 													"outlettype" : [ "signal" ],
 													"patching_rect" : [ 280.0, 390.0, 155.0, 23.0 ],
 													"rnbo_classname" : "scale~",
-													"rnbo_serial" : 1,
+													"rnbo_serial" : 2,
 													"rnbo_uniqueid" : "scale~_obj-90",
 													"text" : "scale~ 0.785 1.57 1. 0.18 1."
 												}
@@ -19030,7 +18951,7 @@
 														"meta" : ""
 													}
 ,
-													"rnbo_serial" : 3,
+													"rnbo_serial" : 2,
 													"rnbo_uniqueid" : "in~_obj-92",
 													"rnboinfo" : 													{
 														"needsInstanceInfo" : 1,
@@ -19130,7 +19051,7 @@
 														"meta" : ""
 													}
 ,
-													"rnbo_serial" : 2,
+													"rnbo_serial" : 3,
 													"rnbo_uniqueid" : "in~_obj-93",
 													"rnboinfo" : 													{
 														"needsInstanceInfo" : 1,
@@ -20186,7 +20107,7 @@
 										"meta" : ""
 									}
 ,
-									"rnbo_serial" : 1,
+									"rnbo_serial" : 2,
 									"rnbo_uniqueid" : "in~_obj-41",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -20386,7 +20307,7 @@
 										"meta" : ""
 									}
 ,
-									"rnbo_serial" : 2,
+									"rnbo_serial" : 3,
 									"rnbo_uniqueid" : "in~_obj-38",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -22111,7 +22032,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 245.0, 67.0, 23.0 ],
 					"rnbo_classname" : "set",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "set_obj-55",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -22169,7 +22090,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 281.0, 63.0, 23.0 ],
 					"rnbo_classname" : "set",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "set_obj-56",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -22227,7 +22148,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 317.0, 47.0, 23.0 ],
 					"rnbo_classname" : "set",
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "set_obj-57",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -22285,7 +22206,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 353.0, 68.0, 23.0 ],
 					"rnbo_classname" : "set",
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "set_obj-58",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -22343,7 +22264,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 393.0, 46.0, 23.0 ],
 					"rnbo_classname" : "set",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "set_obj-59",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -22401,7 +22322,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 429.0, 58.0, 23.0 ],
 					"rnbo_classname" : "set",
-					"rnbo_serial" : 8,
+					"rnbo_serial" : 7,
 					"rnbo_uniqueid" : "set_obj-60",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -22459,7 +22380,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 465.0, 66.0, 23.0 ],
 					"rnbo_classname" : "set",
-					"rnbo_serial" : 9,
+					"rnbo_serial" : 8,
 					"rnbo_uniqueid" : "set_obj-62",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -22711,7 +22632,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-34", 2 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -22805,13 +22726,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-125", 0 ],
 					"source" : [ "obj-162", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-34", 2 ],
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
