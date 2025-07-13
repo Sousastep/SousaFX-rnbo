@@ -10,11 +10,41 @@
 		}
 ,
 		"classnamespace" : "rnbo",
-		"rect" : [ 701.0, 348.0, 1000.0, 780.0 ],
+		"rect" : [ 135.0, 383.0, 1000.0, 780.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
 		"title" : "gp.filterdelaywrap",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 597.0, 506.0, 164.0, 23.0 ],
+					"rnbo_classname" : "scale",
+					"rnbo_serial" : 5,
+					"rnbo_uniqueid" : "scale_obj-8",
+					"text" : "scale -1 1 120 420. 2.321928"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 597.0, 467.0, 127.0, 23.0 ],
+					"rnbo_classname" : "r",
+					"rnbo_serial" : 1,
+					"rnbo_uniqueid" : "r_obj-7",
+					"text" : "r \"#1 Delay Freq 1 (bi)\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
@@ -23,7 +53,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 533.0, 596.0, 63.0, 23.0 ],
 					"rnbo_classname" : "feedback~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "feedback~_obj-5",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -106,7 +136,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 416.0, 596.0, 63.0, 23.0 ],
 					"rnbo_classname" : "feedback~",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "feedback~_obj-4",
 					"rnboinfo" : 					{
 						"needsInstanceInfo" : 1,
@@ -188,7 +218,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 533.0, 627.0, 112.0, 23.0 ],
 					"rnbo_classname" : "s~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "s~_obj-3",
 					"text" : "s~ \"#1 filterdelay R\""
 				}
@@ -202,7 +232,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 416.0, 627.0, 110.0, 23.0 ],
 					"rnbo_classname" : "s~",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "s~_obj-2",
 					"text" : "s~ \"#1 filterdelay L\""
 				}
@@ -474,7 +504,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.0, 335.0, 136.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "r_obj-212",
 					"text" : "r \"#1 Delay Fdbk 1 (uni)\""
 				}
@@ -489,7 +519,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 284.0, 100.0, 137.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "r_obj-214",
 					"text" : "r \"#1 Delay Send 1 (uni)\""
 				}
@@ -577,7 +607,7 @@
 						"changesPatcherIO" : 0
 					}
 ,
-					"text" : "loadmess -2"
+					"text" : "loadmess -8"
 				}
 
 			}
@@ -891,7 +921,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 364.0, 168.0, 82.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "r_obj-389",
 					"text" : "r tapped_bpm"
 				}
@@ -977,6 +1007,7 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
+												"touched" : 0,
 												"inlet" : 1,
 												"type" : "bang"
 											}
@@ -991,6 +1022,7 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
+												"touched" : 0,
 												"outlet" : 1,
 												"type" : "list",
 												"defaultValue" : ""
@@ -1004,6 +1036,7 @@
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
+												"touched" : 0,
 												"type" : "bang"
 											}
 
@@ -1101,7 +1134,7 @@
 ,
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "message_obj-16",
-									"text" : "0.5"
+									"text" : "0.8"
 								}
 
 							}
@@ -1150,21 +1183,21 @@
 									"patching_rect" : [ 773.0, 494.0, 69.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"steps" : 0.0,
+										"unit" : "%",
 										"order" : "5",
+										"sendinit" : 1,
+										"tonormalized" : "",
+										"exponent" : 1.0,
 										"preset" : 1,
-										"fromnormalized" : "",
 										"maximum" : 100.0,
 										"ctlin" : 5.0,
-										"sendinit" : 1,
 										"enum" : "",
-										"meta" : "",
-										"exponent" : 1.0,
+										"displayname" : "Regen",
+										"steps" : 0.0,
 										"minimum" : 0.0,
+										"meta" : "",
 										"displayorder" : "-",
-										"unit" : "%",
-										"tonormalized" : "",
-										"displayname" : "Regen"
+										"fromnormalized" : ""
 									}
 ,
 									"rnbo_serial" : 1,
@@ -1697,21 +1730,21 @@
 									"patching_rect" : [ 351.0, 585.0, 83.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"steps" : 0.0,
+										"unit" : "%",
 										"order" : "9",
+										"sendinit" : 1,
+										"tonormalized" : "",
+										"exponent" : 1.0,
 										"preset" : 1,
-										"fromnormalized" : "",
 										"maximum" : 0.0,
 										"ctlin" : 9.0,
-										"sendinit" : 1,
 										"enum" : "",
-										"meta" : "",
-										"exponent" : 1.0,
+										"displayname" : "Volume",
+										"steps" : 0.0,
 										"minimum" : -18.0,
+										"meta" : "",
 										"displayorder" : "-",
-										"unit" : "%",
-										"tonormalized" : "",
-										"displayname" : "Volume"
+										"fromnormalized" : ""
 									}
 ,
 									"rnbo_serial" : 2,
@@ -3052,8 +3085,8 @@
 									"patching_rect" : [ 151.0, 585.0, 69.0, 37.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"receivemode" : "local",
 										"args" : [  ],
+										"receivemode" : "local",
 										"polyphony" : -1.0,
 										"notecontroller" : 0,
 										"voicecontrol" : "midi",
@@ -3115,6 +3148,18 @@
 												"deprecated" : 0,
 												"touched" : 0,
 												"inlet" : 1,
+												"type" : "signal"
+											}
+,
+											"__probingout1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "__probingout1",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
 												"type" : "signal"
 											}
 ,
@@ -3422,21 +3467,21 @@
 									"patching_rect" : [ 391.0, 185.0, 79.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"steps" : 0.0,
+										"unit" : "%",
 										"order" : "8",
+										"sendinit" : 1,
+										"tonormalized" : "",
+										"exponent" : 1.0,
 										"preset" : 1,
-										"fromnormalized" : "",
 										"maximum" : 100.0,
 										"ctlin" : 8.0,
-										"sendinit" : 1,
 										"enum" : "",
-										"meta" : "",
-										"exponent" : 1.0,
+										"displayname" : "Spread",
+										"steps" : 0.0,
 										"minimum" : -100.0,
+										"meta" : "",
 										"displayorder" : "-",
-										"unit" : "%",
-										"tonormalized" : "",
-										"displayname" : "Spread"
+										"fromnormalized" : ""
 									}
 ,
 									"rnbo_serial" : 3,
@@ -5221,8 +5266,8 @@
 									"patching_rect" : [ 271.0, 215.0, 71.0, 37.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"receivemode" : "local",
 										"args" : [  ],
+										"receivemode" : "local",
 										"polyphony" : -1.0,
 										"notecontroller" : 0,
 										"voicecontrol" : "midi",
@@ -5259,6 +5304,18 @@
 												"deprecated" : 0,
 												"touched" : 0,
 												"type" : "number"
+											}
+,
+											"__probingout1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "__probingout1",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "signal"
 											}
 ,
 											"polyphony" : 											{
@@ -5458,7 +5515,7 @@
 										}
 ,
 										"classnamespace" : "rnbo",
-										"rect" : [ 616.0, 651.0, 1912.0, 1206.0 ],
+										"rect" : [ 614.0, 200.0, 1912.0, 1206.0 ],
 										"default_fontname" : "Lato",
 										"gridonopen" : 2,
 										"gridsize" : [ 10.0, 10.0 ],
@@ -5616,9 +5673,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 6 @comment allpass",
 																		"patching_rect" : [ 566.0, 735.0, 141.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-34",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -5627,9 +5684,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 5 @comment peak",
 																		"patching_rect" : [ 455.800000000000011, 690.0, 129.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-33",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -5638,9 +5695,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 4 @comment notch",
 																		"patching_rect" : [ 345.0, 735.0, 133.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-32",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -5649,9 +5706,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 2 @comment highpass",
 																		"patching_rect" : [ 125.199999999999989, 735.0, 151.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-31",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -5660,9 +5717,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 3 @comment bandpass",
 																		"patching_rect" : [ 235.400000000000006, 690.0, 155.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-30",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -5671,10 +5728,10 @@
 																		"maxclass" : "newobj",
 																		"text" : "in 3 @comment resonance",
 																		"patching_rect" : [ 566.0, 15.0, 152.0, 22.0 ],
-																		"numoutlets" : 1,
 																		"id" : "obj-21",
-																		"outlettype" : [ "" ],
-																		"numinlets" : 0
+																		"numinlets" : 0,
+																		"numoutlets" : 1,
+																		"outlettype" : [ "" ]
 																	}
 
 																}
@@ -5683,9 +5740,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 1 @comment lowpass",
 																		"patching_rect" : [ 15.0, 690.0, 147.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-9",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -5694,10 +5751,10 @@
 																		"maxclass" : "newobj",
 																		"text" : "in 2 @comment frequency",
 																		"patching_rect" : [ 290.5, 15.0, 149.0, 22.0 ],
-																		"numoutlets" : 1,
 																		"id" : "obj-7",
-																		"outlettype" : [ "" ],
-																		"numinlets" : 0
+																		"numinlets" : 0,
+																		"numoutlets" : 1,
+																		"outlettype" : [ "" ]
 																	}
 
 																}
@@ -5706,10 +5763,10 @@
 																		"maxclass" : "newobj",
 																		"text" : "in 1 @comment input",
 																		"patching_rect" : [ 15.0, 15.0, 122.0, 22.0 ],
-																		"numoutlets" : 1,
 																		"id" : "obj-6",
-																		"outlettype" : [ "" ],
-																		"numinlets" : 0
+																		"numinlets" : 0,
+																		"numoutlets" : 1,
+																		"outlettype" : [ "" ]
 																	}
 
 																}
@@ -5717,13 +5774,13 @@
 																	"box" : 																	{
 																		"maxclass" : "codebox",
 																		"patching_rect" : [ 15.0, 53.0, 570.0, 622.0 ],
-																		"numoutlets" : 6,
-																		"id" : "obj-5",
-																		"outlettype" : [ "", "", "", "", "", "" ],
-																		"fontsize" : 12.0,
-																		"fontname" : "<Monospaced>",
-																		"numinlets" : 3,
 																		"fontface" : 0,
+																		"id" : "obj-5",
+																		"fontsize" : 12.0,
+																		"numinlets" : 3,
+																		"numoutlets" : 6,
+																		"fontname" : "<Monospaced>",
+																		"outlettype" : [ "", "", "", "", "", "" ],
 																		"code" : "/* SVF structure by Andrew Simper\r\n * Low, band, high, notch and peak with bounded terms\n * https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf\n *\r\n * stable cf between 0 .. sr/2\r\n */\n\nsvf_as(xin, cf, q) {\n    History y0(0), y1(0), a1(0), a2(0), a3(0);\n\n    g = tan(cf * pi / samplerate);\n    r = 1 / q;\n\n    a1 = 1 / (1 + g * (g + r));\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v3 = xin - y1;\n    v1 = a1 * y0 + a2 * v3;\n    v2 = y1 + a2 * y0 + a3 * v3;\n    \n    y0 = 2 * v1 - y0;\n    y1 = 2 * v2 - y1;\n\n    lp = v2;\n    bp = v1;\n    hp = xin - r * v1 - v2;\n    notch = (lp + hp) + xin - r * v1;\n    peak = (lp - hp) + 2 * v2 - xin + r * v1;\n    all = (lp + hp - r * bp) + xin - 2 * r * v1;\n\n    return lp, hp, bp, notch, peak, all;\n}\r\n\r\nlimit = samplerate / 2;\r\n\r\ncf = clip(in2, 0, limit);\r\nq = clip(in3, 0, 1) * 20 + 0.5;\r\n\r\nout1, out2, out3, out4, out5, out6 = svf_as(in1, cf, q);"
 																	}
 
@@ -5806,7 +5863,7 @@
 													"rnbo_classname" : "gen~",
 													"rnbo_extra_attributes" : 													{
 														"exposeparams" : 0,
-														"gencode" : "svf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nlimit = samplerate / 2;\ncf = clip(in2, 0, limit);\nq = ((clip(in3, 0, 1)) * 20) + 0.5;\nexpr_1, expr_2, expr_3, expr_4, expr_5, expr_6 = svf_as(in1, cf, q);\nout5 = expr_5;\nout2 = expr_2;\nout6 = expr_6;\nout1 = expr_1;\nout3 = expr_3;\nout4 = expr_4;",
+														"gencode" : "svf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nlimit = samplerate / 2;\ncf = clip(in2, 0, limit);\nq = ((clip(in3, 0, 1)) * 20) + 0.5;\nexpr_1, expr_2, expr_3, expr_4, expr_5, expr_6 = svf_as(in1, cf, q);\nout4 = expr_4;\nout3 = expr_3;\nout5 = expr_5;\nout2 = expr_2;\nout6 = expr_6;\nout1 = expr_1;",
 														"geninlets" : 3,
 														"genoutlets" : 6
 													}
@@ -6157,9 +6214,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 6 @comment allpass",
 																		"patching_rect" : [ 566.0, 735.0, 141.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-34",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -6168,9 +6225,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 5 @comment peak",
 																		"patching_rect" : [ 455.800000000000011, 690.0, 129.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-33",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -6179,9 +6236,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 4 @comment notch",
 																		"patching_rect" : [ 345.0, 735.0, 133.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-32",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -6190,9 +6247,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 2 @comment highpass",
 																		"patching_rect" : [ 125.199999999999989, 735.0, 151.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-31",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -6201,9 +6258,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 3 @comment bandpass",
 																		"patching_rect" : [ 235.400000000000006, 690.0, 155.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-30",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -6212,10 +6269,10 @@
 																		"maxclass" : "newobj",
 																		"text" : "in 3 @comment resonance",
 																		"patching_rect" : [ 566.0, 15.0, 152.0, 22.0 ],
-																		"numoutlets" : 1,
 																		"id" : "obj-21",
-																		"outlettype" : [ "" ],
-																		"numinlets" : 0
+																		"numinlets" : 0,
+																		"numoutlets" : 1,
+																		"outlettype" : [ "" ]
 																	}
 
 																}
@@ -6224,9 +6281,9 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 1 @comment lowpass",
 																		"patching_rect" : [ 15.0, 690.0, 147.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-9",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0
 																	}
 
 																}
@@ -6235,10 +6292,10 @@
 																		"maxclass" : "newobj",
 																		"text" : "in 2 @comment frequency",
 																		"patching_rect" : [ 290.5, 15.0, 149.0, 22.0 ],
-																		"numoutlets" : 1,
 																		"id" : "obj-7",
-																		"outlettype" : [ "" ],
-																		"numinlets" : 0
+																		"numinlets" : 0,
+																		"numoutlets" : 1,
+																		"outlettype" : [ "" ]
 																	}
 
 																}
@@ -6247,10 +6304,10 @@
 																		"maxclass" : "newobj",
 																		"text" : "in 1 @comment input",
 																		"patching_rect" : [ 15.0, 15.0, 122.0, 22.0 ],
-																		"numoutlets" : 1,
 																		"id" : "obj-6",
-																		"outlettype" : [ "" ],
-																		"numinlets" : 0
+																		"numinlets" : 0,
+																		"numoutlets" : 1,
+																		"outlettype" : [ "" ]
 																	}
 
 																}
@@ -6258,13 +6315,13 @@
 																	"box" : 																	{
 																		"maxclass" : "codebox",
 																		"patching_rect" : [ 15.0, 53.0, 570.0, 622.0 ],
-																		"numoutlets" : 6,
-																		"id" : "obj-5",
-																		"outlettype" : [ "", "", "", "", "", "" ],
-																		"fontsize" : 12.0,
-																		"fontname" : "<Monospaced>",
-																		"numinlets" : 3,
 																		"fontface" : 0,
+																		"id" : "obj-5",
+																		"fontsize" : 12.0,
+																		"numinlets" : 3,
+																		"numoutlets" : 6,
+																		"fontname" : "<Monospaced>",
+																		"outlettype" : [ "", "", "", "", "", "" ],
 																		"code" : "/* SVF structure by Andrew Simper\r\n * Low, band, high, notch and peak with bounded terms\n * https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf\n *\r\n * stable cf between 0 .. sr/2\r\n */\n\nsvf_as(xin, cf, q) {\n    History y0(0), y1(0), a1(0), a2(0), a3(0);\n\n    g = tan(cf * pi / samplerate);\n    r = 1 / q;\n\n    a1 = 1 / (1 + g * (g + r));\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v3 = xin - y1;\n    v1 = a1 * y0 + a2 * v3;\n    v2 = y1 + a2 * y0 + a3 * v3;\n    \n    y0 = 2 * v1 - y0;\n    y1 = 2 * v2 - y1;\n\n    lp = v2;\n    bp = v1;\n    hp = xin - r * v1 - v2;\n    notch = (lp + hp) + xin - r * v1;\n    peak = (lp - hp) + 2 * v2 - xin + r * v1;\n    all = (lp + hp - r * bp) + xin - 2 * r * v1;\n\n    return lp, hp, bp, notch, peak, all;\n}\r\n\r\nlimit = samplerate / 2;\r\n\r\ncf = clip(in2, 0, limit);\r\nq = clip(in3, 0, 1) * 20 + 0.5;\r\n\r\nout1, out2, out3, out4, out5, out6 = svf_as(in1, cf, q);"
 																	}
 
@@ -6347,7 +6404,7 @@
 													"rnbo_classname" : "gen~",
 													"rnbo_extra_attributes" : 													{
 														"exposeparams" : 0,
-														"gencode" : "svf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nlimit = samplerate / 2;\ncf = clip(in2, 0, limit);\nq = ((clip(in3, 0, 1)) * 20) + 0.5;\nexpr_1, expr_2, expr_3, expr_4, expr_5, expr_6 = svf_as(in1, cf, q);\nout1 = expr_1;\nout6 = expr_6;\nout4 = expr_4;\nout5 = expr_5;\nout3 = expr_3;\nout2 = expr_2;",
+														"gencode" : "svf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nlimit = samplerate / 2;\ncf = clip(in2, 0, limit);\nq = ((clip(in3, 0, 1)) * 20) + 0.5;\nexpr_1, expr_2, expr_3, expr_4, expr_5, expr_6 = svf_as(in1, cf, q);\nout4 = expr_4;\nout6 = expr_6;\nout2 = expr_2;\nout3 = expr_3;\nout1 = expr_1;\nout5 = expr_5;",
 														"geninlets" : 3,
 														"genoutlets" : 6
 													}
@@ -7325,13 +7382,13 @@
 																	"box" : 																	{
 																		"maxclass" : "codebox",
 																		"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
-																		"numoutlets" : 1,
-																		"id" : "obj-7",
-																		"outlettype" : [ "" ],
-																		"fontsize" : 12.0,
-																		"fontname" : "<Monospaced>",
-																		"numinlets" : 1,
 																		"fontface" : 0,
+																		"id" : "obj-7",
+																		"fontsize" : 12.0,
+																		"numinlets" : 1,
+																		"numoutlets" : 1,
+																		"fontname" : "<Monospaced>",
+																		"outlettype" : [ "" ],
 																		"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 																	}
 
@@ -7341,12 +7398,12 @@
 																		"maxclass" : "newobj",
 																		"text" : "in 1",
 																		"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
-																		"numoutlets" : 1,
 																		"id" : "obj-1",
-																		"outlettype" : [ "" ],
 																		"fontsize" : 12.0,
+																		"numinlets" : 0,
+																		"numoutlets" : 1,
 																		"fontname" : "Arial",
-																		"numinlets" : 0
+																		"outlettype" : [ "" ]
 																	}
 
 																}
@@ -7355,26 +7412,26 @@
 																		"maxclass" : "newobj",
 																		"text" : "out 1",
 																		"patching_rect" : [ 81.0, 633.0, 37.0, 22.0 ],
-																		"numoutlets" : 0,
 																		"id" : "obj-4",
 																		"fontsize" : 12.0,
-																		"fontname" : "Arial",
-																		"numinlets" : 1
+																		"numinlets" : 1,
+																		"numoutlets" : 0,
+																		"fontname" : "Arial"
 																	}
 
 																}
  ],
 															"lines" : [ 																{
 																	"patchline" : 																	{
-																		"source" : [ "obj-7", 0 ],
-																		"destination" : [ "obj-4", 0 ]
+																		"source" : [ "obj-1", 0 ],
+																		"destination" : [ "obj-7", 0 ]
 																	}
 
 																}
 , 																{
 																	"patchline" : 																	{
-																		"source" : [ "obj-1", 0 ],
-																		"destination" : [ "obj-7", 0 ]
+																		"source" : [ "obj-7", 0 ],
+																		"destination" : [ "obj-4", 0 ]
 																	}
 
 																}
@@ -7811,9 +7868,9 @@
 													"patching_rect" : [ 550.0, 1020.0, 109.0, 37.0 ],
 													"rnbo_classname" : "delay~",
 													"rnbo_extra_attributes" : 													{
-														"interp" : "linear",
 														"ramp" : 50.0,
-														"maxdelayms" : 0.0
+														"maxdelayms" : 0.0,
+														"interp" : "linear"
 													}
 ,
 													"rnbo_serial" : 1,
@@ -7834,9 +7891,9 @@
 													"patching_rect" : [ 430.0, 1020.0, 109.0, 37.0 ],
 													"rnbo_classname" : "delay~",
 													"rnbo_extra_attributes" : 													{
-														"interp" : "linear",
 														"ramp" : 50.0,
-														"maxdelayms" : 0.0
+														"maxdelayms" : 0.0,
+														"interp" : "linear"
 													}
 ,
 													"rnbo_serial" : 2,
@@ -10279,8 +10336,8 @@
 									"patching_rect" : [ 151.0, 485.0, 499.0, 23.0 ],
 									"rnbo_classname" : "p",
 									"rnbo_extra_attributes" : 									{
-										"receivemode" : "local",
 										"args" : [  ],
+										"receivemode" : "local",
 										"polyphony" : -1.0,
 										"notecontroller" : 0,
 										"voicecontrol" : "midi",
@@ -10368,6 +10425,18 @@
 												"deprecated" : 0,
 												"touched" : 0,
 												"inlet" : 1,
+												"type" : "signal"
+											}
+,
+											"__probingout1" : 											{
+												"attrOrProp" : 1,
+												"digest" : "__probingout1",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
 												"type" : "signal"
 											}
 ,
@@ -10688,21 +10757,21 @@
 									"patching_rect" : [ 511.0, 415.0, 55.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
+										"unit" : "On/Off",
 										"order" : "4",
+										"sendinit" : 1,
+										"tonormalized" : "",
 										"preset" : 1,
-										"fromnormalized" : "",
-										"steps" : 2.0,
+										"exponent" : 1.0,
 										"maximum" : 1.0,
 										"ctlin" : 4.0,
-										"sendinit" : 1,
 										"enum" : "0 1",
+										"displayname" : "Feedback",
 										"meta" : "",
-										"exponent" : 1.0,
-										"minimum" : 0.0,
 										"displayorder" : "-",
-										"unit" : "On/Off",
-										"tonormalized" : "",
-										"displayname" : "Feedback"
+										"fromnormalized" : "",
+										"steps" : 2.0,
+										"minimum" : 0.0
 									}
 ,
 									"rnbo_serial" : 4,
@@ -11225,19 +11294,19 @@
 									"patching_rect" : [ 271.0, 50.0, 190.0, 23.0 ],
 									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
-										"steps" : 0.0,
-										"order" : "0",
-										"preset" : 1,
-										"fromnormalized" : "",
-										"ctlin" : 0.0,
-										"sendinit" : 1,
-										"enum" : "",
-										"meta" : "",
-										"exponent" : 1.0,
-										"displayorder" : "-",
 										"unit" : "",
+										"order" : "0",
+										"sendinit" : 1,
 										"tonormalized" : "",
-										"displayname" : ""
+										"exponent" : 1.0,
+										"preset" : 1,
+										"ctlin" : 0.0,
+										"enum" : "",
+										"displayname" : "",
+										"steps" : 0.0,
+										"meta" : "",
+										"displayorder" : "-",
+										"fromnormalized" : ""
 									}
 ,
 									"rnbo_serial" : 5,
@@ -12704,8 +12773,8 @@
 					"patching_rect" : [ 364.0, 540.0, 154.0, 25.0 ],
 					"rnbo_classname" : "p",
 					"rnbo_extra_attributes" : 					{
-						"receivemode" : "local",
 						"args" : [  ],
+						"receivemode" : "local",
 						"polyphony" : -1.0,
 						"notecontroller" : 0,
 						"voicecontrol" : "simple",
@@ -12868,6 +12937,18 @@
 								"deprecated" : 0,
 								"touched" : 0,
 								"inlet" : 1,
+								"type" : "signal"
+							}
+,
+							"__probingout1" : 							{
+								"attrOrProp" : 1,
+								"digest" : "__probingout1",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
 								"type" : "signal"
 							}
 ,
@@ -13337,7 +13418,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 568.0, 144.0, 111.0, 21.0 ],
-					"text" : "% -18 dB to 18 dB"
+					"text" : " -18 dB to 18 dB"
 				}
 
 			}
@@ -13873,6 +13954,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-411", 3 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
