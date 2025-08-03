@@ -2,7 +2,7 @@
 	"name" : "SousaFX-rnbo",
 	"version" : 1,
 	"creationdate" : 3827413226,
-	"modificationdate" : 3835273127,
+	"modificationdate" : 3837016401,
 	"viewrect" : [ 75.0, 156.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -14,6 +14,76 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"jb.vfxenvouts.rnbopat" : 			{
+				"kind" : "rnbopat",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"compressor_stereo.rnbopat" : 			{
+				"kind" : "rnbopat",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"comp_ui.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"floating window positioner.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"comp_window.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"hover_bang.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"bindings_info.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
