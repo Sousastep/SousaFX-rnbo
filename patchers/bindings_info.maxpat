@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 0,
-			"revision" : 7,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 966.0, 396.0, 628.0, 648.0 ],
+		"rect" : [ 1507.0, 291.0, 628.0, 648.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -19,7 +19,11 @@
 		"righttoolbarpinned" : 2,
 		"bottomtoolbarpinned" : 2,
 		"toolbars_unpinned_last_save" : 15,
-		"title" : "bindings info",
+		"assistshowspatchername" : 0,
+		"commentary" : "",
+		"showcommentary" : 0,
+		"enabletransparentbgwithtitlebar" : 1,
+		"title" : "sousafx-rnbo",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-45",
@@ -63,8 +67,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 157.0, 99.0, 236.0, 22.0 ],
-					"text" : "\"floating window positioner\" \"Bindings Info\""
+					"patching_rect" : [ 157.0, 99.0, 272.0, 22.0 ],
+					"text" : "\"floating window positioner\" \"Bindings Info\" 0 float"
 				}
 
 			}
@@ -78,7 +82,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 37.0, 20.0, 96.0, 58.0 ],
-					"presentation_linecount" : 5,
 					"text" : "window flags nofloat, window flags zoom, window flags grow, window exec, savewindow 0"
 				}
 
@@ -163,7 +166,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-123", 2 ],
-					"midpoints" : [ 166.5, 178.0, 478.0, 178.0, 478.0, 50.0, 383.5, 50.0 ],
+					"midpoints" : [ 166.5, 178.0, 478.0, 178.0, 478.0, 50.0, 419.5, 50.0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -177,7 +180,8 @@
 			}
  ],
 		"toolbaradditions" : [ "packagemanager" ],
-		"toolbarexclusions" : [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ]
+		"toolbarexclusions" : [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ],
+		"bgcolor" : [ 0.0, 0.0, 0.0, 0.7 ]
 	}
 
 }
