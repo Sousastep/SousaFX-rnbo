@@ -2,7 +2,7 @@
 	"name" : "SousaFX-rnbo",
 	"version" : 1,
 	"creationdate" : 3827413226,
-	"modificationdate" : 3837173159,
+	"modificationdate" : 3837184898,
 	"viewrect" : [ 75.0, 156.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -41,6 +41,11 @@
 				"local" : 1
 			}
 ,
+			"layout_saver.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"jb.vfxenvouts.rnbopat" : 			{
 				"kind" : "rnbopat",
 				"local" : 1,
@@ -61,7 +66,7 @@
 
 			}
 ,
-			"layout_saver.maxpat" : 			{
+			"about_SousaFX.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
@@ -78,6 +83,10 @@
 		}
 ,
 		"data" : 		{
+
+		}
+,
+		"externals" : 		{
 
 		}
 
