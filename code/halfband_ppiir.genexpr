@@ -1,0 +1,330 @@
+
+/**
+    Polyphase recursive filter for up/down sampling by 2.
+    This particular variant is extremely fast, but does not have linear phase.
+    Based on algorithms published by Fred Harris.
+
+    Copyright (c) 2025 Cycling '74
+
+    Permission is hereby granted, free of charge, to any person obtaining a 
+    copy of this software and associated documentation files (the “Software”), 
+    to deal in the Software without restriction, including without limitation 
+    the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+    and/or sell copies of the Software, and to permit persons to whom the 
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in 
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+    DEALINGS IN THE SOFTWARE.
+**/
+
+upsample2x_ppiir(x)
+{
+    // path 0 state
+    History p0_d1(0.); // delay register 1, feedforward for the first stage
+    History p0_d2(0.); // delay register 2, feedback for the first stage and feedforward for the second stage
+    History p0_d3(0.); // delay register 3, feedback for the second stage
+    // path 1 state
+    History p1_d1(0.); // delay register 1, feedforward for the first stage
+    History p1_d2(0.); // delay register 2, feedback for the first stage and feedforward for the second stage
+    History p1_d3(0.); // delay register 3, feedback for the second stage
+    
+    // all pass coefficients for -96 dB at the stopband edge of sr*0.3433
+    // calculated using the tony_des2.m Matlab script
+    p0_a0 = 0.052037289518901; 
+    p0_a1 = 0.437839073027302;
+    p1_a0 = 0.201398923640058;
+    p1_a1 = 0.773909435952642;
+
+    p1_d3_last = p1_d3;
+
+    // path 0
+    s = p0_d1 + p0_a0 * (x - p0_d2);
+    y = p0_d2 + p0_a1 * (s - p0_d3);
+    p0_d3 = y;
+    p0_d2 = s;
+    p0_d1 = x;
+
+    // path 1
+    s = p1_d1 + p1_a0 * (x - p1_d2);
+    y = p1_d2 + p1_a1 * (s - p1_d3);
+    p1_d3 = y;
+    p1_d2 = s;
+    p1_d1 = x;
+
+    return (p0_d3 + p1_d3_last) * 0.5, (p0_d3 + p1_d3) * 0.5;
+}
+    
+downsample2x_ppiir(x1, x2)
+{
+    // path 0 state
+    History p0_d1(0.); // delay register 1, feedforward for the first stage
+    History p0_d2(0.); // delay register 2, feedback for the first stage and feedforward for the second stage
+    History p0_d3(0.); // delay register 3, feedback for the second stage
+    // path 1 state
+    History p1_d1(0.); // delay register 1, feedforward for the first stage
+    History p1_d2(0.); // delay register 2, feedback for the first stage and feedforward for the second stage
+    History p1_d3(0.); // delay register 3, feedback for the second stage
+    
+    // all pass coefficients for -96 dB at the stopband edge of sr*0.3433
+    // calculated using the tony_des2.m Matlab script
+    p0_a0 = 0.052037289518901; 
+    p0_a1 = 0.437839073027302;
+    p1_a0 = 0.201398923640058;
+    p1_a1 = 0.773909435952642;
+
+    p1_d3_last = p1_d3;
+
+    // path 0
+    s = p0_d1 + p0_a0 * (x1 - p0_d2);
+    y = p0_d2 + p0_a1 * (s - p0_d3);
+    p0_d3 = y;
+    p0_d2 = s;
+    p0_d1 = x1;
+
+    // path 1
+    s = p1_d1 + p1_a0 * (x2 - p1_d2);
+    y = p1_d2 + p1_a1 * (s - p1_d3);
+    p1_d3 = y;
+    p1_d2 = s;
+    p1_d1 = x2;
+
+    return (p0_d3 + p1_d3_last) * 0.5;
+}
+
+upsample4x_ppiir(x)
+{
+    Data pass1_buf(16);
+    Data pass2_buf(16);
+
+    a, b = upsample2x_ppiir(x);
+    poke(pass1_buf, a, 0);
+    poke(pass1_buf, b, 1);
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 2; i += 1) {
+        v = peek(pass1_buf, i);
+        a, b = upsample2x_ppiir(v);
+        poke(pass2_buf, a, i*2);
+        poke(pass2_buf, b, i*2+1);
+    }
+
+    y1 = peek(pass2_buf, 0);
+    y2 = peek(pass2_buf, 1);
+    y3 = peek(pass2_buf, 2);
+    y4 = peek(pass2_buf, 3);
+
+    return y1, y2, y3, y4;
+}
+
+downsample4x_ppiir(x1, x2, x3, x4)
+{
+    Data pass1_buf(16);
+    Data pass2_buf(16);
+
+    poke(pass1_buf, x1, 0);
+    poke(pass1_buf, x2, 1);
+    poke(pass1_buf, x3, 2);
+    poke(pass1_buf, x4, 3);
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 2; i += 1) {
+        a = peek(pass1_buf, i*2);
+        b = peek(pass1_buf, i*2+1);
+        v = downsample2x_ppiir(a, b);
+        poke(pass2_buf, v, i);
+    }
+
+    y1 = peek(pass2_buf, 0);
+    y2 = peek(pass2_buf, 1);
+    return downsample2x_ppiir(y1, y2);
+}
+
+upsample8x_ppiir(x)
+{
+    Data pass1_buf(16);
+    Data pass2_buf(16);
+    Data pass3_buf(16);
+
+    a, b = upsample2x_ppiir(x);
+    poke(pass1_buf, a, 0);
+    poke(pass1_buf, b, 1);
+    
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 2; i += 1) {
+        v = peek(pass1_buf, i);
+        a, b = upsample2x_ppiir(v);
+        poke(pass2_buf, a, i*2);
+        poke(pass2_buf, b, i*2+1);
+    }
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 4; i += 1) {
+        v = peek(pass2_buf, i);
+        a, b = upsample2x_ppiir(v);
+        poke(pass3_buf, a, i*2);
+        poke(pass3_buf, b, i*2+1);
+    }
+
+    y1 = peek(pass3_buf, 0);
+    y2 = peek(pass3_buf, 1);
+    y3 = peek(pass3_buf, 2);
+    y4 = peek(pass3_buf, 3);
+    y5 = peek(pass3_buf, 4);
+    y6 = peek(pass3_buf, 5);
+    y7 = peek(pass3_buf, 6);
+    y8 = peek(pass3_buf, 7);
+
+    return y1, y2, y3, y4, y5, y6, y7, y8;
+}
+
+downsample8x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8)
+{
+    Data pass1_buf(16);
+    Data pass2_buf(16);
+    Data pass3_buf(16);
+
+    poke(pass1_buf, x1, 0);
+    poke(pass1_buf, x2, 1);
+    poke(pass1_buf, x3, 2);
+    poke(pass1_buf, x4, 3);
+    poke(pass1_buf, x5, 4);
+    poke(pass1_buf, x6, 5);
+    poke(pass1_buf, x7, 6);
+    poke(pass1_buf, x8, 7);
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 4; i += 1) {
+        a = peek(pass1_buf, i*2);
+        b = peek(pass1_buf, i*2+1);
+        v = downsample2x_ppiir(a, b);
+        poke(pass2_buf, v, i);
+    }
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 2; i += 1) {
+        a = peek(pass2_buf, i*2);
+        b = peek(pass2_buf, i*2+1);
+        v = downsample2x_ppiir(a, b);
+        poke(pass3_buf, v, i);
+    }
+
+    y1 = peek(pass3_buf, 0);
+    y2 = peek(pass3_buf, 1);
+    return downsample2x_ppiir(y1, y2);
+}
+
+upsample16x_ppiir(x)
+{
+    Data pass1_buf(16);
+    Data pass2_buf(16);
+    Data pass3_buf(16);
+    Data pass4_buf(16);
+
+    a, b = upsample2x_ppiir(x);
+    poke(pass1_buf, a, 0);
+    poke(pass1_buf, b, 1);
+    
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 2; i += 1) {
+        v = peek(pass1_buf, i);
+        a, b = upsample2x_ppiir(v);
+        poke(pass2_buf, a, i*2);
+        poke(pass2_buf, b, i*2+1);
+    }
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 4; i += 1) {
+        v = peek(pass2_buf, i);
+        a, b = upsample2x_ppiir(v);
+        poke(pass3_buf, a, i*2);
+        poke(pass3_buf, b, i*2+1);
+    }
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 8; i += 1) {
+        v = peek(pass3_buf, i);
+        a, b = upsample2x_ppiir(v);
+        poke(pass4_buf, a, i*2);
+        poke(pass4_buf, b, i*2+1);
+    }
+
+    y1 = peek(pass4_buf, 0);
+    y2 = peek(pass4_buf, 1);
+    y3 = peek(pass4_buf, 2);
+    y4 = peek(pass4_buf, 3);
+    y5 = peek(pass4_buf, 4);
+    y6 = peek(pass4_buf, 5);
+    y7 = peek(pass4_buf, 6);
+    y8 = peek(pass4_buf, 7);
+    y9 = peek(pass4_buf, 8);
+    y10 = peek(pass4_buf, 9);
+    y11 = peek(pass4_buf, 10);
+    y12 = peek(pass4_buf, 11);
+    y13 = peek(pass4_buf, 12);
+    y14 = peek(pass4_buf, 13);
+    y15 = peek(pass4_buf, 14);
+    y16 = peek(pass4_buf, 15);
+
+    return y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16;
+}
+
+downsample16x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16)
+{
+    Data pass1_buf(16);
+    Data pass2_buf(16);
+    Data pass3_buf(16);
+    Data pass4_buf(16);
+
+    poke(pass1_buf, x1, 0);
+    poke(pass1_buf, x2, 1);
+    poke(pass1_buf, x3, 2);
+    poke(pass1_buf, x4, 3);
+    poke(pass1_buf, x5, 4);
+    poke(pass1_buf, x6, 5);
+    poke(pass1_buf, x7, 6);
+    poke(pass1_buf, x8, 7);
+    poke(pass1_buf, x9, 8);
+    poke(pass1_buf, x10, 9);
+    poke(pass1_buf, x11, 10);
+    poke(pass1_buf, x12, 11);
+    poke(pass1_buf, x13, 12);
+    poke(pass1_buf, x14, 13);
+    poke(pass1_buf, x15, 14);
+    poke(pass1_buf, x16, 15);
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 8; i += 1) {
+        a = peek(pass1_buf, i*2);
+        b = peek(pass1_buf, i*2+1);
+        v = downsample2x_ppiir(a, b);
+        poke(pass2_buf, v, i);
+    }
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 4; i += 1) {
+        a = peek(pass2_buf, i*2);
+        b = peek(pass2_buf, i*2+1);
+        v = downsample2x_ppiir(a, b);
+        poke(pass3_buf, v, i);
+    }
+
+    // need to use a loop to preserve a single filter for pass
+    for (i = 0; i < 2; i += 1) {
+        a = peek(pass3_buf, i*2);
+        b = peek(pass3_buf, i*2+1);
+        v = downsample2x_ppiir(a, b);
+        poke(pass4_buf, v, i);
+    }
+
+    y1 = peek(pass4_buf, 0);
+    y2 = peek(pass4_buf, 1);
+    return downsample2x_ppiir(y1, y2);
+}

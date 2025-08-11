@@ -1,0 +1,78 @@
+/*
+Copyright 2012 Stefano D'Angelo <zanga.mail@gmail.com>
+Conversion to RNBO Copyright 2025 Cycling '74 
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THIS SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+*/
+
+/*
+This model is based on a reference implementation of an algorithm developed by
+Stefano D'Angelo and Vesa Valimaki, presented in a paper published at ICASSP in 2013.
+This improved model is based on a circuit analysis and compared against a reference
+Ngspice simulation. In the paper, it is noted that this particular model is
+more accurate in preserving the self-oscillating nature of the real filter.
+
+References: "An Improved Virtual Analog Model of the Moog Ladder Filter"
+Original Implementation: D'Angelo, Valimaki
+
+// Thermal voltage (26 milliwats at room temperature)
+#define VT 0.312
+*/
+
+tanh_rational(x) 
+{
+	// from https://www.musicdsp.org/en/latest/Other/238-rational-tanh-approximation.html
+	if (x > -3  && x < 3) {
+		return x * ( 27 + x * x ) / ( 27 + 9 * x * x );
+	} else if( x > 3 ) {
+		return 1;
+	} else {  // (x < -3)
+		return -1;
+	}
+}
+
+moogladder_dv(xin, cutoff, resonance, drive)
+{
+	History s_V0(0),s_V1(0),s_V2(0),s_V3(0);
+	History s_dV0(0),s_dV1(0),s_dV2(0),s_dV3(0);
+	History s_tV0(0),s_tV1(0),s_tV2(0),s_tV3(0);
+	
+	two_VT_inv = 1.602564102564102564; // (1./(2.0 * VT)) where VT = 0.312
+	two_sr_inv = 1.0 / (2 * samplerate);
+
+    x = cutoff * PI / samplerate;
+	g = 4.0 * PI * 0.312 * cutoff * (1.0 - x) / (1.0 + x); // where VT = 0.312
+	
+	dV0 = -g * (tanh_rational((drive * xin + resonance * s_V3) * two_VT_inv) + s_tV0);
+	s_V0 += (dV0 + s_dV0) * two_sr_inv;
+	s_dV0 = dV0;
+	s_tV0 = tanh_rational(s_V0 * two_VT_inv);
+	
+	dV1 = g * (s_tV0 - s_tV1);
+	s_V1 += (dV1 + s_dV1) * two_sr_inv;
+	s_dV1 = dV1;
+	s_tV1 = tanh_rational(s_V1 * two_VT_inv);
+	
+	dV2 = g * (s_tV1 - s_tV2);
+	s_V2 += (dV2 + s_dV2) * two_sr_inv;
+	s_dV2 = dV2;
+	s_tV2 = tanh_rational(s_V2 * two_VT_inv);
+	
+	dV3 = g * (s_tV2 - s_tV3);
+	s_V3 += (dV3 + s_dV3) * two_sr_inv;
+	s_dV3 = dV3;
+	s_tV3 = tanh_rational(s_V3 * two_VT_inv);
+
+	return s_V3;
+}
