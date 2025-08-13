@@ -10,11 +10,44 @@
 		}
 ,
 		"classnamespace" : "rnbo",
-		"rect" : [ 335.0, 87.0, 1570.0, 1319.0 ],
+		"rect" : [ 629.0, 87.0, 1570.0, 1319.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
+		"assistshowspatchername" : 0,
+		"commentary" : "",
+		"showcommentary" : 0,
 		"title" : "jb.kickduck",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 402.0, 1324.0, 99.0, 23.0 ],
+					"rnbo_classname" : "list.lookup",
+					"rnbo_serial" : 1,
+					"rnbo_uniqueid" : "list.lookup_obj-11",
+					"text" : "list.lookup 0.95 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 252.0, 1483.0, 98.0, 23.0 ],
+					"rnbo_classname" : "scale~",
+					"rnbo_serial" : 2,
+					"rnbo_uniqueid" : "scale~_obj-9",
+					"text" : "scale~ 0 1 0.95 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Light",
 					"id" : "obj-20",
@@ -22,7 +55,6 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 19.0, 835.0, 140.0, 21.0 ],
-					"presentation_linecount" : 2,
 					"suppressinlet" : 1,
 					"text" : "stifle retrigger's transient"
 				}
@@ -37,7 +69,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 161.0, 868.0, 51.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "*~_obj-18",
 					"text" : "*~ 4800"
 				}
@@ -56,7 +88,7 @@
 						"hot" : 0
 					}
 ,
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "*_obj-17",
 					"text" : "* 48."
 				}
@@ -71,7 +103,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 161.0, 834.0, 73.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "slide~_obj-16",
 					"text" : "slide~ 0 480"
 				}
@@ -86,7 +118,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 161.0, 796.0, 54.0, 23.0 ],
 					"rnbo_classname" : "<~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "<~_obj-14",
 					"text" : "<~ -0.05"
 				}
@@ -116,7 +148,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 1329.5, 66.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 8,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "slide~_obj-12",
 					"text" : "slide~ 0 12"
 				}
@@ -130,11 +162,11 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 395.5, 176.666666666666657, 24.0, 24.0 ],
+					"patching_rect" : [ 402.0, 1285.5, 24.0, 24.0 ],
 					"rnbo_classname" : "toggle",
 					"rnbo_extra_attributes" : 					{
-						"order" : "",
-						"preset" : 0
+						"preset" : 0,
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -149,11 +181,11 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 395.5, 248.999999999999972, 87.0, 23.0 ],
+					"patching_rect" : [ 402.0, 1399.0, 101.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "slide~_obj-6",
-					"text" : "slide~ 480 480"
+					"text" : "slide~ 4800 4800"
 				}
 
 			}
@@ -164,7 +196,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 395.5, 213.333333333333314, 30.0, 23.0 ],
+					"patching_rect" : [ 402.0, 1361.5, 30.0, 23.0 ],
 					"rnbo_classname" : "sig~",
 					"rnbo_extra_attributes" : 					{
 						"unit" : "ms"
@@ -183,26 +215,11 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.5, 141.0, 99.0, 23.0 ],
+					"patching_rect" : [ 402.0, 1248.0, 99.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "r_obj-3",
 					"text" : "r kickduck_status"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 252.0, 249.0, 31.0, 23.0 ],
-					"rnbo_classname" : "*~",
-					"rnbo_serial" : 4,
-					"rnbo_uniqueid" : "*~_obj-2",
-					"text" : "*~ 1"
 				}
 
 			}
@@ -220,9 +237,9 @@
 					"patching_rect" : [ 252.0, 825.0, 526.0, 296.0 ],
 					"rnbo_classname" : "codebox~",
 					"rnbo_extra_attributes" : 					{
+						"expr" : "",
 						"code" : "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
 						"nocache" : 0,
-						"expr" : "",
 						"safemath" : 1
 					}
 ,
@@ -570,8 +587,8 @@
 					"patching_rect" : [ 298.0, 691.0, 412.0, 23.0 ],
 					"rnbo_classname" : "message",
 					"rnbo_extra_attributes" : 					{
-						"storeempty" : 0,
-						"text" : "1. 0. 0. 0. 351.851852 0. 0.556604 648.148148 0."
+						"text" : "1. 0. 0. 0. 351.851852 0. 0.556604 648.148148 0.",
+						"storeempty" : 0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -589,7 +606,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 619.0, 51.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "*~_obj-77",
 					"text" : "*~ 1000"
 				}
@@ -607,8 +624,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"calccount" : 256.0,
-						"bufsize" : 128.0
+						"bufsize" : 128.0,
+						"calccount" : 256.0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -628,8 +645,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"calccount" : 256.0,
-						"bufsize" : 128.0
+						"bufsize" : 128.0,
+						"calccount" : 256.0
 					}
 ,
 					"rnbo_serial" : 2,
@@ -649,8 +666,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"calccount" : 256.0,
-						"bufsize" : 128.0
+						"bufsize" : 128.0,
+						"calccount" : 256.0
 					}
 ,
 					"rnbo_serial" : 3,
@@ -668,8 +685,8 @@
 					"patching_rect" : [ 252.0, 541.0, 52.0, 23.0 ],
 					"rnbo_classname" : "list.reg",
 					"rnbo_extra_attributes" : 					{
-						"order" : "",
-						"preset" : 0
+						"preset" : 0,
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -688,8 +705,8 @@
 					"patching_rect" : [ 285.0, 504.0, 65.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"list" : "",
-						"length" : 0.0
+						"length" : 0.0,
+						"list" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -1051,8 +1068,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"calccount" : 256.0,
-						"bufsize" : 128.0
+						"bufsize" : 128.0,
+						"calccount" : 256.0
 					}
 ,
 					"rnbo_serial" : 4,
@@ -1072,8 +1089,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"calccount" : 256.0,
-						"bufsize" : 128.0
+						"bufsize" : 128.0,
+						"calccount" : 256.0
 					}
 ,
 					"rnbo_serial" : 5,
@@ -1091,8 +1108,8 @@
 					"patching_rect" : [ 292.0, 394.0, 29.5, 23.0 ],
 					"rnbo_classname" : "message",
 					"rnbo_extra_attributes" : 					{
-						"storeempty" : 0,
-						"text" : ""
+						"text" : "",
+						"storeempty" : 0
 					}
 ,
 					"rnbo_serial" : 2,
@@ -1110,7 +1127,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 1189.0, 75.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "*~_obj-208",
 					"text" : "*~ 3.141593"
 				}
@@ -1155,7 +1172,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 1142.0, 40.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "*~_obj-185",
 					"text" : "*~ 0.5"
 				}
@@ -1170,7 +1187,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 331.0, 394.0, 82.0, 23.0 ],
 					"rnbo_classname" : "r",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "r_obj-31",
 					"text" : "r tapped_bpm"
 				}
@@ -1215,7 +1232,7 @@
 						"hot" : 0
 					}
 ,
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "*_obj-369",
 					"text" : "* 1.25"
 				}
@@ -1780,7 +1797,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 252.0, 1425.0, 78.0, 23.0 ],
+					"patching_rect" : [ 252.0, 1535.0, 78.0, 23.0 ],
 					"rnbo_classname" : "s~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "s~_obj-360",
@@ -1812,7 +1829,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 286.0, 73.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 1,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "slide~_obj-373",
 					"text" : "slide~ 0 960"
 				}
@@ -1971,8 +1988,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -2022,13 +2046,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-208", 0 ],
 					"source" : [ "obj-185", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-373", 0 ],
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -2120,7 +2137,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-373", 0 ],
 					"source" : [ "obj-372", 0 ]
 				}
 
@@ -2143,16 +2160,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-360", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-43", 0 ],
+					"order" : 1,
 					"source" : [ "obj-377", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-43", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
 					"source" : [ "obj-377", 0 ]
 				}
 
@@ -2227,7 +2244,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
+					"destination" : [ "obj-9", 3 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -2375,6 +2392,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-80", 1 ],
 					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-360", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
