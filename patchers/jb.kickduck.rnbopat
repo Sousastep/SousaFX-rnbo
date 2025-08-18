@@ -19,6 +19,92 @@
 		"title" : "jb.kickduck",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 443.0, 1286.0, 67.0, 23.0 ],
+					"rnbo_classname" : "loadmess",
+					"rnbo_serial" : 1,
+					"rnbo_uniqueid" : "loadmess_obj-2",
+					"rnboinfo" : 					{
+						"needsInstanceInfo" : 1,
+						"argnames" : 						{
+							"input" : 							{
+								"attrOrProp" : 1,
+								"digest" : "Bang to trigger message.",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 0,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"inlet" : 1,
+								"type" : "bang"
+							}
+,
+							"message" : 							{
+								"attrOrProp" : 1,
+								"digest" : "Message when patcher is loaded.",
+								"defaultarg" : 1,
+								"isalias" : 0,
+								"aliases" : [  ],
+								"settable" : 1,
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"outlet" : 1,
+								"type" : "list",
+								"defaultValue" : ""
+							}
+,
+							"startupbang" : 							{
+								"attrOrProp" : 1,
+								"digest" : "startupbang",
+								"isalias" : 0,
+								"aliases" : [  ],
+								"attachable" : 0,
+								"isparam" : 0,
+								"deprecated" : 0,
+								"touched" : 0,
+								"type" : "bang"
+							}
+
+						}
+,
+						"inputs" : [ 							{
+								"name" : "input",
+								"type" : "bang",
+								"digest" : "Bang to trigger message.",
+								"hot" : 1,
+								"docked" : 0
+							}
+ ],
+						"outputs" : [ 							{
+								"name" : "message",
+								"type" : "list",
+								"digest" : "Message when patcher is loaded.",
+								"defaultarg" : 1,
+								"docked" : 0
+							}
+ ],
+						"helpname" : "loadmess",
+						"aliasOf" : "loadmess",
+						"classname" : "loadmess",
+						"operator" : 0,
+						"versionId" : -361086158,
+						"changesPatcherIO" : 0
+					}
+,
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -41,7 +127,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 1483.0, 98.0, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "scale~_obj-9",
 					"text" : "scale~ 0 1 0.95 1"
 				}
@@ -165,8 +251,8 @@
 					"patching_rect" : [ 402.0, 1285.5, 24.0, 24.0 ],
 					"rnbo_classname" : "toggle",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"order" : ""
+						"order" : "",
+						"preset" : 0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -183,7 +269,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 402.0, 1399.0, 101.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "slide~_obj-6",
 					"text" : "slide~ 4800 4800"
 				}
@@ -237,10 +323,10 @@
 					"patching_rect" : [ 252.0, 825.0, 526.0, 296.0 ],
 					"rnbo_classname" : "codebox~",
 					"rnbo_extra_attributes" : 					{
-						"expr" : "",
 						"code" : "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
-						"nocache" : 0,
-						"safemath" : 1
+						"safemath" : 1,
+						"expr" : "",
+						"nocache" : 0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -606,7 +692,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 619.0, 51.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "*~_obj-77",
 					"text" : "*~ 1000"
 				}
@@ -624,8 +710,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -645,8 +731,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
 					"rnbo_serial" : 2,
@@ -666,8 +752,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
 					"rnbo_serial" : 3,
@@ -685,8 +771,8 @@
 					"patching_rect" : [ 252.0, 541.0, 52.0, 23.0 ],
 					"rnbo_classname" : "list.reg",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"order" : ""
+						"order" : "",
+						"preset" : 0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -705,8 +791,8 @@
 					"patching_rect" : [ 285.0, 504.0, 65.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -1068,8 +1154,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
 					"rnbo_serial" : 4,
@@ -1089,8 +1175,8 @@
 					"range" : [ -0.1, 1.1 ],
 					"rnbo_classname" : "scope~",
 					"rnbo_extra_attributes" : 					{
-						"bufsize" : 128.0,
-						"calccount" : 256.0
+						"calccount" : 256.0,
+						"bufsize" : 128.0
 					}
 ,
 					"rnbo_serial" : 5,
@@ -1127,7 +1213,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 1189.0, 75.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "*~_obj-208",
 					"text" : "*~ 3.141593"
 				}
@@ -1172,7 +1258,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 252.0, 1142.0, 40.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "*~_obj-185",
 					"text" : "*~ 0.5"
 				}
@@ -1283,8 +1369,8 @@
 					"patching_rect" : [ 252.0, 50.0, 35.0, 23.0 ],
 					"rnbo_classname" : "in~",
 					"rnbo_extra_attributes" : 					{
-						"comment" : "",
-						"meta" : ""
+						"meta" : "",
+						"comment" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -2046,6 +2132,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-208", 0 ],
 					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
