@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 804.0, 449.0, 1593.0, 837.0 ],
+		"rect" : [ 0.0, 53.0, 2102.0, 1387.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -25,6 +25,30 @@
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "compressor parameters",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "last" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "limiter_ui.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 409.0, 516.0, 189.600002825260162, 139.200002074241638 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 752.200007796287537, 397.800003111362457, 189.600002825260162, 139.200002074241638 ],
+					"varname" : "limiter_ui[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "newobj",
@@ -88,7 +112,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1165.600017368793488, 140.000002086162567, 189.600002825260162, 139.200002074241638 ],
+					"patching_rect" : [ 1028.0, 113.0, 189.600002825260162, 139.200002074241638 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 377.600005626678467, 7.200000107288361, 189.600002825260162, 139.200002074241638 ],
 					"varname" : "limiter_ui",
