@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1200.0, 279.0, 1064.0, 423.0 ],
+		"rect" : [ 894.0, 849.0, 821.0, 263.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -98,7 +98,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "synth/limiter" ],
+					"args" : [ "synth1/limiter", "synth1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -122,7 +122,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "drum/limiter" ],
+					"args" : [ "drum/limiter", "drum" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -146,7 +146,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "looper/limiter" ],
+					"args" : [ "looper/limiter", "looper" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -170,7 +170,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "main/limiter" ],
+					"args" : [ "main/limiter", "main" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,

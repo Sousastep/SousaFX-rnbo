@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 2102.0, 1387.0 ],
+		"rect" : [ 850.0, 749.0, 952.0, 542.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -26,7 +26,7 @@
 		"title" : "compressor parameters",
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "last" ],
+					"args" : [ "last", "last" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -98,7 +98,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "init" ],
+					"args" : [ "init", "init" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
