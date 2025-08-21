@@ -371,7 +371,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 312.0, 375.0, 97.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 119.0, 95.0, 64.0, 20.0 ],
+					"presentation_rect" : [ 117.0, 95.0, 64.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.numbox[29]",
@@ -411,7 +411,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 244.0, 139.0, 326.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, -6.0, 392.0, 40.0 ]
+					"presentation_rect" : [ 3.0, -6.0, 392.0, 40.0 ],
+					"text" : "#2"
 				}
 
 			}
