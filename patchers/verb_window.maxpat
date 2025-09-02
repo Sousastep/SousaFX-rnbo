@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 2102.0, 1387.0 ],
+		"rect" : [ 1001.0, 716.0, 804.0, 542.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -23,7 +23,7 @@
 		"commentary" : "",
 		"showcommentary" : 0,
 		"enabletransparentbgwithtitlebar" : 1,
-		"title" : "compressor parameters",
+		"title" : "reverb parameters",
 		"boxes" : [ 			{
 				"box" : 				{
 					"args" : [ "jb_drums/perc" ],
@@ -84,13 +84,13 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "verb_ui.maxpat",
+					"name" : "verbdrywet_ui.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 71.0, 271.0, 201.0, 143.0 ],
+					"patching_rect" : [ 71.0, 271.0, 202.0, 150.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 215.0, 7.0, 201.0, 143.0 ],
+					"presentation_rect" : [ 210.0, 7.0, 211.0, 143.0 ],
 					"varname" : "verb_ui",
 					"viewvisibility" : 1
 				}
