@@ -42,19 +42,19 @@
 					"patching_rect" : [ 150.0, 666.0, 234.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"enum" : "",
-						"steps" : 0.0,
-						"fromnormalized" : "",
-						"preset" : 1,
-						"displayorder" : "-",
-						"sendinit" : 1,
 						"unit" : "",
-						"exponent" : 1.0,
+						"tonormalized" : "",
 						"order" : "0",
+						"preset" : 1,
+						"displayname" : "",
+						"fromnormalized" : "",
+						"steps" : 0.0,
+						"sendinit" : 1,
 						"ctlin" : -1.0,
 						"meta" : "",
-						"tonormalized" : "",
-						"displayname" : ""
+						"enum" : "",
+						"exponent" : 1.0,
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -702,10 +702,10 @@
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
 						"maximum" : "<none>",
-						"initialFormat" : "float",
+						"order" : "",
 						"preset" : 0,
-						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"minimum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -2505,10 +2505,10 @@
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
 						"maximum" : 100.0,
-						"initialFormat" : "float",
+						"order" : "",
 						"preset" : 0,
-						"minimum" : 0.0,
-						"order" : ""
+						"initialFormat" : "float",
+						"minimum" : 0.0
 					}
 ,
 					"rnbo_serial" : 2,
@@ -2540,10 +2540,10 @@
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
 						"maximum" : 100.0,
-						"initialFormat" : "float",
+						"order" : "",
 						"preset" : 0,
-						"minimum" : 0.0,
-						"order" : ""
+						"initialFormat" : "float",
+						"minimum" : 0.0
 					}
 ,
 					"rnbo_serial" : 3,
@@ -2579,13 +2579,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
-										"fontname" : "<Monospaced>",
-										"fontface" : 0,
-										"numinlets" : 1,
 										"id" : "obj-7",
 										"fontsize" : 12.0,
+										"numinlets" : 1,
+										"fontname" : "<Monospaced>",
 										"numoutlets" : 1,
 										"outlettype" : [ "" ],
+										"fontface" : 0,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
 
@@ -2595,10 +2595,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
-										"fontname" : "Arial",
-										"numinlets" : 0,
 										"id" : "obj-1",
 										"fontsize" : 12.0,
+										"numinlets" : 0,
+										"fontname" : "Arial",
 										"numoutlets" : 1,
 										"outlettype" : [ "" ]
 									}
@@ -2609,10 +2609,10 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 81.0, 633.0, 37.0, 22.0 ],
-										"fontname" : "Arial",
-										"numinlets" : 1,
 										"id" : "obj-4",
 										"fontsize" : 12.0,
+										"numinlets" : 1,
+										"fontname" : "Arial",
 										"numoutlets" : 0
 									}
 
@@ -2620,15 +2620,15 @@
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
@@ -2806,7 +2806,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1101.0, 1322.0, 144.0, 23.0 ],
 					"rnbo_classname" : "rampsmooth~",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "rampsmooth~_obj-617",
 					"text" : "rampsmooth~ 480 72000"
 				}
@@ -3008,7 +3008,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 777.0, 950.0, 101.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "slide~_obj-589",
 					"text" : "slide~ 4800 4800"
 				}
@@ -3023,7 +3023,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 966.0, 950.0, 101.0, 23.0 ],
 					"rnbo_classname" : "slide~",
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "slide~_obj-590",
 					"text" : "slide~ 4800 4800"
 				}
@@ -3155,9 +3155,9 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 550.0, 1322.0, 144.0, 23.0 ],
 					"rnbo_classname" : "rampsmooth~",
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "rampsmooth~_obj-534",
-					"text" : "rampsmooth~ 480 72000"
+					"text" : "rampsmooth~ 480 36000"
 				}
 
 			}
@@ -3307,13 +3307,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
-										"fontname" : "<Monospaced>",
-										"fontface" : 0,
-										"numinlets" : 1,
 										"id" : "obj-7",
 										"fontsize" : 12.0,
+										"numinlets" : 1,
+										"fontname" : "<Monospaced>",
 										"numoutlets" : 1,
 										"outlettype" : [ "" ],
+										"fontface" : 0,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
 
@@ -3323,10 +3323,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
-										"fontname" : "Arial",
-										"numinlets" : 0,
 										"id" : "obj-1",
 										"fontsize" : 12.0,
+										"numinlets" : 0,
+										"fontname" : "Arial",
 										"numoutlets" : 1,
 										"outlettype" : [ "" ]
 									}
@@ -3337,10 +3337,10 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 81.0, 633.0, 37.0, 22.0 ],
-										"fontname" : "Arial",
-										"numinlets" : 1,
 										"id" : "obj-4",
 										"fontsize" : 12.0,
+										"numinlets" : 1,
+										"fontname" : "Arial",
 										"numoutlets" : 0
 									}
 
@@ -3348,15 +3348,15 @@
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}

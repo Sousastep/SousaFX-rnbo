@@ -16,8 +16,22 @@
 		"assistshowspatchername" : 0,
 		"commentary" : "",
 		"showcommentary" : 0,
-		"title" : "jb.autowah",
+		"title" : "jb.autowah.rnbopat",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 431.0, 2007.0, 56.0, 23.0 ],
+					"rnbo_classname" : "s",
+					"rnbo_serial" : 6,
+					"rnbo_uniqueid" : "s_obj-44",
+					"text" : "s phs_pff"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-175",
 					"maxclass" : "newobj",
@@ -425,7 +439,7 @@
 						"maxdelayms" : 0.0
 					}
 ,
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "delay~_obj-163",
 					"text" : "delay~ 44100 0 @ramp 1000 @interp linear"
 				}
@@ -444,7 +458,7 @@
 						"maxdelayms" : 0.0
 					}
 ,
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "delay~_obj-162",
 					"text" : "delay~ 44100 0 @ramp 1000 @interp linear"
 				}
@@ -557,10 +571,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 2",
 										"patching_rect" : [ 1468.666666666666742, 505.0, 23.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-19",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-19"
 									}
 
 								}
@@ -569,10 +583,10 @@
 										"maxclass" : "newobj",
 										"text" : "1",
 										"patching_rect" : [ 1705.0, 505.0, 19.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-18",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-18"
 									}
 
 								}
@@ -580,13 +594,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 996.0, 550.0, 728.0, 268.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "<Monospaced>",
-										"fontface" : 0,
-										"numinlets" : 4,
-										"id" : "obj-17",
-										"numoutlets" : 1,
 										"fontsize" : 12.0,
+										"numinlets" : 4,
+										"fontname" : "<Monospaced>",
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"fontface" : 0,
+										"id" : "obj-17",
 										"code" : "require(\"halfband_ppiir.genexpr\");\r\nrequire(\"moogladder_dv.genexpr\");\r\n\r\ncutoff = in2;\r\nresonance = in3;\r\ndrive = in4;\r\n\nup0, up1, up2, up3 = upsample4x_ppiir(in1);\n// do something to the upsampled values\nup0 = moogladder_dv(up0, cutoff, resonance, drive);\nup1 = moogladder_dv(up1, cutoff, resonance, drive);\nup2 = moogladder_dv(up2, cutoff, resonance, drive);\nup3 = moogladder_dv(up3, cutoff, resonance, drive);\nout1 = downsample4x_ppiir(up0, up1, up2, up3);\n"
 									}
 
@@ -596,10 +610,10 @@
 										"maxclass" : "newobj",
 										"text" : "0.1",
 										"patching_rect" : [ 911.0, 630.0, 25.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-14",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-14"
 									}
 
 								}
@@ -608,10 +622,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 4",
 										"patching_rect" : [ 156.0, 491.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-13",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-13"
 									}
 
 								}
@@ -620,10 +634,10 @@
 										"maxclass" : "newobj",
 										"text" : "selector 5",
 										"patching_rect" : [ 156.0, 775.0, 71.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 6,
-										"id" : "obj-12",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-12"
 									}
 
 								}
@@ -632,10 +646,10 @@
 										"maxclass" : "newobj",
 										"text" : "gate 5",
 										"patching_rect" : [ 187.0, 557.0, 61.0, 22.0 ],
-										"outlettype" : [ "", "", "", "", "" ],
 										"numinlets" : 2,
-										"id" : "obj-11",
-										"numoutlets" : 5
+										"numoutlets" : 5,
+										"outlettype" : [ "", "", "", "", "" ],
+										"id" : "obj-11"
 									}
 
 								}
@@ -644,10 +658,10 @@
 										"maxclass" : "newobj",
 										"text" : "gen @gen fc.diode.gendsp",
 										"patching_rect" : [ 778.0, 681.0, 152.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 4,
-										"id" : "obj-10",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-10"
 									}
 
 								}
@@ -656,10 +670,10 @@
 										"maxclass" : "newobj",
 										"text" : "gen @gen fc.svf-as.gendsp",
 										"patching_rect" : [ 590.0, 681.0, 155.0, 22.0 ],
-										"outlettype" : [ "", "", "", "", "", "" ],
 										"numinlets" : 3,
-										"id" : "obj-4",
-										"numoutlets" : 6
+										"numoutlets" : 6,
+										"outlettype" : [ "", "", "", "", "", "" ],
+										"id" : "obj-4"
 									}
 
 								}
@@ -668,10 +682,10 @@
 										"maxclass" : "newobj",
 										"text" : "gen @gen fc.k35lp.gendsp",
 										"patching_rect" : [ 400.0, 681.0, 151.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 3,
-										"id" : "obj-3",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-3"
 									}
 
 								}
@@ -680,10 +694,10 @@
 										"maxclass" : "newobj",
 										"text" : "clip 20 9700",
 										"patching_rect" : [ 353.0, 470.0, 73.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-9",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-9"
 									}
 
 								}
@@ -692,10 +706,10 @@
 										"maxclass" : "newobj",
 										"text" : "clip 0 1",
 										"patching_rect" : [ 806.0, 452.0, 47.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-8",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-8"
 									}
 
 								}
@@ -704,10 +718,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 3",
 										"patching_rect" : [ 806.0, 412.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-7",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-7"
 									}
 
 								}
@@ -717,8 +731,8 @@
 										"text" : "out 1",
 										"patching_rect" : [ 156.0, 833.0, 35.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-6",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-6"
 									}
 
 								}
@@ -727,10 +741,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 229.0, 491.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-5",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-5"
 									}
 
 								}
@@ -740,10 +754,10 @@
 										"text" : "smFilterPack_ladder_wrap @cutoffmode 0",
 										"linecount" : 2,
 										"patching_rect" : [ 187.0, 681.0, 154.0, 35.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 5,
-										"id" : "obj-29",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-29"
 									}
 
 								}
@@ -752,10 +766,10 @@
 										"maxclass" : "newobj",
 										"text" : "+ 20",
 										"patching_rect" : [ 353.0, 420.0, 32.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-80",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-80"
 									}
 
 								}
@@ -764,10 +778,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 9680",
 										"patching_rect" : [ 353.0, 380.0, 43.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-81",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-81"
 									}
 
 								}
@@ -775,13 +789,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 353.0, 105.0, 785.0, 261.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "<Monospaced>",
-										"fontface" : 0,
-										"numinlets" : 1,
-										"id" : "obj-82",
-										"numoutlets" : 1,
 										"fontsize" : 12.0,
+										"numinlets" : 1,
+										"fontname" : "<Monospaced>",
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"fontface" : 0,
+										"id" : "obj-82",
 										"code" : "// from the ease package, pow changed from 2 to 1.93 to better match Moog MF-101S filter freq taper\r\n\r\n// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after the exponential function y = 2^(10(x - 1))\r\n\nExponentialEaseIn(value)\n{\n\treturn (value == 0.0) ? value : pow(1.93, 10 * (value - 1));\n}\r\n\r\nout1 = ExponentialEaseIn(in1);\r\n\r\n"
 									}
 
@@ -791,10 +805,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 2",
 										"patching_rect" : [ 353.0, 65.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-84",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-84"
 									}
 
 								}
@@ -1051,7 +1065,7 @@
 					"rnbo_classname" : "gen~",
 					"rnbo_extra_attributes" : 					{
 						"exposeparams" : 0,
-						"gencode" : "upsample2x_ppiir(x) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x;\n\ts_1 = p1_d1 + (p1_a0 * ((x - p1_d2)));\n\ty_2 = p1_d2 + (p1_a1 * ((s_1 - p1_d3)));\n\tp1_d3 = y_2;\n\tp1_d2 = s_1;\n\tp1_d1 = x;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5, ((p0_d3 + p1_d3)) * 0.5;\n}\n\ndownsample2x_ppiir(x1, x2) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x1 - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x1;\n\ts_3 = p1_d1 + (p1_a0 * ((x2 - p1_d2)));\n\ty_4 = p1_d2 + (p1_a1 * ((s_3 - p1_d3)));\n\tp1_d3 = y_4;\n\tp1_d2 = s_3;\n\tp1_d1 = x2;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5;\n}\n\nupsample4x_ppiir(x) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0, 0, 0);\n\tpoke(pass1_buf, b, 1, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i, 0);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2, 0, 0);\n\t\tpoke(pass2_buf, b, (i * 2) + 1, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\ty3 = peek(pass2_buf, 2, 0);\n\ty4 = peek(pass2_buf, 3, 0);\n\treturn y1, y2, y3, y4;\n}\n\ndownsample4x_ppiir(x1, x2, x3, x4) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\tpoke(pass1_buf, x1, 0, 0, 0);\n\tpoke(pass1_buf, x2, 1, 0, 0);\n\tpoke(pass1_buf, x3, 2, 0, 0);\n\tpoke(pass1_buf, x4, 3, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2, 0);\n\t\tb = peek(pass1_buf, (i * 2) + 1, 0);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample8x_ppiir(x) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\ty3 = peek(pass3_buf, 2);\n\ty4 = peek(pass3_buf, 3);\n\ty5 = peek(pass3_buf, 4);\n\ty6 = peek(pass3_buf, 5);\n\ty7 = peek(pass3_buf, 6);\n\ty8 = peek(pass3_buf, 7);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8;\n}\n\ndownsample8x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample16x_ppiir(x) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\tv = peek(pass3_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass4_buf, a, i * 2);\n\t\tpoke(pass4_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\ty3 = peek(pass4_buf, 2);\n\ty4 = peek(pass4_buf, 3);\n\ty5 = peek(pass4_buf, 4);\n\ty6 = peek(pass4_buf, 5);\n\ty7 = peek(pass4_buf, 6);\n\ty8 = peek(pass4_buf, 7);\n\ty9 = peek(pass4_buf, 8);\n\ty10 = peek(pass4_buf, 9);\n\ty11 = peek(pass4_buf, 10);\n\ty12 = peek(pass4_buf, 11);\n\ty13 = peek(pass4_buf, 12);\n\ty14 = peek(pass4_buf, 13);\n\ty15 = peek(pass4_buf, 14);\n\ty16 = peek(pass4_buf, 15);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16;\n}\n\ndownsample16x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tpoke(pass1_buf, x9, 8);\n\tpoke(pass1_buf, x10, 9);\n\tpoke(pass1_buf, x11, 10);\n\tpoke(pass1_buf, x12, 11);\n\tpoke(pass1_buf, x13, 12);\n\tpoke(pass1_buf, x14, 13);\n\tpoke(pass1_buf, x15, 14);\n\tpoke(pass1_buf, x16, 15);\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass3_buf, i * 2);\n\t\tb = peek(pass3_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass4_buf, v, i);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\n\n\ntanh_rational(x) {\n\t_tanh_rational_ret_5 = 0;\n\tif((x > (-3)) && (x < 3)) {\n\t\t_tanh_rational_ret_5 = ((x * ((27 + (x * x))))) / ((27 + (((9 * x)) * x)));\n\t}\n\telse if(x > 3) {\n\t\t_tanh_rational_ret_5 = 1;\n\t}\n\telse {\n\t\t_tanh_rational_ret_5 = -1;\n\t}\n\treturn _tanh_rational_ret_5;\n}\n\nmoogladder_dv(xin, cutoff, resonance, drive) {\n\tHistory s_V0(0);\n\tHistory s_V1(0);\n\tHistory s_V2(0);\n\tHistory s_V3(0);\n\tHistory s_dV0(0);\n\tHistory s_dV1(0);\n\tHistory s_dV2(0);\n\tHistory s_dV3(0);\n\tHistory s_tV0(0);\n\tHistory s_tV1(0);\n\tHistory s_tV2(0);\n\tHistory s_tV3(0);\n\ttwo_VT_inv = 1.6025641025641;\n\ttwo_sr_inv = 1 / ((2 * samplerate));\n\tx = ((cutoff * PI)) / samplerate;\n\tg = ((((((((4 * PI)) * 0.312)) * cutoff)) * ((1 - x)))) / ((1 + x));\n\tdV0 = (-g) * (((tanh_rational((((drive * xin) + (resonance * s_V3))) * two_VT_inv)) + s_tV0));\n\ts_V0 = s_V0 + (((dV0 + s_dV0)) * two_sr_inv);\n\ts_dV0 = dV0;\n\ts_tV0 = tanh_rational(s_V0 * two_VT_inv);\n\tdV1 = g * ((s_tV0 - s_tV1));\n\ts_V1 = s_V1 + (((dV1 + s_dV1)) * two_sr_inv);\n\ts_dV1 = dV1;\n\ts_tV1 = tanh_rational(s_V1 * two_VT_inv);\n\tdV2 = g * ((s_tV1 - s_tV2));\n\ts_V2 = s_V2 + (((dV2 + s_dV2)) * two_sr_inv);\n\ts_dV2 = dV2;\n\ts_tV2 = tanh_rational(s_V2 * two_VT_inv);\n\tdV3 = g * ((s_tV2 - s_tV3));\n\ts_V3 = s_V3 + (((dV3 + s_dV3)) * two_sr_inv);\n\ts_dV3 = dV3;\n\ts_tV3 = tanh_rational(s_V3 * two_VT_inv);\n\treturn s_V3;\n}\n\n\n\nExponentialEaseIn(value) {\n\treturn value == 0 ? value : pow(1.93, 10 * ((value - 1)));\n}\n\ntnhA_6(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_7 = x * x;\n\tx_8 = x_7 * x_7;\n\tx_9 = x_8 * x_8;\n\tx_10 = x_9 * x_9;\n\tx_11 = x_10 * x_10;\n\treturn (((-1) / ((x_11 + 1))) * 2) + 1;\n}\n\ntnhA(x) {\n\tx = x * 2;\n\tx_12 = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_13 = x_12 * x_12;\n\tx_14 = x_13 * x_13;\n\tx_15 = x_14 * x_14;\n\tx_16 = x_15 * x_15;\n\tx_17 = x_16 * x_16;\n\treturn (((-1) / ((x_17 + 1))) * 2) + 1;\n}\n\ntauA(t) {\n\ty = expA((-1) / ((t * samplerate)));\n\treturn y + 0.000128;\n}\n\nexpA(x0) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x0))) * x0))) * x0);\n\tx_18 = x * x;\n\tx_19 = x_18 * x_18;\n\tx_20 = x_19 * x_19;\n\tx_21 = x_20 * x_20;\n\tx_22 = x_21 * x_21;\n\treturn x_22;\n}\n\ntanhLambert(x) {\n\tx2 = x * x;\n\ta = ((((((((x2 + 378)) * x2) + 17325)) * x2) + 135135)) * x;\n\tb = (((((((28 * x2) + 3150)) * x2) + 62370)) * x2) + 135135;\n\treturn clamp(a / b, -1, 1);\n}\n\ntnhA_23(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_24 = x * x;\n\tx_25 = x_24 * x_24;\n\tx_26 = x_25 * x_25;\n\tx_27 = x_26 * x_26;\n\tx_28 = x_27 * x_27;\n\treturn (((-1) / ((x_28 + 1))) * 2) + 1;\n}\n\ntnhA_29(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_30 = x * x;\n\tx_31 = x_30 * x_30;\n\tx_32 = x_31 * x_31;\n\tx_33 = x_32 * x_32;\n\tx_34 = x_33 * x_33;\n\treturn (((-1) / ((x_34 + 1))) * 2) + 1;\n}\n\nexpsmooth(x, t) {\n\tHistory w(0);\n\tz = tauA(t);\n\ty = (z * w) + (x * ((1 - z)));\n\tw = y;\n\treturn y;\n}\n\nmtofApprox(pitch) {\n\tmtofA = 440 * (expA(0.057762265 * ((pitch - 69))));\n\treturn mtofA + 0.120906;\n}\n\ntnhA_35(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_36 = x * x;\n\tx_37 = x_36 * x_36;\n\tx_38 = x_37 * x_37;\n\tx_39 = x_38 * x_38;\n\tx_40 = x_39 * x_39;\n\treturn (((-1) / ((x_40 + 1))) * 2) + 1;\n}\n\nlogsmooth(x, s) {\n\tHistory z(0);\n\tad = 0.693147 / ((s * samplerate));\n\ty = (((x - z)) * ad) + z;\n\tz = y;\n\treturn y;\n}\n\nk35_lp(xin, cf, q) {\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory S35(0);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tG = g / ((1 + g));\n\tK = 0.01 + (((2 - 0.01)) * (q / 10));\n\tlpf2_beta = ((K - (K * G))) / ((1 + g));\n\thpf1_beta = (-1) / ((1 + g));\n\talpha = 1 / (((1 - (K * G)) + (((K * G)) * G)));\n\tv1 = ((xin - z1)) * G;\n\tlp1 = v1 + z1;\n\tz1 = lp1 + v1;\n\tu = alpha * ((lp1 + S35));\n\tv2 = ((u - z2)) * G;\n\tlp2 = v2 + z2;\n\tz2 = lp2 + v2;\n\ty = K * lp2;\n\tv3 = ((y - z3)) * G;\n\tlp3 = v3 + z3;\n\tz3 = lp3 + v3;\n\tS35 = (lpf2_beta * z2) + (hpf1_beta * z3);\n\treturn K > 0 ? y / K : y;\n}\n\nsvf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nzdf_diode(xin, cf, q, sat) {\n\tHistory z0(0);\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory a1(1);\n\tHistory a2(0.5);\n\tHistory a3(0.5);\n\tHistory a4(0.5);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tg_one = 1 + g;\n\tG4 = ((0.5 * g)) / g_one;\n\tG3 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G4)));\n\tG2 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G3)));\n\tG1 = g / ((g_one - (g * G2)));\n\tGAMMA = ((((G4 * G3)) * G2)) * G1;\n\tSG1 = ((G4 * G3)) * G2;\n\tSG2 = G4 * G3;\n\tSG3 = G4;\n\tSG4 = 1;\n\talpha = g / g_one;\n\tbeta1 = 1 / ((g_one - (g * G2)));\n\tbeta2 = 1 / ((g_one - (((0.5 * g)) * G3)));\n\tbeta3 = 1 / ((g_one - (((0.5 * g)) * G4)));\n\tbeta4 = 1 / g_one;\n\tgamma1 = ((1 + G1)) + G2;\n\tgamma2 = 1 + (G2 * G3);\n\tgamma3 = 1 + (G3 * G4);\n\tdelta1 = g;\n\tdelta3 = 0.5 * g;\n\tdelta2 = delta3;\n\tepsilon1 = G2;\n\tepsilon2 = G3;\n\tepsilon3 = G4;\n\tfb4 = beta4 * z3;\n\tfb3 = beta3 * ((z2 + (fb4 * delta3)));\n\tfb2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo1 = beta1 * ((z0 + (fb2 * delta1)));\n\tfbo2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo3 = beta3 * ((z2 + (fb4 * delta3)));\n\tSIGMA = (((((SG1 * fbo1) + (SG2 * fbo2))) + (SG3 * fbo3))) + (SG4 * fb4);\n\txin_tanh = (1 / (tanh(sat))) * (tanh(sat * xin));\n\tun = ((xin_tanh - (q * SIGMA))) / ((1 + (q * GAMMA)));\n\tvin = (((un * gamma1) + fb2)) + (epsilon1 * fbo1);\n\tv = (((a1 * vin) - z0)) * alpha;\n\tlp = v + z0;\n\tz0 = lp + v;\n\tvin_41 = (((lp * gamma2) + fb3)) + (epsilon2 * fbo2);\n\tv_42 = (((a2 * vin_41) - z1)) * alpha;\n\tlp_43 = v_42 + z1;\n\tz1 = lp_43 + v_42;\n\tvin_44 = (((lp_43 * gamma3) + fb4)) + (epsilon3 * fbo3);\n\tv_45 = (((a3 * vin_44) - z3)) * alpha;\n\tlp_46 = v_45 + z3;\n\tz3 = lp_46 + v_45;\n\tv_47 = (((a4 * lp_46) - z3)) * alpha;\n\tlp_48 = v_47 + z3;\n\tz3 = lp_48 + v_47;\n\treturn lp_48;\n}\n\nHistory fT(0);\nHistory history_49(0);\nHistory history_50(0);\nHistory history_51(0);\nHistory history_52(0);\nexpr_53 = ExponentialEaseIn(in2);\nint_54 = int(1);\ngate_55, gate_56, gate_57, gate_58, gate_59 = gate(in4, in1, choices=5);\nfloat_60 = float(0.1);\nmul_61 = expr_53 * 9680;\nadd_62 = mul_61 + 20;\nclamp_63 = clamp(add_62, 20, 9700);\nclamp_64 = clamp(in3, 0, 1);\nmul_65 = clamp_64 * 2;\nup0, up1, up2, up3 = upsample4x_ppiir(in1);\nup_66 = moogladder_dv(up0, clamp_63, mul_65, int_54);\nup1 = moogladder_dv(up1, clamp_63, mul_65, int_54);\nup2 = moogladder_dv(up2, clamp_63, mul_65, int_54);\nup3 = moogladder_dv(up3, clamp_63, mul_65, int_54);\nexpr_67 = downsample4x_ppiir(up_66, up1, up2, up3);\ncutoffsmooth = clamp(0, 0, 1000);\ncutoffmode = clamp(0, 0, 1);\nresonancesmooth = clamp(0, 0, 1000);\nshape = clamp(0.5, 0, 1);\nsetparam_68 = shape;\nsetparam_69 = resonancesmooth;\nsetparam_70 = cutoffmode;\nsetparam_71 = cutoffsmooth;\ncutoffsmooth_72 = clamp(setparam_71, 0, 1000);\ncutoffmode_73 = clamp(setparam_70, 0, 1);\nresonancesmooth_74 = clamp(setparam_69, 0, 1000);\ncfm = int(cutoffmode_73);\ncutoff = clamp_63;\nif(cutoffsmooth_72 > 0) {\n\tcs = cutoffsmooth_72 * 0.001;\n\tcutoff = logsmooth(cutoff, cs);\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\nelse {\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\ncutoff_75 = cutoff + 0;\nf = clip(cutoff_75, 5, samplerate / 2.25);\nk = (clip(clamp_64, 0, 2)) * 4;\nif(resonancesmooth_74 > 0) {\n\trs = resonancesmooth_74 * 0.001;\n\tk = expsmooth(k, rs);\n}\nexpr_76 = f;\nexpr_77 = k;\ngen_78 = expr_76;\ngen_79 = expr_77;\nsaturate = clamp(setparam_68, 0, 1);\nnk_80 = gen_79;\nnx_81 = gate_55;\nnx_82 = nx_81;\nexpr_83 = gen_78 * (pi / samplerate);\nx2 = expr_83 * expr_83;\nx3 = x2 * expr_83;\nx5 = x2 * x3;\nexpr_84 = (((x5 * 0.133333) + (x3 * 0.333333))) + expr_83;\ngen_85 = expr_84;\npass_86 = pass(gen_85);\npass_87 = pass(gen_85);\npass_88 = pass(gen_85);\npass_89 = pass(gen_85);\nadd_90 = history_51 + history_51;\nadd_91 = pass_86 + 1;\nrdiv_92 = 1 / add_91;\nadd_93 = history_49 + history_49;\nadd_94 = pass_87 + 1;\nrdiv_95 = 1 / add_94;\nnk_96 = nk_80;\nadd_97 = history_50 + history_50;\nadd_98 = pass_88 + 1;\nrdiv_99 = 1 / add_98;\nadd_100 = history_52 + history_52;\nadd_101 = pass_89 + 1;\nrdiv_102 = 1 / add_101;\nnk_103 = nk_80;\nnk_104 = nk_80;\nnx_105 = nx_81;\nnx_106 = nx_81;\nnk_107 = nk_80;\nnk_108 = nk_80;\ndiv_109 = nx_106 / nk_108;\nnk_110 = nk_80;\nnx_111 = nx_81;\nnx_112 = nx_81;\nnx_113 = nx_81;\nmul_114 = rdiv_95 * pass_87;\nmul_115 = pass_88 * mul_114;\nmul_116 = rdiv_99 * mul_115;\nmul_117 = pass_86 * mul_116;\nmul_118 = rdiv_92 * mul_117;\nmul_119 = pass_89 * mul_118;\nmul_120 = rdiv_102 * mul_119;\nng_121 = mul_120;\nng_122 = ng_121;\nmul_123 = nk_96 * ng_122;\nng_124 = ng_121;\nmul_125 = nk_103 * ng_124;\nmul_126 = nk_107 * ng_121;\nng_127 = ng_121;\nmul_128 = nk_104 * ng_127;\nng_129 = ng_121;\nmul_130 = nk_110 * ng_129;\nmul_131 = rdiv_95 * add_93;\nmul_132 = pass_88 * mul_131;\nadd_133 = mul_132 + add_97;\nmul_134 = rdiv_99 * add_133;\nmul_135 = pass_86 * mul_134;\nadd_136 = mul_135 + add_90;\nmul_137 = rdiv_92 * add_136;\nmul_138 = pass_89 * mul_137;\nadd_139 = mul_138 + add_100;\nmul_140 = rdiv_102 * add_139;\nns_141 = mul_140;\nns_142 = ns_141;\nns_143 = ns_141;\nns_144 = ns_141;\nns_145 = ns_141;\nadd_146 = mul_140 + mul_120;\nmul_147 = add_146 * nk_108;\ngte_148 = nx_106 >= mul_147;\nsub_149 = mul_140 - mul_120;\nmul_150 = sub_149 * nk_108;\nlte_151 = nx_106 <= mul_150;\nswitch_152 = lte_151 ? sub_149 : div_109;\nswitch_153 = gte_148 ? add_146 : switch_152;\npass_154 = pass(switch_153);\nmul_155 = nk_110 * pass_154;\nsub_156 = nx_113 - mul_155;\nexpr_157 = tnhA(sub_156);\ngen_158 = expr_157;\nmul_159 = gen_158 * ng_129;\nadd_160 = mul_159 + ns_141;\nsub_161 = add_160 - pass_154;\nmul_162 = gen_158 * gen_158;\nsub_163 = mul_162 - 1;\nmul_164 = mul_130 * sub_163;\nsub_165 = mul_164 - 1;\ndiv_166 = sub_161 / sub_165;\nsub_167 = pass_154 - div_166;\nmul_168 = nk_107 * sub_167;\nsub_169 = nx_112 - mul_168;\nexpr_170 = tnhA_29(sub_169);\ngen_171 = expr_170;\nmul_172 = gen_171 * ng_121;\nadd_173 = mul_172 + ns_145;\nsub_174 = add_173 - sub_167;\nmul_175 = gen_171 * gen_171;\nsub_176 = mul_175 - 1;\nmul_177 = mul_126 * sub_176;\nsub_178 = mul_177 - 1;\ndiv_179 = sub_174 / sub_178;\nsub_180 = sub_167 - div_179;\nmul_181 = nk_104 * sub_180;\nsub_182 = nx_111 - mul_181;\nexpr_183 = tnhA_6(sub_182);\ngen_184 = expr_183;\nmul_185 = gen_184 * ng_127;\nadd_186 = mul_185 + ns_144;\nsub_187 = add_186 - sub_180;\nmul_188 = gen_184 * gen_184;\nsub_189 = mul_188 - 1;\nmul_190 = mul_128 * sub_189;\nsub_191 = mul_190 - 1;\ndiv_192 = sub_187 / sub_191;\nsub_193 = sub_180 - div_192;\npass_194 = pass(sub_193);\nmul_195 = nk_103 * pass_194;\nsub_196 = nx_105 - mul_195;\nexpr_197 = tnhA_23(sub_196);\ngen_198 = expr_197;\nmul_199 = gen_198 * ng_124;\nadd_200 = mul_199 + ns_143;\nsub_201 = add_200 - pass_194;\nmul_202 = gen_198 * gen_198;\nsub_203 = mul_202 - 1;\nmul_204 = mul_125 * sub_203;\nsub_205 = mul_204 - 1;\ndiv_206 = sub_201 / sub_205;\nsub_207 = pass_194 - div_206;\nmul_208 = nk_96 * sub_207;\nsub_209 = nx_81 - mul_208;\nexpr_210 = tnhA_35(sub_209);\ngen_211 = expr_210;\nmul_212 = gen_211 * ng_122;\nadd_213 = mul_212 + ns_142;\nsub_214 = add_213 - sub_207;\nmul_215 = gen_211 * gen_211;\nsub_216 = mul_215 - 1;\nmul_217 = mul_123 * sub_216;\nsub_218 = mul_217 - 1;\ndiv_219 = sub_214 / sub_218;\nsub_220 = sub_207 - div_219;\nexpr_221 = nx_82 - (nk_80 * sub_220);\nexpr_222 = (saturate * 18) - 9;\nexpr_223 = (fastpow(10, expr_222 * 0.05)) + 0.028652;\nsmooth = clamp(0.999, 0.501, 0.99995);\nmul_224 = smooth * fT;\nrsub_225 = 1 - smooth;\nmul_226 = expr_223 * rsub_225;\nadd_227 = mul_224 + mul_226;\ngen_228 = add_227;\nfT_next_229 = fixdenorm(add_227);\nrdiv_230 = 1 / gen_228;\ndcblock_231 = dcblock(expr_221);\nmul_232 = dcblock_231 * rdiv_230;\nexpr_233 = tanhLambert(mul_232);\ngen_234 = expr_233;\nmul_235 = gen_234 * gen_228;\ngen_236 = mul_235;\npass_237 = pass(gen_236);\nmul_238 = pass_237 * pass_87;\nadd_239 = mul_238 + add_93;\nmul_240 = add_239 * rdiv_95;\nsub_241 = pass_237 - mul_240;\nmul_242 = sub_241 * pass_87;\nadd_243 = mul_242 + history_49;\nadd_244 = add_243 + history_49;\npass_245 = pass(add_244);\nmul_246 = pass_245 * pass_88;\nadd_247 = mul_246 + add_97;\nmul_248 = add_247 * rdiv_99;\nsub_249 = pass_245 - mul_248;\nmul_250 = sub_249 * pass_88;\nadd_251 = mul_250 + history_50;\nadd_252 = add_251 + history_50;\npass_253 = pass(add_252);\nmul_254 = pass_253 * pass_86;\nadd_255 = mul_254 + add_90;\nmul_256 = add_255 * rdiv_92;\nsub_257 = pass_253 - mul_256;\nmul_258 = sub_257 * pass_86;\nadd_259 = mul_258 + history_51;\nadd_260 = add_259 + history_51;\npass_261 = pass(add_260);\nmul_262 = pass_261 * pass_89;\nadd_263 = mul_262 + add_100;\nmul_264 = add_263 * rdiv_102;\nsub_265 = pass_261 - mul_264;\nmul_266 = sub_265 * pass_89;\nadd_267 = mul_266 + history_52;\ny_268 = sub_220;\ngen_269 = y_268;\nhistory_49_next_270 = fixdenorm(add_243);\nhistory_50_next_271 = fixdenorm(add_251);\nhistory_51_next_272 = fixdenorm(add_259);\nhistory_52_next_273 = fixdenorm(add_267);\ngen_274 = gen_269;\nlimit = (samplerate / 2) - 25;\ncf = clip(clamp_63, 0, limit);\nq = (clip(clamp_64, 0, 1)) * 10;\nexpr_275 = k35_lp(gate_56, cf, q);\ngen_276 = expr_275;\nlimit_277 = samplerate / 2;\ncf_278 = clip(clamp_63, 0, limit_277);\nq_279 = ((clip(clamp_64, 0, 1)) * 20) + 0.5;\nexpr_280, expr_281, expr_282, expr_283, expr_284, expr_285 = svf_as(gate_57, cf_278, q_279);\ngen_286 = expr_285;\ngen_287 = expr_282;\ngen_288 = expr_281;\ngen_289 = expr_284;\ngen_290 = expr_283;\ngen_291 = expr_280;\nlimit_292 = samplerate / 3;\ncf_293 = clip(clamp_63, 0, limit_292);\nq_294 = (clip(clamp_64, 0, 1)) * 19;\nsat = ((clip(float_60, 0, 1)) * 30) + 0.001;\nexpr_295 = zdf_diode(gate_58, cf_293, q_294, sat);\ngen_296 = expr_295;\nselector_297 = selector(in4, gen_274, gen_276, gen_291, gen_296, expr_67);\nout1 = selector_297;\nfT = fT_next_229;\nhistory_52 = history_52_next_273;\nhistory_51 = history_51_next_272;\nhistory_50 = history_50_next_271;\nhistory_49 = history_49_next_270;",
+						"gencode" : "upsample2x_ppiir(x) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x;\n\ts_1 = p1_d1 + (p1_a0 * ((x - p1_d2)));\n\ty_2 = p1_d2 + (p1_a1 * ((s_1 - p1_d3)));\n\tp1_d3 = y_2;\n\tp1_d2 = s_1;\n\tp1_d1 = x;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5, ((p0_d3 + p1_d3)) * 0.5;\n}\n\ndownsample2x_ppiir(x1, x2) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x1 - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x1;\n\ts_3 = p1_d1 + (p1_a0 * ((x2 - p1_d2)));\n\ty_4 = p1_d2 + (p1_a1 * ((s_3 - p1_d3)));\n\tp1_d3 = y_4;\n\tp1_d2 = s_3;\n\tp1_d1 = x2;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5;\n}\n\nupsample4x_ppiir(x) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0, 0, 0);\n\tpoke(pass1_buf, b, 1, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i, 0);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2, 0, 0);\n\t\tpoke(pass2_buf, b, (i * 2) + 1, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\ty3 = peek(pass2_buf, 2, 0);\n\ty4 = peek(pass2_buf, 3, 0);\n\treturn y1, y2, y3, y4;\n}\n\ndownsample4x_ppiir(x1, x2, x3, x4) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\tpoke(pass1_buf, x1, 0, 0, 0);\n\tpoke(pass1_buf, x2, 1, 0, 0);\n\tpoke(pass1_buf, x3, 2, 0, 0);\n\tpoke(pass1_buf, x4, 3, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2, 0);\n\t\tb = peek(pass1_buf, (i * 2) + 1, 0);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample8x_ppiir(x) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\ty3 = peek(pass3_buf, 2);\n\ty4 = peek(pass3_buf, 3);\n\ty5 = peek(pass3_buf, 4);\n\ty6 = peek(pass3_buf, 5);\n\ty7 = peek(pass3_buf, 6);\n\ty8 = peek(pass3_buf, 7);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8;\n}\n\ndownsample8x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample16x_ppiir(x) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\tv = peek(pass3_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass4_buf, a, i * 2);\n\t\tpoke(pass4_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\ty3 = peek(pass4_buf, 2);\n\ty4 = peek(pass4_buf, 3);\n\ty5 = peek(pass4_buf, 4);\n\ty6 = peek(pass4_buf, 5);\n\ty7 = peek(pass4_buf, 6);\n\ty8 = peek(pass4_buf, 7);\n\ty9 = peek(pass4_buf, 8);\n\ty10 = peek(pass4_buf, 9);\n\ty11 = peek(pass4_buf, 10);\n\ty12 = peek(pass4_buf, 11);\n\ty13 = peek(pass4_buf, 12);\n\ty14 = peek(pass4_buf, 13);\n\ty15 = peek(pass4_buf, 14);\n\ty16 = peek(pass4_buf, 15);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16;\n}\n\ndownsample16x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tpoke(pass1_buf, x9, 8);\n\tpoke(pass1_buf, x10, 9);\n\tpoke(pass1_buf, x11, 10);\n\tpoke(pass1_buf, x12, 11);\n\tpoke(pass1_buf, x13, 12);\n\tpoke(pass1_buf, x14, 13);\n\tpoke(pass1_buf, x15, 14);\n\tpoke(pass1_buf, x16, 15);\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass3_buf, i * 2);\n\t\tb = peek(pass3_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass4_buf, v, i);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\n\n\ntanh_rational(x) {\n\t_tanh_rational_ret_5 = 0;\n\tif((x > (-3)) && (x < 3)) {\n\t\t_tanh_rational_ret_5 = ((x * ((27 + (x * x))))) / ((27 + (((9 * x)) * x)));\n\t}\n\telse if(x > 3) {\n\t\t_tanh_rational_ret_5 = 1;\n\t}\n\telse {\n\t\t_tanh_rational_ret_5 = -1;\n\t}\n\treturn _tanh_rational_ret_5;\n}\n\nmoogladder_dv(xin, cutoff, resonance, drive) {\n\tHistory s_V0(0);\n\tHistory s_V1(0);\n\tHistory s_V2(0);\n\tHistory s_V3(0);\n\tHistory s_dV0(0);\n\tHistory s_dV1(0);\n\tHistory s_dV2(0);\n\tHistory s_dV3(0);\n\tHistory s_tV0(0);\n\tHistory s_tV1(0);\n\tHistory s_tV2(0);\n\tHistory s_tV3(0);\n\ttwo_VT_inv = 1.6025641025641;\n\ttwo_sr_inv = 1 / ((2 * samplerate));\n\tx = ((cutoff * PI)) / samplerate;\n\tg = ((((((((4 * PI)) * 0.312)) * cutoff)) * ((1 - x)))) / ((1 + x));\n\tdV0 = (-g) * (((tanh_rational((((drive * xin) + (resonance * s_V3))) * two_VT_inv)) + s_tV0));\n\ts_V0 = s_V0 + (((dV0 + s_dV0)) * two_sr_inv);\n\ts_dV0 = dV0;\n\ts_tV0 = tanh_rational(s_V0 * two_VT_inv);\n\tdV1 = g * ((s_tV0 - s_tV1));\n\ts_V1 = s_V1 + (((dV1 + s_dV1)) * two_sr_inv);\n\ts_dV1 = dV1;\n\ts_tV1 = tanh_rational(s_V1 * two_VT_inv);\n\tdV2 = g * ((s_tV1 - s_tV2));\n\ts_V2 = s_V2 + (((dV2 + s_dV2)) * two_sr_inv);\n\ts_dV2 = dV2;\n\ts_tV2 = tanh_rational(s_V2 * two_VT_inv);\n\tdV3 = g * ((s_tV2 - s_tV3));\n\ts_V3 = s_V3 + (((dV3 + s_dV3)) * two_sr_inv);\n\ts_dV3 = dV3;\n\ts_tV3 = tanh_rational(s_V3 * two_VT_inv);\n\treturn s_V3;\n}\n\n\n\nExponentialEaseIn(value) {\n\treturn value == 0 ? value : pow(1.93, 10 * ((value - 1)));\n}\n\nmtofApprox(pitch) {\n\tmtofA = 440 * (expA(0.057762265 * ((pitch - 69))));\n\treturn mtofA + 0.120906;\n}\n\ntnhA(x) {\n\tx = x * 2;\n\tx_6 = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_7 = x_6 * x_6;\n\tx_8 = x_7 * x_7;\n\tx_9 = x_8 * x_8;\n\tx_10 = x_9 * x_9;\n\tx_11 = x_10 * x_10;\n\treturn (((-1) / ((x_11 + 1))) * 2) + 1;\n}\n\ntnhA_12(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_13 = x * x;\n\tx_14 = x_13 * x_13;\n\tx_15 = x_14 * x_14;\n\tx_16 = x_15 * x_15;\n\tx_17 = x_16 * x_16;\n\treturn (((-1) / ((x_17 + 1))) * 2) + 1;\n}\n\ntauA(t) {\n\ty = expA((-1) / ((t * samplerate)));\n\treturn y + 0.000128;\n}\n\nexpA(x0) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x0))) * x0))) * x0);\n\tx_18 = x * x;\n\tx_19 = x_18 * x_18;\n\tx_20 = x_19 * x_19;\n\tx_21 = x_20 * x_20;\n\tx_22 = x_21 * x_21;\n\treturn x_22;\n}\n\ntanhLambert(x) {\n\tx2 = x * x;\n\ta = ((((((((x2 + 378)) * x2) + 17325)) * x2) + 135135)) * x;\n\tb = (((((((28 * x2) + 3150)) * x2) + 62370)) * x2) + 135135;\n\treturn clamp(a / b, -1, 1);\n}\n\ntnhA_23(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_24 = x * x;\n\tx_25 = x_24 * x_24;\n\tx_26 = x_25 * x_25;\n\tx_27 = x_26 * x_26;\n\tx_28 = x_27 * x_27;\n\treturn (((-1) / ((x_28 + 1))) * 2) + 1;\n}\n\ntnhA_29(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_30 = x * x;\n\tx_31 = x_30 * x_30;\n\tx_32 = x_31 * x_31;\n\tx_33 = x_32 * x_32;\n\tx_34 = x_33 * x_33;\n\treturn (((-1) / ((x_34 + 1))) * 2) + 1;\n}\n\ntnhA_35(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_36 = x * x;\n\tx_37 = x_36 * x_36;\n\tx_38 = x_37 * x_37;\n\tx_39 = x_38 * x_38;\n\tx_40 = x_39 * x_39;\n\treturn (((-1) / ((x_40 + 1))) * 2) + 1;\n}\n\nexpsmooth(x, t) {\n\tHistory w(0);\n\tz = tauA(t);\n\ty = (z * w) + (x * ((1 - z)));\n\tw = y;\n\treturn y;\n}\n\nlogsmooth(x, s) {\n\tHistory z(0);\n\tad = 0.693147 / ((s * samplerate));\n\ty = (((x - z)) * ad) + z;\n\tz = y;\n\treturn y;\n}\n\nk35_lp(xin, cf, q) {\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory S35(0);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tG = g / ((1 + g));\n\tK = 0.01 + (((2 - 0.01)) * (q / 10));\n\tlpf2_beta = ((K - (K * G))) / ((1 + g));\n\thpf1_beta = (-1) / ((1 + g));\n\talpha = 1 / (((1 - (K * G)) + (((K * G)) * G)));\n\tv1 = ((xin - z1)) * G;\n\tlp1 = v1 + z1;\n\tz1 = lp1 + v1;\n\tu = alpha * ((lp1 + S35));\n\tv2 = ((u - z2)) * G;\n\tlp2 = v2 + z2;\n\tz2 = lp2 + v2;\n\ty = K * lp2;\n\tv3 = ((y - z3)) * G;\n\tlp3 = v3 + z3;\n\tz3 = lp3 + v3;\n\tS35 = (lpf2_beta * z2) + (hpf1_beta * z3);\n\treturn K > 0 ? y / K : y;\n}\n\nsvf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nzdf_diode(xin, cf, q, sat) {\n\tHistory z0(0);\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory a1(1);\n\tHistory a2(0.5);\n\tHistory a3(0.5);\n\tHistory a4(0.5);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tg_one = 1 + g;\n\tG4 = ((0.5 * g)) / g_one;\n\tG3 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G4)));\n\tG2 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G3)));\n\tG1 = g / ((g_one - (g * G2)));\n\tGAMMA = ((((G4 * G3)) * G2)) * G1;\n\tSG1 = ((G4 * G3)) * G2;\n\tSG2 = G4 * G3;\n\tSG3 = G4;\n\tSG4 = 1;\n\talpha = g / g_one;\n\tbeta1 = 1 / ((g_one - (g * G2)));\n\tbeta2 = 1 / ((g_one - (((0.5 * g)) * G3)));\n\tbeta3 = 1 / ((g_one - (((0.5 * g)) * G4)));\n\tbeta4 = 1 / g_one;\n\tgamma1 = ((1 + G1)) + G2;\n\tgamma2 = 1 + (G2 * G3);\n\tgamma3 = 1 + (G3 * G4);\n\tdelta1 = g;\n\tdelta3 = 0.5 * g;\n\tdelta2 = delta3;\n\tepsilon1 = G2;\n\tepsilon2 = G3;\n\tepsilon3 = G4;\n\tfb4 = beta4 * z3;\n\tfb3 = beta3 * ((z2 + (fb4 * delta3)));\n\tfb2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo1 = beta1 * ((z0 + (fb2 * delta1)));\n\tfbo2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo3 = beta3 * ((z2 + (fb4 * delta3)));\n\tSIGMA = (((((SG1 * fbo1) + (SG2 * fbo2))) + (SG3 * fbo3))) + (SG4 * fb4);\n\txin_tanh = (1 / (tanh(sat))) * (tanh(sat * xin));\n\tun = ((xin_tanh - (q * SIGMA))) / ((1 + (q * GAMMA)));\n\tvin = (((un * gamma1) + fb2)) + (epsilon1 * fbo1);\n\tv = (((a1 * vin) - z0)) * alpha;\n\tlp = v + z0;\n\tz0 = lp + v;\n\tvin_41 = (((lp * gamma2) + fb3)) + (epsilon2 * fbo2);\n\tv_42 = (((a2 * vin_41) - z1)) * alpha;\n\tlp_43 = v_42 + z1;\n\tz1 = lp_43 + v_42;\n\tvin_44 = (((lp_43 * gamma3) + fb4)) + (epsilon3 * fbo3);\n\tv_45 = (((a3 * vin_44) - z3)) * alpha;\n\tlp_46 = v_45 + z3;\n\tz3 = lp_46 + v_45;\n\tv_47 = (((a4 * lp_46) - z3)) * alpha;\n\tlp_48 = v_47 + z3;\n\tz3 = lp_48 + v_47;\n\treturn lp_48;\n}\n\nHistory fT(0);\nHistory history_49(0);\nHistory history_50(0);\nHistory history_51(0);\nHistory history_52(0);\nexpr_53 = ExponentialEaseIn(in2);\nint_54 = int(1);\ngate_55, gate_56, gate_57, gate_58, gate_59 = gate(in4, in1, choices=5);\nfloat_60 = float(0.1);\nmul_61 = expr_53 * 9680;\nadd_62 = mul_61 + 20;\nclamp_63 = clamp(add_62, 20, 9700);\nclamp_64 = clamp(in3, 0, 1);\nmul_65 = clamp_64 * 2;\nup0, up1, up2, up3 = upsample4x_ppiir(in1);\nup_66 = moogladder_dv(up0, clamp_63, mul_65, int_54);\nup1 = moogladder_dv(up1, clamp_63, mul_65, int_54);\nup2 = moogladder_dv(up2, clamp_63, mul_65, int_54);\nup3 = moogladder_dv(up3, clamp_63, mul_65, int_54);\nexpr_67 = downsample4x_ppiir(up_66, up1, up2, up3);\ncutoffsmooth = clamp(0, 0, 1000);\nshape = clamp(0.5, 0, 1);\ncutoffmode = clamp(0, 0, 1);\nresonancesmooth = clamp(0, 0, 1000);\nsetparam_68 = shape;\nsetparam_69 = resonancesmooth;\nsetparam_70 = cutoffmode;\nsetparam_71 = cutoffsmooth;\ncutoffsmooth_72 = clamp(setparam_71, 0, 1000);\ncutoffmode_73 = clamp(setparam_70, 0, 1);\nresonancesmooth_74 = clamp(setparam_69, 0, 1000);\ncfm = int(cutoffmode_73);\ncutoff = clamp_63;\nif(cutoffsmooth_72 > 0) {\n\tcs = cutoffsmooth_72 * 0.001;\n\tcutoff = logsmooth(cutoff, cs);\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\nelse {\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\ncutoff_75 = cutoff + 0;\nf = clip(cutoff_75, 5, samplerate / 2.25);\nk = (clip(clamp_64, 0, 2)) * 4;\nif(resonancesmooth_74 > 0) {\n\trs = resonancesmooth_74 * 0.001;\n\tk = expsmooth(k, rs);\n}\nexpr_76 = f;\nexpr_77 = k;\ngen_78 = expr_76;\ngen_79 = expr_77;\nsaturate = clamp(setparam_68, 0, 1);\nnx_80 = gate_55;\nnx_81 = nx_80;\nnk_82 = gen_79;\nnk_83 = nk_82;\nexpr_84 = gen_78 * (pi / samplerate);\nx2 = expr_84 * expr_84;\nx3 = x2 * expr_84;\nx5 = x2 * x3;\nexpr_85 = (((x5 * 0.133333) + (x3 * 0.333333))) + expr_84;\ngen_86 = expr_85;\npass_87 = pass(gen_86);\npass_88 = pass(gen_86);\npass_89 = pass(gen_86);\npass_90 = pass(gen_86);\nadd_91 = history_49 + history_49;\nadd_92 = pass_87 + 1;\nrdiv_93 = 1 / add_92;\nnk_94 = nk_82;\nadd_95 = history_51 + history_51;\nadd_96 = pass_88 + 1;\nrdiv_97 = 1 / add_96;\nadd_98 = history_52 + history_52;\nadd_99 = pass_89 + 1;\nrdiv_100 = 1 / add_99;\nadd_101 = history_50 + history_50;\nadd_102 = pass_90 + 1;\nrdiv_103 = 1 / add_102;\nnk_104 = nk_82;\nnx_105 = nx_80;\nnk_106 = nk_82;\nnx_107 = nx_80;\nnx_108 = nx_80;\nnk_109 = nk_82;\ndiv_110 = nx_108 / nk_109;\nnk_111 = nk_82;\nnx_112 = nx_80;\nnx_113 = nx_80;\nmul_114 = rdiv_93 * pass_87;\nmul_115 = pass_90 * mul_114;\nmul_116 = rdiv_103 * mul_115;\nmul_117 = pass_88 * mul_116;\nmul_118 = rdiv_97 * mul_117;\nmul_119 = pass_89 * mul_118;\nmul_120 = rdiv_100 * mul_119;\nng_121 = mul_120;\nng_122 = ng_121;\nmul_123 = nk_94 * ng_122;\nng_124 = ng_121;\nmul_125 = nk_104 * ng_124;\nng_126 = ng_121;\nmul_127 = nk_106 * ng_126;\nmul_128 = nk_111 * ng_121;\nng_129 = ng_121;\nmul_130 = nk_82 * ng_129;\nmul_131 = rdiv_93 * add_91;\nmul_132 = pass_90 * mul_131;\nadd_133 = mul_132 + add_101;\nmul_134 = rdiv_103 * add_133;\nmul_135 = pass_88 * mul_134;\nadd_136 = mul_135 + add_95;\nmul_137 = rdiv_97 * add_136;\nmul_138 = pass_89 * mul_137;\nadd_139 = mul_138 + add_98;\nmul_140 = rdiv_100 * add_139;\nns_141 = mul_140;\nns_142 = ns_141;\nns_143 = ns_141;\nns_144 = ns_141;\nns_145 = ns_141;\nadd_146 = mul_140 + mul_120;\nmul_147 = add_146 * nk_109;\ngte_148 = nx_108 >= mul_147;\nsub_149 = mul_140 - mul_120;\nmul_150 = sub_149 * nk_109;\nlte_151 = nx_108 <= mul_150;\nswitch_152 = lte_151 ? sub_149 : div_110;\nswitch_153 = gte_148 ? add_146 : switch_152;\npass_154 = pass(switch_153);\nmul_155 = nk_111 * pass_154;\nsub_156 = nx_113 - mul_155;\nexpr_157 = tnhA(sub_156);\ngen_158 = expr_157;\nmul_159 = gen_158 * ng_121;\nadd_160 = mul_159 + ns_145;\nsub_161 = add_160 - pass_154;\nmul_162 = gen_158 * gen_158;\nsub_163 = mul_162 - 1;\nmul_164 = mul_128 * sub_163;\nsub_165 = mul_164 - 1;\ndiv_166 = sub_161 / sub_165;\nsub_167 = pass_154 - div_166;\nmul_168 = nk_82 * sub_167;\nsub_169 = nx_112 - mul_168;\nexpr_170 = tnhA_12(sub_169);\ngen_171 = expr_170;\nmul_172 = gen_171 * ng_129;\nadd_173 = mul_172 + ns_141;\nsub_174 = add_173 - sub_167;\nmul_175 = gen_171 * gen_171;\nsub_176 = mul_175 - 1;\nmul_177 = mul_130 * sub_176;\nsub_178 = mul_177 - 1;\ndiv_179 = sub_174 / sub_178;\nsub_180 = sub_167 - div_179;\nmul_181 = nk_106 * sub_180;\nsub_182 = nx_80 - mul_181;\nexpr_183 = tnhA_29(sub_182);\ngen_184 = expr_183;\nmul_185 = gen_184 * ng_126;\nadd_186 = mul_185 + ns_144;\nsub_187 = add_186 - sub_180;\nmul_188 = gen_184 * gen_184;\nsub_189 = mul_188 - 1;\nmul_190 = mul_127 * sub_189;\nsub_191 = mul_190 - 1;\ndiv_192 = sub_187 / sub_191;\nsub_193 = sub_180 - div_192;\npass_194 = pass(sub_193);\nmul_195 = nk_104 * pass_194;\nsub_196 = nx_107 - mul_195;\nexpr_197 = tnhA_23(sub_196);\ngen_198 = expr_197;\nmul_199 = gen_198 * ng_124;\nadd_200 = mul_199 + ns_143;\nsub_201 = add_200 - pass_194;\nmul_202 = gen_198 * gen_198;\nsub_203 = mul_202 - 1;\nmul_204 = mul_125 * sub_203;\nsub_205 = mul_204 - 1;\ndiv_206 = sub_201 / sub_205;\nsub_207 = pass_194 - div_206;\nmul_208 = nk_94 * sub_207;\nsub_209 = nx_105 - mul_208;\nexpr_210 = tnhA_35(sub_209);\ngen_211 = expr_210;\nmul_212 = gen_211 * ng_122;\nadd_213 = mul_212 + ns_142;\nsub_214 = add_213 - sub_207;\nmul_215 = gen_211 * gen_211;\nsub_216 = mul_215 - 1;\nmul_217 = mul_123 * sub_216;\nsub_218 = mul_217 - 1;\ndiv_219 = sub_214 / sub_218;\nsub_220 = sub_207 - div_219;\nexpr_221 = nx_81 - (nk_83 * sub_220);\nexpr_222 = (saturate * 18) - 9;\nexpr_223 = (fastpow(10, expr_222 * 0.05)) + 0.028652;\nsmooth = clamp(0.999, 0.501, 0.99995);\nmul_224 = smooth * fT;\nrsub_225 = 1 - smooth;\nmul_226 = expr_223 * rsub_225;\nadd_227 = mul_224 + mul_226;\ngen_228 = add_227;\nfT_next_229 = fixdenorm(add_227);\nrdiv_230 = 1 / gen_228;\ndcblock_231 = dcblock(expr_221);\nmul_232 = dcblock_231 * rdiv_230;\nexpr_233 = tanhLambert(mul_232);\ngen_234 = expr_233;\nmul_235 = gen_234 * gen_228;\ngen_236 = mul_235;\npass_237 = pass(gen_236);\nmul_238 = pass_237 * pass_87;\nadd_239 = mul_238 + add_91;\nmul_240 = add_239 * rdiv_93;\nsub_241 = pass_237 - mul_240;\nmul_242 = sub_241 * pass_87;\nadd_243 = mul_242 + history_49;\nadd_244 = add_243 + history_49;\npass_245 = pass(add_244);\nmul_246 = pass_245 * pass_90;\nadd_247 = mul_246 + add_101;\nmul_248 = add_247 * rdiv_103;\nsub_249 = pass_245 - mul_248;\nmul_250 = sub_249 * pass_90;\nadd_251 = mul_250 + history_50;\nadd_252 = add_251 + history_50;\npass_253 = pass(add_252);\nmul_254 = pass_253 * pass_88;\nadd_255 = mul_254 + add_95;\nmul_256 = add_255 * rdiv_97;\nsub_257 = pass_253 - mul_256;\nmul_258 = sub_257 * pass_88;\nadd_259 = mul_258 + history_51;\nadd_260 = add_259 + history_51;\npass_261 = pass(add_260);\nmul_262 = pass_261 * pass_89;\nadd_263 = mul_262 + add_98;\nmul_264 = add_263 * rdiv_100;\nsub_265 = pass_261 - mul_264;\nmul_266 = sub_265 * pass_89;\nadd_267 = mul_266 + history_52;\ny_268 = sub_220;\ngen_269 = y_268;\nhistory_49_next_270 = fixdenorm(add_243);\nhistory_50_next_271 = fixdenorm(add_251);\nhistory_51_next_272 = fixdenorm(add_259);\nhistory_52_next_273 = fixdenorm(add_267);\ngen_274 = gen_269;\nlimit = (samplerate / 2) - 25;\ncf = clip(clamp_63, 0, limit);\nq = (clip(clamp_64, 0, 1)) * 10;\nexpr_275 = k35_lp(gate_56, cf, q);\ngen_276 = expr_275;\nlimit_277 = samplerate / 2;\ncf_278 = clip(clamp_63, 0, limit_277);\nq_279 = ((clip(clamp_64, 0, 1)) * 20) + 0.5;\nexpr_280, expr_281, expr_282, expr_283, expr_284, expr_285 = svf_as(gate_57, cf_278, q_279);\ngen_286 = expr_281;\ngen_287 = expr_282;\ngen_288 = expr_280;\ngen_289 = expr_285;\ngen_290 = expr_283;\ngen_291 = expr_284;\nlimit_292 = samplerate / 3;\ncf_293 = clip(clamp_63, 0, limit_292);\nq_294 = (clip(clamp_64, 0, 1)) * 19;\nsat = ((clip(float_60, 0, 1)) * 30) + 0.001;\nexpr_295 = zdf_diode(gate_58, cf_293, q_294, sat);\ngen_296 = expr_295;\nselector_297 = selector(in4, gen_274, gen_276, gen_288, gen_296, expr_67);\nout1 = selector_297;\nfT = fT_next_229;\nhistory_52 = history_52_next_273;\nhistory_51 = history_51_next_272;\nhistory_50 = history_50_next_271;\nhistory_49 = history_49_next_270;",
 						"geninlets" : 4,
 						"genoutlets" : 1
 					}
@@ -2722,19 +2736,19 @@
 					"patching_rect" : [ 1709.0, 4217.0, 185.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -3166,19 +3180,19 @@
 					"patching_rect" : [ 1709.0, 4101.0, 245.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 2,
@@ -3693,11 +3707,11 @@
 					"patching_rect" : [ 1709.0, 4255.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "integer",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "integer",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -3801,19 +3815,19 @@
 					"patching_rect" : [ 1185.0, 1831.200027287006378, 332.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 3,
@@ -4246,19 +4260,19 @@
 					"patching_rect" : [ 790.400011777877808, 404.000006020069122, 164.599988222122192, 37.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 4,
@@ -4691,19 +4705,19 @@
 					"patching_rect" : [ 1671.200024902820587, 504.400007724761963, 164.000002443790436, 37.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 5,
@@ -5136,19 +5150,19 @@
 					"patching_rect" : [ 1541.600022971630096, 455.200006783008575, 162.400002419948578, 37.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 6,
@@ -5581,19 +5595,19 @@
 					"patching_rect" : [ 1272.800018966197968, 590.0, 156.000002324581146, 37.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 7,
@@ -6026,19 +6040,19 @@
 					"patching_rect" : [ 1187.200017690658569, 535.0, 153.600002288818359, 37.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"meta" : "",
-						"preset" : 1,
-						"enum" : "",
-						"exponent" : 1.0,
 						"tonormalized" : "",
-						"displayname" : "",
-						"unit" : "",
-						"ctlin" : -1.0,
-						"order" : "0",
-						"sendinit" : 1,
+						"enum" : "",
+						"meta" : "",
+						"steps" : 0.0,
+						"preset" : 1,
 						"fromnormalized" : "",
+						"unit" : "",
 						"displayorder" : "-",
-						"steps" : 0.0
+						"order" : "0",
+						"displayname" : "",
+						"sendinit" : 1,
+						"exponent" : 1.0,
+						"ctlin" : -1.0
 					}
 ,
 					"rnbo_serial" : 8,
@@ -6879,6 +6893,10 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1961.0, 2553.0, 30.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "t_obj-928",
 					"rnboinfo" : 					{
@@ -7138,11 +7156,11 @@
 					"patching_rect" : [ 905.0, 549.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 2,
@@ -7174,7 +7192,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1285.0, 3672.0, 108.0, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 10,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "scale~_obj-31",
 					"text" : "scale~ 0 1 0.7 0.95"
 				}
@@ -7189,7 +7207,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1358.800001382827759, 3705.0, 92.0, 23.0 ],
 					"rnbo_classname" : "list.lookup",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "list.lookup_obj-98",
 					"text" : "list.lookup 0 0.1"
 				}
@@ -7310,7 +7328,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 954.800000071525574, 3794.800056576728821, 153.199989080429077, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 2,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "scale~_obj-22",
 					"text" : "scale~ 0 1 0 1"
 				}
@@ -7456,11 +7474,11 @@
 					"patching_rect" : [ 498.0, 1774.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 3,
@@ -7513,11 +7531,11 @@
 					"patching_rect" : [ 745.0, 2038.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 4,
@@ -7586,11 +7604,11 @@
 					"patching_rect" : [ 641.0, 2318.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 5,
@@ -7609,11 +7627,11 @@
 					"patching_rect" : [ 520.0, 2318.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 6,
@@ -7752,7 +7770,7 @@
 						"bufsize" : 128.0
 					}
 ,
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "scope~_obj-28"
 				}
 
@@ -7886,11 +7904,11 @@
 					"patching_rect" : [ 879.0, 3250.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "integer",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "integer",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 7,
@@ -7992,8 +8010,8 @@
 					"rnbo_classname" : "expr",
 					"rnbo_extra_attributes" : 					{
 						"nocache" : 0,
-						"safemath" : 1,
-						"hot" : 0
+						"hot" : 0,
+						"safemath" : 1
 					}
 ,
 					"rnbo_serial" : 1,
@@ -8157,8 +8175,8 @@
 					"patching_rect" : [ 2262.0, 3054.0, 42.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -8310,7 +8328,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 2262.0, 3294.0, 71.5, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "scale~_obj-183",
 					"text" : "scale~ 0 1"
 				}
@@ -8397,8 +8415,8 @@
 					"patching_rect" : [ 944.0, 3116.0, 49.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 2,
@@ -8865,15 +8883,15 @@
 										"text" : "equal-power crossfade",
 										"linecount" : 2,
 										"patching_rect" : [ 1310.211234625179713, 169.126152486848241, 79.0, 35.0 ],
-										"textjustification" : 1,
+										"fontsize" : 12.0,
+										"numinlets" : 1,
 										"fontname" : "Ableton Sans Medium",
+										"numoutlets" : 0,
 										"fontface" : 0,
 										"bgcolor" : [ 0.325490196078431, 0.0, 0.545098039215686, 1.0 ],
-										"numinlets" : 1,
 										"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 										"id" : "obj-31",
-										"numoutlets" : 0,
-										"fontsize" : 12.0
+										"textjustification" : 1
 									}
 
 								}
@@ -8882,10 +8900,10 @@
 										"maxclass" : "newobj",
 										"text" : "-",
 										"patching_rect" : [ 1213.211234625179713, 218.974997869285744, 29.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-10",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-10"
 									}
 
 								}
@@ -8894,10 +8912,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 0.5",
 										"patching_rect" : [ 1213.211234625179713, 260.974997869285744, 33.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-25",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-25"
 									}
 
 								}
@@ -8906,10 +8924,10 @@
 										"maxclass" : "newobj",
 										"text" : "sqrt",
 										"patching_rect" : [ 1213.211234625179713, 307.974997869285744, 29.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-26",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-26"
 									}
 
 								}
@@ -8918,10 +8936,10 @@
 										"maxclass" : "newobj",
 										"text" : "scale 0 1 -1 1",
 										"patching_rect" : [ 1292.211234625179713, 119.651154617562497, 81.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-9",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-9"
 									}
 
 								}
@@ -8930,10 +8948,10 @@
 										"maxclass" : "newobj",
 										"text" : "1",
 										"patching_rect" : [ 1213.211234625179713, 163.651154617562497, 19.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-27",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-27"
 									}
 
 								}
@@ -8942,10 +8960,10 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 1286.711234625179713, 218.974997869285744, 29.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-28",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-28"
 									}
 
 								}
@@ -8954,10 +8972,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 0.5",
 										"patching_rect" : [ 1286.711234625179713, 260.974997869285744, 33.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-29",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-29"
 									}
 
 								}
@@ -8966,10 +8984,10 @@
 										"maxclass" : "newobj",
 										"text" : "sqrt",
 										"patching_rect" : [ 1286.711234625179713, 307.974997869285744, 29.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-30",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-30"
 									}
 
 								}
@@ -8978,15 +8996,15 @@
 										"maxclass" : "comment",
 										"text" : "interpolate between linear and equal-power crossfade ",
 										"patching_rect" : [ 1340.211234625179713, 291.963080528147202, 305.0, 21.0 ],
-										"textjustification" : 1,
+										"fontsize" : 12.0,
+										"numinlets" : 1,
 										"fontname" : "Ableton Sans Medium",
+										"numoutlets" : 0,
 										"fontface" : 0,
 										"bgcolor" : [ 0.325490196078431, 0.0, 0.545098039215686, 1.0 ],
-										"numinlets" : 1,
 										"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 										"id" : "obj-175",
-										"numoutlets" : 0,
-										"fontsize" : 12.0
+										"textjustification" : 1
 									}
 
 								}
@@ -8996,15 +9014,15 @@
 										"text" : "linear crossfade",
 										"linecount" : 2,
 										"patching_rect" : [ 1079.561234625179395, 196.474997869285744, 63.0, 35.0 ],
-										"textjustification" : 1,
+										"fontsize" : 12.0,
+										"numinlets" : 1,
 										"fontname" : "Ableton Sans Medium",
+										"numoutlets" : 0,
 										"fontface" : 0,
 										"bgcolor" : [ 0.325490196078431, 0.0, 0.545098039215686, 1.0 ],
-										"numinlets" : 1,
 										"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 										"id" : "obj-176",
-										"numoutlets" : 0,
-										"fontsize" : 12.0
+										"textjustification" : 1
 									}
 
 								}
@@ -9013,10 +9031,10 @@
 										"maxclass" : "newobj",
 										"text" : "mix",
 										"patching_rect" : [ 1237.061237605411634, 384.629747631914597, 40.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 3,
-										"id" : "obj-177",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-177"
 									}
 
 								}
@@ -9025,11 +9043,11 @@
 										"maxclass" : "newobj",
 										"text" : "param interpolate_crossfades 1 @min 0 @max 1",
 										"patching_rect" : [ 1325.888946533202216, 316.641652813705605, 270.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"color" : [ 0.035294117647059, 0.796078431372549, 0.811764705882353, 1.0 ],
-										"id" : "obj-178",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-178"
 									}
 
 								}
@@ -9038,10 +9056,10 @@
 										"maxclass" : "newobj",
 										"text" : "mix",
 										"patching_rect" : [ 1179.561237605411634, 384.629747631914597, 40.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 3,
-										"id" : "obj-179",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-179"
 									}
 
 								}
@@ -9050,10 +9068,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 1",
 										"patching_rect" : [ 1137.349999999999909, 241.974997869285744, 23.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-180",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-180"
 									}
 
 								}
@@ -9062,10 +9080,10 @@
 										"maxclass" : "newobj",
 										"text" : "* -1",
 										"patching_rect" : [ 1047.911234625179304, 241.974997869285744, 27.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-181",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-181"
 									}
 
 								}
@@ -9074,10 +9092,10 @@
 										"maxclass" : "newobj",
 										"text" : "- 1",
 										"patching_rect" : [ 1047.911234625179304, 202.974997869285744, 23.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-182",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-182"
 									}
 
 								}
@@ -9086,10 +9104,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 1",
 										"patching_rect" : [ 1165.961234625179713, 82.0, 23.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-183",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-183"
 									}
 
 								}
@@ -9098,10 +9116,10 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 556.969806988620576, 450.654212455457127, 29.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-21",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-21"
 									}
 
 								}
@@ -9110,10 +9128,10 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 132.0, 278.654212455457127, 29.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-22",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-22"
 									}
 
 								}
@@ -9122,10 +9140,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 5",
 										"patching_rect" : [ 743.108922848329939, 36.525916638811765, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-15",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-15"
 									}
 
 								}
@@ -9134,10 +9152,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 4",
 										"patching_rect" : [ 662.831692136247511, 31.938263865676475, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-14",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-14"
 									}
 
 								}
@@ -9146,10 +9164,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 3",
 										"patching_rect" : [ 582.554461424165083, 27.350611092541186, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-13",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-13"
 									}
 
 								}
@@ -9158,10 +9176,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 2",
 										"patching_rect" : [ 502.277230712082542, 22.762958319405897, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-12",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-12"
 									}
 
 								}
@@ -9170,10 +9188,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 422.0, 18.175305546270607, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-11",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-11"
 									}
 
 								}
@@ -9182,10 +9200,10 @@
 										"maxclass" : "newobj",
 										"text" : "selector 5",
 										"patching_rect" : [ 557.0, 228.0, 393.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 6,
-										"id" : "obj-8",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-8"
 									}
 
 								}
@@ -9194,10 +9212,10 @@
 										"maxclass" : "newobj",
 										"text" : "param choice @min 1 @max 5",
 										"patching_rect" : [ 132.0, 46.0, 174.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-7",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-7"
 									}
 
 								}
@@ -9206,10 +9224,10 @@
 										"maxclass" : "newobj",
 										"text" : "param ramptime 150 @min 10 @max 1000",
 										"patching_rect" : [ 982.0, 46.0, 239.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-6",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-6"
 									}
 
 								}
@@ -9218,10 +9236,10 @@
 										"maxclass" : "newobj",
 										"text" : "selector 5",
 										"patching_rect" : [ 132.0, 228.0, 393.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 6,
-										"id" : "obj-5",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-5"
 									}
 
 								}
@@ -9230,10 +9248,10 @@
 										"maxclass" : "newobj",
 										"text" : "go.background.change",
 										"patching_rect" : [ 132.0, 91.0, 869.0, 22.0 ],
-										"outlettype" : [ "", "", "" ],
 										"numinlets" : 2,
-										"id" : "obj-3",
-										"numoutlets" : 3
+										"numoutlets" : 3,
+										"outlettype" : [ "", "", "" ],
+										"id" : "obj-3"
 									}
 
 								}
@@ -9243,8 +9261,8 @@
 										"text" : "out 1",
 										"patching_rect" : [ 223.0, 578.0, 35.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-4",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-4"
 									}
 
 								}
@@ -9564,7 +9582,7 @@
 					"rnbo_classname" : "gen~",
 					"rnbo_extra_attributes" : 					{
 						"exposeparams" : 0,
-						"gencode" : "History history_1(0);\nHistory history_2(0);\nParam choice(0, max=5, min=1);\nParam interpolate_crossfades(1, max=1, min=0);\nParam ramptime(150, max=1000, min=10);\nmin_3 = max(ramptime, 1/samplerate);\neq_4 = history_2 == 1;\neq_5 = history_2 == 0;\nlatch_6 = latch(choice, eq_5);\ngen_7 = latch_6;\nlatch_8 = latch(latch_6, eq_4);\ngen_9 = latch_8;\nneq_10 = latch_8 != latch_6;\nsub_11 = neq_10 - history_1;\neq_12 = sub_11 == 0;\ngen_13 = eq_12;\nmin_14 = max(min_3, 0.01);\nrdiv_15 = 1000/samplerate / min_14;\nneg_16 = -rdiv_15;\nclamp_17 = clamp(sub_11, neg_16, rdiv_15);\nadd_18 = clamp_17 + history_1;\ngen_19 = add_18;\nhistory_1_next_20 = fixdenorm(add_18);\ngen_21 = gen_19;\nhistory_2_next_22 = fixdenorm(gen_19);\nselector_23 = selector(gen_7, in1, in2, in3, in4, in5);\nselector_24 = selector(gen_9, in1, in2, in3, in4, in5);\nmul_25 = gen_21 * 1;\nmul_26 = mul_25 * 1;\nsub_27 = mul_25 - 1;\nmul_28 = sub_27 * -1;\nint_29 = int(1);\nscale_30 = scale(mul_25, 0, 1, -1, 1, 1);\nadd_31 = int_29 + scale_30;\nmul_32 = add_31 * 0.5;\nsqrt_33 = sqrt(mul_32);\nmix_34 = mix(mul_26, sqrt_33, interpolate_crossfades);\nmul_35 = selector_23 * mix_34;\nsub_36 = int_29 - scale_30;\nmul_37 = sub_36 * 0.5;\nsqrt_38 = sqrt(mul_37);\nmix_39 = mix(mul_28, sqrt_38, interpolate_crossfades);\nmul_40 = selector_24 * mix_39;\nout1 = mul_40 + mul_35;\nhistory_1 = history_1_next_20;\nhistory_2 = history_2_next_22;",
+						"gencode" : "History history_1(0);\nHistory history_2(0);\nParam choice(0, max=5, min=1);\nParam interpolate_crossfades(1, max=1, min=0);\nParam ramptime(150, max=1000, min=10);\neq_3 = history_2 == 0;\nlatch_4 = latch(choice, eq_3);\ngen_5 = latch_4;\nmin_6 = max(ramptime, 1/samplerate);\neq_7 = history_2 == 1;\nlatch_8 = latch(latch_4, eq_7);\ngen_9 = latch_8;\nneq_10 = latch_8 != latch_4;\nsub_11 = neq_10 - history_1;\neq_12 = sub_11 == 0;\ngen_13 = eq_12;\nmin_14 = max(min_6, 0.01);\nrdiv_15 = 1000/samplerate / min_14;\nneg_16 = -rdiv_15;\nclamp_17 = clamp(sub_11, neg_16, rdiv_15);\nadd_18 = clamp_17 + history_1;\ngen_19 = add_18;\nhistory_1_next_20 = fixdenorm(add_18);\ngen_21 = gen_19;\nhistory_2_next_22 = fixdenorm(gen_19);\nselector_23 = selector(gen_5, in1, in2, in3, in4, in5);\nselector_24 = selector(gen_9, in1, in2, in3, in4, in5);\nmul_25 = gen_21 * 1;\nmul_26 = mul_25 * 1;\nsub_27 = mul_25 - 1;\nmul_28 = sub_27 * -1;\nint_29 = int(1);\nscale_30 = scale(mul_25, 0, 1, -1, 1, 1);\nadd_31 = int_29 + scale_30;\nmul_32 = add_31 * 0.5;\nsqrt_33 = sqrt(mul_32);\nmix_34 = mix(mul_26, sqrt_33, interpolate_crossfades);\nmul_35 = selector_23 * mix_34;\nsub_36 = int_29 - scale_30;\nmul_37 = sub_36 * 0.5;\nsqrt_38 = sqrt(mul_37);\nmix_39 = mix(mul_28, sqrt_38, interpolate_crossfades);\nmul_40 = selector_24 * mix_39;\nout1 = mul_40 + mul_35;\nhistory_1 = history_1_next_20;\nhistory_2 = history_2_next_22;",
 						"geninlets" : 5,
 						"genoutlets" : 1
 					}
@@ -9872,7 +9890,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1279.0, 3208.0, 31.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "*~_obj-59",
 					"text" : "*~ 1"
 				}
@@ -9963,11 +9981,11 @@
 					"patching_rect" : [ 1268.0, 2702.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "integer",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "integer",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 8,
@@ -10039,8 +10057,8 @@
 					"patching_rect" : [ 1219.0, 1033.0, 68.000001013278961, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 3,
@@ -10403,11 +10421,11 @@
 					"patching_rect" : [ 1815.0, 561.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 9,
@@ -10427,11 +10445,11 @@
 					"patching_rect" : [ 1731.0, 865.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 10,
@@ -10451,11 +10469,11 @@
 					"patching_rect" : [ 1695.0, 707.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 11,
@@ -10505,11 +10523,11 @@
 					"patching_rect" : [ 1671.0, 917.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 12,
@@ -10529,11 +10547,11 @@
 					"patching_rect" : [ 1509.0, 917.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 13,
@@ -10783,11 +10801,11 @@
 					"patching_rect" : [ 1345.0, 885.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 14,
@@ -10807,11 +10825,11 @@
 					"patching_rect" : [ 1245.0, 885.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 15,
@@ -10932,8 +10950,8 @@
 					"patching_rect" : [ 1599.0, 1033.0, 68.000001013278961, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 4,
@@ -11398,11 +11416,11 @@
 					"patching_rect" : [ 790.400011777877808, 480.000007152557373, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 16,
@@ -11463,7 +11481,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 762.400011360645294, 518.400007724761963, 47.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "*~_obj-899",
 					"text" : "*~ 1.05"
 				}
@@ -11483,10 +11501,10 @@
 					"patching_rect" : [ 1502.0, 1298.0, 480.666748404502869, 503.0 ],
 					"rnbo_classname" : "codebox~",
 					"rnbo_extra_attributes" : 					{
-						"code" : "let x = in1;\n\nlet startY = in2;\nlet startX = in3;\n\nlet endY = in4;\nlet endX = in5;\nlet curve = in6;\n\nlet tmpRange = endY - startY;\nlet tmpDomain = endX - startX;\n\nif (abs(curve) < 0.001) {\n    // Linear interpolation\n    out1 = ((x - startX) / tmpDomain) * tmpRange + startY;\n} else if (curve < 0.0) {\n    // Negative curve (concave)\n    let gx = (endX - x) / tmpDomain;\n    let hp = pow((1e-20 - curve) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = endY - gp * tmpRange;\n} else {\n    // Positive curve (convex)\n    let gx = (x - startX) / tmpDomain;\n    let hp = pow((curve + 1e-20) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = gp * tmpRange + startY;\n}",
-						"expr" : "",
 						"nocache" : 0,
-						"safemath" : 1
+						"expr" : "",
+						"safemath" : 1,
+						"code" : "let x = in1;\n\nlet startY = in2;\nlet startX = in3;\n\nlet endY = in4;\nlet endX = in5;\nlet curve = in6;\n\nlet tmpRange = endY - startY;\nlet tmpDomain = endX - startX;\n\nif (abs(curve) < 0.001) {\n    // Linear interpolation\n    out1 = ((x - startX) / tmpDomain) * tmpRange + startY;\n} else if (curve < 0.0) {\n    // Negative curve (concave)\n    let gx = (endX - x) / tmpDomain;\n    let hp = pow((1e-20 - curve) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = endY - gp * tmpRange;\n} else {\n    // Positive curve (convex)\n    let gx = (x - startX) / tmpDomain;\n    let hp = pow((curve + 1e-20) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = gp * tmpRange + startY;\n}"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -11788,10 +11806,10 @@
 					"patching_rect" : [ 948.0, 1298.0, 480.666748404502869, 503.0 ],
 					"rnbo_classname" : "codebox~",
 					"rnbo_extra_attributes" : 					{
-						"code" : "let x = in1;\n\nlet startY = in2;\nlet startX = in3;\n\nlet endY = in4;\nlet endX = in5;\nlet curve = in6;\n\nlet tmpRange = endY - startY;\nlet tmpDomain = endX - startX;\n\nif (abs(curve) < 0.001) {\n    // Linear interpolation\n    out1 = ((x - startX) / tmpDomain) * tmpRange + startY;\n} else if (curve < 0.0) {\n    // Negative curve (concave)\n    let gx = (endX - x) / tmpDomain;\n    let hp = pow((1e-20 - curve) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = endY - gp * tmpRange;\n} else {\n    // Positive curve (convex)\n    let gx = (x - startX) / tmpDomain;\n    let hp = pow((curve + 1e-20) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = gp * tmpRange + startY;\n}",
-						"expr" : "",
 						"nocache" : 0,
-						"safemath" : 1
+						"expr" : "",
+						"safemath" : 1,
+						"code" : "let x = in1;\n\nlet startY = in2;\nlet startX = in3;\n\nlet endY = in4;\nlet endX = in5;\nlet curve = in6;\n\nlet tmpRange = endY - startY;\nlet tmpDomain = endX - startX;\n\nif (abs(curve) < 0.001) {\n    // Linear interpolation\n    out1 = ((x - startX) / tmpDomain) * tmpRange + startY;\n} else if (curve < 0.0) {\n    // Negative curve (concave)\n    let gx = (endX - x) / tmpDomain;\n    let hp = pow((1e-20 - curve) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = endY - gp * tmpRange;\n} else {\n    // Positive curve (convex)\n    let gx = (x - startX) / tmpDomain;\n    let hp = pow((curve + 1e-20) * 1.2, 0.41) * 0.91;\n    let fp = hp / (1.0 - hp);\n    let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n    \n    out1 = gp * tmpRange + startY;\n}"
 					}
 ,
 					"rnbo_serial" : 2,
@@ -12224,7 +12242,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 351.400001990795147, 3725.0, 82.0, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 4,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "scale~_obj-84",
 					"text" : "scale~ 0 1 0 1"
 				}
@@ -12482,8 +12500,8 @@
 					"patching_rect" : [ 400.0, 3219.0, 123.0, 22.0 ],
 					"rnbo_classname" : "cycle~",
 					"rnbo_extra_attributes" : 					{
-						"buffername" : "RNBODefaultSinus",
-						"interp" : "linear"
+						"interp" : "linear",
+						"buffername" : "RNBODefaultSinus"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -12501,7 +12519,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 400.0, 3181.0, 103.0, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 5,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "scale~_obj-53",
 					"text" : "scale~ -1 1 0.75 1"
 				}
@@ -12517,8 +12535,8 @@
 					"patching_rect" : [ 400.0, 3125.0, 118.0, 23.0 ],
 					"rnbo_classname" : "cycle~",
 					"rnbo_extra_attributes" : 					{
-						"buffername" : "RNBODefaultSinus",
-						"interp" : "linear"
+						"interp" : "linear",
+						"buffername" : "RNBODefaultSinus"
 					}
 ,
 					"rnbo_serial" : 2,
@@ -12566,11 +12584,11 @@
 					"patching_rect" : [ 478.0, 3047.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : 1.0,
-						"initialFormat" : "float",
 						"minimum" : -1.0,
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : 1.0
 					}
 ,
 					"rnbo_serial" : 17,
@@ -12624,12 +12642,12 @@
 					"patching_rect" : [ 566.0, 3277.0, 56.0, 23.0 ],
 					"rnbo_classname" : "number~",
 					"rnbo_extra_attributes" : 					{
-						"interval" : 100.0,
 						"displaymode" : "first",
+						"interval" : 100.0,
 						"initialMode" : "sig"
 					}
 ,
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "number~_obj-41",
 					"sig" : -0.5
 				}
@@ -12693,7 +12711,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 566.0, 3315.0, 91.0, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 7,
 					"rnbo_uniqueid" : "scale~_obj-95",
 					"text" : "scale~ -1 1 3 -3"
 				}
@@ -12708,7 +12726,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 217.400001990795147, 3766.0, 152.600001990795135, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 6,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "*~_obj-42",
 					"text" : "*~ 1."
 				}
@@ -12959,7 +12977,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1345.0, 3004.0, 53.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 6,
 					"rnbo_uniqueid" : "*~_obj-998",
 					"text" : "*~"
 				}
@@ -12974,7 +12992,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1279.0, 3152.0, 31.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 8,
+					"rnbo_serial" : 7,
 					"rnbo_uniqueid" : "*~_obj-996",
 					"text" : "*~ 1"
 				}
@@ -13038,7 +13056,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1291.0, 3116.0, 38.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 9,
+					"rnbo_serial" : 8,
 					"rnbo_uniqueid" : "*~_obj-1151",
 					"text" : "*~ -1."
 				}
@@ -13068,7 +13086,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1333.0, 3152.0, 31.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 10,
+					"rnbo_serial" : 9,
 					"rnbo_uniqueid" : "*~_obj-1148",
 					"text" : "*~ 1"
 				}
@@ -13083,7 +13101,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1564.0, 3072.0, 71.5, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 8,
 					"rnbo_uniqueid" : "scale~_obj-1134",
 					"text" : "scale~ 0 1"
 				}
@@ -13562,8 +13580,8 @@
 										"text" : "out 3 new envelope trigger",
 										"patching_rect" : [ 756.636363636363512, 885.0, 150.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-16",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-16"
 									}
 
 								}
@@ -13573,8 +13591,8 @@
 										"text" : "out 2 envelope active",
 										"patching_rect" : [ 383.818181818181756, 885.0, 122.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-3",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-3"
 									}
 
 								}
@@ -13583,10 +13601,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 12 release slope @min -1 @max 1",
 										"patching_rect" : [ 756.636363636363512, 275.0, 206.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-15",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-15"
 									}
 
 								}
@@ -13595,10 +13613,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 10 attack slope @min -1 @max 1",
 										"patching_rect" : [ 621.066115702479237, 227.0, 199.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-14",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-14"
 									}
 
 								}
@@ -13607,10 +13625,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 11 decay slope @min -1 @max 1",
 										"patching_rect" : [ 688.851239669421375, 251.0, 198.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-13",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-13"
 									}
 
 								}
@@ -13619,10 +13637,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 9 final @min 0 @max 1",
 										"patching_rect" : [ 553.2809917355371, 203.0, 146.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-12",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-12"
 									}
 
 								}
@@ -13631,10 +13649,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 8 peak @min 0 @max 1",
 										"patching_rect" : [ 485.495867768594906, 179.0, 150.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-11",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-11"
 									}
 
 								}
@@ -13643,10 +13661,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 7 initial @min 0 @max 1",
 										"patching_rect" : [ 417.710743801652825, 155.0, 152.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-10",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-10"
 									}
 
 								}
@@ -13655,10 +13673,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 6 release time",
 										"patching_rect" : [ 349.925619834710687, 131.0, 97.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-9",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-9"
 									}
 
 								}
@@ -13667,10 +13685,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 5 sustain @min 0 @max 1",
 										"patching_rect" : [ 282.14049586776855, 107.0, 162.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-8",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-8"
 									}
 
 								}
@@ -13679,10 +13697,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 4 decay time",
 										"patching_rect" : [ 214.355371900826412, 83.0, 89.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-7",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-7"
 									}
 
 								}
@@ -13691,10 +13709,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 3 attack time",
 										"patching_rect" : [ 146.570247933884275, 59.0, 89.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-6",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-6"
 									}
 
 								}
@@ -13702,13 +13720,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 11.0, 310.0, 764.636363636363512, 561.0 ],
-										"outlettype" : [ "", "", "" ],
-										"fontname" : "<Monospaced>",
-										"fontface" : 0,
-										"numinlets" : 12,
-										"id" : "obj-5",
-										"numoutlets" : 3,
 										"fontsize" : 12.0,
+										"numinlets" : 12,
+										"fontname" : "<Monospaced>",
+										"numoutlets" : 3,
+										"outlettype" : [ "", "", "" ],
+										"fontface" : 0,
+										"id" : "obj-5",
 										"code" : "/**\r\n * retriggerable-curved-adsr.gendsp\r\n * by h1data\r\n * https://github.com/h1data/max-custom-adsr\r\n */\r\n\r\ncalcEnv(x, in_high, out_low, out_high, power) {\r\n\tif (out_low < out_high) {\r\n\t\tif (power > 0) {\r\n\t\t\treturn out_low + (out_high - out_low) * (1 - pow(1 - x / in_high, 1 + 2*E*power));\r\n\t\t} else {\r\n\t\t\treturn out_low + (out_high - out_low) * pow(x / in_high, 1 - 2*E*power);\r\n\t\t}\r\n\t} else {\r\n\t\tif (power > 0) {\r\n\t\t\treturn out_high + (out_low - out_high) * pow(1 - x / in_high, 1 + 2*E*power);\r\n\t\t} else {\r\n\t\t\treturn out_high + (out_low - out_high) * (1 - pow(x / in_high, 1 - 2*E*power));\r\n\t\t}\r\n\t}\r\n}\r\n\r\nParam loopmode(min=0, max=2, default=0);  // same as live.adsr~\r\nParam legato(min=0, max=1, default=0);    // same as adsr~\r\nParam retrigger(min=0, default=5);        // same as adsr~\r\nParam speed(min=0, default=1.0);          // for vel->time things\r\n\r\nHistory state(0);\t// 0=idle, 1=retrigger, 2=attack, 3=decay, 4=sustain, 5=release\r\nHistory time(0.0);\t// current time in state (msec)\r\nHistory from(0.0);\t// to remind initial amplitude of current state\r\nHistory env(0.0);\t// to output and remind velocity \r\nHistory vel(0.0);\t// to remind note on velocity in release state\r\n\r\n// check state\r\nif (state != 0 && state != 5 && in1 == 0 && loopmode != 1) {\t// note on -> release\r\n\tstate, time, from = 5, 0, env;\r\n}\r\nif (state == 5 && time >= in6) {\t\t\t// end of release\r\n\tif (loopmode == 2) {\t\t\t\t\t// return to attack (loop)\r\n\t\tstate, time, from = 2, 0, in7;\r\n\t} else {\t\t\t\t\t\t\t\t// idle\r\n\t\tstate, time = 0, 0;\r\n\t}\r\n}\r\nif (in2 > 0 && state != 1) {\t\t\t\t// triggered\r\n\ttime = 0;\r\n\tif (state == 0) {\t\t\t\t\t\t// idle -> attack\r\n\t\tstate, from, vel = 2, env, in1;\r\n\t} else if (legato == 0) {\t\t\t\t// envelope on -> retrigger\r\n\t\tstate, from = 1, env;\r\n\t} else {\t\t\t\t\t\t\t\t// envelope on -> attack (legato)\r\n\t\tstate, from, vel = 2, env, in1;\r\n\t}\r\n}\r\nif (state == 1 && time >= retrigger) {\t\t// retrigger -> attack\r\n\tstate, time, from, vel = 2, 0, in7, in1;\r\n}\r\nif (state == 2 && time >= in3) {\t\t\t// attack -> decay\r\n\tstate, time = 3, 0;\r\n}\r\nif (state == 3 && time >= in4) {                     // end of decay\r\n\tif (loopmode == 1 || loopmode == 2) {\t// skip sutain to release\r\n\t\tstate, time, from = 5, 0, in5;\r\n\t} else {\t\t\t\t\t\t\t\t// sustain\r\n\t\tstate, time = 4, 0;\r\n\t}\r\n}\r\n\r\n// obtain env (0 to 1)\r\nif (state == 0) {\t\t\t// idle\r\n\tout2, out3 = 0, 0;\r\n\tenv = in9;\r\n} else if (state == 4) {\t// sustain\r\n\tout2, out3 = 1, 1;\r\n\tenv = in5;\r\n\tvel = in1;\r\n} else {\r\n\t// increment time when not idle nor sustain\r\n\ttime += sampstoms(1) * speed;\r\n\tif (state == 1) {\t\t// retrigger\r\n\t\tout2, out3 = 1, 1;\r\n\t\tenv = calcEnv(time, retrigger, from, in7, 0);\r\n\t} else if (state == 2) {\t// attack\r\n\t\tout2, out3 = 1, 1;\r\n\t\tenv = calcEnv(time, in3, from, in8, in10);\r\n\t\tvel = in1;\r\n\t} else if (state == 3) {\t// decay\r\n\t\tout2, out3 = 1, 1;\r\n\t\tenv = calcEnv(time, in4, in8, in5, in11);\r\n\t\tvel = in1;\r\n\t} else if (state == 5) {    // release\r\n\t\tout2, out3 = 1, 0;\r\n\t\tenv = calcEnv(time, in6, from, in9, in12);\r\n\t}\r\n}\r\n\r\n// calclulate output\r\nout1 = vel * env;\r\n"
 									}
 
@@ -13718,10 +13736,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1 gate",
 										"patching_rect" : [ 11.0, 11.0, 55.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-1",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-1"
 									}
 
 								}
@@ -13730,10 +13748,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 2 trriger",
 										"patching_rect" : [ 78.785123966942137, 35.0, 63.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-2",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-2"
 									}
 
 								}
@@ -13743,8 +13761,8 @@
 										"text" : "out 1 envelope",
 										"patching_rect" : [ 11.0, 885.0, 87.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-4",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-4"
 									}
 
 								}
@@ -13868,7 +13886,7 @@
 					"rnbo_classname" : "gen~",
 					"rnbo_extra_attributes" : 					{
 						"exposeparams" : 0,
-						"gencode" : "calcEnv(x, in_high, out_low, out_high, power) {\n\t_calcEnv_ret_1 = 0;\n\tif(out_low < out_high) {\n\t\tif(power > 0) {\n\t\t\t_calcEnv_ret_1 = out_low + (((out_high - out_low)) * ((1 - (pow(1 - (x / in_high), 1 + (((2 * E)) * power))))));\n\t\t}\n\t\telse {\n\t\t\t_calcEnv_ret_1 = out_low + (((out_high - out_low)) * (pow(x / in_high, 1 - (((2 * E)) * power))));\n\t\t}\n\t}\n\telse {\n\t\tif(power > 0) {\n\t\t\t_calcEnv_ret_1 = out_high + (((out_low - out_high)) * (pow(1 - (x / in_high), 1 + (((2 * E)) * power))));\n\t\t}\n\t\telse {\n\t\t\t_calcEnv_ret_1 = out_high + (((out_low - out_high)) * ((1 - (pow(x / in_high, 1 - (((2 * E)) * power))))));\n\t\t}\n\t}\n\treturn _calcEnv_ret_1;\n}\n\nParam loopmode(0, max=2, default=0, min=0);\nParam legato(0, max=1, default=0, min=0);\nParam retrigger(5, min=0, default=5);\nParam speed(1, min=0, default=1);\nHistory state(0);\nHistory time(0);\nHistory from(0);\nHistory env(0);\nHistory vel(0);\nexpr_2 = 0;\nexpr_3 = 0;\nclamp_4 = clamp(in5, 0, 1);\nclamp_5 = clamp(in7, 0, 1);\nclamp_6 = clamp(in8, 0, 1);\nclamp_7 = clamp(in9, 0, 1);\nclamp_8 = clamp(in10, -1, 1);\nclamp_9 = clamp(in11, -1, 1);\nclamp_10 = clamp(in12, -1, 1);\nif((((((state != 0) && (state != 5))) && (in1 == 0))) && (loopmode != 1)) {\n\tstate = 5;\n\ttime = 0;\n\tfrom = env;\n}\nif((state == 5) && (time >= in6)) {\n\tif(loopmode == 2) {\n\t\tstate = 2;\n\t\ttime = 0;\n\t\tfrom = clamp_5;\n\t}\n\telse {\n\t\tstate = 0;\n\t\ttime = 0;\n\t}\n}\nif((in2 > 0) && (state != 1)) {\n\ttime = 0;\n\tif(state == 0) {\n\t\tstate = 2;\n\t\tfrom = env;\n\t\tvel = in1;\n\t}\n\telse if(legato == 0) {\n\t\tstate = 1;\n\t\tfrom = env;\n\t}\n\telse {\n\t\tstate = 2;\n\t\tfrom = env;\n\t\tvel = in1;\n\t}\n}\nif((state == 1) && (time >= retrigger)) {\n\tstate = 2;\n\ttime = 0;\n\tfrom = clamp_5;\n\tvel = in1;\n}\nif((state == 2) && (time >= in3)) {\n\tstate = 3;\n\ttime = 0;\n}\nif((state == 3) && (time >= in4)) {\n\tif((loopmode == 1) || (loopmode == 2)) {\n\t\tstate = 5;\n\t\ttime = 0;\n\t\tfrom = clamp_4;\n\t}\n\telse {\n\t\tstate = 4;\n\t\ttime = 0;\n\t}\n}\nif(state == 0) {\n\texpr_2 = 0;\n\texpr_3 = 0;\n\tenv = clamp_7;\n}\nelse if(state == 4) {\n\texpr_2 = 1;\n\texpr_3 = 1;\n\tenv = clamp_4;\n\tvel = in1;\n}\nelse {\n\ttime = time + ((sampstoms(1)) * speed);\n\tif(state == 1) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 1;\n\t\tenv = calcEnv(time, retrigger, from, clamp_5, 0);\n\t}\n\telse if(state == 2) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 1;\n\t\tenv = calcEnv(time, in3, from, clamp_6, clamp_8);\n\t\tvel = in1;\n\t}\n\telse if(state == 3) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 1;\n\t\tenv = calcEnv(time, in4, clamp_6, clamp_4, clamp_9);\n\t\tvel = in1;\n\t}\n\telse if(state == 5) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 0;\n\t\tenv = calcEnv(time, in6, from, clamp_7, clamp_10);\n\t}\n}\nexpr_11 = vel * env;\nout1 = expr_11;\nout2 = expr_2;\nout3 = expr_3;",
+						"gencode" : "calcEnv(x, in_high, out_low, out_high, power) {\n\t_calcEnv_ret_1 = 0;\n\tif(out_low < out_high) {\n\t\tif(power > 0) {\n\t\t\t_calcEnv_ret_1 = out_low + (((out_high - out_low)) * ((1 - (pow(1 - (x / in_high), 1 + (((2 * E)) * power))))));\n\t\t}\n\t\telse {\n\t\t\t_calcEnv_ret_1 = out_low + (((out_high - out_low)) * (pow(x / in_high, 1 - (((2 * E)) * power))));\n\t\t}\n\t}\n\telse {\n\t\tif(power > 0) {\n\t\t\t_calcEnv_ret_1 = out_high + (((out_low - out_high)) * (pow(1 - (x / in_high), 1 + (((2 * E)) * power))));\n\t\t}\n\t\telse {\n\t\t\t_calcEnv_ret_1 = out_high + (((out_low - out_high)) * ((1 - (pow(x / in_high, 1 - (((2 * E)) * power))))));\n\t\t}\n\t}\n\treturn _calcEnv_ret_1;\n}\n\nParam loopmode(0, max=2, default=0, min=0);\nParam legato(0, max=1, default=0, min=0);\nParam retrigger(5, min=0, default=5);\nParam speed(1, min=0, default=1);\nHistory state(0);\nHistory time(0);\nHistory from(0);\nHistory env(0);\nHistory vel(0);\nexpr_2 = 0;\nexpr_3 = 0;\nclamp_4 = clamp(in5, 0, 1);\nclamp_5 = clamp(in7, 0, 1);\nclamp_6 = clamp(in8, 0, 1);\nclamp_7 = clamp(in9, 0, 1);\nclamp_8 = clamp(in10, -1, 1);\nclamp_9 = clamp(in11, -1, 1);\nclamp_10 = clamp(in12, -1, 1);\nif((((((state != 0) && (state != 5))) && (in1 == 0))) && (loopmode != 1)) {\n\tstate = 5;\n\ttime = 0;\n\tfrom = env;\n}\nif((state == 5) && (time >= in6)) {\n\tif(loopmode == 2) {\n\t\tstate = 2;\n\t\ttime = 0;\n\t\tfrom = clamp_5;\n\t}\n\telse {\n\t\tstate = 0;\n\t\ttime = 0;\n\t}\n}\nif((in2 > 0) && (state != 1)) {\n\ttime = 0;\n\tif(state == 0) {\n\t\tstate = 2;\n\t\tfrom = env;\n\t\tvel = in1;\n\t}\n\telse if(legato == 0) {\n\t\tstate = 1;\n\t\tfrom = env;\n\t}\n\telse {\n\t\tstate = 2;\n\t\tfrom = env;\n\t\tvel = in1;\n\t}\n}\nif((state == 1) && (time >= retrigger)) {\n\tstate = 2;\n\ttime = 0;\n\tfrom = clamp_5;\n\tvel = in1;\n}\nif((state == 2) && (time >= in3)) {\n\tstate = 3;\n\ttime = 0;\n}\nif((state == 3) && (time >= in4)) {\n\tif((loopmode == 1) || (loopmode == 2)) {\n\t\tstate = 5;\n\t\ttime = 0;\n\t\tfrom = clamp_4;\n\t}\n\telse {\n\t\tstate = 4;\n\t\ttime = 0;\n\t}\n}\nif(state == 0) {\n\texpr_2 = 0;\n\texpr_3 = 0;\n\tenv = clamp_7;\n}\nelse if(state == 4) {\n\texpr_2 = 1;\n\texpr_3 = 1;\n\tenv = clamp_4;\n\tvel = in1;\n}\nelse {\n\ttime = time + ((sampstoms(1)) * speed);\n\tif(state == 1) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 1;\n\t\tenv = calcEnv(time, retrigger, from, clamp_5, 0);\n\t}\n\telse if(state == 2) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 1;\n\t\tenv = calcEnv(time, in3, from, clamp_6, clamp_8);\n\t\tvel = in1;\n\t}\n\telse if(state == 3) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 1;\n\t\tenv = calcEnv(time, in4, clamp_6, clamp_4, clamp_9);\n\t\tvel = in1;\n\t}\n\telse if(state == 5) {\n\t\texpr_2 = 1;\n\t\texpr_3 = 0;\n\t\tenv = calcEnv(time, in6, from, clamp_7, clamp_10);\n\t}\n}\nexpr_11 = vel * env;\nout3 = expr_3;\nout1 = expr_11;\nout2 = expr_2;",
 						"geninlets" : 12,
 						"genoutlets" : 3
 					}
@@ -14442,8 +14460,8 @@
 					"patching_rect" : [ 444.0, 1370.0, 56.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 5,
@@ -14669,7 +14687,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1114.0, 2050.0, 31.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 11,
+					"rnbo_serial" : 10,
 					"rnbo_uniqueid" : "*~_obj-7",
 					"text" : "*~ 1"
 				}
@@ -14684,7 +14702,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1426.0, 2036.0, 31.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 12,
+					"rnbo_serial" : 11,
 					"rnbo_uniqueid" : "*~_obj-6",
 					"text" : "*~ 1"
 				}
@@ -14699,7 +14717,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1452.0, 2112.0, 121.0, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 8,
+					"rnbo_serial" : 9,
 					"rnbo_uniqueid" : "scale~_obj-5",
 					"text" : "scale~ 0.4 0.9 0.8 1.1"
 				}
@@ -14714,7 +14732,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1219.0, 2144.0, 121.0, 23.0 ],
 					"rnbo_classname" : "scale~",
-					"rnbo_serial" : 9,
+					"rnbo_serial" : 10,
 					"rnbo_uniqueid" : "scale~_obj-4",
 					"text" : "scale~ 0.2 0.7 0.2 0.5"
 				}
@@ -14772,11 +14790,11 @@
 					"patching_rect" : [ 556.0, 1436.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 18,
@@ -14834,11 +14852,11 @@
 					"patching_rect" : [ 244.0, 1638.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 19,
@@ -15001,11 +15019,11 @@
 					"patching_rect" : [ 198.0, 1730.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 20,
@@ -15025,11 +15043,11 @@
 					"patching_rect" : [ 624.0, 1512.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 21,
@@ -15049,11 +15067,11 @@
 					"patching_rect" : [ 498.0, 1958.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 22,
@@ -15073,11 +15091,11 @@
 					"patching_rect" : [ 2328.0, 2002.0, 50.0, 23.0 ],
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
-						"preset" : 0,
-						"maximum" : "<none>",
-						"initialFormat" : "float",
 						"minimum" : "<none>",
-						"order" : ""
+						"initialFormat" : "float",
+						"preset" : 0,
+						"order" : "",
+						"maximum" : "<none>"
 					}
 ,
 					"rnbo_serial" : 23,
@@ -15201,6 +15219,10 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2124.0, 1934.0, 81.679394960403442, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "t_obj-912",
 					"rnboinfo" : 					{
@@ -15315,6 +15337,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1740.0, 2026.0, 103.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 3,
 					"rnbo_uniqueid" : "t_obj-937",
 					"rnboinfo" : 					{
@@ -15707,7 +15733,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 2464.0, 2174.0, 75.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 13,
+					"rnbo_serial" : 12,
 					"rnbo_uniqueid" : "*~_obj-979",
 					"text" : "*~ 3.141593"
 				}
@@ -15737,6 +15763,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2308.0, 2174.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 4,
 					"rnbo_uniqueid" : "t_obj-989",
 					"rnboinfo" : 					{
@@ -15809,6 +15839,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2272.0, 2174.0, 23.0, 23.0 ],
 					"rnbo_classname" : "t",
+					"rnbo_extra_attributes" : 					{
+						"triggers" : ""
+					}
+,
 					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "t_obj-990",
 					"rnboinfo" : 					{
@@ -16100,7 +16134,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 2464.0, 2094.0, 31.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 14,
+					"rnbo_serial" : 13,
 					"rnbo_uniqueid" : "*~_obj-1006",
 					"text" : "*~ 1"
 				}
@@ -16274,7 +16308,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 2464.0, 2258.0, 45.0, 23.0 ],
 					"rnbo_classname" : "*~",
-					"rnbo_serial" : 15,
+					"rnbo_serial" : 14,
 					"rnbo_uniqueid" : "*~_obj-1018",
 					"text" : "*~ -0.5"
 				}
@@ -16531,7 +16565,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1285.0, 3811.0, 73.0, 23.0 ],
 					"rnbo_classname" : "clip~",
-					"rnbo_serial" : 7,
+					"rnbo_serial" : 5,
 					"rnbo_uniqueid" : "clip~_obj-408",
 					"text" : "clip~ 0.7 9.8"
 				}
@@ -17211,10 +17245,10 @@
 										"maxclass" : "newobj",
 										"text" : "scale 1 -1 0 1",
 										"patching_rect" : [ 72.0, 552.166666666666629, 81.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-35",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-35"
 									}
 
 								}
@@ -17223,10 +17257,10 @@
 										"maxclass" : "newobj",
 										"text" : "cos",
 										"patching_rect" : [ 72.0, 521.333333333333258, 27.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-37",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-37"
 									}
 
 								}
@@ -17235,10 +17269,10 @@
 										"maxclass" : "newobj",
 										"text" : "* pi",
 										"patching_rect" : [ 72.0, 490.499999999999943, 26.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-38",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-38"
 									}
 
 								}
@@ -17247,10 +17281,10 @@
 										"maxclass" : "newobj",
 										"text" : "param @name aux_phs_off @default 0 @min -1 @max 1",
 										"patching_rect" : [ 105.0, 362.0, 315.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-30",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-30"
 									}
 
 								}
@@ -17259,10 +17293,10 @@
 										"maxclass" : "newobj",
 										"text" : "param @name duty_cycle @default 0.5 @min 0 @max 1",
 										"patching_rect" : [ 140.0, 428.833333333333258, 313.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-29",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-29"
 									}
 
 								}
@@ -17272,8 +17306,8 @@
 										"text" : "out 3",
 										"patching_rect" : [ 129.0, 647.0, 35.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-19",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-19"
 									}
 
 								}
@@ -17283,8 +17317,8 @@
 										"text" : "go.unit.triangle",
 										"patching_rect" : [ 131.0, 808.0, 87.0, 20.0 ],
 										"numinlets" : 1,
-										"id" : "obj-16",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-16"
 									}
 
 								}
@@ -17293,10 +17327,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 7",
 										"patching_rect" : [ 147.0, 288.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-88",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-88"
 									}
 
 								}
@@ -17305,10 +17339,10 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 39.0, 622.0, 51.79999965429306, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-87",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-87"
 									}
 
 								}
@@ -17317,10 +17351,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 6",
 										"patching_rect" : [ 72.0, 288.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-36",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-36"
 									}
 
 								}
@@ -17329,10 +17363,10 @@
 										"maxclass" : "newobj",
 										"text" : "slide 480 480",
 										"patching_rect" : [ 195.0, 600.0, 80.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-45",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-45"
 									}
 
 								}
@@ -17341,10 +17375,10 @@
 										"maxclass" : "newobj",
 										"text" : "rate @sync lock",
 										"patching_rect" : [ 72.0, 328.0, 94.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-17",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-17"
 									}
 
 								}
@@ -17353,10 +17387,10 @@
 										"maxclass" : "newobj",
 										"text" : "*",
 										"patching_rect" : [ 72.0, 583.0, 29.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-27",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-27"
 									}
 
 								}
@@ -17365,13 +17399,13 @@
 										"maxclass" : "newobj",
 										"text" : "param @name Aux_Depth @default 0 @min 0 @max 1",
 										"patching_rect" : [ 195.0, 564.0, 305.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "Arial",
+										"fontsize" : 12.0,
 										"numinlets" : 0,
+										"fontname" : "Arial",
 										"color" : [ 0.035294117647059, 0.796078431372549, 0.811764705882353, 1.0 ],
-										"id" : "obj-44",
 										"numoutlets" : 1,
-										"fontsize" : 12.0
+										"outlettype" : [ "" ],
+										"id" : "obj-44"
 									}
 
 								}
@@ -17380,10 +17414,10 @@
 										"maxclass" : "newobj",
 										"text" : "scale 0 1",
 										"patching_rect" : [ 453.0, 1230.0, 57.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 4,
-										"id" : "obj-11",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-11"
 									}
 
 								}
@@ -17392,11 +17426,11 @@
 										"maxclass" : "newobj",
 										"text" : "in 4 @comment freq_floor_vfx",
 										"patching_rect" : [ 482.0, 1153.0, 169.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"color" : [ 0.035294117647059, 0.796078431372549, 0.811764705882353, 1.0 ],
-										"id" : "obj-14",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-14"
 									}
 
 								}
@@ -17405,11 +17439,11 @@
 										"maxclass" : "newobj",
 										"text" : "in 5 @comment freq_ceiling_vfx",
 										"patching_rect" : [ 510.0, 1188.0, 179.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"color" : [ 0.035294117647059, 0.796078431372549, 0.811764705882353, 1.0 ],
-										"id" : "obj-15",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-15"
 									}
 
 								}
@@ -17419,8 +17453,8 @@
 										"text" : "bypass scale for vfx",
 										"patching_rect" : [ 571.0, 1530.0, 115.0, 20.0 ],
 										"numinlets" : 1,
-										"id" : "obj-10",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-10"
 									}
 
 								}
@@ -17429,10 +17463,10 @@
 										"maxclass" : "newobj",
 										"text" : "slide",
 										"patching_rect" : [ 453.0, 1529.0, 110.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 3,
-										"id" : "obj-6",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-6"
 									}
 
 								}
@@ -17442,8 +17476,8 @@
 										"text" : "out 2",
 										"patching_rect" : [ 453.0, 1579.0, 35.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-4",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-4"
 									}
 
 								}
@@ -17453,8 +17487,8 @@
 										"text" : "out 1",
 										"patching_rect" : [ 39.0, 1579.0, 35.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-1",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-1"
 									}
 
 								}
@@ -17463,10 +17497,10 @@
 										"maxclass" : "newobj",
 										"text" : "param @name slide_trig @default 0 @min -10 @max 10",
 										"patching_rect" : [ 105.0, 1285.0, 311.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-28",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-28"
 									}
 
 								}
@@ -17477,8 +17511,8 @@
 										"linecount" : 2,
 										"patching_rect" : [ 155.0, 1518.0, 235.0, 33.0 ],
 										"numinlets" : 1,
-										"id" : "obj-208",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-208"
 									}
 
 								}
@@ -17487,10 +17521,10 @@
 										"maxclass" : "newobj",
 										"text" : "slide 0 480",
 										"patching_rect" : [ 105.0, 1442.0, 67.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-206",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-206"
 									}
 
 								}
@@ -17499,10 +17533,10 @@
 										"maxclass" : "newobj",
 										"text" : "scale 0 1 48 480",
 										"patching_rect" : [ 105.0, 1480.0, 97.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-204",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-204"
 									}
 
 								}
@@ -17511,10 +17545,10 @@
 										"maxclass" : "newobj",
 										"text" : "> 0",
 										"patching_rect" : [ 105.0, 1402.0, 26.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-1000",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-1000"
 									}
 
 								}
@@ -17523,10 +17557,10 @@
 										"maxclass" : "newobj",
 										"text" : "abs",
 										"patching_rect" : [ 105.0, 1362.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-999",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-999"
 									}
 
 								}
@@ -17535,10 +17569,10 @@
 										"maxclass" : "newobj",
 										"text" : "delta",
 										"patching_rect" : [ 105.0, 1321.0, 35.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-996",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-996"
 									}
 
 								}
@@ -17547,10 +17581,10 @@
 										"maxclass" : "newobj",
 										"text" : "slide",
 										"patching_rect" : [ 39.0, 1529.0, 110.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 3,
-										"id" : "obj-9",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-9"
 									}
 
 								}
@@ -17559,10 +17593,10 @@
 										"maxclass" : "newobj",
 										"text" : "param @name invert @min 0 @max 1",
 										"patching_rect" : [ 72.0, 175.0, 214.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-26",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-26"
 									}
 
 								}
@@ -17571,10 +17605,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 0.5",
 										"patching_rect" : [ 72.0, 207.0, 33.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-93",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-93"
 									}
 
 								}
@@ -17583,12 +17617,12 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 39.0, 242.0, 52.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "Arial",
+										"fontsize" : 12.0,
 										"numinlets" : 2,
-										"id" : "obj-23",
+										"fontname" : "Arial",
 										"numoutlets" : 1,
-										"fontsize" : 12.0
+										"outlettype" : [ "" ],
+										"id" : "obj-23"
 									}
 
 								}
@@ -17597,10 +17631,10 @@
 										"maxclass" : "newobj",
 										"text" : "scale 0 1",
 										"patching_rect" : [ 39.0, 1230.0, 57.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 4,
-										"id" : "obj-32",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-32"
 									}
 
 								}
@@ -17609,11 +17643,11 @@
 										"maxclass" : "newobj",
 										"text" : "in 2 @comment freq_floor",
 										"patching_rect" : [ 68.0, 1153.0, 147.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"color" : [ 0.035294117647059, 0.796078431372549, 0.811764705882353, 1.0 ],
-										"id" : "obj-22",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-22"
 									}
 
 								}
@@ -17622,11 +17656,11 @@
 										"maxclass" : "newobj",
 										"text" : "in 3 @comment freq_ceiling",
 										"patching_rect" : [ 96.0, 1188.0, 157.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
 										"color" : [ 0.035294117647059, 0.796078431372549, 0.811764705882353, 1.0 ],
-										"id" : "obj-25",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-25"
 									}
 
 								}
@@ -17635,10 +17669,10 @@
 										"maxclass" : "newobj",
 										"text" : "param @name pow @default 0 @min -1 @max 1",
 										"patching_rect" : [ 147.0, 927.0, 272.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-20",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-20"
 									}
 
 								}
@@ -17648,8 +17682,8 @@
 										"text" : "adjusting pow squishes or fattens the triangle",
 										"patching_rect" : [ 96.0, 1080.0, 255.0, 20.0 ],
 										"numinlets" : 1,
-										"id" : "obj-18",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-18"
 									}
 
 								}
@@ -17658,10 +17692,10 @@
 										"maxclass" : "newobj",
 										"text" : "slide 480 480",
 										"patching_rect" : [ 147.0, 964.0, 80.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-49",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-49"
 									}
 
 								}
@@ -17670,10 +17704,10 @@
 										"maxclass" : "newobj",
 										"text" : "pow",
 										"patching_rect" : [ 39.0, 1079.0, 48.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-54",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-54"
 									}
 
 								}
@@ -17682,10 +17716,10 @@
 										"maxclass" : "newobj",
 										"text" : "constant 2",
 										"patching_rect" : [ 68.0, 1000.0, 64.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-55",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-55"
 									}
 
 								}
@@ -17694,10 +17728,10 @@
 										"maxclass" : "newobj",
 										"text" : "pow",
 										"patching_rect" : [ 68.0, 1038.0, 98.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-57",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-57"
 									}
 
 								}
@@ -17706,10 +17740,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 3.",
 										"patching_rect" : [ 147.0, 1000.0, 27.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-58",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-58"
 									}
 
 								}
@@ -17718,10 +17752,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 39.0, 32.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-5",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-5"
 									}
 
 								}
@@ -17730,10 +17764,10 @@
 										"maxclass" : "newobj",
 										"text" : "slide 480 480",
 										"patching_rect" : [ 72.0, 105.0, 80.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-2",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-2"
 									}
 
 								}
@@ -17742,10 +17776,10 @@
 										"maxclass" : "newobj",
 										"text" : "slide 480 480",
 										"patching_rect" : [ 68.0, 768.0, 80.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-40",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-40"
 									}
 
 								}
@@ -17754,10 +17788,10 @@
 										"maxclass" : "newobj",
 										"text" : "wrap 0 1",
 										"patching_rect" : [ 39.0, 662.0, 55.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-21",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-21"
 									}
 
 								}
@@ -17766,10 +17800,10 @@
 										"maxclass" : "newobj",
 										"text" : "scale -1 1 0 1",
 										"patching_rect" : [ 68.0, 731.0, 81.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-84",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-84"
 									}
 
 								}
@@ -17778,10 +17812,10 @@
 										"maxclass" : "newobj",
 										"text" : "param @name phase_offset @default 0 @min -1 @max 1",
 										"patching_rect" : [ 72.0, 68.0, 318.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-7",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-7"
 									}
 
 								}
@@ -17790,10 +17824,10 @@
 										"maxclass" : "newobj",
 										"text" : "param @name shape @default 0 @min -1 @max 1",
 										"patching_rect" : [ 68.0, 695.0, 283.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-24",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-24"
 									}
 
 								}
@@ -17802,12 +17836,12 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 39.0, 141.0, 52.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "Arial",
+										"fontsize" : 12.0,
 										"numinlets" : 2,
-										"id" : "obj-56",
+										"fontname" : "Arial",
 										"numoutlets" : 1,
-										"fontsize" : 12.0
+										"outlettype" : [ "" ],
+										"id" : "obj-56"
 									}
 
 								}
@@ -17816,10 +17850,10 @@
 										"maxclass" : "newobj",
 										"text" : "scale 0 1 1 0",
 										"patching_rect" : [ 39.0, 852.0, 77.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-8",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-8"
 									}
 
 								}
@@ -17828,10 +17862,10 @@
 										"maxclass" : "newobj",
 										"text" : "triangle",
 										"patching_rect" : [ 39.0, 807.0, 48.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 2,
-										"id" : "obj-12",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-12"
 									}
 
 								}
@@ -17842,8 +17876,8 @@
 										"linecount" : 3,
 										"patching_rect" : [ 168.0, 725.0, 183.0, 47.0 ],
 										"numinlets" : 1,
-										"id" : "obj-3",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-3"
 									}
 
 								}
@@ -17853,8 +17887,8 @@
 										"text" : "invert shape so that the peak remains in place.",
 										"patching_rect" : [ 123.0, 853.0, 259.0, 20.0 ],
 										"numinlets" : 1,
-										"id" : "obj-13",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-13"
 									}
 
 								}
@@ -17863,10 +17897,10 @@
 										"maxclass" : "newobj",
 										"text" : "go.unit.triangle",
 										"patching_rect" : [ 72.0, 459.666666666666629, 87.0, 22.0 ],
-										"outlettype" : [ "", "" ],
 										"numinlets" : 2,
-										"id" : "obj-48",
-										"numoutlets" : 2
+										"numoutlets" : 2,
+										"outlettype" : [ "", "" ],
+										"id" : "obj-48"
 									}
 
 								}
@@ -17875,12 +17909,12 @@
 										"maxclass" : "newobj",
 										"text" : "wrap 0 1",
 										"patching_rect" : [ 72.0, 428.833333333333314, 55.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
 										"color" : [ 0.996078431372549, 0.607843137254902, 0.0, 1.0 ],
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
 										"textcolor" : [ 0.129411764705882, 0.0, 0.0, 1.0 ],
-										"id" : "obj-66",
-										"numoutlets" : 1
+										"id" : "obj-66"
 									}
 
 								}
@@ -17889,14 +17923,14 @@
 										"maxclass" : "newobj",
 										"text" : "+",
 										"patching_rect" : [ 72.0, 398.0, 52.0, 22.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "Arial",
+										"fontsize" : 12.0,
 										"numinlets" : 2,
+										"fontname" : "Arial",
 										"color" : [ 0.996078431372549, 0.607843137254902, 0.0, 1.0 ],
-										"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-										"id" : "obj-78",
 										"numoutlets" : 1,
-										"fontsize" : 12.0
+										"outlettype" : [ "" ],
+										"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+										"id" : "obj-78"
 									}
 
 								}
@@ -18299,7 +18333,7 @@
 					"rnbo_classname" : "gen~",
 					"rnbo_extra_attributes" : 					{
 						"exposeparams" : 0,
-						"gencode" : "Param invert(0, min=0, max=1);\nParam slide_trig(0, max=10, default=0, min=-10);\nParam shape(0, max=1, default=0, min=-1);\nParam phase_offset(0, max=1, default=0, min=-1);\nParam aux_phs_off(0, max=1, default=0, min=-1);\nParam Aux_Depth(0, max=1, default=0, min=0);\nParam duty_cycle(0, max=1, default=0.5, min=0);\nParam pow(0, max=1, default=0, min=-1);\nslide_1 = slide(Aux_Depth, 480, 480);\nconstant_2 = 2;\nslide_3 = slide(pow, 480, 480);\nmul_4 = slide_3 * 3.;\npow_5 = pow(constant_2, mul_4);\ndelta_6 = delta(slide_trig);\nabs_7 = abs(delta_6);\ngt_8 = abs_7 > 0;\nslide_9 = slide(gt_8, 0, 480);\nscale_10 = scale(slide_9, 0, 1, 48, 480, 1);\nscale_11 = scale(shape, -1, 1, 0, 1, 1);\nslide_12 = slide(scale_11, 480, 480);\nrate_13 = rate(in6, in7, sync=\"lock\");\nadd_14 = rate_13 + aux_phs_off;\nwrap_15 = wrap(add_14, 0, 1);\nclamp_16 = clamp(duty_cycle, 0, 1);\ntriangle_17 = triangle(wrap_15, clamp_16);\ngen_18 = triangle_17;\nscale_19 = scale(triangle_17, 0, 1, 1, 0, 1);\ngen_20 = scale_19;\nmul_21 = gen_20 * pi;\ncos_22 = cos(mul_21);\nscale_23 = scale(cos_22, 1, -1, 0, 1, 1);\nmul_24 = scale_23 * slide_1;\nout3 = mul_24;\nmul_25 = invert * 0.5;\nslide_26 = slide(phase_offset, 480, 480);\nadd_27 = in1 + slide_26;\nadd_28 = add_27 + mul_25;\nadd_29 = add_28 + mul_24;\nwrap_30 = wrap(add_29, 0, 1);\ntriangle_31 = triangle(wrap_30, slide_12);\nscale_32 = scale(triangle_31, 0, 1, 1, 0, 1);\npow_33 = pow(scale_32, pow_5);\nscale_34 = scale(pow_33, 0, 1, in2, in3, 1);\nslide_35 = slide(scale_34, scale_10, scale_10);\nout1 = slide_35;\nscale_36 = scale(pow_33, 0, 1, in4, in5, 1);\nslide_37 = slide(scale_36, scale_10, scale_10);\nout2 = slide_37;",
+						"gencode" : "Param Aux_Depth(0, max=1, default=0, min=0);\nParam slide_trig(0, max=10, default=0, min=-10);\nParam aux_phs_off(0, max=1, default=0, min=-1);\nParam invert(0, min=0, max=1);\nParam pow(0, max=1, default=0, min=-1);\nParam shape(0, max=1, default=0, min=-1);\nParam duty_cycle(0, max=1, default=0.5, min=0);\nParam phase_offset(0, max=1, default=0, min=-1);\nslide_1 = slide(Aux_Depth, 480, 480);\nconstant_2 = 2;\nslide_3 = slide(pow, 480, 480);\nmul_4 = slide_3 * 3.;\npow_5 = pow(constant_2, mul_4);\ndelta_6 = delta(slide_trig);\nabs_7 = abs(delta_6);\ngt_8 = abs_7 > 0;\nslide_9 = slide(gt_8, 0, 480);\nscale_10 = scale(slide_9, 0, 1, 48, 480, 1);\nscale_11 = scale(shape, -1, 1, 0, 1, 1);\nslide_12 = slide(scale_11, 480, 480);\nrate_13 = rate(in6, in7, sync=\"lock\");\nadd_14 = rate_13 + aux_phs_off;\nwrap_15 = wrap(add_14, 0, 1);\nclamp_16 = clamp(duty_cycle, 0, 1);\ntriangle_17 = triangle(wrap_15, clamp_16);\ngen_18 = triangle_17;\nscale_19 = scale(triangle_17, 0, 1, 1, 0, 1);\ngen_20 = scale_19;\nmul_21 = gen_20 * pi;\ncos_22 = cos(mul_21);\nscale_23 = scale(cos_22, 1, -1, 0, 1, 1);\nmul_24 = scale_23 * slide_1;\nout3 = mul_24;\nmul_25 = invert * 0.5;\nslide_26 = slide(phase_offset, 480, 480);\nadd_27 = in1 + slide_26;\nadd_28 = add_27 + mul_25;\nadd_29 = add_28 + mul_24;\nwrap_30 = wrap(add_29, 0, 1);\ntriangle_31 = triangle(wrap_30, slide_12);\nscale_32 = scale(triangle_31, 0, 1, 1, 0, 1);\npow_33 = pow(scale_32, pow_5);\nscale_34 = scale(pow_33, 0, 1, in2, in3, 1);\nslide_35 = slide(scale_34, scale_10, scale_10);\nout1 = slide_35;\nscale_36 = scale(pow_33, 0, 1, in4, in5, 1);\nslide_37 = slide(scale_36, scale_10, scale_10);\nout2 = slide_37;",
 						"geninlets" : 7,
 						"genoutlets" : 3
 					}
@@ -18744,10 +18778,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 2",
 										"patching_rect" : [ 1468.666666666666742, 505.0, 23.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-19",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-19"
 									}
 
 								}
@@ -18756,10 +18790,10 @@
 										"maxclass" : "newobj",
 										"text" : "1",
 										"patching_rect" : [ 1705.0, 505.0, 19.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-18",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-18"
 									}
 
 								}
@@ -18767,13 +18801,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 996.0, 550.0, 728.0, 268.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "<Monospaced>",
-										"fontface" : 0,
-										"numinlets" : 4,
-										"id" : "obj-17",
-										"numoutlets" : 1,
 										"fontsize" : 12.0,
+										"numinlets" : 4,
+										"fontname" : "<Monospaced>",
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"fontface" : 0,
+										"id" : "obj-17",
 										"code" : "require(\"halfband_ppiir.genexpr\");\r\nrequire(\"moogladder_dv.genexpr\");\r\n\r\ncutoff = in2;\r\nresonance = in3;\r\ndrive = in4;\r\n\nup0, up1, up2, up3 = upsample4x_ppiir(in1);\n// do something to the upsampled values\nup0 = moogladder_dv(up0, cutoff, resonance, drive);\nup1 = moogladder_dv(up1, cutoff, resonance, drive);\nup2 = moogladder_dv(up2, cutoff, resonance, drive);\nup3 = moogladder_dv(up3, cutoff, resonance, drive);\nout1 = downsample4x_ppiir(up0, up1, up2, up3);\n"
 									}
 
@@ -18783,10 +18817,10 @@
 										"maxclass" : "newobj",
 										"text" : "0.1",
 										"patching_rect" : [ 911.0, 630.0, 25.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-14",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-14"
 									}
 
 								}
@@ -18795,10 +18829,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 4",
 										"patching_rect" : [ 156.0, 491.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-13",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-13"
 									}
 
 								}
@@ -18807,10 +18841,10 @@
 										"maxclass" : "newobj",
 										"text" : "selector 5",
 										"patching_rect" : [ 156.0, 775.0, 71.5, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 6,
-										"id" : "obj-12",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-12"
 									}
 
 								}
@@ -18819,10 +18853,10 @@
 										"maxclass" : "newobj",
 										"text" : "gate 5",
 										"patching_rect" : [ 187.0, 557.0, 61.0, 22.0 ],
-										"outlettype" : [ "", "", "", "", "" ],
 										"numinlets" : 2,
-										"id" : "obj-11",
-										"numoutlets" : 5
+										"numoutlets" : 5,
+										"outlettype" : [ "", "", "", "", "" ],
+										"id" : "obj-11"
 									}
 
 								}
@@ -18831,10 +18865,10 @@
 										"maxclass" : "newobj",
 										"text" : "gen @gen fc.diode.gendsp",
 										"patching_rect" : [ 778.0, 681.0, 152.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 4,
-										"id" : "obj-10",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-10"
 									}
 
 								}
@@ -18843,10 +18877,10 @@
 										"maxclass" : "newobj",
 										"text" : "gen @gen fc.svf-as.gendsp",
 										"patching_rect" : [ 590.0, 681.0, 155.0, 22.0 ],
-										"outlettype" : [ "", "", "", "", "", "" ],
 										"numinlets" : 3,
-										"id" : "obj-4",
-										"numoutlets" : 6
+										"numoutlets" : 6,
+										"outlettype" : [ "", "", "", "", "", "" ],
+										"id" : "obj-4"
 									}
 
 								}
@@ -18855,10 +18889,10 @@
 										"maxclass" : "newobj",
 										"text" : "gen @gen fc.k35lp.gendsp",
 										"patching_rect" : [ 400.0, 681.0, 151.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 3,
-										"id" : "obj-3",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-3"
 									}
 
 								}
@@ -18867,10 +18901,10 @@
 										"maxclass" : "newobj",
 										"text" : "clip 20 9700",
 										"patching_rect" : [ 353.0, 470.0, 73.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-9",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-9"
 									}
 
 								}
@@ -18879,10 +18913,10 @@
 										"maxclass" : "newobj",
 										"text" : "clip 0 1",
 										"patching_rect" : [ 806.0, 452.0, 47.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-8",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-8"
 									}
 
 								}
@@ -18891,10 +18925,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 3",
 										"patching_rect" : [ 806.0, 412.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-7",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-7"
 									}
 
 								}
@@ -18904,8 +18938,8 @@
 										"text" : "out 1",
 										"patching_rect" : [ 156.0, 833.0, 35.0, 22.0 ],
 										"numinlets" : 1,
-										"id" : "obj-6",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"id" : "obj-6"
 									}
 
 								}
@@ -18914,10 +18948,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 229.0, 491.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-5",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-5"
 									}
 
 								}
@@ -18927,10 +18961,10 @@
 										"text" : "smFilterPack_ladder_wrap @cutoffmode 0",
 										"linecount" : 2,
 										"patching_rect" : [ 187.0, 681.0, 154.0, 35.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 5,
-										"id" : "obj-29",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-29"
 									}
 
 								}
@@ -18939,10 +18973,10 @@
 										"maxclass" : "newobj",
 										"text" : "+ 20",
 										"patching_rect" : [ 353.0, 420.0, 32.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-80",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-80"
 									}
 
 								}
@@ -18951,10 +18985,10 @@
 										"maxclass" : "newobj",
 										"text" : "* 9680",
 										"patching_rect" : [ 353.0, 380.0, 43.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 1,
-										"id" : "obj-81",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-81"
 									}
 
 								}
@@ -18962,13 +18996,13 @@
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 353.0, 105.0, 785.0, 261.0 ],
-										"outlettype" : [ "" ],
-										"fontname" : "<Monospaced>",
-										"fontface" : 0,
-										"numinlets" : 1,
-										"id" : "obj-82",
-										"numoutlets" : 1,
 										"fontsize" : 12.0,
+										"numinlets" : 1,
+										"fontname" : "<Monospaced>",
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"fontface" : 0,
+										"id" : "obj-82",
 										"code" : "// from the ease package, pow changed from 2 to 1.93 to better match Moog MF-101S filter freq taper\r\n\r\n// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after the exponential function y = 2^(10(x - 1))\r\n\nExponentialEaseIn(value)\n{\n\treturn (value == 0.0) ? value : pow(1.93, 10 * (value - 1));\n}\r\n\r\nout1 = ExponentialEaseIn(in1);\r\n\r\n"
 									}
 
@@ -18978,10 +19012,10 @@
 										"maxclass" : "newobj",
 										"text" : "in 2",
 										"patching_rect" : [ 353.0, 65.0, 28.0, 22.0 ],
-										"outlettype" : [ "" ],
 										"numinlets" : 0,
-										"id" : "obj-84",
-										"numoutlets" : 1
+										"numoutlets" : 1,
+										"outlettype" : [ "" ],
+										"id" : "obj-84"
 									}
 
 								}
@@ -19238,7 +19272,7 @@
 					"rnbo_classname" : "gen~",
 					"rnbo_extra_attributes" : 					{
 						"exposeparams" : 0,
-						"gencode" : "upsample2x_ppiir(x) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x;\n\ts_1 = p1_d1 + (p1_a0 * ((x - p1_d2)));\n\ty_2 = p1_d2 + (p1_a1 * ((s_1 - p1_d3)));\n\tp1_d3 = y_2;\n\tp1_d2 = s_1;\n\tp1_d1 = x;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5, ((p0_d3 + p1_d3)) * 0.5;\n}\n\ndownsample2x_ppiir(x1, x2) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x1 - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x1;\n\ts_3 = p1_d1 + (p1_a0 * ((x2 - p1_d2)));\n\ty_4 = p1_d2 + (p1_a1 * ((s_3 - p1_d3)));\n\tp1_d3 = y_4;\n\tp1_d2 = s_3;\n\tp1_d1 = x2;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5;\n}\n\nupsample4x_ppiir(x) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0, 0, 0);\n\tpoke(pass1_buf, b, 1, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i, 0);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2, 0, 0);\n\t\tpoke(pass2_buf, b, (i * 2) + 1, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\ty3 = peek(pass2_buf, 2, 0);\n\ty4 = peek(pass2_buf, 3, 0);\n\treturn y1, y2, y3, y4;\n}\n\ndownsample4x_ppiir(x1, x2, x3, x4) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\tpoke(pass1_buf, x1, 0, 0, 0);\n\tpoke(pass1_buf, x2, 1, 0, 0);\n\tpoke(pass1_buf, x3, 2, 0, 0);\n\tpoke(pass1_buf, x4, 3, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2, 0);\n\t\tb = peek(pass1_buf, (i * 2) + 1, 0);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample8x_ppiir(x) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\ty3 = peek(pass3_buf, 2);\n\ty4 = peek(pass3_buf, 3);\n\ty5 = peek(pass3_buf, 4);\n\ty6 = peek(pass3_buf, 5);\n\ty7 = peek(pass3_buf, 6);\n\ty8 = peek(pass3_buf, 7);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8;\n}\n\ndownsample8x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample16x_ppiir(x) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\tv = peek(pass3_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass4_buf, a, i * 2);\n\t\tpoke(pass4_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\ty3 = peek(pass4_buf, 2);\n\ty4 = peek(pass4_buf, 3);\n\ty5 = peek(pass4_buf, 4);\n\ty6 = peek(pass4_buf, 5);\n\ty7 = peek(pass4_buf, 6);\n\ty8 = peek(pass4_buf, 7);\n\ty9 = peek(pass4_buf, 8);\n\ty10 = peek(pass4_buf, 9);\n\ty11 = peek(pass4_buf, 10);\n\ty12 = peek(pass4_buf, 11);\n\ty13 = peek(pass4_buf, 12);\n\ty14 = peek(pass4_buf, 13);\n\ty15 = peek(pass4_buf, 14);\n\ty16 = peek(pass4_buf, 15);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16;\n}\n\ndownsample16x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tpoke(pass1_buf, x9, 8);\n\tpoke(pass1_buf, x10, 9);\n\tpoke(pass1_buf, x11, 10);\n\tpoke(pass1_buf, x12, 11);\n\tpoke(pass1_buf, x13, 12);\n\tpoke(pass1_buf, x14, 13);\n\tpoke(pass1_buf, x15, 14);\n\tpoke(pass1_buf, x16, 15);\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass3_buf, i * 2);\n\t\tb = peek(pass3_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass4_buf, v, i);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\n\n\ntanh_rational(x) {\n\t_tanh_rational_ret_5 = 0;\n\tif((x > (-3)) && (x < 3)) {\n\t\t_tanh_rational_ret_5 = ((x * ((27 + (x * x))))) / ((27 + (((9 * x)) * x)));\n\t}\n\telse if(x > 3) {\n\t\t_tanh_rational_ret_5 = 1;\n\t}\n\telse {\n\t\t_tanh_rational_ret_5 = -1;\n\t}\n\treturn _tanh_rational_ret_5;\n}\n\nmoogladder_dv(xin, cutoff, resonance, drive) {\n\tHistory s_V0(0);\n\tHistory s_V1(0);\n\tHistory s_V2(0);\n\tHistory s_V3(0);\n\tHistory s_dV0(0);\n\tHistory s_dV1(0);\n\tHistory s_dV2(0);\n\tHistory s_dV3(0);\n\tHistory s_tV0(0);\n\tHistory s_tV1(0);\n\tHistory s_tV2(0);\n\tHistory s_tV3(0);\n\ttwo_VT_inv = 1.6025641025641;\n\ttwo_sr_inv = 1 / ((2 * samplerate));\n\tx = ((cutoff * PI)) / samplerate;\n\tg = ((((((((4 * PI)) * 0.312)) * cutoff)) * ((1 - x)))) / ((1 + x));\n\tdV0 = (-g) * (((tanh_rational((((drive * xin) + (resonance * s_V3))) * two_VT_inv)) + s_tV0));\n\ts_V0 = s_V0 + (((dV0 + s_dV0)) * two_sr_inv);\n\ts_dV0 = dV0;\n\ts_tV0 = tanh_rational(s_V0 * two_VT_inv);\n\tdV1 = g * ((s_tV0 - s_tV1));\n\ts_V1 = s_V1 + (((dV1 + s_dV1)) * two_sr_inv);\n\ts_dV1 = dV1;\n\ts_tV1 = tanh_rational(s_V1 * two_VT_inv);\n\tdV2 = g * ((s_tV1 - s_tV2));\n\ts_V2 = s_V2 + (((dV2 + s_dV2)) * two_sr_inv);\n\ts_dV2 = dV2;\n\ts_tV2 = tanh_rational(s_V2 * two_VT_inv);\n\tdV3 = g * ((s_tV2 - s_tV3));\n\ts_V3 = s_V3 + (((dV3 + s_dV3)) * two_sr_inv);\n\ts_dV3 = dV3;\n\ts_tV3 = tanh_rational(s_V3 * two_VT_inv);\n\treturn s_V3;\n}\n\n\n\nExponentialEaseIn(value) {\n\treturn value == 0 ? value : pow(1.93, 10 * ((value - 1)));\n}\n\ntnhA_6(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_7 = x * x;\n\tx_8 = x_7 * x_7;\n\tx_9 = x_8 * x_8;\n\tx_10 = x_9 * x_9;\n\tx_11 = x_10 * x_10;\n\treturn (((-1) / ((x_11 + 1))) * 2) + 1;\n}\n\ntnhA(x) {\n\tx = x * 2;\n\tx_12 = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_13 = x_12 * x_12;\n\tx_14 = x_13 * x_13;\n\tx_15 = x_14 * x_14;\n\tx_16 = x_15 * x_15;\n\tx_17 = x_16 * x_16;\n\treturn (((-1) / ((x_17 + 1))) * 2) + 1;\n}\n\ntauA(t) {\n\ty = expA((-1) / ((t * samplerate)));\n\treturn y + 0.000128;\n}\n\nexpA(x0) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x0))) * x0))) * x0);\n\tx_18 = x * x;\n\tx_19 = x_18 * x_18;\n\tx_20 = x_19 * x_19;\n\tx_21 = x_20 * x_20;\n\tx_22 = x_21 * x_21;\n\treturn x_22;\n}\n\ntanhLambert(x) {\n\tx2 = x * x;\n\ta = ((((((((x2 + 378)) * x2) + 17325)) * x2) + 135135)) * x;\n\tb = (((((((28 * x2) + 3150)) * x2) + 62370)) * x2) + 135135;\n\treturn clamp(a / b, -1, 1);\n}\n\ntnhA_23(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_24 = x * x;\n\tx_25 = x_24 * x_24;\n\tx_26 = x_25 * x_25;\n\tx_27 = x_26 * x_26;\n\tx_28 = x_27 * x_27;\n\treturn (((-1) / ((x_28 + 1))) * 2) + 1;\n}\n\ntnhA_29(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_30 = x * x;\n\tx_31 = x_30 * x_30;\n\tx_32 = x_31 * x_31;\n\tx_33 = x_32 * x_32;\n\tx_34 = x_33 * x_33;\n\treturn (((-1) / ((x_34 + 1))) * 2) + 1;\n}\n\nexpsmooth(x, t) {\n\tHistory w(0);\n\tz = tauA(t);\n\ty = (z * w) + (x * ((1 - z)));\n\tw = y;\n\treturn y;\n}\n\nmtofApprox(pitch) {\n\tmtofA = 440 * (expA(0.057762265 * ((pitch - 69))));\n\treturn mtofA + 0.120906;\n}\n\ntnhA_35(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_36 = x * x;\n\tx_37 = x_36 * x_36;\n\tx_38 = x_37 * x_37;\n\tx_39 = x_38 * x_38;\n\tx_40 = x_39 * x_39;\n\treturn (((-1) / ((x_40 + 1))) * 2) + 1;\n}\n\nlogsmooth(x, s) {\n\tHistory z(0);\n\tad = 0.693147 / ((s * samplerate));\n\ty = (((x - z)) * ad) + z;\n\tz = y;\n\treturn y;\n}\n\nk35_lp(xin, cf, q) {\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory S35(0);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tG = g / ((1 + g));\n\tK = 0.01 + (((2 - 0.01)) * (q / 10));\n\tlpf2_beta = ((K - (K * G))) / ((1 + g));\n\thpf1_beta = (-1) / ((1 + g));\n\talpha = 1 / (((1 - (K * G)) + (((K * G)) * G)));\n\tv1 = ((xin - z1)) * G;\n\tlp1 = v1 + z1;\n\tz1 = lp1 + v1;\n\tu = alpha * ((lp1 + S35));\n\tv2 = ((u - z2)) * G;\n\tlp2 = v2 + z2;\n\tz2 = lp2 + v2;\n\ty = K * lp2;\n\tv3 = ((y - z3)) * G;\n\tlp3 = v3 + z3;\n\tz3 = lp3 + v3;\n\tS35 = (lpf2_beta * z2) + (hpf1_beta * z3);\n\treturn K > 0 ? y / K : y;\n}\n\nsvf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nzdf_diode(xin, cf, q, sat) {\n\tHistory z0(0);\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory a1(1);\n\tHistory a2(0.5);\n\tHistory a3(0.5);\n\tHistory a4(0.5);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tg_one = 1 + g;\n\tG4 = ((0.5 * g)) / g_one;\n\tG3 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G4)));\n\tG2 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G3)));\n\tG1 = g / ((g_one - (g * G2)));\n\tGAMMA = ((((G4 * G3)) * G2)) * G1;\n\tSG1 = ((G4 * G3)) * G2;\n\tSG2 = G4 * G3;\n\tSG3 = G4;\n\tSG4 = 1;\n\talpha = g / g_one;\n\tbeta1 = 1 / ((g_one - (g * G2)));\n\tbeta2 = 1 / ((g_one - (((0.5 * g)) * G3)));\n\tbeta3 = 1 / ((g_one - (((0.5 * g)) * G4)));\n\tbeta4 = 1 / g_one;\n\tgamma1 = ((1 + G1)) + G2;\n\tgamma2 = 1 + (G2 * G3);\n\tgamma3 = 1 + (G3 * G4);\n\tdelta1 = g;\n\tdelta3 = 0.5 * g;\n\tdelta2 = delta3;\n\tepsilon1 = G2;\n\tepsilon2 = G3;\n\tepsilon3 = G4;\n\tfb4 = beta4 * z3;\n\tfb3 = beta3 * ((z2 + (fb4 * delta3)));\n\tfb2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo1 = beta1 * ((z0 + (fb2 * delta1)));\n\tfbo2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo3 = beta3 * ((z2 + (fb4 * delta3)));\n\tSIGMA = (((((SG1 * fbo1) + (SG2 * fbo2))) + (SG3 * fbo3))) + (SG4 * fb4);\n\txin_tanh = (1 / (tanh(sat))) * (tanh(sat * xin));\n\tun = ((xin_tanh - (q * SIGMA))) / ((1 + (q * GAMMA)));\n\tvin = (((un * gamma1) + fb2)) + (epsilon1 * fbo1);\n\tv = (((a1 * vin) - z0)) * alpha;\n\tlp = v + z0;\n\tz0 = lp + v;\n\tvin_41 = (((lp * gamma2) + fb3)) + (epsilon2 * fbo2);\n\tv_42 = (((a2 * vin_41) - z1)) * alpha;\n\tlp_43 = v_42 + z1;\n\tz1 = lp_43 + v_42;\n\tvin_44 = (((lp_43 * gamma3) + fb4)) + (epsilon3 * fbo3);\n\tv_45 = (((a3 * vin_44) - z3)) * alpha;\n\tlp_46 = v_45 + z3;\n\tz3 = lp_46 + v_45;\n\tv_47 = (((a4 * lp_46) - z3)) * alpha;\n\tlp_48 = v_47 + z3;\n\tz3 = lp_48 + v_47;\n\treturn lp_48;\n}\n\nHistory fT(0);\nHistory history_49(0);\nHistory history_50(0);\nHistory history_51(0);\nHistory history_52(0);\nexpr_53 = ExponentialEaseIn(in2);\nint_54 = int(1);\nmul_55 = expr_53 * 9680;\nadd_56 = mul_55 + 20;\nclamp_57 = clamp(add_56, 20, 9700);\nclamp_58 = clamp(in3, 0, 1);\nmul_59 = clamp_58 * 2;\nup0, up1, up2, up3 = upsample4x_ppiir(in1);\nup_60 = moogladder_dv(up0, clamp_57, mul_59, int_54);\nup1 = moogladder_dv(up1, clamp_57, mul_59, int_54);\nup2 = moogladder_dv(up2, clamp_57, mul_59, int_54);\nup3 = moogladder_dv(up3, clamp_57, mul_59, int_54);\nexpr_61 = downsample4x_ppiir(up_60, up1, up2, up3);\ngate_62, gate_63, gate_64, gate_65, gate_66 = gate(in4, in1, choices=5);\ncutoffsmooth = clamp(0, 0, 1000);\ncutoffmode = clamp(0, 0, 1);\nresonancesmooth = clamp(0, 0, 1000);\nshape = clamp(0.5, 0, 1);\nsetparam_67 = shape;\nsetparam_68 = resonancesmooth;\nsetparam_69 = cutoffmode;\nsetparam_70 = cutoffsmooth;\ncutoffsmooth_71 = clamp(setparam_70, 0, 1000);\ncutoffmode_72 = clamp(setparam_69, 0, 1);\nresonancesmooth_73 = clamp(setparam_68, 0, 1000);\ncfm = int(cutoffmode_72);\ncutoff = clamp_57;\nif(cutoffsmooth_71 > 0) {\n\tcs = cutoffsmooth_71 * 0.001;\n\tcutoff = logsmooth(cutoff, cs);\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\nelse {\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\ncutoff_74 = cutoff + 0;\nf = clip(cutoff_74, 5, samplerate / 2.25);\nk = (clip(clamp_58, 0, 2)) * 4;\nif(resonancesmooth_73 > 0) {\n\trs = resonancesmooth_73 * 0.001;\n\tk = expsmooth(k, rs);\n}\nexpr_75 = f;\nexpr_76 = k;\ngen_77 = expr_75;\ngen_78 = expr_76;\nsaturate = clamp(setparam_67, 0, 1);\nnk_79 = gen_78;\nnx_80 = gate_62;\nnx_81 = nx_80;\nexpr_82 = gen_77 * (pi / samplerate);\nx2 = expr_82 * expr_82;\nx3 = x2 * expr_82;\nx5 = x2 * x3;\nexpr_83 = (((x5 * 0.133333) + (x3 * 0.333333))) + expr_82;\ngen_84 = expr_83;\npass_85 = pass(gen_84);\npass_86 = pass(gen_84);\npass_87 = pass(gen_84);\npass_88 = pass(gen_84);\nadd_89 = history_51 + history_51;\nadd_90 = pass_85 + 1;\nrdiv_91 = 1 / add_90;\nadd_92 = history_49 + history_49;\nadd_93 = pass_86 + 1;\nrdiv_94 = 1 / add_93;\nnk_95 = nk_79;\nadd_96 = history_50 + history_50;\nadd_97 = pass_87 + 1;\nrdiv_98 = 1 / add_97;\nadd_99 = history_52 + history_52;\nadd_100 = pass_88 + 1;\nrdiv_101 = 1 / add_100;\nnk_102 = nk_79;\nnk_103 = nk_79;\nnx_104 = nx_80;\nnx_105 = nx_80;\nnk_106 = nk_79;\nnk_107 = nk_79;\ndiv_108 = nx_105 / nk_107;\nnk_109 = nk_79;\nnx_110 = nx_80;\nnx_111 = nx_80;\nnx_112 = nx_80;\nmul_113 = rdiv_94 * pass_86;\nmul_114 = pass_87 * mul_113;\nmul_115 = rdiv_98 * mul_114;\nmul_116 = pass_85 * mul_115;\nmul_117 = rdiv_91 * mul_116;\nmul_118 = pass_88 * mul_117;\nmul_119 = rdiv_101 * mul_118;\nng_120 = mul_119;\nng_121 = ng_120;\nmul_122 = nk_95 * ng_121;\nng_123 = ng_120;\nmul_124 = nk_102 * ng_123;\nmul_125 = nk_106 * ng_120;\nng_126 = ng_120;\nmul_127 = nk_103 * ng_126;\nng_128 = ng_120;\nmul_129 = nk_109 * ng_128;\nmul_130 = rdiv_94 * add_92;\nmul_131 = pass_87 * mul_130;\nadd_132 = mul_131 + add_96;\nmul_133 = rdiv_98 * add_132;\nmul_134 = pass_85 * mul_133;\nadd_135 = mul_134 + add_89;\nmul_136 = rdiv_91 * add_135;\nmul_137 = pass_88 * mul_136;\nadd_138 = mul_137 + add_99;\nmul_139 = rdiv_101 * add_138;\nns_140 = mul_139;\nns_141 = ns_140;\nns_142 = ns_140;\nns_143 = ns_140;\nns_144 = ns_140;\nadd_145 = mul_139 + mul_119;\nmul_146 = add_145 * nk_107;\ngte_147 = nx_105 >= mul_146;\nsub_148 = mul_139 - mul_119;\nmul_149 = sub_148 * nk_107;\nlte_150 = nx_105 <= mul_149;\nswitch_151 = lte_150 ? sub_148 : div_108;\nswitch_152 = gte_147 ? add_145 : switch_151;\npass_153 = pass(switch_152);\nmul_154 = nk_109 * pass_153;\nsub_155 = nx_112 - mul_154;\nexpr_156 = tnhA(sub_155);\ngen_157 = expr_156;\nmul_158 = gen_157 * ng_128;\nadd_159 = mul_158 + ns_140;\nsub_160 = add_159 - pass_153;\nmul_161 = gen_157 * gen_157;\nsub_162 = mul_161 - 1;\nmul_163 = mul_129 * sub_162;\nsub_164 = mul_163 - 1;\ndiv_165 = sub_160 / sub_164;\nsub_166 = pass_153 - div_165;\nmul_167 = nk_106 * sub_166;\nsub_168 = nx_111 - mul_167;\nexpr_169 = tnhA_29(sub_168);\ngen_170 = expr_169;\nmul_171 = gen_170 * ng_120;\nadd_172 = mul_171 + ns_144;\nsub_173 = add_172 - sub_166;\nmul_174 = gen_170 * gen_170;\nsub_175 = mul_174 - 1;\nmul_176 = mul_125 * sub_175;\nsub_177 = mul_176 - 1;\ndiv_178 = sub_173 / sub_177;\nsub_179 = sub_166 - div_178;\nmul_180 = nk_103 * sub_179;\nsub_181 = nx_110 - mul_180;\nexpr_182 = tnhA_6(sub_181);\ngen_183 = expr_182;\nmul_184 = gen_183 * ng_126;\nadd_185 = mul_184 + ns_143;\nsub_186 = add_185 - sub_179;\nmul_187 = gen_183 * gen_183;\nsub_188 = mul_187 - 1;\nmul_189 = mul_127 * sub_188;\nsub_190 = mul_189 - 1;\ndiv_191 = sub_186 / sub_190;\nsub_192 = sub_179 - div_191;\npass_193 = pass(sub_192);\nmul_194 = nk_102 * pass_193;\nsub_195 = nx_104 - mul_194;\nexpr_196 = tnhA_23(sub_195);\ngen_197 = expr_196;\nmul_198 = gen_197 * ng_123;\nadd_199 = mul_198 + ns_142;\nsub_200 = add_199 - pass_193;\nmul_201 = gen_197 * gen_197;\nsub_202 = mul_201 - 1;\nmul_203 = mul_124 * sub_202;\nsub_204 = mul_203 - 1;\ndiv_205 = sub_200 / sub_204;\nsub_206 = pass_193 - div_205;\nmul_207 = nk_95 * sub_206;\nsub_208 = nx_80 - mul_207;\nexpr_209 = tnhA_35(sub_208);\ngen_210 = expr_209;\nmul_211 = gen_210 * ng_121;\nadd_212 = mul_211 + ns_141;\nsub_213 = add_212 - sub_206;\nmul_214 = gen_210 * gen_210;\nsub_215 = mul_214 - 1;\nmul_216 = mul_122 * sub_215;\nsub_217 = mul_216 - 1;\ndiv_218 = sub_213 / sub_217;\nsub_219 = sub_206 - div_218;\nexpr_220 = nx_81 - (nk_79 * sub_219);\nexpr_221 = (saturate * 18) - 9;\nexpr_222 = (fastpow(10, expr_221 * 0.05)) + 0.028652;\nsmooth = clamp(0.999, 0.501, 0.99995);\nmul_223 = smooth * fT;\nrsub_224 = 1 - smooth;\nmul_225 = expr_222 * rsub_224;\nadd_226 = mul_223 + mul_225;\ngen_227 = add_226;\nfT_next_228 = fixdenorm(add_226);\nrdiv_229 = 1 / gen_227;\ndcblock_230 = dcblock(expr_220);\nmul_231 = dcblock_230 * rdiv_229;\nexpr_232 = tanhLambert(mul_231);\ngen_233 = expr_232;\nmul_234 = gen_233 * gen_227;\ngen_235 = mul_234;\npass_236 = pass(gen_235);\nmul_237 = pass_236 * pass_86;\nadd_238 = mul_237 + add_92;\nmul_239 = add_238 * rdiv_94;\nsub_240 = pass_236 - mul_239;\nmul_241 = sub_240 * pass_86;\nadd_242 = mul_241 + history_49;\nadd_243 = add_242 + history_49;\npass_244 = pass(add_243);\nmul_245 = pass_244 * pass_87;\nadd_246 = mul_245 + add_96;\nmul_247 = add_246 * rdiv_98;\nsub_248 = pass_244 - mul_247;\nmul_249 = sub_248 * pass_87;\nadd_250 = mul_249 + history_50;\nadd_251 = add_250 + history_50;\npass_252 = pass(add_251);\nmul_253 = pass_252 * pass_85;\nadd_254 = mul_253 + add_89;\nmul_255 = add_254 * rdiv_91;\nsub_256 = pass_252 - mul_255;\nmul_257 = sub_256 * pass_85;\nadd_258 = mul_257 + history_51;\nadd_259 = add_258 + history_51;\npass_260 = pass(add_259);\nmul_261 = pass_260 * pass_88;\nadd_262 = mul_261 + add_99;\nmul_263 = add_262 * rdiv_101;\nsub_264 = pass_260 - mul_263;\nmul_265 = sub_264 * pass_88;\nadd_266 = mul_265 + history_52;\ny_267 = sub_219;\ngen_268 = y_267;\nhistory_49_next_269 = fixdenorm(add_242);\nhistory_50_next_270 = fixdenorm(add_250);\nhistory_51_next_271 = fixdenorm(add_258);\nhistory_52_next_272 = fixdenorm(add_266);\ngen_273 = gen_268;\nlimit = (samplerate / 2) - 25;\ncf = clip(clamp_57, 0, limit);\nq = (clip(clamp_58, 0, 1)) * 10;\nexpr_274 = k35_lp(gate_63, cf, q);\ngen_275 = expr_274;\nlimit_276 = samplerate / 2;\ncf_277 = clip(clamp_57, 0, limit_276);\nq_278 = ((clip(clamp_58, 0, 1)) * 20) + 0.5;\nexpr_279, expr_280, expr_281, expr_282, expr_283, expr_284 = svf_as(gate_64, cf_277, q_278);\ngen_285 = expr_284;\ngen_286 = expr_281;\ngen_287 = expr_280;\ngen_288 = expr_283;\ngen_289 = expr_282;\ngen_290 = expr_279;\nfloat_291 = float(0.1);\nlimit_292 = samplerate / 3;\ncf_293 = clip(clamp_57, 0, limit_292);\nq_294 = (clip(clamp_58, 0, 1)) * 19;\nsat = ((clip(float_291, 0, 1)) * 30) + 0.001;\nexpr_295 = zdf_diode(gate_65, cf_293, q_294, sat);\ngen_296 = expr_295;\nselector_297 = selector(in4, gen_273, gen_275, gen_290, gen_296, expr_61);\nout1 = selector_297;\nfT = fT_next_228;\nhistory_52 = history_52_next_272;\nhistory_51 = history_51_next_271;\nhistory_50 = history_50_next_270;\nhistory_49 = history_49_next_269;",
+						"gencode" : "upsample2x_ppiir(x) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x;\n\ts_1 = p1_d1 + (p1_a0 * ((x - p1_d2)));\n\ty_2 = p1_d2 + (p1_a1 * ((s_1 - p1_d3)));\n\tp1_d3 = y_2;\n\tp1_d2 = s_1;\n\tp1_d1 = x;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5, ((p0_d3 + p1_d3)) * 0.5;\n}\n\ndownsample2x_ppiir(x1, x2) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x1 - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x1;\n\ts_3 = p1_d1 + (p1_a0 * ((x2 - p1_d2)));\n\ty_4 = p1_d2 + (p1_a1 * ((s_3 - p1_d3)));\n\tp1_d3 = y_4;\n\tp1_d2 = s_3;\n\tp1_d1 = x2;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5;\n}\n\nupsample4x_ppiir(x) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0, 0, 0);\n\tpoke(pass1_buf, b, 1, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i, 0);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2, 0, 0);\n\t\tpoke(pass2_buf, b, (i * 2) + 1, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\ty3 = peek(pass2_buf, 2, 0);\n\ty4 = peek(pass2_buf, 3, 0);\n\treturn y1, y2, y3, y4;\n}\n\ndownsample4x_ppiir(x1, x2, x3, x4) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\tpoke(pass1_buf, x1, 0, 0, 0);\n\tpoke(pass1_buf, x2, 1, 0, 0);\n\tpoke(pass1_buf, x3, 2, 0, 0);\n\tpoke(pass1_buf, x4, 3, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2, 0);\n\t\tb = peek(pass1_buf, (i * 2) + 1, 0);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample8x_ppiir(x) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\ty3 = peek(pass3_buf, 2);\n\ty4 = peek(pass3_buf, 3);\n\ty5 = peek(pass3_buf, 4);\n\ty6 = peek(pass3_buf, 5);\n\ty7 = peek(pass3_buf, 6);\n\ty8 = peek(pass3_buf, 7);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8;\n}\n\ndownsample8x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample16x_ppiir(x) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\tv = peek(pass3_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass4_buf, a, i * 2);\n\t\tpoke(pass4_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\ty3 = peek(pass4_buf, 2);\n\ty4 = peek(pass4_buf, 3);\n\ty5 = peek(pass4_buf, 4);\n\ty6 = peek(pass4_buf, 5);\n\ty7 = peek(pass4_buf, 6);\n\ty8 = peek(pass4_buf, 7);\n\ty9 = peek(pass4_buf, 8);\n\ty10 = peek(pass4_buf, 9);\n\ty11 = peek(pass4_buf, 10);\n\ty12 = peek(pass4_buf, 11);\n\ty13 = peek(pass4_buf, 12);\n\ty14 = peek(pass4_buf, 13);\n\ty15 = peek(pass4_buf, 14);\n\ty16 = peek(pass4_buf, 15);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16;\n}\n\ndownsample16x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tpoke(pass1_buf, x9, 8);\n\tpoke(pass1_buf, x10, 9);\n\tpoke(pass1_buf, x11, 10);\n\tpoke(pass1_buf, x12, 11);\n\tpoke(pass1_buf, x13, 12);\n\tpoke(pass1_buf, x14, 13);\n\tpoke(pass1_buf, x15, 14);\n\tpoke(pass1_buf, x16, 15);\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass3_buf, i * 2);\n\t\tb = peek(pass3_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass4_buf, v, i);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\n\n\ntanh_rational(x) {\n\t_tanh_rational_ret_5 = 0;\n\tif((x > (-3)) && (x < 3)) {\n\t\t_tanh_rational_ret_5 = ((x * ((27 + (x * x))))) / ((27 + (((9 * x)) * x)));\n\t}\n\telse if(x > 3) {\n\t\t_tanh_rational_ret_5 = 1;\n\t}\n\telse {\n\t\t_tanh_rational_ret_5 = -1;\n\t}\n\treturn _tanh_rational_ret_5;\n}\n\nmoogladder_dv(xin, cutoff, resonance, drive) {\n\tHistory s_V0(0);\n\tHistory s_V1(0);\n\tHistory s_V2(0);\n\tHistory s_V3(0);\n\tHistory s_dV0(0);\n\tHistory s_dV1(0);\n\tHistory s_dV2(0);\n\tHistory s_dV3(0);\n\tHistory s_tV0(0);\n\tHistory s_tV1(0);\n\tHistory s_tV2(0);\n\tHistory s_tV3(0);\n\ttwo_VT_inv = 1.6025641025641;\n\ttwo_sr_inv = 1 / ((2 * samplerate));\n\tx = ((cutoff * PI)) / samplerate;\n\tg = ((((((((4 * PI)) * 0.312)) * cutoff)) * ((1 - x)))) / ((1 + x));\n\tdV0 = (-g) * (((tanh_rational((((drive * xin) + (resonance * s_V3))) * two_VT_inv)) + s_tV0));\n\ts_V0 = s_V0 + (((dV0 + s_dV0)) * two_sr_inv);\n\ts_dV0 = dV0;\n\ts_tV0 = tanh_rational(s_V0 * two_VT_inv);\n\tdV1 = g * ((s_tV0 - s_tV1));\n\ts_V1 = s_V1 + (((dV1 + s_dV1)) * two_sr_inv);\n\ts_dV1 = dV1;\n\ts_tV1 = tanh_rational(s_V1 * two_VT_inv);\n\tdV2 = g * ((s_tV1 - s_tV2));\n\ts_V2 = s_V2 + (((dV2 + s_dV2)) * two_sr_inv);\n\ts_dV2 = dV2;\n\ts_tV2 = tanh_rational(s_V2 * two_VT_inv);\n\tdV3 = g * ((s_tV2 - s_tV3));\n\ts_V3 = s_V3 + (((dV3 + s_dV3)) * two_sr_inv);\n\ts_dV3 = dV3;\n\ts_tV3 = tanh_rational(s_V3 * two_VT_inv);\n\treturn s_V3;\n}\n\n\n\nExponentialEaseIn(value) {\n\treturn value == 0 ? value : pow(1.93, 10 * ((value - 1)));\n}\n\nmtofApprox(pitch) {\n\tmtofA = 440 * (expA(0.057762265 * ((pitch - 69))));\n\treturn mtofA + 0.120906;\n}\n\ntnhA(x) {\n\tx = x * 2;\n\tx_6 = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_7 = x_6 * x_6;\n\tx_8 = x_7 * x_7;\n\tx_9 = x_8 * x_8;\n\tx_10 = x_9 * x_9;\n\tx_11 = x_10 * x_10;\n\treturn (((-1) / ((x_11 + 1))) * 2) + 1;\n}\n\ntnhA_12(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_13 = x * x;\n\tx_14 = x_13 * x_13;\n\tx_15 = x_14 * x_14;\n\tx_16 = x_15 * x_15;\n\tx_17 = x_16 * x_16;\n\treturn (((-1) / ((x_17 + 1))) * 2) + 1;\n}\n\ntauA(t) {\n\ty = expA((-1) / ((t * samplerate)));\n\treturn y + 0.000128;\n}\n\nexpA(x0) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x0))) * x0))) * x0);\n\tx_18 = x * x;\n\tx_19 = x_18 * x_18;\n\tx_20 = x_19 * x_19;\n\tx_21 = x_20 * x_20;\n\tx_22 = x_21 * x_21;\n\treturn x_22;\n}\n\ntanhLambert(x) {\n\tx2 = x * x;\n\ta = ((((((((x2 + 378)) * x2) + 17325)) * x2) + 135135)) * x;\n\tb = (((((((28 * x2) + 3150)) * x2) + 62370)) * x2) + 135135;\n\treturn clamp(a / b, -1, 1);\n}\n\ntnhA_23(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_24 = x * x;\n\tx_25 = x_24 * x_24;\n\tx_26 = x_25 * x_25;\n\tx_27 = x_26 * x_26;\n\tx_28 = x_27 * x_27;\n\treturn (((-1) / ((x_28 + 1))) * 2) + 1;\n}\n\ntnhA_29(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_30 = x * x;\n\tx_31 = x_30 * x_30;\n\tx_32 = x_31 * x_31;\n\tx_33 = x_32 * x_32;\n\tx_34 = x_33 * x_33;\n\treturn (((-1) / ((x_34 + 1))) * 2) + 1;\n}\n\ntnhA_35(x) {\n\tx = 0.999996 + (((0.031261316 + (((0.00048274797 + (6e-06 * x))) * x))) * x);\n\tx_36 = x * x;\n\tx_37 = x_36 * x_36;\n\tx_38 = x_37 * x_37;\n\tx_39 = x_38 * x_38;\n\tx_40 = x_39 * x_39;\n\treturn (((-1) / ((x_40 + 1))) * 2) + 1;\n}\n\nexpsmooth(x, t) {\n\tHistory w(0);\n\tz = tauA(t);\n\ty = (z * w) + (x * ((1 - z)));\n\tw = y;\n\treturn y;\n}\n\nlogsmooth(x, s) {\n\tHistory z(0);\n\tad = 0.693147 / ((s * samplerate));\n\ty = (((x - z)) * ad) + z;\n\tz = y;\n\treturn y;\n}\n\nk35_lp(xin, cf, q) {\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory S35(0);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tG = g / ((1 + g));\n\tK = 0.01 + (((2 - 0.01)) * (q / 10));\n\tlpf2_beta = ((K - (K * G))) / ((1 + g));\n\thpf1_beta = (-1) / ((1 + g));\n\talpha = 1 / (((1 - (K * G)) + (((K * G)) * G)));\n\tv1 = ((xin - z1)) * G;\n\tlp1 = v1 + z1;\n\tz1 = lp1 + v1;\n\tu = alpha * ((lp1 + S35));\n\tv2 = ((u - z2)) * G;\n\tlp2 = v2 + z2;\n\tz2 = lp2 + v2;\n\ty = K * lp2;\n\tv3 = ((y - z3)) * G;\n\tlp3 = v3 + z3;\n\tz3 = lp3 + v3;\n\tS35 = (lpf2_beta * z2) + (hpf1_beta * z3);\n\treturn K > 0 ? y / K : y;\n}\n\nsvf_as(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\tnotch = ((((v2 + hp)) + xin)) - (r * v1);\n\tpeak = ((((v2 - hp) + (2 * v2))) - xin) + (r * v1);\n\tall = (((((v2 + hp)) - (r * v1)) + xin)) - (((2 * r)) * v1);\n\treturn v2, hp, v1, notch, peak, all;\n}\n\nzdf_diode(xin, cf, q, sat) {\n\tHistory z0(0);\n\tHistory z1(0);\n\tHistory z2(0);\n\tHistory z3(0);\n\tHistory a1(1);\n\tHistory a2(0.5);\n\tHistory a3(0.5);\n\tHistory a4(0.5);\n\tT = 1 / samplerate;\n\tT_div_two = T / 2;\n\ttwo_div_T = 2 / T;\n\twd = twopi * cf;\n\twa = two_div_T * (tan(wd * T_div_two));\n\tg = wa * T_div_two;\n\tg_one = 1 + g;\n\tG4 = ((0.5 * g)) / g_one;\n\tG3 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G4)));\n\tG2 = ((0.5 * g)) / ((g_one - (((0.5 * g)) * G3)));\n\tG1 = g / ((g_one - (g * G2)));\n\tGAMMA = ((((G4 * G3)) * G2)) * G1;\n\tSG1 = ((G4 * G3)) * G2;\n\tSG2 = G4 * G3;\n\tSG3 = G4;\n\tSG4 = 1;\n\talpha = g / g_one;\n\tbeta1 = 1 / ((g_one - (g * G2)));\n\tbeta2 = 1 / ((g_one - (((0.5 * g)) * G3)));\n\tbeta3 = 1 / ((g_one - (((0.5 * g)) * G4)));\n\tbeta4 = 1 / g_one;\n\tgamma1 = ((1 + G1)) + G2;\n\tgamma2 = 1 + (G2 * G3);\n\tgamma3 = 1 + (G3 * G4);\n\tdelta1 = g;\n\tdelta3 = 0.5 * g;\n\tdelta2 = delta3;\n\tepsilon1 = G2;\n\tepsilon2 = G3;\n\tepsilon3 = G4;\n\tfb4 = beta4 * z3;\n\tfb3 = beta3 * ((z2 + (fb4 * delta3)));\n\tfb2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo1 = beta1 * ((z0 + (fb2 * delta1)));\n\tfbo2 = beta2 * ((z1 + (fb3 * delta2)));\n\tfbo3 = beta3 * ((z2 + (fb4 * delta3)));\n\tSIGMA = (((((SG1 * fbo1) + (SG2 * fbo2))) + (SG3 * fbo3))) + (SG4 * fb4);\n\txin_tanh = (1 / (tanh(sat))) * (tanh(sat * xin));\n\tun = ((xin_tanh - (q * SIGMA))) / ((1 + (q * GAMMA)));\n\tvin = (((un * gamma1) + fb2)) + (epsilon1 * fbo1);\n\tv = (((a1 * vin) - z0)) * alpha;\n\tlp = v + z0;\n\tz0 = lp + v;\n\tvin_41 = (((lp * gamma2) + fb3)) + (epsilon2 * fbo2);\n\tv_42 = (((a2 * vin_41) - z1)) * alpha;\n\tlp_43 = v_42 + z1;\n\tz1 = lp_43 + v_42;\n\tvin_44 = (((lp_43 * gamma3) + fb4)) + (epsilon3 * fbo3);\n\tv_45 = (((a3 * vin_44) - z3)) * alpha;\n\tlp_46 = v_45 + z3;\n\tz3 = lp_46 + v_45;\n\tv_47 = (((a4 * lp_46) - z3)) * alpha;\n\tlp_48 = v_47 + z3;\n\tz3 = lp_48 + v_47;\n\treturn lp_48;\n}\n\nHistory fT(0);\nHistory history_49(0);\nHistory history_50(0);\nHistory history_51(0);\nHistory history_52(0);\nint_53 = int(1);\nexpr_54 = ExponentialEaseIn(in2);\ngate_55, gate_56, gate_57, gate_58, gate_59 = gate(in4, in1, choices=5);\nfloat_60 = float(0.1);\nmul_61 = expr_54 * 9680;\nadd_62 = mul_61 + 20;\nclamp_63 = clamp(add_62, 20, 9700);\nclamp_64 = clamp(in3, 0, 1);\nmul_65 = clamp_64 * 2;\nup0, up1, up2, up3 = upsample4x_ppiir(in1);\nup_66 = moogladder_dv(up0, clamp_63, mul_65, int_53);\nup1 = moogladder_dv(up1, clamp_63, mul_65, int_53);\nup2 = moogladder_dv(up2, clamp_63, mul_65, int_53);\nup3 = moogladder_dv(up3, clamp_63, mul_65, int_53);\nexpr_67 = downsample4x_ppiir(up_66, up1, up2, up3);\ncutoffsmooth = clamp(0, 0, 1000);\nshape = clamp(0.5, 0, 1);\ncutoffmode = clamp(0, 0, 1);\nresonancesmooth = clamp(0, 0, 1000);\nsetparam_68 = shape;\nsetparam_69 = resonancesmooth;\nsetparam_70 = cutoffmode;\nsetparam_71 = cutoffsmooth;\ncutoffsmooth_72 = clamp(setparam_71, 0, 1000);\ncutoffmode_73 = clamp(setparam_70, 0, 1);\nresonancesmooth_74 = clamp(setparam_69, 0, 1000);\ncfm = int(cutoffmode_73);\ncutoff = clamp_63;\nif(cutoffsmooth_72 > 0) {\n\tcs = cutoffsmooth_72 * 0.001;\n\tcutoff = logsmooth(cutoff, cs);\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\nelse {\n\tif(cfm > 0) {\n\t\tcutoff = cutoff + 0;\n\t\tcutoff = mtofApprox(cutoff);\n\t}\n}\ncutoff_75 = cutoff + 0;\nf = clip(cutoff_75, 5, samplerate / 2.25);\nk = (clip(clamp_64, 0, 2)) * 4;\nif(resonancesmooth_74 > 0) {\n\trs = resonancesmooth_74 * 0.001;\n\tk = expsmooth(k, rs);\n}\nexpr_76 = f;\nexpr_77 = k;\ngen_78 = expr_76;\ngen_79 = expr_77;\nsaturate = clamp(setparam_68, 0, 1);\nnx_80 = gate_55;\nnx_81 = nx_80;\nnk_82 = gen_79;\nnk_83 = nk_82;\nexpr_84 = gen_78 * (pi / samplerate);\nx2 = expr_84 * expr_84;\nx3 = x2 * expr_84;\nx5 = x2 * x3;\nexpr_85 = (((x5 * 0.133333) + (x3 * 0.333333))) + expr_84;\ngen_86 = expr_85;\npass_87 = pass(gen_86);\npass_88 = pass(gen_86);\npass_89 = pass(gen_86);\npass_90 = pass(gen_86);\nadd_91 = history_49 + history_49;\nadd_92 = pass_87 + 1;\nrdiv_93 = 1 / add_92;\nnk_94 = nk_82;\nadd_95 = history_51 + history_51;\nadd_96 = pass_88 + 1;\nrdiv_97 = 1 / add_96;\nadd_98 = history_52 + history_52;\nadd_99 = pass_89 + 1;\nrdiv_100 = 1 / add_99;\nadd_101 = history_50 + history_50;\nadd_102 = pass_90 + 1;\nrdiv_103 = 1 / add_102;\nnk_104 = nk_82;\nnx_105 = nx_80;\nnk_106 = nk_82;\nnx_107 = nx_80;\nnx_108 = nx_80;\nnk_109 = nk_82;\ndiv_110 = nx_108 / nk_109;\nnk_111 = nk_82;\nnx_112 = nx_80;\nnx_113 = nx_80;\nmul_114 = rdiv_93 * pass_87;\nmul_115 = pass_90 * mul_114;\nmul_116 = rdiv_103 * mul_115;\nmul_117 = pass_88 * mul_116;\nmul_118 = rdiv_97 * mul_117;\nmul_119 = pass_89 * mul_118;\nmul_120 = rdiv_100 * mul_119;\nng_121 = mul_120;\nng_122 = ng_121;\nmul_123 = nk_94 * ng_122;\nng_124 = ng_121;\nmul_125 = nk_104 * ng_124;\nng_126 = ng_121;\nmul_127 = nk_106 * ng_126;\nmul_128 = nk_111 * ng_121;\nng_129 = ng_121;\nmul_130 = nk_82 * ng_129;\nmul_131 = rdiv_93 * add_91;\nmul_132 = pass_90 * mul_131;\nadd_133 = mul_132 + add_101;\nmul_134 = rdiv_103 * add_133;\nmul_135 = pass_88 * mul_134;\nadd_136 = mul_135 + add_95;\nmul_137 = rdiv_97 * add_136;\nmul_138 = pass_89 * mul_137;\nadd_139 = mul_138 + add_98;\nmul_140 = rdiv_100 * add_139;\nns_141 = mul_140;\nns_142 = ns_141;\nns_143 = ns_141;\nns_144 = ns_141;\nns_145 = ns_141;\nadd_146 = mul_140 + mul_120;\nmul_147 = add_146 * nk_109;\ngte_148 = nx_108 >= mul_147;\nsub_149 = mul_140 - mul_120;\nmul_150 = sub_149 * nk_109;\nlte_151 = nx_108 <= mul_150;\nswitch_152 = lte_151 ? sub_149 : div_110;\nswitch_153 = gte_148 ? add_146 : switch_152;\npass_154 = pass(switch_153);\nmul_155 = nk_111 * pass_154;\nsub_156 = nx_113 - mul_155;\nexpr_157 = tnhA(sub_156);\ngen_158 = expr_157;\nmul_159 = gen_158 * ng_121;\nadd_160 = mul_159 + ns_145;\nsub_161 = add_160 - pass_154;\nmul_162 = gen_158 * gen_158;\nsub_163 = mul_162 - 1;\nmul_164 = mul_128 * sub_163;\nsub_165 = mul_164 - 1;\ndiv_166 = sub_161 / sub_165;\nsub_167 = pass_154 - div_166;\nmul_168 = nk_82 * sub_167;\nsub_169 = nx_112 - mul_168;\nexpr_170 = tnhA_12(sub_169);\ngen_171 = expr_170;\nmul_172 = gen_171 * ng_129;\nadd_173 = mul_172 + ns_141;\nsub_174 = add_173 - sub_167;\nmul_175 = gen_171 * gen_171;\nsub_176 = mul_175 - 1;\nmul_177 = mul_130 * sub_176;\nsub_178 = mul_177 - 1;\ndiv_179 = sub_174 / sub_178;\nsub_180 = sub_167 - div_179;\nmul_181 = nk_106 * sub_180;\nsub_182 = nx_80 - mul_181;\nexpr_183 = tnhA_29(sub_182);\ngen_184 = expr_183;\nmul_185 = gen_184 * ng_126;\nadd_186 = mul_185 + ns_144;\nsub_187 = add_186 - sub_180;\nmul_188 = gen_184 * gen_184;\nsub_189 = mul_188 - 1;\nmul_190 = mul_127 * sub_189;\nsub_191 = mul_190 - 1;\ndiv_192 = sub_187 / sub_191;\nsub_193 = sub_180 - div_192;\npass_194 = pass(sub_193);\nmul_195 = nk_104 * pass_194;\nsub_196 = nx_107 - mul_195;\nexpr_197 = tnhA_23(sub_196);\ngen_198 = expr_197;\nmul_199 = gen_198 * ng_124;\nadd_200 = mul_199 + ns_143;\nsub_201 = add_200 - pass_194;\nmul_202 = gen_198 * gen_198;\nsub_203 = mul_202 - 1;\nmul_204 = mul_125 * sub_203;\nsub_205 = mul_204 - 1;\ndiv_206 = sub_201 / sub_205;\nsub_207 = pass_194 - div_206;\nmul_208 = nk_94 * sub_207;\nsub_209 = nx_105 - mul_208;\nexpr_210 = tnhA_35(sub_209);\ngen_211 = expr_210;\nmul_212 = gen_211 * ng_122;\nadd_213 = mul_212 + ns_142;\nsub_214 = add_213 - sub_207;\nmul_215 = gen_211 * gen_211;\nsub_216 = mul_215 - 1;\nmul_217 = mul_123 * sub_216;\nsub_218 = mul_217 - 1;\ndiv_219 = sub_214 / sub_218;\nsub_220 = sub_207 - div_219;\nexpr_221 = nx_81 - (nk_83 * sub_220);\nexpr_222 = (saturate * 18) - 9;\nexpr_223 = (fastpow(10, expr_222 * 0.05)) + 0.028652;\nsmooth = clamp(0.999, 0.501, 0.99995);\nmul_224 = smooth * fT;\nrsub_225 = 1 - smooth;\nmul_226 = expr_223 * rsub_225;\nadd_227 = mul_224 + mul_226;\ngen_228 = add_227;\nfT_next_229 = fixdenorm(add_227);\nrdiv_230 = 1 / gen_228;\ndcblock_231 = dcblock(expr_221);\nmul_232 = dcblock_231 * rdiv_230;\nexpr_233 = tanhLambert(mul_232);\ngen_234 = expr_233;\nmul_235 = gen_234 * gen_228;\ngen_236 = mul_235;\npass_237 = pass(gen_236);\nmul_238 = pass_237 * pass_87;\nadd_239 = mul_238 + add_91;\nmul_240 = add_239 * rdiv_93;\nsub_241 = pass_237 - mul_240;\nmul_242 = sub_241 * pass_87;\nadd_243 = mul_242 + history_49;\nadd_244 = add_243 + history_49;\npass_245 = pass(add_244);\nmul_246 = pass_245 * pass_90;\nadd_247 = mul_246 + add_101;\nmul_248 = add_247 * rdiv_103;\nsub_249 = pass_245 - mul_248;\nmul_250 = sub_249 * pass_90;\nadd_251 = mul_250 + history_50;\nadd_252 = add_251 + history_50;\npass_253 = pass(add_252);\nmul_254 = pass_253 * pass_88;\nadd_255 = mul_254 + add_95;\nmul_256 = add_255 * rdiv_97;\nsub_257 = pass_253 - mul_256;\nmul_258 = sub_257 * pass_88;\nadd_259 = mul_258 + history_51;\nadd_260 = add_259 + history_51;\npass_261 = pass(add_260);\nmul_262 = pass_261 * pass_89;\nadd_263 = mul_262 + add_98;\nmul_264 = add_263 * rdiv_100;\nsub_265 = pass_261 - mul_264;\nmul_266 = sub_265 * pass_89;\nadd_267 = mul_266 + history_52;\ny_268 = sub_220;\ngen_269 = y_268;\nhistory_49_next_270 = fixdenorm(add_243);\nhistory_50_next_271 = fixdenorm(add_251);\nhistory_51_next_272 = fixdenorm(add_259);\nhistory_52_next_273 = fixdenorm(add_267);\ngen_274 = gen_269;\nlimit = (samplerate / 2) - 25;\ncf = clip(clamp_63, 0, limit);\nq = (clip(clamp_64, 0, 1)) * 10;\nexpr_275 = k35_lp(gate_56, cf, q);\ngen_276 = expr_275;\nlimit_277 = samplerate / 2;\ncf_278 = clip(clamp_63, 0, limit_277);\nq_279 = ((clip(clamp_64, 0, 1)) * 20) + 0.5;\nexpr_280, expr_281, expr_282, expr_283, expr_284, expr_285 = svf_as(gate_57, cf_278, q_279);\ngen_286 = expr_281;\ngen_287 = expr_282;\ngen_288 = expr_280;\ngen_289 = expr_285;\ngen_290 = expr_283;\ngen_291 = expr_284;\nlimit_292 = samplerate / 3;\ncf_293 = clip(clamp_63, 0, limit_292);\nq_294 = (clip(clamp_64, 0, 1)) * 19;\nsat = ((clip(float_60, 0, 1)) * 30) + 0.001;\nexpr_295 = zdf_diode(gate_58, cf_293, q_294, sat);\ngen_296 = expr_295;\nselector_297 = selector(in4, gen_274, gen_276, gen_288, gen_296, expr_67);\nout1 = selector_297;\nfT = fT_next_229;\nhistory_52 = history_52_next_273;\nhistory_51 = history_51_next_272;\nhistory_50 = history_50_next_271;\nhistory_49 = history_49_next_270;",
 						"geninlets" : 4,
 						"genoutlets" : 1
 					}
@@ -22878,6 +22912,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-233", 0 ],
+					"order" : 0,
+					"source" : [ "obj-480", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"order" : 1,
 					"source" : [ "obj-480", 0 ]
 				}
 
