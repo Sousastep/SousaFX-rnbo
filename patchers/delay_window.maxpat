@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 2102.0, 1387.0 ],
+		"rect" : [ 13.0, 657.0, 1010.0, 263.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -19,12 +19,32 @@
 		"righttoolbarpinned" : 2,
 		"bottomtoolbarpinned" : 2,
 		"toolbars_unpinned_last_save" : 15,
-		"assistshowspatchername" : 0,
-		"commentary" : "",
-		"showcommentary" : 0,
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "delay parameters",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-203",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.0, 51.0, 50.5, 22.0 ],
+					"text" : "bgcolor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-202",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 275.0, 19.0, 78.0, 22.0 ],
+					"text" : "r bgcolor_set"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "solo1" ],
 					"bgmode" : 0,
@@ -408,6 +428,13 @@
 					"destination" : [ "obj-123", 2 ],
 					"midpoints" : [ 167.5, 230.000006318092346, 512.400002062320709, 230.000006318092346, 512.400002062320709, 102.000006318092346, 446.5, 102.000006318092346 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-203", 0 ],
+					"source" : [ "obj-202", 0 ]
 				}
 
 			}
