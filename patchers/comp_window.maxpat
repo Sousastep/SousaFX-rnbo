@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 444.0, 54.0, 952.0, 542.0 ],
+		"rect" : [ 619.0, 378.0, 952.0, 542.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -22,6 +22,53 @@
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "compressor parameters",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-374",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 66.0, 442.277124023437409, 96.0, 22.0 ],
+					"text" : "s active_window"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-373",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 66.0, 405.277124023437409, 85.0, 22.0 ],
+					"text" : "prepend comp"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-356",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 119.0, 366.277124023437409, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-354",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 66.0, 367.277124023437409, 40.0, 22.0 ],
+					"text" : "active"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-203",
 					"maxclass" : "newobj",
@@ -420,6 +467,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-356", 0 ],
+					"order" : 0,
+					"source" : [ "obj-354", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-373", 0 ],
+					"order" : 1,
+					"source" : [ "obj-354", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-374", 0 ],
+					"source" : [ "obj-373", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-262", 0 ],
 					"source" : [ "obj-83", 0 ]
 				}
@@ -428,7 +498,7 @@
  ],
 		"toolbaradditions" : [ "packagemanager" ],
 		"toolbarexclusions" : [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ],
-		"bgcolor" : [ 0.0, 0.0, 0.0, 0.7 ]
+		"bgcolor" : [ 0.007843137254902, 0.007843137254902, 0.141176470588235, 0.532513661202186 ]
 	}
 
 }
