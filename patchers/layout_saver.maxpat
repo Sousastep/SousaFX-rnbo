@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -13,9 +13,6 @@
 		"rect" : [ 34.0, 87.0, 2059.0, 1319.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"assistshowspatchername" : 0,
-		"commentary" : "",
-		"showcommentary" : 0,
 		"title" : "layout saver",
 		"boxes" : [ 			{
 				"box" : 				{
@@ -1022,7 +1019,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1120.0, 799.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 4.0, 46.0, 22.0 ]
+					"presentation_rect" : [ 4.0, 4.0, 46.0, 22.0 ],
+					"varname" : "lay[3]"
 				}
 
 			}
@@ -1085,7 +1083,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 91.0, 28.5, 57.0, 23.0 ],
 					"text" : "set initial",
-					"textjustification" : 1
+					"textjustification" : 1,
+					"varname" : "lay"
 				}
 
 			}
@@ -1205,7 +1204,8 @@
 					"patching_rect" : [ 627.0, 862.0, 102.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 30.0, 85.0, 36.0 ],
-					"text" : "two blank"
+					"text" : "two blank",
+					"varname" : "lay[2]"
 				}
 
 			}
@@ -1341,7 +1341,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 80.0, 3.5, 68.0, 23.0 ],
 					"text" : "save layout",
-					"textjustification" : 1
+					"textjustification" : 1,
+					"varname" : "lay[1]"
 				}
 
 			}
@@ -3119,7 +3120,14 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "layout_init.json",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"toolbaradditions" : [ "packagemanager" ],
 		"toolbarexclusions" : [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ],

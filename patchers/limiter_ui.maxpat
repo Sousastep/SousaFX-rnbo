@@ -3,19 +3,16 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 140.0, 155.0, 1000.0, 780.0 ],
+		"rect" : [ 706.0, 715.0, 1000.0, 780.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"assistshowspatchername" : 0,
-		"commentary" : "",
-		"showcommentary" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-1",
@@ -354,7 +351,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 244.0, 69.0, 77.0, 22.0 ],
-					"text" : "loadmess #2"
+					"text" : "loadmess #3"
 				}
 
 			}
@@ -411,8 +408,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 244.0, 139.0, 326.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, -6.0, 392.0, 40.0 ],
-					"text" : "#2"
+					"presentation_rect" : [ 3.0, -6.0, 392.0, 40.0 ]
 				}
 
 			}

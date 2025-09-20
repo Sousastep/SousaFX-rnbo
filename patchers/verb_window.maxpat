@@ -10,7 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 963.0, 639.0, 634.0, 161.0 ],
+		"rect" : [ 280.0, 705.0, 1182.0, 604.0 ],
+		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -93,7 +94,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "jb_drums/perc" ],
+					"args" : [ "jb_drums/perc", "Drums" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -109,7 +110,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 495.0, 271.0, 201.0, 143.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 423.0, 7.0, 201.0, 143.0 ],
+					"presentation_rect" : [ 423.0, 7.0, 188.0, 143.0 ],
 					"varname" : "verb_ui[2]",
 					"viewvisibility" : 1
 				}
@@ -117,7 +118,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "verbwrap/main" ],
+					"args" : [ "verbwrap/main", "Main" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -133,7 +134,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 282.0, 271.0, 201.0, 143.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 7.0, 201.0, 143.0 ],
+					"presentation_rect" : [ 7.0, 7.0, 188.0, 143.0 ],
 					"varname" : "verb_ui[1]",
 					"viewvisibility" : 1
 				}
@@ -141,7 +142,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "tubasolo" ],
+					"args" : [ "tubasolo", "Solo" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -157,7 +158,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 71.0, 271.0, 202.0, 150.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 7.0, 211.0, 143.0 ],
+					"presentation_rect" : [ 203.5, 7.0, 211.0, 143.0 ],
 					"varname" : "verb_ui",
 					"viewvisibility" : 1
 				}
@@ -275,7 +276,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 182.0, 108.0, 43.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 634.0, 161.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 623.0, 161.0 ],
 					"proportion" : 0.5
 				}
 
