@@ -1008,6 +1008,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.12 ],
 					"hint" : "current layout preset #",
 					"id" : "obj-86",
 					"maxclass" : "number",
@@ -1065,7 +1066,7 @@
 					"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.301961, 0.301961, 0.301961, 0.8 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 0.12 ],
 					"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1 ],
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -1119,8 +1120,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1320.0, 447.0, 185.0, 22.0 ],
-					"text" : "0.301961 0.301961 0.301961 0.8"
+					"patching_rect" : [ 1320.0, 447.0, 62.0, 22.0 ],
+					"text" : "0 0 0 0.12"
 				}
 
 			}
@@ -1192,8 +1193,8 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.39 ],
-					"bordercolor" : [ 0.0, 0.0, 0.0, 0.77 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.12 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.12 ],
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-61",
 					"maxclass" : "textedit",
@@ -1323,7 +1324,7 @@
 					"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.301961, 0.301961, 0.301961, 0.8 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 0.12 ],
 					"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1 ],
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -1377,8 +1378,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 603.0, 386.0, 185.0, 22.0 ],
-					"text" : "0.301961 0.301961 0.301961 0.8"
+					"patching_rect" : [ 603.0, 386.0, 62.0, 22.0 ],
+					"text" : "0 0 0 0.12"
 				}
 
 			}
