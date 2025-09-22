@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -176,7 +176,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1187.0, 98.0, 204.0, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "game controllers disconnect after ~15 minutes of inactivity, so to keep it connected, we send a soft rumble  to the controller every 10 minutes"
 				}
 
@@ -631,8 +630,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 304.0, 23.0, 59.0, 22.0 ],
-					"text" : "gamepad"
+					"patching_rect" : [ 304.0, 23.0, 123.0, 22.0 ],
+					"text" : "gamepad @interval 1"
 				}
 
 			}
