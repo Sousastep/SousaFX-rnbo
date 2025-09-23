@@ -4,19 +4,30 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 272.0, 185.0, 1490.0, 1132.0 ],
+		"rect" : [ 229.0, 92.0, 1582.0, 960.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "sousafx",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-109",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1377.0, 1718.0, 94.0, 22.0 ],
+					"text" : "s~ lpf_mod_env"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-143",
 					"maxclass" : "newobj",
@@ -91,7 +102,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 3577.0, 1802.5, 57.0, 52.0 ],
-					"presentation_linecount" : 3,
 					"text" : "0. 0.875 0.013672 1."
 				}
 
@@ -164,7 +174,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1361.0, 1757.0, 103.0, 22.0 ],
+					"patching_rect" : [ 1345.0, 1768.0, 103.0, 22.0 ],
 					"text" : "s~ crossfade_env"
 				}
 
@@ -1402,7 +1412,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1782,7 +1792,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1968,7 +1978,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2946,7 +2956,7 @@
 					"patching_rect" : [ 512.0, 1806.0, 180.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 202.0, 124.0, 163.0, 41.0 ],
-					"text" : "-81.84 dB",
+					"text" : "-88.84 dB",
 					"textjustification" : 1
 				}
 
@@ -4447,10 +4457,10 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.12 ],
+					"bgcolor" : [ 0, 0, 0, 0.12 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.12 ],
+					"bgfillcolor_color" : [ 0, 0, 0, 0.12 ],
 					"bgfillcolor_color1" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.8 ],
 					"bgfillcolor_color2" : [ 0.290196078431373, 0.309803921568627, 0.301960784313725, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
@@ -4486,10 +4496,10 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.12 ],
+					"bgcolor" : [ 0, 0, 0, 0.12 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.12 ],
+					"bgfillcolor_color" : [ 0, 0, 0, 0.12 ],
 					"bgfillcolor_color1" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.8 ],
 					"bgfillcolor_color2" : [ 0.290196078431373, 0.309803921568627, 0.301960784313725, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
@@ -4525,10 +4535,10 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.12 ],
+					"bgcolor" : [ 0, 0, 0, 0.12 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.12 ],
+					"bgfillcolor_color" : [ 0, 0, 0, 0.12 ],
 					"bgfillcolor_color1" : [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.8 ],
 					"bgfillcolor_color2" : [ 0.290196078431373, 0.309803921568627, 0.301960784313725, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
@@ -4818,7 +4828,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1269.0, 911.0, 90.000002682209015, 22.0 ],
-					"restore" : [ -4.0 ],
+					"restore" : [ -10.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -5047,11 +5057,12 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-19",
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3014.0, 1923.0, 119.0, 23.0 ]
+					"patching_rect" : [ 3014.0, 1923.0, 119.0, 95.0 ]
 				}
 
 			}
@@ -6010,7 +6021,7 @@
 ,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 12,
+					"numoutlets" : 13,
 					"outletInfo" : 					{
 						"IOInfo" : [ 							{
 								"type" : "signal",
@@ -6078,464 +6089,20 @@
 								"tag" : "out11",
 								"comment" : ""
 							}
+, 							{
+								"type" : "signal",
+								"index" : 12,
+								"tag" : "out12",
+								"comment" : ""
+							}
  ]
 					}
 ,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 981.0, 1368.0, 483.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"p_obj-212/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_START" : 						{
-							"label" : "BTN_START",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_RZ" : 						{
-							"label" : "ABS_RZ",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/damp" : 						{
-							"label" : "damp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_EAST" : 						{
-							"label" : "BTN_EAST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/framesPerSecond" : 						{
-							"label" : "framesPerSecond",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
 							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_metronome/metronome_volume" : 						{
-							"label" : "metronome_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/window" : 						{
-							"label" : "window",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_WEST" : 						{
-							"label" : "BTN_WEST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_NORTH" : 						{
-							"label" : "BTN_NORTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/kick_volume" : 						{
-							"label" : "kick_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/jitter" : 						{
-							"label" : "jitter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/dry_vol" : 						{
-							"label" : "dry_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/mid" : 						{
-							"label" : "mid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/crossfade" : 						{
-							"label" : "crossfade",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -6546,188 +6113,20 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"jb_autowah/lpf_type" : 						{
+							"label" : "lpf_type",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"final/himidfq" : 						{
-							"label" : "himidfq",
+						"verbwrap/main/mix" : 						{
+							"label" : "mix",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_HAT0X" : 						{
-							"label" : "ABS_HAT0X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gp_noisegatewrap/noise gate thresh" : 						{
-							"label" : "noise gate thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/max_lfo_floor" : 						{
-							"label" : "max_lfo_floor",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/lfo_env_sens" : 						{
-							"label" : "lfo_env_sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/transp" : 						{
-							"label" : "transp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/min_dist_btwn_flcl" : 						{
-							"label" : "min_dist_btwn_flcl",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/attack" : 						{
+						"synth1/limiter/attack" : 						{
 							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/max_lfo_ceiling" : 						{
-							"label" : "max_lfo_ceiling",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_SOUTH" : 						{
-							"label" : "BTN_SOUTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/damp" : 						{
-							"label" : "damp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/del_vol" : 						{
-							"label" : "del_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -6738,356 +6137,26 @@
 							"parsestring" : ""
 						}
 ,
-						"solo/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_GAS" : 						{
-							"label" : "ABS_GAS",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth_vol" : 						{
-							"label" : "synth_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_crossfade/xfade_env_sens" : 						{
-							"label" : "xfade_env_sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_X" : 						{
-							"label" : "ABS_X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"p_obj-16/p_obj-48/staircase_amount" : 						{
 							"label" : "staircase_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-16/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
+						"looper/limiter/release" : 						{
+							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
+						"post-xover-lows/release" : 						{
+							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_autowah/min_lfo_floor" : 						{
-							"label" : "min_lfo_floor",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/treble" : 						{
-							"label" : "treble",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/himid" : 						{
+						"pre-xfade-dry/himid" : 						{
 							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_Z" : 						{
-							"label" : "ABS_Z",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/drum_volume" : 						{
-							"label" : "drum_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tap/BPM" : 						{
-							"label" : "BPM",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/bass" : 						{
-							"label" : "bass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_HAT0Y" : 						{
-							"label" : "ABS_HAT0Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/midfreq" : 						{
-							"label" : "midfreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/jitter" : 						{
-							"label" : "jitter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_BRAKE" : 						{
-							"label" : "ABS_BRAKE",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/lpf_type" : 						{
-							"label" : "lpf_type",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/highcut" : 						{
-							"label" : "highcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/output_gain" : 						{
-							"label" : "output_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7098,26 +6167,44 @@
 							"parsestring" : ""
 						}
 ,
-						"looper/limiter/attack" : 						{
-							"label" : "attack",
+						"jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_drums/perc/size" : 						{
-							"label" : "size",
+						"solo1/spread" : 						{
+							"label" : "spread",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-16/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
+						"final/himid" : 						{
+							"label" : "himid",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_drums/perc/damp" : 						{
-							"label" : "damp",
+						"pitchshift/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/lfo_env_sens" : 						{
+							"label" : "lfo_env_sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/release" : 						{
+							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7128,26 +6215,44 @@
 							"parsestring" : ""
 						}
 ,
-						"synth/himid" : 						{
-							"label" : "himid",
+						"looper/output_volume" : 						{
+							"label" : "output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
+						"looper/limiter/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"drum/limiter/gain" : 						{
-							"label" : "gain",
+						"jb_drums/drum_volume" : 						{
+							"label" : "drum_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-dry/release" : 						{
-							"label" : "release",
+						"pre-xfade-wet/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/filter_enable" : 						{
+							"label" : "filter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7158,26 +6263,50 @@
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
+						"tubasolo/decay" : 						{
+							"label" : "decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/staircase_enable" : 						{
+						"drum/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/midfreq" : 						{
+							"label" : "midfreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
 							"label" : "staircase_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
+						"synth1/crossfade" : 						{
+							"label" : "crossfade",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"overdrive/volume" : 						{
-							"label" : "volume",
+						"post-xover-lows/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_crossfade/xfade_env_sens" : 						{
+							"label" : "xfade_env_sens",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7188,26 +6317,50 @@
 							"parsestring" : ""
 						}
 ,
-						"post-xover-lows/himid" : 						{
-							"label" : "himid",
+						"last/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"final/lookahead" : 						{
-							"label" : "lookahead",
+						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
+						"overdrive/mid" : 						{
+							"label" : "mid",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_Y" : 						{
-							"label" : "ABS_Y",
+						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/del_vol" : 						{
+							"label" : "del_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7218,25 +6371,49 @@
 							"parsestring" : ""
 						}
 ,
-						"solo/release" : 						{
+						"drum/limiter/release" : 						{
 							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/BTN_SELECT" : 						{
-							"label" : "BTN_SELECT",
+						"solo/input_gain" : 						{
+							"label" : "input_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/BTN_TR" : 						{
-							"label" : "BTN_TR",
+						"looper/limiter/gain" : 						{
+							"label" : "gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth1/limiter/lookahead" : 						{
+						"synth/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_NORTH" : 						{
+							"label" : "BTN_NORTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/lookahead" : 						{
 							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -7248,188 +6425,20 @@
 							"parsestring" : ""
 						}
 ,
-						"solo/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/lowcut" : 						{
-							"label" : "lowcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_micpre/jb_envelope/Env Sens" : 						{
-							"label" : "Env Sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/wet_vol" : 						{
-							"label" : "wet_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/drive" : 						{
-							"label" : "drive",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"bindings/lfo_ceiling_env_sens_binding_curve" : 						{
-							"label" : "lfo_ceiling_env_sens_binding_curve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tap/time_sig_numerator" : 						{
-							"label" : "time_sig_numerator",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/mix" : 						{
+						"jb_drums/perc/mix" : 						{
 							"label" : "mix",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"main/output_volume" : 						{
-							"label" : "output_volume",
+						"gpin/ABS_HAT0X" : 						{
+							"label" : "ABS_HAT0X",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth/output_gain" : 						{
-							"label" : "output_gain",
+						"p_obj-234/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7440,26 +6449,50 @@
 							"parsestring" : ""
 						}
 ,
-						"post-xover-lows/himidfq" : 						{
-							"label" : "himidfq",
+						"tubasolo/jitter" : 						{
+							"label" : "jitter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"main/spread" : 						{
+							"label" : "spread",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-16/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"jb_autowah/min_lfo_floor" : 						{
+							"label" : "min_lfo_floor",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
+						"post-xover-lows/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7470,26 +6503,50 @@
 							"parsestring" : ""
 						}
 ,
-						"synth1/limiter/thresh" : 						{
-							"label" : "thresh",
+						"p_obj-212/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"looper/output_volume" : 						{
-							"label" : "output_volume",
+						"solo1/crossfade" : 						{
+							"label" : "crossfade",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
+						"p_obj-212/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"verbwrap/main/diff" : 						{
-							"label" : "diff",
+						"overdrive/lowcut" : 						{
+							"label" : "lowcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/gain" : 						{
+							"label" : "gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7500,26 +6557,50 @@
 							"parsestring" : ""
 						}
 ,
-						"post-xover-lows/output_gain" : 						{
-							"label" : "output_gain",
+						"verbwrap/main/size" : 						{
+							"label" : "size",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"tubasolo/decay" : 						{
-							"label" : "decay",
+						"drum/limiter/lookahead" : 						{
+							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"overdrive/bass" : 						{
+							"label" : "bass",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"bindings/lfo_floor_env_sens_binding_curve" : 						{
-							"label" : "lfo_floor_env_sens_binding_curve",
+						"tubasolo/wet_vol" : 						{
+							"label" : "wet_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7530,26 +6611,50 @@
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
+						"solo1/limiter/lookahead" : 						{
+							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"last/thresh" : 						{
-							"label" : "thresh",
+						"p_obj-16/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
+						"pre-xfade-dry/himidfq" : 						{
+							"label" : "himidfq",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/BTN_TL" : 						{
-							"label" : "BTN_TL",
+						"bindings/lfo_ceiling_env_sens_binding_curve" : 						{
+							"label" : "lfo_ceiling_env_sens_binding_curve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_SOUTH" : 						{
+							"label" : "BTN_SOUTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7560,13 +6665,331 @@
 							"parsestring" : ""
 						}
 ,
-						"verbwrap/main/jitter" : 						{
-							"label" : "jitter",
+						"gpin/BTN_EAST" : 						{
+							"label" : "BTN_EAST",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"drum/limiter/release" : 						{
+						"jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_WEST" : 						{
+							"label" : "BTN_WEST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/crossfade" : 						{
+							"label" : "crossfade",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_TR" : 						{
+							"label" : "BTN_TR",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_START" : 						{
+							"label" : "BTN_START",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tap/BPM" : 						{
+							"label" : "BPM",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_micpre/jb_envelope/Env Sens" : 						{
+							"label" : "Env Sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_GAS" : 						{
+							"label" : "ABS_GAS",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/dry_vol" : 						{
+							"label" : "dry_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tap/time_sig_numerator" : 						{
+							"label" : "time_sig_numerator",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/release" : 						{
 							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -7578,20 +7001,614 @@
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-dry/input_gain" : 						{
-							"label" : "input_gain",
+						"jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_drums/perc/decay" : 						{
-							"label" : "decay",
+						"looper/crossfade" : 						{
+							"label" : "crossfade",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_BRAKE" : 						{
+							"label" : "ABS_BRAKE",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/kick_volume" : 						{
+							"label" : "kick_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gp_noisegatewrap/noise gate thresh" : 						{
+							"label" : "noise gate thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/treble" : 						{
+							"label" : "treble",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/min_dist_btwn_flcl" : 						{
+							"label" : "min_dist_btwn_flcl",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_HAT0Y" : 						{
+							"label" : "ABS_HAT0Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_RZ" : 						{
+							"label" : "ABS_RZ",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Y" : 						{
+							"label" : "ABS_Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/framesPerSecond" : 						{
+							"label" : "framesPerSecond",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/crossfade" : 						{
+							"label" : "crossfade",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_X" : 						{
+							"label" : "ABS_X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/lookahead" : 						{
+							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
 						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
 							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_metronome/metronome_volume" : 						{
+							"label" : "metronome_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/highcut" : 						{
+							"label" : "highcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/max_lfo_floor" : 						{
+							"label" : "max_lfo_floor",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Z" : 						{
+							"label" : "ABS_Z",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/transp" : 						{
+							"label" : "transp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth_vol" : 						{
+							"label" : "synth_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"bindings/lfo_floor_env_sens_binding_curve" : 						{
+							"label" : "lfo_floor_env_sens_binding_curve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/drive" : 						{
+							"label" : "drive",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/window" : 						{
+							"label" : "window",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/max_lfo_ceiling" : 						{
+							"label" : "max_lfo_ceiling",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_TL" : 						{
+							"label" : "BTN_TL",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_SELECT" : 						{
+							"label" : "BTN_SELECT",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/input_gain" : 						{
+							"label" : "input_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8521,6 +8538,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-109", 0 ],
+					"source" : [ "obj-2", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 9 ]
@@ -8560,7 +8584,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-2", 11 ]
+					"source" : [ "obj-2", 12 ]
 				}
 
 			}
@@ -10983,15 +11007,6 @@
 			"obj-377::obj-50" : [ "live.dial[21]", "window", 0 ],
 			"obj-377::obj-59" : [ "live.dial[22]", "crossfade env sens", 0 ],
 			"obj-59" : [ "Alert Volume", "Alert Volume", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"parameter_overrides" : 			{
 				"obj-281::obj-272::obj-10" : 				{
 					"parameter_longname" : "live.numbox[8]"
@@ -11711,6 +11726,13 @@
 				"bootpath" : "~/Documents/Max 8/Projects/sousastep/SousaFX/media",
 				"patcherrelativepath" : "../../sousastep/SousaFX/media",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "layout_1.json",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
