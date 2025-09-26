@@ -10,13 +10,468 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 229.0, 92.0, 1582.0, 960.0 ],
+		"rect" : [ 43.0, 104.0, 442.0, 577.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "sousafx",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-388",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2622.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-389",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2668.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-381",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3024.0, 1981.5, 34.0, 22.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-359",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3068.0, 1984.5, 87.0, 22.0 ],
+					"text" : "r saveas_bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-369",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3014.0, 1790.0, 75.0, 22.0 ],
+					"text" : "r save_bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-260",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1893.0, 493.0, 50.0, 22.0 ],
+					"text" : "main 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-255",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2432.0, 497.166666666666572, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-250",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2432.0, 527.999999999999886, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-249",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 2432.0, 435.499999999999943, 62.0, 22.0 ],
+					"text" : "change -1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-248",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 2432.0, 466.333333333333258, 34.0, 22.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-247",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2432.0, 404.666666666666629, 33.0, 22.0 ],
+					"text" : "== 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-246",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 2432.0, 373.833333333333314, 43.0, 22.0 ],
+					"text" : "zl.sum"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-245",
+					"maxclass" : "newobj",
+					"numinlets" : 9,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2432.0, 343.0, 118.0, 22.0 ],
+					"text" : "pak 0 0 0 0 0 0 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-242",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2523.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-243",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2569.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-244",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2316.0, 343.0, 81.0, 22.0 ],
+					"text" : "prepend ID_c"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-160",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2432.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-230",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2478.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-232",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2340.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-233",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2386.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-234",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2249.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-235",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2295.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-236",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2222.0, 343.0, 81.0, 22.0 ],
+					"text" : "prepend ID_d"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-237",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2127.0, 343.0, 79.0, 22.0 ],
+					"text" : "prepend ID_r"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-238",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2036.0, 343.0, 77.0, 22.0 ],
+					"text" : "prepend ID_l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-239",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2203.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-240",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 2157.0, 227.0, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-241",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1935.0, 343.0, 81.0, 22.0 ],
+					"text" : "prepend ID_b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-146",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1571.0, 592.0, 73.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 70.0, 83.0, 73.0, 29.0 ],
+					"varname" : "ID_c[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-144",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1649.0, 617.0, 50.0, 52.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 148.0, 108.0, 50.0, 52.5 ],
+					"varname" : "ID_c[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-142",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1631.0, 600.0, 42.0, 42.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 130.0, 91.0, 42.0, 42.5 ],
+					"varname" : "ID_c"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-139",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1562.0, 647.0, 42.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 61.0, 138.0, 42.0, 40.0 ],
+					"varname" : "ID_d"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-123",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1600.0, 641.0, 50.0, 50.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 99.0, 132.0, 50.0, 50.0 ],
+					"varname" : "ID_r"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-114",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1669.0, 577.0, 41.0, 44.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 169.0, 71.0, 35.0, 40.0 ],
+					"varname" : "ID_b[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hilite" : 0,
+					"id" : "obj-111",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1529.0, 614.0, 50.0, 50.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 28.0, 105.0, 50.0, 50.0 ],
+					"varname" : "ID_l"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-109",
 					"maxclass" : "newobj",
@@ -75,7 +530,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 218.5, 516.0, 72.5, 29.0 ],
 					"text" : "restore",
-					"textjustification" : 1
+					"textjustification" : 1,
+					"varname" : "save[1]"
 				}
 
 			}
@@ -189,7 +645,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1754.0, 2169.0, 147.0, 94.0 ],
+					"patching_rect" : [ 1914.0, 750.0, 86.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.5, 180.0, 377.0, 79.0 ],
 					"varname" : "loop"
@@ -206,10 +662,10 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1521.0, 808.5, 147.0, 94.0 ],
+					"patching_rect" : [ 1524.0, 577.0, 45.5, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 59.0, 178.0, 119.0 ],
-					"varname" : "input_display[1]"
+					"presentation_rect" : [ 25.0, 71.0, 46.0, 37.0 ],
+					"varname" : "ID_b"
 				}
 
 			}
@@ -244,7 +700,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1738.5, 754.0, 33.0, 22.0 ],
+					"patching_rect" : [ 1648.0, 770.0, 33.0, 22.0 ],
 					"text" : "== 0"
 				}
 
@@ -256,7 +712,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1738.5, 788.0, 52.0, 22.0 ],
+					"patching_rect" : [ 1648.0, 804.0, 52.0, 22.0 ],
 					"text" : "gate 1 1"
 				}
 
@@ -268,7 +724,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1738.5, 722.0, 75.0, 22.0 ],
+					"patching_rect" : [ 1648.0, 738.0, 75.0, 22.0 ],
 					"text" : "r docs_open"
 				}
 
@@ -292,7 +748,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1858.0, 305.0, 22.0, 22.0 ],
+					"patching_rect" : [ 2066.0, 227.0, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -304,7 +760,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1892.0, 305.0, 22.0, 22.0 ],
+					"patching_rect" : [ 2112.0, 227.0, 22.0, 22.0 ],
 					"text" : "t 0"
 				}
 
@@ -316,7 +772,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1765.0, 305.0, 22.0, 22.0 ],
+					"patching_rect" : [ 1974.0, 227.0, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -328,7 +784,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1799.0, 305.0, 22.0, 22.0 ],
+					"patching_rect" : [ 2020.0, 227.0, 22.0, 22.0 ],
 					"text" : "t 0"
 				}
 
@@ -340,7 +796,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1673.0, 305.0, 22.0, 22.0 ],
+					"patching_rect" : [ 1883.0, 227.0, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -352,7 +808,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1707.0, 305.0, 22.0, 22.0 ],
+					"patching_rect" : [ 1929.0, 227.0, 22.0, 22.0 ],
 					"text" : "t 0"
 				}
 
@@ -395,30 +851,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-403",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1621.0, 305.0, 22.0, 22.0 ],
-					"text" : "t 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-401",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1592.0, 305.0, 22.0, 22.0 ],
-					"text" : "t 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-396",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -445,11 +877,11 @@
 				"box" : 				{
 					"id" : "obj-394",
 					"maxclass" : "newobj",
-					"numinlets" : 7,
-					"numoutlets" : 7,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 1513.0, 133.0, 626.0, 22.0 ],
-					"text" : "sel input_display_mouseover input_display_mouseoff loop_mouseover loop_mouseoff lay_mouseover lay_mouseoff"
+					"numinlets" : 19,
+					"numoutlets" : 19,
+					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 1513.0, 133.0, 1686.0, 22.0 ],
+					"text" : "sel input_display_mouseover input_display_mouseoff loop_mouseover loop_mouseoff lay_mouseover lay_mouseoff ID_b_mouseover ID_b_mouseoff ID_l_mouseover ID_l_mouseoff ID_r_mouseover ID_r_mouseoff ID_d_mouseover ID_d_mouseoff ID_c_mouseover ID_c_mouseoff save_mouseover save_mouseoff"
 				}
 
 			}
@@ -577,7 +1009,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1911.5, 723.0, 129.0, 20.0 ],
+					"patching_rect" : [ 1914.0, 718.0, 129.0, 20.0 ],
 					"text" : "option + d || option + h"
 				}
 
@@ -589,7 +1021,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 1838.5, 722.0, 71.0, 22.0 ],
+					"patching_rect" : [ 1841.0, 717.0, 71.0, 22.0 ],
 					"text" : "sel 100 104"
 				}
 
@@ -601,7 +1033,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1838.5, 685.0, 66.0, 22.0 ],
+					"patching_rect" : [ 1841.0, 680.0, 66.0, 22.0 ],
 					"text" : "route 2048"
 				}
 
@@ -613,7 +1045,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1838.5, 647.0, 46.0, 22.0 ],
+					"patching_rect" : [ 1841.0, 642.0, 46.0, 22.0 ],
 					"text" : "pack i i"
 				}
 
@@ -853,7 +1285,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 218.5, 471.0, 73.0, 38.0 ],
 					"text" : "save",
-					"textjustification" : 1
+					"textjustification" : 1,
+					"varname" : "save"
 				}
 
 			}
@@ -1085,7 +1518,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2049.0, 698.0, 112.0, 35.0 ],
+					"patching_rect" : [ 2048.0, 624.0, 112.0, 35.0 ],
 					"suppressinlet" : 1,
 					"text" : "option + m toggles custom menubar",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
@@ -1099,7 +1532,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 2021.0, 669.0, 47.0, 22.0 ],
+					"patching_rect" : [ 2037.0, 669.0, 47.0, 22.0 ],
 					"text" : "sel 181"
 				}
 
@@ -1111,7 +1544,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
-					"patching_rect" : [ 1818.0, 563.0, 50.5, 22.0 ],
+					"patching_rect" : [ 1827.0, 584.0, 50.5, 22.0 ],
 					"text" : "key"
 				}
 
@@ -1195,7 +1628,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 2144.0, 953.0, 53.0, 23.0 ],
+					"patching_rect" : [ 2115.5, 953.5, 53.0, 23.0 ],
 					"triscale" : 0.9
 				}
 
@@ -1254,7 +1687,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2116.0, 977.0, 104.0, 79.0 ],
+					"patching_rect" : [ 2087.5, 977.5, 104.0, 79.0 ],
 					"suppressinlet" : 1,
 					"text" : "File menu items (except Close, Midi Setup…, Max Menus, and Quit)",
 					"textcolor" : [ 0.968627, 0.968627, 0.968627, 1.0 ]
@@ -2956,7 +3389,7 @@
 					"patching_rect" : [ 512.0, 1806.0, 180.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 202.0, 124.0, 163.0, 41.0 ],
-					"text" : "-88.84 dB",
+					"text" : "-58.41 dB",
 					"textjustification" : 1
 				}
 
@@ -4809,7 +5242,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1241.0, 812.0, 84.000002503395081, 22.0 ],
-					"restore" : [ -8.0 ],
+					"restore" : [ -4.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4828,7 +5261,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1269.0, 911.0, 90.000002682209015, 22.0 ],
-					"restore" : [ -10.0 ],
+					"restore" : [ -4.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -5057,12 +5490,11 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-19",
-					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3014.0, 1923.0, 119.0, 95.0 ]
+					"patching_rect" : [ 3014.0, 1923.0, 119.0, 23.0 ]
 				}
 
 			}
@@ -5670,9 +6102,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1501.0, 670.0, 187.0, 129.0 ],
+					"patching_rect" : [ 1523.0, 577.0, 187.0, 129.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 59.0, 178.0, 116.0 ],
+					"presentation_rect" : [ 22.0, 68.0, 187.0, 129.0 ],
 					"varname" : "input_display",
 					"viewvisibility" : 1
 				}
@@ -6101,734 +6533,8 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 981.0, 1368.0, 483.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/lpf_type" : 						{
-							"label" : "lpf_type",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/lfo_env_sens" : 						{
-							"label" : "lfo_env_sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/drum_volume" : 						{
-							"label" : "drum_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/min_lfo_ceiling" : 						{
-							"label" : "min_lfo_ceiling",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/midfreq" : 						{
-							"label" : "midfreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_crossfade/xfade_env_sens" : 						{
-							"label" : "xfade_env_sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/mid" : 						{
-							"label" : "mid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/del_vol" : 						{
-							"label" : "del_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_NORTH" : 						{
-							"label" : "BTN_NORTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/randomize_lfp_type" : 						{
-							"label" : "randomize_lfp_type",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_HAT0X" : 						{
-							"label" : "ABS_HAT0X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/jitter" : 						{
-							"label" : "jitter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/min_lfo_floor" : 						{
-							"label" : "min_lfo_floor",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"main/limiter/release" : 						{
 							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/lowcut" : 						{
-							"label" : "lowcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/bass" : 						{
-							"label" : "bass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/wet_vol" : 						{
-							"label" : "wet_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"bindings/lfo_ceiling_env_sens_binding_curve" : 						{
-							"label" : "lfo_ceiling_env_sens_binding_curve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_SOUTH" : 						{
-							"label" : "BTN_SOUTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_metronome/alert_volume" : 						{
-							"label" : "alert_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_EAST" : 						{
-							"label" : "BTN_EAST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_WEST" : 						{
-							"label" : "BTN_WEST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_TR" : 						{
-							"label" : "BTN_TR",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/himid" : 						{
-							"label" : "himid",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -6839,188 +6545,26 @@
 							"parsestring" : ""
 						}
 ,
-						"gpin/BTN_START" : 						{
-							"label" : "BTN_START",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tap/BPM" : 						{
-							"label" : "BPM",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_micpre/jb_envelope/Env Sens" : 						{
-							"label" : "Env Sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_GAS" : 						{
-							"label" : "ABS_GAS",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/dry_vol" : 						{
-							"label" : "dry_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tap/time_sig_numerator" : 						{
-							"label" : "time_sig_numerator",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/release" : 						{
+						"pre-xfade-dry/release" : 						{
 							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"last/attack" : 						{
-							"label" : "attack",
+						"synth1/filter_enable" : 						{
+							"label" : "filter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
+						"last/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"looper/crossfade" : 						{
-							"label" : "crossfade",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_BRAKE" : 						{
-							"label" : "ABS_BRAKE",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/attack" : 						{
-							"label" : "attack",
+						"jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7031,158 +6575,26 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"synth/output_gain" : 						{
+							"label" : "output_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"last/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/himid" : 						{
+						"pre-xfade-dry/himid" : 						{
 							"label" : "himid",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-wet/himid" : 						{
-							"label" : "himid",
+						"solo1/crossfade" : 						{
+							"label" : "crossfade",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gp_noisegatewrap/noise gate thresh" : 						{
-							"label" : "noise gate thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/treble" : 						{
-							"label" : "treble",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/damp" : 						{
-							"label" : "damp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/min_dist_btwn_flcl" : 						{
-							"label" : "min_dist_btwn_flcl",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_HAT0Y" : 						{
-							"label" : "ABS_HAT0Y",
+						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7193,26 +6605,50 @@
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
+						"p_obj-16/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-dry/lookahead" : 						{
-							"label" : "lookahead",
+						"p_obj-234/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
+						"drum/crossfade" : 						{
+							"label" : "crossfade",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"overdrive/volume" : 						{
-							"label" : "volume",
+						"gp_noisegatewrap/noise gate thresh" : 						{
+							"label" : "noise gate thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7223,26 +6659,50 @@
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_RZ" : 						{
-							"label" : "ABS_RZ",
+						"pre-xfade-wet/input_gain" : 						{
+							"label" : "input_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
+						"solo/input_gain" : 						{
+							"label" : "input_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"init/thresh" : 						{
-							"label" : "thresh",
+						"jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
+						"synth1/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Z" : 						{
+							"label" : "ABS_Z",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/bass" : 						{
+							"label" : "bass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7253,26 +6713,50 @@
 							"parsestring" : ""
 						}
 ,
-						"tubasolo/damp" : 						{
-							"label" : "damp",
+						"gpin/BTN_SELECT" : 						{
+							"label" : "BTN_SELECT",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"main/limiter/lookahead" : 						{
-							"label" : "lookahead",
+						"p_obj-234/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_Y" : 						{
-							"label" : "ABS_Y",
+						"main/limiter/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"verbwrap/main/jitter" : 						{
-							"label" : "jitter",
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/lpf_type" : 						{
+							"label" : "lpf_type",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7283,25 +6767,49 @@
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
+						"p_obj-234/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"last/lookahead" : 						{
-							"label" : "lookahead",
+						"post-xover-lows/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"main/crossfade" : 						{
-							"label" : "crossfade",
+						"synth1/limiter/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
+						"jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"bindings/lfo_ceiling_env_sens_binding_curve" : 						{
+							"label" : "lfo_ceiling_env_sens_binding_curve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
 							"label" : "bypass_stutter_bandpass",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -7313,188 +6821,20 @@
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_X" : 						{
-							"label" : "ABS_X",
+						"post-xover-lows/comp" : 						{
+							"label" : "comp",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth1/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_metronome/metronome_volume" : 						{
-							"label" : "metronome_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/highcut" : 						{
-							"label" : "highcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/max_lfo_floor" : 						{
-							"label" : "max_lfo_floor",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_Z" : 						{
-							"label" : "ABS_Z",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/thresh" : 						{
+						"drum/limiter/thresh" : 						{
 							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pitchshift/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/transp" : 						{
-							"label" : "transp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth_vol" : 						{
-							"label" : "synth_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
+						"jb_autowah/min_dist_btwn_flcl" : 						{
+							"label" : "min_dist_btwn_flcl",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7505,26 +6845,44 @@
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-wet/comp" : 						{
-							"label" : "comp",
+						"jb_crossfade/xfade_env_sens" : 						{
+							"label" : "xfade_env_sens",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth1/filter_enable" : 						{
-							"label" : "filter_enable",
+						"jb_metronome/alert_volume" : 						{
+							"label" : "alert_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_drums/perc/jitter" : 						{
-							"label" : "jitter",
+						"gpin/ABS_BRAKE" : 						{
+							"label" : "ABS_BRAKE",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"overdrive/drive" : 						{
-							"label" : "drive",
+						"final/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tap/BPM" : 						{
+							"label" : "BPM",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7535,19 +6893,949 @@
 							"parsestring" : ""
 						}
 ,
+						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_WEST" : 						{
+							"label" : "BTN_WEST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/transp" : 						{
+							"label" : "transp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Y" : 						{
+							"label" : "ABS_Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/crossfade" : 						{
+							"label" : "crossfade",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth_vol" : 						{
+							"label" : "synth_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/crossfade" : 						{
+							"label" : "crossfade",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_START" : 						{
+							"label" : "BTN_START",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/del_vol" : 						{
+							"label" : "del_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_TR" : 						{
+							"label" : "BTN_TR",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/max_lfo_floor" : 						{
+							"label" : "max_lfo_floor",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/dry_vol" : 						{
+							"label" : "dry_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_RZ" : 						{
+							"label" : "ABS_RZ",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/wet_vol" : 						{
+							"label" : "wet_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/midfreq" : 						{
+							"label" : "midfreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_X" : 						{
+							"label" : "ABS_X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_EAST" : 						{
+							"label" : "BTN_EAST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/highcut" : 						{
+							"label" : "highcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_micpre/jb_envelope/Env Sens" : 						{
+							"label" : "Env Sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_HAT0Y" : 						{
+							"label" : "ABS_HAT0Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"jb_autowah/max_lfo_ceiling" : 						{
 							"label" : "max_lfo_ceiling",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-16/p_obj-48/stutter_accel" : 						{
+						"solo/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/treble" : 						{
+							"label" : "treble",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_NORTH" : 						{
+							"label" : "BTN_NORTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_HAT0X" : 						{
+							"label" : "ABS_HAT0X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/min_lfo_floor" : 						{
+							"label" : "min_lfo_floor",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
 							"label" : "stutter_accel",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"final/lookahead" : 						{
+						"p_obj-212/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/crossfade" : 						{
+							"label" : "crossfade",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_metronome/metronome_volume" : 						{
+							"label" : "metronome_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/drive" : 						{
+							"label" : "drive",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/mid" : 						{
+							"label" : "mid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/lowcut" : 						{
+							"label" : "lowcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_GAS" : 						{
+							"label" : "ABS_GAS",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/lookahead" : 						{
 							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -7559,26 +7847,50 @@
 							"parsestring" : ""
 						}
 ,
-						"verbwrap/main/damp" : 						{
-							"label" : "damp",
+						"main/limiter/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
+						"jb_drums/perc/decay" : 						{
+							"label" : "decay",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-wet/input_gain" : 						{
-							"label" : "input_gain",
+						"post-xover-lows/himidfq" : 						{
+							"label" : "himidfq",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"init/gain" : 						{
-							"label" : "gain",
+						"jb_drums/perc/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/lfo_env_sens" : 						{
+							"label" : "lfo_env_sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7589,26 +7901,146 @@
 							"parsestring" : ""
 						}
 ,
-						"p_obj-212/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
+						"synth/lookahead" : 						{
+							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"looper/spread" : 						{
-							"label" : "spread",
+						"synth1/limiter/gain" : 						{
+							"label" : "gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/BTN_SELECT" : 						{
-							"label" : "BTN_SELECT",
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-dry/input_gain" : 						{
-							"label" : "input_gain",
+						"pitchshift/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/drum_volume" : 						{
+							"label" : "drum_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/randomize_lfp_type" : 						{
+							"label" : "randomize_lfp_type",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/min_lfo_ceiling" : 						{
+							"label" : "min_lfo_ceiling",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tap/time_sig_numerator" : 						{
+							"label" : "time_sig_numerator",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_SOUTH" : 						{
+							"label" : "BTN_SOUTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/lookahead" : 						{
+							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7778,9 +8210,25 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-111", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-86", 2 ],
 					"midpoints" : [ 220.5, 554.0, 532.5, 554.0, 532.5, 426.0, 457.5, 426.0 ],
 					"source" : [ "obj-112", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-114", 1 ]
 				}
 
 			}
@@ -7818,6 +8266,14 @@
 					"destination" : [ "obj-124", 0 ],
 					"midpoints" : [ 4150.5, 537.240844999999808, 4129.06193600000006, 537.240844999999808, 4129.06193600000006, 445.832381999999825, 4150.5, 445.832381999999825 ],
 					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-123", 1 ]
 				}
 
 			}
@@ -7894,7 +8350,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1315", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-1309", 1 ]
 				}
 
@@ -7909,7 +8365,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-335", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-1309", 1 ]
 				}
 
@@ -8024,6 +8480,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-139", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-141", 0 ],
 					"source" : [ "obj-140", 0 ]
 				}
@@ -8066,8 +8530,32 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-142", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-143", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-144", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-146", 1 ]
 				}
 
 			}
@@ -8181,6 +8669,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-236", 0 ],
+					"order" : 1,
+					"source" : [ "obj-160", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 6 ],
+					"order" : 0,
+					"source" : [ "obj-160", 0 ]
 				}
 
 			}
@@ -8899,8 +9403,125 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-236", 0 ],
+					"order" : 1,
+					"source" : [ "obj-230", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 6 ],
+					"order" : 0,
+					"source" : [ "obj-230", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-229", 0 ],
 					"source" : [ "obj-231", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-237", 0 ],
+					"order" : 1,
+					"source" : [ "obj-232", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 5 ],
+					"order" : 0,
+					"source" : [ "obj-232", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-237", 0 ],
+					"order" : 1,
+					"source" : [ "obj-233", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 5 ],
+					"order" : 0,
+					"source" : [ "obj-233", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-238", 0 ],
+					"order" : 1,
+					"source" : [ "obj-234", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 4 ],
+					"order" : 0,
+					"source" : [ "obj-234", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-238", 0 ],
+					"order" : 1,
+					"source" : [ "obj-235", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 4 ],
+					"order" : 0,
+					"source" : [ "obj-235", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-417", 1 ],
+					"source" : [ "obj-236", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-417", 1 ],
+					"source" : [ "obj-237", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-417", 1 ],
+					"source" : [ "obj-238", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-241", 0 ],
+					"order" : 1,
+					"source" : [ "obj-239", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 3 ],
+					"order" : 0,
+					"source" : [ "obj-239", 0 ]
 				}
 
 			}
@@ -8913,8 +9534,120 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-241", 0 ],
+					"order" : 1,
+					"source" : [ "obj-240", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 3 ],
+					"order" : 0,
+					"source" : [ "obj-240", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-417", 1 ],
+					"source" : [ "obj-241", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-244", 0 ],
+					"order" : 1,
+					"source" : [ "obj-242", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 7 ],
+					"order" : 0,
+					"source" : [ "obj-242", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-244", 0 ],
+					"order" : 1,
+					"source" : [ "obj-243", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 7 ],
+					"order" : 0,
+					"source" : [ "obj-243", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-417", 1 ],
+					"source" : [ "obj-244", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-246", 0 ],
+					"source" : [ "obj-245", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-247", 0 ],
+					"source" : [ "obj-246", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-249", 0 ],
+					"source" : [ "obj-247", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-255", 0 ],
+					"source" : [ "obj-248", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-248", 0 ],
+					"source" : [ "obj-249", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-373", 0 ],
+					"midpoints" : [ 2441.5, 561.0, 1546.0, 561.0, 1546.0, 332.0, 1571.5, 332.0 ],
+					"source" : [ "obj-250", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-250", 0 ],
+					"source" : [ "obj-255", 0 ]
 				}
 
 			}
@@ -9152,7 +9885,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-394", 0 ],
-					"midpoints" : [ 3303.5, 193.0, 2178.0, 193.0, 2178.0, 95.0, 1522.5, 95.0 ],
+					"midpoints" : [ 3303.5, 193.0, 3129.0, 193.0, 3129.0, 95.0, 1522.5, 95.0 ],
 					"order" : 7,
 					"source" : [ "obj-288", 0 ]
 				}
@@ -9217,7 +9950,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-394", 0 ],
-					"midpoints" : [ 3510.5, 238.0, 3462.0, 238.0, 3462.0, 208.0, 2159.0, 208.0, 2159.0, 113.0, 1522.5, 113.0 ],
+					"midpoints" : [ 3510.5, 238.0, 3462.0, 238.0, 3462.0, 208.0, 3113.0, 208.0, 3113.0, 113.0, 1522.5, 113.0 ],
 					"order" : 7,
 					"source" : [ "obj-289", 0 ]
 				}
@@ -9890,6 +10623,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-381", 0 ],
+					"source" : [ "obj-359", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-288", 0 ],
 					"source" : [ "obj-360", 0 ]
 				}
@@ -9969,6 +10709,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"source" : [ "obj-369", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-37", 0 ]
 				}
@@ -9976,7 +10723,31 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-370", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-385", 0 ],
+					"source" : [ "obj-371", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-260", 1 ],
+					"order" : 0,
+					"source" : [ "obj-373", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-374", 0 ],
+					"order" : 1,
 					"source" : [ "obj-373", 0 ]
 				}
 
@@ -10006,6 +10777,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-378", 0 ],
 					"source" : [ "obj-380", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-381", 0 ]
 				}
 
 			}
@@ -10088,6 +10866,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-245", 8 ],
+					"source" : [ "obj-388", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 8 ],
+					"source" : [ "obj-389", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -10095,56 +10887,91 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-401", 0 ],
-					"order" : 1,
-					"source" : [ "obj-394", 4 ]
+					"destination" : [ "obj-160", 0 ],
+					"source" : [ "obj-394", 12 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-401", 0 ],
-					"order" : 1,
-					"source" : [ "obj-394", 2 ]
+					"destination" : [ "obj-230", 0 ],
+					"source" : [ "obj-394", 13 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-401", 0 ],
-					"order" : 1,
-					"source" : [ "obj-394", 0 ]
+					"destination" : [ "obj-232", 0 ],
+					"source" : [ "obj-394", 10 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-403", 0 ],
-					"order" : 1,
-					"source" : [ "obj-394", 5 ]
+					"destination" : [ "obj-233", 0 ],
+					"source" : [ "obj-394", 11 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-403", 0 ],
-					"order" : 1,
-					"source" : [ "obj-394", 3 ]
+					"destination" : [ "obj-234", 0 ],
+					"source" : [ "obj-394", 8 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-403", 0 ],
-					"order" : 1,
-					"source" : [ "obj-394", 1 ]
+					"destination" : [ "obj-235", 0 ],
+					"source" : [ "obj-394", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-239", 0 ],
+					"source" : [ "obj-394", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-240", 0 ],
+					"source" : [ "obj-394", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-242", 0 ],
+					"source" : [ "obj-394", 14 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-243", 0 ],
+					"source" : [ "obj-394", 15 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-388", 0 ],
+					"source" : [ "obj-394", 16 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-389", 0 ],
+					"source" : [ "obj-394", 17 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-410", 0 ],
-					"order" : 0,
 					"source" : [ "obj-394", 0 ]
 				}
 
@@ -10152,7 +10979,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-411", 0 ],
-					"order" : 0,
 					"source" : [ "obj-394", 1 ]
 				}
 
@@ -10160,7 +10986,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-412", 0 ],
-					"order" : 0,
 					"source" : [ "obj-394", 2 ]
 				}
 
@@ -10168,7 +10993,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-413", 0 ],
-					"order" : 0,
 					"source" : [ "obj-394", 3 ]
 				}
 
@@ -10176,7 +11000,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-414", 0 ],
-					"order" : 0,
 					"source" : [ "obj-394", 4 ]
 				}
 
@@ -10184,7 +11007,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-415", 0 ],
-					"order" : 0,
 					"source" : [ "obj-394", 5 ]
 				}
 
@@ -10250,20 +11072,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-373", 0 ],
-					"source" : [ "obj-401", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-373", 0 ],
-					"source" : [ "obj-403", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-417", 1 ],
 					"source" : [ "obj-405", 0 ]
 				}
@@ -10292,7 +11100,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-405", 0 ],
+					"destination" : [ "obj-245", 0 ],
+					"order" : 0,
 					"source" : [ "obj-410", 0 ]
 				}
 
@@ -10300,13 +11109,31 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-405", 0 ],
+					"order" : 1,
+					"source" : [ "obj-410", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 0 ],
+					"order" : 0,
 					"source" : [ "obj-411", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-408", 0 ],
+					"destination" : [ "obj-405", 0 ],
+					"order" : 1,
+					"source" : [ "obj-411", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 1 ],
+					"order" : 0,
 					"source" : [ "obj-412", 0 ]
 				}
 
@@ -10314,13 +11141,31 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-408", 0 ],
+					"order" : 1,
+					"source" : [ "obj-412", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 1 ],
+					"order" : 0,
 					"source" : [ "obj-413", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-409", 0 ],
+					"destination" : [ "obj-408", 0 ],
+					"order" : 1,
+					"source" : [ "obj-413", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 2 ],
+					"order" : 0,
 					"source" : [ "obj-414", 0 ]
 				}
 
@@ -10328,13 +11173,39 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-409", 0 ],
+					"order" : 1,
+					"source" : [ "obj-414", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-245", 2 ],
+					"order" : 0,
 					"source" : [ "obj-415", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-409", 0 ],
+					"order" : 1,
+					"source" : [ "obj-415", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-260", 1 ],
+					"order" : 0,
+					"source" : [ "obj-417", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-374", 0 ],
+					"order" : 1,
 					"source" : [ "obj-417", 0 ]
 				}
 
@@ -11007,6 +11878,16 @@
 			"obj-377::obj-50" : [ "live.dial[21]", "window", 0 ],
 			"obj-377::obj-59" : [ "live.dial[22]", "crossfade env sens", 0 ],
 			"obj-59" : [ "Alert Volume", "Alert Volume", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"parameter_overrides" : 			{
 				"obj-281::obj-272::obj-10" : 				{
 					"parameter_longname" : "live.numbox[8]"
