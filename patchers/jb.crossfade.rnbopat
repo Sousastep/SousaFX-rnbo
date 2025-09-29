@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -13,11 +13,57 @@
 		"rect" : [ 437.0, 87.0, 2070.0, 1319.0 ],
 		"default_fontname" : "Lato",
 		"gridsize" : [ 15.0, 15.0 ],
-		"assistshowspatchername" : 0,
-		"commentary" : "",
-		"showcommentary" : 0,
 		"title" : "jb.crossfade",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 284.0, 923.0, 32.0, 23.0 ],
+					"rnbo_classname" : "==",
+					"rnbo_extra_attributes" : 					{
+						"hot" : 0
+					}
+,
+					"rnbo_serial" : 1,
+					"rnbo_uniqueid" : "==_obj-17",
+					"text" : "== 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 427.0, 945.0, 31.0, 23.0 ],
+					"rnbo_classname" : "*~",
+					"rnbo_serial" : 10,
+					"rnbo_uniqueid" : "*~_obj-16",
+					"text" : "*~ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1215",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 284.0, 890.0, 93.0, 23.0 ],
+					"rnbo_classname" : "r",
+					"rnbo_serial" : 4,
+					"rnbo_uniqueid" : "r_obj-1215",
+					"text" : "r \"ADSR enable\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
@@ -42,19 +88,19 @@
 					"patching_rect" : [ 150.0, 666.0, 234.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
-						"unit" : "",
-						"tonormalized" : "",
-						"order" : "0",
 						"preset" : 1,
-						"displayname" : "",
 						"fromnormalized" : "",
-						"steps" : 0.0,
+						"exponent" : 1.0,
 						"sendinit" : 1,
 						"ctlin" : -1.0,
+						"displayorder" : "-",
+						"displayname" : "",
 						"meta" : "",
 						"enum" : "",
-						"exponent" : 1.0,
-						"displayorder" : "-"
+						"unit" : "",
+						"steps" : 0.0,
+						"tonormalized" : "",
+						"order" : "0"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -702,10 +748,10 @@
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
 						"maximum" : "<none>",
-						"order" : "",
+						"minimum" : "<none>",
 						"preset" : 0,
 						"initialFormat" : "float",
-						"minimum" : "<none>"
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 1,
@@ -780,8 +826,8 @@
 					"patching_rect" : [ 1229.0, 163.0, 42.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -2001,8 +2047,8 @@
 					"patching_rect" : [ 966.0, 684.0, 49.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 2,
@@ -2166,8 +2212,8 @@
 					"patching_rect" : [ 777.0, 684.0, 49.0, 23.0 ],
 					"rnbo_classname" : "pak",
 					"rnbo_extra_attributes" : 					{
-						"length" : 0.0,
-						"list" : ""
+						"list" : "",
+						"length" : 0.0
 					}
 ,
 					"rnbo_serial" : 3,
@@ -2505,10 +2551,10 @@
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
 						"maximum" : 100.0,
-						"order" : "",
+						"minimum" : 0.0,
 						"preset" : 0,
 						"initialFormat" : "float",
-						"minimum" : 0.0
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 2,
@@ -2540,10 +2586,10 @@
 					"rnbo_classname" : "number",
 					"rnbo_extra_attributes" : 					{
 						"maximum" : 100.0,
-						"order" : "",
+						"minimum" : 0.0,
 						"preset" : 0,
 						"initialFormat" : "float",
-						"minimum" : 0.0
+						"order" : ""
 					}
 ,
 					"rnbo_serial" : 3,
@@ -2563,8 +2609,8 @@
 							"fileversion" : 1,
 							"appversion" : 							{
 								"major" : 9,
-								"minor" : 1,
-								"revision" : 0,
+								"minor" : 0,
+								"revision" : 9,
 								"architecture" : "x64",
 								"modernui" : 1
 							}
@@ -2572,20 +2618,17 @@
 							"classnamespace" : "dsp.gen",
 							"rect" : [ 134.0, 159.0, 839.0, 751.0 ],
 							"gridsize" : [ 15.0, 15.0 ],
-							"assistshowspatchername" : 0,
-							"commentary" : "",
-							"showcommentary" : 0,
 							"boxes" : [ 								{
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
-										"id" : "obj-7",
-										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "<Monospaced>",
 										"numoutlets" : 1,
 										"outlettype" : [ "" ],
 										"fontface" : 0,
+										"fontsize" : 12.0,
+										"id" : "obj-7",
+										"numinlets" : 1,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
 
@@ -2595,12 +2638,12 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
-										"id" : "obj-1",
-										"fontsize" : 12.0,
-										"numinlets" : 0,
 										"fontname" : "Arial",
 										"numoutlets" : 1,
-										"outlettype" : [ "" ]
+										"outlettype" : [ "" ],
+										"fontsize" : 12.0,
+										"id" : "obj-1",
+										"numinlets" : 0
 									}
 
 								}
@@ -2609,26 +2652,26 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 81.0, 633.0, 37.0, 22.0 ],
-										"id" : "obj-4",
-										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "Arial",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"fontsize" : 12.0,
+										"id" : "obj-4",
+										"numinlets" : 1
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
@@ -3138,7 +3181,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 427.0, 950.0, 141.0, 23.0 ],
+					"patching_rect" : [ 427.0, 890.0, 141.0, 23.0 ],
 					"rnbo_classname" : "r~",
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "r~_obj-535",
@@ -3155,7 +3198,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 550.0, 1322.0, 144.0, 23.0 ],
 					"rnbo_classname" : "rampsmooth~",
-					"rnbo_serial" : 3,
+					"rnbo_serial" : 2,
 					"rnbo_uniqueid" : "rampsmooth~_obj-534",
 					"text" : "rampsmooth~ 480 36000"
 				}
@@ -3291,8 +3334,8 @@
 							"fileversion" : 1,
 							"appversion" : 							{
 								"major" : 9,
-								"minor" : 1,
-								"revision" : 0,
+								"minor" : 0,
+								"revision" : 9,
 								"architecture" : "x64",
 								"modernui" : 1
 							}
@@ -3300,20 +3343,17 @@
 							"classnamespace" : "dsp.gen",
 							"rect" : [ 134.0, 159.0, 839.0, 751.0 ],
 							"gridsize" : [ 15.0, 15.0 ],
-							"assistshowspatchername" : 0,
-							"commentary" : "",
-							"showcommentary" : 0,
 							"boxes" : [ 								{
 									"box" : 									{
 										"maxclass" : "codebox",
 										"patching_rect" : [ 81.0, 57.0, 586.0, 564.0 ],
-										"id" : "obj-7",
-										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "<Monospaced>",
 										"numoutlets" : 1,
 										"outlettype" : [ "" ],
 										"fontface" : 0,
+										"fontsize" : 12.0,
+										"id" : "obj-7",
+										"numinlets" : 1,
 										"code" : "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
 									}
 
@@ -3323,12 +3363,12 @@
 										"maxclass" : "newobj",
 										"text" : "in 1",
 										"patching_rect" : [ 81.0, 24.0, 30.0, 22.0 ],
-										"id" : "obj-1",
-										"fontsize" : 12.0,
-										"numinlets" : 0,
 										"fontname" : "Arial",
 										"numoutlets" : 1,
-										"outlettype" : [ "" ]
+										"outlettype" : [ "" ],
+										"fontsize" : 12.0,
+										"id" : "obj-1",
+										"numinlets" : 0
 									}
 
 								}
@@ -3337,26 +3377,26 @@
 										"maxclass" : "newobj",
 										"text" : "out 1",
 										"patching_rect" : [ 81.0, 633.0, 37.0, 22.0 ],
-										"id" : "obj-4",
-										"fontsize" : 12.0,
-										"numinlets" : 1,
 										"fontname" : "Arial",
-										"numoutlets" : 0
+										"numoutlets" : 0,
+										"fontsize" : 12.0,
+										"id" : "obj-4",
+										"numinlets" : 1
 									}
 
 								}
  ],
 							"lines" : [ 								{
 									"patchline" : 									{
-										"source" : [ "obj-1", 0 ],
-										"destination" : [ "obj-7", 0 ]
+										"source" : [ "obj-7", 0 ],
+										"destination" : [ "obj-4", 0 ]
 									}
 
 								}
 , 								{
 									"patchline" : 									{
-										"source" : [ "obj-7", 0 ],
-										"destination" : [ "obj-4", 0 ]
+										"source" : [ "obj-1", 0 ],
+										"destination" : [ "obj-7", 0 ]
 									}
 
 								}
@@ -3865,6 +3905,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-1215", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -3897,6 +3944,20 @@
 					"destination" : [ "obj-581", 1 ],
 					"order" : 1,
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-703", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -4114,7 +4175,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-703", 0 ],
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-535", 0 ]
 				}
 
