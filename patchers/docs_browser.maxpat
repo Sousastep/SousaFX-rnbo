@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 797.0, 404.0, 965.0, 631.0 ],
+		"rect" : [ 1513.0, 687.0, 965.0, 631.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -19,15 +19,27 @@
 		"righttoolbarpinned" : 2,
 		"bottomtoolbarpinned" : 2,
 		"toolbars_unpinned_last_save" : 15,
-		"title" : "Overview - sousafx",
+		"title" : "Attributions - sousafx",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1142.0, 103.0, 93.0, 22.0 ],
+					"text" : "attributions.html"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1112.333333333333258, 131.0, 155.0, 22.0 ],
+					"patching_rect" : [ 1113.5, 136.0, 155.0, 22.0 ],
 					"text" : "overview.html#save-restore"
 				}
 
@@ -39,7 +51,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1084.285714285714221, 170.0, 113.0, 22.0 ],
+					"patching_rect" : [ 1084.75, 174.0, 113.0, 22.0 ],
 					"text" : "documentation.html"
 				}
 
@@ -98,7 +110,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1028.0, 247.0, 117.0, 22.0 ],
+					"patching_rect" : [ 1027.25, 247.0, 117.0, 22.0 ],
 					"text" : "bindings.html#d-pad"
 				}
 
@@ -110,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1060.846153846153811, 212.0, 191.0, 22.0 ],
+					"patching_rect" : [ 1056.0, 212.0, 191.0, 22.0 ],
 					"text" : "bindings.html#start-select-cardinal"
 				}
 
@@ -122,7 +134,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 997.0, 289.0, 171.0, 22.0 ],
+					"patching_rect" : [ 998.5, 282.0, 171.0, 22.0 ],
 					"text" : "bindings.html#right-thumbstick"
 				}
 
@@ -134,7 +146,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 967.0, 327.0, 163.0, 22.0 ],
+					"patching_rect" : [ 969.75, 324.0, 163.0, 22.0 ],
 					"text" : "bindings.html#left-thumbstick"
 				}
 
@@ -146,7 +158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 934.0, 358.0, 175.0, 22.0 ],
+					"patching_rect" : [ 941.0, 364.0, 175.0, 22.0 ],
 					"text" : "bindings.html#shoulder-buttons"
 				}
 
@@ -286,11 +298,11 @@
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 16,
-					"numoutlets" : 16,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 711.0, 62.0, 449.0, 22.0 ],
-					"text" : "routepass main bass comp del rev bind loop lay ID_b ID_l ID_r ID_d ID_c doc save"
+					"numinlets" : 17,
+					"numoutlets" : 17,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 711.0, 62.0, 479.0, 22.0 ],
+					"text" : "routepass main bass comp del rev bind loop lay ID_b ID_l ID_r ID_d ID_c doc save attrib"
 				}
 
 			}
@@ -764,7 +776,7 @@
 					"patching_rect" : [ 185.0, 1261.0, 270.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 121.0, 8.0, 1560.0, 24.0 ],
-					"text" : "file:///Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/.docs/overview.html#save-restore"
+					"text" : "file:///Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/.docs/attributions.html"
 				}
 
 			}
@@ -1005,7 +1017,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 35.0, 961.0, 596.0 ],
 					"rendermode" : 0,
-					"url" : "file:///Users/jbaylies/Documents/Max%208/Projects/SousaFX-rnbo/.docs/overview.html#save-restore"
+					"url" : "file:///Users/jbaylies/Documents/Max%208/Projects/SousaFX-rnbo/.docs/bindings.html#right-thumbstick"
 				}
 
 			}
@@ -1421,6 +1433,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-49", 0 ]
 				}
@@ -1521,6 +1540,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-5", 13 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-5", 15 ]
 				}
 
 			}

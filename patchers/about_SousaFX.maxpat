@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 9,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 0,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 758.0, 361.0, 465.0, 503.0 ],
+		"rect" : [ 1637.0, 149.0, 890.0, 588.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 11.595186999999999,
 		"gridsize" : [ 15.0, 15.0 ],
@@ -22,9 +22,6 @@
 		"toolbars_unpinned_last_save" : 15,
 		"enablehscroll" : 0,
 		"enablevscroll" : 0,
-		"assistshowspatchername" : 0,
-		"commentary" : "",
-		"showcommentary" : 0,
 		"title" : "about sousafx",
 		"boxes" : [ 			{
 				"box" : 				{
@@ -265,8 +262,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 9,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -276,10 +273,19 @@
 						"openinpresentation" : 1,
 						"default_fontname" : "Kohinoor Telugu",
 						"gridsize" : [ 15.0, 15.0 ],
-						"assistshowspatchername" : 0,
-						"commentary" : "",
-						"showcommentary" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-309",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1238.0, 1224.0, 56.0, 25.0 ],
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-296",
 									"maxclass" : "newobj",
@@ -784,7 +790,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 1238.0, 1212.0, 59.0, 25.0 ],
+									"patching_rect" : [ 1238.0, 1189.0, 59.0, 25.0 ],
 									"text" : "loadbang"
 								}
 
@@ -1267,7 +1273,6 @@
 									"fontname" : "Monaco",
 									"fontsize" : 13.0,
 									"gradient" : 1,
-									"hidden" : 1,
 									"id" : "obj-399",
 									"ignoreclick" : 1,
 									"maxclass" : "message",
@@ -1277,6 +1282,7 @@
 									"patching_rect" : [ 2912.0, 6008.0, 126.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.0, 151.0, 172.0, 25.0 ],
+									"text" : "11.190292 %",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1397,7 +1403,6 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 14.369322152341018,
-									"hidden" : 1,
 									"id" : "obj-359",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -1405,7 +1410,8 @@
 									"patching_rect" : [ 2756.0, 5812.0, 592.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 130.0, 316.0, 24.0 ],
-									"textcolor" : [ 0.95450692, 0.67229308, 0.67229308, 1.0 ],
+									"text" : "Rank: Bronze Scientist 1",
+									"textcolor" : [ 0.95450692, 0.861776393004976, 0.67229308, 1.0 ],
 									"textjustification" : 1
 								}
 
@@ -1500,11 +1506,10 @@
 									"drawoffcolor" : 1,
 									"elementcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
 									"floatoutput" : 1,
-									"hidden" : 1,
 									"hint" : "progress to next rank",
 									"id" : "obj-317",
 									"ignoreclick" : 1,
-									"knobcolor" : [ 0.95450692, 0.67229308, 0.67229308, 1.0 ],
+									"knobcolor" : [ 0.95450692, 0.861776393004976, 0.67229308, 1.0 ],
 									"maxclass" : "slider",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -1667,7 +1672,6 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 14.369322152341018,
-									"hidden" : 1,
 									"id" : "obj-275",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -1675,6 +1679,7 @@
 									"patching_rect" : [ 2760.0, 5768.0, 592.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 102.0, 316.0, 24.0 ],
+									"text" : "14.44 hrs on record.",
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -2407,14 +2412,15 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
-									"hidden" : 1,
 									"id" : "obj-151",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 840.0, 2684.0, 427.0, 21.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 181.0, 186.0, 131.0, 21.0 ],
+									"presentation_linecount" : 4,
+									"presentation_rect" : [ 181.0, 186.0, 131.0, 66.0 ],
+									"text" : "SousaFX has been open, with audio on, for 4 hours total.",
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -2804,6 +2810,7 @@
 									"bgfillcolor_type" : "color",
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
+									"hidden" : 1,
 									"id" : "obj-1",
 									"items" : [ "Still", "evaluating..." ],
 									"maxclass" : "umenu",
@@ -3146,6 +3153,7 @@
 									"patching_rect" : [ 3216.0, 3644.0, 384.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, -2.0, 347.0, 21.0 ],
+									"text" : "Licensed to tubameister on September 5th 2025",
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -3788,8 +3796,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 9,
-											"minor" : 1,
-											"revision" : 0,
+											"minor" : 0,
+											"revision" : 9,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3797,9 +3805,6 @@
 										"classnamespace" : "box",
 										"rect" : [ 597.0, 173.0, 524.0, 252.0 ],
 										"gridsize" : [ 15.0, 15.0 ],
-										"assistshowspatchername" : 0,
-										"commentary" : "",
-										"showcommentary" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-1",
@@ -4152,8 +4157,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 9,
-											"minor" : 1,
-											"revision" : 0,
+											"minor" : 0,
+											"revision" : 9,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4161,9 +4166,6 @@
 										"classnamespace" : "box",
 										"rect" : [ 597.0, 173.0, 524.0, 252.0 ],
 										"gridsize" : [ 15.0, 15.0 ],
-										"assistshowspatchername" : 0,
-										"commentary" : "",
-										"showcommentary" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-1",
@@ -4530,8 +4532,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 9,
-											"minor" : 1,
-											"revision" : 0,
+											"minor" : 0,
+											"revision" : 9,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4539,9 +4541,6 @@
 										"classnamespace" : "box",
 										"rect" : [ 1415.0, 667.0, 617.0, 326.0 ],
 										"gridsize" : [ 15.0, 15.0 ],
-										"assistshowspatchername" : 0,
-										"commentary" : "",
-										"showcommentary" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
 													"comment" : "Julian day",
@@ -5053,7 +5052,9 @@
 												}
 
 											}
- ]
+ ],
+										"toolbaradditions" : [ "packagemanager" ],
+										"toolbarexclusions" : [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ]
 									}
 ,
 									"patching_rect" : [ 2276.0, 3432.0, 111.0, 19.0 ],
@@ -5162,7 +5163,6 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
-									"hidden" : 1,
 									"id" : "obj-324",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -5203,7 +5203,6 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
-									"hidden" : 1,
 									"id" : "obj-307",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -5222,9 +5221,11 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1532.0, 4164.0, 462.0, 21.0 ],
+									"patching_rect" : [ 1532.0, 4164.0, 469.0, 21.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 34.0, 307.0, 21.0 ],
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 0.0, 34.0, 307.0, 36.0 ],
+									"text" : "SousaFX has launched 42 times since installed on August 7th 2025",
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -5486,6 +5487,7 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
+									"hidden" : 1,
 									"id" : "obj-216",
 									"linecount" : 10,
 									"maxclass" : "comment",
@@ -5556,7 +5558,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1624.0, 1604.0, 693.0, 23.0 ]
+									"patching_rect" : [ 1624.0, 1604.0, 693.0, 23.0 ],
+									"text" : "write \"Macintosh HD:/Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/data/license.sousafx\""
 								}
 
 							}
@@ -6550,7 +6553,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-188", 0 ],
+									"destination" : [ "obj-309", 0 ],
 									"source" : [ "obj-189", 0 ]
 								}
 
@@ -7620,8 +7623,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"source" : [ "obj-31", 0 ]
+									"destination" : [ "obj-188", 0 ],
+									"source" : [ "obj-309", 0 ]
 								}
 
 							}
@@ -9429,8 +9432,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1998.0, 424.0, 396.0, 23.0 ],
 					"saved_object_attributes" : 					{
+						"client_rect" : [ 4, 87, 1440, 866 ],
 						"parameter_enable" : 0,
-						"parameter_mappable" : 0
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 0, 87, 1440, 866 ]
 					}
 ,
 					"text" : "pattrstorage sousafx-rnbo_updates @greedy 2 @savemode 0",
@@ -10086,6 +10091,7 @@
 					"outlettype" : [ "dictionary", "", "", "", "" ],
 					"patching_rect" : [ 1308.625, 374.0, 50.5, 21.0 ],
 					"saved_object_attributes" : 					{
+						"embed" : 0,
 						"legacy" : 1,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -10142,8 +10148,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 9,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 0,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -10151,9 +10157,6 @@
 						"classnamespace" : "box",
 						"rect" : [ 121.0, 87.0, 2405.0, 1319.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"assistshowspatchername" : 0,
-						"commentary" : "",
-						"showcommentary" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -14274,7 +14277,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1033.0, 33.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 205.0, 386.0, 224.0, 69.0 ],
+					"presentation_rect" : [ 225.5, 400.0, 207.0, 58.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0,
 					"saved_attribute_attributes" : 					{
@@ -14293,7 +14296,7 @@
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
-					"enablevscroll" : 1,
+					"enablevscroll" : 0,
 					"id" : "obj-87",
 					"lockeddragscroll" : 1,
 					"lockedsize" : 0,
@@ -14304,7 +14307,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 110.0, 445.0, 223.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 207.0, 387.0, 222.0, 67.0 ],
+					"presentation_rect" : [ 227.0, 401.0, 204.0, 56.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -14445,7 +14448,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 110.0, 362.0, 77.0, 28.0 ],
-					"textcolor" : [ 0.4, 0.837647058823529, 1.0, 1.0 ],
+					"textcolor" : [ 0.847059, 0.847059, 0.847059, 1.0 ],
 					"varname" : "github"
 				}
 
