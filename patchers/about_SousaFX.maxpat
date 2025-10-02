@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1637.0, 149.0, 890.0, 588.0 ],
+		"rect" : [ 1055.0, 482.0, 450.0, 475.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 11.595186999999999,
 		"gridsize" : [ 15.0, 15.0 ],
@@ -274,6 +274,54 @@
 						"default_fontname" : "Kohinoor Telugu",
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-313",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 437.0, 1277.5, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-308",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 397.5, 1171.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-279",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 638.0, 1124.0, 50.0, 25.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-97",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 347.0, 916.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-309",
 									"maxclass" : "newobj",
@@ -1273,6 +1321,7 @@
 									"fontname" : "Monaco",
 									"fontsize" : 13.0,
 									"gradient" : 1,
+									"hidden" : 1,
 									"id" : "obj-399",
 									"ignoreclick" : 1,
 									"maxclass" : "message",
@@ -1282,7 +1331,6 @@
 									"patching_rect" : [ 2912.0, 6008.0, 126.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 22.0, 151.0, 172.0, 25.0 ],
-									"text" : "11.190292 %",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1403,6 +1451,7 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 14.369322152341018,
+									"hidden" : 1,
 									"id" : "obj-359",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -1410,8 +1459,7 @@
 									"patching_rect" : [ 2756.0, 5812.0, 592.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 130.0, 316.0, 24.0 ],
-									"text" : "Rank: Bronze Scientist 1",
-									"textcolor" : [ 0.95450692, 0.861776393004976, 0.67229308, 1.0 ],
+									"textcolor" : [ 0.830382053662864, 0.67229308, 0.95450692, 1.0 ],
 									"textjustification" : 1
 								}
 
@@ -1506,10 +1554,11 @@
 									"drawoffcolor" : 1,
 									"elementcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
 									"floatoutput" : 1,
+									"hidden" : 1,
 									"hint" : "progress to next rank",
 									"id" : "obj-317",
 									"ignoreclick" : 1,
-									"knobcolor" : [ 0.95450692, 0.861776393004976, 0.67229308, 1.0 ],
+									"knobcolor" : [ 0.830382053662864, 0.67229308, 0.95450692, 1.0 ],
 									"maxclass" : "slider",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -1672,6 +1721,7 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 14.369322152341018,
+									"hidden" : 1,
 									"id" : "obj-275",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -1679,7 +1729,6 @@
 									"patching_rect" : [ 2760.0, 5768.0, 592.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 102.0, 316.0, 24.0 ],
-									"text" : "14.44 hrs on record.",
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -2412,15 +2461,14 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
+									"hidden" : 1,
 									"id" : "obj-151",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 840.0, 2684.0, 427.0, 21.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 181.0, 186.0, 131.0, 66.0 ],
-									"text" : "SousaFX has been open, with audio on, for 4 hours total.",
+									"presentation_rect" : [ 181.0, 186.0, 131.0, 21.0 ],
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -2810,7 +2858,6 @@
 									"bgfillcolor_type" : "color",
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
-									"hidden" : 1,
 									"id" : "obj-1",
 									"items" : [ "Still", "evaluating..." ],
 									"maxclass" : "umenu",
@@ -3153,7 +3200,6 @@
 									"patching_rect" : [ 3216.0, 3644.0, 384.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, -2.0, 347.0, 21.0 ],
-									"text" : "Licensed to tubameister on September 5th 2025",
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -5163,6 +5209,7 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
+									"hidden" : 1,
 									"id" : "obj-324",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -5203,6 +5250,7 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
+									"hidden" : 1,
 									"id" : "obj-307",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -5223,9 +5271,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 1532.0, 4164.0, 469.0, 21.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
-									"presentation_rect" : [ 0.0, 34.0, 307.0, 36.0 ],
-									"text" : "SousaFX has launched 42 times since installed on August 7th 2025",
+									"presentation_rect" : [ 0.0, 34.0, 307.0, 21.0 ],
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 
@@ -5487,7 +5533,6 @@
 								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 12.0,
-									"hidden" : 1,
 									"id" : "obj-216",
 									"linecount" : 10,
 									"maxclass" : "comment",
@@ -5558,8 +5603,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1624.0, 1604.0, 693.0, 23.0 ],
-									"text" : "write \"Macintosh HD:/Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/data/license.sousafx\""
+									"patching_rect" : [ 1624.0, 1604.0, 693.0, 23.0 ]
 								}
 
 							}
@@ -5927,6 +5971,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-237", 0 ],
+									"order" : 0,
+									"source" : [ "obj-118", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-308", 0 ],
+									"order" : 1,
 									"source" : [ "obj-118", 0 ]
 								}
 
@@ -7106,6 +7159,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-294", 0 ],
+									"order" : 1,
+									"source" : [ "obj-236", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-97", 0 ],
+									"order" : 0,
 									"source" : [ "obj-236", 0 ]
 								}
 
@@ -7113,6 +7175,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-276", 0 ],
+									"order" : 0,
+									"source" : [ "obj-237", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-313", 0 ],
+									"order" : 1,
 									"source" : [ "obj-237", 0 ]
 								}
 
@@ -7625,6 +7696,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-188", 0 ],
 									"source" : [ "obj-309", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-31", 0 ]
 								}
 
 							}
@@ -8253,7 +8331,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-279", 0 ],
+									"order" : 0,
+									"source" : [ "obj-67", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-69", 0 ],
+									"order" : 1,
 									"source" : [ "obj-67", 0 ]
 								}
 
