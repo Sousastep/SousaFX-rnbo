@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -14,65 +14,6 @@
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 659.0, 327.0, 88.0, 22.0 ],
-					"restore" : [ 0.0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr crossfade",
-					"varname" : "crossfade"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"hint" : "enable crossfade and disable time-lag-accumulator effect",
-					"id" : "obj-7",
-					"maxclass" : "live.toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 693.5, 361.0, 29.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 92.0, 36.0, 29.0, 24.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[1]",
-							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "live.toggle",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"varname" : "live.toggle[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 693.5, 401.0, 125.0, 22.0 ],
-					"text" : "prepend #1/crossfade"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
@@ -365,13 +306,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-279", 0 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-262", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -381,20 +315,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-279", 0 ],
 					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -410,12 +330,12 @@
 			"obj-13" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-2" : [ "spread", "spread", 0 ],
 			"obj-4" : [ "output volume", "output volume", 0 ],
-			"obj-7" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
 					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
 				}
 
 			}
