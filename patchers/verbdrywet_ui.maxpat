@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -14,6 +14,68 @@
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 885.0, 705.0, 128.0, 22.0 ],
+					"text" : "prepend #1/stutter_vol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 768.0, 257.0, 96.0, 22.0 ],
+					"restore" : [ 0.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr \"stutter vol\"",
+					"varname" : "stutter vol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"hint" : "",
+					"id" : "obj-24",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 808.0, 295.0, 71.0, 54.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 156.0, 26.0, 63.0, 54.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 50.0 ],
+							"parameter_longname" : "stutter vol",
+							"parameter_mmax" : 12.0,
+							"parameter_mmin" : -24.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "stutter vol",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.dial[7]"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -230,7 +292,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 378.0, 295.0, 70.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 95.0, 82.0, 70.0, 54.0 ],
+					"presentation_rect" : [ 73.0, 82.0, 70.0, 54.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 50.0 ],
@@ -372,7 +434,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 295.0, 271.0, 70.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 42.0, 82.0, 70.0, 54.0 ],
+					"presentation_rect" : [ 31.0, 82.0, 70.0, 54.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 3.0 ],
@@ -434,7 +496,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 174.0, 223.0, 71.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 148.0, 82.0, 71.0, 54.0 ],
+					"presentation_rect" : [ 115.0, 82.0, 71.0, 54.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 120.0 ],
@@ -465,7 +527,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 114.0, 199.0, 71.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 144.0, 26.0, 71.0, 54.0 ],
+					"presentation_rect" : [ 157.0, 82.0, 71.0, 54.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 12.0 ],
@@ -555,6 +617,7 @@
 					"patching_rect" : [ 217.0, 113.0, 326.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, -6.0, 204.5, 40.0 ],
+					"text" : "#2",
 					"textjustification" : 1
 				}
 
@@ -660,6 +723,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-23", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-279", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-279", 0 ],
 					"source" : [ "obj-258", 0 ]
 				}
@@ -748,19 +832,11 @@
 			"obj-13" : [ "dry vol", "dry vol", 0 ],
 			"obj-14" : [ "delay vol", "delay vol", 0 ],
 			"obj-2" : [ "jitter", "jitter", 0 ],
+			"obj-24" : [ "stutter vol", "stutter vol", 0 ],
 			"obj-4" : [ "size", "size", 0 ],
 			"obj-5" : [ "diff", "diff", 0 ],
 			"obj-6" : [ "damp", "damp", 0 ],
 			"obj-7" : [ "decay", "decay", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
