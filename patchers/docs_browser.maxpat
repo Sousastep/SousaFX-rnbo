@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1513.0, 687.0, 965.0, 631.0 ],
+		"rect" : [ 1471.0, 633.0, 965.0, 631.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -19,8 +19,20 @@
 		"righttoolbarpinned" : 2,
 		"bottomtoolbarpinned" : 2,
 		"toolbars_unpinned_last_save" : 15,
-		"title" : "Attributions - sousafx",
+		"title" : "Overview - sousafx",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 337.0, 242.0, 81.0, 22.0 ],
+					"text" : "overview.html"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "message",
@@ -481,7 +493,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 356.0, 345.0, 29.5, 22.0 ],
+					"patching_rect" : [ 337.0, 205.0, 29.5, 22.0 ],
 					"text" : "b"
 				}
 
@@ -776,7 +788,7 @@
 					"patching_rect" : [ 185.0, 1261.0, 270.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 121.0, 8.0, 1560.0, 24.0 ],
-					"text" : "file:///Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/.docs/attributions.html"
+					"text" : "file:///Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/.docs/overview.html"
 				}
 
 			}
@@ -953,7 +965,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 356.0, 303.0, 48.0, 28.0 ],
+					"patching_rect" : [ 337.0, 163.0, 48.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 4.0, 48.0, 28.0 ],
 					"text" : "home",
@@ -1426,6 +1438,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 2 ],
 					"source" : [ "obj-45", 0 ]
 				}
@@ -1566,7 +1585,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
+					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-51", 0 ]
 				}
 
