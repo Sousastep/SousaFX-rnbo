@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 2041.0, 1387.0 ],
+		"rect" : [ 0.0, 53.0, 2560.0, 1387.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -176,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 933.0, 479.0, 147.0, 22.0 ],
+					"patching_rect" : [ 933.0, 493.0, 147.0, 22.0 ],
 					"text" : "bass_mono_frequency $1"
 				}
 
@@ -12560,6 +12560,7 @@
 			"obj-344::obj-2::obj-13" : [ "dry vol", "dry vol", 0 ],
 			"obj-344::obj-2::obj-14" : [ "delay vol", "delay vol", 0 ],
 			"obj-344::obj-2::obj-2" : [ "jitter", "jitter", 0 ],
+			"obj-344::obj-2::obj-24" : [ "stutter vol", "stutter vol", 0 ],
 			"obj-344::obj-2::obj-4" : [ "size", "size", 0 ],
 			"obj-344::obj-2::obj-5" : [ "diff", "diff", 0 ],
 			"obj-344::obj-2::obj-6" : [ "damp", "damp", 0 ],
