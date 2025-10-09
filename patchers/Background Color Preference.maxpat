@@ -4,19 +4,31 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1044.0, 518.0, 1231.0, 781.0 ],
+		"rect" : [ 826.0, 175.0, 1636.0, 1134.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "background color preference",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 494.5, 779.0, 29.5, 22.0 ],
+					"text" : "t i i"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "message",
@@ -441,7 +453,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 254.0, 135.0, 63.0, 22.0 ],
-					"restore" : [ 0.879918032786885 ],
+					"restore" : [ 0.532513661202186 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -460,7 +472,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 234.0, 163.0, 51.0, 22.0 ],
-					"restore" : [ 0.202185792349727 ],
+					"restore" : [ 0.141347905282332 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -479,7 +491,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 206.0, 191.0, 52.0, 22.0 ],
-					"restore" : [ 0.276867030965392 ],
+					"restore" : [ 0.38615664845173 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -498,7 +510,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 180.0, 219.0, 56.0, 22.0 ],
-					"restore" : [ 0.639344262295082 ],
+					"restore" : [ 0.822176684881603 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -601,7 +613,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1103,7 +1115,9 @@
 								}
 
 							}
- ]
+ ],
+						"toolbaradditions" : [ "packagemanager" ],
+						"toolbarexclusions" : [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ]
 					}
 ,
 					"patching_rect" : [ 198.0, 466.0, 126.0, 23.0 ],
@@ -1143,24 +1157,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-447",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.0, 527.0, 70.0, 22.0 ],
-					"text" : "loadmess 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-448",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 712.0, 893.0, 70.0, 22.0 ],
+					"patching_rect" : [ 494.5, 744.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -1222,10 +1224,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 572.0, 1016.0, 386.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 87, 1440, 866 ],
+						"client_rect" : [ 0, 100, 412, 440 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 0, 87, 1440, 866 ]
+						"storage_rect" : [ 0, 100, 592, 464 ]
 					}
 ,
 					"text" : "pattrstorage \"Background Color Preference\" @savemode 0 @greedy 0",
@@ -1364,6 +1366,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-446", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-459", 0 ],
+					"source" : [ "obj-17", 1 ]
 				}
 
 			}
@@ -1616,14 +1632,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-446", 0 ],
-					"source" : [ "obj-447", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-459", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-448", 0 ]
 				}
 
@@ -1789,7 +1798,7 @@
  ],
 		"toolbaradditions" : [ "packagemanager" ],
 		"toolbarexclusions" : [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ],
-		"bgcolor" : [ 0.0, 0.054901960784314, 0.117647058823529, 0.879918032786885 ]
+		"bgcolor" : [ 0.007843137254902, 0.007843137254902, 0.141176470588235, 0.532513661202186 ]
 	}
 
 }
