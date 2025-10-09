@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1055.0, 482.0, 450.0, 475.0 ],
+		"rect" : [ 562.0, 387.0, 450.0, 475.0 ],
 		"openinpresentation" : 1,
 		"default_fontsize" : 11.595186999999999,
 		"gridsize" : [ 15.0, 15.0 ],
@@ -269,11 +269,72 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 87.0, 2492.0, 1319.0 ],
+						"rect" : [ 522.0, 90.0, 1954.0, 1267.0 ],
 						"openinpresentation" : 1,
 						"default_fontname" : "Kohinoor Telugu",
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Ableton Sans Medium",
+									"id" : "obj-306",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 2374.0, 1604.0, 112.0, 23.0 ],
+									"text" : "sprintf read \\\"%s\\\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-188",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1242.0, 1222.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-170",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1777.0, 1754.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-180",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1558.0, 3561.0, 53.0, 25.0 ],
+									"text" : "pipe 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-58",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1558.0, 3521.0, 56.0, 25.0 ],
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-313",
 									"maxclass" : "button",
@@ -328,7 +389,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1238.0, 1224.0, 56.0, 25.0 ],
+									"patching_rect" : [ 1238.0, 1344.0, 56.0, 25.0 ],
 									"text" : "deferlow"
 								}
 
@@ -364,7 +425,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1356.0, 3480.0, 83.0, 25.0 ],
+									"patching_rect" : [ 1243.0, 3608.0, 83.0, 25.0 ],
 									"text" : "r closebang_3"
 								}
 
@@ -625,7 +686,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1440.0, 3696.0, 131.0, 25.0 ],
+									"patching_rect" : [ 1278.0, 3746.0, 131.0, 25.0 ],
 									"text" : "s store_in_license_coll"
 								}
 
@@ -833,42 +894,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-189",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 1238.0, 1189.0, 59.0, 25.0 ],
-									"text" : "loadbang"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-188",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 1238.0, 1320.0, 24.0, 25.0 ],
-									"text" : "b 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-186",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1274.0, 1264.0, 137.0, 25.0 ],
-									"text" : "r \"About SousaFX_open\""
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-185",
 									"maxclass" : "button",
 									"numinlets" : 1,
@@ -922,7 +947,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 2300.0, 1488.0, 85.0, 25.0 ],
+									"patching_rect" : [ 2327.0, 1496.0, 85.0, 25.0 ],
 									"text" : "r project_path"
 								}
 
@@ -935,7 +960,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 2300.0, 1524.0, 178.0, 23.0 ],
+									"patching_rect" : [ 2327.0, 1532.0, 178.0, 23.0 ],
 									"text" : "combine symbol license.sousafx"
 								}
 
@@ -948,7 +973,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 2300.0, 1560.0, 153.0, 23.0 ],
+									"patching_rect" : [ 2327.0, 1568.0, 153.0, 23.0 ],
 									"text" : "sprintf write \\\"%s\\\""
 								}
 
@@ -1213,18 +1238,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1238.0, 1356.0, 56.0, 25.0 ],
-									"text" : "deferlow"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-20",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1459,7 +1472,7 @@
 									"patching_rect" : [ 2756.0, 5812.0, 592.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 130.0, 316.0, 24.0 ],
-									"textcolor" : [ 0.830382053662864, 0.67229308, 0.95450692, 1.0 ],
+									"textcolor" : [ 0.95450692, 0.67229308, 0.67229308, 1.0 ],
 									"textjustification" : 1
 								}
 
@@ -1558,7 +1571,7 @@
 									"hint" : "progress to next rank",
 									"id" : "obj-317",
 									"ignoreclick" : 1,
-									"knobcolor" : [ 0.830382053662864, 0.67229308, 0.95450692, 1.0 ],
+									"knobcolor" : [ 0.95450692, 0.67229308, 0.67229308, 1.0 ],
 									"maxclass" : "slider",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -5441,7 +5454,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1540.0, 3600.0, 27.0, 24.0 ]
+									"patching_rect" : [ 1558.0, 3600.0, 27.0, 24.0 ]
 								}
 
 							}
@@ -5453,7 +5466,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1440.0, 3544.0, 31.0, 31.0 ]
+									"patching_rect" : [ 1372.0, 3551.0, 31.0, 31.0 ]
 								}
 
 							}
@@ -5464,7 +5477,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 1440.0, 3600.0, 37.0, 25.0 ],
+									"patching_rect" : [ 1372.0, 3658.0, 37.0, 25.0 ],
 									"text" : "i"
 								}
 
@@ -5488,7 +5501,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1440.0, 3660.0, 103.0, 25.0 ],
+									"patching_rect" : [ 1278.0, 3710.0, 103.0, 25.0 ],
 									"text" : "prepend opened"
 								}
 
@@ -5603,7 +5616,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1624.0, 1604.0, 693.0, 23.0 ]
+									"patching_rect" : [ 1624.0, 1604.0, 722.0, 23.0 ]
 								}
 
 							}
@@ -5710,13 +5723,13 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 1592.0, 1684.0, 119.0, 25.0 ],
+									"patching_rect" : [ 1592.0, 1684.0, 115.000000000000227, 25.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
 									}
 ,
-									"text" : "coll license.sousafx"
+									"text" : "coll"
 								}
 
 							}
@@ -6023,6 +6036,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-128", 0 ],
+									"order" : 1,
+									"source" : [ "obj-121", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-306", 0 ],
+									"order" : 0,
 									"source" : [ "obj-121", 0 ]
 								}
 
@@ -6548,6 +6570,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-230", 0 ],
+									"source" : [ "obj-180", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-177", 0 ],
 									"source" : [ "obj-181", 0 ]
 								}
@@ -6585,13 +6614,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-188", 0 ],
-									"source" : [ "obj-186", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-192", 0 ],
 									"source" : [ "obj-187", 0 ]
 								}
@@ -6599,15 +6621,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-188", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-309", 0 ],
-									"source" : [ "obj-189", 0 ]
+									"source" : [ "obj-188", 0 ]
 								}
 
 							}
@@ -6696,7 +6711,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-230", 0 ],
+									"destination" : [ "obj-58", 0 ],
 									"source" : [ "obj-195", 0 ]
 								}
 
@@ -7694,15 +7709,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-188", 0 ],
-									"source" : [ "obj-309", 0 ]
+									"destination" : [ "obj-95", 0 ],
+									"source" : [ "obj-306", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"source" : [ "obj-31", 0 ]
+									"destination" : [ "obj-195", 0 ],
+									"source" : [ "obj-309", 0 ]
 								}
 
 							}
@@ -8188,13 +8203,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-195", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-74", 0 ],
 									"source" : [ "obj-50", 0 ]
 								}
@@ -8284,6 +8292,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-31", 1 ],
 									"source" : [ "obj-57", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-180", 0 ],
+									"source" : [ "obj-58", 0 ]
 								}
 
 							}
@@ -8600,7 +8615,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-170", 0 ],
+									"order" : 0,
+									"source" : [ "obj-95", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-185", 0 ],
+									"order" : 1,
 									"source" : [ "obj-95", 2 ]
 								}
 
@@ -8616,6 +8640,15 @@
 								"patchline" : 								{
 									"destination" : [ "obj-217", 0 ],
 									"source" : [ "obj-95", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-309", 0 ],
+									"midpoints" : [ 1665.500000000000227, 1719.0, 1533.0, 1719.0, 1533.0, 1308.0, 1247.5, 1308.0 ],
+									"order" : 2,
+									"source" : [ "obj-95", 2 ]
 								}
 
 							}
@@ -9467,7 +9500,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2272.0, 320.0, 604.0, 21.0 ],
-					"text" : "write \"Macintosh HD:/Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/data/sousafx-rnbo_updates.json\""
+					"text" : "write \"Macintosh HD:/Users/jbaylies/Documents/Max 9/Projects/SousaFX-0.11.1/data/sousafx-rnbo_updates.json\""
 				}
 
 			}
@@ -9519,10 +9552,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1998.0, 424.0, 396.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 87, 1440, 866 ],
+						"client_rect" : [ 0, 100, 412, 440 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 0, 87, 1440, 866 ]
+						"storage_rect" : [ 0, 100, 592, 464 ]
 					}
 ,
 					"text" : "pattrstorage sousafx-rnbo_updates @greedy 2 @savemode 0",
