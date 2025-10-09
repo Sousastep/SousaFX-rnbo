@@ -10,13 +10,50 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 2560.0, 1387.0 ],
+		"rect" : [ 0.0, 53.0, 2010.0, 1387.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "sousafx",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-427",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 3107.0, 1532.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-397",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 3107.0, 1570.0, 32.0, 22.0 ],
+					"text" : "path"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-392",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 3107.0, 1607.0, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-452",
 					"maxclass" : "newobj",
@@ -1616,7 +1653,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3341.0, 1658.0, 111.0, 22.0 ],
+					"patching_rect" : [ 3196.0, 1645.0, 111.0, 22.0 ],
 					"text" : "s real_project_path"
 				}
 
@@ -3906,7 +3943,7 @@
 					"patching_rect" : [ 512.0, 1806.0, 180.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 202.0, 124.0, 163.0, 41.0 ],
-					"text" : "-104.49 dB",
+					"text" : "-77.60 dB",
 					"textjustification" : 1
 				}
 
@@ -4076,7 +4113,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3153.0, 1749.0, 84.0, 22.0 ],
+					"patching_rect" : [ 3155.0, 1759.0, 84.0, 22.0 ],
 					"text" : "s project_path"
 				}
 
@@ -4089,7 +4126,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3153.0, 1713.0, 57.0, 23.0 ],
+					"patching_rect" : [ 3155.0, 1721.0, 57.0, 23.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -4103,76 +4140,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 3153.0, 1676.0, 152.0, 23.0 ],
+					"patching_rect" : [ 3155.0, 1682.0, 152.0, 23.0 ],
 					"text" : "regexp patchers\\\\/$ data/"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-226",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 3132.0, 1496.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-227",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 3132.0, 1531.0, 127.0, 23.0 ],
-					"text" : "SousaFX-rnbo.maxpat"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-228",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 3153.0, 1640.0, 55.0, 23.0 ],
-					"text" : "zl ecils 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-229",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 3132.0, 1604.0, 102.0, 23.0 ],
-					"text" : "regexp (.*\\\\/)(.*)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-231",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 3132.0, 1568.0, 79.0, 23.0 ],
-					"text" : "absolutepath"
 				}
 
 			}
@@ -5710,7 +5679,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1168.0, 569.0, 92.00000274181366, 22.0 ],
-					"restore" : [ 150.6089865273496 ],
+					"restore" : [ 169.715520479188825 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -5794,19 +5763,6 @@
 ,
 					"text" : "pattr \"metro vol\"",
 					"varname" : "metro vol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 7.117721435107339,
-					"id" : "obj-115",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 3248.0, 1595.0, 90.666669368743896, 46.0 ],
-					"text" : "https://cycling74.com/forums/a-workaround-path-to-standalone-from-within-standalone#reply-59412e0bd2ed47139f7cc8b1"
 				}
 
 			}
@@ -5996,11 +5952,12 @@
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-19",
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3014.0, 1923.0, 119.0, 23.0 ]
+					"patching_rect" : [ 3014.0, 1923.0, 119.0, 95.0 ]
 				}
 
 			}
@@ -7025,91 +6982,25 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 981.0, 1368.0, 483.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"pre-xfade-dry/himid" : 						{
-							"label" : "himid",
+						"p_obj-16/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth_vol" : 						{
-							"label" : "synth_vol",
+						"jb_autowah/max_lfo_floor" : 						{
+							"label" : "max_lfo_floor",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth1/limiter/attack" : 						{
-							"label" : "attack",
+						"synth1/limiter/gain" : 						{
+							"label" : "gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"tubasolo/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tap/time_sig_numerator" : 						{
-							"label" : "time_sig_numerator",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/damp" : 						{
-							"label" : "damp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/transp" : 						{
-							"label" : "transp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_offset" : 						{
+						"jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
 							"label" : "stutter_offset",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -7121,632 +7012,8 @@
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/lowcut" : 						{
-							"label" : "lowcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/min_lfo_ceiling" : 						{
-							"label" : "min_lfo_ceiling",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/del_vol" : 						{
-							"label" : "del_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_EAST" : 						{
-							"label" : "BTN_EAST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/max_lfo_ceiling" : 						{
-							"label" : "max_lfo_ceiling",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_NORTH" : 						{
-							"label" : "BTN_NORTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"bindings/lfo_floor_env_sens_binding_curve" : 						{
-							"label" : "lfo_floor_env_sens_binding_curve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/framesPerSecond" : 						{
-							"label" : "framesPerSecond",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/randomize_lfp_type" : 						{
-							"label" : "randomize_lfp_type",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_HAT0Y" : 						{
-							"label" : "ABS_HAT0Y",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
-							"label" : "stutter_reverse",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_micpre/jb_envelope/Env Sens" : 						{
-							"label" : "Env Sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"post-xover-lows/himidfq" : 						{
 							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/jitter" : 						{
-							"label" : "jitter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/window" : 						{
-							"label" : "window",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_SOUTH" : 						{
-							"label" : "BTN_SOUTH",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/max_lfo_floor" : 						{
-							"label" : "max_lfo_floor",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/damp" : 						{
-							"label" : "damp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/filter_enable" : 						{
-							"label" : "filter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/lfo_env_sens" : 						{
-							"label" : "lfo_env_sens",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/midfreq" : 						{
-							"label" : "midfreq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/jitter" : 						{
-							"label" : "jitter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_X" : 						{
-							"label" : "ABS_X",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_metronome/metronome_volume" : 						{
-							"label" : "metronome_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_WEST" : 						{
-							"label" : "BTN_WEST",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_SELECT" : 						{
-							"label" : "BTN_SELECT",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pitchshift/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/drive" : 						{
-							"label" : "drive",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_HAT0X" : 						{
-							"label" : "ABS_HAT0X",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7757,188 +7024,26 @@
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-dry/comp" : 						{
-							"label" : "comp",
+						"tap/BPM" : 						{
+							"label" : "BPM",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"looper/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/BTN_START" : 						{
-							"label" : "BTN_START",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/spread" : 						{
+						"pitchshift/spread" : 						{
 							"label" : "spread",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-wet/himid" : 						{
-							"label" : "himid",
+						"looper/filter_enable" : 						{
+							"label" : "filter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"last/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/diff" : 						{
-							"label" : "diff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/damp" : 						{
-							"label" : "damp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"verbwrap/main/size" : 						{
-							"label" : "size",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/mix" : 						{
-							"label" : "mix",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/release" : 						{
-							"label" : "release",
+						"synth/output_gain" : 						{
+							"label" : "output_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -7949,188 +7054,26 @@
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-234/p_obj-48/enable_scatter" : 						{
+						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
 							"label" : "enable_scatter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"overdrive/mid" : 						{
-							"label" : "mid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
-							"label" : "stutter_window_size_ms",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/input_gain" : 						{
-							"label" : "input_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/release" : 						{
+						"looper/limiter/release" : 						{
 							"label" : "release",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-dry/output_gain" : 						{
-							"label" : "output_gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_autowah/min_lfo_floor" : 						{
-							"label" : "min_lfo_floor",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth/comp" : 						{
-							"label" : "comp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/volume" : 						{
-							"label" : "volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/limiter/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_Z" : 						{
-							"label" : "ABS_Z",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/perc/decay" : 						{
-							"label" : "decay",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"main/limiter/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"bindings/lfo_ceiling_env_sens_binding_curve" : 						{
-							"label" : "lfo_ceiling_env_sens_binding_curve",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
-							"label" : "stutter_output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/spread" : 						{
-							"label" : "spread",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/attack" : 						{
+						"solo/attack" : 						{
 							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"verbwrap/main/jitter" : 						{
-							"label" : "jitter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tap/BPM" : 						{
-							"label" : "BPM",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/attack" : 						{
-							"label" : "attack",
+						"jb_stutterwrap/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8141,188 +7084,26 @@
 							"parsestring" : ""
 						}
 ,
-						"tubasolo/dry_vol" : 						{
-							"label" : "dry_vol",
+						"gp_noisegatewrap/noise gate thresh" : 						{
+							"label" : "noise gate thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_metronome/alert_volume" : 						{
-							"label" : "alert_volume",
+						"pre-xfade-dry/input_gain" : 						{
+							"label" : "input_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"tubasolo/size" : 						{
-							"label" : "size",
+						"jb_autowah/lfo_env_sens" : 						{
+							"label" : "lfo_env_sens",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_autowah/lpf_type" : 						{
-							"label" : "lpf_type",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-16/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"init/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"drum/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"looper/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"final/himidfq" : 						{
-							"label" : "himidfq",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-wet/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
-							"label" : "stutter_accel_vol_dip_amt",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"post-xover-lows/himid" : 						{
-							"label" : "himid",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/release" : 						{
-							"label" : "release",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/thresh" : 						{
-							"label" : "thresh",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/gain" : 						{
-							"label" : "gain",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"synth1/output_volume" : 						{
-							"label" : "output_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"gpin/ABS_GAS" : 						{
-							"label" : "ABS_GAS",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
-							"label" : "staircase_amount",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"pre-xfade-dry/lookahead" : 						{
-							"label" : "lookahead",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap[1]/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"overdrive/highcut" : 						{
-							"label" : "highcut",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"last/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"solo1/limiter/attack" : 						{
-							"label" : "attack",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
-							"label" : "bypass_stutter_bandpass",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_stutterwrap/p_obj-48/enable_scatter" : 						{
-							"label" : "enable_scatter",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"tubasolo/wet_vol" : 						{
-							"label" : "wet_vol",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-212/p_obj-48/stutter_accel" : 						{
-							"label" : "stutter_accel",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"jb_drums/drum_volume" : 						{
-							"label" : "drum_volume",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"p_obj-169/jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
-							"label" : "autopan_amount",
+						"synth/input_gain" : 						{
+							"label" : "input_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8333,26 +7114,50 @@
 							"parsestring" : ""
 						}
 ,
-						"drum/limiter/gain" : 						{
-							"label" : "gain",
+						"p_obj-16/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"overdrive/bass" : 						{
-							"label" : "bass",
+						"synth1/filter_enable" : 						{
+							"label" : "filter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
-							"label" : "stutter_offset",
+						"pre-xfade-wet/himidfq" : 						{
+							"label" : "himidfq",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"main/limiter/attack" : 						{
-							"label" : "attack",
+						"p_obj-16/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8363,25 +7168,43 @@
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_Y" : 						{
-							"label" : "ABS_Y",
+						"jb_autowah/min_lfo_ceiling" : 						{
+							"label" : "min_lfo_ceiling",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"main/limiter/thresh" : 						{
-							"label" : "thresh",
+						"jb_drums/perc/diff" : 						{
+							"label" : "diff",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
+						"pre-xfade-dry/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth1/limiter/lookahead" : 						{
+						"tubasolo/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/lookahead" : 						{
 							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
@@ -8393,26 +7216,44 @@
 							"parsestring" : ""
 						}
 ,
-						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
-							"label" : "stutter_enable",
+						"verbwrap/main/mix" : 						{
+							"label" : "mix",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_RZ" : 						{
-							"label" : "ABS_RZ",
+						"solo/himidfq" : 						{
+							"label" : "himidfq",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/BTN_TL" : 						{
-							"label" : "BTN_TL",
+						"last/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gpin/BTN_TR" : 						{
-							"label" : "BTN_TR",
+						"solo/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"bindings/lfo_ceiling_env_sens_binding_curve" : 						{
+							"label" : "lfo_ceiling_env_sens_binding_curve",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8423,26 +7264,50 @@
 							"parsestring" : ""
 						}
 ,
-						"gpin/ABS_BRAKE" : 						{
-							"label" : "ABS_BRAKE",
+						"pre-xfade-wet/output_gain" : 						{
+							"label" : "output_gain",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
-							"label" : "stutter_gated_or_thru",
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"init/thresh" : 						{
-							"label" : "thresh",
+						"p_obj-212/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"synth1/limiter/thresh" : 						{
-							"label" : "thresh",
+						"jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/attack" : 						{
+							"label" : "attack",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8453,26 +7318,56 @@
 							"parsestring" : ""
 						}
 ,
-						"pre-xfade-wet/input_gain" : 						{
-							"label" : "input_gain",
+						"main/filter_enable" : 						{
+							"label" : "filter_enable",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"pitchshift/spread" : 						{
-							"label" : "spread",
+						"solo1/limiter/lookahead" : 						{
+							"label" : "lookahead",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"p_obj-234/p_obj-48/staircase_enable" : 						{
-							"label" : "staircase_enable",
+						"p_obj-234/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"jb_autowah/min_dist_btwn_flcl" : 						{
-							"label" : "min_dist_btwn_flcl",
+						"jb_drums/perc/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8483,14 +7378,818 @@
 							"parsestring" : ""
 						}
 ,
+						"bindings/lfo_floor_env_sens_binding_curve" : 						{
+							"label" : "lfo_floor_env_sens_binding_curve",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/mid" : 						{
+							"label" : "mid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/drum_volume" : 						{
+							"label" : "drum_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/window" : 						{
+							"label" : "window",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/min_lfo_floor" : 						{
+							"label" : "min_lfo_floor",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth_vol" : 						{
+							"label" : "synth_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/framesPerSecond" : 						{
+							"label" : "framesPerSecond",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/volume" : 						{
+							"label" : "volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tap/time_sig_numerator" : 						{
+							"label" : "time_sig_numerator",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/randomize_lfp_type" : 						{
+							"label" : "randomize_lfp_type",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_SELECT" : 						{
+							"label" : "BTN_SELECT",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_TL" : 						{
+							"label" : "BTN_TL",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/transp" : 						{
+							"label" : "transp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pitchshift/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/max_lfo_ceiling" : 						{
+							"label" : "max_lfo_ceiling",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/highcut" : 						{
+							"label" : "highcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_output_volume" : 						{
+							"label" : "stutter_output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_NORTH" : 						{
+							"label" : "BTN_NORTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/wet_vol" : 						{
+							"label" : "wet_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_START" : 						{
+							"label" : "BTN_START",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/dry_vol" : 						{
+							"label" : "dry_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/midfreq" : 						{
+							"label" : "midfreq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_X" : 						{
+							"label" : "ABS_X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Y" : 						{
+							"label" : "ABS_Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_WEST" : 						{
+							"label" : "BTN_WEST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_Z" : 						{
+							"label" : "ABS_Z",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/del_vol" : 						{
+							"label" : "del_vol",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_HAT0Y" : 						{
+							"label" : "ABS_HAT0Y",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_BRAKE" : 						{
+							"label" : "ABS_BRAKE",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_EAST" : 						{
+							"label" : "BTN_EAST",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_SOUTH" : 						{
+							"label" : "BTN_SOUTH",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_offset" : 						{
+							"label" : "stutter_offset",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_micpre/jb_envelope/Env Sens" : 						{
+							"label" : "Env Sens",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_HAT0X" : 						{
+							"label" : "ABS_HAT0X",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/diff" : 						{
+							"label" : "diff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/bypass_stutter_bandpass" : 						{
+							"label" : "bypass_stutter_bandpass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/output_volume" : 						{
+							"label" : "output_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"solo1/output_volume" : 						{
 							"label" : "output_volume",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"gp_noisegatewrap/noise gate thresh" : 						{
-							"label" : "noise gate thresh",
+						"p_obj-16/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/mix" : 						{
+							"label" : "mix",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/lowcut" : 						{
+							"label" : "lowcut",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/lpf_type" : 						{
+							"label" : "lpf_type",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/jitter" : 						{
+							"label" : "jitter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/damp" : 						{
+							"label" : "damp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/filter_enable" : 						{
+							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/BTN_TR" : 						{
+							"label" : "BTN_TR",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-16/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_GAS" : 						{
+							"label" : "ABS_GAS",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/drive" : 						{
+							"label" : "drive",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth1/limiter/thresh" : 						{
+							"label" : "thresh",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -8501,8 +8200,272 @@
 							"parsestring" : ""
 						}
 ,
-						"main/filter_enable" : 						{
+						"p_obj-234/p_obj-48/stutter_reverse" : 						{
+							"label" : "stutter_reverse",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo1/filter_enable" : 						{
 							"label" : "filter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"last/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"looper/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/staircase_amount" : 						{
+							"label" : "staircase_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_autowah/min_dist_btwn_flcl" : 						{
+							"label" : "min_dist_btwn_flcl",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/himidfq" : 						{
+							"label" : "himidfq",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/enable_scatter" : 						{
+							"label" : "enable_scatter",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel" : 						{
+							"label" : "stutter_accel",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"final/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_metronome/alert_volume" : 						{
+							"label" : "alert_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"init/gain" : 						{
+							"label" : "gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"solo/input_gain" : 						{
+							"label" : "input_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/output_gain" : 						{
+							"label" : "output_gain",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"overdrive/bass" : 						{
+							"label" : "bass",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"post-xover-lows/comp" : 						{
+							"label" : "comp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/himid" : 						{
+							"label" : "himid",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/attack" : 						{
+							"label" : "attack",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms" : 						{
+							"label" : "stutter_window_size_ms",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_metronome/metronome_volume" : 						{
+							"label" : "metronome_volume",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-169/jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/thresh" : 						{
+							"label" : "thresh",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/decay" : 						{
+							"label" : "decay",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_accel_vol_dip_amt" : 						{
+							"label" : "stutter_accel_vol_dip_amt",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-dry/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_drums/perc/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"main/spread" : 						{
+							"label" : "spread",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"gpin/ABS_RZ" : 						{
+							"label" : "ABS_RZ",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"pre-xfade-wet/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"verbwrap/main/size" : 						{
+							"label" : "size",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap[1]/p_obj-48/autopan_amount" : 						{
+							"label" : "autopan_amount",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"synth/release" : 						{
+							"label" : "release",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"jb_stutterwrap/p_obj-48/staircase_enable" : 						{
+							"label" : "staircase_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"drum/limiter/lookahead" : 						{
+							"label" : "lookahead",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-212/p_obj-48/stutter_enable" : 						{
+							"label" : "stutter_enable",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"p_obj-234/p_obj-48/stutter_gated_or_thru" : 						{
+							"label" : "stutter_gated_or_thru",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"tubasolo/stutter_vol" : 						{
+							"label" : "stutter_vol",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -9888,43 +9851,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-227", 0 ],
-					"source" : [ "obj-226", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-231", 0 ],
-					"source" : [ "obj-227", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-225", 0 ],
-					"order" : 1,
-					"source" : [ "obj-228", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-298", 0 ],
-					"order" : 0,
-					"source" : [ "obj-228", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-228", 0 ],
-					"source" : [ "obj-229", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-236", 0 ],
 					"order" : 1,
 					"source" : [ "obj-230", 0 ]
@@ -9936,13 +9862,6 @@
 					"destination" : [ "obj-245", 6 ],
 					"order" : 0,
 					"source" : [ "obj-230", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-229", 0 ],
-					"source" : [ "obj-231", 0 ]
 				}
 
 			}
@@ -11493,6 +11412,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-225", 0 ],
+					"order" : 1,
+					"source" : [ "obj-392", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-298", 0 ],
+					"order" : 0,
+					"source" : [ "obj-392", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-160", 0 ],
 					"source" : [ "obj-394", 12 ]
 				}
@@ -11642,6 +11577,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-364", 0 ],
 					"source" : [ "obj-396", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-392", 0 ],
+					"source" : [ "obj-397", 0 ]
 				}
 
 			}
@@ -11857,6 +11799,13 @@
 					"destination" : [ "obj-444", 0 ],
 					"order" : 0,
 					"source" : [ "obj-425", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-397", 0 ],
+					"source" : [ "obj-427", 0 ]
 				}
 
 			}
@@ -12651,6 +12600,16 @@
 			"obj-428" : [ "Freq", "Freq", 0 ],
 			"obj-431" : [ "Mono", "Mono", 0 ],
 			"obj-59" : [ "Alert Volume", "Alert Volume", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"parameter_overrides" : 			{
 				"obj-281::obj-272::obj-10" : 				{
 					"parameter_longname" : "live.numbox[8]"
@@ -13102,286 +13061,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "BWDR_Clap_01.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_02.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_03.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_04.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_05.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_06.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_07.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_08.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_09.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_10.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_11.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_12.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_13.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_14.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_15.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_16.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_17.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_18.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_19.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Clap_20.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Claps",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_01.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_02.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_03.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_04.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_05.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_06.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_07.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_08.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_09.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_10.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_11.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_12.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_13.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_14.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_15.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_16.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_17.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_18.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_19.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BWDR_Percussion_20.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"patcherrelativepath" : "../media/Black Octopus Sound Blackwarp Dubstep And Riddim/_Drums_Percussions",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Background Color Preference.json",
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
 				"patcherrelativepath" : "../data",
@@ -13393,454 +13072,6 @@
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_aurora.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_blade.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_blaster.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_cake.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_colors.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_cyclone.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_dawn.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_depressed_alt.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_depressed_chorus.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_depressed_verse.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_dream.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_fader.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_faith.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_fame.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_giant.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_heartbeat_chorus.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_heartbeat_verse.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_hider.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_hills.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_house.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_magician.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_magnificent.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_page.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_player.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_rare.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_repeat_chorus.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_repeat_verse.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_revamp.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_sky.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_solitude.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_stranger.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_tantrum.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_taste.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_tennis.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_tin.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_kick_velvet.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Kicks",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_block.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_blur.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_bubble.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_cyclone.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_depressed.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_dreamer.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_fatality.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_favor.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_flower.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_fly.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_force.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_giant.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_heartbeat_chorus.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_heartbeat_verse.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_joker.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_lucid.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_magician.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_pill.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_pony.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_pure.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_repeat.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_revamp.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_smaker.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_souls.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_tantrum.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_tomato.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_tommy.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "DS_UKD_drum_snare_velvet.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"patcherrelativepath" : "../media/Dropgun Samples UK Dubstep/Drum_One_Shots/Snares",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
@@ -13862,6 +13093,41 @@
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clap1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clap2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clap3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clap4.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clap5.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/clap",
+				"patcherrelativepath" : "../media/clap",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
@@ -13890,6 +13156,27 @@
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cym1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
+				"patcherrelativepath" : "../media/cym",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cym2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
+				"patcherrelativepath" : "../media/cym",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cym3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/cym",
+				"patcherrelativepath" : "../media/cym",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
@@ -13980,6 +13267,41 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "kick1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick4.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "kick5.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/kick",
+				"patcherrelativepath" : "../media/kick",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "kofi_qr.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
 				"patcherrelativepath" : ".",
@@ -14015,13 +13337,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "license.sousafx",
-				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "limiter_ui.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
 				"patcherrelativepath" : ".",
@@ -14032,6 +13347,41 @@
 				"name" : "quack.wav",
 				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/alert",
 				"patcherrelativepath" : "../media/alert",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare4.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "snare5.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/snare",
+				"patcherrelativepath" : "../media/snare",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -14060,6 +13410,27 @@
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tom1.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
+				"patcherrelativepath" : "../media/tom",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tom2.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
+				"patcherrelativepath" : "../media/tom",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tom3.wav",
+				"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/media/tom",
+				"patcherrelativepath" : "../media/tom",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
