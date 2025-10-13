@@ -2,7 +2,7 @@
 	"name" : "SousaFX-rnbo",
 	"version" : 1,
 	"creationdate" : 3827413226,
-	"modificationdate" : 3837184898,
+	"modificationdate" : 3843239448,
 	"viewrect" : [ 75.0, 156.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -16,12 +16,12 @@
 				"toplevel" : 1
 			}
 ,
-			"bindings_info.maxpat" : 			{
+			"floating window positioner.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"floating window positioner.maxpat" : 			{
+			"about_SousaFX.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -46,6 +46,11 @@
 				"local" : 1
 			}
 ,
+			"bindings_info.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"jb.vfxenvouts.rnbopat" : 			{
 				"kind" : "rnbopat",
 				"local" : 1,
@@ -66,8 +71,8 @@
 
 			}
 ,
-			"about_SousaFX.maxpat" : 			{
-				"kind" : "patcher",
+			"ra.crossover2nd.rnbopat" : 			{
+				"kind" : "rnbopat",
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
@@ -82,11 +87,19 @@
 
 		}
 ,
+		"code" : 		{
+
+		}
+,
 		"data" : 		{
 
 		}
 ,
 		"externals" : 		{
+
+		}
+,
+		"other" : 		{
 
 		}
 
