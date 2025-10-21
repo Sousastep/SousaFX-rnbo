@@ -16,13 +16,27 @@
 		"title" : "jb.bindings",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-374",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 3181.0, 2921.0, 93.0, 23.0 ],
+					"rnbo_classname" : "s",
+					"rnbo_serial" : 82,
+					"rnbo_uniqueid" : "s_obj-374",
+					"text" : "s \"LFO pow (bi)\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 0.454901960784314, 0.0, 1.0, 1.0 ],
 					"id" : "obj-171",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 3062.0, 2654.0, 125.0, 23.0 ],
+					"patching_rect" : [ 3181.0, 2705.0, 125.0, 23.0 ],
 					"rnbo_classname" : "r",
 					"rnbo_serial" : 63,
 					"rnbo_uniqueid" : "r_obj-171",
@@ -24086,6 +24100,13 @@
 					"destination" : [ "obj-66", 0 ],
 					"order" : 0,
 					"source" : [ "obj-170", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-374", 0 ],
+					"source" : [ "obj-171", 0 ]
 				}
 
 			}
