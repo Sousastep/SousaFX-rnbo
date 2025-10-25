@@ -2,7 +2,7 @@
 	"name" : "SousaFX-rnbo",
 	"version" : 1,
 	"creationdate" : 3827413226,
-	"modificationdate" : 3843571964,
+	"modificationdate" : 3844001580,
 	"viewrect" : [ 425.0, 87.0, 300.0, 1067.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -16,6 +16,16 @@
 				"toplevel" : 1
 			}
 ,
+			"eq_ui.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
 			"floating window positioner.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -24,6 +34,16 @@
 			"about_SousaFX.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"bassline_eq.rnbopat" : 			{
+				"kind" : "rnbopat",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"comp_ui.maxpat" : 			{
@@ -72,6 +92,16 @@
 			}
 ,
 			"ra.crossover2nd.rnbopat" : 			{
+				"kind" : "rnbopat",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"thumbstick_router.rnbopat" : 			{
 				"kind" : "rnbopat",
 				"local" : 1,
 				"singleton" : 				{
