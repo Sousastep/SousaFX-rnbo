@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 2010.0, 1387.0 ],
+		"rect" : [ 1087.0, 372.0, 386.0, 694.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbarvisible" : 0,
@@ -27,7 +27,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 372.0, 777.0, 122.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 132.0, 88.0, 122.0, 47.0 ],
+					"presentation_rect" : [ 130.5, 86.0, 122.0, 47.0 ],
 					"text" : "soloing",
 					"textjustification" : 1
 				}
@@ -46,7 +46,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 369.0, 769.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 9.0, 369.0, 676.0 ],
+					"presentation_rect" : [ 8.5, 7.0, 369.0, 676.0 ],
 					"proportion" : 0.5
 				}
 
@@ -1800,7 +1800,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 901.0, 584.0, 84.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 102.0, 536.0, 84.0, 48.0 ],
+					"presentation_rect" : [ 16.0, 482.0, 84.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[3]",
@@ -1892,7 +1892,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 876.0, 444.0, 84.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 16.0, 482.0, 84.0, 48.0 ],
+					"presentation_rect" : [ 102.0, 536.0, 84.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[1]",
