@@ -2,7 +2,7 @@
 	"name" : "SousaFX-rnbo",
 	"version" : 1,
 	"creationdate" : 3827413226,
-	"modificationdate" : 3844001580,
+	"modificationdate" : 3844452398,
 	"viewrect" : [ 425.0, 87.0, 300.0, 1067.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -16,16 +16,6 @@
 				"toplevel" : 1
 			}
 ,
-			"eq_ui.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
 			"floating window positioner.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -36,22 +26,17 @@
 				"local" : 1
 			}
 ,
-			"bassline_eq.rnbopat" : 			{
-				"kind" : "rnbopat",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
 			"comp_ui.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"comp_window.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"eq_ui.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -66,9 +51,24 @@
 				"local" : 1
 			}
 ,
+			"bassline_eq.rnbopat" : 			{
+				"kind" : "rnbopat",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
 			"bindings_info.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"jb.vfxenvouts.rnbopat" : 			{
@@ -103,6 +103,16 @@
 ,
 			"thumbstick_router.rnbopat" : 			{
 				"kind" : "rnbopat",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"verbdrums_ui.maxpat" : 			{
+				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
