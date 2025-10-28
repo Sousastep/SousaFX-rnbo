@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 2560.0, 1387.0 ],
+		"rect" : [ 0.0, 53.0, 2194.0, 1043.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
@@ -23,6 +23,30 @@
 		"enabletransparentbgwithtitlebar" : 1,
 		"title" : "reverb parameters",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "jb_drums/perc", "Drums" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "verbdrums_ui.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 493.0, 271.0, 190.0, 143.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 426.0, 7.0, 190.0, 143.0 ],
+					"varname" : "verbdrums_ui",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-374",
 					"maxclass" : "newobj",
@@ -89,30 +113,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 327.0, 34.0, 78.0, 22.0 ],
 					"text" : "r bgcolor_set"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "jb_drums/perc", "Drums" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-4",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "verb_ui.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 495.0, 271.0, 201.0, 143.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 423.0, 7.0, 188.0, 143.0 ],
-					"varname" : "verb_ui[2]",
-					"viewvisibility" : 1
 				}
 
 			}
