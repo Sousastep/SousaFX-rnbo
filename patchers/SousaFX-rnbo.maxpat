@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 16.0, 60.0, 418.0, 556.0 ],
+        "rect": [ 17.0, 62.0, 422.0, 556.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -34,7 +34,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1376.0, 845.0, 85.0, 22.0 ],
-                    "restore": [ -8.0 ],
+                    "restore": [ -10.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -140,7 +140,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1340.0, 650.0, 93.0, 22.0 ],
-                    "restore": [ -8.0 ],
+                    "restore": [ -7.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2181,7 +2181,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2944.0, 1770.0, 57.0, 38.0 ],
+                    "patching_rect": [ 2944.0, 1769.0, 57.0, 38.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 18.0, 388.0, 73.0, 38.0 ],
                     "text": "save",
@@ -4039,7 +4039,7 @@
                     "patching_rect": [ 512.0, 1806.0, 180.0, 41.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.0, 124.0, 163.0, 41.0 ],
-                    "text": "-88.93 dB",
+                    "text": "-90.14 dB",
                     "textjustification": 1
                 }
             },
@@ -5656,7 +5656,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1294.0, 410.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -42.0 ],
+                    "restore": [ -45.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5673,7 +5673,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1322.0, 550.0, 84.00000250339508, 22.0 ],
-                    "restore": [ -8.0 ],
+                    "restore": [ -4.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5690,7 +5690,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1407.0, 1010.0, 94.0000028014183, 22.0 ],
-                    "restore": [ -11.086614173228327 ],
+                    "restore": [ -15.590551181102335 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -10436,14 +10436,6 @@
             "obj-431": [ "Mono", "Mono", 0 ],
             "obj-439": [ "Clap Volume", "Clap", 0 ],
             "obj-59": [ "Alert Volume", "Loop Alert", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-281::obj-272::obj-10": {
                     "parameter_longname": "live.numbox[8]"
