@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 0.0, 53.0, 2194.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -26,7 +26,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 130.5, 86.0, 122.0, 47.0 ],
+                    "presentation_rect": [ 130.0, 88.0, 122.0, 47.0 ],
                     "text": "soloing",
                     "textjustification": 1
                 }
@@ -44,8 +44,71 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 8.5, 7.0, 369.0, 676.0 ],
+                    "presentation_rect": [ 8.0, 9.0, 369.0, 676.0 ],
                     "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-89",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "float" ],
+                    "patching_rect": [ 589.0, 1137.0, 40.0, 22.0 ],
+                    "text": "* 0.01"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-72",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 548.0, 1036.0, 102.0, 22.0 ],
+                    "restore": [ 50.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"Min LPF Q\"",
+                    "varname": "Min LPF Q"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-84",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 589.0, 1071.0, 84.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 16.0, 624.0, 52.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "Min LPF Q",
+                            "parameter_mmax": 90.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "Min LPF Q",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 5
+                        }
+                    },
+                    "varname": "Min LPF Q[1]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-88",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 589.0, 1175.0, 153.0, 22.0 ],
+                    "text": "prepend jb_autowah/min_q"
                 }
             },
             {
@@ -1209,7 +1272,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1611.0, 472.0, 26.0, 18.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 24.0, 629.0, 26.0, 18.0 ],
+                    "presentation_rect": [ 73.0, 653.0, 20.0, 20.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
@@ -1225,6 +1288,7 @@
             },
             {
                 "box": {
+                    "activebgcolor": [ 0.23529411764705882, 0.23529411764705882, 0.23529411764705882, 0.0 ],
                     "fontsize": 12.0,
                     "hint": "lowpass filter type",
                     "id": "obj-2",
@@ -1235,8 +1299,11 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1381.0, 471.0, 150.0, 18.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 24.0, 654.0, 150.0, 18.0 ],
+                    "presentation_rect": [ 97.0, 654.0, 77.0, 18.0 ],
                     "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
                         "valueof": {
                             "parameter_enum": [ "Surreal Machines ladder", "Korg 35", "Andrew Simper SVF", "Vadim Zavalishin Diode ladder" ],
                             "parameter_longname": "live.menu",
@@ -1596,7 +1663,7 @@
                             "parameter_longname": "live.dial[4]",
                             "parameter_mmax": 50.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "min dist btwn ceil and floor",
+                            "parameter_shortname": "Min dist btwn ceil and floor",
                             "parameter_type": 0,
                             "parameter_unitstyle": 5
                         }
@@ -2481,6 +2548,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-84", 0 ],
+                    "source": [ "obj-72", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-69", 0 ],
                     "source": [ "obj-75", 0 ]
                 }
@@ -2539,6 +2612,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-89", 0 ],
+                    "source": [ "obj-84", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-112", 0 ],
                     "source": [ "obj-86", 0 ]
                 }
@@ -2553,6 +2632,18 @@
                 "patchline": {
                     "destination": [ "obj-112", 0 ],
                     "source": [ "obj-87", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-278", 0 ],
+                    "source": [ "obj-88", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-88", 0 ],
+                    "source": [ "obj-89", 0 ]
                 }
             },
             {
