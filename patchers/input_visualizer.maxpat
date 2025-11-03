@@ -156,7 +156,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 530.5, 354.0, 124.0, 22.0 ],
-                    "restore": [ 1.0 ],
+                    "restore": [ 20.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -173,7 +173,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 338.0, 354.0, 116.0, 22.0 ],
-                    "restore": [ 18.0 ],
+                    "restore": [ 20.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -208,6 +208,8 @@
                             "expression": ""
                         },
                         "valueof": {
+                            "parameter_initial": [ 20 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.numbox[38]",
                             "parameter_mmax": 50.0,
                             "parameter_mmin": 1.0,
@@ -247,6 +249,8 @@
                             "expression": ""
                         },
                         "valueof": {
+                            "parameter_initial": [ 20 ],
+                            "parameter_initial_enable": 1,
                             "parameter_longname": "live.numbox[37]",
                             "parameter_mmax": 50.0,
                             "parameter_mmin": 1.0,
@@ -544,7 +548,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 78.0, 72.0, 61.0, 22.0 ],
+                    "patching_rect": [ 55.0, 76.0, 61.0, 22.0 ],
                     "text": "pipe 2000"
                 }
             },
@@ -1833,13 +1837,19 @@
         "lines": [
             {
                 "patchline": {
+                    "destination": [ "obj-144", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-79", 0 ],
                     "source": [ "obj-10", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-144", 0 ],
+                    "destination": [ "obj-1", 0 ],
                     "source": [ "obj-100", 0 ]
                 }
             },
