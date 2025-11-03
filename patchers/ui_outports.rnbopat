@@ -15,6 +15,109 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-59",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 678.0, 515.0, 90.0, 23.0 ],
+                    "rnbo_classname": "outport",
+                    "rnbo_extra_attributes": {
+                        "meta": ""
+                    },
+                    "rnbo_serial": 23,
+                    "rnbo_uniqueid": "outport_obj-59",
+                    "text": "outport lfo_env"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-58",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 678.0, 465.0, 87.0, 23.0 ],
+                    "rnbo_classname": "peakamp~",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "peakamp~_obj-58",
+                    "text": "peakamp~ 100"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-166",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 678.0, 413.0, 61.0, 23.0 ],
+                    "rnbo_classname": "r~",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "r~_obj-166",
+                    "text": "r~ lfo_env"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-57",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 509.0, 447.0, 80.0, 23.0 ],
+                    "rnbo_classname": "slide~",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "slide~_obj-57",
+                    "text": "slide~ 0 1200"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-56",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 509.0, 515.0, 102.0, 23.0 ],
+                    "rnbo_classname": "outport",
+                    "rnbo_extra_attributes": {
+                        "meta": ""
+                    },
+                    "rnbo_serial": 21,
+                    "rnbo_uniqueid": "outport_obj-56",
+                    "text": "outport main_env"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-39",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 509.0, 481.0, 87.0, 23.0 ],
+                    "rnbo_classname": "peakamp~",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "peakamp~_obj-39",
+                    "text": "peakamp~ 100"
+                }
+            },
+            {
+                "box": {
+                    "fontsize": 12.0,
+                    "id": "obj-162",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 509.0, 413.0, 109.0, 23.0 ],
+                    "rnbo_classname": "r~",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "r~_obj-162",
+                    "text": "r~ env_pre-smooth"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-43",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -24,7 +127,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 21,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "outport_obj-43",
                     "text": "outport R_within_deadzone"
                 }
@@ -38,7 +141,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 262.0, 541.0, 118.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 29,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "r_obj-55",
                     "text": "r R_within_deadzone"
                 }
@@ -54,7 +157,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 19,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "outport_obj-42",
                     "text": "outport L_within_deadzone"
                 }
@@ -68,7 +171,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 66.0, 541.0, 117.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 26,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "r_obj-35",
                     "text": "r L_within_deadzone"
                 }
@@ -84,7 +187,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "outport_obj-37",
                     "text": "outport main_recordhead"
                 }
@@ -100,7 +203,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "outport_obj-38",
                     "text": "outport drum_recordhead"
                 }
@@ -114,7 +217,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 66.0, 440.0, 109.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "r_obj-36",
                     "text": "r drum_recordhead"
                 }
@@ -128,7 +231,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 260.0, 440.0, 106.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "r_obj-193",
                     "text": "r main_recordhead"
                 }
@@ -144,7 +247,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 5,
                     "rnbo_uniqueid": "outport_obj-31",
                     "text": "outport main_playbackhead2"
                 }
@@ -160,7 +263,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 6,
                     "rnbo_uniqueid": "outport_obj-32",
                     "text": "outport main_playbackhead1"
                 }
@@ -174,7 +277,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 260.0, 372.0, 126.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 5,
                     "rnbo_uniqueid": "r_obj-33",
                     "text": "r main_playbackhead2"
                 }
@@ -188,7 +291,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 66.0, 372.0, 126.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 6,
                     "rnbo_uniqueid": "r_obj-34",
                     "text": "r main_playbackhead1"
                 }
@@ -204,7 +307,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 5,
+                    "rnbo_serial": 7,
                     "rnbo_uniqueid": "outport_obj-30",
                     "text": "outport drum_playbackhead2"
                 }
@@ -220,7 +323,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 6,
+                    "rnbo_serial": 8,
                     "rnbo_uniqueid": "outport_obj-29",
                     "text": "outport drum_playbackhead1"
                 }
@@ -234,7 +337,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 259.0, 297.0, 128.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 5,
+                    "rnbo_serial": 7,
                     "rnbo_uniqueid": "r_obj-143",
                     "text": "r drum_playbackhead2"
                 }
@@ -248,7 +351,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 65.0, 297.0, 128.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 6,
+                    "rnbo_serial": 8,
                     "rnbo_uniqueid": "r_obj-142",
                     "text": "r drum_playbackhead1"
                 }
@@ -264,7 +367,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 7,
+                    "rnbo_serial": 9,
                     "rnbo_uniqueid": "outport_obj-5",
                     "text": "outport looper_main_length"
                 }
@@ -280,7 +383,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 8,
+                    "rnbo_serial": 10,
                     "rnbo_uniqueid": "outport_obj-4",
                     "text": "outport looper_drum_length"
                 }
@@ -294,7 +397,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 252.0, 223.0, 147.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 7,
+                    "rnbo_serial": 9,
                     "rnbo_uniqueid": "r_obj-452",
                     "text": "r main_looper_length_bars"
                 }
@@ -308,7 +411,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 67.0, 223.0, 149.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 8,
+                    "rnbo_serial": 10,
                     "rnbo_uniqueid": "r_obj-270",
                     "text": "r drum_looper_length_bars"
                 }
@@ -323,7 +426,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 643.0, 62.0, 49.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 9,
+                    "rnbo_serial": 11,
                     "rnbo_uniqueid": "r_obj-28",
                     "text": "r RV_ID"
                 }
@@ -338,7 +441,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 472.0, 62.0, 51.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 10,
+                    "rnbo_serial": 12,
                     "rnbo_uniqueid": "r_obj-150",
                     "text": "r RH_ID"
                 }
@@ -353,7 +456,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 644.0, 207.0, 47.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 11,
+                    "rnbo_serial": 13,
                     "rnbo_uniqueid": "r_obj-152",
                     "text": "r LV_ID"
                 }
@@ -368,7 +471,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 473.0, 207.0, 49.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 12,
+                    "rnbo_serial": 14,
                     "rnbo_uniqueid": "r_obj-153",
                     "text": "r LH_ID"
                 }
@@ -384,7 +487,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 9,
+                    "rnbo_serial": 11,
                     "rnbo_uniqueid": "outport_obj-27",
                     "text": "outport BPM"
                 }
@@ -398,7 +501,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 900.0, 211.0, 82.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 13,
+                    "rnbo_serial": 15,
                     "rnbo_uniqueid": "r_obj-26",
                     "text": "r tapped_bpm"
                 }
@@ -414,7 +517,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 10,
+                    "rnbo_serial": 12,
                     "rnbo_uniqueid": "outport_obj-14",
                     "text": "outport looper_synth_status"
                 }
@@ -428,7 +531,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 251.0, 131.0, 116.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 14,
+                    "rnbo_serial": 16,
                     "rnbo_uniqueid": "r_obj-15",
                     "text": "r synth_looper_state"
                 }
@@ -570,7 +673,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 11,
+                    "rnbo_serial": 13,
                     "rnbo_uniqueid": "outport_obj-53",
                     "text": "outport loaded"
                 }
@@ -1629,7 +1732,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 134.0, 707.0, 88.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 15,
+                    "rnbo_serial": 17,
                     "rnbo_uniqueid": "r_obj-40",
                     "text": "r dpad_pressed"
                 }
@@ -1714,7 +1817,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 12,
+                    "rnbo_serial": 14,
                     "rnbo_uniqueid": "outport_obj-24",
                     "text": "outport dpad-diagonals"
                 }
@@ -2280,7 +2383,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 304.0, 707.0, 42.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 16,
+                    "rnbo_serial": 18,
                     "rnbo_uniqueid": "r_obj-99",
                     "text": "r U-R_"
                 }
@@ -2294,7 +2397,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 716.0, 707.0, 41.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 17,
+                    "rnbo_serial": 19,
                     "rnbo_uniqueid": "r_obj-100",
                     "text": "r U-L_"
                 }
@@ -2308,7 +2411,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 442.0, 707.0, 43.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 18,
+                    "rnbo_serial": 20,
                     "rnbo_uniqueid": "r_obj-101",
                     "text": "r D-R_"
                 }
@@ -2322,7 +2425,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 586.0, 707.0, 41.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 19,
+                    "rnbo_serial": 21,
                     "rnbo_uniqueid": "r_obj-102",
                     "text": "r D-L_"
                 }
@@ -2336,7 +2439,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 652.0, 707.0, 39.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 20,
+                    "rnbo_serial": 22,
                     "rnbo_uniqueid": "r_obj-103",
                     "text": "r left_"
                 }
@@ -2350,7 +2453,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 371.0, 707.0, 46.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 21,
+                    "rnbo_serial": 23,
                     "rnbo_uniqueid": "r_obj-104",
                     "text": "r right_"
                 }
@@ -2364,7 +2467,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 244.0, 707.0, 35.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 22,
+                    "rnbo_serial": 24,
                     "rnbo_uniqueid": "r_obj-105",
                     "text": "r up_"
                 }
@@ -2378,7 +2481,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 510.0, 707.0, 51.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 23,
+                    "rnbo_serial": 25,
                     "rnbo_uniqueid": "r_obj-106",
                     "text": "r down_"
                 }
@@ -2450,7 +2553,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 13,
+                    "rnbo_serial": 15,
                     "rnbo_uniqueid": "outport_obj-9",
                     "text": "outport post-deadzone_LV"
                 }
@@ -2466,7 +2569,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 14,
+                    "rnbo_serial": 16,
                     "rnbo_uniqueid": "outport_obj-8",
                     "text": "outport post-deadzone_LH"
                 }
@@ -2482,7 +2585,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 15,
+                    "rnbo_serial": 17,
                     "rnbo_uniqueid": "outport_obj-7",
                     "text": "outport post-deadzone_RV"
                 }
@@ -2498,7 +2601,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 16,
+                    "rnbo_serial": 18,
                     "rnbo_uniqueid": "outport_obj-6",
                     "text": "outport post-deadzone_RH"
                 }
@@ -2514,7 +2617,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 17,
+                    "rnbo_serial": 19,
                     "rnbo_uniqueid": "outport_obj-3",
                     "text": "outport looper_drum_status"
                 }
@@ -2528,7 +2631,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 251.0, 50.0, 114.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 24,
+                    "rnbo_serial": 26,
                     "rnbo_uniqueid": "r_obj-2",
                     "text": "r drum_looper_state"
                 }
@@ -2553,7 +2656,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 73.0, 50.0, 112.0, 23.0 ],
                     "rnbo_classname": "r",
-                    "rnbo_serial": 25,
+                    "rnbo_serial": 27,
                     "rnbo_uniqueid": "r_obj-115",
                     "text": "r main_looper_state"
                 }
@@ -2569,7 +2672,7 @@
                     "rnbo_extra_attributes": {
                         "meta": ""
                     },
-                    "rnbo_serial": 18,
+                    "rnbo_serial": 20,
                     "rnbo_uniqueid": "outport_obj-1",
                     "text": "outport looper_main_status"
                 }
@@ -2692,6 +2795,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-57", 0 ],
+                    "source": [ "obj-162", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-58", 0 ],
+                    "source": [ "obj-166", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-24", 0 ],
                     "source": [ "obj-17", 0 ]
                 }
@@ -2794,6 +2909,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-56", 0 ],
+                    "source": [ "obj-39", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-50", 0 ],
                     "source": [ "obj-40", 0 ]
                 }
@@ -2874,6 +2995,18 @@
                 "patchline": {
                     "destination": [ "obj-43", 0 ],
                     "source": [ "obj-55", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-39", 0 ],
+                    "source": [ "obj-57", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-59", 0 ],
+                    "source": [ "obj-58", 0 ]
                 }
             },
             {

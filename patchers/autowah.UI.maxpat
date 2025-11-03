@@ -9,12 +9,23 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2194.0, 1387.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "bassline parameters",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-90",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 405.5, 27.0, 55.0, 22.0 ],
+                    "text": "r lfo_env"
+                }
+            },
             {
                 "box": {
                     "fontname": "Ableton Sans Medium",
@@ -1903,6 +1914,23 @@
             },
             {
                 "box": {
+                    "bgcolor": [ 0.125, 0.125, 0.125, 0.0 ],
+                    "floatoutput": 1,
+                    "id": "obj-460",
+                    "ignoreclick": 1,
+                    "maxclass": "dial",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "float" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 405.5, 69.0, 40.0, 40.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 65.5, 314.5, 65.0, 65.0 ],
+                    "size": 1.0
+                }
+            },
+            {
+                "box": {
                     "angle": 270.0,
                     "background": 1,
                     "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
@@ -2650,6 +2678,12 @@
                 "patchline": {
                     "destination": [ "obj-278", 0 ],
                     "source": [ "obj-9", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-460", 0 ],
+                    "source": [ "obj-90", 0 ]
                 }
             },
             {
