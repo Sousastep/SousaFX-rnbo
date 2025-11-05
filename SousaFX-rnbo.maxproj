@@ -2,8 +2,8 @@
     "name": "SousaFX-rnbo",
     "version": 1,
     "creationdate": 3827413226,
-    "modificationdate": 3845127420,
-    "viewrect": [ 425.0, 87.0, 300.0, 1067.0 ],
+    "modificationdate": 3845227788,
+    "viewrect": [ 1654.0, 230.0, 300.0, 1067.0 ],
     "autoorganize": 0,
     "hideprojectwindow": 1,
     "showdependencies": 1,
@@ -104,7 +104,12 @@
                 }
             }
         },
-        "media": {        },
+        "media": {
+            "logo.png": {
+                "kind": "imagefile",
+                "local": 1
+            }
+        },
         "code": {
             "fc.loshelf.gendsp": {
                 "kind": "gendsp",
@@ -117,15 +122,11 @@
         },
         "data": {        },
         "externals": {
-            "sousafx~.mxe64": {
-                "kind": "object",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/externals/externals",
-                    "projectrelativepath": "./externals/externals"
-                }
-            },
             "sousafx~.mxo": {
+                "kind": "object",
+                "local": 1
+            },
+            "sousafx~.mxe64": {
                 "kind": "object",
                 "local": 1,
                 "singleton": {

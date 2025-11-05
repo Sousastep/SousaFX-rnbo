@@ -24,6 +24,18 @@
         "boxes": [
             {
                 "box": {
+                    "fontname": "Silom",
+                    "id": "obj-3",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2222.0, 188.0, 69.0, 23.0 ],
+                    "text": "pipe 5000"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-19",
                     "maxclass": "message",
                     "numinlets": 2,
@@ -182,7 +194,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1308.625, 65.0, 25.0, 25.0 ],
+                    "patching_rect": [ 1309.0, 65.0, 25.0, 25.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 356.0, 295.0, 23.0, 23.0 ],
                     "uncheckedcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
@@ -1239,6 +1251,7 @@
                                     "patching_rect": [ 2912.0, 6008.0, 126.0, 25.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 22.0, 151.0, 172.0, 25.0 ],
+                                    "text": "7.878421 %",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
                             },
@@ -1357,7 +1370,8 @@
                                     "patching_rect": [ 2756.0, 5812.0, 592.0, 24.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 0.0, 130.0, 316.0, 24.0 ],
-                                    "textcolor": [ 0.9545069199999999, 0.6722930800000001, 0.847751461840781, 1.0 ],
+                                    "text": "Rank: Bronze Sergeant 1",
+                                    "textcolor": [ 0.9545069199999999, 0.8056970473747327, 0.6722930800000001, 1.0 ],
                                     "textjustification": 1
                                 }
                             },
@@ -1448,7 +1462,7 @@
                                     "hint": "progress to next rank",
                                     "id": "obj-317",
                                     "ignoreclick": 1,
-                                    "knobcolor": [ 0.9545069199999999, 0.6722930800000001, 0.847751461840781, 1.0 ],
+                                    "knobcolor": [ 0.9545069199999999, 0.8056970473747327, 0.6722930800000001, 1.0 ],
                                     "maxclass": "slider",
                                     "numinlets": 1,
                                     "numoutlets": 1,
@@ -1606,6 +1620,7 @@
                                     "patching_rect": [ 2760.0, 5768.0, 592.0, 24.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 0.0, 102.0, 316.0, 24.0 ],
+                                    "text": "5.68 hrs on record.",
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -2284,7 +2299,9 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 840.0, 2684.0, 427.0, 21.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 181.0, 186.0, 131.0, 21.0 ],
+                                    "presentation_linecount": 4,
+                                    "presentation_rect": [ 181.0, 186.0, 131.0, 66.0 ],
+                                    "text": "SousaFX has been open, with audio on, for 36 hours total.",
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -4853,7 +4870,9 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 1532.0, 4164.0, 477.0, 21.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 0.0, 34.0, 307.0, 21.0 ],
+                                    "presentation_linecount": 2,
+                                    "presentation_rect": [ 0.0, 34.0, 307.0, 36.0 ],
+                                    "text": "SousaFX has launched 46 times since installed on October 9th 2025",
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -5101,7 +5120,7 @@
                                     "patching_rect": [ 2992.0, 4364.0, 728.0, 156.0 ],
                                     "presentation": 1,
                                     "presentation_linecount": 12,
-                                    "presentation_rect": [ 0.0, -2.0, 333.0, 186.0 ],
+                                    "presentation_rect": [ 0.0, -2.0, 347.0, 186.0 ],
                                     "text": "SousaFX is a paid software product.\nAfter 30 days a license key is required.\n\n\n\nThis message is shown instead of crippling the evaluation version of SousaFX because technological enforcement of licensing policy is not in anyone's best interests.\n\nPurchase a SousaFX license key online \nvia the links below.",
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
@@ -5158,7 +5177,8 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 1624.0, 1604.0, 722.0, 23.0 ]
+                                    "patching_rect": [ 1624.0, 1604.0, 722.0, 23.0 ],
+                                    "text": "write \"Macintosh HD:/Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/data/license.sousafx\""
                                 }
                             },
                             {
@@ -8540,7 +8560,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2222.0, 197.0, 69.0, 23.0 ],
+                    "patching_rect": [ 2222.0, 149.0, 69.0, 23.0 ],
                     "text": "deferlow"
                 }
             },
@@ -8552,7 +8572,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2222.0, 157.0, 82.0, 23.0 ],
+                    "patching_rect": [ 2222.0, 109.0, 82.0, 23.0 ],
                     "text": "loadmess 1"
                 }
             },
@@ -8597,7 +8617,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1998.0, 245.0, 79.0, 23.0 ],
+                    "patching_rect": [ 1998.0, 197.0, 79.0, 23.0 ],
                     "text": "loadmess 1"
                 }
             },
@@ -13095,7 +13115,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "jit_matrix" ],
                     "patching_rect": [ 12.0, 116.13382658607593, 78.0, 78.0 ],
-                    "pic": "icon.png",
+                    "pic": "Macintosh HD:/Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/media/logo.png",
                     "presentation": 1,
                     "presentation_rect": [ 12.0, 14.146141468715944, 78.0, 78.0 ],
                     "varname": "icon"
@@ -13123,7 +13143,7 @@
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 110.0, 362.0, 77.0, 28.0 ],
-                    "textcolor": [ 0.847059, 0.847059, 0.847059, 1.0 ],
+                    "textcolor": [ 0.8800000000000003, 0.3999999999999999, 1.0, 1.0 ],
                     "varname": "github"
                 }
             },
@@ -13878,6 +13898,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-33", 0 ],
+                    "source": [ "obj-3", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-140", 0 ],
                     "source": [ "obj-306", 6 ]
                 }
@@ -13984,7 +14010,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-33", 0 ],
+                    "destination": [ "obj-3", 0 ],
                     "source": [ "obj-4", 0 ]
                 }
             },
