@@ -2,7 +2,7 @@
     "name": "SousaFX-rnbo",
     "version": 1,
     "creationdate": 3827413226,
-    "modificationdate": 3844536771,
+    "modificationdate": 3845127420,
     "viewrect": [ 425.0, 87.0, 300.0, 1067.0 ],
     "autoorganize": 0,
     "hideprojectwindow": 1,
@@ -116,7 +116,24 @@
             }
         },
         "data": {        },
-        "externals": {        },
+        "externals": {
+            "sousafx~.mxe64": {
+                "kind": "object",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/externals/externals",
+                    "projectrelativepath": "./externals/externals"
+                }
+            },
+            "sousafx~.mxo": {
+                "kind": "object",
+                "local": 1,
+                "singleton": {
+                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/externals/externals",
+                    "projectrelativepath": "./externals/externals"
+                }
+            }
+        },
         "other": {        }
     },
     "layout": {    },

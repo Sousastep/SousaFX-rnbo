@@ -9,12 +9,23 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 566.0, 276.0, 457.0, 591.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-454",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1746.0, 1080.5, 29.5, 22.0 ],
+                    "text": "0"
+                }
+            },
             {
                 "box": {
                     "id": "obj-461",
@@ -783,11 +794,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-rnbopat.maxpat",
+                    "name": "sousaFX-external.maxpat",
                     "numinlets": 1,
                     "numoutlets": 14,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
                     "patching_rect": [ 939.0, 1336.0, 567.0, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -3820,7 +3831,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
+                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -4322,7 +4333,7 @@
                     "patching_rect": [ 512.0, 1806.0, 180.0, 41.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.0, 124.0, 163.0, 41.0 ],
-                    "text": "-85.26 dB",
+                    "text": "-86.83 dB",
                     "textjustification": 1
                 }
             },
@@ -6156,12 +6167,11 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
-                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 3014.0, 1923.0, 119.0, 95.0 ]
+                    "patching_rect": [ 3014.0, 1923.0, 119.0, 23.0 ]
                 }
             },
             {
@@ -6269,7 +6279,7 @@
                     "patching_rect": [ 1432.0, 2004.0, 108.0, 31.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 248.0, 213.0, 121.0, 31.0 ],
-                    "text": "playing",
+                    "text": "cleared",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "textjustification": 1
                 }
@@ -6445,7 +6455,7 @@
             {
                 "box": {
                     "angle": 0.0,
-                    "bgcolor": [ 0.6, 0.8, 0.3, 0.8 ],
+                    "bgcolor": [ 0.1, 0.1, 0.1, 0.12 ],
                     "id": "obj-42",
                     "maxclass": "panel",
                     "mode": 0,
@@ -6467,7 +6477,7 @@
                     "patching_rect": [ 1796.0, 2078.0, 105.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 53.0, 214.0, 121.0, 29.0 ],
-                    "text": "playing",
+                    "text": "cleared",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "textjustification": 1
                 }
@@ -6643,7 +6653,7 @@
             {
                 "box": {
                     "angle": 0.0,
-                    "bgcolor": [ 0.6, 0.8, 0.3, 0.8 ],
+                    "bgcolor": [ 0.1, 0.1, 0.1, 0.12 ],
                     "id": "obj-56",
                     "maxclass": "panel",
                     "mode": 0,
@@ -10271,6 +10281,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-357", 0 ],
+                    "source": [ "obj-454", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-448", 0 ],
                     "source": [ "obj-455", 0 ]
                 }
@@ -10792,10 +10808,6 @@
             "obj-176": [ "Metro Volume", "Metronome", 0 ],
             "obj-183::obj-155": [ "live.numbox[37]", "live.numbox[1]", 0 ],
             "obj-183::obj-94": [ "live.numbox[38]", "live.numbox[1]", 0 ],
-            "obj-22": [ "number[11]", "number[2]", 0 ],
-            "obj-23": [ "number[10]", "number[2]", 0 ],
-            "obj-24": [ "number[9]", "number[2]", 0 ],
-            "obj-27": [ "flonum[2]", "flonum", 0 ],
             "obj-281::obj-22::obj-12": [ "live.numbox[29]", "live.numbox[2]", 0 ],
             "obj-281::obj-22::obj-14": [ "live.dial[27]", "thresh", 0 ],
             "obj-281::obj-22::obj-16": [ "live.dial[28]", "attack", 0 ],
