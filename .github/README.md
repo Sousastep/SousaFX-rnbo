@@ -8,11 +8,17 @@
 
 # :studio_microphone: Introduction
 
-SousaFX-rnbo ports [SousaFX](https://sousastep.github.io/SousaFX-docs/index.html) from Max to [RNBO](https://rnbo.cycling74.com/) so it can run on a microcontroller instead of a mac.
+SousaFX-rnbo ports [SousaFX](https://sousastep.github.io/SousaFX-docs/index.html) from Max/Live to [RNBO](https://rnbo.cycling74.com/) so that it can run on a rpi instead of a mac. Incidentally, this means it now takes less than 12 seconds to launch on a mac!
+
+<a href="#books-documentation">![rainbow](./media/rainbow.png)</a>
+
+# :books: Documentation
+
+Find installation instructions, audio effects overviews, and more in this online version of the SousaFX in-app documentation. [Read the SousaFX documentation](https://sousastep.github.io/SousaFX-rnbo-docs/).
 
 <a href="#control_knobs-hardware">![rainbow](./media/rainbow.png)</a>
 
-# :control_knobs: Hardware
+# :control_knobs: Mobile Hardware
 
 ![rainbow](./media/layout.webp)
 
