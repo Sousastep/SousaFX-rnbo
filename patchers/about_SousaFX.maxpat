@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 1688.0, 391.0, 450.0, 475.0 ],
         "openinpresentation": 1,
         "default_fontsize": 11.595187,
         "toolbarvisible": 0,
@@ -20,8 +20,30 @@
         "toolbars_unpinned_last_save": 15,
         "enablehscroll": 0,
         "enablevscroll": 0,
+        "enabletransparentbgwithtitlebar": 1,
         "title": "about sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-203",
+                    "maxclass": "newobj",
+                    "numinlets": 4,
+                    "numoutlets": 0,
+                    "patching_rect": [ 327.0, 66.0, 50.5, 21.0 ],
+                    "text": "bgcolor"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-202",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 327.0, 34.0, 78.0, 21.0 ],
+                    "text": "r bgcolor_set"
+                }
+            },
             {
                 "box": {
                     "fontname": "Silom",
@@ -4872,7 +4894,7 @@
                                     "presentation": 1,
                                     "presentation_linecount": 2,
                                     "presentation_rect": [ 0.0, 34.0, 307.0, 36.0 ],
-                                    "text": "SousaFX has launched 46 times since installed on October 9th 2025",
+                                    "text": "SousaFX has launched 48 times since installed on October 9th 2025",
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -13255,26 +13277,6 @@
                     "text": "About SousaFX",
                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                 }
-            },
-            {
-                "box": {
-                    "angle": 163.763975826025,
-                    "background": 1,
-                    "grad1": [ 0.172549019607843, 0.184313725490196, 0.215686274509804, 1.0 ],
-                    "grad2": [ 0.16078431372549, 0.16078431372549, 0.176470588235294, 1.0 ],
-                    "id": "obj-6",
-                    "maxclass": "panel",
-                    "mode": 1,
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 0.0, 0.0, 450.0, 518.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 0.0, 0.0, 450.0, 475.0 ],
-                    "proportion": 0.39,
-                    "pt1": [ 0.95959595959596, 0.651515151515151 ],
-                    "pt2": [ 0.04040404040404, 0.383838383838384 ],
-                    "rounded": 0
-                }
             }
         ],
         "lines": [
@@ -13870,6 +13872,12 @@
                 "patchline": {
                     "destination": [ "obj-100", 0 ],
                     "source": [ "obj-192", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-203", 0 ],
+                    "source": [ "obj-202", 0 ]
                 }
             },
             {
