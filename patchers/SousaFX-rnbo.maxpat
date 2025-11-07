@@ -708,12 +708,11 @@
             {
                 "box": {
                     "id": "obj-437",
-                    "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1835.0, 1075.0, 126.0, 33.0 ],
-                    "text": "enable to switch from external to rnbopat"
+                    "patching_rect": [ 1834.5, 1081.5, 141.0, 20.0 ],
+                    "text": "external / rnbopat switch"
                 }
             },
             {
@@ -1392,7 +1391,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1893.0, 493.0, 50.0, 22.0 ],
-                    "text": "main 1"
+                    "text": "ID_r 1"
                 }
             },
             {
@@ -4333,7 +4332,7 @@
                     "patching_rect": [ 512.0, 1806.0, 180.0, 41.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.0, 124.0, 163.0, 41.0 ],
-                    "text": "-83.04 dB",
+                    "text": "-84.15 dB",
                     "textjustification": 1
                 }
             },
@@ -6167,12 +6166,11 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
-                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 3014.0, 1923.0, 119.0, 95.0 ]
+                    "patching_rect": [ 3014.0, 1923.0, 119.0, 23.0 ]
                 }
             },
             {
@@ -10997,14 +10995,6 @@
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
             "obj-59": [ "Alert Volume", "Loop Alert", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
