@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1688.0, 391.0, 450.0, 475.0 ],
+        "rect": [ 841.0, 382.0, 464.0, 483.0 ],
         "openinpresentation": 1,
         "default_fontsize": 11.595187,
         "toolbarvisible": 0,
@@ -29,7 +29,7 @@
                     "maxclass": "newobj",
                     "numinlets": 4,
                     "numoutlets": 0,
-                    "patching_rect": [ 327.0, 66.0, 50.5, 21.0 ],
+                    "patching_rect": [ 292.0, 97.0, 50.5, 21.0 ],
                     "text": "bgcolor"
                 }
             },
@@ -40,7 +40,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 327.0, 34.0, 78.0, 21.0 ],
+                    "patching_rect": [ 292.0, 65.0, 78.0, 21.0 ],
                     "text": "r bgcolor_set"
                 }
             },
@@ -1273,7 +1273,6 @@
                                     "patching_rect": [ 2912.0, 6008.0, 126.0, 25.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 22.0, 151.0, 172.0, 25.0 ],
-                                    "text": "7.878421 %",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
                             },
@@ -1392,8 +1391,7 @@
                                     "patching_rect": [ 2756.0, 5812.0, 592.0, 24.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 0.0, 130.0, 316.0, 24.0 ],
-                                    "text": "Rank: Bronze Sergeant 1",
-                                    "textcolor": [ 0.9545069199999999, 0.8056970473747327, 0.6722930800000001, 1.0 ],
+                                    "textcolor": [ 0.9545069199999999, 0.6722930800000001, 0.6722930800000001, 1.0 ],
                                     "textjustification": 1
                                 }
                             },
@@ -1484,7 +1482,7 @@
                                     "hint": "progress to next rank",
                                     "id": "obj-317",
                                     "ignoreclick": 1,
-                                    "knobcolor": [ 0.9545069199999999, 0.8056970473747327, 0.6722930800000001, 1.0 ],
+                                    "knobcolor": [ 0.9545069199999999, 0.6722930800000001, 0.6722930800000001, 1.0 ],
                                     "maxclass": "slider",
                                     "numinlets": 1,
                                     "numoutlets": 1,
@@ -1642,7 +1640,6 @@
                                     "patching_rect": [ 2760.0, 5768.0, 592.0, 24.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 0.0, 102.0, 316.0, 24.0 ],
-                                    "text": "5.68 hrs on record.",
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -2321,9 +2318,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 840.0, 2684.0, 427.0, 21.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 4,
-                                    "presentation_rect": [ 181.0, 186.0, 131.0, 66.0 ],
-                                    "text": "SousaFX has been open, with audio on, for 36 hours total.",
+                                    "presentation_rect": [ 181.0, 186.0, 131.0, 21.0 ],
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -4892,9 +4887,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 1532.0, 4164.0, 477.0, 21.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 2,
-                                    "presentation_rect": [ 0.0, 34.0, 307.0, 36.0 ],
-                                    "text": "SousaFX has launched 48 times since installed on October 9th 2025",
+                                    "presentation_rect": [ 0.0, 34.0, 307.0, 21.0 ],
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -5199,8 +5192,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 1624.0, 1604.0, 722.0, 23.0 ],
-                                    "text": "write \"Macintosh HD:/Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/data/license.sousafx\""
+                                    "patching_rect": [ 1624.0, 1604.0, 722.0, 23.0 ]
                                 }
                             },
                             {
@@ -9333,8 +9325,80 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 121.0, 87.0, 2405.0, 1319.0 ],
+                        "rect": [ 121.0, 87.0, 2039.0, 1319.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "newobj",
+                                    "numinlets": 6,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1209.0, 323.0, 93.0, 22.0 ],
+                                    "text": "scale 0. 1 0 427"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-6",
+                                    "maxclass": "newobj",
+                                    "numinlets": 6,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1543.0, 332.0, 93.0, 22.0 ],
+                                    "text": "scale 0. 1 0 427"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "maxclass": "newobj",
+                                    "numinlets": 6,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1584.0, 68.0, 93.0, 22.0 ],
+                                    "text": "scale 0 427 0 1."
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-3",
+                                    "maxclass": "newobj",
+                                    "numinlets": 6,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 1232.5, 68.0, 93.0, 22.0 ],
+                                    "text": "scale 0 427 0 1."
+                                }
+                            },
+                            {
+                                "box": {
+                                    "code": "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\n\nBounceEaseOut(value)\n{\n\tif (value < 4/11.0) {\n\t\treturn (121 * value * value)/16.0;\n\t} else if (value < 8/11.0) {\n\t\treturn (363/40.0 * value * value) - (99/10.0 * value) + 17/5.0;\n\t} else if (value < 9/10.0) {\n\t\treturn (4356/361.0 * value * value) - (35442/1805.0 * value) + 16061/1805.0;\n\t} else {\n\t\treturn (54/5.0 * value * value) - (513/25.0 * value) + 268/25.0;\n\t}\n}\r\n\r\nBounceEaseIn(value)\n{\n\treturn 1 - BounceEaseOut(1 - value);\n}\r\n\r\n\r\nout1 = BounceEaseIn(in1);\r\n\r\n\r\n",
+                                    "fontface": 0,
+                                    "fontname": "<Monospaced>",
+                                    "fontsize": 12.0,
+                                    "id": "obj-43",
+                                    "maxclass": "gen.codebox",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "float" ],
+                                    "patching_rect": [ 1577.0, 102.0, 340.0, 200.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "code": "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\nBounceEaseOut(value)\n{\n\tif (value < 4/11.0) {\n\t\treturn (121 * value * value)/16.0;\n\t} else if (value < 8/11.0) {\n\t\treturn (363/40.0 * value * value) - (99/10.0 * value) + 17/5.0;\n\t} else if (value < 9/10.0) {\n\t\treturn (4356/361.0 * value * value) - (35442/1805.0 * value) + 16061/1805.0;\n\t} else {\n\t\treturn (54/5.0 * value * value) - (513/25.0 * value) + 268/25.0;\n\t}\n}\r\n\r\nout1 = BounceEaseOut(in1);\r\n",
+                                    "fontface": 0,
+                                    "fontname": "<Monospaced>",
+                                    "fontsize": 12.0,
+                                    "id": "obj-33",
+                                    "maxclass": "gen.codebox",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "float" ],
+                                    "patching_rect": [ 1223.5, 102.0, 340.0, 200.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-2",
@@ -10423,7 +10487,7 @@
                                     "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 606.1288722753525, 813.7434627414939, 62.0, 22.0 ],
+                                    "patching_rect": [ 605.6288722753525, 904.0, 62.0, 22.0 ],
                                     "text": "switch 2 1"
                                 }
                             },
@@ -10434,7 +10498,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "", "int", "int" ],
-                                    "patching_rect": [ 606.1288722753525, 842.3787525966134, 48.0, 22.0 ],
+                                    "patching_rect": [ 605.6288722753525, 932.0, 48.0, 22.0 ],
                                     "text": "change"
                                 }
                             },
@@ -10445,7 +10509,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "bang", "" ],
-                                    "patching_rect": [ 606.1288722753525, 871.0140424517331, 34.0, 22.0 ],
+                                    "patching_rect": [ 605.6288722753525, 961.0, 34.0, 22.0 ],
                                     "text": "sel 1"
                                 }
                             },
@@ -10467,7 +10531,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 674.6288722753525, 760.3659062314059, 46.0, 22.0 ],
+                                    "patching_rect": [ 674.6288722753525, 850.0, 46.0, 22.0 ],
                                     "text": ">= 427"
                                 }
                             },
@@ -10478,7 +10542,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 626.6288722753525, 760.3659062314059, 39.0, 22.0 ],
+                                    "patching_rect": [ 626.6288722753525, 850.0, 39.0, 22.0 ],
                                     "text": "<= 20"
                                 }
                             },
@@ -10566,7 +10630,7 @@
                                     "numinlets": 3,
                                     "numoutlets": 1,
                                     "outlettype": [ "float" ],
-                                    "patching_rect": [ 523.6288722753525, 871.0140424517331, 53.0, 22.0 ],
+                                    "patching_rect": [ 523.6288722753525, 961.0, 53.0, 22.0 ],
                                     "text": "slide 3 3"
                                 }
                             },
@@ -10671,17 +10735,6 @@
                             },
                             {
                                 "box": {
-                                    "id": "obj-95",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 656.1288722753525, 709.2989726319151, 111.0, 22.0 ],
-                                    "text": "ease 2 0 427 0 427"
-                                }
-                            },
-                            {
-                                "box": {
                                     "id": "obj-94",
                                     "maxclass": "message",
                                     "numinlets": 2,
@@ -10715,23 +10768,12 @@
                             },
                             {
                                 "box": {
-                                    "id": "obj-86",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 523.6288722753525, 709.6301328535571, 118.0, 22.0 ],
-                                    "text": "ease 22 0 427 0 427"
-                                }
-                            },
-                            {
-                                "box": {
                                     "id": "obj-54",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 523.6288722753525, 744.6301328535571, 32.0, 22.0 ],
+                                    "patching_rect": [ 523.6288722753525, 835.0, 32.0, 22.0 ],
                                     "text": "+ 10"
                                 }
                             },
@@ -10742,7 +10784,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 523.6288722753525, 927.1069687194197, 255.0, 22.0 ],
+                                    "patching_rect": [ 523.6288722753525, 1017.0, 255.0, 22.0 ],
                                     "text": "script send icon presentation_rect 12 $1 78 78"
                                 }
                             },
@@ -11163,7 +11205,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-139", 0 ],
-                                    "midpoints": [ 583.6288722753525, 510.68553435087455, 516.5, 510.68553435087455, 516.5, 591.4071843552615, 500.19072222709656, 591.4071843552615, 500.19072222709656, 798.4071843552615, 615.6288722753525, 798.4071843552615 ],
+                                    "midpoints": [ 583.6288722753525, 510.68553435087455, 516.5, 510.68553435087455, 516.5, 591.4071843552615, 500.19072222709656, 591.4071843552615, 500.19072222709656, 883.4071843552615, 615.1288722753525, 883.4071843552615 ],
                                     "order": 0,
                                     "source": [ "obj-103", 0 ]
                                 }
@@ -11333,7 +11375,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-131", 0 ],
-                                    "midpoints": [ 615.6288722753525, 910.891717665198, 480.5, 910.891717665198, 480.5, 510.40718435526145, 51.5, 510.40718435526145, 51.5, 255.42780660867942, 74.8040941953659, 255.42780660867942 ],
+                                    "midpoints": [ 615.1288722753525, 996.891717665198, 480.5, 996.891717665198, 480.5, 510.40718435526145, 51.5, 510.40718435526145, 51.5, 255.42780660867942, 74.8040941953659, 255.42780660867942 ],
                                     "order": 7,
                                     "source": [ "obj-137", 0 ]
                                 }
@@ -11341,7 +11383,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-161", 0 ],
-                                    "midpoints": [ 615.6288722753525, 907.809245460036, 996.9948332309723, 907.809245460036, 996.9948332309723, 387.8814121413256, 970.587549328804, 387.8814121413256 ],
+                                    "midpoints": [ 615.1288722753525, 907.809245460036, 996.9948332309723, 907.809245460036, 996.9948332309723, 387.8814121413256, 970.587549328804, 387.8814121413256 ],
                                     "order": 6,
                                     "source": [ "obj-137", 0 ]
                                 }
@@ -12538,8 +12580,20 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-33", 0 ],
+                                    "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-305", 0 ],
                                     "source": [ "obj-32", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-7", 0 ],
+                                    "source": [ "obj-33", 0 ]
                                 }
                             },
                             {
@@ -12689,6 +12743,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-6", 0 ],
+                                    "source": [ "obj-43", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-72", 1 ],
                                     "source": [ "obj-45", 0 ]
                                 }
@@ -12703,6 +12763,12 @@
                                 "patchline": {
                                     "destination": [ "obj-51", 0 ],
                                     "source": [ "obj-49", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-43", 0 ],
+                                    "source": [ "obj-5", 0 ]
                                 }
                             },
                             {
@@ -12782,6 +12848,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-54", 0 ],
+                                    "source": [ "obj-6", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-68", 0 ],
                                     "source": [ "obj-60", 0 ]
                                 }
@@ -12826,6 +12898,12 @@
                                 "patchline": {
                                     "destination": [ "obj-304", 0 ],
                                     "source": [ "obj-68", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-54", 0 ],
+                                    "source": [ "obj-7", 0 ]
                                 }
                             },
                             {
@@ -12938,13 +13016,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-54", 0 ],
-                                    "source": [ "obj-86", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-86", 0 ],
+                                    "destination": [ "obj-3", 0 ],
                                     "source": [ "obj-89", 0 ]
                                 }
                             },
@@ -12962,13 +13034,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-54", 0 ],
-                                    "source": [ "obj-95", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-95", 0 ],
+                                    "destination": [ "obj-5", 0 ],
                                     "source": [ "obj-96", 0 ]
                                 }
                             },
@@ -12986,7 +13052,9 @@
                                     "source": [ "obj-97", 0 ]
                                 }
                             }
-                        ]
+                        ],
+                        "toolbaradditions": [ "packagemanager" ],
+                        "toolbarexclusions": [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ]
                     },
                     "patching_rect": [ 489.0, 346.0, 82.0, 21.0 ],
                     "text": "p highlights"
@@ -13165,7 +13233,7 @@
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 110.0, 362.0, 77.0, 28.0 ],
-                    "textcolor": [ 0.8800000000000003, 0.3999999999999999, 1.0, 1.0 ],
+                    "textcolor": [ 0.847059, 0.847059, 0.847059, 1.0 ],
                     "varname": "github"
                 }
             },
@@ -14391,6 +14459,7 @@
                 }
             }
         ],
+        "autosave": 0,
         "toolbaradditions": [ "packagemanager" ],
         "toolbarexclusions": [ "mixerslider", "quickrecord", "showsnapshots", "showmappings" ],
         "editing_bgcolor": [ 0.27843137254902, 0.27843137254902, 0.27843137254902, 1.0 ]
