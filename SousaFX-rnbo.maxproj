@@ -2,8 +2,8 @@
     "name": "SousaFX-rnbo",
     "version": 1,
     "creationdate": 3827413226,
-    "modificationdate": 3848263135,
-    "viewrect": [ 1654.0, 230.0, 300.0, 1067.0 ],
+    "modificationdate": 3848308486,
+    "viewrect": [ 498.0, 87.0, 289.0, 219.0 ],
     "autoorganize": 0,
     "hideprojectwindow": 1,
     "showdependencies": 1,
@@ -13,113 +13,12 @@
             "SousaFX-rnbo.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "toplevel": 1
-            },
-            "floating window positioner.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "about_SousaFX.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "comp_ui.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "comp_window.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "eq_ui.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "hover_bang.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "layout_saver.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "verbdrums_ui.maxpat": {
-                "kind": "patcher",
-                "local": 1
-            },
-            "bassline_eq.rnbopat": {
-                "kind": "rnbopat",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-                    "projectrelativepath": "./patchers"
-                }
-            },
-            "bindings_info.maxpat": {
-                "kind": "patcher",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-                    "projectrelativepath": "./patchers"
-                }
-            },
-            "jb.vfxenvouts.rnbopat": {
-                "kind": "rnbopat",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-                    "projectrelativepath": "./patchers"
-                }
-            },
-            "compressor_stereo.rnbopat": {
-                "kind": "rnbopat",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-                    "projectrelativepath": "./patchers"
-                }
-            },
-            "ra.crossover2nd.rnbopat": {
-                "kind": "rnbopat",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-                    "projectrelativepath": "./patchers"
-                }
-            },
-            "thumbstick_router.rnbopat": {
-                "kind": "rnbopat",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-                    "projectrelativepath": "./patchers"
-                }
-            },
-            "low_boost.rnbopat": {
-                "kind": "rnbopat",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/patchers",
-                    "projectrelativepath": "./patchers"
-                }
+                "toplevel": 1,
+                "disclosed": 0
             }
         },
-        "media": {
-            "logo.png": {
-                "kind": "imagefile",
-                "local": 1
-            }
-        },
-        "code": {
-            "fc.loshelf.gendsp": {
-                "kind": "gendsp",
-                "local": 1,
-                "singleton": {
-                    "bootpath": "~/Documents/Max 8/Projects/SousaFX-rnbo/code",
-                    "projectrelativepath": "./code"
-                }
-            }
-        },
+        "media": {        },
+        "code": {        },
         "data": {        },
         "externals": {
             "sousafx~.mxo": {
