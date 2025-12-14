@@ -9,49 +9,191 @@
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 551.0, 167.0, 1962.0, 1220.0 ],
+        "rect": [ 551.0, 167.0, 1571.0, 1220.0 ],
         "default_fontname": "Lato",
         "title": "jb.dpad_subdiv",
         "boxes": [
             {
                 "box": {
-                    "fontsize": 25.99442041959873,
-                    "id": "obj-109",
-                    "maxclass": "comment",
+                    "id": "obj-115",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1155.0, 284.0, 60.0, 23.0 ],
+                    "rnbo_classname": "delay",
+                    "rnbo_serial": 4,
+                    "rnbo_uniqueid": "delay_obj-115",
+                    "text": "delay 700"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-114",
+                    "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1334.0, 261.5, 33.0, 38.0 ],
-                    "text": ":|"
+                    "patching_rect": [ 1155.0, 397.0, 92.0, 23.0 ],
+                    "rnbo_classname": "s",
+                    "rnbo_serial": 22,
+                    "rnbo_uniqueid": "s_obj-114",
+                    "text": "s dpad_released"
                 }
             },
             {
                 "box": {
-                    "id": "obj-83",
+                    "id": "obj-113",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1311.0, 312.0, 67.0, 23.0 ],
+                    "patching_rect": [ 1225.0, 166.0, 67.0, 23.0 ],
                     "rnbo_classname": "delay",
-                    "rnbo_serial": 3,
-                    "rnbo_uniqueid": "delay_obj-83",
-                    "text": "delay 2000"
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "delay_obj-113",
+                    "text": "delay 1000"
                 }
             },
             {
                 "box": {
-                    "id": "obj-106",
+                    "id": "obj-110",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1311.0, 429.0, 29.5, 23.0 ],
+                    "patching_rect": [ 1236.0, 284.0, 60.0, 23.0 ],
+                    "rnbo_classname": "delay",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "delay_obj-110",
+                    "text": "delay 500"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-109",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1225.0, 200.0, 42.0, 23.0 ],
+                    "rnbo_classname": "t",
+                    "rnbo_extra_attributes": {
+                        "triggers": ""
+                    },
+                    "rnbo_serial": 20,
+                    "rnbo_uniqueid": "t_obj-109",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "Output order 3 (bang).",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "bang"
+                            },
+                            "out2": {
+                                "attrOrProp": 1,
+                                "digest": "Output order 2 (bang).",
+                                "defaultarg": 2,
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "bang"
+                            },
+                            "out3": {
+                                "attrOrProp": 1,
+                                "digest": "Output order 1 (bang).",
+                                "defaultarg": 3,
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "bang"
+                            },
+                            "triggers": {
+                                "attrOrProp": 2,
+                                "digest": "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "list"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": [ "bang", "number", "list" ],
+                                "digest": "input to distribute",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "bang",
+                                "digest": "Output order 3 (bang).",
+                                "defaultarg": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "out2",
+                                "type": "bang",
+                                "digest": "Output order 2 (bang).",
+                                "defaultarg": 2,
+                                "docked": 0
+                            },
+                            {
+                                "name": "out3",
+                                "type": "bang",
+                                "digest": "Output order 1 (bang).",
+                                "defaultarg": 3,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "trigger",
+                        "aliasOf": "trigger",
+                        "classname": "t",
+                        "operator": 0,
+                        "versionId": 1624904035,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "t b b b"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-84",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1353.0, 397.0, 29.5, 23.0 ],
                     "rnbo_classname": "i",
                     "rnbo_extra_attributes": {
                         "initial": 0.0
                     },
                     "rnbo_serial": 1,
-                    "rnbo_uniqueid": "i_obj-106",
+                    "rnbo_uniqueid": "i_obj-84",
                     "text": "i"
                 }
             },
@@ -62,24 +204,10 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1227.0, 312.0, 67.0, 23.0 ],
-                    "rnbo_classname": "delay",
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "delay_obj-104",
-                    "text": "delay 1000"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-102",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1247.0, 389.0, 55.0, 23.0 ],
+                    "patching_rect": [ 1316.0, 357.0, 48.0, 23.0 ],
                     "rnbo_classname": "pipe",
                     "rnbo_serial": 1,
-                    "rnbo_uniqueid": "pipe_obj-102",
+                    "rnbo_uniqueid": "pipe_obj-104",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
                         "argnames": {
@@ -123,7 +251,7 @@
                                 "touched": 0,
                                 "inlet": 1,
                                 "type": "number",
-                                "defaultValue": "100"
+                                "defaultValue": "50"
                             },
                             "flush": {
                                 "attrOrProp": 1,
@@ -192,23 +320,23 @@
                         "versionId": -1187956124,
                         "changesPatcherIO": 0
                     },
-                    "text": "pipe 100"
+                    "text": "pipe 50"
                 }
             },
             {
                 "box": {
-                    "id": "obj-100",
+                    "id": "obj-108",
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 1274.0, 353.0, 56.0, 23.0 ],
+                    "patching_rect": [ 1316.0, 321.0, 56.0, 23.0 ],
                     "rnbo_classname": "t",
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "t_obj-100",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "t_obj-108",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
                         "argnames": {
@@ -289,16 +417,251 @@
             },
             {
                 "box": {
-                    "id": "obj-84",
+                    "id": "obj-83",
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1269.0, 269.0, 56.0, 23.0 ],
+                    "patching_rect": [ 1225.0, 132.0, 56.0, 23.0 ],
                     "rnbo_classname": "loadbang",
                     "rnbo_serial": 1,
-                    "rnbo_uniqueid": "loadbang_obj-84",
+                    "rnbo_uniqueid": "loadbang_obj-83",
                     "text": "loadbang"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-106",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1273.0, 397.0, 29.5, 23.0 ],
+                    "rnbo_classname": "i",
+                    "rnbo_extra_attributes": {
+                        "initial": 0.0
+                    },
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "i_obj-106",
+                    "text": "i"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-102",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1236.0, 357.0, 48.0, 23.0 ],
+                    "rnbo_classname": "pipe",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "pipe_obj-102",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "Anything to be delayed",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "Delayed number",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "number"
+                            },
+                            "time": {
+                                "attrOrProp": 1,
+                                "digest": "Delay time",
+                                "defaultarg": 2,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number",
+                                "defaultValue": "50"
+                            },
+                            "flush": {
+                                "attrOrProp": 1,
+                                "digest": "Stop delay and output current value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            },
+                            "stop": {
+                                "attrOrProp": 1,
+                                "digest": "Stop delay",
+                                "isalias": 0,
+                                "aliases": [ "clear" ],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            },
+                            "clear": {
+                                "attrOrProp": 1,
+                                "digest": "Stop delay",
+                                "isalias": 1,
+                                "aliasOf": "stop",
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "number",
+                                "digest": "Anything to be delayed",
+                                "defaultarg": 1,
+                                "hot": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "time",
+                                "type": "number",
+                                "digest": "Delay time",
+                                "defaultarg": 2,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "number",
+                                "digest": "Delayed number",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "pipe",
+                        "aliasOf": "pipe",
+                        "classname": "pipe",
+                        "operator": 0,
+                        "versionId": -1187956124,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "pipe 50"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-100",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 1236.0, 321.0, 56.0, 23.0 ],
+                    "rnbo_classname": "t",
+                    "rnbo_extra_attributes": {
+                        "triggers": ""
+                    },
+                    "rnbo_serial": 3,
+                    "rnbo_uniqueid": "t_obj-100",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "Output order 2 (number).",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "number"
+                            },
+                            "out2": {
+                                "attrOrProp": 1,
+                                "digest": "Output order 1 (number).",
+                                "defaultarg": 2,
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "number"
+                            },
+                            "triggers": {
+                                "attrOrProp": 2,
+                                "digest": "The number of arguments determines the number of outlets. \t\t\t\t\t\tEach outlet sends out either a whole number, float, bang or list, \t\t\t\t\t\tas identified by symbol arguments (i, f, b, l). \t\t\t\t\t\tIf there are no arguments, there are two outlets, both of which send a float.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "list"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": [ "bang", "number", "list" ],
+                                "digest": "input to distribute",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "number",
+                                "digest": "Output order 2 (number).",
+                                "defaultarg": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "out2",
+                                "type": "number",
+                                "digest": "Output order 1 (number).",
+                                "defaultarg": 2,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "trigger",
+                        "aliasOf": "trigger",
+                        "classname": "t",
+                        "operator": 0,
+                        "versionId": 1624904035,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "t 0 1"
                 }
             },
             {
@@ -563,11 +926,11 @@
                     "patching_rect": [ 1442.0, 639.0, 142.0, 23.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "initialFormat": "float",
-                        "maximum": "<none>",
-                        "preset": 0,
                         "minimum": "<none>",
-                        "order": ""
+                        "preset": 0,
+                        "order": "",
+                        "maximum": "<none>",
+                        "initialFormat": "float"
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "number_obj-111"
@@ -2193,7 +2556,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "t_obj-82",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -2285,7 +2648,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 5,
                     "rnbo_uniqueid": "t_obj-81",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -2834,7 +3197,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 6,
                     "rnbo_uniqueid": "t_obj-50",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -2926,7 +3289,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 5,
+                    "rnbo_serial": 7,
                     "rnbo_uniqueid": "t_obj-49",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3018,7 +3381,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 6,
+                    "rnbo_serial": 8,
                     "rnbo_uniqueid": "t_obj-30",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3130,7 +3493,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 7,
+                    "rnbo_serial": 9,
                     "rnbo_uniqueid": "t_obj-10",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3242,7 +3605,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 8,
+                    "rnbo_serial": 10,
                     "rnbo_uniqueid": "t_obj-11",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3334,7 +3697,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 9,
+                    "rnbo_serial": 11,
                     "rnbo_uniqueid": "t_obj-12",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3426,7 +3789,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 10,
+                    "rnbo_serial": 12,
                     "rnbo_uniqueid": "t_obj-13",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3538,7 +3901,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 11,
+                    "rnbo_serial": 13,
                     "rnbo_uniqueid": "t_obj-14",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3630,7 +3993,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 12,
+                    "rnbo_serial": 14,
                     "rnbo_uniqueid": "t_obj-15",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3722,7 +4085,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 13,
+                    "rnbo_serial": 15,
                     "rnbo_uniqueid": "t_obj-16",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3814,7 +4177,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 14,
+                    "rnbo_serial": 16,
                     "rnbo_uniqueid": "t_obj-17",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3906,7 +4269,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 15,
+                    "rnbo_serial": 17,
                     "rnbo_uniqueid": "t_obj-20",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -4159,7 +4522,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 16,
+                    "rnbo_serial": 18,
                     "rnbo_uniqueid": "t_obj-872",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -4231,7 +4594,7 @@
                     "rnbo_extra_attributes": {
                         "triggers": ""
                     },
-                    "rnbo_serial": 17,
+                    "rnbo_serial": 19,
                     "rnbo_uniqueid": "t_obj-871",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -4899,7 +5262,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-100", 0 ],
+                    "destination": [ "obj-84", 0 ],
                     "source": [ "obj-104", 0 ]
                 }
             },
@@ -4912,6 +5275,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-32", 0 ],
+                    "midpoints": [ 1282.5, 464.0, 183.5, 464.0 ],
                     "source": [ "obj-106", 0 ]
                 }
             },
@@ -4919,6 +5283,36 @@
                 "patchline": {
                     "destination": [ "obj-111", 0 ],
                     "source": [ "obj-107", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-104", 0 ],
+                    "source": [ "obj-108", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-84", 0 ],
+                    "source": [ "obj-108", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-108", 0 ],
+                    "source": [ "obj-109", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-110", 0 ],
+                    "source": [ "obj-109", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-115", 0 ],
+                    "source": [ "obj-109", 0 ]
                 }
             },
             {
@@ -4936,8 +5330,26 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-100", 0 ],
+                    "source": [ "obj-110", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-112", 0 ],
                     "source": [ "obj-111", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-109", 0 ],
+                    "source": [ "obj-113", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-114", 0 ],
+                    "source": [ "obj-115", 0 ]
                 }
             },
             {
@@ -5847,21 +6259,14 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-100", 0 ],
+                    "destination": [ "obj-113", 0 ],
                     "source": [ "obj-83", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-104", 0 ],
-                    "order": 1,
-                    "source": [ "obj-84", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-83", 0 ],
-                    "order": 0,
+                    "destination": [ "obj-33", 0 ],
+                    "midpoints": [ 1362.5, 471.0, 249.5, 471.0 ],
                     "source": [ "obj-84", 0 ]
                 }
             },
