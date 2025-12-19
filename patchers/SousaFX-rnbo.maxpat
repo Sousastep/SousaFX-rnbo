@@ -17,6 +17,38 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-478",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 169.5, 143.0, 89.0, 22.0 ],
+                    "text": "s rnbo_params"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-462",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 169.5, 54.0, 38.0, 38.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-259",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 169.5, 106.5, 108.0, 22.0 ],
+                    "text": "prepend audobuild"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-477",
                     "maxclass": "newobj",
                     "numinlets": 3,
@@ -4625,7 +4657,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 55.0, 160.0, 96.0, 58.0 ],
+                    "patching_rect": [ 52.0, 85.0, 96.0, 58.0 ],
                     "text": "window flags nofloat, window flags zoom, window flags grow, window exec, savewindow 0"
                 }
             },
@@ -8491,6 +8523,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-478", 0 ],
+                    "source": [ "obj-259", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-29", 0 ],
                     "source": [ "obj-26", 0 ]
                 }
@@ -10349,6 +10387,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-259", 0 ],
+                    "source": [ "obj-462", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-41", 0 ],
                     "source": [ "obj-47", 0 ]
                 }
@@ -11064,6 +11108,14 @@
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
             "obj-59": [ "Alert Volume", "Loop Alert", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
