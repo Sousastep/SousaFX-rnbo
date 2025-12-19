@@ -4,17 +4,59 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 659.0, 626.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-477",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 2014.0, 1431.5, 69.0, 22.0 ],
+                    "text": "route 20 21"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-476",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 8,
+                    "outlettype": [ "", "", "", "int", "int", "", "int", "" ],
+                    "patching_rect": [ 1993.0, 1388.5, 92.5, 22.0 ],
+                    "text": "midiparse"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-464",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2083.0, 1481.5, 103.0, 22.0 ],
+                    "text": "s \"is tuba playing\""
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-465",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1967.0, 1481.5, 103.0, 22.0 ],
+                    "text": "s \"is tuba soloing\""
+                }
+            },
             {
                 "box": {
                     "id": "obj-454",
@@ -65,7 +107,7 @@
                     "numinlets": 6,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 1607.5, 1336.0, 84.0, 22.0 ],
+                    "patching_rect": [ 1408.7142857142858, 1411.0, 84.0, 22.0 ],
                     "text": "scale~ 0 1 1 0"
                 }
             },
@@ -451,7 +493,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1376.0, 845.0, 85.0, 22.0 ],
-                    "restore": [ -10.0 ],
+                    "restore": [ -14.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -504,7 +546,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1355.0, 750.0, 83.0, 22.0 ],
-                    "restore": [ -9.0 ],
+                    "restore": [ -12.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -557,7 +599,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1340.0, 650.0, 93.0, 22.0 ],
-                    "restore": [ -10.0 ],
+                    "restore": [ -14.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -795,9 +837,9 @@
                     "maxclass": "bpatcher",
                     "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
-                    "numoutlets": 14,
+                    "numoutlets": 15,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
                     "patching_rect": [ 939.0, 1336.0, 567.0, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -2974,7 +3016,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3314,7 +3356,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3483,7 +3525,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3830,7 +3872,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
+                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -4332,7 +4374,7 @@
                     "patching_rect": [ 512.0, 1806.0, 180.0, 41.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.0, 124.0, 163.0, 41.0 ],
-                    "text": "-76.97 dB",
+                    "text": "-72.44 dB",
                     "textjustification": 1
                 }
             },
@@ -5966,7 +6008,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1322.0, 550.0, 84.00000250339508, 22.0 ],
-                    "restore": [ -3.999999999999999 ],
+                    "restore": [ -8.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5983,7 +6025,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1407.0, 1010.0, 94.0000028014183, 22.0 ],
-                    "restore": [ -15.590551181102335 ],
+                    "restore": [ -14.897637795275642 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6166,12 +6208,11 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
-                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 3014.0, 1923.0, 119.0, 95.0 ]
+                    "patching_rect": [ 3014.0, 1923.0, 119.0, 23.0 ]
                 }
             },
             {
@@ -7029,7 +7070,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 1607.5, 1368.0, 24.0, 63.0 ],
+                    "patching_rect": [ 1408.7142857142858, 1443.0, 24.0, 63.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 30.0, 277.0, 77.0, 38.0 ],
                     "range": [ 0.0, 1.0 ]
@@ -9840,7 +9881,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-400", 13 ]
+                    "source": [ "obj-400", 14 ]
                 }
             },
             {
@@ -9854,6 +9895,13 @@
                 "patchline": {
                     "destination": [ "obj-457", 0 ],
                     "source": [ "obj-400", 12 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-476", 0 ],
+                    "midpoints": [ 1457.357142857143, 1398.0, 1980.0, 1398.0, 1980.0, 1360.0, 2002.5, 1360.0 ],
+                    "source": [ "obj-400", 13 ]
                 }
             },
             {
@@ -10358,6 +10406,24 @@
                     "destination": [ "obj-474", 0 ],
                     "order": 0,
                     "source": [ "obj-475", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-477", 0 ],
+                    "source": [ "obj-476", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-464", 0 ],
+                    "source": [ "obj-477", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-465", 0 ],
+                    "source": [ "obj-477", 0 ]
                 }
             },
             {
