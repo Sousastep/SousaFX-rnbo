@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 970.0, 53.0, 1449.0, 1200.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -525,7 +525,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1376.0, 845.0, 85.0, 22.0 ],
-                    "restore": [ -14.0 ],
+                    "restore": [ -10.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -578,7 +578,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1355.0, 750.0, 83.0, 22.0 ],
-                    "restore": [ -12.0 ],
+                    "restore": [ -8.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -631,7 +631,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1340.0, 650.0, 93.0, 22.0 ],
-                    "restore": [ -14.0 ],
+                    "restore": [ -8.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -4406,7 +4406,7 @@
                     "patching_rect": [ 512.0, 1806.0, 180.0, 41.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.0, 124.0, 163.0, 41.0 ],
-                    "text": "-72.44 dB",
+                    "text": "-86.01 dB",
                     "textjustification": 1
                 }
             },
@@ -5859,57 +5859,6 @@
                     "outlettype": [ "", "int" ],
                     "patching_rect": [ 4605.0, 521.0, 114.0, 23.0 ],
                     "text": "adstatus takeover"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-152",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1463.0, 1225.0, 92.0, 22.0 ],
-                    "restore": [ -14.0 ],
-                    "saved_object_attributes": {
-                        "parameter_enable": 0,
-                        "parameter_mappable": 0
-                    },
-                    "text": "pattr \"synth vol\"",
-                    "varname": "synth vol"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-153",
-                    "maxclass": "live.dial",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "float" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 1366.0, 1212.0, 80.0, 48.0 ],
-                    "saved_attribute_attributes": {
-                        "valueof": {
-                            "parameter_longname": "Synth Volume",
-                            "parameter_mmax": 0.0,
-                            "parameter_mmin": -22.0,
-                            "parameter_modmode": 3,
-                            "parameter_shortname": "Synth Volume",
-                            "parameter_type": 0,
-                            "parameter_unitstyle": 4
-                        }
-                    },
-                    "varname": "Synth Volume"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-154",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1366.0, 1274.0, 107.0, 22.0 ],
-                    "text": "prepend synth_vol"
                 }
             },
             {
@@ -7730,24 +7679,6 @@
                 "patchline": {
                     "destination": [ "obj-30", 0 ],
                     "source": [ "obj-151", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-153", 0 ],
-                    "source": [ "obj-152", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-154", 0 ],
-                    "source": [ "obj-153", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-400", 0 ],
-                    "source": [ "obj-154", 0 ]
                 }
             },
             {
@@ -10911,7 +10842,6 @@
         ],
         "parameters": {
             "obj-148": [ "live.numbox", "live.numbox", 0 ],
-            "obj-153": [ "Synth Volume", "Synth Volume", 0 ],
             "obj-155": [ "live.numbox[1]", "live.numbox[1]", 0 ],
             "obj-161::obj-274": [ "number", "number", 0 ],
             "obj-165": [ "Env Sens", "Env Sens", 0 ],
@@ -10920,10 +10850,6 @@
             "obj-176": [ "Metro Volume", "Metronome", 0 ],
             "obj-183::obj-155": [ "live.numbox[37]", "live.numbox[1]", 0 ],
             "obj-183::obj-94": [ "live.numbox[38]", "live.numbox[1]", 0 ],
-            "obj-22": [ "number[11]", "number[2]", 0 ],
-            "obj-23": [ "number[10]", "number[2]", 0 ],
-            "obj-24": [ "number[9]", "number[2]", 0 ],
-            "obj-27": [ "flonum[2]", "flonum", 0 ],
             "obj-281::obj-22::obj-12": [ "live.numbox[29]", "live.numbox[2]", 0 ],
             "obj-281::obj-22::obj-14": [ "live.dial[27]", "thresh", 0 ],
             "obj-281::obj-22::obj-16": [ "live.dial[28]", "attack", 0 ],
@@ -10980,16 +10906,6 @@
             "obj-281::obj-276::obj-5": [ "release[9]", "release", 0 ],
             "obj-281::obj-276::obj-6": [ "himidfq[10]", "hi mid freq", 0 ],
             "obj-281::obj-276::obj-7": [ "himid[9]", "hi mid gain", 0 ],
-            "obj-281::obj-277::obj-10": [ "live.numbox[25]", "live.numbox[2]", 0 ],
-            "obj-281::obj-277::obj-12": [ "live.numbox[24]", "live.numbox[2]", 0 ],
-            "obj-281::obj-277::obj-13": [ "live.numbox[23]", "live.numbox[2]", 0 ],
-            "obj-281::obj-277::obj-2": [ "lookahead[5]", "lookahead", 0 ],
-            "obj-281::obj-277::obj-20": [ "live.numbox[26]", "live.numbox[2]", 0 ],
-            "obj-281::obj-277::obj-3": [ "comp amt[10]", "comp amt", 0 ],
-            "obj-281::obj-277::obj-4": [ "attack[11]", "attack", 0 ],
-            "obj-281::obj-277::obj-5": [ "release[10]", "release", 0 ],
-            "obj-281::obj-277::obj-6": [ "himidfq[11]", "hi mid freq", 0 ],
-            "obj-281::obj-277::obj-7": [ "himid[10]", "hi mid gain", 0 ],
             "obj-281::obj-2::obj-12": [ "live.numbox[30]", "live.numbox[2]", 0 ],
             "obj-281::obj-2::obj-14": [ "live.dial[34]", "thresh", 0 ],
             "obj-281::obj-2::obj-16": [ "live.dial[33]", "attack", 0 ],
@@ -11011,13 +10927,6 @@
             "obj-344::obj-3::obj-5": [ "diff[1]", "diff", 0 ],
             "obj-344::obj-3::obj-6": [ "damp[1]", "damp", 0 ],
             "obj-344::obj-3::obj-7": [ "decay[1]", "decay", 0 ],
-            "obj-344::obj-4::obj-10": [ "wet vol[1]", "wet vol", 0 ],
-            "obj-344::obj-4::obj-13": [ "dry vol[1]", "dry vol", 0 ],
-            "obj-344::obj-4::obj-2": [ "jitter[2]", "jitter", 0 ],
-            "obj-344::obj-4::obj-4": [ "size[5]", "size", 0 ],
-            "obj-344::obj-4::obj-5": [ "diff[2]", "diff", 0 ],
-            "obj-344::obj-4::obj-6": [ "damp[2]", "damp", 0 ],
-            "obj-344::obj-4::obj-7": [ "decay[2]", "decay", 0 ],
             "obj-348::obj-10::obj-12": [ "live.numbox[34]", "live.numbox[2]", 0 ],
             "obj-348::obj-10::obj-14": [ "live.dial[55]", "thresh", 0 ],
             "obj-348::obj-10::obj-16": [ "live.dial[58]", "attack", 0 ],
@@ -11045,18 +10954,9 @@
             "obj-348::obj-4::obj-20": [ "live.dial[46]", "release", 0 ],
             "obj-348::obj-4::obj-3": [ "live.dial[48]", "lookahead", 0 ],
             "obj-348::obj-4::obj-4": [ "live.dial[47]", "input gain", 0 ],
-            "obj-348::obj-5::obj-12": [ "live.numbox[33]", "live.numbox[2]", 0 ],
-            "obj-348::obj-5::obj-14": [ "live.dial[50]", "thresh", 0 ],
-            "obj-348::obj-5::obj-16": [ "live.dial[52]", "attack", 0 ],
-            "obj-348::obj-5::obj-20": [ "live.dial[54]", "release", 0 ],
-            "obj-348::obj-5::obj-3": [ "live.dial[51]", "lookahead", 0 ],
-            "obj-348::obj-5::obj-4": [ "live.dial[53]", "input gain", 0 ],
             "obj-348::obj-6::obj-13": [ "live.toggle[4]", "live.toggle", 0 ],
             "obj-348::obj-6::obj-2": [ "spread[1]", "spread", 0 ],
             "obj-348::obj-6::obj-4": [ "output volume", "output volume", 0 ],
-            "obj-348::obj-7::obj-13": [ "live.toggle[7]", "live.toggle", 0 ],
-            "obj-348::obj-7::obj-2": [ "spread[3]", "spread", 0 ],
-            "obj-348::obj-7::obj-4": [ "output volume[2]", "output volume", 0 ],
             "obj-348::obj-8::obj-13": [ "live.toggle[6]", "live.toggle", 0 ],
             "obj-348::obj-8::obj-2": [ "spread[2]", "spread", 0 ],
             "obj-348::obj-8::obj-4": [ "output volume[1]", "output volume", 0 ],
@@ -11108,6 +11008,14 @@
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
             "obj-59": [ "Alert Volume", "Loop Alert", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
@@ -11235,36 +11143,6 @@
                 "obj-281::obj-276::obj-7": {
                     "parameter_longname": "himid[9]"
                 },
-                "obj-281::obj-277::obj-10": {
-                    "parameter_longname": "live.numbox[25]"
-                },
-                "obj-281::obj-277::obj-12": {
-                    "parameter_longname": "live.numbox[24]"
-                },
-                "obj-281::obj-277::obj-13": {
-                    "parameter_longname": "live.numbox[23]"
-                },
-                "obj-281::obj-277::obj-2": {
-                    "parameter_longname": "lookahead[5]"
-                },
-                "obj-281::obj-277::obj-20": {
-                    "parameter_longname": "live.numbox[26]"
-                },
-                "obj-281::obj-277::obj-3": {
-                    "parameter_longname": "comp amt[10]"
-                },
-                "obj-281::obj-277::obj-4": {
-                    "parameter_longname": "attack[11]"
-                },
-                "obj-281::obj-277::obj-5": {
-                    "parameter_longname": "release[10]"
-                },
-                "obj-281::obj-277::obj-6": {
-                    "parameter_longname": "himidfq[11]"
-                },
-                "obj-281::obj-277::obj-7": {
-                    "parameter_longname": "himid[10]"
-                },
                 "obj-281::obj-2::obj-12": {
                     "parameter_longname": "live.numbox[30]"
                 },
@@ -11300,27 +11178,6 @@
                 },
                 "obj-344::obj-3::obj-7": {
                     "parameter_longname": "decay[1]"
-                },
-                "obj-344::obj-4::obj-10": {
-                    "parameter_longname": "wet vol[1]"
-                },
-                "obj-344::obj-4::obj-13": {
-                    "parameter_longname": "dry vol[1]"
-                },
-                "obj-344::obj-4::obj-2": {
-                    "parameter_longname": "jitter[2]"
-                },
-                "obj-344::obj-4::obj-4": {
-                    "parameter_longname": "size[5]"
-                },
-                "obj-344::obj-4::obj-5": {
-                    "parameter_longname": "diff[2]"
-                },
-                "obj-344::obj-4::obj-6": {
-                    "parameter_longname": "damp[2]"
-                },
-                "obj-344::obj-4::obj-7": {
-                    "parameter_longname": "decay[2]"
                 },
                 "obj-348::obj-10::obj-12": {
                     "parameter_longname": "live.numbox[34]"
@@ -11400,38 +11257,11 @@
                 "obj-348::obj-4::obj-4": {
                     "parameter_longname": "live.dial[47]"
                 },
-                "obj-348::obj-5::obj-12": {
-                    "parameter_longname": "live.numbox[33]"
-                },
-                "obj-348::obj-5::obj-14": {
-                    "parameter_longname": "live.dial[50]"
-                },
-                "obj-348::obj-5::obj-16": {
-                    "parameter_longname": "live.dial[52]"
-                },
-                "obj-348::obj-5::obj-20": {
-                    "parameter_longname": "live.dial[54]"
-                },
-                "obj-348::obj-5::obj-3": {
-                    "parameter_longname": "live.dial[51]"
-                },
-                "obj-348::obj-5::obj-4": {
-                    "parameter_longname": "live.dial[53]"
-                },
                 "obj-348::obj-6::obj-13": {
                     "parameter_longname": "live.toggle[4]"
                 },
                 "obj-348::obj-6::obj-2": {
                     "parameter_longname": "spread[1]"
-                },
-                "obj-348::obj-7::obj-13": {
-                    "parameter_longname": "live.toggle[7]"
-                },
-                "obj-348::obj-7::obj-2": {
-                    "parameter_longname": "spread[3]"
-                },
-                "obj-348::obj-7::obj-4": {
-                    "parameter_longname": "output volume[2]"
                 },
                 "obj-348::obj-8::obj-13": {
                     "parameter_longname": "live.toggle[6]"
