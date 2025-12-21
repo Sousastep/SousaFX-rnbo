@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 0,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 925.0, 208.0, 1018.0, 1063.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -386,7 +386,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1724.0, 1356.0, 148.0, 22.0 ],
-                    "restore": [ 33.0 ],
+                    "restore": [ 90.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -473,7 +473,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2539.0, 1351.0, 109.0, 22.0 ],
-                    "restore": [ 56.0 ],
+                    "restore": [ 22.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -833,7 +833,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1851.0, 585.0, 118.0, 22.0 ],
-                    "restore": [ 12.5984251968504 ],
+                    "restore": [ 16.535433070866123 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1263,7 +1263,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1352.0, 433.0, 78.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 1.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1316,9 +1316,9 @@
                             "expression": ""
                         },
                         "valueof": {
-                            "parameter_enum": [ "Surreal Machines ladder", "Korg 35", "Andrew Simper SVF", "Vadim Zavalishin Diode ladder" ],
+                            "parameter_enum": [ "Korg 35", "Andrew Simper SVF", "Vadim Zavalishin Diode ladder" ],
                             "parameter_longname": "live.menu",
-                            "parameter_mmax": 3,
+                            "parameter_mmax": 2,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.menu",
                             "parameter_type": 2
@@ -1458,7 +1458,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 811.0, 79.0, 122.0, 22.0 ],
-                    "restore": [ 140.0 ],
+                    "restore": [ 90.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1521,7 +1521,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1188.0, 1174.0, 218.0, 22.0 ],
-                    "restore": [ -18.897637795275568 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1585,7 +1585,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1080.0, 1010.0, 229.0, 22.0 ],
-                    "restore": [ 1.574803149606296 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1649,7 +1649,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1007.0, 832.0, 186.0, 22.0 ],
-                    "restore": [ 6.0 ],
+                    "restore": [ 5.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1690,7 +1690,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 845.0, 552.0, 130.0, 22.0 ],
-                    "restore": [ 23.78740157480316 ],
+                    "restore": [ 20.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1772,7 +1772,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 72.78740157480314 ],
+                    "restore": [ 57.82677165354333 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1813,7 +1813,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 780.0, 258.0, 121.0, 22.0 ],
-                    "restore": [ 16.03779527559056 ],
+                    "restore": [ 14.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
