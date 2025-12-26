@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
@@ -13,6 +13,19 @@
         "default_fontname": "Lato",
         "title": "jb.kickduck",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-15",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 519.0, 1324.0, 120.0, 23.0 ],
+                    "rnbo_classname": "s",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "s_obj-15",
+                    "text": "s kickducker_enabled"
+                }
+            },
             {
                 "box": {
                     "id": "obj-83",
@@ -52,7 +65,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1033.0, 1431.0000000000005, 116.0, 23.0 ],
                     "rnbo_classname": "s~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "s~_obj-49",
                     "text": "s~ kick_duck_always"
                 }
@@ -66,7 +79,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 942.0, 868.0000000000001, 51.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 8,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "*~_obj-51",
                     "text": "*~ 4800"
                 }
@@ -80,7 +93,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 942.0, 831.6666666666667, 73.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 6,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "slide~_obj-53",
                     "text": "slide~ 0 480"
                 }
@@ -94,7 +107,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 942.0, 795.3333333333334, 54.0, 23.0 ],
                     "rnbo_classname": "<~",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "<~_obj-54",
                     "text": "<~ -0.05"
                 }
@@ -108,7 +121,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 942.0, 759.0, 42.0, 23.0 ],
                     "rnbo_classname": "delta~",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "delta~_obj-55",
                     "text": "delta~"
                 }
@@ -122,7 +135,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1033.0, 1334.666666666667, 66.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 7,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "slide~_obj-56",
                     "text": "slide~ 0 12"
                 }
@@ -142,11 +155,11 @@
                     "rnbo_classname": "codebox~",
                     "rnbo_extra_attributes": {
                         "code": "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
-                        "nocache": 0,
+                        "safemath": 1,
                         "expr": "",
-                        "safemath": 1
+                        "nocache": 0
                     },
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "codebox~_obj-57",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -475,7 +488,7 @@
                         "storeempty": 0,
                         "text": "1. 0. 0. 0. 351.851852 0. 0.556604 648.148148 0."
                     },
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "message_obj-58",
                     "text": "1 0 0 0 92.592593 -0.7 0.490566 263.888889 0.75 1 643.518519 -0.895"
                 }
@@ -489,7 +502,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1033.0, 619.0, 51.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 9,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "*~_obj-59",
                     "text": "*~ 1000"
                 }
@@ -507,7 +520,7 @@
                         "preset": 0,
                         "order": ""
                     },
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "list.reg_obj-60",
                     "text": "list.reg"
                 }
@@ -525,7 +538,7 @@
                         "length": 0.0,
                         "list": ""
                     },
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "pak_obj-61",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -682,7 +695,7 @@
                     "outlettype": [ "signal", "" ],
                     "patching_rect": [ 1033.0, 582.0, 68.0, 23.0 ],
                     "rnbo_classname": "line~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "foo[2]",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -835,7 +848,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 1079.0, 650.0, 56.0, 23.0 ],
                     "rnbo_classname": "loadbang",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "loadbang_obj-63",
                     "text": "loadbang"
                 }
@@ -849,7 +862,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1033.0, 1190.1666666666667, 75.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 10,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "*~_obj-65",
                     "text": "*~ 3.141593"
                 }
@@ -863,7 +876,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1033.0, 1286.5000000000002, 34.0, 23.0 ],
                     "rnbo_classname": "cos~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "cos~_obj-67",
                     "text": "cos~"
                 }
@@ -877,7 +890,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1033.0, 1238.3333333333335, 77.0, 23.0 ],
                     "rnbo_classname": "+~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "+~_obj-68",
                     "text": "+~ 4.712389"
                 }
@@ -891,7 +904,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1033.0, 1142.0, 40.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 11,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "*~_obj-69",
                     "text": "*~ 0.5"
                 }
@@ -920,7 +933,7 @@
                     "rnbo_extra_attributes": {
                         "hot": 0
                     },
-                    "rnbo_serial": 5,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "*_obj-73",
                     "text": "* 0.75"
                 }
@@ -934,9 +947,8 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1494.0, 756.0, 47.0, 37.0 ],
-                    "presentation_linecount": 2,
                     "rnbo_classname": "+",
-                    "rnbo_serial": 5,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "+_obj-75",
                     "text": "+ 1. @hot 1"
                 }
@@ -950,9 +962,8 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1356.0, 756.0, 46.0, 37.0 ],
-                    "presentation_linecount": 2,
                     "rnbo_classname": "+",
-                    "rnbo_serial": 6,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "+_obj-76",
                     "text": "+ 1. @hot 1"
                 }
@@ -969,7 +980,7 @@
                     "rnbo_extra_attributes": {
                         "length": 0.0
                     },
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "unpack_obj-79",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -1306,7 +1317,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1033.0, 1382.8333333333337, 113.0, 23.0 ],
                     "rnbo_classname": "ease~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "ease~_obj-81",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -1549,7 +1560,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 161.0, 868.0, 51.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 5,
                     "rnbo_uniqueid": "*~_obj-18",
                     "text": "*~ 4800"
                 }
@@ -1563,7 +1574,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 613.0, 560.0, 74.0, 23.0 ],
                     "rnbo_classname": "*",
-                    "rnbo_serial": 6,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "*_obj-17",
                     "text": "* 48. @hot 1"
                 }
@@ -1577,7 +1588,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 161.0, 834.0, 73.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "slide~_obj-16",
                     "text": "slide~ 0 480"
                 }
@@ -1591,7 +1602,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 161.0, 796.0, 54.0, 23.0 ],
                     "rnbo_classname": "<~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "<~_obj-14",
                     "text": "<~ -0.05"
                 }
@@ -1605,7 +1616,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 161.0, 759.0, 42.0, 23.0 ],
                     "rnbo_classname": "delta~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "delta~_obj-13",
                     "text": "delta~"
                 }
@@ -1619,7 +1630,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 252.0, 1329.5, 66.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "slide~_obj-12",
                     "text": "slide~ 0 12"
                 }
@@ -1651,7 +1662,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 402.0, 1399.0, 101.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 5,
                     "rnbo_uniqueid": "slide~_obj-6",
                     "text": "slide~ 4800 4800"
                 }
@@ -1702,11 +1713,11 @@
                     "rnbo_classname": "codebox~",
                     "rnbo_extra_attributes": {
                         "code": "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
-                        "nocache": 0,
+                        "safemath": 1,
                         "expr": "",
-                        "safemath": 1
+                        "nocache": 0
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "codebox~_obj-80",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -2035,7 +2046,7 @@
                         "storeempty": 0,
                         "text": "1. 0. 0. 0. 351.851852 0. 0.556604 648.148148 0."
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "message_obj-78",
                     "text": "1 0 0 0 92.592593 -0.7 0.490566 263.888889 0.75 1 643.518519 -0.895"
                 }
@@ -2049,7 +2060,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 252.0, 619.0, 51.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 6,
                     "rnbo_uniqueid": "*~_obj-77",
                     "text": "*~ 1000"
                 }
@@ -2067,7 +2078,7 @@
                         "preset": 0,
                         "order": ""
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "list.reg_obj-32",
                     "text": "list.reg"
                 }
@@ -2085,7 +2096,7 @@
                         "length": 0.0,
                         "list": ""
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "pak_obj-30",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -2242,7 +2253,7 @@
                     "outlettype": [ "signal", "" ],
                     "patching_rect": [ 252.0, 582.0, 68.0, 23.0 ],
                     "rnbo_classname": "line~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "foo[1]",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -2409,7 +2420,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 298.0, 650.0, 56.0, 23.0 ],
                     "rnbo_classname": "loadbang",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "loadbang_obj-1",
                     "text": "loadbang"
                 }
@@ -2423,7 +2434,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 252.0, 1189.0, 75.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 7,
                     "rnbo_uniqueid": "*~_obj-208",
                     "text": "*~ 3.141593"
                 }
@@ -2437,7 +2448,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 252.0, 1283.0, 34.0, 23.0 ],
                     "rnbo_classname": "cos~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "cos~_obj-392",
                     "text": "cos~"
                 }
@@ -2451,7 +2462,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 252.0, 1236.0, 77.0, 23.0 ],
                     "rnbo_classname": "+~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "+~_obj-390",
                     "text": "+~ 4.712389"
                 }
@@ -2465,7 +2476,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 252.0, 1142.0, 40.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 8,
                     "rnbo_uniqueid": "*~_obj-185",
                     "text": "*~ 0.5"
                 }
@@ -2520,7 +2531,7 @@
                     "rnbo_extra_attributes": {
                         "hot": 0
                     },
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "*_obj-369",
                     "text": "* 1.25"
                 }
@@ -2552,7 +2563,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 713.0, 756.0, 47.0, 37.0 ],
                     "rnbo_classname": "+",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "+_obj-26",
                     "text": "+ 1. @hot 1"
                 }
@@ -2567,8 +2578,8 @@
                     "patching_rect": [ 641.0, 101.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "in~_obj-8",
@@ -2660,7 +2671,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 575.0, 756.0, 46.0, 37.0 ],
                     "rnbo_classname": "+",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "+_obj-66",
                     "text": "+ 1. @hot 1"
                 }
@@ -2677,7 +2688,7 @@
                     "rnbo_extra_attributes": {
                         "length": 0.0
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "unpack_obj-87",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3083,7 +3094,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 641.0, 277.0, 73.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 6,
                     "rnbo_uniqueid": "slide~_obj-373",
                     "text": "slide~ 0 960"
                 }
@@ -3097,7 +3108,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 252.0, 1368.0, 113.0, 23.0 ],
                     "rnbo_classname": "ease~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "ease~_obj-377",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -3234,6 +3245,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-11", 0 ],
+                    "order": 1,
+                    "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "order": 0,
                     "source": [ "obj-10", 0 ]
                 }
             },
