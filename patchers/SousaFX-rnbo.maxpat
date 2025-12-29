@@ -9,12 +9,34 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 458.0, 607.0 ],
+        "rect": [ 0.0, 53.0, 418.0, 556.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-464",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 1822.0, 1368.0, 53.0, 22.0 ],
+                    "text": "route 69"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-187",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 8,
+                    "outlettype": [ "", "", "", "int", "int", "", "int", "" ],
+                    "patching_rect": [ 1801.0, 1331.0, 92.5, 22.0 ],
+                    "text": "midiparse"
+                }
+            },
             {
                 "box": {
                     "id": "obj-154",
@@ -845,11 +867,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-rnbopat.maxpat",
+                    "name": "sousaFX-external.maxpat",
                     "numinlets": 1,
                     "numoutlets": 15,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "" ],
                     "patching_rect": [ 939.0, 1336.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -3882,7 +3904,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -4384,7 +4406,7 @@
                     "patching_rect": [ 512.0, 1806.0, 180.0, 41.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.0, 124.0, 163.0, 41.0 ],
-                    "text": "-101.45 dB",
+                    "text": "-74.60 dB",
                     "textjustification": 1
                 }
             },
@@ -6079,11 +6101,12 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
+                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 3014.0, 1923.0, 119.0, 23.0 ]
+                    "patching_rect": [ 3014.0, 1923.0, 119.0, 95.0 ]
                 }
             },
             {
@@ -6967,11 +6990,10 @@
                     "background": 1,
                     "fontsize": 12.0,
                     "id": "obj-524",
-                    "linecount": 3,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1682.0, 1704.5, 94.0, 49.0 ],
+                    "patching_rect": [ 1822.0, 1404.0, 251.0, 22.0 ],
                     "text": "s \"keep track of how much the tuba's played\""
                 }
             },
@@ -7726,6 +7748,12 @@
                 "patchline": {
                     "destination": [ "obj-191", 0 ],
                     "source": [ "obj-185", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-464", 0 ],
+                    "source": [ "obj-187", 2 ]
                 }
             },
             {
@@ -8634,7 +8662,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-368", 0 ],
-                    "order": 0,
                     "source": [ "obj-3", 4 ]
                 }
             },
@@ -8648,13 +8675,6 @@
                 "patchline": {
                     "destination": [ "obj-461", 0 ],
                     "source": [ "obj-3", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-524", 0 ],
-                    "order": 1,
-                    "source": [ "obj-3", 4 ]
                 }
             },
             {
@@ -9637,6 +9657,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-152", 0 ],
+                    "order": 1,
+                    "source": [ "obj-400", 13 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-187", 0 ],
+                    "order": 0,
                     "source": [ "obj-400", 13 ]
                 }
             },
@@ -10136,6 +10164,12 @@
                 "patchline": {
                     "destination": [ "obj-259", 0 ],
                     "source": [ "obj-462", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-524", 0 ],
+                    "source": [ "obj-464", 0 ]
                 }
             },
             {
