@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 925.0, 208.0, 1018.0, 1063.0 ],
+        "rect": [ 419.0, 44.0, 1532.0, 1167.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -461,7 +461,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 2171.0, 1479.0, 89.0, 22.0 ],
+                    "patching_rect": [ 2171.0, 1435.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -472,31 +472,14 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 2539.0, 1351.0, 109.0, 22.0 ],
-                    "restore": [ 22.0 ],
+                    "patching_rect": [ 2522.0, 1289.0, 109.0, 22.0 ],
+                    "restore": [ 40.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
                     },
                     "text": "pattr pitchshift_mix",
                     "varname": "pitchshift_mix[1]"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-43",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 2520.0, 1281.0, 143.0, 22.0 ],
-                    "restore": [ 0.0 ],
-                    "saved_object_attributes": {
-                        "parameter_enable": 0,
-                        "parameter_mappable": 0
-                    },
-                    "text": "pattr pitchshift_transpose",
-                    "varname": "pitchshift_transpose"
                 }
             },
             {
@@ -541,7 +524,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 2434.0, 1372.0, 86.0, 48.0 ],
+                    "patching_rect": [ 2417.0, 1310.0, 86.0, 48.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 217.0, 151.0, 63.0, 48.0 ],
                     "saved_attribute_attributes": {
@@ -555,31 +538,6 @@
                         }
                     },
                     "varname": "live.dial[17]"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-48",
-                    "maxclass": "live.dial",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "float" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 2419.0, 1306.0, 86.0, 48.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 282.0, 217.0, 64.0, 48.0 ],
-                    "saved_attribute_attributes": {
-                        "valueof": {
-                            "parameter_longname": "live.dial[19]",
-                            "parameter_mmax": 24.0,
-                            "parameter_mmin": -12.0,
-                            "parameter_modmode": 4,
-                            "parameter_shortname": "transpose",
-                            "parameter_type": 1,
-                            "parameter_unitstyle": 7
-                        }
-                    },
-                    "varname": "live.dial[18]"
                 }
             },
             {
@@ -649,19 +607,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2232.0, 1441.0, 125.0, 22.0 ],
+                    "patching_rect": [ 2212.0, 1398.0, 125.0, 22.0 ],
                     "text": "prepend pitchshift/mix"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-53",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 2209.0, 1398.0, 140.0, 22.0 ],
-                    "text": "prepend pitchshift/transp"
                 }
             },
             {
@@ -1458,7 +1405,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 811.0, 79.0, 122.0, 22.0 ],
-                    "restore": [ 90.0 ],
+                    "restore": [ 140.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1521,7 +1468,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1188.0, 1174.0, 218.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ -7.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1585,7 +1532,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1080.0, 1010.0, 229.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 7.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2424,12 +2371,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-48", 0 ],
-                    "source": [ "obj-43", 1 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-49", 0 ],
                     "source": [ "obj-45", 1 ]
                 }
@@ -2444,12 +2385,6 @@
                 "patchline": {
                     "destination": [ "obj-52", 0 ],
                     "source": [ "obj-47", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-53", 0 ],
-                    "source": [ "obj-48", 0 ]
                 }
             },
             {
@@ -2480,12 +2415,6 @@
                 "patchline": {
                     "destination": [ "obj-55", 0 ],
                     "source": [ "obj-52", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-55", 0 ],
-                    "source": [ "obj-53", 0 ]
                 }
             },
             {
