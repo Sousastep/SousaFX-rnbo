@@ -390,9 +390,9 @@
                     "numoutlets": 4,
                     "outlettype": [ "bang", "bang", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1914.0, 750.0, 86.0, 70.0 ],
+                    "patching_rect": [ 1914.0, 749.0, 86.0, 70.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 21.0, 179.0, 377.0, 79.0 ],
+                    "presentation_rect": [ 21.0, 189.0, 377.0, 69.0 ],
                     "varname": "loop"
                 }
             },
@@ -867,11 +867,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
                     "numoutlets": 15,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
                     "patching_rect": [ 939.0, 1336.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -1465,7 +1465,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1893.0, 493.0, 50.0, 22.0 ],
-                    "text": "main 1"
+                    "text": "loop 1"
                 }
             },
             {
@@ -3904,7 +3904,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
+                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -4406,7 +4406,7 @@
                     "patching_rect": [ 512.0, 1806.0, 180.0, 41.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 202.0, 124.0, 163.0, 41.0 ],
-                    "text": "-74.60 dB",
+                    "text": "-80.40 dB",
                     "textjustification": 1
                 }
             },
@@ -5867,7 +5867,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1222.0, 302.0, 92.00000274181366, 22.0 ],
-                    "restore": [ 199.99999999999997 ],
+                    "restore": [ 200.00000000000003 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5884,7 +5884,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1294.0, 410.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -39.0 ],
+                    "restore": [ -41.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -7056,7 +7056,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 3521.0, 2697.0, 79.0, 83.0 ],
+                    "patching_rect": [ 3521.0, 2696.0, 79.0, 83.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 0.0, 51.0, 418.0, 505.0 ],
                     "proportion": 0.5,
@@ -10680,6 +10680,8 @@
             "obj-168": [ "Noise Gate Thresh", "Noise Gate Thresh", 0 ],
             "obj-172": [ "Kick Volume", "Kick", 0 ],
             "obj-176": [ "Metro Volume", "Metronome", 0 ],
+            "obj-183::obj-140": [ "live.numbox[24]", "live.numbox[1]", 0 ],
+            "obj-183::obj-142": [ "live.numbox[25]", "live.numbox[1]", 0 ],
             "obj-183::obj-155": [ "live.numbox[37]", "live.numbox[1]", 0 ],
             "obj-183::obj-94": [ "live.numbox[38]", "live.numbox[1]", 0 ],
             "obj-281::obj-22::obj-12": [ "live.numbox[29]", "live.numbox[2]", 0 ],
@@ -10839,6 +10841,14 @@
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
             "obj-59": [ "Alert Volume", "Loop Alert", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
