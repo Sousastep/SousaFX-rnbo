@@ -15,16 +15,30 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-14",
+                    "id": "obj-167",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 621.5, 873.0, 31.0, 23.0 ],
-                    "rnbo_classname": "*~",
+                    "patching_rect": [ 621.5, 898.0, 75.0, 23.0 ],
+                    "rnbo_classname": "onepole~",
                     "rnbo_serial": 1,
-                    "rnbo_uniqueid": "*~_obj-14",
-                    "text": "*~ 2"
+                    "rnbo_uniqueid": "onepole~_obj-167",
+                    "text": "onepole~ 20"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 621.5, 860.0, 87.0, 23.0 ],
+                    "rnbo_classname": "slide~",
+                    "rnbo_serial": 4,
+                    "rnbo_uniqueid": "slide~_obj-20",
+                    "text": "slide~ 0 18200"
                 }
             },
             {
@@ -96,19 +110,19 @@
                     "patching_rect": [ 150.0, 666.0, 234.0, 23.0 ],
                     "rnbo_classname": "param",
                     "rnbo_extra_attributes": {
-                        "tonormalized": "",
-                        "meta": "",
-                        "enum": "",
+                        "steps": 0.0,
                         "displayname": "",
-                        "exponent": 1.0,
-                        "unit": "",
-                        "order": "0",
                         "preset": 1,
                         "sendinit": 1,
+                        "enum": "",
+                        "exponent": 1.0,
                         "displayorder": "-",
-                        "steps": 0.0,
+                        "tonormalized": "",
+                        "fromnormalized": "",
                         "ctlin": -1.0,
-                        "fromnormalized": ""
+                        "unit": "",
+                        "meta": "",
+                        "order": "0"
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "xfade_env_sens",
@@ -513,8 +527,8 @@
                     "patching_rect": [ 766.0, 1994.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "out~_obj-3",
@@ -606,8 +620,8 @@
                     "patching_rect": [ 661.0, 1994.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "out~_obj-12",
@@ -715,10 +729,10 @@
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
                         "minimum": "<none>",
-                        "initialFormat": "float",
-                        "order": "",
                         "preset": 0,
-                        "maximum": "<none>"
+                        "initialFormat": "float",
+                        "maximum": "<none>",
+                        "order": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "number_obj-11"
@@ -1005,7 +1019,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 621.5, 831.0, 63.0, 23.0 ],
+                    "patching_rect": [ 621.5, 823.0, 63.0, 23.0 ],
                     "rnbo_classname": "feedback~",
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "feedback~_obj-9",
@@ -1086,8 +1100,8 @@
                     "patching_rect": [ 537.0, 1990.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "out~_obj-8",
@@ -1208,8 +1222,8 @@
                     "patching_rect": [ 661.0, 1809.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "in~_obj-4",
@@ -1301,8 +1315,8 @@
                     "patching_rect": [ 766.0, 1809.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "in~_obj-5",
@@ -2380,10 +2394,10 @@
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
                         "minimum": 0.0,
-                        "initialFormat": "float",
-                        "order": "",
                         "preset": 0,
-                        "maximum": 100.0
+                        "initialFormat": "float",
+                        "maximum": 100.0,
+                        "order": ""
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "env_bottom_",
@@ -2413,10 +2427,10 @@
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
                         "minimum": 0.0,
-                        "initialFormat": "float",
-                        "order": "",
                         "preset": 0,
-                        "maximum": 100.0
+                        "initialFormat": "float",
+                        "maximum": 100.0,
+                        "order": ""
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "env_top_",
@@ -2446,13 +2460,13 @@
                                     "box": {
                                         "maxclass": "codebox",
                                         "patching_rect": [ 81.0, 57.0, 586.0, 564.0 ],
-                                        "fontsize": 12.0,
-                                        "numinlets": 1,
-                                        "numoutlets": 1,
-                                        "fontname": "<Monospaced>",
-                                        "outlettype": [ "" ],
-                                        "fontface": 0,
                                         "id": "obj-7",
+                                        "outlettype": [ "" ],
+                                        "fontsize": 12.0,
+                                        "fontname": "<Monospaced>",
+                                        "numinlets": 1,
+                                        "fontface": 0,
+                                        "numoutlets": 1,
                                         "code": "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
                                     }
                                 },
@@ -2461,12 +2475,12 @@
                                         "maxclass": "newobj",
                                         "text": "in 1",
                                         "patching_rect": [ 81.0, 24.0, 30.0, 22.0 ],
-                                        "fontsize": 12.0,
-                                        "numinlets": 0,
-                                        "numoutlets": 1,
-                                        "fontname": "Arial",
+                                        "id": "obj-1",
                                         "outlettype": [ "" ],
-                                        "id": "obj-1"
+                                        "fontsize": 12.0,
+                                        "fontname": "Arial",
+                                        "numinlets": 0,
+                                        "numoutlets": 1
                                     }
                                 },
                                 {
@@ -2474,25 +2488,25 @@
                                         "maxclass": "newobj",
                                         "text": "out 1",
                                         "patching_rect": [ 81.0, 633.0, 37.0, 22.0 ],
+                                        "id": "obj-4",
                                         "fontsize": 12.0,
-                                        "numinlets": 1,
-                                        "numoutlets": 0,
                                         "fontname": "Arial",
-                                        "id": "obj-4"
+                                        "numinlets": 1,
+                                        "numoutlets": 0
                                     }
                                 }
                             ],
                             "lines": [
                                 {
                                     "patchline": {
-                                        "source": [ "obj-7", 0 ],
-                                        "destination": [ "obj-4", 0 ]
+                                        "source": [ "obj-1", 0 ],
+                                        "destination": [ "obj-7", 0 ]
                                     }
                                 },
                                 {
                                     "patchline": {
-                                        "source": [ "obj-1", 0 ],
-                                        "destination": [ "obj-7", 0 ]
+                                        "source": [ "obj-7", 0 ],
+                                        "destination": [ "obj-4", 0 ]
                                     }
                                 }
                             ]
@@ -2657,7 +2671,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1215.0, 1322.0, 144.0, 23.0 ],
                     "rnbo_classname": "rampsmooth~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "rampsmooth~_obj-617",
                     "text": "rampsmooth~ 480 36000"
                 }
@@ -3007,7 +3021,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 621.5, 923.0, 31.0, 23.0 ],
+                    "patching_rect": [ 621.5, 932.0, 31.0, 23.0 ],
                     "rnbo_classname": "*~",
                     "rnbo_serial": 6,
                     "rnbo_uniqueid": "*~_obj-529",
@@ -3120,13 +3134,13 @@
                                     "box": {
                                         "maxclass": "codebox",
                                         "patching_rect": [ 81.0, 57.0, 586.0, 564.0 ],
-                                        "fontsize": 12.0,
-                                        "numinlets": 1,
-                                        "numoutlets": 1,
-                                        "fontname": "<Monospaced>",
-                                        "outlettype": [ "" ],
-                                        "fontface": 0,
                                         "id": "obj-7",
+                                        "outlettype": [ "" ],
+                                        "fontsize": 12.0,
+                                        "fontname": "<Monospaced>",
+                                        "numinlets": 1,
+                                        "fontface": 0,
+                                        "numoutlets": 1,
                                         "code": "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\n\r\nout1 = SineEaseInOut(in1);\r\n\r\n\r\n"
                                     }
                                 },
@@ -3135,12 +3149,12 @@
                                         "maxclass": "newobj",
                                         "text": "in 1",
                                         "patching_rect": [ 81.0, 24.0, 30.0, 22.0 ],
-                                        "fontsize": 12.0,
-                                        "numinlets": 0,
-                                        "numoutlets": 1,
-                                        "fontname": "Arial",
+                                        "id": "obj-1",
                                         "outlettype": [ "" ],
-                                        "id": "obj-1"
+                                        "fontsize": 12.0,
+                                        "fontname": "Arial",
+                                        "numinlets": 0,
+                                        "numoutlets": 1
                                     }
                                 },
                                 {
@@ -3148,25 +3162,25 @@
                                         "maxclass": "newobj",
                                         "text": "out 1",
                                         "patching_rect": [ 81.0, 633.0, 37.0, 22.0 ],
+                                        "id": "obj-4",
                                         "fontsize": 12.0,
-                                        "numinlets": 1,
-                                        "numoutlets": 0,
                                         "fontname": "Arial",
-                                        "id": "obj-4"
+                                        "numinlets": 1,
+                                        "numoutlets": 0
                                     }
                                 }
                             ],
                             "lines": [
                                 {
                                     "patchline": {
-                                        "source": [ "obj-1", 0 ],
-                                        "destination": [ "obj-7", 0 ]
+                                        "source": [ "obj-7", 0 ],
+                                        "destination": [ "obj-4", 0 ]
                                     }
                                 },
                                 {
                                     "patchline": {
-                                        "source": [ "obj-7", 0 ],
-                                        "destination": [ "obj-4", 0 ]
+                                        "source": [ "obj-1", 0 ],
+                                        "destination": [ "obj-7", 0 ]
                                     }
                                 }
                             ]
@@ -3360,8 +3374,8 @@
                     "patching_rect": [ 432.0, 1809.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "in~_obj-705",
@@ -3453,8 +3467,8 @@
                     "patching_rect": [ 537.0, 1809.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 4,
                     "rnbo_uniqueid": "in~_obj-706",
@@ -3545,8 +3559,8 @@
                     "patching_rect": [ 432.0, 1990.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
-                        "meta": "",
-                        "comment": ""
+                        "comment": "",
+                        "meta": ""
                     },
                     "rnbo_serial": 4,
                     "rnbo_uniqueid": "out~_obj-707",
@@ -3663,12 +3677,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-529", 0 ],
-                    "source": [ "obj-14", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-552", 0 ],
                     "order": 0,
                     "source": [ "obj-15", 0 ]
@@ -3685,6 +3693,12 @@
                 "patchline": {
                     "destination": [ "obj-703", 0 ],
                     "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-529", 0 ],
+                    "source": [ "obj-167", 0 ]
                 }
             },
             {
@@ -3717,6 +3731,12 @@
                     "destination": [ "obj-701", 0 ],
                     "order": 1,
                     "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-167", 0 ],
+                    "source": [ "obj-20", 0 ]
                 }
             },
             {
@@ -4286,7 +4306,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-14", 0 ],
+                    "destination": [ "obj-20", 0 ],
                     "source": [ "obj-9", 0 ]
                 }
             }
