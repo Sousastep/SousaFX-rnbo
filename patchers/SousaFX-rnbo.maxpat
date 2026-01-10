@@ -17,6 +17,19 @@
         "boxes": [
             {
                 "box": {
+                    "bgcolor": [ 0.07843137254902, 0.07843137254902, 0.07843137254902, 1.0 ],
+                    "color": [ 0.101960784313725, 0.796078431372549, 0.258823529411765, 1.0 ],
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 909.5, 2617.0, 78.0, 22.0 ],
+                    "text": "s~ drum_env",
+                    "textcolor": [ 0.647058823529412, 1.0, 0.725490196078431, 1.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-521",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -427,7 +440,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 1670.0, 1668.0, 53.0, 22.0 ],
+                    "patching_rect": [ 1659.0, 1652.0, 53.0, 22.0 ],
                     "text": "route 69"
                 }
             },
@@ -458,7 +471,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1529.5, 1716.0, 75.0, 22.0 ],
+                    "patching_rect": [ 1531.6777777777777, 1719.0, 75.0, 22.0 ],
                     "text": "s FX-to-VFX"
                 }
             },
@@ -468,7 +481,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 169.5, 143.0, 89.0, 22.0 ],
+                    "patching_rect": [ 66.0, -49.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -480,7 +493,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 169.5, 54.0, 38.0, 38.0 ]
+                    "patching_rect": [ 66.0, -138.0, 38.0, 38.0 ]
                 }
             },
             {
@@ -490,7 +503,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 169.5, 106.5, 105.0, 22.0 ],
+                    "patching_rect": [ 66.0, -85.0, 105.0, 22.0 ],
                     "text": "prepend autobuild"
                 }
             },
@@ -501,7 +514,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1746.0, 1080.5, 29.5, 22.0 ],
+                    "patching_rect": [ 231.0, -66.0, 29.5, 22.0 ],
                     "text": "0"
                 }
             },
@@ -1124,7 +1137,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1977.5, 1916.0, 56.0, 22.0 ],
+                    "patching_rect": [ 1953.0, 1949.0, 56.0, 22.0 ],
                     "text": "s soloing"
                 }
             },
@@ -1190,7 +1203,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1834.5, 1081.5, 141.0, 20.0 ],
+                    "patching_rect": [ 320.0, -65.0, 141.0, 20.0 ],
                     "text": "external / rnbopat switch"
                 }
             },
@@ -1201,7 +1214,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1698.0, 1241.0, 71.0, 22.0 ],
+                    "patching_rect": [ 183.0, 94.0, 71.0, 22.0 ],
                     "text": "fromsymbol"
                 }
             },
@@ -1213,7 +1226,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1799.0, 1076.0, 31.0, 31.0 ]
+                    "patching_rect": [ 284.0, -71.0, 31.0, 31.0 ]
                 }
             },
             {
@@ -1223,7 +1236,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 1698.0, 1280.0, 67.0, 22.0 ],
+                    "patching_rect": [ 183.0, 133.0, 67.0, 22.0 ],
                     "save": [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
                     "text": "thispatcher"
                 }
@@ -1235,7 +1248,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "bang", "" ],
-                    "patching_rect": [ 1799.0, 1163.0, 31.0, 22.0 ],
+                    "patching_rect": [ 284.0, 16.0, 31.0, 22.0 ],
                     "text": "t b s"
                 }
             },
@@ -1246,7 +1259,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 1799.0, 1123.0, 152.0, 22.0 ],
+                    "patching_rect": [ 284.0, -24.0, 152.0, 22.0 ],
                     "text": "list.lookup external rnbopat"
                 }
             },
@@ -1257,7 +1270,7 @@
                     "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 1698.0, 1202.0, 395.0, 22.0 ],
+                    "patching_rect": [ 183.0, 55.0, 395.0, 22.0 ],
                     "text": "combine \"script sendbox sousaFX-switcher replace sousaFX-\" s .maxpat"
                 }
             },
@@ -1272,11 +1285,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
-                    "numoutlets": 15,
+                    "numoutlets": 16,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -2222,7 +2235,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1377.5, 2028.0, 94.0, 22.0 ],
+                    "patching_rect": [ 1447.3666666666666, 1840.0, 94.0, 22.0 ],
                     "text": "s~ lpf_mod_env"
                 }
             },
@@ -2345,7 +2358,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 310.0, 105.5, 24.0, 24.0 ]
+                    "patching_rect": [ 28.5, 1.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -2354,7 +2367,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 310.0, 143.0, 101.0, 22.0 ],
+                    "patching_rect": [ 28.5, 38.0, 101.0, 22.0 ],
                     "text": "s SousaFX_open"
                 }
             },
@@ -2364,7 +2377,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1345.5, 2076.0, 103.0, 22.0 ],
+                    "patching_rect": [ 1405.0, 1879.0, 103.0, 22.0 ],
                     "text": "s~ crossfade_env"
                 }
             },
@@ -4915,7 +4928,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1489.5, 1980.0, 89.0, 22.0 ],
+                    "patching_rect": [ 2082.0, 1732.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -5146,7 +5159,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1585.5, 1892.0, 72.0, 22.0 ],
+                    "patching_rect": [ 2178.0, 1644.0, 72.0, 22.0 ],
                     "text": "prepend set"
                 }
             },
@@ -5168,7 +5181,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1749.5, 1948.0, 139.0, 22.0 ],
+                    "patching_rect": [ 1749.5, 1988.0, 139.0, 22.0 ],
                     "text": "prepend is_tuba_playing"
                 }
             },
@@ -5179,7 +5192,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1921.5, 1948.0, 143.0, 22.0 ],
+                    "patching_rect": [ 1921.5, 1988.0, 143.0, 22.0 ],
                     "text": "prepend solo_fx_enabled"
                 }
             },
@@ -5189,7 +5202,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1829.5, 2000.0, 77.0, 22.0 ],
+                    "patching_rect": [ 1829.5, 2040.0, 77.0, 22.0 ],
                     "text": "s preset_info"
                 }
             },
@@ -5267,7 +5280,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 909.5, 2472.0, 180.0, 22.0 ],
+                    "patching_rect": [ 909.5, 2470.0, 180.0, 22.0 ],
                     "text": "s~ Low_Amp_Mod_w_tuba_env",
                     "textcolor": [ 0.647058823529412, 1.0, 0.725490196078431, 1.0 ]
                 }
@@ -5280,7 +5293,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 909.5, 2396.0, 182.0, 22.0 ],
+                    "patching_rect": [ 909.5, 2396.5, 182.0, 22.0 ],
                     "text": "s~ High_Freq_Mod_w_tuba_env",
                     "textcolor": [ 0.647058823529412, 1.0, 0.725490196078431, 1.0 ]
                 }
@@ -5306,7 +5319,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 909.5, 2324.0, 207.0, 22.0 ],
+                    "patching_rect": [ 909.5, 2323.0, 207.0, 22.0 ],
                     "text": "s~ Dry-Wet_Mix_no_transient_helper",
                     "textcolor": [ 0.647058823529412, 1.0, 0.725490196078431, 1.0 ]
                 }
@@ -5319,7 +5332,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 909.5, 2248.0, 275.0, 22.0 ],
+                    "patching_rect": [ 909.5, 2249.5, 275.0, 22.0 ],
                     "text": "s~ Phasor_with_phase_offset_and_rate_multiplier",
                     "textcolor": [ 0.647058823529412, 1.0, 0.725490196078431, 1.0 ]
                 }
@@ -5332,7 +5345,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 909.5, 2548.0, 129.0, 22.0 ],
+                    "patching_rect": [ 909.5, 2543.5, 129.0, 22.0 ],
                     "text": "s~ tuba_env_w_delrev",
                     "textcolor": [ 0.647058823529412, 1.0, 0.725490196078431, 1.0 ]
                 }
@@ -5408,7 +5421,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1429.5, 1840.0, 144.0, 22.0 ],
+                    "patching_rect": [ 2022.0, 1592.0, 144.0, 22.0 ],
                     "restore": [ 4.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
@@ -5430,7 +5443,7 @@
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
                     "parameter_mappable": 0,
-                    "patching_rect": [ 1489.5, 1880.0, 56.0, 42.0 ],
+                    "patching_rect": [ 2082.0, 1632.0, 56.0, 42.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 307.0, 3.0, 39.0, 42.0 ],
                     "saved_attribute_attributes": {
@@ -5457,7 +5470,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1489.5, 1940.0, 182.0, 22.0 ],
+                    "patching_rect": [ 2082.0, 1692.0, 182.0, 22.0 ],
                     "text": "prepend tap/time_sig_numerator"
                 }
             },
@@ -6154,7 +6167,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1407.0, 1010.0, 94.0000028014183, 22.0 ],
-                    "restore": [ -10.740157480315014 ],
+                    "restore": [ -14.204724409448872 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -7206,7 +7219,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1670.0, 1704.0, 251.0, 22.0 ],
+                    "patching_rect": [ 1659.0, 1688.0, 251.0, 22.0 ],
                     "text": "s \"keep track of how much the tuba's played\""
                 }
             },
@@ -9749,7 +9762,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-109", 0 ],
-                    "source": [ "obj-400", 11 ]
+                    "source": [ "obj-400", 12 ]
                 }
             },
             {
@@ -9770,14 +9783,14 @@
                 "patchline": {
                     "destination": [ "obj-152", 0 ],
                     "order": 1,
-                    "source": [ "obj-400", 13 ]
+                    "source": [ "obj-400", 14 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-187", 0 ],
                     "order": 0,
-                    "source": [ "obj-400", 13 ]
+                    "source": [ "obj-400", 14 ]
                 }
             },
             {
@@ -9814,7 +9827,13 @@
             {
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-400", 14 ]
+                    "source": [ "obj-400", 15 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-4", 0 ],
+                    "source": [ "obj-400", 10 ]
                 }
             },
             {
@@ -9827,7 +9846,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-457", 0 ],
-                    "source": [ "obj-400", 12 ]
+                    "source": [ "obj-400", 13 ]
                 }
             },
             {
@@ -9882,7 +9901,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-98", 0 ],
-                    "source": [ "obj-400", 10 ]
+                    "source": [ "obj-400", 11 ]
                 }
             },
             {
@@ -11163,14 +11182,6 @@
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
             "obj-59": [ "Alert Volume", "Loop Alert", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
