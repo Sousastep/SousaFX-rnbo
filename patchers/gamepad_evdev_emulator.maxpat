@@ -709,7 +709,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 426.0, 527.0, 123.0, 22.0 ],
-                    "text": "gamepad @interval 5"
+                    "text": "gamepad @interval 1"
                 }
             },
             {
