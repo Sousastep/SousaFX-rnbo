@@ -15,6 +15,173 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-12",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 268.0, 564.0, 182.0, 21.0 ],
+                    "presentation_linecount": 2,
+                    "text": "input_magnitude post-deadzone"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-11",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 270.0, 602.0, 192.0, 23.0 ],
+                    "rnbo_classname": "expr",
+                    "rnbo_extra_attributes": {
+                        "hot": 0,
+                        "nocache": 0,
+                        "safemath": 1
+                    },
+                    "rnbo_serial": 5,
+                    "rnbo_uniqueid": "expr_obj-11",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "reset": {
+                                "attrOrProp": 1,
+                                "digest": "Reset all state and params to initial values",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            },
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "in1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number"
+                            },
+                            "in2": {
+                                "attrOrProp": 1,
+                                "digest": "in2",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number"
+                            },
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "out1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "number"
+                            },
+                            "expr": {
+                                "attrOrProp": 2,
+                                "digest": "expr",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "hot": {
+                                "attrOrProp": 2,
+                                "digest": "Trigger computation on all inlets.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "false"
+                            },
+                            "safemath": {
+                                "attrOrProp": 2,
+                                "digest": "Use safe math expressions (e.g.: division by 0 will not crash).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "true"
+                            },
+                            "nocache": {
+                                "attrOrProp": 2,
+                                "digest": "Do not use parsing cache. This is only useful with very very big code sizes. Code generation will then take a looooong time.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "false"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "number",
+                                "digest": "in1",
+                                "hot": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "in2",
+                                "type": "number",
+                                "digest": "in2",
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "number",
+                                "digest": "out1",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "expr",
+                        "aliasOf": "expr",
+                        "classname": "expr",
+                        "operator": 0,
+                        "versionId": 835263063,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "expr sqrt(pow(in1\\, 2) + pow(in2\\, 2))"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-25",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -79,8 +246,8 @@
                     "patching_rect": [ 636.0, 786.0, 111.0, 23.0 ],
                     "rnbo_classname": "expr",
                     "rnbo_extra_attributes": {
-                        "nocache": 0,
                         "hot": 0,
+                        "nocache": 0,
                         "safemath": 1
                     },
                     "rnbo_serial": 1,
@@ -358,7 +525,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 428.0, 290.0, 92.0, 23.0 ],
+                    "patching_rect": [ 270.0, 635.0, 92.0, 23.0 ],
                     "rnbo_classname": "s",
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "s_obj-35",
@@ -663,8 +830,8 @@
                     "patching_rect": [ 666.0, 473.0, 42.0, 23.0 ],
                     "rnbo_classname": "pak",
                     "rnbo_extra_attributes": {
-                        "length": 0.0,
-                        "list": ""
+                        "list": "",
+                        "length": 0.0
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "pak_obj-63",
@@ -780,8 +947,8 @@
                     "patching_rect": [ 740.0, 425.0, 107.0, 23.0 ],
                     "rnbo_classname": "expr",
                     "rnbo_extra_attributes": {
-                        "nocache": 0,
                         "hot": 0,
+                        "nocache": 0,
                         "safemath": 1
                     },
                     "rnbo_serial": 2,
@@ -1089,8 +1256,8 @@
                     "patching_rect": [ 618.0, 425.0, 107.0, 23.0 ],
                     "rnbo_classname": "expr",
                     "rnbo_extra_attributes": {
-                        "nocache": 0,
                         "hot": 0,
+                        "nocache": 0,
                         "safemath": 1
                     },
                     "rnbo_serial": 3,
@@ -1315,6 +1482,9 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 572.0, 587.0, 20.0, 23.0 ],
                     "rnbo_classname": "t",
+                    "rnbo_extra_attributes": {
+                        "triggers": ""
+                    },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "t_obj-45",
                     "rnboinfo": {
@@ -1698,8 +1868,8 @@
                     "patching_rect": [ 572.0, 205.0, 192.0, 23.0 ],
                     "rnbo_classname": "expr",
                     "rnbo_extra_attributes": {
-                        "nocache": 0,
                         "hot": 0,
+                        "nocache": 0,
                         "safemath": 1
                     },
                     "rnbo_serial": 4,
@@ -1853,6 +2023,9 @@
                     "outlettype": [ "", "" ],
                     "patching_rect": [ 572.0, 158.0, 29.5, 23.0 ],
                     "rnbo_classname": "t",
+                    "rnbo_extra_attributes": {
+                        "triggers": ""
+                    },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "t_obj-293",
                     "rnboinfo": {
@@ -1943,8 +2116,8 @@
                     "patching_rect": [ 572.0, 121.0, 42.0, 23.0 ],
                     "rnbo_classname": "pak",
                     "rnbo_extra_attributes": {
-                        "length": 0.0,
-                        "list": ""
+                        "list": "",
+                        "length": 0.0
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "pak_obj-292",
@@ -2059,6 +2232,9 @@
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 572.0, 250.0, 40.0, 23.0 ],
                     "rnbo_classname": "t",
+                    "rnbo_extra_attributes": {
+                        "triggers": ""
+                    },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "t_obj-285",
                     "rnboinfo": {
@@ -2227,11 +2403,11 @@
                     "patching_rect": [ 889.0, 191.0, 50.0, 23.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "initialFormat": "float",
-                        "preset": 0,
-                        "order": "",
                         "maximum": "<none>",
-                        "minimum": "<none>"
+                        "initialFormat": "float",
+                        "minimum": "<none>",
+                        "preset": 0,
+                        "order": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "number_obj-53"
@@ -2337,6 +2513,12 @@
                     "destination": [ "obj-36", 0 ],
                     "order": 1,
                     "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-35", 0 ],
+                    "source": [ "obj-11", 0 ]
                 }
             },
             {
@@ -2459,12 +2641,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-35", 0 ],
-                    "source": [ "obj-36", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-292", 1 ],
                     "source": [ "obj-37", 0 ]
                 }
@@ -2501,7 +2677,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-11", 0 ],
+                    "order": 1,
+                    "source": [ "obj-45", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-6", 0 ],
+                    "order": 0,
                     "source": [ "obj-45", 0 ]
                 }
             },
