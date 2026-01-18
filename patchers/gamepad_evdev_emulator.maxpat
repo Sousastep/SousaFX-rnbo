@@ -13,6 +13,28 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-12",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1016.0, 1106.0, 164.0, 22.0 ],
+                    "text": "prepend gpin/BTN_THUMBR"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-19",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 940.0, 1136.0, 162.0, 22.0 ],
+                    "text": "prepend gpin/BTN_THUMBL"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-7",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -1325,6 +1347,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-162", 0 ],
+                    "source": [ "obj-12", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-5", 0 ],
                     "source": [ "obj-13", 0 ]
                 }
@@ -1470,6 +1498,12 @@
                 "patchline": {
                     "destination": [ "obj-21", 0 ],
                     "source": [ "obj-17", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-162", 0 ],
+                    "source": [ "obj-19", 0 ]
                 }
             },
             {
@@ -1682,6 +1716,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-12", 0 ],
+                    "order": 1,
+                    "source": [ "obj-76", 9 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-19", 0 ],
+                    "order": 1,
+                    "source": [ "obj-76", 8 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-23", 0 ],
                     "order": 0,
                     "source": [ "obj-76", 6 ]
@@ -1709,6 +1757,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-36", 0 ],
+                    "order": 0,
                     "source": [ "obj-76", 8 ]
                 }
             },
@@ -1722,6 +1771,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-70", 0 ],
+                    "order": 0,
                     "source": [ "obj-76", 9 ]
                 }
             },
