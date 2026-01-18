@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 439.0, 581.0 ],
+        "rect": [ 0.0, 53.0, 418.0, 556.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -4195,7 +4195,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -5929,7 +5929,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1294.0, 410.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -37.0 ],
+                    "restore": [ -39.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
