@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 8.0, 709.0, 386.0, 694.0 ],
+        "rect": [ 21.0, 640.0, 386.0, 694.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -23,7 +23,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 341.0, 1019.0, 40.0, 22.0 ],
-                    "restore": [ 0.9 ],
+                    "restore": [ 0.97 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -40,7 +40,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 324.0, 995.0, 40.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 0.46464566929133877 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -57,7 +57,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 314.0, 995.0, 40.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 0.99 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -74,7 +74,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 337.0, 1013.0, 40.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 0.6 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -91,7 +91,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 331.0, 1037.0, 40.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 0.3 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -108,7 +108,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 324.0, 1008.0, 40.0, 22.0 ],
-                    "restore": [ 0.5 ],
+                    "restore": [ 0.6 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -641,7 +641,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2023.0, 379.0, 148.0, 22.0 ],
-                    "restore": [ 100.0 ],
+                    "restore": [ 90.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -728,7 +728,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1758.5, 1366.0, 109.0, 22.0 ],
-                    "restore": [ 22.0 ],
+                    "restore": [ 30.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -762,7 +762,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1723.5, 1216.0, 130.0, 22.0 ],
-                    "restore": [ 70.0 ],
+                    "restore": [ 80.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1018,7 +1018,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1868.0, 656.0, 111.0, 22.0 ],
-                    "restore": [ 33.0 ],
+                    "restore": [ 32.97637795275592 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1035,7 +1035,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1851.0, 585.0, 118.0, 22.0 ],
-                    "restore": [ 66.0 ],
+                    "restore": [ 16.39370078740159 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1465,7 +1465,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1352.0, 433.0, 78.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 1.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1660,7 +1660,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 811.0, 79.0, 122.0, 22.0 ],
-                    "restore": [ 180.0 ],
+                    "restore": [ 100.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1851,7 +1851,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1007.0, 832.0, 186.0, 22.0 ],
-                    "restore": [ 10.511811023622045 ],
+                    "restore": [ 8.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1892,7 +1892,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 845.0, 552.0, 130.0, 22.0 ],
-                    "restore": [ 30.0 ],
+                    "restore": [ 28.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1933,7 +1933,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 924.0, 684.0, 134.0, 22.0 ],
-                    "restore": [ 83.63779527559055 ],
+                    "restore": [ 76.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1974,7 +1974,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 60.0 ],
+                    "restore": [ 48.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2015,7 +2015,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 780.0, 258.0, 121.0, 22.0 ],
-                    "restore": [ 14.0 ],
+                    "restore": [ 22.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
