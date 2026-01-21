@@ -40,7 +40,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 324.0, 995.0, 40.0, 22.0 ],
-                    "restore": [ 0.46464566929133877 ],
+                    "restore": [ 0.52 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -91,7 +91,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 331.0, 1037.0, 40.0, 22.0 ],
-                    "restore": [ 0.3 ],
+                    "restore": [ 0.36 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1834,65 +1834,13 @@
             },
             {
                 "box": {
-                    "id": "obj-358",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "float" ],
-                    "patching_rect": [ 1196.0, 929.0, 33.0, 22.0 ],
-                    "text": "* 0.5"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-356",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1007.0, 832.0, 186.0, 22.0 ],
-                    "restore": [ 8.0 ],
-                    "saved_object_attributes": {
-                        "parameter_enable": 0,
-                        "parameter_mappable": 0
-                    },
-                    "text": "pattr \"min dist btwn ceil and floor\"",
-                    "varname": "min dist btwn ceil and floor"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-357",
-                    "maxclass": "live.dial",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "float" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 1065.0, 868.0, 150.00000447034836, 48.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 24.0, 556.0, 150.0, 48.0 ],
-                    "saved_attribute_attributes": {
-                        "valueof": {
-                            "parameter_longname": "live.dial[4]",
-                            "parameter_mmax": 50.0,
-                            "parameter_modmode": 3,
-                            "parameter_shortname": "Min dist btwn ceil and floor",
-                            "parameter_type": 0,
-                            "parameter_unitstyle": 5
-                        }
-                    },
-                    "varname": "live.dial[4]"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-354",
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 845.0, 552.0, 130.0, 22.0 ],
-                    "restore": [ 28.0 ],
+                    "restore": [ 3.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1933,7 +1881,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 924.0, 684.0, 134.0, 22.0 ],
-                    "restore": [ 76.0 ],
+                    "restore": [ 45.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1974,7 +1922,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 48.0 ],
+                    "restore": [ 66.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2015,7 +1963,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 780.0, 258.0, 121.0, 22.0 ],
-                    "restore": [ 22.0 ],
+                    "restore": [ 20.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2101,17 +2049,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 896.0, 367.0, 189.0, 22.0 ],
                     "text": "prepend jb_autowah/min_lfo_floor"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-298",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1094.0, 965.0, 219.0, 22.0 ],
-                    "text": "prepend jb_autowah/min_dist_btwn_flcl"
                 }
             },
             {
@@ -2446,12 +2383,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-278", 0 ],
-                    "source": [ "obj-298", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-30", 0 ],
                     "source": [ "obj-3", 0 ]
                 }
@@ -2556,24 +2487,6 @@
                 "patchline": {
                     "destination": [ "obj-343", 0 ],
                     "source": [ "obj-355", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-357", 0 ],
-                    "source": [ "obj-356", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-358", 0 ],
-                    "source": [ "obj-357", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-298", 0 ],
-                    "source": [ "obj-358", 0 ]
                 }
             },
             {

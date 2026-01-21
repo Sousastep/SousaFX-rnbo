@@ -1158,11 +1158,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
                     "numoutlets": 15,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -4195,7 +4195,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -5929,7 +5929,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1294.0, 410.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -40.0 ],
+                    "restore": [ -38.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -10735,7 +10735,6 @@
             "obj-377::obj-351": [ "live.dial[1]", "Max LFO Floor", 0 ],
             "obj-377::obj-353": [ "live.dial[2]", "Max LFO Ceiling", 0 ],
             "obj-377::obj-355": [ "live.dial[3]", "Min LFO Ceiling", 0 ],
-            "obj-377::obj-357": [ "live.dial[4]", "Min dist btwn ceil and floor", 0 ],
             "obj-377::obj-360": [ "live.dial[5]", "LFO ceiling env sens binding curve", 0 ],
             "obj-377::obj-372": [ "live.dial[6]", "LFO floor env sens binding curve", 0 ],
             "obj-377::obj-375": [ "live.dial[7]", "LFO env sens", 0 ],
@@ -10755,6 +10754,14 @@
             "obj-431": [ "Mono", "Mono", 0 ],
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
@@ -11084,9 +11091,6 @@
                     "parameter_range": [ 0.0, 100.0 ],
                     "parameter_shortname": "mid Q",
                     "parameter_unitstyle": 5
-                },
-                "obj-377::obj-357": {
-                    "parameter_shortname": "Min dist btwn ceil and floor"
                 },
                 "obj-377::obj-89": {
                     "parameter_longname": "live.numbox[39]",
