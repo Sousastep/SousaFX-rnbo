@@ -9,10 +9,24 @@
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 605.0, 87.0, 1244.0, 1129.0 ],
+        "rect": [ 1209.0, 194.0, 1244.0, 1129.0 ],
         "default_fontname": "Lato",
         "title": "jb.metronome",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-54",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 50.0, 936.0, 151.0, 23.0 ],
+                    "rnbo_classname": "r",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "r_obj-54",
+                    "text": "r new_metro_interval_bang"
+                }
+            },
             {
                 "box": {
                     "id": "obj-49",
@@ -129,6 +143,9 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 50.0, 1057.5, 23.0, 23.0 ],
                     "rnbo_classname": "t",
+                    "rnbo_extra_attributes": {
+                        "triggers": ""
+                    },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "t_obj-41",
                     "rnboinfo": {
@@ -196,11 +213,11 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 50.0, 1014.6666666666667, 130.0, 23.0 ],
+                    "patching_rect": [ 50.0, 1018.0, 123.0, 23.0 ],
                     "rnbo_classname": "delay",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "delay_obj-40",
-                    "text": "delay 1000 @delayall 0"
+                    "text": "delay 800 @delayall 0"
                 }
             },
             {
@@ -212,6 +229,9 @@
                     "outlettype": [ "", "" ],
                     "patching_rect": [ 50.0, 971.8333333333334, 33.0, 23.0 ],
                     "rnbo_classname": "t",
+                    "rnbo_extra_attributes": {
+                        "triggers": ""
+                    },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "t_obj-39",
                     "rnboinfo": {
@@ -290,20 +310,6 @@
                         "changesPatcherIO": 0
                     },
                     "text": "t b 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-42",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 50.0, 929.0, 72.0, 23.0 ],
-                    "rnbo_classname": "r",
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "r_obj-42",
-                    "text": "r tap_tempo"
                 }
             },
             {
@@ -671,10 +677,10 @@
                     "patching_rect": [ 725.0, 854.0, 181.0, 23.0 ],
                     "rnbo_classname": "buffer~",
                     "rnbo_extra_attributes": {
-                        "fill": "",
-                        "type": "",
                         "preset": 0,
                         "meta": "",
+                        "fill": "",
+                        "type": "",
                         "samplerate": 0.0
                     },
                     "rnbo_serial": 1,
@@ -1004,21 +1010,21 @@
                     "patching_rect": [ 373.0, 1347.0, 342.0, 23.0 ],
                     "rnbo_classname": "param",
                     "rnbo_extra_attributes": {
-                        "sendinit": 1,
-                        "steps": 57.0,
-                        "ctlin": 0.0,
-                        "enum": "",
-                        "fromnormalized": "",
-                        "displayname": "",
-                        "exponent": 1.0,
                         "unit": "dB",
                         "preset": 1,
+                        "exponent": 1.0,
+                        "order": "0",
+                        "meta": "",
+                        "ctlin": 0.0,
+                        "fromnormalized": "",
+                        "steps": 57.0,
+                        "enum": "",
+                        "sendinit": 1,
                         "tonormalized": "",
                         "displayorder": "-",
-                        "order": "0",
-                        "meta": ""
+                        "displayname": ""
                     },
-                    "rnbo_serial": 9,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "alert_volume",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -1439,21 +1445,21 @@
                     "patching_rect": [ 335.0, 660.0, 379.0, 23.0 ],
                     "rnbo_classname": "param",
                     "rnbo_extra_attributes": {
-                        "sendinit": 1,
-                        "steps": 57.0,
-                        "ctlin": -1.0,
-                        "enum": "",
-                        "fromnormalized": "",
-                        "displayname": "",
-                        "exponent": 1.0,
                         "unit": "dB",
                         "preset": 1,
+                        "exponent": 1.0,
+                        "order": "0",
+                        "meta": "",
+                        "ctlin": -1.0,
+                        "fromnormalized": "",
+                        "steps": 57.0,
+                        "enum": "",
+                        "sendinit": 1,
                         "tonormalized": "",
                         "displayorder": "-",
-                        "order": "0",
-                        "meta": ""
+                        "displayname": ""
                     },
-                    "rnbo_serial": 10,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "metronome_volume",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -2178,10 +2184,10 @@
                     "patching_rect": [ 812.0, 1148.0, 172.0, 23.0 ],
                     "rnbo_classname": "buffer~",
                     "rnbo_extra_attributes": {
-                        "fill": "",
-                        "type": "",
                         "preset": 0,
                         "meta": "",
+                        "fill": "",
+                        "type": "",
                         "samplerate": 0.0
                     },
                     "rnbo_serial": 2,
@@ -2745,10 +2751,10 @@
                     "patching_rect": [ 759.0, 951.0, 183.0, 23.0 ],
                     "rnbo_classname": "buffer~",
                     "rnbo_extra_attributes": {
-                        "fill": "",
-                        "type": "",
                         "preset": 0,
                         "meta": "",
+                        "fill": "",
+                        "type": "",
                         "samplerate": 0.0
                     },
                     "rnbo_serial": 3,
@@ -3312,10 +3318,10 @@
                     "patching_rect": [ 833.0, 1249.0, 170.0, 23.0 ],
                     "rnbo_classname": "buffer~",
                     "rnbo_extra_attributes": {
-                        "fill": "",
-                        "type": "",
                         "preset": 0,
                         "meta": "",
+                        "fill": "",
+                        "type": "",
                         "samplerate": 0.0
                     },
                     "rnbo_serial": 4,
@@ -3890,10 +3896,10 @@
                     "patching_rect": [ 785.0, 1051.0, 189.0, 23.0 ],
                     "rnbo_classname": "buffer~",
                     "rnbo_extra_attributes": {
-                        "fill": "",
-                        "type": "",
                         "preset": 0,
                         "meta": "",
+                        "fill": "",
+                        "type": "",
                         "samplerate": 0.0
                     },
                     "rnbo_serial": 5,
@@ -5101,10 +5107,10 @@
                     "patching_rect": [ 470.0, 428.0, 184.0, 23.0 ],
                     "rnbo_classname": "buffer~",
                     "rnbo_extra_attributes": {
-                        "fill": "",
-                        "type": "",
                         "preset": 0,
                         "meta": "",
+                        "fill": "",
+                        "type": "",
                         "samplerate": 0.0
                     },
                     "rnbo_serial": 6,
@@ -5417,10 +5423,10 @@
                     "patching_rect": [ 470.0, 476.0, 154.0, 23.0 ],
                     "rnbo_classname": "buffer~",
                     "rnbo_extra_attributes": {
-                        "fill": "",
-                        "type": "",
                         "preset": 0,
                         "meta": "",
+                        "fill": "",
+                        "type": "",
                         "samplerate": 0.0
                     },
                     "rnbo_serial": 7,
@@ -6014,12 +6020,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-39", 0 ],
-                    "source": [ "obj-42", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-45", 0 ],
                     "source": [ "obj-44", 0 ]
                 }
@@ -6164,6 +6164,12 @@
                 "patchline": {
                     "destination": [ "obj-497", 0 ],
                     "source": [ "obj-498", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-39", 0 ],
+                    "source": [ "obj-54", 0 ]
                 }
             },
             {
