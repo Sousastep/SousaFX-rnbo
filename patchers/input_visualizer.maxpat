@@ -14,146 +14,6 @@
         "boxes": [
             {
                 "box": {
-                    "activebgcolor": [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.0 ],
-                    "bordercolor": [ 0.09803921568627451, 0.09803921568627451, 0.09803921568627451, 0.0 ],
-                    "fontsize": 48.0,
-                    "hint": "right thumbstick's rotation offset",
-                    "id": "obj-142",
-                    "maxclass": "live.numbox",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "float" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 731.0, 517.0, 171.0, 61.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 477.5, 406.0, 182.0, 61.0 ],
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "textcolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_initial": [ 0 ],
-                            "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox[25]",
-                            "parameter_mmax": 360.0,
-                            "parameter_mmin": -360.0,
-                            "parameter_modmode": 4,
-                            "parameter_shortname": "live.numbox[1]",
-                            "parameter_type": 0,
-                            "parameter_units": "%3.1f°",
-                            "parameter_unitstyle": 9
-                        }
-                    },
-                    "textcolor": [ 0.85098, 0.85098, 0.85098, 1.0 ],
-                    "varname": "live.numbox[2]"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-137",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 731.0, 470.0, 111.0, 22.0 ],
-                    "restore": [ 0.0 ],
-                    "saved_object_attributes": {
-                        "parameter_enable": 0,
-                        "parameter_mappable": 0
-                    },
-                    "text": "pattr \"right rotation\"",
-                    "varname": "right rotation"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-138",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 522.0, 470.0, 104.0, 22.0 ],
-                    "restore": [ 0.0 ],
-                    "saved_object_attributes": {
-                        "parameter_enable": 0,
-                        "parameter_mappable": 0
-                    },
-                    "text": "pattr \"left rotation\"",
-                    "varname": "left rotation"
-                }
-            },
-            {
-                "box": {
-                    "activebgcolor": [ 0.066666666666667, 0.066666666666667, 0.066666666666667, 0.0 ],
-                    "bordercolor": [ 0.09803921568627451, 0.09803921568627451, 0.09803921568627451, 0.0 ],
-                    "fontsize": 48.0,
-                    "hint": "left thumbstick's rotation offset",
-                    "id": "obj-140",
-                    "maxclass": "live.numbox",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "float" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 522.0, 517.0, 171.0, 61.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 16.5, 406.0, 182.0, 61.0 ],
-                    "saved_attribute_attributes": {
-                        "activebgcolor": {
-                            "expression": ""
-                        },
-                        "bordercolor": {
-                            "expression": ""
-                        },
-                        "textcolor": {
-                            "expression": ""
-                        },
-                        "valueof": {
-                            "parameter_initial": [ 0 ],
-                            "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox[24]",
-                            "parameter_mmax": 360.0,
-                            "parameter_mmin": -360.0,
-                            "parameter_modmode": 4,
-                            "parameter_shortname": "live.numbox[1]",
-                            "parameter_type": 0,
-                            "parameter_units": "%3.1f°",
-                            "parameter_unitstyle": 9
-                        }
-                    },
-                    "textcolor": [ 0.85098, 0.85098, 0.85098, 1.0 ],
-                    "varname": "live.numbox[3]"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-114",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 731.0, 634.0, 152.0, 22.0 ],
-                    "text": "prepend gpin/rotation_right"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-115",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 520.0, 634.0, 145.0, 22.0 ],
-                    "text": "prepend gpin/rotation_left"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-136",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -2073,18 +1933,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-93", 0 ],
-                    "source": [ "obj-114", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-93", 0 ],
-                    "source": [ "obj-115", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-117", 0 ],
                     "order": 7,
                     "source": [ "obj-116", 0 ]
@@ -2281,32 +2129,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-142", 0 ],
-                    "source": [ "obj-137", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-140", 0 ],
-                    "source": [ "obj-138", 1 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-11", 0 ],
                     "source": [ "obj-14", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-115", 0 ],
-                    "source": [ "obj-140", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-114", 0 ],
-                    "source": [ "obj-142", 0 ]
                 }
             },
             {
