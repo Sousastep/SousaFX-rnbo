@@ -9,12 +9,22 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 441.0, 585.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
-        "title": "sousafx",
+        "title": "about sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-16",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1489.5222222222221, 1858.0, 103.0, 22.0 ],
+                    "text": "s~ low_amp_mod"
+                }
+            },
             {
                 "box": {
                     "fontsize": 17.854971115840677,
@@ -23,7 +33,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 115.5, 12.0, 48.0, 28.0 ],
+                    "patching_rect": [ 117.0, 12.0, 48.0, 28.0 ],
                     "text": "open"
                 }
             },
@@ -43,8 +53,8 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1331.0, 1966.0, 234.66666666666652, 20.0 ],
-                    "text": "\"Dry-Wet_Mix_YES_transient_helper\" :)"
+                    "patching_rect": [ 1330.5222222222221, 2059.0, 167.0, 20.0 ],
+                    "text": "xfade env w/ transient helper"
                 }
             },
             {
@@ -493,7 +503,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1090.0, 1136.0, 89.0, 22.0 ],
+                    "patching_rect": [ 1162.0, 524.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -503,7 +513,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1528.6666666666665, 1716.0, 75.0, 22.0 ],
+                    "patching_rect": [ 1531.6777777777777, 1716.0, 75.0, 22.0 ],
                     "text": "s FX-to-VFX"
                 }
             },
@@ -589,7 +599,7 @@
                     "numinlets": 6,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 1481.5, 1756.0, 84.0, 22.0 ],
+                    "patching_rect": [ 1446.5222222222221, 1901.0, 84.0, 22.0 ],
                     "text": "scale~ 0 1 1 0"
                 }
             },
@@ -1158,11 +1168,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
-                    "numoutlets": 15,
+                    "numoutlets": 16,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -2108,7 +2118,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1410.5, 1868.0, 94.0, 22.0 ],
+                    "patching_rect": [ 1400.5222222222221, 1993.0, 94.0, 22.0 ],
                     "text": "s~ lpf_mod_env"
                 }
             },
@@ -2250,7 +2260,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1331.0, 1942.0, 103.0, 22.0 ],
+                    "patching_rect": [ 1362.5222222222221, 2034.0, 103.0, 22.0 ],
                     "text": "s~ crossfade_env"
                 }
             },
@@ -4195,7 +4205,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
+                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -6100,12 +6110,11 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
-                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 4233.0, 2276.0, 119.0, 95.0 ]
+                    "patching_rect": [ 4233.0, 2276.0, 119.0, 23.0 ]
                 }
             },
             {
@@ -6879,7 +6888,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 1481.5, 1788.0, 27.0, 40.0 ],
+                    "patching_rect": [ 1446.5222222222221, 1933.0, 27.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 131.0, 294.0, 77.0, 38.0 ],
                     "range": [ 0.0, 1.0 ]
@@ -9430,6 +9439,12 @@
                 "patchline": {
                     "destination": [ "obj-152", 0 ],
                     "order": 1,
+                    "source": [ "obj-400", 14 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-16", 0 ],
                     "source": [ "obj-400", 13 ]
                 }
             },
@@ -9437,7 +9452,7 @@
                 "patchline": {
                     "destination": [ "obj-187", 0 ],
                     "order": 0,
-                    "source": [ "obj-400", 13 ]
+                    "source": [ "obj-400", 14 ]
                 }
             },
             {
@@ -9467,7 +9482,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-400", 14 ]
+                    "source": [ "obj-400", 15 ]
                 }
             },
             {
