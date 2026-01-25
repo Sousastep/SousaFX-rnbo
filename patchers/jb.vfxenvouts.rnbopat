@@ -15,12 +15,487 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-33",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 50.5, 679.0, 163.0, 35.0 ],
+                    "presentation_linecount": 3,
+                    "text": "env that's actually modulating the xfade, for UI"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-32",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 631.5, 679.0, 167.0, 35.0 ],
+                    "presentation_linecount": 3,
+                    "text": "env that's actually modulating the lows amplitude, for UI"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-29",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 246.5, 679.0, 154.0, 35.0 ],
+                    "presentation_linecount": 3,
+                    "text": "env that's actually modulating the filter, for UI"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-28",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 527.5, 481.0, 150.0, 35.0 ],
+                    "text": "freq mod env w/ stutter and looper for VFX"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-21",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 50.5, 765.0, 43.0, 23.0 ],
+                    "rnbo_classname": "out~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 11,
+                    "rnbo_uniqueid": "out~_obj-21",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "signal sent to outlet with index 7",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "outlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "signal sent to outlet with index 7",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [],
+                        "helpname": "out~",
+                        "aliasOf": "out~",
+                        "classname": "out~",
+                        "operator": 0,
+                        "versionId": 1989326771,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "out~ 7"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-22",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 246.5, 765.0, 43.0, 23.0 ],
+                    "rnbo_classname": "out~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 12,
+                    "rnbo_uniqueid": "out~_obj-22",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "signal sent to outlet with index 8",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "outlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "signal sent to outlet with index 8",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [],
+                        "helpname": "out~",
+                        "aliasOf": "out~",
+                        "classname": "out~",
+                        "operator": 0,
+                        "versionId": 1989326771,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "out~ 8"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-25",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 631.5, 765.0, 50.0, 23.0 ],
+                    "rnbo_classname": "out~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 14,
+                    "rnbo_uniqueid": "out~_obj-25",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "signal sent to outlet with index 10",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "outlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "signal sent to outlet with index 10",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [],
+                        "helpname": "out~",
+                        "aliasOf": "out~",
+                        "classname": "out~",
+                        "operator": 0,
+                        "versionId": 1989326771,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "out~ 10"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-26",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 424.5, 765.0, 43.0, 23.0 ],
+                    "rnbo_classname": "out~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 13,
+                    "rnbo_uniqueid": "out~_obj-26",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "signal sent to outlet with index 9",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "outlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "signal sent to outlet with index 9",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [],
+                        "helpname": "out~",
+                        "aliasOf": "out~",
+                        "classname": "out~",
+                        "operator": 0,
+                        "versionId": 1989326771,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "out~ 9"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 631.5, 716.0, 61.0, 23.0 ],
+                    "rnbo_classname": "r~",
+                    "rnbo_serial": 8,
+                    "rnbo_uniqueid": "r~_obj-20",
+                    "text": "r~ low_lfo"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-43",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 50.5, 716.0, 98.0, 23.0 ],
+                    "rnbo_classname": "r~",
+                    "rnbo_serial": 9,
+                    "rnbo_uniqueid": "r~_obj-43",
+                    "text": "r~ crossfade_env"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-199",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 424.5, 716.0, 141.0, 23.0 ],
+                    "rnbo_classname": "r~",
+                    "rnbo_serial": 10,
+                    "rnbo_uniqueid": "r~_obj-199",
+                    "text": "r~ main_noisegate_active"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-31",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 246.5, 716.0, 92.0, 23.0 ],
+                    "rnbo_classname": "r~",
+                    "rnbo_serial": 11,
+                    "rnbo_uniqueid": "r~_obj-31",
+                    "text": "r~ lpf_freq_mod"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-18",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 676.0, 469.0, 141.0, 23.0 ],
+                    "patching_rect": [ 718.5, 469.0, 141.0, 23.0 ],
                     "rnbo_classname": "maximum~",
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "maximum~_obj-18",
@@ -34,9 +509,9 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 798.0, 420.0, 108.0, 23.0 ],
+                    "patching_rect": [ 840.5, 420.0, 108.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 7,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "r~_obj-17",
                     "text": "r~ solo_timefx_env"
                 }
@@ -53,24 +528,6 @@
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "r_obj-424",
                     "text": "r \"looper Stutter Enable (uni)\""
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-8",
-                    "maxclass": "toggle",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 873.0, 321.5, 24.0, 24.0 ],
-                    "rnbo_classname": "toggle",
-                    "rnbo_extra_attributes": {
-                        "preset": 0,
-                        "order": ""
-                    },
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "toggle_obj-8"
                 }
             },
             {
@@ -94,29 +551,11 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 527.5, 484.0, 117.0, 23.0 ],
+                    "patching_rect": [ 527.5, 518.0, 117.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "r~_obj-11",
                     "text": "r~ lpf_freq_mod_env"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-13",
-                    "maxclass": "toggle",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 728.0, 321.5, 24.0, 24.0 ],
-                    "rnbo_classname": "toggle",
-                    "rnbo_extra_attributes": {
-                        "preset": 0,
-                        "order": ""
-                    },
-                    "rnbo_serial": 2,
-                    "rnbo_uniqueid": "toggle_obj-13"
                 }
             },
             {
@@ -178,12 +617,12 @@
             {
                 "box": {
                     "id": "obj-14",
-                    "linecount": 8,
+                    "linecount": 9,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 70.0, 62.0, 207.0, 122.0 ],
-                    "text": "if looper buffer cleared via \"set clear\", looper status midi somehow gets dropped unless `pipe 100` after `routepass 0`\n\nInstead of using \"set clear\", manually write 0s to buffer, especially since \"set clear\" causes cpu overload clicks"
+                    "patching_rect": [ 70.0, 51.0, 207.0, 136.0 ],
+                    "text": "on rpi, if looper buffer cleared via \"set clear\", looper status midi somehow gets dropped unless `pipe 100` after `routepass 0`\n\nInstead of using \"set clear\", manually write 0s to buffer, especially since \"set clear\" causes cpu overload clicks anyways"
                 }
             },
             {
@@ -375,9 +814,9 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 946.0, 508.0, 97.0, 23.0 ],
+                    "patching_rect": [ 873.5, 518.0, 97.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "r~_obj-57",
                     "text": "r~ drum_vfx_env"
                 }
@@ -609,7 +1048,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 946.0, 567.0, 43.0, 23.0 ],
+                    "patching_rect": [ 873.5, 567.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
                         "meta": "",
@@ -698,23 +1137,12 @@
             },
             {
                 "box": {
-                    "id": "obj-2",
-                    "linecount": 7,
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 104.5, 627.0, 273.0, 107.0 ],
-                    "text": "1. main_phasor\n2. Phasor_with_phase_offset_and_rate_multiplier\n3. Dry-Wet_Mix_no_transient_helper\n4. High_Freq_Mod_w_tuba_env\n5. Low_Amp_Mod_w_tuba_env\n6. tuba_env_w_delrev\n7. crossfade env"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-115",
                     "maxclass": "newobj",
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 676.0, 518.0, 54.0, 23.0 ],
+                    "patching_rect": [ 718.5, 518.0, 54.0, 23.0 ],
                     "rnbo_classname": "clip~",
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "clip~_obj-115",
@@ -729,9 +1157,9 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 676.0, 420.0, 109.0, 23.0 ],
+                    "patching_rect": [ 718.5, 420.0, 109.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "r~_obj-90",
                     "text": "r~ env_pre-smooth"
                 }
@@ -743,9 +1171,9 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 375.5, 484.0, 74.0, 23.0 ],
+                    "patching_rect": [ 375.5, 518.0, 74.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 5,
                     "rnbo_uniqueid": "r~_obj-79",
                     "text": "r~ vfx_xfade"
                 }
@@ -758,9 +1186,9 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 50.5, 484.0, 105.0, 23.0 ],
+                    "patching_rect": [ 50.5, 518.0, 105.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 5,
+                    "rnbo_serial": 6,
                     "rnbo_uniqueid": "r~_obj-228",
                     "text": "r~ primary_phasor"
                 }
@@ -772,9 +1200,9 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 219.5, 484.0, 104.0, 23.0 ],
+                    "patching_rect": [ 219.5, 518.0, 104.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 6,
+                    "rnbo_serial": 7,
                     "rnbo_uniqueid": "r~_obj-80",
                     "text": "r~ post-pll_phasor"
                 }
@@ -1064,7 +1492,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 676.0, 567.0, 43.0, 23.0 ],
+                    "patching_rect": [ 718.5, 567.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
                         "meta": "",
@@ -1308,6 +1736,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-199", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-25", 0 ],
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-99", 0 ],
                     "source": [ "obj-228", 0 ]
                 }
@@ -1320,15 +1760,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-13", 0 ],
-                    "order": 0,
-                    "source": [ "obj-3", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-4", 0 ],
-                    "order": 1,
                     "source": [ "obj-3", 0 ]
                 }
             },
@@ -1340,16 +1772,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-31", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-16", 0 ],
-                    "order": 1,
                     "source": [ "obj-424", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-8", 0 ],
-                    "order": 0,
-                    "source": [ "obj-424", 0 ]
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-43", 0 ]
                 }
             },
             {
