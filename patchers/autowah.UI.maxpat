@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 21.0, 640.0, 386.0, 694.0 ],
+        "rect": [ 445.0, 503.0, 394.0, 705.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -91,7 +91,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 331.0, 1037.0, 40.0, 22.0 ],
-                    "restore": [ 0.36 ],
+                    "restore": [ 0.33 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -458,7 +458,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 100.0, 674.0, 184.0, 68.0 ],
+                    "patching_rect": [ 100.0, 673.0, 184.0, 68.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 190.0, 556.0, 176.0, 115.0 ],
                     "range": [ -0.1, 1.1 ]
@@ -487,8 +487,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 100.0, 528.0, 178.0, 22.0 ],
-                    "text": "r~ Low_Amp_Mod_w_tuba_env",
+                    "patching_rect": [ 100.0, 528.0, 101.0, 22.0 ],
+                    "text": "r~ low_amp_mod",
                     "textcolor": [ 0.647058823529412, 1.0, 0.725490196078431, 1.0 ]
                 }
             },
@@ -1381,7 +1381,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1250.5, 353.0, 123.0, 22.0 ],
+                    "patching_rect": [ 1383.5, 355.0, 123.0, 22.0 ],
                     "text": "r jb_autowah/lpf_type"
                 }
             },
@@ -1392,7 +1392,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 1250.5, 393.0, 29.5, 22.0 ],
+                    "patching_rect": [ 1383.5, 395.0, 29.5, 22.0 ],
                     "text": "- 1"
                 }
             },
@@ -1403,7 +1403,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1250.5, 433.0, 72.0, 22.0 ],
+                    "patching_rect": [ 1383.5, 435.0, 72.0, 22.0 ],
                     "text": "prepend set"
                 }
             },
@@ -1414,7 +1414,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 1381.0, 507.0, 30.0, 22.0 ],
+                    "patching_rect": [ 1513.5, 509.0, 30.0, 22.0 ],
                     "text": "+ 1"
                 }
             },
@@ -1425,7 +1425,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1381.0, 545.0, 163.0, 22.0 ],
+                    "patching_rect": [ 1513.5, 547.0, 163.0, 22.0 ],
                     "text": "prepend jb_autowah/lpf_type"
                 }
             },
@@ -1436,7 +1436,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1611.0, 507.0, 225.0, 22.0 ],
+                    "patching_rect": [ 1743.5, 509.0, 225.0, 22.0 ],
                     "text": "prepend jb_autowah/randomize_lfp_type"
                 }
             },
@@ -1447,7 +1447,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1565.0, 433.0, 111.0, 22.0 ],
+                    "patching_rect": [ 1697.5, 435.0, 111.0, 22.0 ],
                     "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
@@ -1464,7 +1464,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1352.0, 433.0, 78.0, 22.0 ],
+                    "patching_rect": [ 1484.5, 435.0, 78.0, 22.0 ],
                     "restore": [ 1.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
@@ -1483,7 +1483,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1611.0, 472.0, 26.0, 18.0 ],
+                    "patching_rect": [ 1743.5, 474.0, 26.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 35.0, 609.0, 20.0, 20.0 ],
                     "saved_attribute_attributes": {
@@ -1510,7 +1510,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1381.0, 471.0, 150.0, 18.0 ],
+                    "patching_rect": [ 1513.5, 473.0, 150.0, 18.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 60.5, 610.0, 77.0, 18.0 ],
                     "saved_attribute_attributes": {
@@ -1547,7 +1547,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 862.0, 178.0, 40.0, 22.0 ],
+                    "patching_rect": [ 667.0, 151.0, 40.0, 22.0 ],
                     "text": "* 0.01"
                 }
             },
@@ -1659,8 +1659,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 811.0, 79.0, 122.0, 22.0 ],
-                    "restore": [ 100.0 ],
+                    "patching_rect": [ 616.0, 52.0, 122.0, 22.0 ],
+                    "restore": [ 150.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1677,7 +1677,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 862.0, 114.0, 84.0, 48.0 ],
+                    "patching_rect": [ 667.0, 87.0, 84.0, 48.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 56.0, 287.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
@@ -1700,7 +1700,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 862.0, 214.0, 191.0, 22.0 ],
+                    "patching_rect": [ 667.0, 187.0, 191.0, 22.0 ],
                     "text": "prepend jb_autowah/lfo_env_sens"
                 }
             },
@@ -1723,7 +1723,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1188.0, 1174.0, 218.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ -22.04724409448815 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1787,7 +1787,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1080.0, 1010.0, 229.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ -17.322834645669328 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1839,7 +1839,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 845.0, 552.0, 130.0, 22.0 ],
+                    "patching_rect": [ 972.5, 545.0, 130.0, 22.0 ],
                     "restore": [ 3.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
@@ -1857,7 +1857,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 901.0, 584.0, 84.0, 48.0 ],
+                    "patching_rect": [ 1028.5, 577.0, 84.0, 48.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 16.0, 448.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
@@ -1865,7 +1865,7 @@
                             "parameter_longname": "live.dial[3]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "Min LFO Ceiling",
+                            "parameter_shortname": "Min Dist Over Floor",
                             "parameter_type": 0,
                             "parameter_unitstyle": 5
                         }
@@ -1880,8 +1880,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 924.0, 684.0, 134.0, 22.0 ],
-                    "restore": [ 45.0 ],
+                    "patching_rect": [ 1051.5, 677.0, 134.0, 22.0 ],
+                    "restore": [ 58.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1898,7 +1898,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 981.0, 720.0, 84.0, 48.0 ],
+                    "patching_rect": [ 1108.5, 713.0, 84.0, 48.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 102.0, 448.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
@@ -1906,7 +1906,7 @@
                             "parameter_longname": "live.dial[2]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "Max LFO Ceiling",
+                            "parameter_shortname": "Max Dist Over Floor",
                             "parameter_type": 0,
                             "parameter_unitstyle": 5
                         }
@@ -1922,7 +1922,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 66.0 ],
+                    "restore": [ 68.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1947,7 +1947,7 @@
                             "parameter_longname": "live.dial[1]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "Max LFO Floor",
+                            "parameter_shortname": "Max Floor",
                             "parameter_type": 0,
                             "parameter_unitstyle": 5
                         }
@@ -1962,8 +1962,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 780.0, 258.0, 121.0, 22.0 ],
-                    "restore": [ 20.0 ],
+                    "patching_rect": [ 686.0, 244.0, 121.0, 22.0 ],
+                    "restore": [ 18.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1980,7 +1980,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 831.0, 299.0, 84.0, 48.0 ],
+                    "patching_rect": [ 737.0, 285.0, 84.0, 48.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 16.0, 502.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
@@ -1988,7 +1988,7 @@
                             "parameter_longname": "live.dial",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "Min LFO Floor",
+                            "parameter_shortname": "Min Floor",
                             "parameter_type": 0,
                             "parameter_unitstyle": 5
                         }
@@ -2014,7 +2014,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1046.0, 784.0, 203.0, 22.0 ],
+                    "patching_rect": [ 1173.5, 777.0, 203.0, 22.0 ],
                     "text": "prepend jb_autowah/max_lfo_ceiling"
                 }
             },
@@ -2025,7 +2025,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 966.0, 646.0, 200.0, 22.0 ],
+                    "patching_rect": [ 1093.5, 639.0, 200.0, 22.0 ],
                     "text": "prepend jb_autowah/min_lfo_ceiling"
                 }
             },
@@ -2047,7 +2047,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 896.0, 367.0, 189.0, 22.0 ],
+                    "patching_rect": [ 802.0, 353.0, 189.0, 22.0 ],
                     "text": "prepend jb_autowah/min_lfo_floor"
                 }
             },
@@ -2080,7 +2080,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 517.0, 130.0, 128.0, 128.0 ],
+                    "patching_rect": [ 517.0, 129.0, 128.0, 128.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 15.0, 281.0, 351.0, 402.0 ],
                     "proportion": 0.5,
