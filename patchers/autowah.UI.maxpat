@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 445.0, 503.0, 394.0, 705.0 ],
+        "rect": [ 36.0, 719.0, 399.0, 721.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -1518,7 +1518,7 @@
                             "expression": ""
                         },
                         "valueof": {
-                            "parameter_enum": [ "Korg 35", "Andrew Simper SVF", "Vadim Zavalishin Diode ladder" ],
+                            "parameter_enum": [ "Korg 35", "SVF Andrew Simper", "Diode ladder Vadim Zavalishin" ],
                             "parameter_longname": "live.menu",
                             "parameter_mmax": 2,
                             "parameter_modmode": 0,
@@ -1660,7 +1660,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 616.0, 52.0, 122.0, 22.0 ],
-                    "restore": [ 150.0 ],
+                    "restore": [ 224.60629921259837 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
