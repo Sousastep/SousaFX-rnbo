@@ -186,373 +186,8 @@
                     "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
                     "patching_rect": [ 10.0, 15.0, 639.0, 24.0 ],
                     "rnboattrcache": {
-                        "jb_autowah/min_lfo_floor": {
-                            "label": "min_lfo_floor",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/jb_envelope/Env Sens": {
-                            "label": "Env Sens",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tap/time_sig_numerator": {
-                            "label": "time_sig_numerator",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_gated_or_thru": {
-                            "label": "stutter_gated_or_thru",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_SOUTH": {
-                            "label": "BTN_SOUTH",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/drum_reverb_min_amt": {
-                            "label": "drum_reverb_min_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/bypass_stutter_bandpass": {
-                            "label": "bypass_stutter_bandpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru": {
-                            "label": "stutter_gated_or_thru",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/DiodeminQ": {
-                            "label": "DiodeminQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/damp": {
-                            "label": "damp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/DiodemaxQ": {
-                            "label": "DiodemaxQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/staircase_enable": {
-                            "label": "staircase_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_RZ": {
-                            "label": "ABS_RZ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/staircase_enable": {
-                            "label": "staircase_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/autopan_amount": {
-                            "label": "autopan_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_enable": {
-                            "label": "stutter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/output_gain": {
-                            "label": "output_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_GAS": {
-                            "label": "ABS_GAS",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/mix": {
-                            "label": "mix",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/filter_enable": {
-                            "label": "filter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "pre-xfade-wet/lookahead": {
                             "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tubasolo/del_vol": {
-                            "label": "del_vol",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/bass": {
-                            "label": "bass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt": {
-                            "label": "stutter_accel_vol_dip_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_HAT0X": {
-                            "label": "ABS_HAT0X",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_drums/snare_volume": {
-                            "label": "snare_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/filter_enable": {
-                            "label": "filter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/autopan_amount": {
-                            "label": "autopan_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/pitchshift/window": {
-                            "label": "window",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_NORTH": {
-                            "label": "BTN_NORTH",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-9/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gp_noisegatewrap/noise gate hyst": {
-                            "label": "noise gate hyst",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/korg35minQ": {
-                            "label": "korg35minQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/bypass_stutter_bandpass": {
-                            "label": "bypass_stutter_bandpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/mix": {
-                            "label": "mix",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass": {
-                            "label": "bypass_stutter_bandpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/output_gain": {
-                            "label": "output_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/SVFmaxQ": {
-                            "label": "SVFmaxQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_Z": {
-                            "label": "ABS_Z",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_accel_vol_dip_amt": {
-                            "label": "stutter_accel_vol_dip_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/staircase_enable": {
-                            "label": "staircase_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt": {
-                            "label": "stutter_accel_vol_dip_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/filter_enable": {
-                            "label": "filter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "low_boost/low_q": {
-                            "label": "low_q",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_gated_or_thru": {
-                            "label": "stutter_gated_or_thru",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/lowcut": {
-                            "label": "lowcut",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_BRAKE": {
-                            "label": "ABS_BRAKE",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tubasolo/stutter_vol": {
-                            "label": "stutter_vol",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/attack": {
-                            "label": "attack",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -561,18 +196,418 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
+                        "jb_stutterwrap/p_obj-48/staircase_enable": {
+                            "label": "staircase_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_TR": {
+                            "label": "BTN_TR",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_gated_or_thru": {
+                            "label": "stutter_gated_or_thru",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/bypass_stutter_bandpass": {
+                            "label": "bypass_stutter_bandpass",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_START": {
+                            "label": "BTN_START",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_micpre/mid_trim": {
+                            "label": "mid_trim",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_HAT0X": {
+                            "label": "ABS_HAT0X",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_crossfade/xfade_env_sens": {
+                            "label": "xfade_env_sens",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_metronome/metronome_volume": {
+                            "label": "metronome_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_Z": {
+                            "label": "ABS_Z",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/decay": {
+                            "label": "decay",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_gated_or_thru": {
+                            "label": "stutter_gated_or_thru",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/spread": {
+                            "label": "spread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt": {
+                            "label": "stutter_accel_vol_dip_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "bindings/lfo_floor_env_sens_binding_curve": {
+                            "label": "lfo_floor_env_sens_binding_curve",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_Y": {
+                            "label": "ABS_Y",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-9/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/min_lfo_ceiling": {
+                            "label": "min_lfo_ceiling",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_THUMBR": {
+                            "label": "BTN_THUMBR",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "low_boost/low_freq": {
+                            "label": "low_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tubasolo/dry_vol": {
+                            "label": "dry_vol",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/autopan_amount": {
+                            "label": "autopan_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
                         "wobblefxbypass/overdrive/treble": {
                             "label": "treble",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_stutterwrap/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
+                        "p_obj-234/p_obj-48/stutter_enable": {
+                            "label": "stutter_enable",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "solo/release": {
+                        "p_obj-212/p_obj-48/autopan_amount": {
+                            "label": "autopan_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/mix": {
+                            "label": "mix",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/filter_enable": {
+                            "label": "filter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/deadzone_left": {
+                            "label": "deadzone_left",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tap/time_sig_numerator": {
+                            "label": "time_sig_numerator",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tap/BPM": {
+                            "label": "BPM",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/release": {
                             "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/bass": {
+                            "label": "bass",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/drum_reverb_min_amt": {
+                            "label": "drum_reverb_min_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/volume": {
+                            "label": "volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/snare_volume": {
+                            "label": "snare_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/damp": {
+                            "label": "damp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_accel_vol_dip_amt": {
+                            "label": "stutter_accel_vol_dip_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "stereo_or_mono": {
+                            "label": "stereo_or_mono",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/window": {
+                            "label": "window",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/DiodemaxQ": {
+                            "label": "DiodemaxQ",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_gated_or_thru": {
+                            "label": "stutter_gated_or_thru",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/tom_volume": {
+                            "label": "tom_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main_looper/looper_length": {
+                            "label": "looper_length",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "low_boost/low_boost": {
+                            "label": "low_boost",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/staircase_enable": {
+                            "label": "staircase_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_EAST": {
+                            "label": "BTN_EAST",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/lpf_type": {
+                            "label": "lpf_type",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/randomize_lfp_type": {
+                            "label": "randomize_lfp_type",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/output_gain": {
+                            "label": "output_gain",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -581,12 +616,237 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "pre-xfade-wet/comp": {
-                            "label": "comp",
+                        "jb_autowah/SVFminQ": {
+                            "label": "SVFminQ",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "looper/filter_enable": {
+                        "jb_stutterwrap[1]/p_obj-48/autopan_amount": {
+                            "label": "autopan_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/spread": {
+                            "label": "spread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/enable_scatter": {
+                            "label": "enable_scatter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "eq/mid_freq": {
+                            "label": "mid_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "click_only": {
+                            "label": "click_only",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/clap_volume": {
+                            "label": "clap_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_SOUTH": {
+                            "label": "BTN_SOUTH",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/mix": {
+                            "label": "mix",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-2/knee": {
+                            "label": "knee",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-2/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/deadzone_right": {
+                            "label": "deadzone_right",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_accel": {
+                            "label": "stutter_accel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru": {
+                            "label": "stutter_gated_or_thru",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/filter_enable": {
+                            "label": "filter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_accel": {
+                            "label": "stutter_accel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/filter_enable": {
+                            "label": "filter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/drive": {
+                            "label": "drive",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/diff": {
+                            "label": "diff",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/enable_scatter": {
+                            "label": "enable_scatter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/staircase_enable": {
+                            "label": "staircase_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_BRAKE": {
+                            "label": "ABS_BRAKE",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/lfo_env_sens": {
+                            "label": "lfo_env_sens",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_accel": {
+                            "label": "stutter_accel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_X": {
+                            "label": "ABS_X",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_HAT0Y": {
+                            "label": "ABS_HAT0Y",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/min_lfo_floor": {
+                            "label": "min_lfo_floor",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gp_noisegatewrap/noise gate hyst": {
+                            "label": "noise gate hyst",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/kick_volume": {
+                            "label": "kick_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/filter_enable": {
                             "label": "filter_enable",
                             "isEnum": 0,
                             "parsestring": ""
@@ -596,628 +856,13 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_stutterwrap/p_obj-48/staircase_enable": {
-                            "label": "staircase_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/pitchshift/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_metronome/alert_volume": {
-                            "label": "alert_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_SELECT": {
-                            "label": "BTN_SELECT",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_crossfade/xfade_env_sens": {
-                            "label": "xfade_env_sens",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-2/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/max_lfo_floor": {
-                            "label": "max_lfo_floor",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_gated_or_thru": {
-                            "label": "stutter_gated_or_thru",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/output_gain": {
-                            "label": "output_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_WEST": {
-                            "label": "BTN_WEST",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/solo_reverb_min_amt": {
-                            "label": "solo_reverb_min_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/min_lfo_ceiling": {
-                            "label": "min_lfo_ceiling",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/enable_scatter": {
-                            "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/size": {
-                            "label": "size",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_X": {
-                            "label": "ABS_X",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/randomize_lfp_type": {
-                            "label": "randomize_lfp_type",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_accel_vol_dip_amt": {
-                            "label": "stutter_accel_vol_dip_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_THUMBL": {
-                            "label": "BTN_THUMBL",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/output_gain": {
-                            "label": "output_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main_looper/looper_length": {
-                            "label": "looper_length",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_TL": {
-                            "label": "BTN_TL",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/volume": {
-                            "label": "volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "jb_micpre/lowpass": {
                             "label": "lowpass",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_stutterwrap/p_obj-48/bypass_stutter_bandpass": {
-                            "label": "bypass_stutter_bandpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "stereo_or_mono": {
-                            "label": "stereo_or_mono",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "bindings/lfo_floor_env_sens_binding_curve": {
-                            "label": "lfo_floor_env_sens_binding_curve",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/drive": {
-                            "label": "drive",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/mid_freq": {
-                            "label": "mid_freq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_drums/tom_volume": {
-                            "label": "tom_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/lfo_env_sens": {
-                            "label": "lfo_env_sens",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_EAST": {
-                            "label": "BTN_EAST",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-9/knee": {
-                            "label": "knee",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_enable": {
-                            "label": "stutter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/SVFminQ": {
-                            "label": "SVFminQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tap/BPM": {
-                            "label": "BPM",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/jitter": {
-                            "label": "jitter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/deadzone_left": {
-                            "label": "deadzone_left",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "p_obj-212/p_obj-48/enable_scatter": {
                             "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/enable_scatter": {
-                            "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/max_lfo_ceiling": {
-                            "label": "max_lfo_ceiling",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/deadzone_right": {
-                            "label": "deadzone_right",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_accel": {
-                            "label": "stutter_accel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "low_boost/low_freq": {
-                            "label": "low_freq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_accel": {
-                            "label": "stutter_accel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/highcut": {
-                            "label": "highcut",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_THUMBR": {
-                            "label": "BTN_THUMBR",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/output_volume": {
-                            "label": "output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tubasolo/dry_vol": {
-                            "label": "dry_vol",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_HAT0Y": {
-                            "label": "ABS_HAT0Y",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "eq/mid_freq": {
-                            "label": "mid_freq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/mid": {
-                            "label": "mid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_drums/kick_volume": {
-                            "label": "kick_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/mid_q": {
-                            "label": "mid_q",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/output_volume": {
-                            "label": "output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gp_noisegatewrap/noise gate thresh": {
-                            "label": "noise gate thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_START": {
-                            "label": "BTN_START",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-2/knee": {
-                            "label": "knee",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_enable": {
-                            "label": "stutter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/decay": {
-                            "label": "decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_enable": {
-                            "label": "stutter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/korg35maxQ": {
-                            "label": "korg35maxQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_Y": {
-                            "label": "ABS_Y",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/diff": {
-                            "label": "diff",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "low_boost/low_boost": {
-                            "label": "low_boost",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/output_volume": {
-                            "label": "output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_accel": {
-                            "label": "stutter_accel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/lpf_type": {
-                            "label": "lpf_type",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/autopan_amount": {
-                            "label": "autopan_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/autopan_amount": {
-                            "label": "autopan_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/enable_scatter": {
-                            "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/attack": {
-                            "label": "attack",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1231,33 +876,43 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "gpin/BTN_TR": {
-                            "label": "BTN_TR",
+                        "tap/round_BPM": {
+                            "label": "round_BPM",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "drum_looper/looper_length": {
-                            "label": "looper_length",
+                        "solo1/limiter/gain": {
+                            "label": "gain",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "click_only": {
-                            "label": "click_only",
+                        "jb_autowah/korg35minQ": {
+                            "label": "korg35minQ",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "looper/output_volume": {
-                            "label": "output_volume",
+                        "main/limiter/lookahead": {
+                            "label": "lookahead",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_micpre/mid_trim": {
-                            "label": "mid_trim",
+                        "gp_noisegatewrap/noise gate thresh": {
+                            "label": "noise gate thresh",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "pre-xfade-wet/output_gain": {
-                            "label": "output_gain",
+                        "jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt": {
+                            "label": "stutter_accel_vol_dip_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_SELECT": {
+                            "label": "BTN_SELECT",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/max_lfo_ceiling": {
+                            "label": "max_lfo_ceiling",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1266,12 +921,247 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_metronome/metronome_volume": {
-                            "label": "metronome_volume",
+                        "p_obj-234/p_obj-48/bypass_stutter_bandpass": {
+                            "label": "bypass_stutter_bandpass",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_stutterwrap/p_obj-48/stutter_accel": {
+                        "jb_autowah/SVFmaxQ": {
+                            "label": "SVFmaxQ",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/bypass_stutter_bandpass": {
+                            "label": "bypass_stutter_bandpass",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_micpre/mid_freq": {
+                            "label": "mid_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_enable": {
+                            "label": "stutter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/staircase_enable": {
+                            "label": "staircase_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/korg35maxQ": {
+                            "label": "korg35maxQ",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_NORTH": {
+                            "label": "BTN_NORTH",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/solo_reverb_min_amt": {
+                            "label": "solo_reverb_min_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/highcut": {
+                            "label": "highcut",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/lowcut": {
+                            "label": "lowcut",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "low_boost/low_q": {
+                            "label": "low_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/size": {
+                            "label": "size",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-9/knee": {
+                            "label": "knee",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_accel_vol_dip_amt": {
+                            "label": "stutter_accel_vol_dip_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum_looper/looper_length": {
+                            "label": "looper_length",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_GAS": {
+                            "label": "ABS_GAS",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/jitter": {
+                            "label": "jitter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/enable_scatter": {
+                            "label": "enable_scatter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_micpre/jb_envelope/Env Sens": {
+                            "label": "Env Sens",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_THUMBL": {
+                            "label": "BTN_THUMBL",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tubasolo/del_vol": {
+                            "label": "del_vol",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_metronome/alert_volume": {
+                            "label": "alert_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/bypass_stutter_bandpass": {
+                            "label": "bypass_stutter_bandpass",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_TL": {
+                            "label": "BTN_TL",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_micpre/mid_q": {
+                            "label": "mid_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/max_lfo_floor": {
+                            "label": "max_lfo_floor",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_accel": {
                             "label": "stutter_accel",
                             "isEnum": 0,
                             "parsestring": ""
@@ -1281,23 +1171,133 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "pre-xfade-wet/himid": {
-                            "label": "himid",
+                        "jb_autowah/DiodeminQ": {
+                            "label": "DiodeminQ",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "looper/limiter/thresh": {
+                        "post-xover-lows/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/thresh": {
                             "label": "thresh",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_drums/clap_volume": {
-                            "label": "clap_volume",
+                        "jb_stutterwrap[1]/p_obj-48/stutter_enable": {
+                            "label": "stutter_enable",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "tap/round_BPM": {
-                            "label": "round_BPM",
+                        "jb_stutterwrap/p_obj-48/autopan_amount": {
+                            "label": "autopan_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_WEST": {
+                            "label": "BTN_WEST",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_RZ": {
+                            "label": "ABS_RZ",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tubasolo/stutter_vol": {
+                            "label": "stutter_vol",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/spread": {
+                            "label": "spread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/mid": {
+                            "label": "mid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_enable": {
+                            "label": "stutter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/spread": {
+                            "label": "spread",
                             "isEnum": 0,
                             "parsestring": ""
                         }
@@ -1376,15 +1376,73 @@
                                         }
                                     }
                                 },
+                                "p_obj-98": {                                },
+                                "bindings": {
+                                    "__sps": {
+                                        "p_obj-9": {                                        },
+                                        "p_obj-8": {                                        },
+                                        "p_obj-11": {                                        },
+                                        "p_obj-7": {                                        }
+                                    },
+                                    "lfo_ceiling_env_sens_binding_curve": {
+                                        "value": -0.17322834645669327
+                                    },
+                                    "lfo_floor_env_sens_binding_curve": {
+                                        "value": -0.2204724409448815
+                                    }
+                                },
                                 "jb_metronome": {
                                     "alert_volume": {
                                         "value": -22.0
                                     },
                                     "metronome_volume": {
-                                        "value": -9.0
+                                        "value": -10.0
                                     }
                                 },
                                 "p_obj-41": {                                },
+                                "gpin": {
+                                    "__sps": {
+                                        "p_obj-107": {                                        },
+                                        "p_obj-165": {                                        },
+                                        "p_obj-98": {                                        },
+                                        "p_obj-89": {                                        },
+                                        "p_obj-69": {                                        },
+                                        "p_obj-86": {                                        },
+                                        "p_obj-79": {                                        },
+                                        "p_obj-81": {                                        },
+                                        "p_obj-67": {                                        },
+                                        "p_obj-88": {                                        },
+                                        "p_obj-155": {                                        },
+                                        "p_obj-87": {                                        },
+                                        "p_obj-70": {                                        },
+                                        "p_obj-182": {                                        },
+                                        "p_obj-168": {                                        },
+                                        "p_obj-68": {                                        },
+                                        "p_obj-80": {                                        },
+                                        "p_obj-66": {                                        },
+                                        "p_obj-65": {                                        },
+                                        "p_obj-183": {                                        },
+                                        "p_obj-109": {                                        },
+                                        "p_obj-64": {                                        },
+                                        "p_obj-159": {                                        },
+                                        "p_obj-108": {                                        },
+                                        "p_obj-63": {                                        }
+                                    },
+                                    "deadzone_right": {
+                                        "value": 0.2
+                                    },
+                                    "deadzone_left": {
+                                        "value": 0.2
+                                    }
+                                },
+                                "main_looper": {
+                                    "__sps": {
+                                        "p_obj-247": {                                        }
+                                    },
+                                    "looper_length": {
+                                        "value": 16.0
+                                    }
+                                },
                                 "p_obj-9": {
                                     "knee": {
                                         "value": 1.0
@@ -1397,16 +1455,16 @@
                                     "__sps": {
                                         "limiter": {
                                             "attack": {
-                                                "value": 22.0
+                                                "value": 30.0
                                             },
                                             "lookahead": {
                                                 "value": 10.0
                                             },
                                             "release": {
-                                                "value": 120.0
+                                                "value": 300.0
                                             },
                                             "thresh": {
-                                                "value": -7.0
+                                                "value": -12.0
                                             },
                                             "gain": {
                                                 "value": 0.0
@@ -1420,7 +1478,7 @@
                                         "value": 0.0
                                     },
                                     "output_volume": {
-                                        "value": 0.0
+                                        "value": -1.0
                                     }
                                 },
                                 "pre-xfade-dry": {
@@ -1453,6 +1511,39 @@
                                     },
                                     "lookahead": {
                                         "value": 5.0
+                                    }
+                                },
+                                "ui_outports": {                                },
+                                "final": {
+                                    "__sps": {
+                                        "Mid~": {                                        },
+                                        "Compensation~": {                                        },
+                                        "Compression~": {                                        },
+                                        "Lookahead~": {                                        }
+                                    },
+                                    "himid": {
+                                        "value": 2.0
+                                    },
+                                    "himidfq": {
+                                        "value": 1872.4409448818892
+                                    },
+                                    "release": {
+                                        "value": 300.0
+                                    },
+                                    "output_gain": {
+                                        "value": -3.0
+                                    },
+                                    "attack": {
+                                        "value": 30.0
+                                    },
+                                    "comp": {
+                                        "value": 14.0
+                                    },
+                                    "input_gain": {
+                                        "value": 3.0
+                                    },
+                                    "lookahead": {
+                                        "value": 1.0
                                     }
                                 },
                                 "last": {
@@ -1557,12 +1648,97 @@
                                         }
                                     }
                                 },
-                                "gp_noisegatewrap": {
-                                    "noise gate hyst": {
-                                        "value": 3.0
+                                "tap": {
+                                    "time_sig_numerator": {
+                                        "value": 4.0
                                     },
-                                    "noise gate thresh": {
-                                        "value": -40.0
+                                    "BPM": {
+                                        "value": 140.0
+                                    },
+                                    "round_BPM": {
+                                        "value": 1.0
+                                    }
+                                },
+                                "p_obj-169": {                                },
+                                "jb_autowah": {
+                                    "randomize_lfp_type": {
+                                        "value": 0.0
+                                    },
+                                    "lpf_type": {
+                                        "value": 2.0
+                                    },
+                                    "min_lfo_floor": {
+                                        "value": 0.18
+                                    },
+                                    "DiodemaxQ": {
+                                        "value": 0.99
+                                    },
+                                    "SVFmaxQ": {
+                                        "value": 0.52
+                                    },
+                                    "max_lfo_floor": {
+                                        "value": 0.68
+                                    },
+                                    "korg35maxQ": {
+                                        "value": 0.97
+                                    },
+                                    "max_lfo_ceiling": {
+                                        "value": 0.58
+                                    },
+                                    "lfo_env_sens": {
+                                        "value": 2.246062992125984
+                                    },
+                                    "korg35minQ": {
+                                        "value": 0.6
+                                    },
+                                    "min_lfo_ceiling": {
+                                        "value": 0.03
+                                    },
+                                    "SVFminQ": {
+                                        "value": 0.33
+                                    },
+                                    "DiodeminQ": {
+                                        "value": 0.6
+                                    }
+                                },
+                                "verbwrap": {
+                                    "__sps": {
+                                        "main": {
+                                            "__sps": {
+                                                "CombR~": {                                                },
+                                                "CombL~": {                                                },
+                                                "RoomB~": {                                                },
+                                                "Mix~": {                                                },
+                                                "Blur~": {                                                },
+                                                "Shuffle~": {                                                },
+                                                "Damp~": {                                                },
+                                                "RoomA~": {                                                }
+                                            },
+                                            "diff": {
+                                                "value": 51.2
+                                            },
+                                            "damp": {
+                                                "value": 57.1
+                                            },
+                                            "jitter": {
+                                                "value": 50.0
+                                            },
+                                            "mix": {
+                                                "value": 100.0
+                                            },
+                                            "size": {
+                                                "value": 40.6
+                                            },
+                                            "decay": {
+                                                "value": 47.6
+                                            }
+                                        }
+                                    },
+                                    "solo_reverb_min_amt": {
+                                        "value": -6.0
+                                    },
+                                    "drum_reverb_min_amt": {
+                                        "value": -39.0
                                     }
                                 },
                                 "solo1": {
@@ -1581,7 +1757,7 @@
                                                 "value": -6.0
                                             },
                                             "gain": {
-                                                "value": 1.0
+                                                "value": 0.0
                                             }
                                         }
                                     },
@@ -1717,100 +1893,12 @@
                                         "value": 5.0
                                     }
                                 },
-                                "p_obj-169": {                                },
-                                "verbwrap": {
-                                    "__sps": {
-                                        "main": {
-                                            "__sps": {
-                                                "CombR~": {                                                },
-                                                "CombL~": {                                                },
-                                                "RoomB~": {                                                },
-                                                "Mix~": {                                                },
-                                                "Blur~": {                                                },
-                                                "Shuffle~": {                                                },
-                                                "Damp~": {                                                },
-                                                "RoomA~": {                                                }
-                                            },
-                                            "diff": {
-                                                "value": 51.2
-                                            },
-                                            "damp": {
-                                                "value": 57.1
-                                            },
-                                            "jitter": {
-                                                "value": 50.0
-                                            },
-                                            "mix": {
-                                                "value": 100.0
-                                            },
-                                            "size": {
-                                                "value": 40.6
-                                            },
-                                            "decay": {
-                                                "value": 47.6
-                                            }
-                                        }
-                                    },
-                                    "solo_reverb_min_amt": {
-                                        "value": -6.0
-                                    },
-                                    "drum_reverb_min_amt": {
-                                        "value": -30.0
-                                    }
-                                },
-                                "tap": {
-                                    "time_sig_numerator": {
+                                "gp_noisegatewrap": {
+                                    "noise gate hyst": {
                                         "value": 3.0
                                     },
-                                    "BPM": {
-                                        "value": 140.0
-                                    },
-                                    "round_BPM": {
-                                        "value": 1.0
-                                    }
-                                },
-                                "jb_autowah": {
-                                    "randomize_lfp_type": {
-                                        "value": 0.0
-                                    },
-                                    "SVFmaxQ": {
-                                        "value": 0.33
-                                    },
-                                    "max_lfo_floor": {
-                                        "value": 0.48
-                                    },
-                                    "korg35maxQ": {
-                                        "value": 0.97
-                                    },
-                                    "max_lfo_ceiling": {
-                                        "value": 0.76
-                                    },
-                                    "lfo_env_sens": {
-                                        "value": 1.0
-                                    },
-                                    "korg35minQ": {
-                                        "value": 0.6
-                                    },
-                                    "min_lfo_ceiling": {
-                                        "value": 0.28
-                                    },
-                                    "SVFminQ": {
-                                        "value": 0.3
-                                    },
-                                    "DiodeminQ": {
-                                        "value": 0.6
-                                    },
-                                    "min_dist_btwn_flcl": {
-                                        "value": 0.08
-                                    },
-                                    "lpf_type": {
-                                        "value": 2.0
-                                    },
-                                    "DiodemaxQ": {
-                                        "value": 0.99
-                                    },
-                                    "min_lfo_floor": {
-                                        "value": 0.16
+                                    "noise gate thresh": {
+                                        "value": -38.0
                                     }
                                 },
                                 "solo": {
@@ -1867,154 +1955,9 @@
                                         "value": 130.0
                                     }
                                 },
-                                "p_obj-172": {                                },
-                                "main": {
+                                "p_obj-28": {
                                     "__sps": {
-                                        "limiter": {
-                                            "attack": {
-                                                "value": 22.0
-                                            },
-                                            "lookahead": {
-                                                "value": 10.0
-                                            },
-                                            "release": {
-                                                "value": 300.0
-                                            },
-                                            "thresh": {
-                                                "value": -9.0
-                                            },
-                                            "gain": {
-                                                "value": -3.0
-                                            }
-                                        }
-                                    },
-                                    "filter_enable": {
-                                        "value": 1.0
-                                    },
-                                    "spread": {
-                                        "value": 0.0
-                                    },
-                                    "output_volume": {
-                                        "value": 0.0
-                                    }
-                                },
-                                "drum": {
-                                    "__sps": {
-                                        "limiter": {
-                                            "attack": {
-                                                "value": 8.0
-                                            },
-                                            "lookahead": {
-                                                "value": 10.0
-                                            },
-                                            "release": {
-                                                "value": 240.0
-                                            },
-                                            "thresh": {
-                                                "value": -7.196850393700792
-                                            },
-                                            "gain": {
-                                                "value": 1.0
-                                            }
-                                        }
-                                    },
-                                    "filter_enable": {
-                                        "value": 1.0
-                                    },
-                                    "spread": {
-                                        "value": 0.0
-                                    },
-                                    "output_volume": {
-                                        "value": -2.0
-                                    }
-                                },
-                                "p_obj-2": {
-                                    "knee": {
-                                        "value": 1.0
-                                    },
-                                    "thresh": {
-                                        "value": -0.1
-                                    }
-                                },
-                                "p_obj-59": {                                },
-                                "ra_crossover": {                                },
-                                "drum_looper": {
-                                    "__sps": {
-                                        "p_obj-247": {                                        }
-                                    },
-                                    "looper_length": {
-                                        "value": 8.0
-                                    }
-                                },
-                                "p_obj-40": {                                },
-                                "p_obj-98": {                                },
-                                "main_looper": {
-                                    "__sps": {
-                                        "p_obj-247": {                                        }
-                                    },
-                                    "looper_length": {
-                                        "value": 16.0
-                                    }
-                                },
-                                "gpin": {
-                                    "rotation_right": {
-                                        "value": 0.0
-                                    },
-                                    "deadzone_right": {
-                                        "value": 0.2
-                                    },
-                                    "__sps": {
-                                        "p_obj-89": {                                        },
-                                        "p_obj-80": {                                        },
-                                        "p_obj-87": {                                        },
-                                        "p_obj-69": {                                        },
-                                        "p_obj-86": {                                        },
-                                        "p_obj-79": {                                        },
-                                        "p_obj-98": {                                        },
-                                        "p_obj-53": {                                        },
-                                        "p_obj-54": {                                        },
-                                        "p_obj-61": {                                        },
-                                        "p_obj-159": {                                        },
-                                        "p_obj-81": {                                        },
-                                        "p_obj-67": {                                        },
-                                        "p_obj-88": {                                        },
-                                        "p_obj-155": {                                        },
-                                        "p_obj-109": {                                        },
-                                        "p_obj-64": {                                        },
-                                        "p_obj-57": {                                        },
-                                        "p_obj-68": {                                        },
-                                        "p_obj-107": {                                        },
-                                        "p_obj-62": {                                        },
-                                        "p_obj-55": {                                        },
-                                        "p_obj-182": {                                        },
-                                        "p_obj-48": {                                        },
-                                        "p_obj-70": {                                        },
-                                        "p_obj-56": {                                        },
-                                        "p_obj-108": {                                        },
-                                        "p_obj-63": {                                        },
-                                        "p_obj-66": {                                        },
-                                        "p_obj-65": {                                        },
-                                        "p_obj-183": {                                        }
-                                    },
-                                    "rotation_left": {
-                                        "value": 0.0
-                                    },
-                                    "deadzone_left": {
-                                        "value": 0.2
-                                    }
-                                },
-                                "bindings": {
-                                    "__sps": {
-                                        "p_obj-9": {                                        },
-                                        "p_obj-8": {                                        },
-                                        "p_obj-11": {                                        },
-                                        "p_obj-7": {                                        }
-                                    },
-                                    "lfo_ceiling_env_sens_binding_curve": {
-                                        "value": 0.12
-                                    },
-                                    "lfo_floor_env_sens_binding_curve": {
-                                        "value": 0.0
+                                        "Compression~": {                                        }
                                     }
                                 },
                                 "post-xover-lows": {
@@ -2049,44 +1992,79 @@
                                         "value": 12.0
                                     }
                                 },
-                                "p_obj-28": {
+                                "p_obj-172": {                                },
+                                "main": {
                                     "__sps": {
-                                        "Compression~": {                                        }
-                                    }
-                                },
-                                "final": {
-                                    "__sps": {
-                                        "Mid~": {                                        },
-                                        "Compensation~": {                                        },
-                                        "Compression~": {                                        },
-                                        "Lookahead~": {                                        }
+                                        "limiter": {
+                                            "attack": {
+                                                "value": 30.0
+                                            },
+                                            "lookahead": {
+                                                "value": 10.0
+                                            },
+                                            "release": {
+                                                "value": 300.0
+                                            },
+                                            "thresh": {
+                                                "value": -12.0
+                                            },
+                                            "gain": {
+                                                "value": 0.0
+                                            }
+                                        }
                                     },
-                                    "himid": {
-                                        "value": 2.0
-                                    },
-                                    "himidfq": {
-                                        "value": 1872.4409448818892
-                                    },
-                                    "release": {
-                                        "value": 300.0
-                                    },
-                                    "output_gain": {
-                                        "value": -3.0
-                                    },
-                                    "attack": {
-                                        "value": 30.0
-                                    },
-                                    "comp": {
-                                        "value": 14.0
-                                    },
-                                    "input_gain": {
-                                        "value": 3.0
-                                    },
-                                    "lookahead": {
+                                    "filter_enable": {
                                         "value": 1.0
+                                    },
+                                    "spread": {
+                                        "value": 0.0
+                                    },
+                                    "output_volume": {
+                                        "value": 0.0
                                     }
                                 },
-                                "ui_outports": {                                },
+                                "drum": {
+                                    "__sps": {
+                                        "limiter": {
+                                            "attack": {
+                                                "value": 8.0
+                                            },
+                                            "lookahead": {
+                                                "value": 10.0
+                                            },
+                                            "release": {
+                                                "value": 240.0
+                                            },
+                                            "thresh": {
+                                                "value": -7.196850393700792
+                                            },
+                                            "gain": {
+                                                "value": 0.0
+                                            }
+                                        }
+                                    },
+                                    "filter_enable": {
+                                        "value": 1.0
+                                    },
+                                    "spread": {
+                                        "value": 0.0
+                                    },
+                                    "output_volume": {
+                                        "value": -1.0
+                                    }
+                                },
+                                "ra_crossover": {                                },
+                                "p_obj-59": {                                },
+                                "p_obj-2": {
+                                    "knee": {
+                                        "value": 1.0
+                                    },
+                                    "thresh": {
+                                        "value": -0.1
+                                    }
+                                },
+                                "p_obj-206": {                                },
+                                "p_obj-48": {                                },
                                 "p_obj-234": {
                                     "__sps": {
                                         "p_obj-48": {
@@ -2132,11 +2110,18 @@
                                         }
                                     }
                                 },
-                                "p_obj-206": {                                },
-                                "p_obj-48": {                                },
-                                "jb_crossfade": {
-                                    "xfade_env_sens": {
-                                        "value": 0.45
+                                "jb_drums": {
+                                    "clap_volume": {
+                                        "value": -12.0
+                                    },
+                                    "tom_volume": {
+                                        "value": -9.0
+                                    },
+                                    "snare_volume": {
+                                        "value": -10.0
+                                    },
+                                    "kick_volume": {
+                                        "value": -3.0
                                     }
                                 },
                                 "init": {
@@ -2156,18 +2141,18 @@
                                         "value": 0.0
                                     }
                                 },
-                                "jb_drums": {
-                                    "clap_volume": {
-                                        "value": -14.503937007874008
+                                "drum_looper": {
+                                    "__sps": {
+                                        "p_obj-247": {                                        }
                                     },
-                                    "tom_volume": {
-                                        "value": -11.0
-                                    },
-                                    "snare_volume": {
-                                        "value": -11.0
-                                    },
-                                    "kick_volume": {
-                                        "value": -3.0
+                                    "looper_length": {
+                                        "value": 8.0
+                                    }
+                                },
+                                "p_obj-40": {                                },
+                                "jb_crossfade": {
+                                    "xfade_env_sens": {
+                                        "value": 0.45
                                     }
                                 }
                             },
@@ -2249,15 +2234,73 @@
                                                     }
                                                 }
                                             },
+                                            "p_obj-98": {                                            },
+                                            "bindings": {
+                                                "__sps": {
+                                                    "p_obj-9": {                                                    },
+                                                    "p_obj-8": {                                                    },
+                                                    "p_obj-11": {                                                    },
+                                                    "p_obj-7": {                                                    }
+                                                },
+                                                "lfo_ceiling_env_sens_binding_curve": {
+                                                    "value": -0.17322834645669327
+                                                },
+                                                "lfo_floor_env_sens_binding_curve": {
+                                                    "value": -0.2204724409448815
+                                                }
+                                            },
                                             "jb_metronome": {
                                                 "alert_volume": {
                                                     "value": -22.0
                                                 },
                                                 "metronome_volume": {
-                                                    "value": -9.0
+                                                    "value": -10.0
                                                 }
                                             },
                                             "p_obj-41": {                                            },
+                                            "gpin": {
+                                                "__sps": {
+                                                    "p_obj-107": {                                                    },
+                                                    "p_obj-165": {                                                    },
+                                                    "p_obj-98": {                                                    },
+                                                    "p_obj-89": {                                                    },
+                                                    "p_obj-69": {                                                    },
+                                                    "p_obj-86": {                                                    },
+                                                    "p_obj-79": {                                                    },
+                                                    "p_obj-81": {                                                    },
+                                                    "p_obj-67": {                                                    },
+                                                    "p_obj-88": {                                                    },
+                                                    "p_obj-155": {                                                    },
+                                                    "p_obj-87": {                                                    },
+                                                    "p_obj-70": {                                                    },
+                                                    "p_obj-182": {                                                    },
+                                                    "p_obj-168": {                                                    },
+                                                    "p_obj-68": {                                                    },
+                                                    "p_obj-80": {                                                    },
+                                                    "p_obj-66": {                                                    },
+                                                    "p_obj-65": {                                                    },
+                                                    "p_obj-183": {                                                    },
+                                                    "p_obj-109": {                                                    },
+                                                    "p_obj-64": {                                                    },
+                                                    "p_obj-159": {                                                    },
+                                                    "p_obj-108": {                                                    },
+                                                    "p_obj-63": {                                                    }
+                                                },
+                                                "deadzone_right": {
+                                                    "value": 0.2
+                                                },
+                                                "deadzone_left": {
+                                                    "value": 0.2
+                                                }
+                                            },
+                                            "main_looper": {
+                                                "__sps": {
+                                                    "p_obj-247": {                                                    }
+                                                },
+                                                "looper_length": {
+                                                    "value": 16.0
+                                                }
+                                            },
                                             "p_obj-9": {
                                                 "knee": {
                                                     "value": 1.0
@@ -2270,16 +2313,16 @@
                                                 "__sps": {
                                                     "limiter": {
                                                         "attack": {
-                                                            "value": 22.0
+                                                            "value": 30.0
                                                         },
                                                         "lookahead": {
                                                             "value": 10.0
                                                         },
                                                         "release": {
-                                                            "value": 120.0
+                                                            "value": 300.0
                                                         },
                                                         "thresh": {
-                                                            "value": -7.0
+                                                            "value": -12.0
                                                         },
                                                         "gain": {
                                                             "value": 0.0
@@ -2293,7 +2336,7 @@
                                                     "value": 0.0
                                                 },
                                                 "output_volume": {
-                                                    "value": 0.0
+                                                    "value": -1.0
                                                 }
                                             },
                                             "pre-xfade-dry": {
@@ -2326,6 +2369,39 @@
                                                 },
                                                 "lookahead": {
                                                     "value": 5.0
+                                                }
+                                            },
+                                            "ui_outports": {                                            },
+                                            "final": {
+                                                "__sps": {
+                                                    "Mid~": {                                                    },
+                                                    "Compensation~": {                                                    },
+                                                    "Compression~": {                                                    },
+                                                    "Lookahead~": {                                                    }
+                                                },
+                                                "himid": {
+                                                    "value": 2.0
+                                                },
+                                                "himidfq": {
+                                                    "value": 1872.4409448818892
+                                                },
+                                                "release": {
+                                                    "value": 300.0
+                                                },
+                                                "output_gain": {
+                                                    "value": -3.0
+                                                },
+                                                "attack": {
+                                                    "value": 30.0
+                                                },
+                                                "comp": {
+                                                    "value": 14.0
+                                                },
+                                                "input_gain": {
+                                                    "value": 3.0
+                                                },
+                                                "lookahead": {
+                                                    "value": 1.0
                                                 }
                                             },
                                             "last": {
@@ -2430,12 +2506,97 @@
                                                     }
                                                 }
                                             },
-                                            "gp_noisegatewrap": {
-                                                "noise gate hyst": {
-                                                    "value": 3.0
+                                            "tap": {
+                                                "time_sig_numerator": {
+                                                    "value": 4.0
                                                 },
-                                                "noise gate thresh": {
-                                                    "value": -40.0
+                                                "BPM": {
+                                                    "value": 140.0
+                                                },
+                                                "round_BPM": {
+                                                    "value": 1.0
+                                                }
+                                            },
+                                            "p_obj-169": {                                            },
+                                            "jb_autowah": {
+                                                "randomize_lfp_type": {
+                                                    "value": 0.0
+                                                },
+                                                "lpf_type": {
+                                                    "value": 2.0
+                                                },
+                                                "min_lfo_floor": {
+                                                    "value": 0.18
+                                                },
+                                                "DiodemaxQ": {
+                                                    "value": 0.99
+                                                },
+                                                "SVFmaxQ": {
+                                                    "value": 0.52
+                                                },
+                                                "max_lfo_floor": {
+                                                    "value": 0.68
+                                                },
+                                                "korg35maxQ": {
+                                                    "value": 0.97
+                                                },
+                                                "max_lfo_ceiling": {
+                                                    "value": 0.58
+                                                },
+                                                "lfo_env_sens": {
+                                                    "value": 2.246062992125984
+                                                },
+                                                "korg35minQ": {
+                                                    "value": 0.6
+                                                },
+                                                "min_lfo_ceiling": {
+                                                    "value": 0.03
+                                                },
+                                                "SVFminQ": {
+                                                    "value": 0.33
+                                                },
+                                                "DiodeminQ": {
+                                                    "value": 0.6
+                                                }
+                                            },
+                                            "verbwrap": {
+                                                "__sps": {
+                                                    "main": {
+                                                        "__sps": {
+                                                            "CombR~": {                                                            },
+                                                            "CombL~": {                                                            },
+                                                            "RoomB~": {                                                            },
+                                                            "Mix~": {                                                            },
+                                                            "Blur~": {                                                            },
+                                                            "Shuffle~": {                                                            },
+                                                            "Damp~": {                                                            },
+                                                            "RoomA~": {                                                            }
+                                                        },
+                                                        "diff": {
+                                                            "value": 51.2
+                                                        },
+                                                        "damp": {
+                                                            "value": 57.1
+                                                        },
+                                                        "jitter": {
+                                                            "value": 50.0
+                                                        },
+                                                        "mix": {
+                                                            "value": 100.0
+                                                        },
+                                                        "size": {
+                                                            "value": 40.6
+                                                        },
+                                                        "decay": {
+                                                            "value": 47.6
+                                                        }
+                                                    }
+                                                },
+                                                "solo_reverb_min_amt": {
+                                                    "value": -6.0
+                                                },
+                                                "drum_reverb_min_amt": {
+                                                    "value": -39.0
                                                 }
                                             },
                                             "solo1": {
@@ -2454,7 +2615,7 @@
                                                             "value": -6.0
                                                         },
                                                         "gain": {
-                                                            "value": 1.0
+                                                            "value": 0.0
                                                         }
                                                     }
                                                 },
@@ -2590,100 +2751,12 @@
                                                     "value": 5.0
                                                 }
                                             },
-                                            "p_obj-169": {                                            },
-                                            "verbwrap": {
-                                                "__sps": {
-                                                    "main": {
-                                                        "__sps": {
-                                                            "CombR~": {                                                            },
-                                                            "CombL~": {                                                            },
-                                                            "RoomB~": {                                                            },
-                                                            "Mix~": {                                                            },
-                                                            "Blur~": {                                                            },
-                                                            "Shuffle~": {                                                            },
-                                                            "Damp~": {                                                            },
-                                                            "RoomA~": {                                                            }
-                                                        },
-                                                        "diff": {
-                                                            "value": 51.2
-                                                        },
-                                                        "damp": {
-                                                            "value": 57.1
-                                                        },
-                                                        "jitter": {
-                                                            "value": 50.0
-                                                        },
-                                                        "mix": {
-                                                            "value": 100.0
-                                                        },
-                                                        "size": {
-                                                            "value": 40.6
-                                                        },
-                                                        "decay": {
-                                                            "value": 47.6
-                                                        }
-                                                    }
-                                                },
-                                                "solo_reverb_min_amt": {
-                                                    "value": -6.0
-                                                },
-                                                "drum_reverb_min_amt": {
-                                                    "value": -30.0
-                                                }
-                                            },
-                                            "tap": {
-                                                "time_sig_numerator": {
+                                            "gp_noisegatewrap": {
+                                                "noise gate hyst": {
                                                     "value": 3.0
                                                 },
-                                                "BPM": {
-                                                    "value": 140.0
-                                                },
-                                                "round_BPM": {
-                                                    "value": 1.0
-                                                }
-                                            },
-                                            "jb_autowah": {
-                                                "randomize_lfp_type": {
-                                                    "value": 0.0
-                                                },
-                                                "SVFmaxQ": {
-                                                    "value": 0.33
-                                                },
-                                                "max_lfo_floor": {
-                                                    "value": 0.48
-                                                },
-                                                "korg35maxQ": {
-                                                    "value": 0.97
-                                                },
-                                                "max_lfo_ceiling": {
-                                                    "value": 0.76
-                                                },
-                                                "lfo_env_sens": {
-                                                    "value": 1.0
-                                                },
-                                                "korg35minQ": {
-                                                    "value": 0.6
-                                                },
-                                                "min_lfo_ceiling": {
-                                                    "value": 0.28
-                                                },
-                                                "SVFminQ": {
-                                                    "value": 0.3
-                                                },
-                                                "DiodeminQ": {
-                                                    "value": 0.6
-                                                },
-                                                "min_dist_btwn_flcl": {
-                                                    "value": 0.08
-                                                },
-                                                "lpf_type": {
-                                                    "value": 2.0
-                                                },
-                                                "DiodemaxQ": {
-                                                    "value": 0.99
-                                                },
-                                                "min_lfo_floor": {
-                                                    "value": 0.16
+                                                "noise gate thresh": {
+                                                    "value": -38.0
                                                 }
                                             },
                                             "solo": {
@@ -2740,154 +2813,9 @@
                                                     "value": 130.0
                                                 }
                                             },
-                                            "p_obj-172": {                                            },
-                                            "main": {
+                                            "p_obj-28": {
                                                 "__sps": {
-                                                    "limiter": {
-                                                        "attack": {
-                                                            "value": 22.0
-                                                        },
-                                                        "lookahead": {
-                                                            "value": 10.0
-                                                        },
-                                                        "release": {
-                                                            "value": 300.0
-                                                        },
-                                                        "thresh": {
-                                                            "value": -9.0
-                                                        },
-                                                        "gain": {
-                                                            "value": -3.0
-                                                        }
-                                                    }
-                                                },
-                                                "filter_enable": {
-                                                    "value": 1.0
-                                                },
-                                                "spread": {
-                                                    "value": 0.0
-                                                },
-                                                "output_volume": {
-                                                    "value": 0.0
-                                                }
-                                            },
-                                            "drum": {
-                                                "__sps": {
-                                                    "limiter": {
-                                                        "attack": {
-                                                            "value": 8.0
-                                                        },
-                                                        "lookahead": {
-                                                            "value": 10.0
-                                                        },
-                                                        "release": {
-                                                            "value": 240.0
-                                                        },
-                                                        "thresh": {
-                                                            "value": -7.196850393700792
-                                                        },
-                                                        "gain": {
-                                                            "value": 1.0
-                                                        }
-                                                    }
-                                                },
-                                                "filter_enable": {
-                                                    "value": 1.0
-                                                },
-                                                "spread": {
-                                                    "value": 0.0
-                                                },
-                                                "output_volume": {
-                                                    "value": -2.0
-                                                }
-                                            },
-                                            "p_obj-2": {
-                                                "knee": {
-                                                    "value": 1.0
-                                                },
-                                                "thresh": {
-                                                    "value": -0.1
-                                                }
-                                            },
-                                            "p_obj-59": {                                            },
-                                            "ra_crossover": {                                            },
-                                            "drum_looper": {
-                                                "__sps": {
-                                                    "p_obj-247": {                                                    }
-                                                },
-                                                "looper_length": {
-                                                    "value": 8.0
-                                                }
-                                            },
-                                            "p_obj-40": {                                            },
-                                            "p_obj-98": {                                            },
-                                            "main_looper": {
-                                                "__sps": {
-                                                    "p_obj-247": {                                                    }
-                                                },
-                                                "looper_length": {
-                                                    "value": 16.0
-                                                }
-                                            },
-                                            "gpin": {
-                                                "rotation_right": {
-                                                    "value": 0.0
-                                                },
-                                                "deadzone_right": {
-                                                    "value": 0.2
-                                                },
-                                                "__sps": {
-                                                    "p_obj-89": {                                                    },
-                                                    "p_obj-80": {                                                    },
-                                                    "p_obj-87": {                                                    },
-                                                    "p_obj-69": {                                                    },
-                                                    "p_obj-86": {                                                    },
-                                                    "p_obj-79": {                                                    },
-                                                    "p_obj-98": {                                                    },
-                                                    "p_obj-53": {                                                    },
-                                                    "p_obj-54": {                                                    },
-                                                    "p_obj-61": {                                                    },
-                                                    "p_obj-159": {                                                    },
-                                                    "p_obj-81": {                                                    },
-                                                    "p_obj-67": {                                                    },
-                                                    "p_obj-88": {                                                    },
-                                                    "p_obj-155": {                                                    },
-                                                    "p_obj-109": {                                                    },
-                                                    "p_obj-64": {                                                    },
-                                                    "p_obj-57": {                                                    },
-                                                    "p_obj-68": {                                                    },
-                                                    "p_obj-107": {                                                    },
-                                                    "p_obj-62": {                                                    },
-                                                    "p_obj-55": {                                                    },
-                                                    "p_obj-182": {                                                    },
-                                                    "p_obj-48": {                                                    },
-                                                    "p_obj-70": {                                                    },
-                                                    "p_obj-56": {                                                    },
-                                                    "p_obj-108": {                                                    },
-                                                    "p_obj-63": {                                                    },
-                                                    "p_obj-66": {                                                    },
-                                                    "p_obj-65": {                                                    },
-                                                    "p_obj-183": {                                                    }
-                                                },
-                                                "rotation_left": {
-                                                    "value": 0.0
-                                                },
-                                                "deadzone_left": {
-                                                    "value": 0.2
-                                                }
-                                            },
-                                            "bindings": {
-                                                "__sps": {
-                                                    "p_obj-9": {                                                    },
-                                                    "p_obj-8": {                                                    },
-                                                    "p_obj-11": {                                                    },
-                                                    "p_obj-7": {                                                    }
-                                                },
-                                                "lfo_ceiling_env_sens_binding_curve": {
-                                                    "value": 0.12
-                                                },
-                                                "lfo_floor_env_sens_binding_curve": {
-                                                    "value": 0.0
+                                                    "Compression~": {                                                    }
                                                 }
                                             },
                                             "post-xover-lows": {
@@ -2922,44 +2850,79 @@
                                                     "value": 12.0
                                                 }
                                             },
-                                            "p_obj-28": {
+                                            "p_obj-172": {                                            },
+                                            "main": {
                                                 "__sps": {
-                                                    "Compression~": {                                                    }
-                                                }
-                                            },
-                                            "final": {
-                                                "__sps": {
-                                                    "Mid~": {                                                    },
-                                                    "Compensation~": {                                                    },
-                                                    "Compression~": {                                                    },
-                                                    "Lookahead~": {                                                    }
+                                                    "limiter": {
+                                                        "attack": {
+                                                            "value": 30.0
+                                                        },
+                                                        "lookahead": {
+                                                            "value": 10.0
+                                                        },
+                                                        "release": {
+                                                            "value": 300.0
+                                                        },
+                                                        "thresh": {
+                                                            "value": -12.0
+                                                        },
+                                                        "gain": {
+                                                            "value": 0.0
+                                                        }
+                                                    }
                                                 },
-                                                "himid": {
-                                                    "value": 2.0
-                                                },
-                                                "himidfq": {
-                                                    "value": 1872.4409448818892
-                                                },
-                                                "release": {
-                                                    "value": 300.0
-                                                },
-                                                "output_gain": {
-                                                    "value": -3.0
-                                                },
-                                                "attack": {
-                                                    "value": 30.0
-                                                },
-                                                "comp": {
-                                                    "value": 14.0
-                                                },
-                                                "input_gain": {
-                                                    "value": 3.0
-                                                },
-                                                "lookahead": {
+                                                "filter_enable": {
                                                     "value": 1.0
+                                                },
+                                                "spread": {
+                                                    "value": 0.0
+                                                },
+                                                "output_volume": {
+                                                    "value": 0.0
                                                 }
                                             },
-                                            "ui_outports": {                                            },
+                                            "drum": {
+                                                "__sps": {
+                                                    "limiter": {
+                                                        "attack": {
+                                                            "value": 8.0
+                                                        },
+                                                        "lookahead": {
+                                                            "value": 10.0
+                                                        },
+                                                        "release": {
+                                                            "value": 240.0
+                                                        },
+                                                        "thresh": {
+                                                            "value": -7.196850393700792
+                                                        },
+                                                        "gain": {
+                                                            "value": 0.0
+                                                        }
+                                                    }
+                                                },
+                                                "filter_enable": {
+                                                    "value": 1.0
+                                                },
+                                                "spread": {
+                                                    "value": 0.0
+                                                },
+                                                "output_volume": {
+                                                    "value": -1.0
+                                                }
+                                            },
+                                            "ra_crossover": {                                            },
+                                            "p_obj-59": {                                            },
+                                            "p_obj-2": {
+                                                "knee": {
+                                                    "value": 1.0
+                                                },
+                                                "thresh": {
+                                                    "value": -0.1
+                                                }
+                                            },
+                                            "p_obj-206": {                                            },
+                                            "p_obj-48": {                                            },
                                             "p_obj-234": {
                                                 "__sps": {
                                                     "p_obj-48": {
@@ -3005,11 +2968,18 @@
                                                     }
                                                 }
                                             },
-                                            "p_obj-206": {                                            },
-                                            "p_obj-48": {                                            },
-                                            "jb_crossfade": {
-                                                "xfade_env_sens": {
-                                                    "value": 0.45
+                                            "jb_drums": {
+                                                "clap_volume": {
+                                                    "value": -12.0
+                                                },
+                                                "tom_volume": {
+                                                    "value": -9.0
+                                                },
+                                                "snare_volume": {
+                                                    "value": -10.0
+                                                },
+                                                "kick_volume": {
+                                                    "value": -3.0
                                                 }
                                             },
                                             "init": {
@@ -3029,18 +2999,18 @@
                                                     "value": 0.0
                                                 }
                                             },
-                                            "jb_drums": {
-                                                "clap_volume": {
-                                                    "value": -14.503937007874008
+                                            "drum_looper": {
+                                                "__sps": {
+                                                    "p_obj-247": {                                                    }
                                                 },
-                                                "tom_volume": {
-                                                    "value": -11.0
-                                                },
-                                                "snare_volume": {
-                                                    "value": -11.0
-                                                },
-                                                "kick_volume": {
-                                                    "value": -3.0
+                                                "looper_length": {
+                                                    "value": 8.0
+                                                }
+                                            },
+                                            "p_obj-40": {                                            },
+                                            "jb_crossfade": {
+                                                "xfade_env_sens": {
+                                                    "value": 0.45
                                                 }
                                             }
                                         },
@@ -3054,10 +3024,10 @@
                                     },
                                     "fileref": {
                                         "name": "SousaFX-rnbo",
-                                        "filename": "SousaFX-rnbo_20260118.maxsnap",
+                                        "filename": "SousaFX-rnbo.maxsnap",
                                         "filepath": "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
                                         "filepos": -1,
-                                        "snapshotfileid": "773afee594629e08d8793e75d6a6fc60"
+                                        "snapshotfileid": "1e960cfa57361f3cdbaca82302f78a70"
                                     }
                                 }
                             ]

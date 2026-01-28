@@ -9,11 +9,11 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 441.0, 585.0 ],
+        "rect": [ 0.0, 53.0, 418.0, 556.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
-        "title": "about sousafx",
+        "title": "sousafx",
         "boxes": [
             {
                 "box": {
@@ -33,7 +33,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 117.0, 12.0, 48.0, 28.0 ],
+                    "patching_rect": [ 115.5, 12.0, 48.0, 28.0 ],
                     "text": "open"
                 }
             },
@@ -293,7 +293,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 87.0, 451.0, 105.0, 22.0 ],
+                    "patching_rect": [ 33.0, 561.0, 105.0, 22.0 ],
                     "text": "r main_panel_rect"
                 }
             },
@@ -314,7 +314,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 4617.0, 748.5, 70.0, 22.0 ],
+                    "patching_rect": [ 217.0, 363.0, 70.0, 22.0 ],
                     "text": "loadmess 0"
                 }
             },
@@ -325,7 +325,7 @@
                     "numinlets": 3,
                     "numoutlets": 3,
                     "outlettype": [ "bang", "bang", "" ],
-                    "patching_rect": [ 4700.0, 681.0, 44.0, 22.0 ],
+                    "patching_rect": [ 300.0, 286.0, 44.0, 22.0 ],
                     "text": "sel 1 0"
                 }
             },
@@ -336,7 +336,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 4686.0, 716.0, 105.0, 22.0 ],
+                    "patching_rect": [ 286.0, 321.0, 105.0, 22.0 ],
                     "text": "bgcolor 0 0 0 0.12"
                 }
             },
@@ -347,7 +347,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 4726.0, 745.0, 168.0, 22.0 ],
+                    "patching_rect": [ 326.0, 350.0, 168.0, 22.0 ],
                     "text": "bgcolor 1. 0.031373 0.031373"
                 }
             },
@@ -358,7 +358,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 4700.0, 648.0, 33.0, 22.0 ],
+                    "patching_rect": [ 300.0, 253.0, 33.0, 22.0 ],
                     "text": "== 0"
                 }
             },
@@ -368,7 +368,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 4617.0, 852.0, 123.0, 22.0 ],
+                    "patching_rect": [ 217.0, 453.0, 123.0, 22.0 ],
                     "text": "s main_audio_source"
                 }
             },
@@ -390,9 +390,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 4617.0, 806.0, 123.0, 23.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 1.0, 26.0, 62.0, 23.0 ],
+                    "patching_rect": [ 217.0, 411.0, 123.0, 23.0 ],
                     "varname": "umenu[42]"
                 }
             },
@@ -2683,7 +2681,7 @@
                     "maxclass": "newobj",
                     "numinlets": 4,
                     "numoutlets": 0,
-                    "patching_rect": [ 248.0, 484.0, 50.5, 22.0 ],
+                    "patching_rect": [ 194.0, 594.0, 50.5, 22.0 ],
                     "text": "bgcolor"
                 }
             },
@@ -2694,7 +2692,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 248.0, 452.0, 78.0, 22.0 ],
+                    "patching_rect": [ 194.0, 562.0, 78.0, 22.0 ],
                     "text": "r bgcolor_set"
                 }
             },
@@ -4285,27 +4283,6 @@
             },
             {
                 "box": {
-                    "id": "obj-268",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 825.5, 1968.0, 70.0, 22.0 ],
-                    "text": "loadmess 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-126",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 825.5, 2004.0, 123.0, 22.0 ],
-                    "text": "s main_audio_source"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-264",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -4586,7 +4563,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 85.0, 648.0, 37.0, 22.0 ],
+                    "patching_rect": [ 31.0, 758.0, 37.0, 22.0 ],
                     "text": "zl.rev"
                 }
             },
@@ -4597,7 +4574,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 85.0, 607.0, 56.0, 22.0 ],
+                    "patching_rect": [ 31.0, 717.0, 56.0, 22.0 ],
                     "text": "pack f f"
                 }
             },
@@ -4608,7 +4585,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 85.0, 566.0, 30.0, 22.0 ],
+                    "patching_rect": [ 31.0, 676.0, 30.0, 22.0 ],
                     "text": "+"
                 }
             },
@@ -4619,7 +4596,7 @@
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "float", "float", "float", "float" ],
-                    "patching_rect": [ 85.0, 525.0, 74.0, 22.0 ],
+                    "patching_rect": [ 31.0, 635.0, 74.0, 22.0 ],
                     "text": "unpack f f f f"
                 }
             },
@@ -4765,7 +4742,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 343.0, 484.0, 63.0, 22.0 ],
+                    "patching_rect": [ 289.0, 594.0, 63.0, 22.0 ],
                     "text": "closebang"
                 }
             },
@@ -4776,7 +4753,7 @@
                     "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
-                    "patching_rect": [ 204.0, 525.0, 256.0, 22.0 ],
+                    "patching_rect": [ 150.0, 635.0, 256.0, 22.0 ],
                     "text": "\"floating window positioner\" SousaFX 0 nofloat"
                 }
             },
@@ -4800,7 +4777,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 204.0, 568.0, 67.0, 22.0 ],
+                    "patching_rect": [ 150.0, 678.0, 67.0, 22.0 ],
                     "save": [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
                     "text": "thispatcher"
                 }
@@ -6110,11 +6087,12 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
+                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 4233.0, 2276.0, 119.0, 23.0 ]
+                    "patching_rect": [ 4233.0, 2276.0, 119.0, 95.0 ]
                 }
             },
             {
@@ -7151,7 +7129,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-86", 2 ],
-                    "midpoints": [ 213.5, 604.0, 525.5, 604.0, 525.5, 476.0, 450.5, 476.0 ],
+                    "midpoints": [ 159.5, 714.0, 471.5, 714.0, 471.5, 586.0, 396.5, 586.0 ],
                     "source": [ "obj-112", 0 ]
                 }
             },
@@ -8193,12 +8171,6 @@
                 "patchline": {
                     "destination": [ "obj-148", 0 ],
                     "source": [ "obj-266", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-126", 0 ],
-                    "source": [ "obj-268", 0 ]
                 }
             },
             {
@@ -10498,7 +10470,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-86", 0 ],
-                    "midpoints": [ 94.5, 686.0, 176.5, 686.0, 176.5, 482.0, 213.5, 482.0 ],
+                    "midpoints": [ 40.5, 796.0, 122.5, 796.0, 122.5, 592.0, 159.5, 592.0 ],
                     "source": [ "obj-85", 0 ]
                 }
             },
@@ -10745,10 +10717,10 @@
             "obj-377::obj-26": [ "live.dial[15]", "bass", 0 ],
             "obj-377::obj-28": [ "live.dial[16]", "highcut", 0 ],
             "obj-377::obj-29": [ "live.dial[17]", "lowcut", 0 ],
-            "obj-377::obj-348": [ "live.dial", "Min LFO Floor", 0 ],
-            "obj-377::obj-351": [ "live.dial[1]", "Max LFO Floor", 0 ],
-            "obj-377::obj-353": [ "live.dial[2]", "Max LFO Ceiling", 0 ],
-            "obj-377::obj-355": [ "live.dial[3]", "Min LFO Ceiling", 0 ],
+            "obj-377::obj-348": [ "live.dial", "Min Floor", 0 ],
+            "obj-377::obj-351": [ "live.dial[1]", "Max Floor", 0 ],
+            "obj-377::obj-353": [ "live.dial[2]", "Max Dist Over Floor", 0 ],
+            "obj-377::obj-355": [ "live.dial[3]", "Min Dist Over Floor", 0 ],
             "obj-377::obj-360": [ "live.dial[5]", "LFO ceiling env sens binding curve", 0 ],
             "obj-377::obj-372": [ "live.dial[6]", "LFO floor env sens binding curve", 0 ],
             "obj-377::obj-375": [ "live.dial[7]", "LFO env sens", 0 ],
@@ -11097,6 +11069,13 @@
                     "parameter_range": [ 0.0, 100.0 ],
                     "parameter_shortname": "mid Q",
                     "parameter_unitstyle": 5
+                },
+                "obj-377::obj-2": {
+                    "parameter_invisible": 0,
+                    "parameter_modmode": 0,
+                    "parameter_range": [ "Korg 35", "SVF Andrew Simper", "Diode ladder Vadim Zavalishin" ],
+                    "parameter_type": 2,
+                    "parameter_unitstyle": 10
                 },
                 "obj-377::obj-89": {
                     "parameter_longname": "live.numbox[39]",
