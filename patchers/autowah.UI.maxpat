@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 36.0, 719.0, 399.0, 721.0 ],
+        "rect": [ 541.0, 713.0, 436.0, 694.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -146,7 +146,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 8.5, 9.0, 369.0, 676.0 ],
+                    "presentation_rect": [ 9.0, 9.0, 364.0, 676.0 ],
                     "proportion": 0.5
                 }
             },
@@ -1787,7 +1787,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1080.0, 1010.0, 229.0, 22.0 ],
-                    "restore": [ -17.322834645669328 ],
+                    "restore": [ -17.3 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2157,7 +2157,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 362.0, 558.0, 215.0, 54.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.0, 6.0, 365.0, 78.0 ],
+                    "presentation_rect": [ 10.0, 6.0, 360.0, 78.0 ],
                     "size": 1.0
                 }
             },
@@ -2175,7 +2175,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 210.0, 123.0, 79.0, 83.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 0.0, 386.0, 694.0 ],
+                    "presentation_rect": [ 0.0, 0.0, 379.0, 694.0 ],
                     "proportion": 0.5,
                     "rounded": 0
                 }
