@@ -9,10 +9,42 @@
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 1210.0, 421.0, 1316.0, 985.0 ],
+        "rect": [ 845.0, 206.0, 1316.0, 985.0 ],
         "default_fontname": "Lato",
         "title": "jb.gate",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 96.0, 61.0, 56.0, 23.0 ],
+                    "rnbo_classname": "loadbang",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "loadbang_obj-7",
+                    "text": "loadbang"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 96.0, 96.0, 56.0, 23.0 ],
+                    "rnbo_classname": "message",
+                    "rnbo_extra_attributes": {
+                        "text": "",
+                        "storeempty": 0
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "message_obj-5",
+                    "text": "1 0 0 0 0"
+                }
+            },
             {
                 "box": {
                     "id": "obj-3",
@@ -36,20 +68,6 @@
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "*_obj-33",
                     "text": "* @hot 1"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-2",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 96.0, 17.0, 56.0, 23.0 ],
-                    "rnbo_classname": "loadbang",
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "loadbang_obj-2",
-                    "text": "loadbang"
                 }
             },
             {
@@ -306,24 +324,6 @@
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "list.rot_obj-31",
                     "text": "list.rot @hot 1"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-32",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 96.0, 56.0, 93.0, 23.0 ],
-                    "rnbo_classname": "list.reg",
-                    "rnbo_extra_attributes": {
-                        "preset": 0,
-                        "order": ""
-                    },
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "list.reg_obj-32",
-                    "text": "list.reg 1 0 0 0 0"
                 }
             },
             {
@@ -979,12 +979,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-32", 0 ],
-                    "source": [ "obj-2", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-46", 0 ],
                     "source": [ "obj-24", 0 ]
                 }
@@ -993,12 +987,6 @@
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
                     "source": [ "obj-31", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-31", 0 ],
-                    "source": [ "obj-32", 0 ]
                 }
             },
             {
@@ -1063,6 +1051,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-31", 0 ],
+                    "source": [ "obj-5", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-16", 0 ],
                     "source": [ "obj-50", 0 ]
                 }
@@ -1112,6 +1106,12 @@
                 "patchline": {
                     "destination": [ "obj-49", 0 ],
                     "source": [ "obj-6", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 0 ],
+                    "source": [ "obj-7", 0 ]
                 }
             },
             {
