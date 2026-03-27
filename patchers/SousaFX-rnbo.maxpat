@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 418.0, 556.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -502,7 +502,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 624.0, 345.0, 70.0, 22.0 ],
+                    "patching_rect": [ 224.0, 361.0, 70.0, 22.0 ],
                     "text": "loadmess 0"
                 }
             },
@@ -513,7 +513,7 @@
                     "numinlets": 3,
                     "numoutlets": 3,
                     "outlettype": [ "bang", "bang", "" ],
-                    "patching_rect": [ 707.0, 268.0, 44.0, 22.0 ],
+                    "patching_rect": [ 307.0, 284.0, 44.0, 22.0 ],
                     "text": "sel 1 0"
                 }
             },
@@ -524,7 +524,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 693.0, 303.0, 105.0, 22.0 ],
+                    "patching_rect": [ 293.0, 319.0, 105.0, 22.0 ],
                     "text": "bgcolor 0 0 0 0.12"
                 }
             },
@@ -535,7 +535,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 733.0, 332.0, 168.0, 22.0 ],
+                    "patching_rect": [ 333.0, 348.0, 168.0, 22.0 ],
                     "text": "bgcolor 1. 0.031373 0.031373"
                 }
             },
@@ -546,7 +546,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 707.0, 235.0, 33.0, 22.0 ],
+                    "patching_rect": [ 307.0, 251.0, 33.0, 22.0 ],
                     "text": "== 0"
                 }
             },
@@ -556,7 +556,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 624.0, 435.0, 123.0, 22.0 ],
+                    "patching_rect": [ 224.0, 451.0, 123.0, 22.0 ],
                     "text": "s main_audio_source"
                 }
             },
@@ -578,7 +578,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 624.0, 393.0, 123.0, 23.0 ],
+                    "patching_rect": [ 224.0, 409.0, 123.0, 23.0 ],
                     "varname": "umenu[42]"
                 }
             },
@@ -1354,11 +1354,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
                     "numoutlets": 17,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -4391,7 +4391,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
+                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }

@@ -57,27 +57,6 @@
             },
             {
                 "box": {
-                    "id": "obj-353",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 80.5, -37.0, 125.0, 22.0 ],
-                    "text": "s jb_autowah/lpf_type"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-352",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 80.5, -79.0, 153.0, 22.0 ],
-                    "text": "getattr jb_autowah/lpf_type"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-2",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -355,18 +334,6 @@
                 "patchline": {
                     "destination": [ "obj-5", 0 ],
                     "source": [ "obj-2", 14 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-2", 0 ],
-                    "source": [ "obj-352", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-353", 0 ],
-                    "source": [ "obj-352", 0 ]
                 }
             }
         ],
