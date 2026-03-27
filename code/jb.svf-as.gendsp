@@ -1,0 +1,100 @@
+{
+    "patcher": {
+        "fileversion": 1,
+        "appversion": {
+            "major": 9,
+            "minor": 1,
+            "revision": 2,
+            "architecture": "x64",
+            "modernui": 1
+        },
+        "classnamespace": "dsp.gen",
+        "rect": [ 1198.0, 195.0, 755.0, 785.0 ],
+        "boxes": [
+            {
+                "box": {
+                    "id": "obj-21",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 566.0, 15.0, 152.0, 22.0 ],
+                    "text": "in 3 @comment resonance"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-9",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 15.0, 690.0, 147.0, 22.0 ],
+                    "text": "out 1 @comment lowpass"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 290.5, 15.0, 149.0, 22.0 ],
+                    "text": "in 2 @comment frequency"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 15.0, 15.0, 122.0, 22.0 ],
+                    "text": "in 1 @comment input"
+                }
+            },
+            {
+                "box": {
+                    "code": "/* SVF structure by Andrew Simper\r\n * Low, with bounded terms\n * https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf\r\n * stable cf between 0 .. sr/2\r\n * modified with Claude: https://claude.ai/share/e9c56f41-4400-4ba1-8c01-31d7f1fdbfed\r\n */\n\nsvf_lp(xin, cf, q) {\n    History y0(0), y1(0);\n\n    g  = tan(cf * PI / samplerate);\n    r  = 1.0 / q;\n    a1 = 1.0 / (1.0 + g * (g + r));\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v1 = a1 * y0 + a2 * (xin - y1);\n    v2 = y1 + a2 * y0 + a3 * (xin - y1);\n\n    y0 = 2.0 * v1 - y0;\n    y1 = 2.0 * v2 - y1;\n\n    return v2 * clip(r, 0.0, 1.0);\n}\n\ncf = clip(in2, 1.0, samplerate * 0.499);\nq  = clip(in3, 0.5, 20.5);\n\nout1 = svf_lp(in1, cf, q);",
+                    "fontface": 0,
+                    "fontname": "<Monospaced>",
+                    "fontsize": 12.0,
+                    "id": "obj-5",
+                    "maxclass": "codebox",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 15.0, 53.0, 570.0, 622.0 ]
+                }
+            }
+        ],
+        "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 2 ],
+                    "source": [ "obj-21", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-9", 0 ],
+                    "source": [ "obj-5", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 0 ],
+                    "source": [ "obj-6", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-5", 1 ],
+                    "source": [ "obj-7", 0 ]
+                }
+            }
+        ],
+        "autosave": 0
+    }
+}
