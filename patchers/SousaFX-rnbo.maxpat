@@ -9,12 +9,45 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-153",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 380.0, 451.0, 113.0, 22.0 ],
+                    "text": "s enable_zero_conf"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-158",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 418.0, 404.0, 141.0, 33.0 ],
+                    "presentation_linecount": 2,
+                    "text": "enable zero conf objs to connect max with live"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-172",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 380.0, 405.0, 31.0, 31.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-268",
@@ -7784,6 +7817,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-153", 0 ],
+                    "source": [ "obj-172", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-52", 0 ],
                     "source": [ "obj-173", 0 ]
                 }
@@ -11006,7 +11045,6 @@
             "obj-353::obj-8": [ "mid freq", "mid freq", 0 ],
             "obj-353::obj-9": [ "mid Q", "mid Q", 0 ],
             "obj-366": [ "live.numbox[14]", "live.numbox", 0 ],
-            "obj-377::obj-2": [ "live.menu", "live.menu", 0 ],
             "obj-377::obj-20": [ "live.dial[9]", "drive", 0 ],
             "obj-377::obj-21": [ "live.dial[10]", "mix", 0 ],
             "obj-377::obj-22": [ "live.dial[11]", "output volume", 0 ],
@@ -11025,28 +11063,15 @@
             "obj-377::obj-375": [ "live.dial[7]", "LFO env sens", 0 ],
             "obj-377::obj-47": [ "live.dial[18]", "mix", 0 ],
             "obj-377::obj-49": [ "live.dial[20]", "spread", 0 ],
-            "obj-377::obj-5": [ "live.toggle", "live.toggle", 0 ],
             "obj-377::obj-50": [ "live.dial[21]", "window", 0 ],
             "obj-377::obj-59": [ "live.dial[22]", "crossfade env sens", 0 ],
-            "obj-377::obj-89": [ "live.numbox[39]", "live.numbox[39]", 0 ],
             "obj-377::obj-91": [ "live.numbox[40]", "live.numbox[39]", 0 ],
-            "obj-377::obj-92": [ "live.numbox[28]", "live.numbox[39]", 0 ],
-            "obj-377::obj-93": [ "live.numbox[33]", "live.numbox[39]", 0 ],
             "obj-377::obj-94": [ "live.numbox[41]", "live.numbox[39]", 0 ],
-            "obj-377::obj-95": [ "live.numbox[42]", "live.numbox[39]", 0 ],
             "obj-425": [ "BassMono", "BassMono", 0 ],
             "obj-428": [ "Freq", "Freq", 0 ],
             "obj-431": [ "Mono", "Mono", 0 ],
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
@@ -11377,34 +11402,11 @@
                     "parameter_shortname": "mid Q",
                     "parameter_unitstyle": 5
                 },
-                "obj-377::obj-2": {
-                    "parameter_invisible": 0,
-                    "parameter_modmode": 0,
-                    "parameter_range": [ "Korg 35", "SVF Andrew Simper", "Diode ladder Vadim Zavalishin" ],
-                    "parameter_type": 2,
-                    "parameter_unitstyle": 10
-                },
-                "obj-377::obj-89": {
-                    "parameter_longname": "live.numbox[39]",
-                    "parameter_range": [ 0.0, 0.6 ],
-                    "parameter_shortname": "live.numbox[39]",
-                    "parameter_unitstyle": 1
-                },
                 "obj-377::obj-91": {
                     "parameter_longname": "live.numbox[40]"
                 },
-                "obj-377::obj-92": {
-                    "parameter_longname": "live.numbox[28]"
-                },
-                "obj-377::obj-93": {
-                    "parameter_longname": "live.numbox[33]",
-                    "parameter_range": [ 0.0, 1.5 ]
-                },
                 "obj-377::obj-94": {
                     "parameter_longname": "live.numbox[41]"
-                },
-                "obj-377::obj-95": {
-                    "parameter_longname": "live.numbox[42]"
                 }
             },
             "inherited_shortname": 1
