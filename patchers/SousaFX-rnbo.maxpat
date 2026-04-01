@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 0.0, 53.0, 467.0, 592.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -33,7 +33,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 418.0, 404.0, 141.0, 33.0 ],
-                    "presentation_linecount": 2,
                     "text": "enable zero conf objs to connect max with live"
                 }
             },
@@ -11072,6 +11071,14 @@
             "obj-431": [ "Mono", "Mono", 0 ],
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
