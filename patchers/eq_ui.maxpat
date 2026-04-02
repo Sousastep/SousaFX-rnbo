@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 0,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 617.0, 198.0, 1708.0, 981.0 ],
+        "rect": [ 0.0, 53.0, 2127.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -20,6 +20,164 @@
         "enabletransparentbgwithtitlebar": 1,
         "title": "eq parameters",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1470.0, 676.0, 112.0, 22.0 ],
+                    "restore": [ 3.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"mic high trim\"",
+                    "varname": "mic high trim"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1265.0, 676.0, 102.0, 22.0 ],
+                    "restore": [ 1.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"mic high Q\"",
+                    "varname": "mic high Q"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1095.0, 676.0, 113.0, 22.0 ],
+                    "restore": [ 1100.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"mic high freq\"",
+                    "varname": "mic high freq"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1515.0, 709.0, 66.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 4.5, 38.0, 66.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "high boost",
+                            "parameter_mmax": 15.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "high boost",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 4
+                        }
+                    },
+                    "varname": "live.dial[3]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-21",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1304.0, 711.0, 66.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 114.5, 38.0, 66.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "high Q",
+                            "parameter_mmax": 100.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "high Q",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 5
+                        }
+                    },
+                    "varname": "live.dial[4]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-22",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1140.0, 709.0, 66.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 59.5, 38.0, 66.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "high freq",
+                            "parameter_mmax": 2000.0,
+                            "parameter_mmin": 600.0,
+                            "parameter_modmode": 4,
+                            "parameter_shortname": "high freq",
+                            "parameter_type": 0,
+                            "parameter_units": "Hz",
+                            "parameter_unitstyle": 3
+                        }
+                    },
+                    "varname": "live.dial[5]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-24",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1515.0, 785.0, 170.0, 22.0 ],
+                    "text": "prepend jb_micpre/high_boost"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-25",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1351.0, 785.0, 147.0, 22.0 ],
+                    "text": "prepend jb_micpre/high_q"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-26",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1140.0, 785.0, 161.0, 22.0 ],
+                    "text": "prepend jb_micpre/high_freq"
+                }
+            },
             {
                 "box": {
                     "id": "obj-27",
@@ -81,7 +239,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 930.0, 470.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 4.5, 256.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 4.5, 309.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low boost[1]",
@@ -105,7 +263,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 700.0, 470.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 114.5, 256.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 114.5, 309.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low Q[1]",
@@ -129,7 +287,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 555.0, 470.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 59.5, 256.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 59.5, 309.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low freq[1]",
@@ -138,8 +296,7 @@
                             "parameter_modmode": 4,
                             "parameter_shortname": "low freq",
                             "parameter_type": 1,
-                            "parameter_units": "Hz",
-                            "parameter_unitstyle": 9
+                            "parameter_unitstyle": 3
                         }
                     },
                     "varname": "live.dial[12]"
@@ -186,7 +343,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1744.0, 419.0, 110.0, 22.0 ],
-                    "restore": [ 8000.0 ],
+                    "restore": [ 12000.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -205,7 +362,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1790.0, 461.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 59.5, 100.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 59.5, 157.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mic lowpass",
@@ -306,7 +463,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1508.0, 461.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 5.0, 43.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 4.5, 98.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid trim[1]",
@@ -331,7 +488,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1297.0, 463.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 115.0, 43.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 114.5, 98.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid Q[1]",
@@ -355,7 +512,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1133.0, 461.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 60.0, 43.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 59.5, 98.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid freq[1]",
@@ -364,8 +521,7 @@
                             "parameter_modmode": 4,
                             "parameter_shortname": "mid freq",
                             "parameter_type": 1,
-                            "parameter_units": "Hz",
-                            "parameter_unitstyle": 9
+                            "parameter_unitstyle": 3
                         }
                     },
                     "varname": "live.dial[8]"
@@ -413,7 +569,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 89.0, 385.0, 909.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 13.5, 167.0, 158.0, 21.0 ],
+                    "presentation_rect": [ 13.5, 220.0, 158.0, 21.0 ],
                     "text": "Bassline EQs",
                     "textjustification": 1
                 }
@@ -479,7 +635,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 425.0, 475.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 4.5, 198.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 4.5, 251.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid trim",
@@ -504,7 +660,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 245.0, 477.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 114.5, 198.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 114.5, 251.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid Q",
@@ -528,7 +684,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 123.0, 475.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 59.5, 198.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 59.5, 251.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid freq",
@@ -537,8 +693,7 @@
                             "parameter_modmode": 4,
                             "parameter_shortname": "mid freq",
                             "parameter_type": 1,
-                            "parameter_units": "Hz",
-                            "parameter_unitstyle": 9
+                            "parameter_unitstyle": 3
                         }
                     },
                     "varname": "live.dial"
@@ -583,7 +738,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 486.0, 711.0, 89.0, 22.0 ],
+                    "patching_rect": [ 555.0, 761.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -755,7 +910,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 182.0, 108.0, 43.0, 32.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 0.0, 185.0, 327.0 ],
+                    "presentation_rect": [ 0.0, 0.0, 185.0, 372.0 ],
                     "proportion": 0.5
                 }
             }
@@ -836,14 +991,50 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-24", 0 ],
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-203", 0 ],
                     "source": [ "obj-202", 0 ]
                 }
             },
             {
                 "patchline": {
+                    "destination": [ "obj-25", 0 ],
+                    "source": [ "obj-21", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-83", 0 ],
                     "source": [ "obj-23", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-278", 0 ],
+                    "source": [ "obj-24", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-278", 0 ],
+                    "source": [ "obj-25", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-278", 0 ],
+                    "source": [ "obj-26", 0 ]
                 }
             },
             {
@@ -994,6 +1185,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-5", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-51", 0 ],
                     "source": [ "obj-50", 0 ]
                 }
@@ -1002,6 +1199,18 @@
                 "patchline": {
                     "destination": [ "obj-278", 0 ],
                     "source": [ "obj-51", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-21", 0 ],
+                    "source": [ "obj-6", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-7", 1 ]
                 }
             },
             {
