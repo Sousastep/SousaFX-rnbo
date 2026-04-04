@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 411.0, 109.0, 478.0, 607.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -276,7 +276,7 @@
                     "outlettype": [ "bang" ],
                     "outlinecolor": [ 0.137255, 0.137255, 0.137255, 0.231373 ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 3620.0, 1737.0, 74.0, 74.0 ],
+                    "patching_rect": [ 3642.0, 1610.0, 74.0, 74.0 ],
                     "varname": "Active Bindings"
                 }
             },
@@ -287,7 +287,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 3620.0, 1696.0, 166.0, 22.0 ],
+                    "patching_rect": [ 3642.0, 1569.0, 166.0, 22.0 ],
                     "text": "hover_bang \"Active Bindings\""
                 }
             },
@@ -297,7 +297,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 726.0, 107.0, 22.0 ],
+                    "patching_rect": [ 2854.0, 657.0, 107.0, 22.0 ],
                     "text": "active_bindings_ui"
                 }
             },
@@ -1273,43 +1273,6 @@
             },
             {
                 "box": {
-                    "id": "obj-353",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 682.0, 38.0, 22.0 ],
-                    "text": "eq_ui",
-                    "varname": "eq_ui"
-                }
-            },
-            {
-                "box": {
-                    "bgcolor": [ 0.0, 0.0, 0.0, 0.52 ],
-                    "hint": "show compressor parameters window",
-                    "id": "obj-231",
-                    "maxclass": "button",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "outlinecolor": [ 0.137255, 0.137255, 0.137255, 0.231373 ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 3666.0, 1596.0, 74.0, 74.0 ],
-                    "varname": "EQ Parameters"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-352",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 3666.0, 1555.0, 166.0, 22.0 ],
-                    "text": "hover_bang \"EQ Parameters\""
-                }
-            },
-            {
-                "box": {
                     "id": "obj-228",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -2050,17 +2013,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 4239.0, 2068.5, 75.0, 22.0 ],
                     "text": "r save_bang"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-260",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1893.0, 493.0, 50.0, 22.0 ],
-                    "text": "main 1"
                 }
             },
             {
@@ -2956,7 +2908,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3080.0, 397.0, 83.0, 22.0 ],
+                    "patching_rect": [ 2855.0, 402.0, 83.0, 22.0 ],
                     "text": "docs_browser"
                 }
             },
@@ -2987,7 +2939,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 637.0, 175.0, 22.0 ],
+                    "patching_rect": [ 2854.0, 615.0, 175.0, 22.0 ],
                     "text": "\"Background Color Preference\"",
                     "varname": "Background Color Preference1"
                 }
@@ -3071,7 +3023,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 493.0, 84.0, 22.0 ],
+                    "patching_rect": [ 2854.0, 487.0, 84.0, 22.0 ],
                     "text": "delay_window",
                     "varname": "delay_window"
                 }
@@ -3108,7 +3060,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 589.0, 79.0, 22.0 ],
+                    "patching_rect": [ 2854.0, 572.0, 79.0, 22.0 ],
                     "text": "verb_window",
                     "varname": "verb_window"
                 }
@@ -3172,7 +3124,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 541.0, 69.0, 22.0 ],
+                    "patching_rect": [ 2854.0, 530.0, 69.0, 22.0 ],
                     "text": "autowah.UI",
                     "varname": "patcher[1]"
                 }
@@ -3183,7 +3135,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 2796.0, 1595.0, 82.0, 22.0 ],
+                    "patching_rect": [ 2608.0, 1442.0, 82.0, 22.0 ],
                     "text": "s save_layout"
                 }
             },
@@ -3294,7 +3246,7 @@
                     "numinlets": 4,
                     "numoutlets": 4,
                     "outlettype": [ "bang", "bang", "bang", "" ],
-                    "patching_rect": [ 2744.0, 1516.0, 70.0, 22.0 ],
+                    "patching_rect": [ 2556.0, 1363.0, 70.0, 22.0 ],
                     "text": "select 1 2 3"
                 }
             },
@@ -3302,11 +3254,11 @@
                 "box": {
                     "id": "obj-367",
                     "maxclass": "newobj",
-                    "numinlets": 8,
-                    "numoutlets": 8,
-                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-                    "patching_rect": [ 2321.0, 1121.5, 110.0, 22.0 ],
-                    "text": "select 1 2 3 4 5 6 7"
+                    "numinlets": 7,
+                    "numoutlets": 7,
+                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+                    "patching_rect": [ 2331.5, 1185.0, 100.0, 22.0 ],
+                    "text": "select 1 2 3 4 5 6"
                 }
             },
             {
@@ -3317,7 +3269,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2712.0, 1587.0, 58.0, 35.0 ],
+                    "patching_rect": [ 2524.0, 1434.0, 58.0, 35.0 ],
                     "text": ";\rdsp open"
                 }
             },
@@ -3389,7 +3341,7 @@
                     "numoutlets": 7,
                     "outlettype": [ "int", "int", "int", "int", "int", "int", "int" ],
                     "patching_rect": [ 2124.0, 884.0, 380.0, 23.0 ],
-                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "EQ", ";", "#X", "item", 5, 7, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🪟", "Save", "Window", "Layout", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
+                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🪟", "Save", "Window", "Layout", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
                     "text": "menubar 7"
                 }
             },
@@ -4582,7 +4534,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 445.0, 95.0, 22.0 ],
+                    "patching_rect": [ 2854.0, 445.0, 95.0, 22.0 ],
                     "text": "about_SousaFX",
                     "varname": "about_SousaFX"
                 }
@@ -5003,7 +4955,7 @@
                     "numinlets": 0,
                     "numoutlets": 0,
                     "offset": [ 0.0, 0.0 ],
-                    "patching_rect": [ 3079.0, 248.0, 169.0, 83.0 ],
+                    "patching_rect": [ 2854.0, 262.0, 169.0, 83.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 14.0, 480.0, 152.0, 68.0 ],
                     "varname": "lay",
@@ -5209,7 +5161,7 @@
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 3079.0, 349.0, 85.0, 22.0 ],
+                    "patching_rect": [ 2854.0, 360.0, 85.0, 22.0 ],
                     "text": "comp_window",
                     "varname": "patcher"
                 }
@@ -6376,12 +6328,11 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
-                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 4233.0, 2312.0, 119.0, 95.0 ]
+                    "patching_rect": [ 4233.0, 2312.0, 119.0, 23.0 ]
                 }
             },
             {
@@ -7920,7 +7871,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-367", 0 ],
-                    "midpoints": [ 2408.5, 1419.0, 2309.0, 1419.0, 2309.0, 1105.0, 2330.5, 1105.0 ],
+                    "midpoints": [ 2408.5, 1419.0, 2309.0, 1419.0, 2309.0, 1162.0, 2341.0, 1162.0 ],
                     "source": [ "obj-182", 0 ]
                 }
             },
@@ -8226,12 +8177,6 @@
                     "destination": [ "obj-245", 6 ],
                     "order": 0,
                     "source": [ "obj-230", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-352", 1 ],
-                    "source": [ "obj-231", 0 ]
                 }
             },
             {
@@ -8677,13 +8622,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-352", 0 ],
-                    "order": 7,
-                    "source": [ "obj-288", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-380", 0 ],
                     "order": 3,
                     "source": [ "obj-288", 0 ]
@@ -8693,14 +8631,14 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3303.5, 193.0, 3129.0, 193.0, 3129.0, 95.0, 1522.5, 95.0 ],
-                    "order": 9,
+                    "order": 8,
                     "source": [ "obj-288", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-75", 0 ],
-                    "order": 8,
+                    "order": 7,
                     "source": [ "obj-288", 0 ]
                 }
             },
@@ -8748,13 +8686,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-352", 0 ],
-                    "order": 7,
-                    "source": [ "obj-289", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-380", 0 ],
                     "order": 3,
                     "source": [ "obj-289", 0 ]
@@ -8764,14 +8695,14 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3510.5, 238.0, 3462.0, 238.0, 3462.0, 208.0, 3113.0, 208.0, 3113.0, 113.0, 1522.5, 113.0 ],
-                    "order": 9,
+                    "order": 8,
                     "source": [ "obj-289", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-75", 0 ],
-                    "order": 8,
+                    "order": 7,
                     "source": [ "obj-289", 0 ]
                 }
             },
@@ -9313,12 +9244,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-231", 0 ],
-                    "source": [ "obj-352", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-356", 0 ],
                     "order": 2,
                     "source": [ "obj-354", 0 ]
@@ -9402,12 +9327,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-157", 0 ],
-                    "source": [ "obj-367", 6 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-231", 0 ],
                     "source": [ "obj-367", 5 ]
                 }
             },
@@ -9474,15 +9393,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-260", 1 ],
-                    "order": 0,
-                    "source": [ "obj-373", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-374", 0 ],
-                    "order": 1,
                     "source": [ "obj-373", 0 ]
                 }
             },
@@ -10058,15 +9969,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-260", 1 ],
-                    "order": 0,
-                    "source": [ "obj-417", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-374", 0 ],
-                    "order": 1,
                     "source": [ "obj-417", 0 ]
                 }
             },
@@ -11082,6 +10985,7 @@
             "obj-344::obj-423": [ "Tom Volume", "Tom", 0 ],
             "obj-344::obj-439": [ "Clap Volume", "Clap", 0 ],
             "obj-344::obj-5": [ "min drum vol", "minimum drum reverb volume", 0 ],
+            "obj-344::obj-50": [ "mic lowpass", "lowpass", 0 ],
             "obj-344::obj-59": [ "Alert Volume", "Loop Alert", 0 ],
             "obj-344::obj-7": [ "min solo vol", "minimum solo reverb volume", 0 ],
             "obj-348::obj-10::obj-12": [ "live.numbox[34]", "live.numbox[2]", 0 ],
@@ -11120,29 +11024,22 @@
             "obj-348::obj-9::obj-13": [ "live.toggle[9]", "live.toggle", 0 ],
             "obj-348::obj-9::obj-2": [ "spread[4]", "spread", 0 ],
             "obj-348::obj-9::obj-4": [ "output volume[3]", "output volume", 0 ],
-            "obj-353::obj-10": [ "mid trim", "mid trim", 0 ],
-            "obj-353::obj-20": [ "high boost", "high boost", 0 ],
-            "obj-353::obj-21": [ "high Q", "high Q", 0 ],
-            "obj-353::obj-22": [ "high freq", "high freq", 0 ],
-            "obj-353::obj-33": [ "mid trim[1]", "mid trim", 0 ],
-            "obj-353::obj-34": [ "mid Q[1]", "mid Q", 0 ],
-            "obj-353::obj-35": [ "mid freq[1]", "mid freq", 0 ],
-            "obj-353::obj-42": [ "low boost[1]", "low boost", 0 ],
-            "obj-353::obj-43": [ "low Q[1]", "low Q", 0 ],
-            "obj-353::obj-44": [ "low freq[1]", "low freq", 0 ],
-            "obj-353::obj-50": [ "mic lowpass", "lowpass", 0 ],
-            "obj-353::obj-8": [ "mid freq", "mid freq", 0 ],
-            "obj-353::obj-9": [ "mid Q", "mid Q", 0 ],
             "obj-366": [ "live.numbox[14]", "live.numbox", 0 ],
+            "obj-377::obj-10": [ "mid trim", "mid trim", 0 ],
+            "obj-377::obj-105": [ "high boost[1]", "high boost", 0 ],
+            "obj-377::obj-106": [ "high Q[1]", "high Q", 0 ],
+            "obj-377::obj-107": [ "high freq[1]", "high freq", 0 ],
+            "obj-377::obj-116": [ "mid trim[2]", "mid trim", 0 ],
+            "obj-377::obj-117": [ "mid Q[2]", "mid Q", 0 ],
+            "obj-377::obj-118": [ "mid freq[2]", "mid freq", 0 ],
+            "obj-377::obj-126": [ "low boost[1]", "low boost", 0 ],
+            "obj-377::obj-127": [ "low Q[1]", "low Q", 0 ],
+            "obj-377::obj-128": [ "low freq[1]", "low freq", 0 ],
+            "obj-377::obj-132": [ "mid Q", "mid Q", 0 ],
+            "obj-377::obj-133": [ "mid freq", "mid freq", 0 ],
+            "obj-377::obj-2": [ "high boost", "high boost", 0 ],
             "obj-377::obj-20": [ "live.dial[9]", "drive", 0 ],
             "obj-377::obj-21": [ "live.dial[10]", "mix", 0 ],
-            "obj-377::obj-22": [ "live.dial[11]", "output volume", 0 ],
-            "obj-377::obj-23": [ "live.dial[12]", "treble", 0 ],
-            "obj-377::obj-24": [ "live.dial[13]", "mid", 0 ],
-            "obj-377::obj-25": [ "live.dial[14]", "midfreq", 0 ],
-            "obj-377::obj-26": [ "live.dial[15]", "bass", 0 ],
-            "obj-377::obj-28": [ "live.dial[16]", "highcut", 0 ],
-            "obj-377::obj-29": [ "live.dial[17]", "lowcut", 0 ],
             "obj-377::obj-348": [ "live.dial", "Min Floor", 0 ],
             "obj-377::obj-351": [ "live.dial[1]", "Max Floor", 0 ],
             "obj-377::obj-353": [ "live.dial[2]", "Max Dist Over Floor", 0 ],
@@ -11154,6 +11051,11 @@
             "obj-377::obj-49": [ "live.dial[20]", "spread", 0 ],
             "obj-377::obj-50": [ "live.dial[21]", "window", 0 ],
             "obj-377::obj-59": [ "live.dial[22]", "crossfade env sens", 0 ],
+            "obj-377::obj-8": [ "high Q", "high Q", 0 ],
+            "obj-377::obj-84": [ "mid trim[1]", "mid trim", 0 ],
+            "obj-377::obj-88": [ "mid Q[1]", "mid Q", 0 ],
+            "obj-377::obj-89": [ "mid freq[1]", "mid freq", 0 ],
+            "obj-377::obj-9": [ "high freq", "high freq", 0 ],
             "obj-377::obj-91": [ "live.numbox[40]", "live.numbox[39]", 0 ],
             "obj-377::obj-94": [ "live.numbox[41]", "live.numbox[39]", 0 ],
             "obj-425": [ "BassMono", "BassMono", 0 ],
@@ -11161,14 +11063,6 @@
             "obj-431": [ "Mono", "Mono", 0 ],
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
@@ -11335,6 +11229,9 @@
                     "parameter_range": [ -96.0, 0.0 ],
                     "parameter_shortname": "minimum drum reverb volume"
                 },
+                "obj-344::obj-50": {
+                    "parameter_longname": "mic lowpass"
+                },
                 "obj-344::obj-59": {
                     "parameter_longname": "Alert Volume"
                 },
@@ -11446,58 +11343,59 @@
                 "obj-348::obj-9::obj-4": {
                     "parameter_longname": "output volume[3]"
                 },
-                "obj-353::obj-10": {
-                    "parameter_invisible": 0,
-                    "parameter_longname": "mid trim",
-                    "parameter_modmode": 3,
-                    "parameter_range": [ -24.0, 0.0 ],
-                    "parameter_shortname": "mid trim",
-                    "parameter_type": 0,
-                    "parameter_unitstyle": 4
+                "obj-377::obj-10": {
+                    "parameter_longname": "mid trim"
                 },
-                "obj-353::obj-33": {
-                    "parameter_longname": "mid trim[1]"
+                "obj-377::obj-105": {
+                    "parameter_longname": "high boost[1]"
                 },
-                "obj-353::obj-34": {
-                    "parameter_longname": "mid Q[1]"
+                "obj-377::obj-106": {
+                    "parameter_longname": "high Q[1]"
                 },
-                "obj-353::obj-35": {
-                    "parameter_longname": "mid freq[1]"
+                "obj-377::obj-107": {
+                    "parameter_longname": "high freq[1]"
                 },
-                "obj-353::obj-42": {
+                "obj-377::obj-116": {
+                    "parameter_longname": "mid trim[2]"
+                },
+                "obj-377::obj-117": {
+                    "parameter_longname": "mid Q[2]"
+                },
+                "obj-377::obj-118": {
+                    "parameter_longname": "mid freq[2]"
+                },
+                "obj-377::obj-126": {
                     "parameter_longname": "low boost[1]"
                 },
-                "obj-353::obj-43": {
+                "obj-377::obj-127": {
                     "parameter_longname": "low Q[1]"
                 },
-                "obj-353::obj-44": {
+                "obj-377::obj-128": {
                     "parameter_longname": "low freq[1]"
                 },
-                "obj-353::obj-50": {
-                    "parameter_invisible": 0,
-                    "parameter_longname": "mic lowpass",
-                    "parameter_modmode": 4,
-                    "parameter_range": [ 3000.0, 16000.0 ],
-                    "parameter_shortname": "lowpass",
-                    "parameter_type": 0,
-                    "parameter_units": "",
-                    "parameter_unitstyle": 3
+                "obj-377::obj-132": {
+                    "parameter_longname": "mid Q"
                 },
-                "obj-353::obj-8": {
-                    "parameter_invisible": 0,
-                    "parameter_longname": "mid freq",
-                    "parameter_modmode": 4,
-                    "parameter_range": [ 90, 200 ],
-                    "parameter_shortname": "mid freq",
-                    "parameter_type": 1,
-                    "parameter_units": "Hz",
-                    "parameter_unitstyle": 9
+                "obj-377::obj-133": {
+                    "parameter_longname": "mid freq"
                 },
-                "obj-353::obj-9": {
-                    "parameter_longname": "mid Q",
-                    "parameter_range": [ 0.0, 100.0 ],
-                    "parameter_shortname": "mid Q",
-                    "parameter_unitstyle": 5
+                "obj-377::obj-2": {
+                    "parameter_longname": "high boost"
+                },
+                "obj-377::obj-8": {
+                    "parameter_longname": "high Q"
+                },
+                "obj-377::obj-84": {
+                    "parameter_longname": "mid trim[1]"
+                },
+                "obj-377::obj-88": {
+                    "parameter_longname": "mid Q[1]"
+                },
+                "obj-377::obj-89": {
+                    "parameter_longname": "mid freq[1]"
+                },
+                "obj-377::obj-9": {
+                    "parameter_longname": "high freq"
                 },
                 "obj-377::obj-91": {
                     "parameter_longname": "live.numbox[40]"
