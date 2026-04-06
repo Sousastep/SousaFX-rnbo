@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 426.0, 44.0, 1737.0, 1238.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -56,7 +56,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 3233.0, 1233.0, 124.0, 22.0 ],
-                    "restore": [ 11.527559055118095 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -90,7 +90,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2862.0, 1233.0, 115.0, 22.0 ],
-                    "restore": [ 34.0 ],
+                    "restore": [ 20.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -227,7 +227,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2746.0, 1236.0, 87.0, 22.0 ],
-                    "restore": [ -4.535433070866163 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -244,7 +244,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2572.0, 1239.0, 76.0, 22.0 ],
-                    "restore": [ 70.86614173228355 ],
+                    "restore": [ 55.11811023622059 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -415,14 +415,14 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 2596.0, 794.0, 143.0, 22.0 ],
+                    "patching_rect": [ 2596.0, 794.0, 152.0, 22.0 ],
                     "restore": [ 15.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
                     },
-                    "text": "pattr \"overdrive high trim\"",
-                    "varname": "overdrive high trim"
+                    "text": "pattr \"overdrive high boost\"",
+                    "varname": "overdrive high boost"
                 }
             },
             {
@@ -473,7 +473,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high boost[1]",
-                            "parameter_mmax": 15.0,
+                            "parameter_mmax": 48.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "high boost",
                             "parameter_type": 0,
@@ -574,7 +574,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2587.0, 636.0, 140.0, 22.0 ],
-                    "restore": [ -3.0 ],
+                    "restore": [ -11.527559055118125 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -591,7 +591,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2263.0, 636.0, 129.0, 22.0 ],
-                    "restore": [ 60.0 ],
+                    "restore": [ 27.55905511811025 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -608,7 +608,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1958.0, 641.0, 140.0, 22.0 ],
-                    "restore": [ 147.0 ],
+                    "restore": [ 126.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -731,14 +731,14 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 2435.0, 295.0, 141.0, 22.0 ],
-                    "restore": [ 6.496062992125994 ],
+                    "patching_rect": [ 2435.0, 295.0, 150.0, 22.0 ],
+                    "restore": [ 15.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
                     },
-                    "text": "pattr \"pitchshift high trim\"",
-                    "varname": "pitchshift high trim"
+                    "text": "pattr \"pitchshift high boost\"",
+                    "varname": "pitchshift high boost"
                 }
             },
             {
@@ -749,7 +749,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2126.0, 295.0, 130.0, 22.0 ],
-                    "restore": [ 1.0 ],
+                    "restore": [ 11.811023622047244 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -789,7 +789,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high boost",
-                            "parameter_mmax": 15.0,
+                            "parameter_mmax": 48.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "high boost",
                             "parameter_type": 0,
@@ -890,7 +890,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2426.0, 137.0, 138.0, 22.0 ],
-                    "restore": [ -3.0 ],
+                    "restore": [ -5.078740157480311 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1048,7 +1048,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.5 ],
+                    "restore": [ 0.35 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1065,7 +1065,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 449.5, 1139.5, 40.0, 22.0 ],
-                    "restore": [ 0.15 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1421,7 +1421,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 139.0, 872.5, 148.0, 22.0 ],
-                    "restore": [ 58.0 ],
+                    "restore": [ 30.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1669,7 +1669,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1656.0, 645.0, 111.0, 22.0 ],
-                    "restore": [ 40.551181102362186 ],
+                    "restore": [ 51.181102362204825 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1686,7 +1686,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1597.0, 793.0, 118.0, 22.0 ],
-                    "restore": [ 26.771653543307185 ],
+                    "restore": [ 32.28346456692911 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1885,7 +1885,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 616.0, 52.0, 122.0, 22.0 ],
-                    "restore": [ 139.44881889763778 ],
+                    "restore": [ 142.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2065,7 +2065,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 972.5, 545.0, 130.0, 22.0 ],
-                    "restore": [ 6.0 ],
+                    "restore": [ 11.149606299212596 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2106,7 +2106,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1051.5, 677.0, 134.0, 22.0 ],
-                    "restore": [ 55.00000000000001 ],
+                    "restore": [ 41.732283464566876 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2147,7 +2147,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 32.95275590551186 ],
+                    "restore": [ 43.30708661417318 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2188,7 +2188,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 686.0, 244.0, 121.0, 22.0 ],
-                    "restore": [ 8.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
