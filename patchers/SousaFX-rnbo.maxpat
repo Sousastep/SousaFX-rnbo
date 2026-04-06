@@ -9,12 +9,97 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "autosave": 1,
+                    "bgmode": 0,
+                    "border": 0,
+                    "clickthrough": 0,
+                    "id": "obj-143",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 8,
+                    "offset": [ 0.0, 0.0 ],
+                    "outlettype": [ "signal", "signal", "", "list", "int", "", "", "" ],
+                    "patching_rect": [ 836.0, 1997.0, 138.0, 22.0 ],
+                    "save": [ "#N", "vst~", "loaduniqueid", 0, 2, 2, "Pro-Q 3", ";" ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_invisible": 1,
+                            "parameter_longname": "vst~",
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "vst~",
+                            "parameter_type": 3
+                        }
+                    },
+                    "saved_object_attributes": {
+                        "parameter_enable": 1,
+                        "parameter_mappable": 0,
+                        "prefer": "AudioUnit"
+                    },
+                    "snapshot": {
+                        "filetype": "C74Snapshot",
+                        "version": 2,
+                        "minorversion": 0,
+                        "name": "snapshotlist",
+                        "origin": "vst~",
+                        "type": "list",
+                        "subtype": "Undefined",
+                        "embed": 1,
+                        "snapshot": {
+                            "pluginname": "Pro-Q 3.auinfo",
+                            "plugindisplayname": "Pro-Q 3",
+                            "pluginsavedname": "",
+                            "pluginsaveduniqueid": 1631927376,
+                            "version": 1,
+                            "isbank": 0,
+                            "isbase64": 1,
+                            "blob": "1684.hAGaoMGcv.i0AHv.DTfAGfPBJr.CWMWchQWdvUFWsEla0YVXiQWcxUlbeAAEFElXFkFazUlbPwVcmklaSQWXzUFUtEVakQEc4AWYWYWYxMWZu4lDFE0LvIgQgIlQOEQAfajQBMU.....lE............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3O...f+....................................9C...3O...f+B........DP...f.A....D........f+....9C....P..........................................................................................................................................fQQMCbC....7.....QkYVX0wFcfLUYzQWZtc1+++++A....T.....Tx8VKQA....vP0MkUA.........vWP7.QkYVX0wFcfLUYzQWZtclDgUWalAA..f..U.PG.nB.AAfQ.rD.SA.V.zkAAYvTFfE.......f.A.........PC..................fAZA"
+                        },
+                        "snapshotlist": {
+                            "current_snapshot": 0,
+                            "entries": [
+                                {
+                                    "filetype": "C74Snapshot",
+                                    "version": 2,
+                                    "minorversion": 0,
+                                    "name": "Pro-Q 3",
+                                    "origin": "Pro-Q 3.auinfo",
+                                    "type": "AudioUnit",
+                                    "subtype": "MidiEffect",
+                                    "embed": 0,
+                                    "snapshot": {
+                                        "pluginname": "Pro-Q 3.auinfo",
+                                        "plugindisplayname": "Pro-Q 3",
+                                        "pluginsavedname": "",
+                                        "pluginsaveduniqueid": 1631927376,
+                                        "version": 1,
+                                        "isbank": 0,
+                                        "isbase64": 1,
+                                        "blob": "1684.hAGaoMGcv.i0AHv.DTfAGfPBJr.CWMWchQWdvUFWsEla0YVXiQWcxUlbeAAEFElXFkFazUlbPwVcmklaSQWXzUFUtEVakQEc4AWYWYWYxMWZu4lDFE0LvIgQgIlQOEQAfajQBMU.....lE............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3OZO2GAA.............f+....9C...vO.........9C....P...f+..............f+n8beDD..............9C...3O....+.........3O.....A...9C..............9i1y8QP..............3O...f+....7C........f+.....D...3O..............3O...f+....................................9C...3O...f+B........DP...f.A....D........f+....9C....P..........................................................................................................................................fQQMCbC....7.....QkYVX0wFcfLUYzQWZtc1+++++A....T.....Tx8VKQA....vP0MkUA.........vWP7.QkYVX0wFcfLUYzQWZtclDgUWalAA..f..U.PG.nB.AAfQ.rD.SA.V.zkAAYvTFfE.......f.A.........PC..................fAZA"
+                                    },
+                                    "fileref": {
+                                        "name": "Pro-Q 3",
+                                        "filename": "Pro-Q 3.maxsnap",
+                                        "filepath": "~/Documents/Max 8/Projects/SousaFX-rnbo/data",
+                                        "filepos": -1,
+                                        "snapshotfileid": "664d84aa2fe3038d7f36cebdc6e90d2e"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "text": "audiounit~ 2 2 \"Pro-Q 3\"",
+                    "varname": "vst~",
+                    "viewvisibility": 0
+                }
+            },
             {
                 "box": {
                     "id": "obj-290",
@@ -63,7 +148,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 4873.0, 2168.0, 139.0, 22.0 ],
-                    "restore": [ "init preset" ],
+                    "restore": [ "Sousa AMS-24" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -87,7 +172,7 @@
                     "patching_rect": [ 4933.0, 2206.0, 102.0, 50.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 72.0, 338.0, 136.0, 23.0 ],
-                    "text": "init preset",
+                    "text": "Sousa AMS-24",
                     "varname": "lay[2]"
                 }
             },
@@ -670,10 +755,10 @@
             },
             {
                 "box": {
-                    "bgcolor": [ 0, 0, 0, 0.12 ],
+                    "bgcolor": [ 1.0, 0.031373, 0.031373 ],
                     "bgfillcolor_angle": 270.0,
                     "bgfillcolor_autogradient": 0.0,
-                    "bgfillcolor_color": [ 0, 0, 0, 0.12 ],
+                    "bgfillcolor_color": [ 1.0, 0.031373, 0.031373 ],
                     "bgfillcolor_color1": [ 0.301961, 0.301961, 0.301961, 1.0 ],
                     "bgfillcolor_color2": [ 0.2, 0.2, 0.2, 1.0 ],
                     "bgfillcolor_proportion": 0.5,
@@ -4440,7 +4525,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -6153,7 +6238,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1294.0, 410.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -38.0 ],
+                    "restore": [ -51.2283464566929 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6328,11 +6413,12 @@
                 "box": {
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-19",
+                    "linecount": 6,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 4233.0, 2312.0, 119.0, 23.0 ]
+                    "patching_rect": [ 4233.0, 2312.0, 119.0, 95.0 ]
                 }
             },
             {
@@ -9726,6 +9812,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-143", 1 ],
+                    "order": 0,
+                    "source": [ "obj-400", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-143", 0 ],
+                    "order": 1,
+                    "source": [ "obj-400", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-152", 0 ],
                     "order": 1,
                     "source": [ "obj-400", 15 ]
@@ -9747,12 +9847,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-251", 1 ],
+                    "order": 1,
                     "source": [ "obj-400", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-251", 0 ],
+                    "order": 0,
                     "source": [ "obj-400", 0 ]
                 }
             },
@@ -10901,6 +11003,7 @@
             }
         ],
         "parameters": {
+            "obj-143": [ "vst~", "vst~", 0 ],
             "obj-148": [ "live.numbox", "live.numbox", 0 ],
             "obj-155": [ "live.numbox[1]", "live.numbox[1]", 0 ],
             "obj-161::obj-274": [ "number", "number", 0 ],
@@ -11063,6 +11166,14 @@
             "obj-431": [ "Mono", "Mono", 0 ],
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-183::obj-155": {
                     "parameter_longname": "live.numbox[37]"
