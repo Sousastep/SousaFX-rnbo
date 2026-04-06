@@ -9,8 +9,19 @@
             "modernui": 1
         },
         "classnamespace": "dsp.gen",
-        "rect": [ 248.0, 251.0, 1009.0, 921.0 ],
+        "rect": [ 766.0, 385.0, 1009.0, 921.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-1",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 205.0, 643.0, 63.0, 22.0 ],
+                    "text": "clip 0 19.5"
+                }
+            },
             {
                 "box": {
                     "code": "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\nout1 = SineEaseInOut(in1);",
@@ -32,7 +43,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 180.0, 690.0, 44.0, 22.0 ],
+                    "patching_rect": [ 180.0, 760.0, 44.0, 22.0 ],
                     "text": "-"
                 }
             },
@@ -43,7 +54,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 205.0, 649.0, 29.5, 22.0 ],
+                    "patching_rect": [ 205.0, 719.0, 29.5, 22.0 ],
                     "text": "*"
                 }
             },
@@ -54,8 +65,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 180.0, 566.0, 63.0, 22.0 ],
-                    "text": "clip 1 20.5"
+                    "patching_rect": [ 180.0, 566.0, 73.0, 22.0 ],
+                    "text": "clip 0.7 20.5"
                 }
             },
             {
@@ -108,7 +119,7 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 44.0, 738.0, 155.0, 22.0 ],
+                    "patching_rect": [ 44.0, 808.0, 155.0, 22.0 ],
                     "text": "gen @gen jb.svf-as.gendsp"
                 }
             },
@@ -140,7 +151,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 44.0, 781.0, 35.0, 22.0 ],
+                    "patching_rect": [ 44.0, 851.0, 35.0, 22.0 ],
                     "text": "out 1"
                 }
             },
@@ -162,8 +173,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 112.0, 420.0, 32.0, 22.0 ],
-                    "text": "+ 20"
+                    "patching_rect": [ 112.0, 420.0, 26.0, 22.0 ],
+                    "text": "+ 6"
                 }
             },
             {
@@ -174,7 +185,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 112.0, 371.0, 43.0, 22.0 ],
-                    "text": "* 9680"
+                    "text": "* 9694"
                 }
             },
             {
@@ -206,13 +217,19 @@
         "lines": [
             {
                 "patchline": {
+                    "destination": [ "obj-36", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-34", 0 ],
                     "source": [ "obj-30", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-36", 0 ],
+                    "destination": [ "obj-1", 0 ],
                     "source": [ "obj-33", 0 ]
                 }
             },
@@ -311,7 +328,6 @@
                     "source": [ "obj-9", 0 ]
                 }
             }
-        ],
-        "autosave": 0
+        ]
     }
 }
