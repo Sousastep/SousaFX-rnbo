@@ -14,8 +14,31 @@
             {
                 "box": {
                     "comment": "",
+                    "id": "obj-1",
+                    "index": 0,
+                    "maxclass": "outlet",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 131.0, 73.0, 30.0, 30.0 ]
+                }
+            },
+            {
+                "box": {
+                    "comment": "",
+                    "id": "obj-5",
+                    "index": 0,
+                    "maxclass": "inlet",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 67.0, 73.0, 30.0, 30.0 ]
+                }
+            },
+            {
+                "box": {
+                    "comment": "",
                     "id": "obj-4",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
@@ -26,7 +49,7 @@
                 "box": {
                     "comment": "",
                     "id": "obj-3",
-                    "index": 1,
+                    "index": 0,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
@@ -48,6 +71,7 @@
             }
         ],
         "lines": [],
+        "autosave": 0,
         "toolbaradditions": [ "packagemanager" ],
         "toolbarexclusions": [ "mixerslider", "quickrecord", "showmappings" ]
     }
