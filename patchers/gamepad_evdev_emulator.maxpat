@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 2679.0, 531.0, 1543.0, 868.0 ],
+        "rect": [ 727.0, 262.0, 1543.0, 868.0 ],
         "boxes": [
             {
                 "box": {
@@ -41,7 +41,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 196.0, 119.0, 141.0, 33.0 ],
-                    "presentation_linecount": 2,
                     "text": "enable zero conf objs to connect max with live"
                 }
             },
@@ -109,7 +108,7 @@
                     "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 73.0, 254.0, 214.0, 35.0 ],
+                    "patching_rect": [ 73.0, 254.0, 217.0, 35.0 ],
                     "text": "combine \"script sendbox zero-switcher replace zero_config_\" s .maxpat"
                 }
             },
@@ -125,24 +124,13 @@
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
                     "name": "zero_config_blank.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
+                    "numinlets": 2,
+                    "numoutlets": 2,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
+                    "outlettype": [ "", "" ],
                     "patching_rect": [ 48.0, 402.0, 290.0, 225.0 ],
                     "varname": "zero-switcher",
                     "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-24",
-                    "maxclass": "toggle",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 455.0, 561.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -185,8 +173,8 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 393.0, 39.0, 121.0, 22.0 ],
-                    "text": "r main_audio_source"
+                    "patching_rect": [ 393.0, 39.0, 140.0, 22.0 ],
+                    "text": "r disable_max_gamepad"
                 }
             },
             {
@@ -1603,12 +1591,6 @@
                 "patchline": {
                     "destination": [ "obj-150", 0 ],
                     "source": [ "obj-23", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-7", 0 ],
-                    "source": [ "obj-24", 0 ]
                 }
             },
             {
