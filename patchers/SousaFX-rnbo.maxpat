@@ -9,12 +9,23 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 0.0, 53.0, 443.0, 583.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-11",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 4519.0, 2127.0, 75.0, 22.0 ],
+                    "text": "r save_bang"
+                }
+            },
             {
                 "box": {
                     "id": "obj-493",
@@ -7215,6 +7226,12 @@
                     "destination": [ "obj-110", 0 ],
                     "midpoints": [ 4150.5, 839.104034, 4131.218125, 839.104034, 4131.218125, 735.6955870000002, 4150.5, 735.6955870000002 ],
                     "source": [ "obj-108", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-53", 0 ],
+                    "source": [ "obj-11", 0 ]
                 }
             },
             {
