@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 992.0, 494.0, 446.0, 473.0 ],
+        "rect": [ 77.0, 430.0, 446.0, 473.0 ],
         "openinpresentation": 1,
         "default_fontsize": 11.595187,
         "toolbarvisible": 0,
@@ -292,7 +292,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1515,7 +1515,6 @@
                                     "patching_rect": [ 2912.0, 6008.0, 126.0, 25.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 22.0, 151.0, 172.0, 25.0 ],
-                                    "text": "0. %",
                                     "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
                                 }
                             },
@@ -1634,7 +1633,6 @@
                                     "patching_rect": [ 2756.0, 5808.0, 592.0, 24.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 0.0, 130.0, 316.0, 24.0 ],
-                                    "text": "Rank: Iron Apprentice 1",
                                     "textcolor": [ 0.9545069199999999, 0.6722930800000001, 0.6722930800000001, 1.0 ],
                                     "textjustification": 1
                                 }
@@ -1884,7 +1882,6 @@
                                     "patching_rect": [ 2760.0, 5764.0, 592.0, 24.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 0.0, 102.0, 316.0, 24.0 ],
-                                    "text": "0.00 hrs on record.",
                                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                                 }
                             },
@@ -2664,7 +2661,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 275.5, 552.0, 31.0, 31.0 ]
+                                    "patching_rect": [ 274.0, 552.0, 31.0, 31.0 ]
                                 }
                             },
                             {
@@ -3786,7 +3783,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -4116,7 +4113,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -4457,7 +4454,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -8664,7 +8661,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1732.2000788022062, 382.0, 231.0, 43.0 ],
-                    "text": "loadmess 0.11.4"
+                    "text": "loadmess 0.11.5"
                 }
             },
             {
@@ -8678,7 +8675,7 @@
                     "patching_rect": [ 1763.8500394011032, 474.5, 109.0, 21.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 281.0, 14.146141468715944, 109.0, 21.0 ],
-                    "text": "Version 0.11.4",
+                    "text": "Version 0.11.5",
                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                 }
             },
@@ -9546,7 +9543,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
