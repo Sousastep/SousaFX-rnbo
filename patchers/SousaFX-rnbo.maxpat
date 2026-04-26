@@ -9,13 +9,50 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 23.0, 70.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "bgcolor": [ 0.0, 0.0, 0.0, 0.52 ],
+                    "hint": "show compressor parameters window",
+                    "id": "obj-22",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "outlinecolor": [ 0.137255, 0.137255, 0.137255, 0.231373 ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 3601.0, 1745.0, 74.0, 74.0 ],
+                    "varname": "Audio IO Status"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-49",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 3601.0, 1704.0, 168.0, 22.0 ],
+                    "text": "hover_bang \"Audio IO Status\""
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-19",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2855.0, 696.0, 93.0, 22.0 ],
+                    "text": "audio_io_status",
+                    "varname": "audio_io_status"
+                }
+            },
             {
                 "box": {
                     "id": "obj-11",
@@ -124,17 +161,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 4783.5, 2459.0, 33.0, 22.0 ],
                     "text": "read"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-423",
-                    "linecount": 2,
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 566.0, 398.0, 120.0, 33.0 ],
-                    "text": "mic in via Max adc~,\nor via Ableton clips"
                 }
             },
             {
@@ -801,93 +827,6 @@
                     "numoutlets": 0,
                     "patching_rect": [ 3974.0, 3117.0, 107.0, 22.0 ],
                     "text": "s main_panel_rect"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-490",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 418.0, 355.0, 70.0, 22.0 ],
-                    "text": "loadmess 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-486",
-                    "maxclass": "newobj",
-                    "numinlets": 3,
-                    "numoutlets": 3,
-                    "outlettype": [ "bang", "bang", "" ],
-                    "patching_rect": [ 501.0, 278.0, 44.0, 22.0 ],
-                    "text": "sel 1 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-487",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 487.0, 313.0, 105.0, 22.0 ],
-                    "text": "bgcolor 0 0 0 0.12"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-488",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 527.0, 342.0, 168.0, 22.0 ],
-                    "text": "bgcolor 1. 0.031373 0.031373"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-489",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "int" ],
-                    "patching_rect": [ 501.0, 245.0, 33.0, 22.0 ],
-                    "text": "== 0"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-484",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 418.0, 445.0, 123.0, 22.0 ],
-                    "text": "s main_audio_source"
-                }
-            },
-            {
-                "box": {
-                    "bgcolor": [ 0, 0, 0, 0.12 ],
-                    "bgfillcolor_angle": 270.0,
-                    "bgfillcolor_autogradient": 0.0,
-                    "bgfillcolor_color": [ 0, 0, 0, 0.12 ],
-                    "bgfillcolor_color1": [ 0.301961, 0.301961, 0.301961, 1.0 ],
-                    "bgfillcolor_color2": [ 0.2, 0.2, 0.2, 1.0 ],
-                    "bgfillcolor_proportion": 0.5,
-                    "bgfillcolor_type": "color",
-                    "fontname": "Ableton Sans Medium",
-                    "id": "obj-485",
-                    "items": [ "Live", "Mic", ",", "Prerecorded", "Mic" ],
-                    "maxclass": "umenu",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "int", "", "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 287.0, 264.0, 123.0, 23.0 ],
-                    "varname": "umenu[42]"
                 }
             },
             {
@@ -1614,11 +1553,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
                     "numoutlets": 17,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -6191,7 +6130,9 @@
                 "box": {
                     "active": {
                         "Background Color Preference1": 0,
-                        "Background Color Preference1::Background Color Preference": 0
+                        "Background Color Preference1::Background Color Preference": 0,
+                        "audio_io_status": 0,
+                        "audio_io_status::audio_io_status": 0
                     },
                     "fontname": "Ableton Sans Medium",
                     "id": "obj-52",
@@ -6201,10 +6142,10 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 4572.5, 2642.0, 291.0, 23.0 ],
                     "saved_object_attributes": {
-                        "client_rect": [ 100, 159, 532, 396 ],
+                        "client_rect": [ 100, 159, 1031, 1291 ],
                         "parameter_enable": 0,
                         "parameter_mappable": 0,
-                        "storage_rect": [ 322, 87, 836, 1373 ]
+                        "storage_rect": [ 365, 44, 816, 172 ]
                     },
                     "text": "pattrstorage sousaFX-rnbo @greedy 0 @savemode 0",
                     "varname": "sousaFX-rnbo"
@@ -7895,6 +7836,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-49", 1 ],
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-188", 0 ],
                     "source": [ "obj-224", 0 ]
                 }
@@ -8415,6 +8362,13 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3303.5, 193.0, 3129.0, 193.0, 3129.0, 95.0, 1522.5, 95.0 ],
+                    "order": 9,
+                    "source": [ "obj-288", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-49", 0 ],
                     "order": 8,
                     "source": [ "obj-288", 0 ]
                 }
@@ -8479,6 +8433,13 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3510.5, 238.0, 3462.0, 238.0, 3462.0, 208.0, 3113.0, 208.0, 3113.0, 113.0, 1522.5, 113.0 ],
+                    "order": 9,
+                    "source": [ "obj-289", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-49", 0 ],
                     "order": 8,
                     "source": [ "obj-289", 0 ]
                 }
@@ -10188,52 +10149,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-484", 0 ],
-                    "order": 1,
-                    "source": [ "obj-485", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-489", 0 ],
-                    "order": 0,
-                    "source": [ "obj-485", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-487", 0 ],
-                    "source": [ "obj-486", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-488", 0 ],
-                    "source": [ "obj-486", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-485", 0 ],
-                    "source": [ "obj-487", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-485", 0 ],
-                    "source": [ "obj-488", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-486", 0 ],
-                    "source": [ "obj-489", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-485", 0 ],
-                    "source": [ "obj-490", 0 ]
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-49", 0 ]
                 }
             },
             {

@@ -2,8 +2,8 @@
     "name": "SousaFX-rnbo",
     "version": 1,
     "creationdate": 3827413226,
-    "modificationdate": 3848308486,
-    "viewrect": [ 498.0, 87.0, 289.0, 219.0 ],
+    "modificationdate": 3860072481,
+    "viewrect": [ 498.0, 87.0, 289.0, 614.0 ],
     "autoorganize": 0,
     "hideprojectwindow": 1,
     "showdependencies": 1,
@@ -13,8 +13,7 @@
             "SousaFX-rnbo.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "toplevel": 1,
-                "disclosed": 0
+                "toplevel": 1
             }
         },
         "media": {        },

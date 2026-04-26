@@ -4,13 +4,34 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 128.0, 662.0, 719.0, 554.0 ],
+        "rect": [ 909.0, 214.0, 1787.0, 554.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 16,
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+                    "patching_rect": [ 64.75735294117533, -40.0, 910.9485294117659, 22.0 ],
+                    "text": "adc~ 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "newobj",
+                    "numinlets": 10,
+                    "numoutlets": 0,
+                    "patching_rect": [ 590.0, 87.0, 368.125, 22.0 ],
+                    "text": "dac~ 5 6 7 8 9 10 11 12 13 14"
+                }
+            },
             {
                 "box": {
                     "comment": "",
@@ -41,7 +62,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 590.3125, 83.0, 30.0, 30.0 ]
+                    "patching_rect": [ 977.1875, 83.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -69,6 +90,102 @@
                                 "comment": ""
                             },
                             {
+                                "type": "signal",
+                                "index": 2,
+                                "tag": "in2",
+                                "comment": "pre-lfp fx l"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 3,
+                                "tag": "in3",
+                                "comment": "pre-lfp fx r"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 4,
+                                "tag": "in4",
+                                "comment": "pass-lfp fx l"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 5,
+                                "tag": "in5",
+                                "comment": "pass-lfp fx r"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 6,
+                                "tag": "in6",
+                                "comment": "solo fx l"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 7,
+                                "tag": "in7",
+                                "comment": "solo fx r"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 8,
+                                "tag": "in8",
+                                "comment": "main delay receive L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 9,
+                                "tag": "in9",
+                                "comment": "main delay receive R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 10,
+                                "tag": "in10",
+                                "comment": "looper delay receive L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 11,
+                                "tag": "in11",
+                                "comment": "looper delay receive R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 12,
+                                "tag": "in12",
+                                "comment": "solo delay receive L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 13,
+                                "tag": "in13",
+                                "comment": "solo delay receive R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 14,
+                                "tag": "in14",
+                                "comment": "drum delay receive L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 15,
+                                "tag": "in15",
+                                "comment": "drum delay receive R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 16,
+                                "tag": "in16",
+                                "comment": "reverb receive L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 17,
+                                "tag": "in17",
+                                "comment": "reverb receive R"
+                            },
+                            {
                                 "type": "midi",
                                 "index": -1,
                                 "tag": "",
@@ -77,8 +194,8 @@
                         ]
                     },
                     "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 17,
+                    "numinlets": 18,
+                    "numoutlets": 27,
                     "outletInfo": {
                         "IOInfo": [
                             {
@@ -172,6 +289,66 @@
                                 "comment": "bindings out"
                             },
                             {
+                                "type": "signal",
+                                "index": 16,
+                                "tag": "out16",
+                                "comment": "main delay send L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 17,
+                                "tag": "out17",
+                                "comment": "main delay send R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 18,
+                                "tag": "out18",
+                                "comment": "looper delay send L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 19,
+                                "tag": "out19",
+                                "comment": "looper delay send R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 20,
+                                "tag": "out20",
+                                "comment": "solo delay send L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 21,
+                                "tag": "out21",
+                                "comment": "solo delay send R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 22,
+                                "tag": "out22",
+                                "comment": "drum delay send L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 23,
+                                "tag": "out23",
+                                "comment": "drum delay send R"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 24,
+                                "tag": "out24",
+                                "comment": "reverb send L"
+                            },
+                            {
+                                "type": "signal",
+                                "index": 25,
+                                "tag": "out25",
+                                "comment": "reverb send R"
+                            },
+                            {
                                 "type": "midi",
                                 "index": -1,
                                 "tag": "",
@@ -179,351 +356,11 @@
                             }
                         ]
                     },
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
-                    "patching_rect": [ 10.0, 15.0, 639.0, 24.0 ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "int", "list" ],
+                    "patching_rect": [ 10.0, 15.0, 1024.875, 24.0 ],
                     "rnboattrcache": {
-                        "tubasolo/stutter_vol": {
-                            "label": "stutter_vol",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/filter_enable": {
-                            "label": "filter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/pitchshift/mix": {
-                            "label": "mix",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum_looper/looper_length": {
-                            "label": "looper_length",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_enable": {
-                            "label": "stutter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/drive": {
-                            "label": "drive",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_X": {
-                            "label": "ABS_X",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_crossfade/xfade_env_sens": {
-                            "label": "xfade_env_sens",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/max_lfo_floor": {
-                            "label": "max_lfo_floor",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_accel": {
-                            "label": "stutter_accel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_SOUTH": {
-                            "label": "BTN_SOUTH",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/max_lfo_ceiling": {
-                            "label": "max_lfo_ceiling",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_metronome/metronome_volume": {
-                            "label": "metronome_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "eq/mid_q": {
-                            "label": "mid_q",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/pitchshift/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/output_gain": {
-                            "label": "output_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/SVFminQ": {
-                            "label": "SVFminQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/output_volume": {
-                            "label": "output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "jb_stutterwrap/p_obj-48/stutter_accel": {
                             "label": "stutter_accel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/lfo_env_sens": {
-                            "label": "lfo_env_sens",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/highcut": {
-                            "label": "highcut",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "low_boost/low_freq": {
-                            "label": "low_freq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_START": {
-                            "label": "BTN_START",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/deadzone_right": {
-                            "label": "deadzone_right",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/SVFmaxQ": {
-                            "label": "SVFmaxQ",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/min_lfo_ceiling": {
-                            "label": "min_lfo_ceiling",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/enable_scatter": {
-                            "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/mid_q": {
-                            "label": "mid_q",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_BRAKE": {
-                            "label": "ABS_BRAKE",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt": {
-                            "label": "stutter_accel_vol_dip_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/pitchshift/window": {
-                            "label": "window",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-9/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_NORTH": {
-                            "label": "BTN_NORTH",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/size": {
-                            "label": "size",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "stereo_or_mono": {
-                            "label": "stereo_or_mono",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/output_gain": {
-                            "label": "output_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/filter_enable": {
-                            "label": "filter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/autopan_amount": {
-                            "label": "autopan_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_enable": {
-                            "label": "stutter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/staircase_enable": {
-                            "label": "staircase_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/decay": {
-                            "label": "decay",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/filter_enable": {
-                            "label": "filter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tap/BPM": {
-                            "label": "BPM",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/drum_reverb_min_amt": {
-                            "label": "drum_reverb_min_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "click_only": {
-                            "label": "click_only",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "low_boost/low_boost": {
-                            "label": "low_boost",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/release": {
-                            "label": "release",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -532,303 +369,8 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "p_obj-9/knee": {
-                            "label": "knee",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_WEST": {
-                            "label": "BTN_WEST",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tubasolo/dry_vol": {
-                            "label": "dry_vol",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/enable_scatter": {
-                            "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_HAT0Y": {
-                            "label": "ABS_HAT0Y",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/mid": {
-                            "label": "mid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gp_noisegatewrap/noise gate hyst": {
-                            "label": "noise gate hyst",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-2/knee": {
-                            "label": "knee",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_offset": {
-                            "label": "stutter_offset",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_HAT0X": {
-                            "label": "ABS_HAT0X",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/bypass_stutter_bandpass": {
-                            "label": "bypass_stutter_bandpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/ABS_Y": {
-                            "label": "ABS_Y",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_gated_or_thru": {
-                            "label": "stutter_gated_or_thru",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "bindings/lfo_floor_env_sens_binding_curve": {
-                            "label": "lfo_floor_env_sens_binding_curve",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/output_volume": {
-                            "label": "output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tap/round_BPM": {
-                            "label": "round_BPM",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "eq/mid_freq": {
-                            "label": "mid_freq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_TR": {
-                            "label": "BTN_TR",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt": {
-                            "label": "stutter_accel_vol_dip_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/mix": {
-                            "label": "mix",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/himidfq": {
-                            "label": "himidfq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/jb_envelope/Env Sens": {
-                            "label": "Env Sens",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/staircase_enable": {
-                            "label": "staircase_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_enable": {
-                            "label": "stutter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/output_volume": {
-                            "label": "output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/diff": {
-                            "label": "diff",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/mid_freq": {
-                            "label": "mid_freq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_drums/clap_volume": {
-                            "label": "clap_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/damp": {
-                            "label": "damp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_drums/kick_volume": {
-                            "label": "kick_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/lowpass": {
-                            "label": "lowpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
                         "main_looper/looper_length": {
                             "label": "looper_length",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "bindings/lfo_ceiling_env_sens_binding_curve": {
-                            "label": "lfo_ceiling_env_sens_binding_curve",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/deadzone_left": {
-                            "label": "deadzone_left",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/volume": {
-                            "label": "volume",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -837,163 +379,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "final/release": {
-                            "label": "release",
+                        "jb_autowah/min_lfo_floor": {
+                            "label": "min_lfo_floor",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "p_obj-212/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
+                        "verbwrap/main/decay": {
+                            "label": "decay",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "post-xover-lows/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/bypass_stutter_bandpass": {
-                            "label": "bypass_stutter_bandpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_SELECT": {
-                            "label": "BTN_SELECT",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gp_noisegatewrap/noise gate thresh": {
-                            "label": "noise gate thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_metronome/alert_volume": {
-                            "label": "alert_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "eq/mid_trim": {
-                            "label": "mid_trim",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/enable_scatter": {
-                            "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "init/thresh": {
-                            "label": "thresh",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/filter_enable": {
-                            "label": "filter_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/stutter_accel": {
-                            "label": "stutter_accel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/bass": {
-                            "label": "bass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/bypass_stutter_bandpass": {
-                            "label": "bypass_stutter_bandpass",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/input_gain": {
-                            "label": "input_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/stutter_gated_or_thru": {
-                            "label": "stutter_gated_or_thru",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/staircase_amount": {
-                            "label": "staircase_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "verbwrap/main/jitter": {
-                            "label": "jitter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/spread": {
-                            "label": "spread",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/midfreq": {
-                            "label": "midfreq",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "low_boost/low_q": {
-                            "label": "low_q",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_output_volume": {
-                            "label": "stutter_output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "looper/limiter/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_micpre/mid_trim": {
-                            "label": "mid_trim",
+                        "eq/mid_freq": {
+                            "label": "mid_freq",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1002,23 +399,28 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "gpin/BTN_TL": {
-                            "label": "BTN_TL",
+                        "p_obj-212/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "final/comp": {
-                            "label": "comp",
+                        "gpin/BTN_SELECT": {
+                            "label": "BTN_SELECT",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "post-xover-lows/attack": {
+                        "solo1/limiter/attack": {
                             "label": "attack",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "p_obj-212/p_obj-48/stutter_gated_or_thru": {
-                            "label": "stutter_gated_or_thru",
+                        "post-xover-lows/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/spread": {
+                            "label": "spread",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1027,23 +429,33 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_stutterwrap[1]/p_obj-48/autopan_amount": {
-                            "label": "autopan_amount",
+                        "jb_autowah/SVFmaxQ": {
+                            "label": "SVFmaxQ",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "drum/limiter/gain": {
-                            "label": "gain",
+                        "tubasolo/dry_vol": {
+                            "label": "dry_vol",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_drums/tom_volume": {
-                            "label": "tom_volume",
+                        "final/himid": {
+                            "label": "himid",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "final/output_gain": {
-                            "label": "output_gain",
+                        "jb_stutterwrap[1]/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/mix": {
+                            "label": "mix",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/staircase_enable": {
+                            "label": "staircase_enable",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1052,23 +464,33 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "looper/limiter/gain": {
-                            "label": "gain",
+                        "pre-xfade-wet/input_gain": {
+                            "label": "input_gain",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "solo/himid": {
-                            "label": "himid",
+                        "gp_noisegatewrap/noise gate hyst": {
+                            "label": "noise gate hyst",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "init/lookahead": {
+                        "init/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/lookahead": {
                             "label": "lookahead",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "gpin/ABS_RZ": {
-                            "label": "ABS_RZ",
+                        "jb_autowah/max_lfo_floor": {
+                            "label": "max_lfo_floor",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/diff": {
+                            "label": "diff",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1077,22 +499,37 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "verbwrap/solo_reverb_min_amt": {
-                            "label": "solo_reverb_min_amt",
+                        "p_obj-9/thresh": {
+                            "label": "thresh",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "p_obj-234/p_obj-48/stutter_window_size_ms": {
-                            "label": "stutter_window_size_ms",
+                        "p_obj-234/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "gpin/BTN_EAST": {
-                            "label": "BTN_EAST",
+                        "jb_stutterwrap/p_obj-48/bypass_stutter_bandpass": {
+                            "label": "bypass_stutter_bandpass",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "pre-xfade-dry/release": {
+                        "tubasolo/del_vol": {
+                            "label": "del_vol",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_metronome/metronome_volume": {
+                            "label": "metronome_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/release": {
                             "label": "release",
                             "isEnum": 0,
                             "parsestring": ""
@@ -1102,158 +539,18 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "post-xover-lows/input_gain": {
-                            "label": "input_gain",
+                        "stereo_or_mono": {
+                            "label": "stereo_or_mono",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "jb_drums/snare_volume": {
-                            "label": "snare_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_accel": {
-                            "label": "stutter_accel",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_THUMBR": {
-                            "label": "BTN_THUMBR",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_autowah/min_lfo_floor": {
-                            "label": "min_lfo_floor",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "drum/limiter/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "post-xover-lows/output_gain": {
-                            "label": "output_gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tap/time_sig_numerator": {
-                            "label": "time_sig_numerator",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/lowcut": {
-                            "label": "lowcut",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "solo1/limiter/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/staircase_enable": {
-                            "label": "staircase_enable",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-dry/himid": {
-                            "label": "himid",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/treble": {
-                            "label": "treble",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/release": {
-                            "label": "release",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_reverse": {
-                            "label": "stutter_reverse",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "gpin/BTN_THUMBL": {
-                            "label": "BTN_THUMBL",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-212/p_obj-48/autopan_amount": {
-                            "label": "autopan_amount",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "pre-xfade-wet/comp": {
-                            "label": "comp",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru": {
+                        "p_obj-234/p_obj-48/stutter_gated_or_thru": {
                             "label": "stutter_gated_or_thru",
                             "isEnum": 0,
                             "parsestring": ""
                         },
-                        "solo/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "wobblefxbypass/overdrive/mix": {
-                            "label": "mix",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "final/lookahead": {
-                            "label": "lookahead",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "jb_stutterwrap/p_obj-48/enable_scatter": {
-                            "label": "enable_scatter",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/limiter/attack": {
-                            "label": "attack",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "tubasolo/del_vol": {
-                            "label": "del_vol",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/gain": {
-                            "label": "gain",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "p_obj-234/p_obj-48/stutter_accel_vol_dip_amt": {
-                            "label": "stutter_accel_vol_dip_amt",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "main/output_volume": {
-                            "label": "output_volume",
-                            "isEnum": 0,
-                            "parsestring": ""
-                        },
-                        "last/lookahead": {
-                            "label": "lookahead",
+                        "drum/spread": {
+                            "label": "spread",
                             "isEnum": 0,
                             "parsestring": ""
                         },
@@ -1262,8 +559,898 @@
                             "isEnum": 0,
                             "parsestring": ""
                         },
+                        "jb_autowah/SVFminQ": {
+                            "label": "SVFminQ",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/deadzone_left": {
+                            "label": "deadzone_left",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_enable": {
+                            "label": "stutter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tap/time_sig_numerator": {
+                            "label": "time_sig_numerator",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/mix": {
+                            "label": "mix",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/deadzone_right": {
+                            "label": "deadzone_right",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/tom_volume": {
+                            "label": "tom_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "eq/mid_trim": {
+                            "label": "mid_trim",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_X": {
+                            "label": "ABS_X",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_enable": {
+                            "label": "stutter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-2/knee": {
+                            "label": "knee",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_accel": {
+                            "label": "stutter_accel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/enable_scatter": {
+                            "label": "enable_scatter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/clap_volume": {
+                            "label": "clap_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_EAST": {
+                            "label": "BTN_EAST",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/size": {
+                            "label": "size",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/drum_reverb_min_amt": {
+                            "label": "drum_reverb_min_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_micpre/lowpass": {
+                            "label": "lowpass",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "low_boost/low_q": {
+                            "label": "low_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/spread": {
+                            "label": "spread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-9/knee": {
+                            "label": "knee",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/filter_enable": {
+                            "label": "filter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_TR": {
+                            "label": "BTN_TR",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_TL": {
+                            "label": "BTN_TL",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum_looper/looper_length": {
+                            "label": "looper_length",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_output_volume": {
+                            "label": "stutter_output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/staircase_enable": {
+                            "label": "staircase_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tubasolo/stutter_vol": {
+                            "label": "stutter_vol",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/limiter/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/autopan_amount": {
+                            "label": "autopan_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/min_lfo_ceiling": {
+                            "label": "min_lfo_ceiling",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/enable_scatter": {
+                            "label": "enable_scatter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_metronome/alert_volume": {
+                            "label": "alert_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_THUMBL": {
+                            "label": "BTN_THUMBL",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_enable": {
+                            "label": "stutter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_BRAKE": {
+                            "label": "ABS_BRAKE",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/filter_enable": {
+                            "label": "filter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/mix": {
+                            "label": "mix",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_accel": {
+                            "label": "stutter_accel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/solo_reverb_min_amt": {
+                            "label": "solo_reverb_min_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_NORTH": {
+                            "label": "BTN_NORTH",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_HAT0X": {
+                            "label": "ABS_HAT0X",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "eq/mid_q": {
+                            "label": "mid_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/damp": {
+                            "label": "damp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "init/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
                         "pre-xfade-dry/output_gain": {
                             "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_THUMBR": {
+                            "label": "BTN_THUMBR",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/staircase_enable": {
+                            "label": "staircase_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/bypass_stutter_bandpass": {
+                            "label": "bypass_stutter_bandpass",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tap/BPM": {
+                            "label": "BPM",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_gated_or_thru": {
+                            "label": "stutter_gated_or_thru",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/filter_enable": {
+                            "label": "filter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/thresh": {
+                            "label": "thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/enable_scatter": {
+                            "label": "enable_scatter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_gated_or_thru": {
+                            "label": "stutter_gated_or_thru",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_crossfade/xfade_env_sens": {
+                            "label": "xfade_env_sens",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_RZ": {
+                            "label": "ABS_RZ",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/window": {
+                            "label": "window",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/spread": {
+                            "label": "spread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/max_lfo_ceiling": {
+                            "label": "max_lfo_ceiling",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/himidfq": {
+                            "label": "himidfq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_Y": {
+                            "label": "ABS_Y",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "verbwrap/main/jitter": {
+                            "label": "jitter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "last/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-wet/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "low_boost/low_freq": {
+                            "label": "low_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "click_only": {
+                            "label": "click_only",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "bindings/lfo_ceiling_env_sens_binding_curve": {
+                            "label": "lfo_ceiling_env_sens_binding_curve",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_accel": {
+                            "label": "stutter_accel",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/autopan_amount": {
+                            "label": "autopan_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo1/output_volume": {
+                            "label": "output_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/release": {
+                            "label": "release",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_autowah/lfo_env_sens": {
+                            "label": "lfo_env_sens",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "main/limiter/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "post-xover-lows/output_gain": {
+                            "label": "output_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/attack": {
+                            "label": "attack",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_accel_vol_dip_amt": {
+                            "label": "stutter_accel_vol_dip_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_START": {
+                            "label": "BTN_START",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_WEST": {
+                            "label": "BTN_WEST",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gp_noisegatewrap/noise gate thresh": {
+                            "label": "noise gate thresh",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "drum/limiter/gain": {
+                            "label": "gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/enable_scatter": {
+                            "label": "enable_scatter",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/ABS_HAT0Y": {
+                            "label": "ABS_HAT0Y",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_reverse": {
+                            "label": "stutter_reverse",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/autopan_amount": {
+                            "label": "autopan_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/drive": {
+                            "label": "drive",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/comp": {
+                            "label": "comp",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "solo/himid": {
+                            "label": "himid",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_accel_vol_dip_amt": {
+                            "label": "stutter_accel_vol_dip_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_offset": {
+                            "label": "stutter_offset",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "tap/round_BPM": {
+                            "label": "round_BPM",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/staircase_amount": {
+                            "label": "staircase_amount",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "final/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "gpin/BTN_SOUTH": {
+                            "label": "BTN_SOUTH",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "pre-xfade-dry/input_gain": {
+                            "label": "input_gain",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-212/p_obj-48/bypass_stutter_bandpass": {
+                            "label": "bypass_stutter_bandpass",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap/p_obj-48/stutter_gated_or_thru": {
+                            "label": "stutter_gated_or_thru",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "p_obj-234/p_obj-48/stutter_accel_vol_dip_amt": {
+                            "label": "stutter_accel_vol_dip_amt",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/spread": {
+                            "label": "spread",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_stutterwrap[1]/p_obj-48/stutter_window_size_ms": {
+                            "label": "stutter_window_size_ms",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "low_boost/low_boost": {
+                            "label": "low_boost",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/kick_volume": {
+                            "label": "kick_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "jb_drums/snare_volume": {
+                            "label": "snare_volume",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/filter_enable": {
+                            "label": "filter_enable",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "bindings/lfo_floor_env_sens_binding_curve": {
+                            "label": "lfo_floor_env_sens_binding_curve",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "looper/limiter/lookahead": {
+                            "label": "lookahead",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/high_freq": {
+                            "label": "high_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/mid_freq": {
+                            "label": "mid_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/high_q": {
+                            "label": "high_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/mid_q": {
+                            "label": "mid_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/high_boost": {
+                            "label": "high_boost",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/overdrive/mid_trim": {
+                            "label": "mid_trim",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/high_freq": {
+                            "label": "high_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/mid_freq": {
+                            "label": "mid_freq",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/high_q": {
+                            "label": "high_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/mid_q": {
+                            "label": "mid_q",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/high_boost": {
+                            "label": "high_boost",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "wobblefxbypass/pitchshift/mid_trim": {
+                            "label": "mid_trim",
+                            "isEnum": 0,
+                            "parsestring": ""
+                        },
+                        "bindings/Ext_FX": {
+                            "label": "Ext_FX",
                             "isEnum": 0,
                             "parsestring": ""
                         }
@@ -1332,7 +1519,7 @@
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 629.0, 83.0, 30.0, 30.0 ]
+                    "patching_rect": [ 1016.1875, 83.0, 30.0, 30.0 ]
                 }
             },
             {
@@ -1469,7 +1656,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-228", 0 ],
-                    "source": [ "obj-2", 16 ]
+                    "source": [ "obj-2", 26 ]
                 }
             },
             {
@@ -1493,7 +1680,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
-                    "source": [ "obj-2", 15 ]
+                    "source": [ "obj-2", 25 ]
                 }
             },
             {
@@ -1542,6 +1729,162 @@
                 "patchline": {
                     "destination": [ "obj-5", 0 ],
                     "source": [ "obj-2", 14 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 9 ],
+                    "source": [ "obj-2", 24 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 8 ],
+                    "source": [ "obj-2", 23 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 7 ],
+                    "source": [ "obj-2", 22 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 6 ],
+                    "source": [ "obj-2", 21 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 5 ],
+                    "source": [ "obj-2", 20 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 4 ],
+                    "source": [ "obj-2", 19 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 3 ],
+                    "source": [ "obj-2", 18 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 2 ],
+                    "source": [ "obj-2", 17 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 1 ],
+                    "source": [ "obj-2", 16 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-6", 0 ],
+                    "source": [ "obj-2", 15 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 16 ],
+                    "source": [ "obj-7", 15 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 15 ],
+                    "source": [ "obj-7", 14 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 14 ],
+                    "source": [ "obj-7", 13 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 13 ],
+                    "source": [ "obj-7", 12 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 12 ],
+                    "source": [ "obj-7", 11 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 11 ],
+                    "source": [ "obj-7", 10 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 10 ],
+                    "source": [ "obj-7", 9 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 9 ],
+                    "source": [ "obj-7", 8 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 8 ],
+                    "source": [ "obj-7", 7 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 7 ],
+                    "source": [ "obj-7", 6 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 6 ],
+                    "source": [ "obj-7", 5 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 5 ],
+                    "source": [ "obj-7", 4 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 4 ],
+                    "source": [ "obj-7", 3 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 3 ],
+                    "source": [ "obj-7", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 2 ],
+                    "source": [ "obj-7", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 1 ],
+                    "source": [ "obj-7", 0 ]
                 }
             }
         ],
