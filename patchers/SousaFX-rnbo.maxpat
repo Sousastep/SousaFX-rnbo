@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 25.0, 81.0, 448.0, 581.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -3309,7 +3309,7 @@
                     "numoutlets": 7,
                     "outlettype": [ "int", "int", "int", "int", "int", "int", "int" ],
                     "patching_rect": [ 2124.0, 884.0, 380.0, 23.0 ],
-                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🪟", "Save", "Window", "Layout", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
+                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🔌", "Audio", "IO", "Status...", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "item", 6, 4, "🪟", "Save", "Window", "Layout", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
                     "text": "menubar 7"
                 }
             },
@@ -4408,7 +4408,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -9190,8 +9190,14 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-334", 0 ],
+                    "destination": [ "obj-22", 0 ],
                     "source": [ "obj-382", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-334", 0 ],
+                    "source": [ "obj-382", 3 ]
                 }
             },
             {
