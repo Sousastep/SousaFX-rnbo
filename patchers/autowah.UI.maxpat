@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 1106.0, 236.0, 421.0, 852.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -26,7 +26,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 129.5, 79.0, 122.0, 47.0 ],
+                    "presentation_rect": [ 128.5, 81.75, 122.0, 47.0 ],
                     "text": "soloing",
                     "textjustification": 1
                 }
@@ -44,8 +44,204 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 8.5, 6.0, 364.0, 780.0 ],
+                    "presentation_rect": [ 7.5, 8.75, 364.0, 780.0 ],
                     "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "fontname": "Ableton Sans Medium",
+                    "id": "obj-39",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2474.0, 1211.0, 909.0, 21.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 258.5, 353.5, 48.0, 21.0 ],
+                    "text": "Enable:",
+                    "textjustification": 2
+                }
+            },
+            {
+                "box": {
+                    "fontname": "Ableton Sans Medium",
+                    "id": "obj-38",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2459.0, 1196.0, 909.0, 21.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 228.5, 317.0, 137.5, 21.0 ],
+                    "text": "Octaver",
+                    "textjustification": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-36",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1874.5, 1174.0, 155.0, 22.0 ],
+                    "restore": [ 0.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"octaver compression\"",
+                    "varname": "octaver compression"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-35",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1783.5, 1225.0, 126.0, 22.0 ],
+                    "restore": [ 0.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"octaver volume\"",
+                    "varname": "octaver volume"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-29",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1691.5, 1277.0, 123.0, 22.0 ],
+                    "restore": [ 1.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"octaver enable\"",
+                    "varname": "octaver enable"
+                }
+            },
+            {
+                "box": {
+                    "hint": "enable octaver",
+                    "id": "obj-26",
+                    "maxclass": "live.toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1743.5, 1317.0, 35.0, 31.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 303.5, 351.5, 25.0, 25.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_enum": [ "off", "on" ],
+                            "parameter_longname": "octaver enable",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "octaver enable",
+                            "parameter_type": 2
+                        }
+                    },
+                    "varname": "live.toggle"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-25",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1942.5, 1208.0, 61.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 293.5, 398.0, 61.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "octaver compression",
+                            "parameter_mmax": 100.0,
+                            "parameter_modmode": 4,
+                            "parameter_shortname": "compress",
+                            "parameter_type": 1,
+                            "parameter_unitstyle": 5
+                        }
+                    },
+                    "varname": "live.dial[33]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-24",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1837.5, 1259.0, 61.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 242.0, 398.0, 50.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "octaver volume",
+                            "parameter_mmax": 24.0,
+                            "parameter_mmin": -48.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "volume",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 4
+                        }
+                    },
+                    "varname": "live.dial[32]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-13",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1942.5, 1431.0, 89.0, 22.0 ],
+                    "text": "s rnbo_params"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-18",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1942.5, 1271.0, 235.0, 22.0 ],
+                    "text": "prepend jb_autowah/octaver_compression"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-100",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1837.5, 1323.0, 205.0, 22.0 ],
+                    "text": "prepend jb_autowah/octaver_volume"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-22",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1743.5, 1367.0, 203.0, 22.0 ],
+                    "text": "prepend jb_autowah/octaver_enable"
                 }
             },
             {
@@ -109,7 +305,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 3285.0, 1266.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 102.5, 399.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 32.0, 398.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low boost[1]",
@@ -133,7 +329,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 3055.0, 1266.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 212.5, 399.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 142.0, 398.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low Q[1]",
@@ -157,7 +353,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2910.0, 1266.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 157.5, 399.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 87.0, 398.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low freq[1]",
@@ -214,7 +410,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 2444.0, 1181.0, 909.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 111.5, 318.0, 158.0, 21.0 ],
+                    "presentation_rect": [ 41.0, 317.0, 158.0, 21.0 ],
                     "text": "Bassline EQs",
                     "textjustification": 1
                 }
@@ -280,7 +476,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2780.0, 1271.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 102.5, 341.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 32.0, 340.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid trim",
@@ -305,7 +501,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2600.0, 1273.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 212.5, 341.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 142.0, 340.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid Q",
@@ -329,7 +525,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2478.0, 1271.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 157.5, 341.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 87.0, 340.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid freq",
@@ -2289,6 +2485,30 @@
                     "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
                     "border": 2,
                     "bordercolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+                    "id": "obj-37",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 928.0, 104.0, 128.0, 128.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 227.0, 317.0, 139.0, 138.0 ],
+                    "proportion": 0.5,
+                    "rounded": 46,
+                    "saved_attribute_attributes": {
+                        "bordercolor": {
+                            "expression": "themecolor.live_dial_fg_zombie"
+                        }
+                    }
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "background": 1,
+                    "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
+                    "border": 2,
+                    "bordercolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
                     "id": "obj-137",
                     "maxclass": "panel",
                     "mode": 0,
@@ -2296,7 +2516,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 913.0, 89.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.0, 317.0, 351.0, 138.0 ],
+                    "presentation_rect": [ 15.0, 317.0, 198.0, 138.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -2430,6 +2650,12 @@
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
                     "source": [ "obj-10", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-13", 0 ],
+                    "source": [ "obj-100", 0 ]
                 }
             },
             {
@@ -2669,6 +2895,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-13", 0 ],
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-123", 0 ],
                     "source": [ "obj-19", 0 ]
                 }
@@ -2699,8 +2931,32 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-13", 0 ],
+                    "source": [ "obj-22", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-78", 0 ],
                     "source": [ "obj-228", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-100", 0 ],
+                    "source": [ "obj-24", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-18", 0 ],
+                    "source": [ "obj-25", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-22", 0 ],
+                    "source": [ "obj-26", 0 ]
                 }
             },
             {
@@ -2725,6 +2981,12 @@
                 "patchline": {
                     "destination": [ "obj-83", 0 ],
                     "source": [ "obj-275", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-26", 0 ],
+                    "source": [ "obj-29", 1 ]
                 }
             },
             {
@@ -2789,6 +3051,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-24", 0 ],
+                    "source": [ "obj-35", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-351", 0 ],
                     "source": [ "obj-350", 1 ]
                 }
@@ -2827,6 +3095,12 @@
                 "patchline": {
                     "destination": [ "obj-360", 0 ],
                     "source": [ "obj-359", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-25", 0 ],
+                    "source": [ "obj-36", 1 ]
                 }
             },
             {
