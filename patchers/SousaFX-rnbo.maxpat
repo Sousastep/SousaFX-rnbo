@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 460.0, 597.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -6218,8 +6218,10 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 4572.5, 2642.0, 291.0, 23.0 ],
                     "saved_object_attributes": {
+                        "client_rect": [ 100, 159, 532, 396 ],
                         "parameter_enable": 0,
-                        "parameter_mappable": 0
+                        "parameter_mappable": 0,
+                        "storage_rect": [ 1574, 87, 2050, 1373 ]
                     },
                     "text": "pattrstorage sousaFX-rnbo @greedy 0 @savemode 0",
                     "varname": "sousaFX-rnbo"
