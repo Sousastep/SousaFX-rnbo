@@ -18,6 +18,39 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-100",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 304.0, 237.0, 141.0, 33.0 ],
+                    "presentation_linecount": 2,
+                    "text": "remove certain IO before exporting to rPI"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-99",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 271.0, 282.0, 99.0, 22.0 ],
+                    "text": "s removeObjects"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-62",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 271.0, 241.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-94",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -440,7 +473,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 4253.5, 2193.0, 139.0, 22.0 ],
-                    "restore": [ "init preset" ],
+                    "restore": [ "" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -464,7 +497,6 @@
                     "patching_rect": [ 4206.5, 2236.0, 102.0, 50.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 73.0, 281.5, 107.5, 23.0 ],
-                    "text": "init preset",
                     "varname": "lay[2]"
                 }
             },
@@ -10422,6 +10454,12 @@
                 "patchline": {
                     "destination": [ "obj-56", 0 ],
                     "source": [ "obj-60", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-99", 0 ],
+                    "source": [ "obj-62", 0 ]
                 }
             },
             {
