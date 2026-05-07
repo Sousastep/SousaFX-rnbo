@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 460.0, 597.0 ],
+        "rect": [ 0.0, 53.0, 471.0, 586.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -18,13 +18,45 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-164",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 300.0, 314.0, 153.0, 33.0 ],
+                    "presentation_linecount": 3,
+                    "text": "open subpatcher containing sousaFX-rnbo~"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-143",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 271.0, 318.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-107",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 271.0, 353.0, 135.0, 22.0 ],
+                    "text": "s sousafx-rnbopat-open"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-100",
                     "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 304.0, 237.0, 141.0, 33.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 304.0, 237.0, 145.0, 33.0 ],
                     "text": "remove certain IO before exporting to rPI"
                 }
             },
@@ -279,7 +311,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 171.0, 393.5, 225.0, 33.0 ],
+                    "patching_rect": [ 107.0, 392.5, 225.0, 33.0 ],
                     "text": "disable gamepad in Max if using gamepad automation recording in Live"
                 }
             },
@@ -291,7 +323,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 138.0, 394.5, 31.0, 31.0 ]
+                    "patching_rect": [ 74.0, 393.5, 31.0, 31.0 ]
                 }
             },
             {
@@ -300,7 +332,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 138.0, 440.5, 142.0, 22.0 ],
+                    "patching_rect": [ 74.0, 439.5, 142.0, 22.0 ],
                     "text": "s disable_max_gamepad"
                 }
             },
@@ -506,7 +538,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 138.0, 361.5, 113.0, 22.0 ],
+                    "patching_rect": [ 74.0, 360.5, 113.0, 22.0 ],
                     "text": "s enable_zero_conf"
                 }
             },
@@ -517,7 +549,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 176.0, 314.5, 141.0, 33.0 ],
+                    "patching_rect": [ 112.0, 313.5, 141.0, 33.0 ],
                     "text": "enable zero conf objs to connect max with live"
                 }
             },
@@ -529,7 +561,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 138.0, 315.5, 31.0, 31.0 ]
+                    "patching_rect": [ 74.0, 314.5, 31.0, 31.0 ]
                 }
             },
             {
@@ -5559,7 +5591,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 2022.0, 1592.0, 144.0, 22.0 ],
+                    "patching_rect": [ 2019.5, 1590.0, 144.0, 22.0 ],
                     "restore": [ 4.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
@@ -7502,6 +7534,12 @@
                     "color": [ 0.447518749806177, 0.44751863973454, 0.447518668498017, 0.0 ],
                     "destination": [ "obj-385", 0 ],
                     "source": [ "obj-142", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-107", 0 ],
+                    "source": [ "obj-143", 0 ]
                 }
             },
             {
@@ -10686,6 +10724,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-112", 0 ],
+                    "midpoints": [ 54.5, 546.0, 150.0, 546.0, 150.0, 621.0, 135.0, 621.0, 135.0, 675.0, 159.5, 675.0 ],
                     "source": [ "obj-87", 0 ]
                 }
             },
