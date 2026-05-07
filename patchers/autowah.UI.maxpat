@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1106.0, 236.0, 421.0, 852.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -240,8 +240,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1743.5, 1367.0, 203.0, 22.0 ],
-                    "text": "prepend jb_autowah/octaver_enable"
+                    "patching_rect": [ 1743.5, 1367.0, 186.0, 22.0 ],
+                    "text": "prepend bindings/octaver_enable"
                 }
             },
             {
