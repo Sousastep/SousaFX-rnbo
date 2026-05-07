@@ -35,7 +35,7 @@
             },
             {
                 "box": {
-                    "code": "function removeObjects() {\n    var thisPatcher = this.patcher;\n    var rnboObj = thisPatcher.getnamed(\"sousaFxRnbo\");\n    var subPatcher = rnboObj.subpatcher();\n\n    var pattern = /^deleteMe(\\[\\d+\\])?$/;\n    var obj = subPatcher.firstobject;\n    var toRemove = [];\n\n    while (obj) {\n        if (pattern.test(obj.varname)) {\n            toRemove.push(obj);\n        }\n        obj = obj.nextobject;\n    }\n\n    for (var i = 0; i < toRemove.length; i++) {\n        subPatcher.remove(removeForRpi[i]);\n    }\n\n    post(\"Removed \" + toRemove.length + \" objects\\n\");\n}\r\n//\r\n// https://claude.ai/share/fc1ed1a5-b0a2-48e3-88d0-11e872da94b5\r\n//",
+                    "code": "function removeObjects() {\n    var thisPatcher = this.patcher;\n    var rnboObj = thisPatcher.getnamed(\"sousaFxRnbo\");\n    var subPatcher = rnboObj.subpatcher();\n\n    var pattern = /^removeForRpi(\\[\\d+\\])?$/;\n    var obj = subPatcher.firstobject;\n    var toRemove = [];\n\n    while (obj) {\n        if (pattern.test(obj.varname)) {\n            toRemove.push(obj);\n        }\n        obj = obj.nextobject;\n    }\n\n    for (var i = 0; i < toRemove.length; i++) {\n        subPatcher.remove(removeForRpi[i]);\n    }\n\n    post(\"Removed \" + toRemove.length + \" objects\\n\");\n}\r\n//\r\n// https://claude.ai/share/fc1ed1a5-b0a2-48e3-88d0-11e872da94b5\r\n//",
                     "filename": "none",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
