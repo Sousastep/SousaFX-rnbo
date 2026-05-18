@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 471.0, 586.0 ],
+        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -18,13 +18,34 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-104",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 58.0, 35.0, 22.0, 22.0 ],
+                    "text": "t 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-61",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 58.0, 3.0, 142.0, 22.0 ],
+                    "text": "r actually_all_good_bang"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-164",
                     "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 300.0, 314.0, 153.0, 33.0 ],
-                    "presentation_linecount": 3,
                     "text": "open subpatcher containing sousaFX-rnbo~"
                 }
             },
@@ -505,7 +526,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 4253.5, 2193.0, 139.0, 22.0 ],
-                    "restore": [ "" ],
+                    "restore": [ "init preset" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -529,6 +550,7 @@
                     "patching_rect": [ 4206.5, 2236.0, 102.0, 50.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 73.0, 281.5, 107.5, 23.0 ],
+                    "text": "init preset",
                     "varname": "lay[2]"
                 }
             },
@@ -770,7 +792,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 115.5, 12.0, 48.0, 28.0 ],
+                    "patching_rect": [ 116.0, 43.0, 48.0, 28.0 ],
                     "text": "open"
                 }
             },
@@ -780,7 +802,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 115.5, 56.0, 89.0, 22.0 ],
+                    "patching_rect": [ 116.0, 87.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -1096,7 +1118,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 59.0, 124.0, 89.0, 22.0 ],
+                    "patching_rect": [ 58.0, 157.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -1108,7 +1130,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 59.0, 7.0, 38.0, 38.0 ]
+                    "patching_rect": [ 58.0, 71.0, 38.0, 38.0 ]
                 }
             },
             {
@@ -1118,7 +1140,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 59.0, 88.0, 105.0, 22.0 ],
+                    "patching_rect": [ 58.0, 121.0, 105.0, 22.0 ],
                     "text": "prepend autobuild"
                 }
             },
@@ -6233,7 +6255,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 828.0, 132.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -38.0 ],
+                    "restore": [ -39.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -7207,6 +7229,12 @@
                     "destination": [ "obj-80", 0 ],
                     "order": 1,
                     "source": [ "obj-1", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-462", 0 ],
+                    "source": [ "obj-104", 0 ]
                 }
             },
             {
@@ -10492,6 +10520,12 @@
                 "patchline": {
                     "destination": [ "obj-56", 0 ],
                     "source": [ "obj-60", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-104", 0 ],
+                    "source": [ "obj-61", 0 ]
                 }
             },
             {
