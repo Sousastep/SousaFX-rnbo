@@ -9,13 +9,67 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-222",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 58.0, 195.0, 54.0, 22.0 ],
+                    "text": "deferlow"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-294",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 382.0, 393.0, 111.0, 20.0 ],
+                    "text": "(this) main window"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-166",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "patching_rect": [ 90.0, 35.0, 22.0, 22.0 ],
+                    "text": "t 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-165",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 213.0, 3.0, 95.0, 22.0 ],
+                    "text": "r start_autobuild"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-134",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "int", "int" ],
+                    "patching_rect": [ 58.0, 121.0, 58.0, 22.0 ],
+                    "text": "change 0"
+                }
+            },
             {
                 "box": {
                     "id": "obj-104",
@@ -332,7 +386,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 107.0, 392.5, 225.0, 33.0 ],
+                    "patching_rect": [ 107.0, 433.0, 225.0, 33.0 ],
                     "text": "disable gamepad in Max if using gamepad automation recording in Live"
                 }
             },
@@ -344,7 +398,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 74.0, 393.5, 31.0, 31.0 ]
+                    "patching_rect": [ 74.0, 434.0, 31.0, 31.0 ]
                 }
             },
             {
@@ -353,7 +407,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 74.0, 439.5, 142.0, 22.0 ],
+                    "patching_rect": [ 74.0, 480.0, 142.0, 22.0 ],
                     "text": "s disable_max_gamepad"
                 }
             },
@@ -560,7 +614,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 74.0, 360.5, 113.0, 22.0 ],
+                    "patching_rect": [ 74.0, 401.0, 113.0, 22.0 ],
                     "text": "s enable_zero_conf"
                 }
             },
@@ -571,7 +625,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 112.0, 313.5, 141.0, 33.0 ],
+                    "patching_rect": [ 112.0, 354.0, 141.0, 33.0 ],
                     "text": "enable zero conf objs to connect max with live"
                 }
             },
@@ -583,7 +637,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 74.0, 314.5, 31.0, 31.0 ]
+                    "patching_rect": [ 74.0, 355.0, 31.0, 31.0 ]
                 }
             },
             {
@@ -792,7 +846,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 116.0, 43.0, 48.0, 28.0 ],
+                    "patching_rect": [ 138.0, 77.0, 48.0, 28.0 ],
                     "text": "open"
                 }
             },
@@ -802,7 +856,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 116.0, 87.0, 89.0, 22.0 ],
+                    "patching_rect": [ 138.0, 121.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -1118,7 +1172,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 58.0, 157.0, 89.0, 22.0 ],
+                    "patching_rect": [ 58.0, 230.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -1140,7 +1194,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 58.0, 121.0, 105.0, 22.0 ],
+                    "patching_rect": [ 58.0, 161.0, 105.0, 22.0 ],
                     "text": "prepend autobuild"
                 }
             },
@@ -2655,7 +2709,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 22.0, 156.0, 24.0, 24.0 ]
+                    "patching_rect": [ 348.0, 391.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -2664,7 +2718,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 22.0, 193.0, 101.0, 22.0 ],
+                    "patching_rect": [ 348.0, 428.0, 101.0, 22.0 ],
                     "text": "s SousaFX_open"
                 }
             },
@@ -5133,7 +5187,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 45.0, 230.0, 96.0, 58.0 ],
+                    "patching_rect": [ 45.0, 270.0, 96.0, 58.0 ],
                     "text": "window flags nofloat, window flags zoom, window flags grow, window exec, savewindow 0"
                 }
             },
@@ -7484,6 +7538,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-259", 0 ],
+                    "source": [ "obj-134", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-137", 0 ],
                     "source": [ "obj-135", 0 ]
                 }
@@ -7693,6 +7753,18 @@
                 "patchline": {
                     "destination": [ "obj-400", 0 ],
                     "source": [ "obj-163", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-166", 0 ],
+                    "source": [ "obj-165", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-462", 0 ],
+                    "source": [ "obj-166", 0 ]
                 }
             },
             {
@@ -8016,6 +8088,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-478", 0 ],
+                    "source": [ "obj-222", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-188", 0 ],
                     "source": [ "obj-224", 0 ]
                 }
@@ -8325,7 +8403,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-478", 0 ],
+                    "destination": [ "obj-222", 0 ],
                     "source": [ "obj-259", 0 ]
                 }
             },
@@ -10164,7 +10242,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-259", 0 ],
+                    "destination": [ "obj-134", 0 ],
                     "source": [ "obj-462", 0 ]
                 }
             },
@@ -10973,6 +11051,9 @@
             "obj-377::obj-128": [ "low freq[1]", "low freq", 0 ],
             "obj-377::obj-132": [ "mid Q", "mid Q", 0 ],
             "obj-377::obj-133": [ "mid freq", "mid freq", 0 ],
+            "obj-377::obj-145": [ "autoswing enable", "autoswing enable", 0 ],
+            "obj-377::obj-155": [ "live.menu", "live.menu", 0 ],
+            "obj-377::obj-165": [ "octaver enable[1]", "octaver enable", 0 ],
             "obj-377::obj-2": [ "high boost", "high boost", 0 ],
             "obj-377::obj-20": [ "live.dial[9]", "drive", 0 ],
             "obj-377::obj-21": [ "live.dial[10]", "mix", 0 ],
@@ -11326,6 +11407,12 @@
                 },
                 "obj-377::obj-133": {
                     "parameter_longname": "mid freq"
+                },
+                "obj-377::obj-145": {
+                    "parameter_unitstyle": 10
+                },
+                "obj-377::obj-165": {
+                    "parameter_longname": "octaver enable[1]"
                 },
                 "obj-377::obj-2": {
                     "parameter_longname": "high boost",
