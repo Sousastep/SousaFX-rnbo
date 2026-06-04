@@ -9,12 +9,138 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 426.0, 18.0, 379.0, 823.0 ],
+        "rect": [ 0.0, 53.0, 2176.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "bassline parameters",
         "boxes": [
+            {
+                "box": {
+                    "fontname": "Ableton Sans Medium",
+                    "fontsize": 33.69249358145463,
+                    "hidden": 1,
+                    "id": "obj-85",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 37.5, 144.0, 122.0, 47.0 ],
+                    "text": "soloing",
+                    "textjustification": 1
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.0, 0.0, 0.0, 0.76 ],
+                    "bordercolor": [ 0.619607843137255, 0.745098039215686, 0.952941176470588, 0.0 ],
+                    "hidden": 1,
+                    "id": "obj-66",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 8.0, 86.0, 184.0, 223.0 ],
+                    "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.2627450980392157, 0.2627450980392157, 0.2627450980392157, 0.8 ],
+                    "fontsize": 12.0,
+                    "hint": "Push L3 while holding Select to toogle the Crossfade Binding between two states:\n\n1. The distance of the left thumbstick from its center controls the crossfade.\n\n2. The left thumbstick's vertical axis controls the crossfade. Down fades towards the dry sound, and Up fades towards the wah sound.\n\nCurrent value: 1 + ",
+                    "id": "obj-157",
+                    "maxclass": "live.menu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 2620.0, 1711.0, 142.0, 18.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 147.0, 56.0, 181.0, 18.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "magnitude", "vertical" ],
+                            "parameter_longname": "live.menu[2]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.menu",
+                            "parameter_type": 2
+                        }
+                    },
+                    "valuepopup": 1,
+                    "valuepopuplabel": 1,
+                    "varname": "live.menu[2]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-158",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "int", "int" ],
+                    "patching_rect": [ 2541.0, 1617.0, 59.0, 22.0 ],
+                    "text": "unpack i i"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-159",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2541.0, 1653.0, 72.0, 22.0 ],
+                    "text": "prepend set"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-160",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 2638.0, 1653.0, 172.0, 22.0 ],
+                    "restore": [ 0.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr \"crossfade binding mode\"",
+                    "varname": "crossfade binding mode"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-166",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2620.0, 1753.0, 240.0, 22.0 ],
+                    "text": "prepend \"bindings/crossfade binding mode\""
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-156",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1897.0, 1464.0, 150.0, 33.0 ],
+                    "text": " \"crossfade binding mode\" 87"
+                }
+            },
             {
                 "box": {
                     "activebgcolor": [ 0.2627450980392157, 0.2627450980392157, 0.2627450980392157, 0.8 ],
@@ -95,39 +221,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 2335.0, 1753.0, 209.0, 22.0 ],
                     "text": "prepend \"bindings/lpf freq mod mode\""
-                }
-            },
-            {
-                "box": {
-                    "fontname": "Ableton Sans Medium",
-                    "fontsize": 33.69249358145463,
-                    "hidden": 1,
-                    "id": "obj-85",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 853.0, 351.5, 122.0, 47.0 ],
-                    "text": "soloing",
-                    "textjustification": 1
-                }
-            },
-            {
-                "box": {
-                    "angle": 270.0,
-                    "bgcolor": [ 0.0, 0.0, 0.0, 0.76 ],
-                    "bordercolor": [ 0.619607843137255, 0.745098039215686, 0.952941176470588, 0.0 ],
-                    "hidden": 1,
-                    "id": "obj-66",
-                    "maxclass": "panel",
-                    "mode": 0,
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 732.0, 278.5, 364.0, 780.0 ],
-                    "proportion": 0.5
                 }
             },
             {
@@ -215,7 +308,7 @@
                 "box": {
                     "activebgcolor": [ 0.2627450980392157, 0.2627450980392157, 0.2627450980392157, 0.8 ],
                     "fontsize": 12.0,
-                    "hint": "Push L3 once, twice, or thrice in succession to set the crossfade mode. \n    \n    1. Once to enable the \"transient helper\", which increases the crossfade whenever the noisegate is gating.\n    \n    2. Twice to disable the \"transient helper\". \n    \n    3. Thrice to disable the crossfade entirely. \n\ncurrent val: 1 + ",
+                    "hint": "Push L3 once, twice, or thrice in succession to set the crossfade mode. \n    \n    1. Once to enable the \"transient helper\", which increases the crossfade whenever the noisegate is gating.\n    \n    2. Twice to disable the \"transient helper\". \n    \n    3. Thrice to disable the crossfade entirely. \n\ncurrent value: 1 + ",
                     "id": "obj-155",
                     "maxclass": "live.menu",
                     "numinlets": 1,
@@ -380,7 +473,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1711.0, 1875.0, 89.0, 22.0 ],
+                    "patching_rect": [ 1864.0, 1896.0, 89.0, 22.0 ],
                     "text": "s rnbo_params"
                 }
             },
@@ -399,11 +492,11 @@
                 "box": {
                     "id": "obj-34",
                     "maxclass": "newobj",
-                    "numinlets": 6,
-                    "numoutlets": 6,
-                    "outlettype": [ "", "", "", "", "", "" ],
-                    "patching_rect": [ 1592.0, 1491.0, 119.0, 22.0 ],
-                    "text": "route 83 84 85 80 86"
+                    "numinlets": 7,
+                    "numoutlets": 7,
+                    "outlettype": [ "", "", "", "", "", "", "" ],
+                    "patching_rect": [ 1592.0, 1491.0, 136.0, 22.0 ],
+                    "text": "route 83 84 85 80 86 87"
                 }
             },
             {
@@ -1638,7 +1731,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.42 ],
+                    "restore": [ 0.44 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1655,7 +1748,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 449.5, 1139.5, 40.0, 22.0 ],
-                    "restore": [ 0.05 ],
+                    "restore": [ 0.12 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2088,7 +2181,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1429.0, 219.0, 109.0, 22.0 ],
-                    "restore": [ 22.0 ],
+                    "restore": [ 33.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2105,7 +2198,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1420.0, 49.0, 127.0, 22.0 ],
-                    "restore": [ 9.0 ],
+                    "restore": [ 11.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2122,7 +2215,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1419.0, 376.0, 130.0, 22.0 ],
-                    "restore": [ 100.0 ],
+                    "restore": [ 80.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2475,7 +2568,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 616.0, 52.0, 122.0, 22.0 ],
-                    "restore": [ 150.0 ],
+                    "restore": [ 200.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2538,7 +2631,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1188.0, 1174.0, 218.0, 22.0 ],
-                    "restore": [ -4.0 ],
+                    "restore": [ -23.622047244094603 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2602,7 +2695,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1080.0, 1010.0, 229.0, 22.0 ],
-                    "restore": [ -4.0 ],
+                    "restore": [ 18.897637795275557 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2696,7 +2789,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1051.5, 677.0, 134.0, 22.0 ],
-                    "restore": [ 45.0 ],
+                    "restore": [ 44.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2737,7 +2830,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 54.0 ],
+                    "restore": [ 44.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -3367,8 +3460,32 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-166", 0 ],
+                    "source": [ "obj-157", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-159", 0 ],
+                    "source": [ "obj-158", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-157", 0 ],
+                    "source": [ "obj-159", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-122", 0 ],
                     "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-157", 0 ],
+                    "source": [ "obj-160", 1 ]
                 }
             },
             {
@@ -3399,6 +3516,12 @@
                 "patchline": {
                     "destination": [ "obj-164", 0 ],
                     "source": [ "obj-165", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-97", 0 ],
+                    "source": [ "obj-166", 0 ]
                 }
             },
             {
@@ -3561,6 +3684,12 @@
                 "patchline": {
                     "destination": [ "obj-146", 0 ],
                     "source": [ "obj-34", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-158", 0 ],
+                    "source": [ "obj-34", 5 ]
                 }
             },
             {
