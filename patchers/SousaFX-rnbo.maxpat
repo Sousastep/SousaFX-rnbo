@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -6309,7 +6309,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 828.0, 132.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -39.0 ],
+                    "restore": [ -41.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -11051,8 +11051,10 @@
             "obj-377::obj-128": [ "low freq[1]", "low freq", 0 ],
             "obj-377::obj-132": [ "mid Q", "mid Q", 0 ],
             "obj-377::obj-133": [ "mid freq", "mid freq", 0 ],
+            "obj-377::obj-140": [ "live.menu[1]", "live.menu", 0 ],
             "obj-377::obj-145": [ "autoswing enable", "autoswing enable", 0 ],
             "obj-377::obj-155": [ "live.menu", "live.menu", 0 ],
+            "obj-377::obj-157": [ "live.menu[2]", "live.menu", 0 ],
             "obj-377::obj-165": [ "octaver enable[1]", "octaver enable", 0 ],
             "obj-377::obj-2": [ "high boost", "high boost", 0 ],
             "obj-377::obj-20": [ "live.dial[9]", "drive", 0 ],
