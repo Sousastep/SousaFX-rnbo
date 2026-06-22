@@ -9,13 +9,199 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 453.0, 583.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "activebgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
+                    "hint": "allpass Q, aka bandwidth around center frequency.",
+                    "id": "obj-495",
+                    "maxclass": "live.numbox",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1500.5, 984.5, 90.5, 15.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 292.0, 68.0, 50.0, 15.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_initial": [ 12 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_longname": "live.numbox[24]",
+                            "parameter_mmax": 100.0,
+                            "parameter_modmode": 4,
+                            "parameter_shortname": "live.numbox[23]",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 5
+                        }
+                    },
+                    "varname": "live.numbox[3]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-496",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1465.5, 938.5, 89.0, 22.0 ],
+                    "restore": [ 12.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr allpass_Q",
+                    "varname": "allpass_Q"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
+                    "hint": "allpass frequency, aka freq where 180 degree phase shift occurs.",
+                    "id": "obj-489",
+                    "maxclass": "live.numbox",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1287.5, 984.5, 90.5, 15.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 241.0, 68.0, 50.0, 15.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_initial": [ 220 ],
+                            "parameter_initial_enable": 1,
+                            "parameter_longname": "live.numbox[23]",
+                            "parameter_mmax": 8000.0,
+                            "parameter_modmode": 4,
+                            "parameter_shortname": "live.numbox[23]",
+                            "parameter_type": 0,
+                            "parameter_units": "%4.0f Hz",
+                            "parameter_unitstyle": 9
+                        }
+                    },
+                    "varname": "live.numbox[2]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-487",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1236.0, 939.0, 122.0, 22.0 ],
+                    "restore": [ 220.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr allpass_freq_Hz",
+                    "varname": "allpass_freq_Hz"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-486",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1024.0, 939.0, 116.0, 22.0 ],
+                    "restore": [ 0.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr allpass_enable",
+                    "varname": "allpass_enable"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
+                    "hint": "enable allpass",
+                    "id": "obj-485",
+                    "maxclass": "live.toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1072.5, 979.5, 29.5, 25.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 224.0, 68.0, 15.0, 15.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "off", "on" ],
+                            "parameter_longname": "live.toggle",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.toggle",
+                            "parameter_type": 2
+                        }
+                    },
+                    "varname": "live.toggle"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-484",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1287.5, 1098.0, 89.0, 22.0 ],
+                    "text": "s rnbo_params"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-482",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1500.5, 1045.0, 165.0, 22.0 ],
+                    "text": "prepend jb_micpre/allpass_Q"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-458",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1287.5, 1045.0, 197.0, 22.0 ],
+                    "text": "prepend jb_micpre/allpass_freq_Hz"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-369",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1072.5, 1045.0, 191.0, 22.0 ],
+                    "text": "prepend jb_micpre/allpass_enable"
+                }
+            },
             {
                 "box": {
                     "id": "obj-222",
@@ -4624,7 +4810,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -5668,7 +5854,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2019.5, 1590.0, 144.0, 22.0 ],
-                    "restore": [ 4.0 ],
+                    "restore": [ 3.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6309,7 +6495,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 828.0, 132.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -41.0 ],
+                    "restore": [ -38.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -9381,6 +9567,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-484", 0 ],
+                    "source": [ "obj-369", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-42", 0 ],
                     "source": [ "obj-37", 0 ]
                 }
@@ -10229,6 +10421,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-484", 0 ],
+                    "source": [ "obj-458", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-440", 0 ],
                     "source": [ "obj-460", 1 ]
                 }
@@ -10400,6 +10598,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-484", 0 ],
+                    "source": [ "obj-482", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-493", 0 ],
                     "order": 1,
                     "source": [ "obj-483", 0 ]
@@ -10410,6 +10614,30 @@
                     "destination": [ "obj-52", 0 ],
                     "order": 0,
                     "source": [ "obj-483", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-369", 0 ],
+                    "source": [ "obj-485", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-485", 0 ],
+                    "source": [ "obj-486", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-489", 0 ],
+                    "source": [ "obj-487", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-458", 0 ],
+                    "source": [ "obj-489", 0 ]
                 }
             },
             {
@@ -10429,6 +10657,18 @@
                     "destination": [ "obj-276", 0 ],
                     "midpoints": [ 4258.0, 2438.0, 4186.5, 2438.0, 4186.5, 2020.0, 4447.0, 2020.0 ],
                     "source": [ "obj-493", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-482", 0 ],
+                    "source": [ "obj-495", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-495", 0 ],
+                    "source": [ "obj-496", 1 ]
                 }
             },
             {
@@ -11000,6 +11240,7 @@
             "obj-344::obj-439": [ "Clap Volume", "Clap", 0 ],
             "obj-344::obj-5": [ "min drum vol", "minimum drum reverb volume", 0 ],
             "obj-344::obj-50": [ "mic lowpass", "lowpass", 0 ],
+            "obj-344::obj-53": [ "tremolo boost", "tremolo boost", 0 ],
             "obj-344::obj-59": [ "Alert Volume", "Loop Alert", 0 ],
             "obj-344::obj-7": [ "min solo vol", "minimum solo reverb volume", 0 ],
             "obj-348::obj-10::obj-12": [ "live.numbox[34]", "live.numbox[2]", 0 ],
@@ -11085,6 +11326,9 @@
             "obj-431": [ "Mono", "Mono", 0 ],
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
+            "obj-485": [ "live.toggle", "live.toggle", 0 ],
+            "obj-489": [ "live.numbox[23]", "live.numbox[23]", 0 ],
+            "obj-495": [ "live.numbox[24]", "live.numbox[23]", 0 ],
             "parameterbanks": {
                 "0": {
                     "index": 0,
@@ -11261,6 +11505,13 @@
                 },
                 "obj-344::obj-50": {
                     "parameter_longname": "mic lowpass"
+                },
+                "obj-344::obj-53": {
+                    "parameter_initial": 6,
+                    "parameter_initial_enable": 1,
+                    "parameter_longname": "tremolo boost",
+                    "parameter_range": [ 0.0, 30.0 ],
+                    "parameter_shortname": "tremolo boost"
                 },
                 "obj-344::obj-59": {
                     "parameter_longname": "Alert Volume"
