@@ -9,12 +9,125 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 639.0, 134.0, 1585.0, 1199.0 ],
+        "rect": [ 1875.0, 59.0, 624.0, 698.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "audio io status",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-134",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 415.0, 819.9999999999998, 89.0, 22.0 ],
+                    "text": "s rnbo_params"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-153",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 415.0, 778.3333333333331, 165.0, 22.0 ],
+                    "text": "prepend bindings/idle_enable"
+                }
+            },
+            {
+                "box": {
+                    "activebgcolor": [ 0.2627450980392157, 0.2627450980392157, 0.2627450980392157, 0.8 ],
+                    "fontsize": 12.0,
+                    "hint": "mutes main audio IO to allow vfx to idle, but also acts as panic button.\n\nmutes In 1, Out 1 2 3 4 7 8 9 10",
+                    "id": "obj-155",
+                    "maxclass": "live.menu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 415.0, 740.6666666666665, 95.0, 18.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 318.5, 45.0, 91.0, 18.0 ],
+                    "saved_attribute_attributes": {
+                        "activebgcolor": {
+                            "expression": ""
+                        },
+                        "valueof": {
+                            "parameter_enum": [ "idle disabled", "idle enabled" ],
+                            "parameter_longname": "live.menu[3]",
+                            "parameter_mmax": 1,
+                            "parameter_modmode": 0,
+                            "parameter_shortname": "live.menu",
+                            "parameter_type": 2
+                        }
+                    },
+                    "valuepopuplabel": 1,
+                    "varname": "live.menu"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-132",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "int", "int" ],
+                    "patching_rect": [ 415.0, 657.3333333333333, 59.0, 22.0 ],
+                    "text": "unpack i i"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-133",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 415.0, 698.9999999999999, 72.0, 22.0 ],
+                    "text": "prepend set"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-151",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 505.0, 699.0, 97.0, 22.0 ],
+                    "restore": [ 0.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr idle_enable",
+                    "varname": "idle_enable"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-130",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 415.0, 615.6666666666666, 53.0, 22.0 ],
+                    "text": "route 92"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-126",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 415.0, 574.0, 89.0, 22.0 ],
+                    "text": "r \"bindings out\""
+                }
+            },
             {
                 "box": {
                     "id": "obj-131",
@@ -123,8 +236,9 @@
                     "patching_rect": [ 1166.0, 1415.0, 132.0, 57.0 ],
                     "presentation": 1,
                     "presentation_linecount": 2,
-                    "presentation_rect": [ 68.2480640411377, 588.6506239740472, 196.0, 42.0 ],
-                    "text": "start latency test for \"external delay send / receive 1 L\""
+                    "presentation_rect": [ 68.2480640411377, 588.6506239740472, 198.0, 42.0 ],
+                    "text": "start latency test for \"external delay send / receive 1 L\"",
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ]
                 }
             },
             {
@@ -2280,8 +2394,8 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1217.0, 1481.5, 288.0, 20.0 ],
-                    "presentation_linecount": 4,
-                    "text": "bypass external delay send / receive 1 L before test."
+                    "text": "bypass external delay send / receive 1 L before test.",
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ]
                 }
             },
             {
@@ -4541,7 +4655,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 566.0, 122.0, 180.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 274.0, 29.52252197265625, 180.0, 22.0 ],
+                    "presentation_rect": [ 274.0, 17.0, 180.0, 22.0 ],
                     "text": "save Audio Status settings",
                     "textjustification": 1
                 }
@@ -7817,6 +7931,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-130", 0 ],
+                    "source": [ "obj-126", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-112", 0 ],
                     "source": [ "obj-128", 1 ]
                 }
@@ -7843,8 +7963,26 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-132", 0 ],
+                    "source": [ "obj-130", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-485", 0 ],
                     "source": [ "obj-131", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-133", 0 ],
+                    "source": [ "obj-132", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-155", 0 ],
+                    "source": [ "obj-133", 0 ]
                 }
             },
             {
@@ -7881,6 +8019,24 @@
                 "patchline": {
                     "destination": [ "obj-538", 0 ],
                     "source": [ "obj-150", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-155", 0 ],
+                    "source": [ "obj-151", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-134", 0 ],
+                    "source": [ "obj-153", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-153", 0 ],
+                    "source": [ "obj-155", 0 ]
                 }
             },
             {

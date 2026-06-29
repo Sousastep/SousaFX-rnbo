@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -74,7 +74,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1287.5, 984.5, 90.5, 15.0 ],
+                    "patching_rect": [ 1288.0, 984.0, 90.5, 15.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 241.0, 68.0, 50.0, 15.0 ],
                     "saved_attribute_attributes": {
@@ -766,7 +766,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 4253.5, 2193.0, 139.0, 22.0 ],
-                    "restore": [ "init preset" ],
+                    "restore": [ "Sousa AMS-24" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -790,7 +790,7 @@
                     "patching_rect": [ 4206.5, 2236.0, 102.0, 50.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 73.0, 281.5, 107.5, 23.0 ],
-                    "text": "init preset",
+                    "text": "Sousa AMS-24",
                     "varname": "lay[2]"
                 }
             },
@@ -5854,7 +5854,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2019.5, 1590.0, 144.0, 22.0 ],
-                    "restore": [ 3.0 ],
+                    "restore": [ 4.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6495,7 +6495,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 828.0, 132.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -38.0 ],
+                    "restore": [ -36.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -11161,6 +11161,7 @@
             "obj-168": [ "Noise Gate Thresh", "Noise Gate Thresh", 0 ],
             "obj-183::obj-155": [ "live.numbox[37]", "live.numbox[1]", 0 ],
             "obj-183::obj-94": [ "live.numbox[38]", "live.numbox[1]", 0 ],
+            "obj-19::obj-155": [ "live.menu[3]", "live.menu", 0 ],
             "obj-281::obj-22::obj-12": [ "live.numbox[29]", "live.numbox[2]", 0 ],
             "obj-281::obj-22::obj-14": [ "live.dial[27]", "thresh", 0 ],
             "obj-281::obj-22::obj-16": [ "live.dial[28]", "attack", 0 ],
@@ -11342,6 +11343,14 @@
                 },
                 "obj-183::obj-94": {
                     "parameter_longname": "live.numbox[38]"
+                },
+                "obj-19::obj-155": {
+                    "parameter_invisible": 0,
+                    "parameter_longname": "live.menu[3]",
+                    "parameter_modmode": 0,
+                    "parameter_range": [ "idle disabled", "idle enabled" ],
+                    "parameter_type": 2,
+                    "parameter_unitstyle": 10
                 },
                 "obj-281::obj-272::obj-10": {
                     "parameter_longname": "live.numbox[8]"
