@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 424.0, 44.0, 379.0, 797.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -110,7 +110,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2638.0, 1653.0, 172.0, 22.0 ],
-                    "restore": [ 1.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -382,8 +382,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1711.0, 1749.0, 193.0, 22.0 ],
-                    "text": "prepend bindings/crossfade_mode"
+                    "patching_rect": [ 1711.0, 1749.0, 198.0, 22.0 ],
+                    "text": "prepend \"bindings/crossfade mode\""
                 }
             },
             {
