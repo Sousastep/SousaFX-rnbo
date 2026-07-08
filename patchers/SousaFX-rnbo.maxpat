@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 899.0, 209.0, 471.0, 605.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -766,7 +766,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 4253.5, 2193.0, 139.0, 22.0 ],
-                    "restore": [ "Sousa AMS-24" ],
+                    "restore": [ "init preset" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -790,7 +790,7 @@
                     "patching_rect": [ 4206.5, 2236.0, 102.0, 50.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 73.0, 281.5, 107.5, 23.0 ],
-                    "text": "Sousa AMS-24",
+                    "text": "init preset",
                     "varname": "lay[2]"
                 }
             },
@@ -1955,11 +1955,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-rnbopat.maxpat",
+                    "name": "sousaFX-external.maxpat",
                     "numinlets": 1,
                     "numoutlets": 18,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "signal", "int", "list" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -6495,7 +6495,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 828.0, 132.0, 104.00000309944153, 22.0 ],
-                    "restore": [ -36.0 ],
+                    "restore": [ -38.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
