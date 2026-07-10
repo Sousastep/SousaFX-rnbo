@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 504.0, 153.0, 437.0, 578.0 ],
+        "rect": [ 0.0, 53.0, 430.0, 569.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -708,7 +708,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "zero_config_blank.maxpat",
+                    "name": "zero_config_abstraction_2.maxpat",
                     "numinlets": 2,
                     "numoutlets": 2,
                     "offset": [ 0.0, 0.0 ],
@@ -1010,7 +1010,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1462.4411764705883, 1867.0, 91.0, 22.0 ],
+                    "patching_rect": [ 1548.5, 1848.0, 91.0, 22.0 ],
                     "text": "s \"bindings out\""
                 }
             },
@@ -4810,7 +4810,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -6688,7 +6688,7 @@
                     "patching_rect": [ 1433.5, 2312.0, 108.0, 31.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 248.0, 213.0, 121.0, 31.0 ],
-                    "text": "cleared",
+                    "text": "playing",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "textjustification": 1
                 }
@@ -6864,7 +6864,7 @@
             {
                 "box": {
                     "angle": 0.0,
-                    "bgcolor": [ 0.1, 0.1, 0.1, 0.12 ],
+                    "bgcolor": [ 0.6, 0.8, 0.3, 0.8 ],
                     "id": "obj-42",
                     "maxclass": "panel",
                     "mode": 0,
@@ -6886,7 +6886,7 @@
                     "patching_rect": [ 1797.5, 2388.0, 105.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 53.0, 214.0, 121.0, 29.0 ],
-                    "text": "cleared",
+                    "text": "playing",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "textjustification": 1
                 }
@@ -7062,7 +7062,7 @@
             {
                 "box": {
                     "angle": 0.0,
-                    "bgcolor": [ 0.1, 0.1, 0.1, 0.12 ],
+                    "bgcolor": [ 0.6, 0.8, 0.3, 0.8 ],
                     "id": "obj-56",
                     "maxclass": "panel",
                     "mode": 0,
@@ -7237,7 +7237,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 1569.0, 1853.0, 66.0, 65.0 ],
+                    "patching_rect": [ 1462.2450980392157, 1836.0, 66.0, 65.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 188.0, 68.0, 176.0, 116.0 ],
                     "smooth": 0
@@ -10035,7 +10035,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-74", 0 ],
-                    "source": [ "obj-400", 14 ]
+                    "source": [ "obj-400", 15 ]
                 }
             },
             {
@@ -10048,7 +10048,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-8", 0 ],
-                    "source": [ "obj-400", 15 ]
+                    "source": [ "obj-400", 14 ]
                 }
             },
             {
