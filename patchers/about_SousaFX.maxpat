@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 77.0, 430.0, 446.0, 473.0 ],
+        "rect": [ 1290.0, 156.0, 446.0, 473.0 ],
         "openinpresentation": 1,
         "default_fontsize": 11.595187,
         "toolbarvisible": 0,
@@ -297,7 +297,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 492.0, 87.0, 1957.0, 1267.0 ],
+                        "rect": [ 1492.0, 544.0, 800.0, 674.0 ],
                         "openinpresentation": 1,
                         "default_fontname": "Kohinoor Telugu",
                         "boxes": [
@@ -8661,7 +8661,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1732.2000788022062, 382.0, 231.0, 43.0 ],
-                    "text": "loadmess 0.11.5"
+                    "text": "loadmess 0.11.6"
                 }
             },
             {
@@ -8675,7 +8675,7 @@
                     "patching_rect": [ 1763.8500394011032, 474.5, 109.0, 21.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 281.0, 14.146141468715944, 109.0, 21.0 ],
-                    "text": "Version 0.11.5",
+                    "text": "Version 0.11.6",
                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                 }
             },
