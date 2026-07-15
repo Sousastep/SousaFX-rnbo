@@ -14,7 +14,7 @@ SousaFX-rnbo ports [SousaFX](https://sousastep.github.io/SousaFX-docs/index.html
 
 # :books: Documentation
 
-Find installation instructions, audio effects overviews, and more in this online version of the SousaFX in-app documentation: [Read the SousaFX documentation](https://sousastep.github.io/SousaFX-rnbo-docs/)
+[https://rnbo.sousastep.quest/](https://sousastep.github.io/SousaFX-rnbo-docs/)
 
 <a href="#control_knobs-hardware">![rainbow](./media/rainbow.png)</a>
 
