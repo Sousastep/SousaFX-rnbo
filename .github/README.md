@@ -22,6 +22,14 @@ Find installation instructions, audio effects overviews, and more in this online
 
 ![rainbow](./media/layout.webp)
 
+![gear-off](https://jbaylies.github.io/sousastep.quest/images/gear-off.webp)
+
+![gear-on-top](https://jbaylies.github.io/sousastep.quest/images/gear-on-top.webp)
+
+![gear-on-bottom](https://jbaylies.github.io/sousastep.quest/images/gear-on-bottom.webp)
+
+![gear-on-main](https://jbaylies.github.io/sousastep.quest/images/gear-on-main.webp)
+
 <a href="#scroll-scripts">![rainbow](./media/rainbow.png)</a>
 
 # :scroll: Scripts
