@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "dsp.gen",
-        "rect": [ 1138.0, 398.0, 755.0, 785.0 ],
+        "rect": [ 599.0, 515.0, 755.0, 785.0 ],
         "boxes": [
             {
                 "box": {
@@ -56,7 +56,7 @@
             },
             {
                 "box": {
-                    "code": "/* SVF structure by Andrew Simper\r\n * Low, with bounded terms\n * https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf\r\n * stable cf between 0 .. sr/2\r\n * modified with Claude: https://claude.ai/share/e9c56f41-4400-4ba1-8c01-31d7f1fdbfed\r\n * & https://claude.ai/share/5e4e2ca1-0dea-4457-8526-4e41f7e50cd0\r\n */\n\nsvf_lp(xin, cf, q) {\n    History y0(0), y1(0);\n\n    g  = tan(cf * PI / samplerate);\n    r  = 1.0 / q;\n    a1 = 1.0 / (1.0 + g * (g + r));\n    a2 = g * a1;\n    a3 = g * a2;\n\n    v1 = a1 * y0 + a2 * (xin - y1);\n    v2 = y1 + a2 * y0 + a3 * (xin - y1);\n\n    y0 = 2.0 * v1 - y0;\n    y1 = 2.0 * v2 - y1;\n\n    return v2 * clip(r, 0.0, 1.0);\n}\n\ncf = clip(in2, 1.0, samplerate * 0.499);\nq  = clip(in3, 0.5, 20.5);\n\nstage1 = svf_lp(in1, cf, q);\nout1   = svf_lp(stage1, cf, q);\n",
+                    "code": "/* SVF structure by Andrew Simper\r\n * Low, with bounded terms\n * https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf\r\n * stable cf between 0 .. sr/2\r\n * modified with Claude: https://claude.ai/share/e9c56f41-4400-4ba1-8c01-31d7f1fdbfed\r\n * & https://claude.ai/share/5e4e2ca1-0dea-4457-8526-4e41f7e50cd0\r\n * & https://claude.ai/share/3c4245ae-0350-44dc-9bfe-67170618f1e4\r\n */\n\nrequire(\"halfband_ppiir.genexpr\");\r\rsvf_lp_os(xin0, xin1, xin2, xin3, cf, q, sr) {\r    History y0(0), y1(0);\r\r    r  = 1.0 / q;\r    g  = tan(cf * PI / sr);\r    a1 = 1.0 / (1.0 + g * (g + r));\r    a2 = g * a1;\r    a3 = g * a2;\r    rc = clip(r, 0.0, 1.0);\r\r    // phase 0\r    v1 = a1 * y0 + a2 * (xin0 - y1);\r    v2 = y1 + a2 * y0 + a3 * (xin0 - y1);\r    y0 = 2.0 * v1 - y0;\r    y1 = 2.0 * v2 - y1;\r    o0 = v2 * rc;\r\r    // phase 1\r    v1 = a1 * y0 + a2 * (xin1 - y1);\r    v2 = y1 + a2 * y0 + a3 * (xin1 - y1);\r    y0 = 2.0 * v1 - y0;\r    y1 = 2.0 * v2 - y1;\r    o1 = v2 * rc;\r\r    // phase 2\r    v1 = a1 * y0 + a2 * (xin2 - y1);\r    v2 = y1 + a2 * y0 + a3 * (xin2 - y1);\r    y0 = 2.0 * v1 - y0;\r    y1 = 2.0 * v2 - y1;\r    o2 = v2 * rc;\r\r    // phase 3\r    v1 = a1 * y0 + a2 * (xin3 - y1);\r    v2 = y1 + a2 * y0 + a3 * (xin3 - y1);\r    y0 = 2.0 * v1 - y0;\r    y1 = 2.0 * v2 - y1;\r    o3 = v2 * rc;\r\r    return o0, o1, o2, o3;\r}\r\rcf    = clip(in2, 1.0, samplerate * 0.499);\rq     = clip(in3, 0.5, 20.5);\rsr_os = samplerate * 4.0;\r\rup0, up1, up2, up3 = upsample4x_ppiir(in1);\r\rs0, s1, s2, s3 = svf_lp_os(up0, up1, up2, up3, cf, q, sr_os);\rf0, f1, f2, f3 = svf_lp_os(s0, s1, s2, s3, cf, q, sr_os);\r\rout1 = downsample4x_ppiir(f0, f1, f2, f3);\r\n",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -94,6 +94,7 @@
                     "source": [ "obj-7", 0 ]
                 }
             }
-        ]
+        ],
+        "autosave": 0
     }
 }
