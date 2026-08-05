@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
@@ -26,7 +26,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 37.5, 144.0, 122.0, 47.0 ],
+                    "presentation_rect": [ 37.0, 144.0, 122.0, 47.0 ],
                     "text": "soloing",
                     "textjustification": 1
                 }
@@ -44,8 +44,60 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 8.0, 86.0, 184.0, 223.0 ],
+                    "presentation_rect": [ 7.0, 86.0, 184.0, 223.0 ],
                     "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-149",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1443.0, 864.0, 118.0, 22.0 ],
+                    "restore": [ 24.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr harmonic_drive",
+                    "varname": "harmonic_drive"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-152",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1492.0, 898.0, 86.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 113.0, 121.0, 62.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "live.dial[60]",
+                            "parameter_mmax": 100.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "harmonic drive",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 5
+                        }
+                    },
+                    "varname": "live.dial[16]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-154",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1492.0, 959.0, 279.0, 22.0 ],
+                    "text": "prepend wobblefxbypass/overdrive/harmonic_drive"
                 }
             },
             {
@@ -110,7 +162,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2638.0, 1653.0, 172.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 1.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -567,7 +619,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1324.0, 1949.0, 155.0, 22.0 ],
-                    "restore": [ 46.0 ],
+                    "restore": [ 11.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -584,7 +636,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1108.0, 1948.0, 126.0, 22.0 ],
-                    "restore": [ 2.0 ],
+                    "restore": [ 6.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -739,7 +791,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 3233.0, 1233.0, 124.0, 22.0 ],
-                    "restore": [ 4.5 ],
+                    "restore": [ 12.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -773,7 +825,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2862.0, 1233.0, 115.0, 22.0 ],
-                    "restore": [ 38.0 ],
+                    "restore": [ 36.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -927,7 +979,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2572.0, 1239.0, 76.0, 22.0 ],
-                    "restore": [ 50.0 ],
+                    "restore": [ 44.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1099,7 +1151,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2596.0, 794.0, 152.0, 22.0 ],
-                    "restore": [ 21.0 ],
+                    "restore": [ 6.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1116,7 +1168,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2262.0, 794.0, 132.0, 22.0 ],
-                    "restore": [ 22.0 ],
+                    "restore": [ 33.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1133,7 +1185,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1965.0, 794.0, 144.0, 22.0 ],
-                    "restore": [ 1200.0 ],
+                    "restore": [ 1503.937007874016 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1415,7 +1467,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2435.0, 295.0, 150.0, 22.0 ],
-                    "restore": [ 10.0 ],
+                    "restore": [ 1.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1432,7 +1484,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2126.0, 295.0, 130.0, 22.0 ],
-                    "restore": [ 34.535433070866105 ],
+                    "restore": [ 33.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1573,7 +1625,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2426.0, 137.0, 138.0, 22.0 ],
-                    "restore": [ -6.0 ],
+                    "restore": [ -1.5 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1731,7 +1783,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.5 ],
+                    "restore": [ 0.48 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2181,7 +2233,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1429.0, 219.0, 109.0, 22.0 ],
-                    "restore": [ 8.0 ],
+                    "restore": [ 12.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2198,7 +2250,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1420.0, 49.0, 127.0, 22.0 ],
-                    "restore": [ 24.0 ],
+                    "restore": [ 11.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2352,7 +2404,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1656.0, 645.0, 111.0, 22.0 ],
-                    "restore": [ 66.0 ],
+                    "restore": [ 85.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2368,14 +2420,14 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1597.0, 793.0, 118.0, 22.0 ],
-                    "restore": [ 22.0 ],
+                    "patching_rect": [ 1609.5, 789.0, 92.0, 22.0 ],
+                    "restore": [ 24.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
                     },
-                    "text": "pattr overdrive_drive",
-                    "varname": "overdrive_drive"
+                    "text": "pattr tuba_drive",
+                    "varname": "tuba_drive"
                 }
             },
             {
@@ -2388,7 +2440,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1702.0, 675.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 57.5, 115.0, 27.0, 48.0 ],
+                    "presentation_rect": [ 78.0, 121.0, 27.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[10]",
@@ -2412,13 +2464,13 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1646.0, 827.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 109.5, 115.0, 27.0, 48.0 ],
+                    "presentation_rect": [ 12.5, 121.0, 62.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[9]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "drive",
+                            "parameter_shortname": "tuba drive",
                             "parameter_type": 0,
                             "parameter_unitstyle": 5
                         }
@@ -2433,8 +2485,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1646.0, 888.0, 223.0, 22.0 ],
-                    "text": "prepend wobblefxbypass/overdrive/drive"
+                    "patching_rect": [ 1646.0, 888.0, 253.0, 22.0 ],
+                    "text": "prepend wobblefxbypass/overdrive/tuba_drive"
                 }
             },
             {
@@ -2568,7 +2620,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 616.0, 52.0, 122.0, 22.0 ],
-                    "restore": [ 150.0 ],
+                    "restore": [ 200.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2871,7 +2923,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 686.0, 244.0, 121.0, 22.0 ],
-                    "restore": [ 21.0 ],
+                    "restore": [ 23.023622047244075 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -3430,6 +3482,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-152", 0 ],
+                    "source": [ "obj-149", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-122", 0 ],
                     "source": [ "obj-15", 0 ]
                 }
@@ -3448,8 +3506,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-154", 0 ],
+                    "source": [ "obj-152", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-97", 0 ],
                     "source": [ "obj-153", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-123", 0 ],
+                    "source": [ "obj-154", 0 ]
                 }
             },
             {
