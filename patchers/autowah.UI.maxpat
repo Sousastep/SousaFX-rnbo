@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 0.0, 53.0, 2136.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -26,7 +26,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 37.0, 144.0, 122.0, 47.0 ],
+                    "presentation_rect": [ 36.5, 144.0, 122.0, 47.0 ],
                     "text": "soloing",
                     "textjustification": 1
                 }
@@ -44,8 +44,60 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 7.0, 86.0, 184.0, 223.0 ],
+                    "presentation_rect": [ 7.0, 42.5, 184.0, 266.5 ],
                     "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-168",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 1553.5, 1046.0, 148.0, 22.0 ],
+                    "restore": [ 48.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr harmonic_mod_peak",
+                    "varname": "harmonic_mod_peak"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-169",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 1617.5, 1081.0, 86.0, 48.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 57.0, 129.0, 84.0, 48.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "live.dial[61]",
+                            "parameter_mmax": 60.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "harmonic mod peak",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 4
+                        }
+                    },
+                    "varname": "live.dial[34]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-167",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1617.5, 1141.0, 257.0, 22.0 ],
+                    "text": "prepend wobblefxbypass/harmonic_mod_peak"
                 }
             },
             {
@@ -56,7 +108,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1443.0, 864.0, 118.0, 22.0 ],
-                    "restore": [ 24.0 ],
+                    "restore": [ 34.23622047244096 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -75,7 +127,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1492.0, 898.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 113.0, 121.0, 62.0, 48.0 ],
+                    "presentation_rect": [ 114.0, 73.0, 62.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[60]",
@@ -113,7 +165,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2620.0, 1711.0, 142.0, 18.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 147.0, 56.0, 181.0, 18.0 ],
+                    "presentation_rect": [ 248.0, 56.0, 118.0, 18.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -369,7 +421,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1711.0, 1707.0, 142.0, 18.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 146.5, 36.0, 182.0, 18.0 ],
+                    "presentation_rect": [ 248.0, 36.0, 119.0, 18.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -2186,7 +2238,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 203.0, 909.0, 50.0, 63.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 71.5, 14.0, 90.0, 63.0 ],
+                    "presentation_rect": [ 172.5, 14.0, 90.0, 63.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[22]",
@@ -2391,7 +2443,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 429.0, 138.0, 159.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 16.0, 92.0, 166.0, 21.0 ],
+                    "presentation_rect": [ 15.5, 45.0, 166.0, 21.0 ],
                     "text": "pre-LPF overdrive",
                     "textjustification": 1
                 }
@@ -2440,7 +2492,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1702.0, 675.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 78.0, 121.0, 27.0, 48.0 ],
+                    "presentation_rect": [ 79.0, 73.0, 27.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[10]",
@@ -2464,7 +2516,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1646.0, 827.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 12.5, 121.0, 62.0, 48.0 ],
+                    "presentation_rect": [ 14.0, 73.0, 62.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[9]",
@@ -3127,7 +3179,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 883.0, 59.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.0, 91.0, 167.0, 213.0 ],
+                    "presentation_rect": [ 15.0, 45.0, 167.0, 259.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -3154,7 +3206,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 362.0, 558.0, 215.0, 54.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.0, 6.0, 360.0, 78.0 ],
+                    "presentation_rect": [ 10.0, 6.0, 360.0, 47.5 ],
                     "size": 1.0
                 }
             },
@@ -3592,6 +3644,24 @@
                 "patchline": {
                     "destination": [ "obj-97", 0 ],
                     "source": [ "obj-166", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-123", 0 ],
+                    "source": [ "obj-167", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-169", 0 ],
+                    "source": [ "obj-168", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-167", 0 ],
+                    "source": [ "obj-169", 0 ]
                 }
             },
             {
