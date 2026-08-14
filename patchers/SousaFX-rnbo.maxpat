@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 430.0, 569.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -1955,11 +1955,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
                     "numoutlets": 18,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -3954,7 +3954,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 4,
+                            "revision": 5,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4294,7 +4294,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 4,
+                            "revision": 5,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4463,7 +4463,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 4,
+                            "revision": 5,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4810,7 +4810,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
+                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
@@ -6393,7 +6393,7 @@
                     "fontname": "Ableton Sans Medium",
                     "hint": "sampling rate",
                     "id": "obj-122",
-                    "items": [ 32000, ",", 44100, ",", 48000, ",", 64000, ",", 88200, ",", 96000, ",", 128000, ",", 176400, ",", 192000 ],
+                    "items": [ 32000, ",", 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -6688,7 +6688,7 @@
                     "patching_rect": [ 1433.5, 2312.0, 108.0, 31.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 248.0, 213.0, 121.0, 31.0 ],
-                    "text": "playing",
+                    "text": "cleared",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "textjustification": 1
                 }
@@ -6864,7 +6864,7 @@
             {
                 "box": {
                     "angle": 0.0,
-                    "bgcolor": [ 0.6, 0.8, 0.3, 0.8 ],
+                    "bgcolor": [ 0.1, 0.1, 0.1, 0.12 ],
                     "id": "obj-42",
                     "maxclass": "panel",
                     "mode": 0,
@@ -6886,7 +6886,7 @@
                     "patching_rect": [ 1797.5, 2388.0, 105.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 53.0, 214.0, 121.0, 29.0 ],
-                    "text": "playing",
+                    "text": "cleared",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "textjustification": 1
                 }
@@ -7062,7 +7062,7 @@
             {
                 "box": {
                     "angle": 0.0,
-                    "bgcolor": [ 0.6, 0.8, 0.3, 0.8 ],
+                    "bgcolor": [ 0.1, 0.1, 0.1, 0.12 ],
                     "id": "obj-56",
                     "maxclass": "panel",
                     "mode": 0,
@@ -11294,11 +11294,12 @@
             "obj-377::obj-133": [ "mid freq", "mid freq", 0 ],
             "obj-377::obj-140": [ "live.menu[1]", "live.menu", 0 ],
             "obj-377::obj-145": [ "autoswing enable", "autoswing enable", 0 ],
+            "obj-377::obj-152": [ "live.dial[60]", "harmonic drive", 0 ],
             "obj-377::obj-155": [ "live.menu", "live.menu", 0 ],
             "obj-377::obj-157": [ "live.menu[2]", "live.menu", 0 ],
             "obj-377::obj-165": [ "octaver enable[1]", "octaver enable", 0 ],
             "obj-377::obj-2": [ "high boost", "high boost", 0 ],
-            "obj-377::obj-20": [ "live.dial[9]", "drive", 0 ],
+            "obj-377::obj-20": [ "live.dial[9]", "tuba drive", 0 ],
             "obj-377::obj-21": [ "live.dial[10]", "mix", 0 ],
             "obj-377::obj-24": [ "octaver volume", "volume", 0 ],
             "obj-377::obj-25": [ "octaver compression", "compress", 0 ],
