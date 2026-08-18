@@ -20,6 +20,442 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-47",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 560.0, 770.0, 30.0, 23.0 ],
+                    "rnbo_classname": "sig~",
+                    "rnbo_extra_attributes": {
+                        "unit": "ms"
+                    },
+                    "rnbo_serial": 12,
+                    "rnbo_uniqueid": "sig~_obj-47",
+                    "text": "sig~"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-48",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 560.0, 730.0, 239.0, 23.0 ],
+                    "rnbo_classname": "param",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "sendinit": 1,
+                        "fromnormalized": "",
+                        "tonormalized": "",
+                        "unit": "",
+                        "ctlin": -1.0,
+                        "order": "0",
+                        "steps": 0.0,
+                        "enum": "",
+                        "displayname": "",
+                        "displayorder": "-",
+                        "preset": 1,
+                        "exponent": 1.0
+                    },
+                    "rnbo_serial": 18,
+                    "rnbo_uniqueid": "harmonic_dry_amt",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "value": {
+                                "attrOrProp": 2,
+                                "digest": "Set initial value",
+                                "defaultarg": 2,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0",
+                                "label": "Initial Value",
+                                "displayorder": 3
+                            },
+                            "normalizedvalue": {
+                                "attrOrProp": 1,
+                                "digest": "Set value normalized. ",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number"
+                            },
+                            "reset": {
+                                "attrOrProp": 1,
+                                "digest": "Reset param to initial value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            },
+                            "normalized": {
+                                "attrOrProp": 1,
+                                "digest": "Normalized parameter value.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "number"
+                            },
+                            "name": {
+                                "attrOrProp": 2,
+                                "digest": "Name of the parameter",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "label": "Parameter Name",
+                                "mandatory": 1
+                            },
+                            "enum": {
+                                "attrOrProp": 2,
+                                "digest": "Use an enumerated output",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "list",
+                                "label": "Enum Values",
+                                "displayorder": 6
+                            },
+                            "minimum": {
+                                "attrOrProp": 2,
+                                "digest": "Minimum value",
+                                "isalias": 0,
+                                "aliases": [ "min" ],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0",
+                                "label": "Minimum",
+                                "displayorder": 1
+                            },
+                            "min": {
+                                "attrOrProp": 2,
+                                "digest": "Minimum value",
+                                "isalias": 1,
+                                "aliasOf": "minimum",
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0",
+                                "label": "Minimum",
+                                "displayorder": 1
+                            },
+                            "maximum": {
+                                "attrOrProp": 2,
+                                "digest": "Maximum value",
+                                "isalias": 0,
+                                "aliases": [ "max" ],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "1",
+                                "label": "Maximum",
+                                "displayorder": 2
+                            },
+                            "max": {
+                                "attrOrProp": 2,
+                                "digest": "Maximum value",
+                                "isalias": 1,
+                                "aliasOf": "maximum",
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "1",
+                                "label": "Maximum",
+                                "displayorder": 2
+                            },
+                            "exponent": {
+                                "attrOrProp": 2,
+                                "digest": "Scale values exponentially",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "1",
+                                "label": "Exponent",
+                                "displayorder": 7
+                            },
+                            "steps": {
+                                "attrOrProp": 2,
+                                "digest": "Divide the output into a number of discrete steps",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0",
+                                "label": "Steps",
+                                "displayorder": 8
+                            },
+                            "displayName": {
+                                "attrOrProp": 2,
+                                "digest": "DEPRECATED: Use the lower case 'displayname' instead",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 1,
+                                "touched": 0,
+                                "type": "symbol",
+                                "label": "Display Name"
+                            },
+                            "displayname": {
+                                "attrOrProp": 2,
+                                "digest": "A more readable name for the parameter in an external RNBO target",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Display Name",
+                                "displayorder": 14
+                            },
+                            "unit": {
+                                "attrOrProp": 2,
+                                "digest": "A symbol to describe the unit of the parameter in an external RNBO target",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Unit",
+                                "displayorder": 15
+                            },
+                            "tonormalized": {
+                                "attrOrProp": 2,
+                                "digest": "Converts a real parameter value to its normalized form",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "label": "To Normalized Expression",
+                                "displayorder": 10
+                            },
+                            "fromnormalized": {
+                                "attrOrProp": 2,
+                                "digest": "Converts a normalized parameter into its actual parameter value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "label": "From Normalized Expression",
+                                "displayorder": 9
+                            },
+                            "order": {
+                                "attrOrProp": 2,
+                                "digest": "Order in which initial parameter values will be sent out on patcher load. The order can be numeric or symbolic ('first' and 'last')",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "0",
+                                "label": "Restore Order",
+                                "displayorder": 12
+                            },
+                            "displayorder": {
+                                "attrOrProp": 2,
+                                "digest": "Order in which parameters will show up in a list of all parameters. The order can be numeric or symbolic ('first' and 'last')",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "-",
+                                "label": "Display Order",
+                                "displayorder": 13
+                            },
+                            "sendinit": {
+                                "attrOrProp": 2,
+                                "digest": "Send initial value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "true",
+                                "label": "Send Init",
+                                "displayorder": 4
+                            },
+                            "ctlin": {
+                                "attrOrProp": 2,
+                                "digest": "MIDI controller number to control this parameter.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "-1",
+                                "label": "MIDI Controller Number.",
+                                "displayorder": 16
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 17
+                            },
+                            "nopreset": {
+                                "attrOrProp": 2,
+                                "digest": "Do not add this value to the preset [DEPRECATED - USE @preset 0 instead].",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 1,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "false"
+                            },
+                            "preset": {
+                                "attrOrProp": 2,
+                                "digest": "Add this value to the preset.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "true",
+                                "label": "Include In Preset",
+                                "displayorder": 11
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "value",
+                                "type": "number",
+                                "digest": "Parameter value",
+                                "defaultarg": 2,
+                                "hot": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "normalizedvalue",
+                                "type": "number",
+                                "digest": "Set value normalized. ",
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "value",
+                                "type": "number",
+                                "digest": "Parameter value",
+                                "defaultarg": 2,
+                                "hot": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "normalized",
+                                "type": "number",
+                                "digest": "Normalized parameter value.",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "param",
+                        "aliasOf": "param",
+                        "classname": "param",
+                        "operator": 0,
+                        "versionId": -1093178486,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "param harmonic_dry_amt 0 @min 0 @max 1",
+                    "varname": "harmonic_dry_amt"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-41",
                     "maxclass": "newobj",
                     "numinlets": 2,
@@ -2202,7 +2638,7 @@
                                 "modernui": 1
                             },
                             "classnamespace": "dsp.gen",
-                            "rect": [ 94.0, 87.0, 1897.0, 1228.0 ],
+                            "rect": [ 746.0, 145.0, 1767.0, 1195.0 ],
                             "default_fontname": "Lato",
                             "gridonopen": 2,
                             "gridsize": [ 10.0, 10.0 ],
@@ -2212,9 +2648,67 @@
                             "boxes": [
                                 {
                                     "box": {
+                                        "maxclass": "newobj",
+                                        "text": "!- 1",
+                                        "patching_rect": [ 810.0, 153.0, 26.0, 23.0 ],
+                                        "numinlets": 1,
+                                        "numoutlets": 1,
+                                        "id": "obj-64",
+                                        "outlettype": [ "" ]
+                                    }
+                                },
+                                {
+                                    "box": {
+                                        "maxclass": "comment",
+                                        "text": "0: dry & harmonic boost\n1: harmonic boost only",
+                                        "linecount": 2,
+                                        "patching_rect": [ 670.0, 80.0, 140.0, 35.0 ],
+                                        "numinlets": 1,
+                                        "numoutlets": 0,
+                                        "id": "obj-63"
+                                    }
+                                },
+                                {
+                                    "box": {
+                                        "maxclass": "newobj",
+                                        "text": "clip 0 1",
+                                        "patching_rect": [ 810.0, 123.0, 47.0, 23.0 ],
+                                        "numinlets": 1,
+                                        "fontsize": 12.0,
+                                        "numoutlets": 1,
+                                        "id": "obj-61",
+                                        "outlettype": [ "" ]
+                                    }
+                                },
+                                {
+                                    "box": {
+                                        "maxclass": "newobj",
+                                        "text": "* -1",
+                                        "patching_rect": [ 810.0, 183.0, 28.0, 23.0 ],
+                                        "numinlets": 1,
+                                        "fontsize": 12.0,
+                                        "numoutlets": 1,
+                                        "id": "obj-60",
+                                        "outlettype": [ "" ]
+                                    }
+                                },
+                                {
+                                    "box": {
+                                        "maxclass": "newobj",
+                                        "text": "in 15",
+                                        "patching_rect": [ 810.0, 89.0, 35.0, 23.0 ],
+                                        "numinlets": 0,
+                                        "fontsize": 12.0,
+                                        "numoutlets": 1,
+                                        "id": "obj-59",
+                                        "outlettype": [ "" ]
+                                    }
+                                },
+                                {
+                                    "box": {
                                         "maxclass": "comment",
                                         "text": "allpasses may correct asymmetrical waveform",
-                                        "patching_rect": [ 1180.0, 830.0, 290.0, 21.0 ],
+                                        "patching_rect": [ 1180.0, 1009.0, 290.0, 21.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-58"
@@ -2224,7 +2718,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "0.16",
-                                        "patching_rect": [ 780.0, 660.0, 32.0, 23.0 ],
+                                        "patching_rect": [ 780.0, 839.0, 32.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-56",
@@ -2234,7 +2728,7 @@
                                 {
                                     "box": {
                                         "maxclass": "codebox",
-                                        "patching_rect": [ 920.0, 780.0, 250.0, 160.0 ],
+                                        "patching_rect": [ 920.0, 959.0, 250.0, 160.0 ],
                                         "numinlets": 3,
                                         "fontsize": 12.0,
                                         "numoutlets": 1,
@@ -2249,7 +2743,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "220",
-                                        "patching_rect": [ 700.0, 660.0, 29.0, 23.0 ],
+                                        "patching_rect": [ 700.0, 839.0, 29.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-52",
@@ -2259,7 +2753,7 @@
                                 {
                                     "box": {
                                         "maxclass": "codebox",
-                                        "patching_rect": [ 500.0, 780.0, 250.0, 160.0 ],
+                                        "patching_rect": [ 500.0, 959.0, 250.0, 160.0 ],
                                         "numinlets": 3,
                                         "fontsize": 12.0,
                                         "numoutlets": 1,
@@ -2274,7 +2768,7 @@
                                     "box": {
                                         "maxclass": "comment",
                                         "text": "harmonic output gain",
-                                        "patching_rect": [ 1400.0, 1172.0, 150.0, 21.0 ],
+                                        "patching_rect": [ 1340.0, 1281.0, 150.0, 21.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-48"
@@ -2284,7 +2778,7 @@
                                     "box": {
                                         "maxclass": "comment",
                                         "text": "harmonic pre-asym gain",
-                                        "patching_rect": [ 1300.0, 170.0, 150.0, 21.0 ],
+                                        "patching_rect": [ 1300.0, 349.0, 150.0, 21.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-45"
@@ -2294,7 +2788,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "clip -48 48",
-                                        "patching_rect": [ 1360.0, 1202.0, 65.0, 23.0 ],
+                                        "patching_rect": [ 1300.0, 1311.0, 65.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 1,
                                         "id": "obj-36",
@@ -2305,7 +2799,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "dbtoa",
-                                        "patching_rect": [ 1360.0, 1232.0, 39.0, 23.0 ],
+                                        "patching_rect": [ 1300.0, 1341.0, 39.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 1,
                                         "id": "obj-38",
@@ -2316,7 +2810,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "clip -48 48",
-                                        "patching_rect": [ 1260.0, 200.0, 65.0, 23.0 ],
+                                        "patching_rect": [ 1260.0, 379.0, 65.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 1,
                                         "id": "obj-20",
@@ -2327,7 +2821,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "dbtoa",
-                                        "patching_rect": [ 1260.0, 230.0, 39.0, 23.0 ],
+                                        "patching_rect": [ 1260.0, 409.0, 39.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 1,
                                         "id": "obj-19",
@@ -2338,7 +2832,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 14",
-                                        "patching_rect": [ 1360.0, 1172.0, 35.0, 23.0 ],
+                                        "patching_rect": [ 1300.0, 1281.0, 35.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-12",
@@ -2349,7 +2843,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 3",
-                                        "patching_rect": [ 1260.0, 170.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 1260.0, 349.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-1",
@@ -2360,7 +2854,7 @@
                                     "box": {
                                         "maxclass": "comment",
                                         "text": "input, freq Hz, q unipolar, gain dB",
-                                        "patching_rect": [ 920.0, 140.0, 190.0, 21.0 ],
+                                        "patching_rect": [ 920.0, 319.0, 190.0, 21.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-39"
@@ -2370,7 +2864,7 @@
                                     "box": {
                                         "maxclass": "comment",
                                         "text": "unipolar modulation * dB",
-                                        "patching_rect": [ 1000.0, 100.0, 150.0, 21.0 ],
+                                        "patching_rect": [ 1000.0, 279.0, 150.0, 21.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-37"
@@ -2380,7 +2874,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "*",
-                                        "patching_rect": [ 970.0, 100.0, 29.5, 23.0 ],
+                                        "patching_rect": [ 970.0, 279.0, 29.5, 23.0 ],
                                         "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-7",
@@ -2391,7 +2885,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 9",
-                                        "patching_rect": [ 970.0, 40.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 970.0, 219.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-3",
@@ -2402,7 +2896,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "*",
-                                        "patching_rect": [ 890.0, 80.0, 29.5, 23.0 ],
+                                        "patching_rect": [ 890.0, 259.0, 29.5, 23.0 ],
                                         "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-55",
@@ -2413,7 +2907,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 10",
-                                        "patching_rect": [ 1610.0, 40.0, 35.0, 23.0 ],
+                                        "patching_rect": [ 1610.0, 219.0, 35.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-54",
@@ -2424,7 +2918,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "*",
-                                        "patching_rect": [ 118.0, 1109.0, 29.5, 23.0 ],
+                                        "patching_rect": [ 118.0, 1288.0, 29.5, 23.0 ],
                                         "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-46",
@@ -2435,7 +2929,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "dbtoa",
-                                        "patching_rect": [ 160.0, 1044.0, 39.0, 23.0 ],
+                                        "patching_rect": [ 160.0, 1223.0, 39.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 1,
                                         "id": "obj-43",
@@ -2446,7 +2940,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "scale 0 100 0 -24 0.1",
-                                        "patching_rect": [ 160.0, 1000.0, 120.0, 23.0 ],
+                                        "patching_rect": [ 160.0, 1179.0, 120.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 1,
                                         "id": "obj-44",
@@ -2457,7 +2951,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 8",
-                                        "patching_rect": [ 890.0, 40.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 890.0, 219.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-34",
@@ -2468,7 +2962,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 7",
-                                        "patching_rect": [ 832.0, 40.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 832.0, 219.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-33",
@@ -2479,7 +2973,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 6",
-                                        "patching_rect": [ 773.0, 40.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 773.0, 219.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-32",
@@ -2490,7 +2984,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 5",
-                                        "patching_rect": [ 715.0, 40.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 715.0, 219.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-31",
@@ -2501,7 +2995,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 4",
-                                        "patching_rect": [ 668.0, 40.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 668.0, 219.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-30",
@@ -2511,9 +3005,9 @@
                                 {
                                     "box": {
                                         "maxclass": "newobj",
-                                        "text": "* -1",
-                                        "patching_rect": [ 760.0, 140.0, 28.0, 23.0 ],
-                                        "numinlets": 1,
+                                        "text": "*",
+                                        "patching_rect": [ 760.0, 319.0, 29.5, 23.0 ],
+                                        "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-29",
                                         "outlettype": [ "" ]
@@ -2523,7 +3017,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "*",
-                                        "patching_rect": [ 500.0, 249.0, 29.5, 23.0 ],
+                                        "patching_rect": [ 500.0, 428.0, 29.5, 23.0 ],
                                         "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-28",
@@ -2534,7 +3028,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "*",
-                                        "patching_rect": [ 920.0, 250.0, 29.5, 23.0 ],
+                                        "patching_rect": [ 920.0, 429.0, 29.5, 23.0 ],
                                         "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-27",
@@ -2545,7 +3039,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "gen @file jb.bell-as",
-                                        "patching_rect": [ 810.0, 140.0, 107.0, 23.0 ],
+                                        "patching_rect": [ 810.0, 319.0, 107.0, 23.0 ],
                                         "numinlets": 4,
                                         "numoutlets": 1,
                                         "id": "obj-25",
@@ -2556,7 +3050,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "gen @file jb.bell-as",
-                                        "patching_rect": [ 630.0, 140.0, 107.0, 23.0 ],
+                                        "patching_rect": [ 630.0, 319.0, 107.0, 23.0 ],
                                         "numinlets": 4,
                                         "numoutlets": 1,
                                         "id": "obj-26",
@@ -2567,7 +3061,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "gen @file jb.bell-as",
-                                        "patching_rect": [ 120.0, 690.0, 107.0, 23.0 ],
+                                        "patching_rect": [ 120.0, 869.0, 107.0, 23.0 ],
                                         "numinlets": 4,
                                         "numoutlets": 1,
                                         "id": "obj-24",
@@ -2578,7 +3072,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "*",
-                                        "patching_rect": [ 980.0, 1172.0, 29.5, 23.0 ],
+                                        "patching_rect": [ 920.0, 1281.0, 29.5, 23.0 ],
                                         "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-22",
@@ -2589,7 +3083,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "*",
-                                        "patching_rect": [ 560.0, 1170.0, 29.5, 23.0 ],
+                                        "patching_rect": [ 500.0, 1279.0, 29.5, 23.0 ],
                                         "numinlets": 2,
                                         "numoutlets": 1,
                                         "id": "obj-23",
@@ -2600,7 +3094,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 13",
-                                        "patching_rect": [ 343.0, 602.0, 35.0, 23.0 ],
+                                        "patching_rect": [ 343.0, 781.0, 35.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-16",
@@ -2611,7 +3105,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 12",
-                                        "patching_rect": [ 286.0, 601.0, 35.0, 23.0 ],
+                                        "patching_rect": [ 286.0, 780.0, 35.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-15",
@@ -2622,7 +3116,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 11",
-                                        "patching_rect": [ 230.0, 600.0, 35.0, 23.0 ],
+                                        "patching_rect": [ 230.0, 779.0, 35.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-13",
@@ -2633,7 +3127,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 2",
-                                        "patching_rect": [ 450.0, 590.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 450.0, 769.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-14",
@@ -2643,7 +3137,7 @@
                                 {
                                     "box": {
                                         "maxclass": "codebox",
-                                        "patching_rect": [ 120.0, 730.0, 350.0, 200.0 ],
+                                        "patching_rect": [ 120.0, 909.0, 350.0, 200.0 ],
                                         "numinlets": 2,
                                         "fontsize": 12.0,
                                         "numoutlets": 1,
@@ -2658,7 +3152,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "in 1",
-                                        "patching_rect": [ 120.0, 20.0, 28.0, 23.0 ],
+                                        "patching_rect": [ 120.0, 199.0, 28.0, 23.0 ],
                                         "numinlets": 0,
                                         "numoutlets": 1,
                                         "id": "obj-9",
@@ -2669,7 +3163,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "out 1",
-                                        "patching_rect": [ 120.0, 1170.0, 36.0, 23.0 ],
+                                        "patching_rect": [ 120.0, 1349.0, 36.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-10"
@@ -2678,7 +3172,7 @@
                                 {
                                     "box": {
                                         "maxclass": "codebox",
-                                        "patching_rect": [ 920.0, 300.0, 340.0, 270.0 ],
+                                        "patching_rect": [ 920.0, 479.0, 340.0, 270.0 ],
                                         "numinlets": 1,
                                         "fontsize": 12.0,
                                         "numoutlets": 1,
@@ -2693,7 +3187,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "out 3",
-                                        "patching_rect": [ 980.0, 1242.0, 36.0, 23.0 ],
+                                        "patching_rect": [ 920.0, 1351.0, 36.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-6"
@@ -2702,7 +3196,7 @@
                                 {
                                     "box": {
                                         "maxclass": "codebox",
-                                        "patching_rect": [ 500.0, 296.0, 340.0, 274.0 ],
+                                        "patching_rect": [ 500.0, 475.0, 340.0, 274.0 ],
                                         "numinlets": 1,
                                         "fontsize": 12.0,
                                         "numoutlets": 1,
@@ -2717,7 +3211,7 @@
                                     "box": {
                                         "maxclass": "newobj",
                                         "text": "out 2",
-                                        "patching_rect": [ 560.0, 1242.0, 36.0, 23.0 ],
+                                        "patching_rect": [ 500.0, 1351.0, 36.0, 23.0 ],
                                         "numinlets": 1,
                                         "numoutlets": 0,
                                         "id": "obj-4"
@@ -2727,9 +3221,40 @@
                             "lines": [
                                 {
                                     "patchline": {
-                                        "source": [ "obj-9", 0 ],
-                                        "destination": [ "obj-26", 0 ],
-                                        "order": 2
+                                        "source": [ "obj-64", 0 ],
+                                        "destination": [ "obj-60", 0 ]
+                                    }
+                                },
+                                {
+                                    "patchline": {
+                                        "source": [ "obj-61", 0 ],
+                                        "destination": [ "obj-64", 0 ]
+                                    }
+                                },
+                                {
+                                    "patchline": {
+                                        "source": [ "obj-59", 0 ],
+                                        "destination": [ "obj-61", 0 ]
+                                    }
+                                },
+                                {
+                                    "patchline": {
+                                        "source": [ "obj-60", 0 ],
+                                        "destination": [ "obj-29", 1 ]
+                                    }
+                                },
+                                {
+                                    "patchline": {
+                                        "source": [ "obj-29", 0 ],
+                                        "destination": [ "obj-28", 0 ],
+                                        "order": 1
+                                    }
+                                },
+                                {
+                                    "patchline": {
+                                        "source": [ "obj-29", 0 ],
+                                        "destination": [ "obj-27", 0 ],
+                                        "order": 0
                                     }
                                 },
                                 {
@@ -2737,6 +3262,13 @@
                                         "source": [ "obj-9", 0 ],
                                         "destination": [ "obj-29", 0 ],
                                         "order": 1
+                                    }
+                                },
+                                {
+                                    "patchline": {
+                                        "source": [ "obj-9", 0 ],
+                                        "destination": [ "obj-26", 0 ],
+                                        "order": 2
                                     }
                                 },
                                 {
@@ -2940,15 +3472,15 @@
                                     "patchline": {
                                         "source": [ "obj-14", 0 ],
                                         "destination": [ "obj-8", 1 ],
-                                        "order": 1
+                                        "order": 0
                                     }
                                 },
                                 {
                                     "patchline": {
                                         "source": [ "obj-14", 0 ],
                                         "destination": [ "obj-44", 0 ],
-                                        "midpoints": [ 459.5, 717.0, 480.0, 717.0, 480.0, 960.0, 169.5, 960.0 ],
-                                        "order": 0
+                                        "midpoints": [ 459.5, 896.0, 480.0, 896.0, 480.0, 1139.0, 169.5, 1139.0 ],
+                                        "order": 1
                                     }
                                 },
                                 {
@@ -2989,20 +3521,6 @@
                                 },
                                 {
                                     "patchline": {
-                                        "source": [ "obj-29", 0 ],
-                                        "destination": [ "obj-27", 0 ],
-                                        "order": 0
-                                    }
-                                },
-                                {
-                                    "patchline": {
-                                        "source": [ "obj-29", 0 ],
-                                        "destination": [ "obj-28", 0 ],
-                                        "order": 1
-                                    }
-                                },
-                                {
-                                    "patchline": {
                                         "source": [ "obj-26", 0 ],
                                         "destination": [ "obj-28", 0 ]
                                     }
@@ -3037,7 +3555,7 @@
                     },
                     "id": "obj-64",
                     "maxclass": "newobj",
-                    "numinlets": 14,
+                    "numinlets": 15,
                     "numoutlets": 3,
                     "outlettype": [ "signal", "signal", "signal" ],
                     "patching_rect": [ 80.0, 830.0, 380.0, 23.0 ],
@@ -3106,8 +3624,8 @@
                         "p1_d2_490": 0.0,
                         "p1_d1_641": 0.0,
                         "y1_510": 0.0,
-                        "gencode": "upsample2x_ppiir(x) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x;\n\ts_1 = p1_d1 + (p1_a0 * ((x - p1_d2)));\n\ty_2 = p1_d2 + (p1_a1 * ((s_1 - p1_d3)));\n\tp1_d3 = y_2;\n\tp1_d2 = s_1;\n\tp1_d1 = x;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5, ((p0_d3 + p1_d3)) * 0.5;\n}\n\ndownsample2x_ppiir(x1, x2) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x1 - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x1;\n\ts_3 = p1_d1 + (p1_a0 * ((x2 - p1_d2)));\n\ty_4 = p1_d2 + (p1_a1 * ((s_3 - p1_d3)));\n\tp1_d3 = y_4;\n\tp1_d2 = s_3;\n\tp1_d1 = x2;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5;\n}\n\nupsample4x_ppiir(x) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0, 0, 0);\n\tpoke(pass1_buf, b, 1, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i, 0);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2, 0, 0);\n\t\tpoke(pass2_buf, b, (i * 2) + 1, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\ty3 = peek(pass2_buf, 2, 0);\n\ty4 = peek(pass2_buf, 3, 0);\n\treturn y1, y2, y3, y4;\n}\n\ndownsample4x_ppiir(x1, x2, x3, x4) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\tpoke(pass1_buf, x1, 0, 0, 0);\n\tpoke(pass1_buf, x2, 1, 0, 0);\n\tpoke(pass1_buf, x3, 2, 0, 0);\n\tpoke(pass1_buf, x4, 3, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2, 0);\n\t\tb = peek(pass1_buf, (i * 2) + 1, 0);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample8x_ppiir(x) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\ty3 = peek(pass3_buf, 2);\n\ty4 = peek(pass3_buf, 3);\n\ty5 = peek(pass3_buf, 4);\n\ty6 = peek(pass3_buf, 5);\n\ty7 = peek(pass3_buf, 6);\n\ty8 = peek(pass3_buf, 7);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8;\n}\n\ndownsample8x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample16x_ppiir(x) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\tv = peek(pass3_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass4_buf, a, i * 2);\n\t\tpoke(pass4_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\ty3 = peek(pass4_buf, 2);\n\ty4 = peek(pass4_buf, 3);\n\ty5 = peek(pass4_buf, 4);\n\ty6 = peek(pass4_buf, 5);\n\ty7 = peek(pass4_buf, 6);\n\ty8 = peek(pass4_buf, 7);\n\ty9 = peek(pass4_buf, 8);\n\ty10 = peek(pass4_buf, 9);\n\ty11 = peek(pass4_buf, 10);\n\ty12 = peek(pass4_buf, 11);\n\ty13 = peek(pass4_buf, 12);\n\ty14 = peek(pass4_buf, 13);\n\ty15 = peek(pass4_buf, 14);\n\ty16 = peek(pass4_buf, 15);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16;\n}\n\ndownsample16x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tpoke(pass1_buf, x9, 8);\n\tpoke(pass1_buf, x10, 9);\n\tpoke(pass1_buf, x11, 10);\n\tpoke(pass1_buf, x12, 11);\n\tpoke(pass1_buf, x13, 12);\n\tpoke(pass1_buf, x14, 13);\n\tpoke(pass1_buf, x15, 14);\n\tpoke(pass1_buf, x16, 15);\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass3_buf, i * 2);\n\t\tb = peek(pass3_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass4_buf, v, i);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\n\n\neq_bell(xin, cf, q, gain) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tA = pow(10, gain / 40);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / ((q * A));\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tm1 = r * (((A * A) - 1));\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\treturn xin + (m1 * v1);\n}\n\ndiodeSolve(v_in, seed_offset, gr1, gr2, is, vt) {\n\tMAX_ITER = 20;\n\tVD_CLAMP = 1.2;\n\tEXP_CLAMP = 85;\n\tinvVt = 1 / vt;\n\tvd = clip(seed_offset, -VD_CLAMP, VD_CLAMP);\n\tlo = -VD_CLAMP;\n\thi = VD_CLAMP;\n\ted1 = exp(clip((-vd) * invVt, -EXP_CLAMP, EXP_CLAMP));\n\tid1 = (is * ed1) - is;\n\tgd1 = ((is * ed1)) * invVt;\n\ted2 = exp(clip(vd * invVt, -EXP_CLAMP, EXP_CLAMP));\n\tid2 = (is * ed2) - is;\n\tgd2 = ((is * ed2)) * invVt;\n\tf = (((vd * gr1) - (v_in * gr2))) - ((id1 - id2));\n\tfor(i = 0; i < MAX_ITER; i = i + 1) {\n\t\tif(f > 0) {\n\t\t\thi = vd;\n\t\t}\n\t\telse {\n\t\t\tlo = vd;\n\t\t}\n\t\tvd_new = vd;\n\t\tvd_newton = vd - (f / ((((gr1 + gd1)) + gd2)));\n\t\ttake_newton = 0;\n\t\tif((vd_newton > lo) && (vd_newton < hi)) {\n\t\t\tif((abs(f)) < 0.001) {\n\t\t\t\ttake_newton = 1;\n\t\t\t}\n\t\t\telse if((abs(vd_newton - vd)) >= (((hi - lo)) * 0.5)) {\n\t\t\t\ttake_newton = 1;\n\t\t\t}\n\t\t}\n\t\tif(take_newton == 1) {\n\t\t\tvd_new = vd_newton;\n\t\t}\n\t\telse {\n\t\t\tvd_new = ((lo + hi)) * 0.5;\n\t\t}\n\t\ted1 = exp(clip((-vd_new) * invVt, -EXP_CLAMP, EXP_CLAMP));\n\t\tid1 = (is * ed1) - is;\n\t\tgd1 = ((is * ed1)) * invVt;\n\t\ted2 = exp(clip(vd_new * invVt, -EXP_CLAMP, EXP_CLAMP));\n\t\tid2 = (is * ed2) - is;\n\t\tgd2 = ((is * ed2)) * invVt;\n\t\tvd = vd_new;\n\t\tf = (((vd * gr1) - (v_in * gr2))) - ((id1 - id2));\n\t}\n\treturn v_in + vd, 1;\n}\n\nDiodeDistortion(v_in, gain) {\n\tHistory v_out(0);\n\tHistory vd_prev(0);\n\tis = 1e-15;\n\tvt = 0.026;\n\tgr1 = 1 / ((gain * 10000));\n\tgr2 = 1 / 10000;\n\tv_out, converged = diodeSolve(v_in, vd_prev, gr1, gr2, is, vt);\n\tif(!converged) {\n\t\tv_out, converged = diodeSolve(v_in, 0, gr1, gr2, is, vt);\n\t}\n\tvd_prev = v_out - v_in;\n\treturn v_out;\n}\n\neq_bell_5(xin, cf, q, gain) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tA = pow(10, gain / 40);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / ((q * A));\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tm1 = r * (((A * A) - 1));\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\treturn xin + (m1 * v1);\n}\n\noversample(x) {\n\treturn x < 0 ? atan(x) : x;\n}\n\nsvf_ap(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\treturn ((v2 + hp)) - (r * v1);\n}\n\neq_bell_6(xin, cf, q, gain) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tA = pow(10, gain / 40);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / ((q * A));\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tm1 = r * (((A * A) - 1));\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\treturn xin + (m1 * v1);\n}\n\noversample_7(x) {\n\treturn x > 0 ? atan(x) : x;\n}\n\nsvf_ap_8(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\treturn ((v2 + hp)) - (r * v1);\n}\n\nint_9 = int(220);\nfloat_10 = float(0.16);\nlimit = samplerate / 2;\ncf = clip(in11, 0, limit);\nq = (pow(10, (clip(in12, 0, 1)) * 2)) * 0.1;\ngain = clip(in13, -60, 60);\nexpr_11 = eq_bell(in1, cf, q, gain);\ngen_12 = expr_11;\ngain_13 = clip(in2, 0.01, 100);\nup0, up1, up2, up3 = upsample4x_ppiir(gen_12);\nup_14 = DiodeDistortion(up0, gain_13);\nup1 = DiodeDistortion(up1, gain_13);\nup2 = DiodeDistortion(up2, gain_13);\nup3 = DiodeDistortion(up3, gain_13);\nexpr_15 = dcblock(downsample4x_ppiir(up_14, up1, up2, up3));\nmul_16 = in1 * -1;\nscale_17 = scale(in2, 0, 100, 0, -24, 0.1);\ndbtoa_18 = dbtoa(scale_17);\nmul_19 = expr_15 * dbtoa_18;\nout1 = mul_19;\nclamp_20 = clamp(in14, -48, 48);\ndbtoa_21 = dbtoa(clamp_20);\nmul_22 = in9 * in10;\nlimit_23 = samplerate / 2;\ncf_24 = clip(in5, 0, limit_23);\nq_25 = (pow(10, (clip(in7, 0, 1)) * 2)) * 0.1;\ngain_26 = clip(mul_22, -60, 60);\nexpr_27 = eq_bell_5(in1, cf_24, q_25, gain_26);\ngen_28 = expr_27;\nclamp_29 = clamp(in3, -48, 48);\ndbtoa_30 = dbtoa(clamp_29);\nmul_31 = ((gen_28 + mul_16)) * dbtoa_30;\nup_32, up_33, up_34, up_35 = upsample4x_ppiir(mul_31);\nup_36 = oversample(up_32);\nup_33 = oversample(up_33);\nup_34 = oversample(up_34);\nup_35 = oversample(up_35);\nexpr_37 = dcblock(downsample4x_ppiir(up_36, up_33, up_34, up_35));\nlimit_38 = samplerate / 2;\ncf_39 = clip(int_9, 0, limit_38);\nq_40 = ((clip(float_10, 0, 1)) * 20) + 0.5;\nexpr_41 = svf_ap(expr_37, cf_39, q_40);\nmul_42 = expr_41 * dbtoa_21;\nout3 = mul_42;\nmul_43 = in8 * in10;\nlimit_44 = samplerate / 2;\ncf_45 = clip(in4, 0, limit_44);\nq_46 = (pow(10, (clip(in6, 0, 1)) * 2)) * 0.1;\ngain_47 = clip(mul_43, -60, 60);\nexpr_48 = eq_bell_6(in1, cf_45, q_46, gain_47);\ngen_49 = expr_48;\nmul_50 = ((mul_16 + gen_49)) * dbtoa_30;\nup_51, up_52, up_53, up_54 = upsample4x_ppiir(mul_50);\nup_55 = oversample_7(up_51);\nup_52 = oversample_7(up_52);\nup_53 = oversample_7(up_53);\nup_54 = oversample_7(up_54);\nexpr_56 = dcblock(downsample4x_ppiir(up_55, up_52, up_53, up_54));\nlimit_57 = samplerate / 2;\ncf_58 = clip(int_9, 0, limit_57);\nq_59 = ((clip(float_10, 0, 1)) * 20) + 0.5;\nexpr_60 = svf_ap_8(expr_56, cf_58, q_59);\nmul_61 = expr_60 * dbtoa_21;\nout2 = mul_61;",
-                        "geninlets": 14,
+                        "gencode": "upsample2x_ppiir(x) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x;\n\ts_1 = p1_d1 + (p1_a0 * ((x - p1_d2)));\n\ty_2 = p1_d2 + (p1_a1 * ((s_1 - p1_d3)));\n\tp1_d3 = y_2;\n\tp1_d2 = s_1;\n\tp1_d1 = x;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5, ((p0_d3 + p1_d3)) * 0.5;\n}\n\ndownsample2x_ppiir(x1, x2) {\n\tHistory p0_d1(0);\n\tHistory p0_d2(0);\n\tHistory p0_d3(0);\n\tHistory p1_d1(0);\n\tHistory p1_d2(0);\n\tHistory p1_d3(0);\n\tp0_a0 = 0.052037289518901;\n\tp0_a1 = 0.4378390730273;\n\tp1_a0 = 0.20139892364006;\n\tp1_a1 = 0.77390943595264;\n\tp1_d3_last = p1_d3;\n\ts = p0_d1 + (p0_a0 * ((x1 - p0_d2)));\n\ty = p0_d2 + (p0_a1 * ((s - p0_d3)));\n\tp0_d3 = y;\n\tp0_d2 = s;\n\tp0_d1 = x1;\n\ts_3 = p1_d1 + (p1_a0 * ((x2 - p1_d2)));\n\ty_4 = p1_d2 + (p1_a1 * ((s_3 - p1_d3)));\n\tp1_d3 = y_4;\n\tp1_d2 = s_3;\n\tp1_d1 = x2;\n\treturn ((p0_d3 + p1_d3_last)) * 0.5;\n}\n\nupsample4x_ppiir(x) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0, 0, 0);\n\tpoke(pass1_buf, b, 1, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i, 0);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2, 0, 0);\n\t\tpoke(pass2_buf, b, (i * 2) + 1, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\ty3 = peek(pass2_buf, 2, 0);\n\ty4 = peek(pass2_buf, 3, 0);\n\treturn y1, y2, y3, y4;\n}\n\ndownsample4x_ppiir(x1, x2, x3, x4) {\n\tData pass1_buf(16, 1);\n\tData pass2_buf(16, 1);\n\tpoke(pass1_buf, x1, 0, 0, 0);\n\tpoke(pass1_buf, x2, 1, 0, 0);\n\tpoke(pass1_buf, x3, 2, 0, 0);\n\tpoke(pass1_buf, x4, 3, 0, 0);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2, 0);\n\t\tb = peek(pass1_buf, (i * 2) + 1, 0);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i, 0, 0);\n\t}\n\ty1 = peek(pass2_buf, 0, 0);\n\ty2 = peek(pass2_buf, 1, 0);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample8x_ppiir(x) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\ty3 = peek(pass3_buf, 2);\n\ty4 = peek(pass3_buf, 3);\n\ty5 = peek(pass3_buf, 4);\n\ty6 = peek(pass3_buf, 5);\n\ty7 = peek(pass3_buf, 6);\n\ty8 = peek(pass3_buf, 7);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8;\n}\n\ndownsample8x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8) {\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\ty1 = peek(pass3_buf, 0);\n\ty2 = peek(pass3_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\nupsample16x_ppiir(x) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\ta, b = upsample2x_ppiir(x);\n\tpoke(pass1_buf, a, 0);\n\tpoke(pass1_buf, b, 1);\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\tv = peek(pass1_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass2_buf, a, i * 2);\n\t\tpoke(pass2_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\tv = peek(pass2_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass3_buf, a, i * 2);\n\t\tpoke(pass3_buf, b, (i * 2) + 1);\n\t}\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\tv = peek(pass3_buf, i);\n\t\ta, b = upsample2x_ppiir(v);\n\t\tpoke(pass4_buf, a, i * 2);\n\t\tpoke(pass4_buf, b, (i * 2) + 1);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\ty3 = peek(pass4_buf, 2);\n\ty4 = peek(pass4_buf, 3);\n\ty5 = peek(pass4_buf, 4);\n\ty6 = peek(pass4_buf, 5);\n\ty7 = peek(pass4_buf, 6);\n\ty8 = peek(pass4_buf, 7);\n\ty9 = peek(pass4_buf, 8);\n\ty10 = peek(pass4_buf, 9);\n\ty11 = peek(pass4_buf, 10);\n\ty12 = peek(pass4_buf, 11);\n\ty13 = peek(pass4_buf, 12);\n\ty14 = peek(pass4_buf, 13);\n\ty15 = peek(pass4_buf, 14);\n\ty16 = peek(pass4_buf, 15);\n\treturn y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12, y13, y14, y15, y16;\n}\n\ndownsample16x_ppiir(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16) {\n\tData pass4_buf(16);\n\tData pass3_buf(16);\n\tData pass2_buf(16);\n\tData pass1_buf(16);\n\tpoke(pass1_buf, x1, 0);\n\tpoke(pass1_buf, x2, 1);\n\tpoke(pass1_buf, x3, 2);\n\tpoke(pass1_buf, x4, 3);\n\tpoke(pass1_buf, x5, 4);\n\tpoke(pass1_buf, x6, 5);\n\tpoke(pass1_buf, x7, 6);\n\tpoke(pass1_buf, x8, 7);\n\tpoke(pass1_buf, x9, 8);\n\tpoke(pass1_buf, x10, 9);\n\tpoke(pass1_buf, x11, 10);\n\tpoke(pass1_buf, x12, 11);\n\tpoke(pass1_buf, x13, 12);\n\tpoke(pass1_buf, x14, 13);\n\tpoke(pass1_buf, x15, 14);\n\tpoke(pass1_buf, x16, 15);\n\tfor(i = 0; i < 8; i = i + 1) {\n\t\ta = peek(pass1_buf, i * 2);\n\t\tb = peek(pass1_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass2_buf, v, i);\n\t}\n\tfor(i = 0; i < 4; i = i + 1) {\n\t\ta = peek(pass2_buf, i * 2);\n\t\tb = peek(pass2_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass3_buf, v, i);\n\t}\n\tfor(i = 0; i < 2; i = i + 1) {\n\t\ta = peek(pass3_buf, i * 2);\n\t\tb = peek(pass3_buf, (i * 2) + 1);\n\t\tv = downsample2x_ppiir(a, b);\n\t\tpoke(pass4_buf, v, i);\n\t}\n\ty1 = peek(pass4_buf, 0);\n\ty2 = peek(pass4_buf, 1);\n\treturn downsample2x_ppiir(y1, y2);\n}\n\n\n\neq_bell(xin, cf, q, gain) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tA = pow(10, gain / 40);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / ((q * A));\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tm1 = r * (((A * A) - 1));\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\treturn xin + (m1 * v1);\n}\n\ndiodeSolve(v_in, seed_offset, gr1, gr2, is, vt) {\n\tMAX_ITER = 20;\n\tVD_CLAMP = 1.2;\n\tEXP_CLAMP = 85;\n\tinvVt = 1 / vt;\n\tvd = clip(seed_offset, -VD_CLAMP, VD_CLAMP);\n\tlo = -VD_CLAMP;\n\thi = VD_CLAMP;\n\ted1 = exp(clip((-vd) * invVt, -EXP_CLAMP, EXP_CLAMP));\n\tid1 = (is * ed1) - is;\n\tgd1 = ((is * ed1)) * invVt;\n\ted2 = exp(clip(vd * invVt, -EXP_CLAMP, EXP_CLAMP));\n\tid2 = (is * ed2) - is;\n\tgd2 = ((is * ed2)) * invVt;\n\tf = (((vd * gr1) - (v_in * gr2))) - ((id1 - id2));\n\tfor(i = 0; i < MAX_ITER; i = i + 1) {\n\t\tif(f > 0) {\n\t\t\thi = vd;\n\t\t}\n\t\telse {\n\t\t\tlo = vd;\n\t\t}\n\t\tvd_new = vd;\n\t\tvd_newton = vd - (f / ((((gr1 + gd1)) + gd2)));\n\t\ttake_newton = 0;\n\t\tif((vd_newton > lo) && (vd_newton < hi)) {\n\t\t\tif((abs(f)) < 0.001) {\n\t\t\t\ttake_newton = 1;\n\t\t\t}\n\t\t\telse if((abs(vd_newton - vd)) >= (((hi - lo)) * 0.5)) {\n\t\t\t\ttake_newton = 1;\n\t\t\t}\n\t\t}\n\t\tif(take_newton == 1) {\n\t\t\tvd_new = vd_newton;\n\t\t}\n\t\telse {\n\t\t\tvd_new = ((lo + hi)) * 0.5;\n\t\t}\n\t\ted1 = exp(clip((-vd_new) * invVt, -EXP_CLAMP, EXP_CLAMP));\n\t\tid1 = (is * ed1) - is;\n\t\tgd1 = ((is * ed1)) * invVt;\n\t\ted2 = exp(clip(vd_new * invVt, -EXP_CLAMP, EXP_CLAMP));\n\t\tid2 = (is * ed2) - is;\n\t\tgd2 = ((is * ed2)) * invVt;\n\t\tvd = vd_new;\n\t\tf = (((vd * gr1) - (v_in * gr2))) - ((id1 - id2));\n\t}\n\treturn v_in + vd, 1;\n}\n\nDiodeDistortion(v_in, gain) {\n\tHistory v_out(0);\n\tHistory vd_prev(0);\n\tis = 1e-15;\n\tvt = 0.026;\n\tgr1 = 1 / ((gain * 10000));\n\tgr2 = 1 / 10000;\n\tv_out, converged = diodeSolve(v_in, vd_prev, gr1, gr2, is, vt);\n\tif(!converged) {\n\t\tv_out, converged = diodeSolve(v_in, 0, gr1, gr2, is, vt);\n\t}\n\tvd_prev = v_out - v_in;\n\treturn v_out;\n}\n\neq_bell_5(xin, cf, q, gain) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tA = pow(10, gain / 40);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / ((q * A));\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tm1 = r * (((A * A) - 1));\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\treturn xin + (m1 * v1);\n}\n\neq_bell_6(xin, cf, q, gain) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tHistory a1(0);\n\tHistory a2(0);\n\tHistory a3(0);\n\tA = pow(10, gain / 40);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / ((q * A));\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tm1 = r * (((A * A) - 1));\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\treturn xin + (m1 * v1);\n}\n\noversample(x) {\n\treturn x < 0 ? atan(x) : x;\n}\n\nsvf_ap(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\treturn ((v2 + hp)) - (r * v1);\n}\n\noversample_7(x) {\n\treturn x > 0 ? atan(x) : x;\n}\n\nsvf_ap_8(xin, cf, q) {\n\tHistory y0(0);\n\tHistory y1(0);\n\tg = tan(((cf * pi)) / samplerate);\n\tr = 1 / q;\n\ta1 = 1 / ((1 + (g * ((g + r)))));\n\ta2 = g * a1;\n\ta3 = g * a2;\n\tv3 = xin - y1;\n\tv1 = (a1 * y0) + (a2 * v3);\n\tv2 = ((y1 + (a2 * y0))) + (a3 * v3);\n\ty0 = (2 * v1) - y0;\n\ty1 = (2 * v2) - y1;\n\thp = ((xin - (r * v1))) - v2;\n\treturn ((v2 + hp)) - (r * v1);\n}\n\nint_9 = int(220);\nfloat_10 = float(0.16);\nlimit = samplerate / 2;\ncf = clip(in11, 0, limit);\nq = (pow(10, (clip(in12, 0, 1)) * 2)) * 0.1;\ngain = clip(in13, -60, 60);\nexpr_11 = eq_bell(in1, cf, q, gain);\ngen_12 = expr_11;\ngain_13 = clip(in2, 0.01, 100);\nup0, up1, up2, up3 = upsample4x_ppiir(gen_12);\nup_14 = DiodeDistortion(up0, gain_13);\nup1 = DiodeDistortion(up1, gain_13);\nup2 = DiodeDistortion(up2, gain_13);\nup3 = DiodeDistortion(up3, gain_13);\nexpr_15 = dcblock(downsample4x_ppiir(up_14, up1, up2, up3));\nscale_16 = scale(in2, 0, 100, 0, -24, 0.1);\ndbtoa_17 = dbtoa(scale_16);\nmul_18 = expr_15 * dbtoa_17;\nout1 = mul_18;\nclamp_19 = clamp(in14, -48, 48);\ndbtoa_20 = dbtoa(clamp_19);\nmul_21 = in9 * in10;\nlimit_22 = samplerate / 2;\ncf_23 = clip(in5, 0, limit_22);\nq_24 = (pow(10, (clip(in7, 0, 1)) * 2)) * 0.1;\ngain_25 = clip(mul_21, -60, 60);\nexpr_26 = eq_bell_5(in1, cf_23, q_24, gain_25);\ngen_27 = expr_26;\nclamp_28 = clamp(in3, -48, 48);\ndbtoa_29 = dbtoa(clamp_28);\nmul_30 = in8 * in10;\nlimit_31 = samplerate / 2;\ncf_32 = clip(in4, 0, limit_31);\nq_33 = (pow(10, (clip(in6, 0, 1)) * 2)) * 0.1;\ngain_34 = clip(mul_30, -60, 60);\nexpr_35 = eq_bell_6(in1, cf_32, q_33, gain_34);\ngen_36 = expr_35;\nclamp_37 = clamp(in15, 0, 1);\nrsub_38 = 1 - clamp_37;\nmul_39 = rsub_38 * -1;\nmul_40 = in1 * mul_39;\nmul_41 = ((mul_40 + gen_27)) * dbtoa_29;\nup_42, up_43, up_44, up_45 = upsample4x_ppiir(mul_41);\nup_46 = oversample(up_42);\nup_43 = oversample(up_43);\nup_44 = oversample(up_44);\nup_45 = oversample(up_45);\nexpr_47 = dcblock(downsample4x_ppiir(up_46, up_43, up_44, up_45));\nlimit_48 = samplerate / 2;\ncf_49 = clip(int_9, 0, limit_48);\nq_50 = ((clip(float_10, 0, 1)) * 20) + 0.5;\nexpr_51 = svf_ap(expr_47, cf_49, q_50);\nmul_52 = expr_51 * dbtoa_20;\nout3 = mul_52;\nmul_53 = ((mul_40 + gen_36)) * dbtoa_29;\nup_54, up_55, up_56, up_57 = upsample4x_ppiir(mul_53);\nup_58 = oversample_7(up_54);\nup_55 = oversample_7(up_55);\nup_56 = oversample_7(up_56);\nup_57 = oversample_7(up_57);\nexpr_59 = dcblock(downsample4x_ppiir(up_58, up_55, up_56, up_57));\nlimit_60 = samplerate / 2;\ncf_61 = clip(int_9, 0, limit_60);\nq_62 = ((clip(float_10, 0, 1)) * 20) + 0.5;\nexpr_63 = svf_ap_8(expr_59, cf_61, q_62);\nmul_64 = expr_63 * dbtoa_20;\nout2 = mul_64;",
+                        "geninlets": 15,
                         "genoutlets": 3
                     },
                     "rnbo_serial": 1,
@@ -4685,6 +5203,10 @@
                                 "type": "auto",
                                 "digest": "in14",
                                 "docked": 0
+                            },
+                            {
+                                "name": "in15",
+                                "type": "auto"
                             }
                         ],
                         "outputs": [
@@ -10167,6 +10689,18 @@
                 "patchline": {
                     "destination": [ "obj-64", 12 ],
                     "source": [ "obj-46", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-64", 14 ],
+                    "source": [ "obj-47", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-47", 0 ],
+                    "source": [ "obj-48", 0 ]
                 }
             },
             {

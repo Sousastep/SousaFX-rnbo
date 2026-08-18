@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 3.0, 59.0, 418.0, 556.0 ],
+        "rect": [ 115.0, 136.0, 418.0, 556.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -708,7 +708,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "zero_config_abstraction_2.maxpat",
+                    "name": "zero_config_blank.maxpat",
                     "numinlets": 2,
                     "numoutlets": 2,
                     "offset": [ 0.0, 0.0 ],
@@ -11294,11 +11294,12 @@
             "obj-377::obj-133": [ "mid freq", "mid freq", 0 ],
             "obj-377::obj-140": [ "live.menu[1]", "live.menu", 0 ],
             "obj-377::obj-145": [ "autoswing enable", "autoswing enable", 0 ],
-            "obj-377::obj-152": [ "live.dial[60]", "harmonic drive", 0 ],
+            "obj-377::obj-152": [ "live.dial[60]", "pre-asym", 0 ],
             "obj-377::obj-155": [ "live.menu", "live.menu", 0 ],
             "obj-377::obj-157": [ "live.menu[2]", "live.menu", 0 ],
             "obj-377::obj-165": [ "octaver enable[1]", "octaver enable", 0 ],
             "obj-377::obj-169": [ "live.dial[61]", "harmonic mod peak", 0 ],
+            "obj-377::obj-176": [ "live.dial[63]", "harmonic output", 0 ],
             "obj-377::obj-2": [ "high boost", "high boost", 0 ],
             "obj-377::obj-20": [ "live.dial[9]", "tuba drive", 0 ],
             "obj-377::obj-21": [ "live.dial[10]", "mix", 0 ],
@@ -11674,8 +11675,17 @@
                 "obj-377::obj-145": {
                     "parameter_unitstyle": 10
                 },
+                "obj-377::obj-152": {
+                    "parameter_range": [ -48.0, 48.0 ],
+                    "parameter_shortname": "pre-asym",
+                    "parameter_unitstyle": 4
+                },
                 "obj-377::obj-165": {
                     "parameter_longname": "octaver enable[1]"
+                },
+                "obj-377::obj-176": {
+                    "parameter_longname": "live.dial[63]",
+                    "parameter_shortname": "harmonic output"
                 },
                 "obj-377::obj-2": {
                     "parameter_longname": "high boost",

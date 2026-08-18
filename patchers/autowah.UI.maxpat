@@ -9,12 +9,101 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 419.0, 53.0, 394.0, 818.0 ],
+        "rect": [ 448.0, 53.0, 405.0, 820.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "bassline parameters",
         "boxes": [
+            {
+                "box": {
+                    "appearance": 1,
+                    "id": "obj-152",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 3055.0, 713.0, 25.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 121.0, 84.5, 52.0, 36.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "live.dial[60]",
+                            "parameter_mmax": 48.0,
+                            "parameter_mmin": -48.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "pre-asym",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 4
+                        }
+                    },
+                    "varname": "live.dial[16]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-182",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 3483.0, 679.0, 135.0, 22.0 ],
+                    "restore": [ 50.0 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr harmonic_dry_amt",
+                    "varname": "harmonic_dry_amt"
+                }
+            },
+            {
+                "box": {
+                    "appearance": 1,
+                    "id": "obj-183",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 3547.0, 714.0, 75.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 72.0, 110.0, 42.0, 36.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "live.dial[64]",
+                            "parameter_mmax": 100.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "dry amt",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 5
+                        }
+                    },
+                    "varname": "live.dial[35]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-184",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 3547.0, 774.0, 244.0, 22.0 ],
+                    "text": "prepend wobblefxbypass/harmonic_dry_amt"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-180",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 3446.0, 627.0, 150.0, 20.0 ],
+                    "text": "harmonic_dry_amt"
+                }
+            },
             {
                 "box": {
                     "fontname": "Ableton Sans Medium",
@@ -26,7 +115,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 36.5, 142.25, 122.0, 47.0 ],
+                    "presentation_rect": [ 36.5, 138.75, 122.0, 47.0 ],
                     "text": "soloing",
                     "textjustification": 1
                 }
@@ -44,7 +133,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 6.5, 41.25, 184.0, 266.5 ],
+                    "presentation_rect": [ 6.5, 37.75, 184.0, 266.5 ],
                     "proportion": 0.5
                 }
             },
@@ -56,7 +145,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 3120.0, 942.0, 155.0, 22.0 ],
-                    "restore": [ -29.858267716535444 ],
+                    "restore": [ -42.047244094488185 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -110,7 +199,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2921.0, 528.0, 148.0, 22.0 ],
-                    "restore": [ 36.0 ],
+                    "restore": [ 48.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -163,39 +252,13 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 3006.0, 679.0, 171.0, 22.0 ],
-                    "restore": [ 15.0 ],
+                    "restore": [ 12.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
                     },
                     "text": "pattr harmonic_pre-asym_gain",
                     "varname": "harmonic_pre-asym_gain"
-                }
-            },
-            {
-                "box": {
-                    "appearance": 1,
-                    "id": "obj-152",
-                    "maxclass": "live.dial",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "float" ],
-                    "parameter_enable": 1,
-                    "patching_rect": [ 3055.0, 713.0, 25.0, 36.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 126.0, 91.0, 52.0, 36.0 ],
-                    "saved_attribute_attributes": {
-                        "valueof": {
-                            "parameter_longname": "live.dial[60]",
-                            "parameter_mmax": 48.0,
-                            "parameter_mmin": -48.0,
-                            "parameter_modmode": 3,
-                            "parameter_shortname": "pre-asym",
-                            "parameter_type": 0,
-                            "parameter_unitstyle": 4
-                        }
-                    },
-                    "varname": "live.dial[16]"
                 }
             },
             {
@@ -271,7 +334,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2638.0, 1653.0, 172.0, 22.0 ],
-                    "restore": [ 1.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -728,7 +791,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1324.0, 1949.0, 155.0, 22.0 ],
-                    "restore": [ 24.0 ],
+                    "restore": [ 50.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -745,7 +808,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1108.0, 1948.0, 126.0, 22.0 ],
-                    "restore": [ 6.0 ],
+                    "restore": [ 8.267716535433067 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1892,7 +1955,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.5 ],
+                    "restore": [ 0.42 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2513,7 +2576,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1656.0, 645.0, 111.0, 22.0 ],
-                    "restore": [ 50.0 ],
+                    "restore": [ 100.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2950,7 +3013,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1051.5, 677.0, 134.0, 22.0 ],
-                    "restore": [ 44.0 ],
+                    "restore": [ 55.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2991,7 +3054,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 55.0 ],
+                    "restore": [ 62.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -3749,6 +3812,24 @@
                 "patchline": {
                     "destination": [ "obj-13", 0 ],
                     "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-183", 0 ],
+                    "source": [ "obj-182", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-184", 0 ],
+                    "source": [ "obj-183", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-123", 0 ],
+                    "source": [ "obj-184", 0 ]
                 }
             },
             {
