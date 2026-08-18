@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2136.0, 1387.0 ],
+        "rect": [ 419.0, 53.0, 394.0, 818.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -26,7 +26,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 36.5, 144.0, 122.0, 47.0 ],
+                    "presentation_rect": [ 36.5, 142.25, 122.0, 47.0 ],
                     "text": "soloing",
                     "textjustification": 1
                 }
@@ -44,8 +44,62 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 7.0, 42.5, 184.0, 266.5 ],
+                    "presentation_rect": [ 6.5, 41.25, 184.0, 266.5 ],
                     "proportion": 0.5
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-175",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 3120.0, 942.0, 155.0, 22.0 ],
+                    "restore": [ -29.858267716535444 ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr harmonic_output_gain",
+                    "varname": "harmonic_output_gain"
+                }
+            },
+            {
+                "box": {
+                    "appearance": 1,
+                    "id": "obj-176",
+                    "maxclass": "live.dial",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "float" ],
+                    "parameter_enable": 1,
+                    "patching_rect": [ 3193.0, 976.0, 25.0, 36.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 75.0, 153.0, 91.0, 36.0 ],
+                    "saved_attribute_attributes": {
+                        "valueof": {
+                            "parameter_longname": "live.dial[63]",
+                            "parameter_mmax": 48.0,
+                            "parameter_mmin": -48.0,
+                            "parameter_modmode": 3,
+                            "parameter_shortname": "harmonic output",
+                            "parameter_type": 0,
+                            "parameter_unitstyle": 4
+                        }
+                    },
+                    "varname": "live.dial[36]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-177",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 3193.0, 1037.0, 316.0, 22.0 ],
+                    "text": "prepend wobblefxbypass/overdrive/harmonic_output_gain"
                 }
             },
             {
@@ -55,8 +109,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1553.5, 1046.0, 148.0, 22.0 ],
-                    "restore": [ 48.0 ],
+                    "patching_rect": [ 2921.0, 528.0, 148.0, 22.0 ],
+                    "restore": [ 36.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -67,15 +121,16 @@
             },
             {
                 "box": {
+                    "appearance": 1,
                     "id": "obj-169",
                     "maxclass": "live.dial",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1617.5, 1081.0, 86.0, 48.0 ],
+                    "patching_rect": [ 2985.0, 563.0, 25.0, 36.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 57.0, 129.0, 84.0, 48.0 ],
+                    "presentation_rect": [ 75.0, 72.0, 91.0, 36.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[61]",
@@ -96,7 +151,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1617.5, 1141.0, 257.0, 22.0 ],
+                    "patching_rect": [ 2985.0, 623.0, 257.0, 22.0 ],
                     "text": "prepend wobblefxbypass/harmonic_mod_peak"
                 }
             },
@@ -107,35 +162,37 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1443.0, 864.0, 118.0, 22.0 ],
-                    "restore": [ 34.23622047244096 ],
+                    "patching_rect": [ 3006.0, 679.0, 171.0, 22.0 ],
+                    "restore": [ 15.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
                     },
-                    "text": "pattr harmonic_drive",
-                    "varname": "harmonic_drive"
+                    "text": "pattr harmonic_pre-asym_gain",
+                    "varname": "harmonic_pre-asym_gain"
                 }
             },
             {
                 "box": {
+                    "appearance": 1,
                     "id": "obj-152",
                     "maxclass": "live.dial",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
-                    "patching_rect": [ 1492.0, 898.0, 86.0, 48.0 ],
+                    "patching_rect": [ 3055.0, 713.0, 25.0, 36.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 114.0, 73.0, 62.0, 48.0 ],
+                    "presentation_rect": [ 126.0, 91.0, 52.0, 36.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[60]",
-                            "parameter_mmax": 100.0,
+                            "parameter_mmax": 48.0,
+                            "parameter_mmin": -48.0,
                             "parameter_modmode": 3,
-                            "parameter_shortname": "harmonic drive",
+                            "parameter_shortname": "pre-asym",
                             "parameter_type": 0,
-                            "parameter_unitstyle": 5
+                            "parameter_unitstyle": 4
                         }
                     },
                     "varname": "live.dial[16]"
@@ -148,8 +205,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1492.0, 959.0, 279.0, 22.0 ],
-                    "text": "prepend wobblefxbypass/overdrive/harmonic_drive"
+                    "patching_rect": [ 3055.0, 774.0, 333.0, 22.0 ],
+                    "text": "prepend wobblefxbypass/overdrive/harmonic_pre-asym_gain"
                 }
             },
             {
@@ -671,7 +728,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1324.0, 1949.0, 155.0, 22.0 ],
-                    "restore": [ 11.0 ],
+                    "restore": [ 24.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1031,7 +1088,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2572.0, 1239.0, 76.0, 22.0 ],
-                    "restore": [ 44.0 ],
+                    "restore": [ 41.63779527559055 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1256,7 +1313,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2658.0, 827.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.5, 183.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 11.0, 195.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high boost[1]",
@@ -1280,7 +1337,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2318.0, 827.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 120.5, 183.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 121.0, 195.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high Q[1]",
@@ -1304,7 +1361,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2027.0, 827.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 65.5, 183.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 66.0, 195.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high freq[1]",
@@ -1414,7 +1471,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2647.0, 669.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.5, 243.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 11.0, 247.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid trim[2]",
@@ -1439,7 +1496,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2318.0, 671.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 120.5, 243.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 121.0, 247.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid Q[2]",
@@ -1463,7 +1520,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2018.0, 675.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 65.5, 243.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 66.0, 247.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid freq[2]",
@@ -1677,7 +1734,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2426.0, 137.0, 138.0, 22.0 ],
-                    "restore": [ -1.5 ],
+                    "restore": [ -2.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1835,7 +1892,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.48 ],
+                    "restore": [ 0.5 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1852,7 +1909,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 449.5, 1139.5, 40.0, 22.0 ],
-                    "restore": [ 0.04000000000000001 ],
+                    "restore": [ 0.05 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2208,7 +2265,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 139.0, 872.5, 148.0, 22.0 ],
-                    "restore": [ 100.0 ],
+                    "restore": [ 150.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2302,7 +2359,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1420.0, 49.0, 127.0, 22.0 ],
-                    "restore": [ 11.0 ],
+                    "restore": [ 13.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2456,7 +2513,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1656.0, 645.0, 111.0, 22.0 ],
-                    "restore": [ 85.0 ],
+                    "restore": [ 50.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2473,7 +2530,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1609.5, 789.0, 92.0, 22.0 ],
-                    "restore": [ 24.0 ],
+                    "restore": [ 12.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2492,7 +2549,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1702.0, 675.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 79.0, 73.0, 27.0, 48.0 ],
+                    "presentation_rect": [ 30.5, 72.0, 27.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[10]",
@@ -2516,7 +2573,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1646.0, 827.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 14.0, 73.0, 62.0, 48.0 ],
+                    "presentation_rect": [ 13.0, 128.0, 62.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[9]",
@@ -2672,7 +2729,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 616.0, 52.0, 122.0, 22.0 ],
-                    "restore": [ 200.0 ],
+                    "restore": [ 150.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2934,7 +2991,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 44.0 ],
+                    "restore": [ 55.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2975,7 +3032,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 686.0, 244.0, 121.0, 22.0 ],
-                    "restore": [ 23.023622047244075 ],
+                    "restore": [ 22.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -3206,7 +3263,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 362.0, 558.0, 215.0, 54.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.0, 6.0, 360.0, 47.5 ],
+                    "presentation_rect": [ 10.0, 6.0, 360.0, 33.25 ],
                     "size": 1.0
                 }
             },
@@ -3668,6 +3725,24 @@
                 "patchline": {
                     "destination": [ "obj-10", 0 ],
                     "source": [ "obj-17", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-176", 0 ],
+                    "source": [ "obj-175", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-177", 0 ],
+                    "source": [ "obj-176", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-123", 0 ],
+                    "source": [ "obj-177", 0 ]
                 }
             },
             {
