@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 448.0, 53.0, 405.0, 820.0 ],
+        "rect": [ 3.0, 641.0, 379.0, 797.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -291,7 +291,7 @@
                             "expression": ""
                         },
                         "valueof": {
-                            "parameter_enum": [ "magnitude", "vertical" ],
+                            "parameter_enum": [ "vertical", "magnitude" ],
                             "parameter_longname": "live.menu[2]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,

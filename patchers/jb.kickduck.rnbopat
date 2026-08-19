@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
@@ -13,6 +13,1178 @@
         "default_fontname": "Lato",
         "title": "jb.kickduck",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-21",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 1,
+                            "revision": 5,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "rnbo",
+                        "rect": [ 818.0, 282.0, 1000.0, 780.0 ],
+                        "default_fontname": "Lato",
+                        "title": "smoothstep3",
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "linecount": 2,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 83.0, 22.0, 467.0, 35.0 ],
+                                    "text": "zero 1st, 2nd, and 3rd derivatives at both x=0 and x=1\nhttps://en.wikipedia.org/wiki/Smoothstep#Generalization_to_higher-order_equations"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-3",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 34.0, 343.0, 43.0, 23.0 ],
+                                    "rnbo_classname": "out~",
+                                    "rnbo_extra_attributes": {
+                                        "meta": "",
+                                        "comment": ""
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "out~_obj-3",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "in1": {
+                                                "attrOrProp": 1,
+                                                "digest": "signal sent to outlet with index 1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "signal"
+                                            },
+                                            "index": {
+                                                "attrOrProp": 2,
+                                                "digest": "outlet number",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "mandatory": 1
+                                            },
+                                            "comment": {
+                                                "attrOrProp": 2,
+                                                "digest": "mouse over comment",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "meta": {
+                                                "attrOrProp": 2,
+                                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "defaultValue": "",
+                                                "label": "Metadata",
+                                                "displayorder": 3
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "in1",
+                                                "type": "signal",
+                                                "digest": "signal sent to outlet with index 1",
+                                                "displayName": "",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [],
+                                        "helpname": "out~",
+                                        "aliasOf": "out~",
+                                        "classname": "out~",
+                                        "operator": 0,
+                                        "versionId": 1989326771,
+                                        "changesPatcherIO": 1
+                                    },
+                                    "text": "out~ 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "signal" ],
+                                    "patching_rect": [ 34.0, 22.0, 35.0, 23.0 ],
+                                    "rnbo_classname": "in~",
+                                    "rnbo_extra_attributes": {
+                                        "meta": "",
+                                        "comment": ""
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "in~_obj-2",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "out1": {
+                                                "attrOrProp": 1,
+                                                "digest": "signal from inlet with index 1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "signal"
+                                            },
+                                            "index": {
+                                                "attrOrProp": 2,
+                                                "digest": "inlet number",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "mandatory": 1
+                                            },
+                                            "comment": {
+                                                "attrOrProp": 2,
+                                                "digest": "mouse over comment",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "meta": {
+                                                "attrOrProp": 2,
+                                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "defaultValue": "",
+                                                "label": "Metadata",
+                                                "displayorder": 3
+                                            }
+                                        },
+                                        "inputs": [],
+                                        "outputs": [
+                                            {
+                                                "name": "out1",
+                                                "type": "signal",
+                                                "digest": "signal from inlet with index 1",
+                                                "displayName": "",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "in~",
+                                        "aliasOf": "in~",
+                                        "classname": "in~",
+                                        "operator": 0,
+                                        "versionId": -1654556303,
+                                        "changesPatcherIO": 1
+                                    },
+                                    "text": "in~ 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "code": "function clamp(x, lowerlimit, upperlimit) {\n  if (x < lowerlimit) return lowerlimit;\n  if (x > upperlimit) return upperlimit;\n  return x;\n}\n\nfunction smootheststep(edge0, edge1, x) {\n  x = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
+                                    "fontface": 0,
+                                    "fontname": "<Monospaced>",
+                                    "fontsize": 12.0,
+                                    "id": "obj-1",
+                                    "maxclass": "codebox~",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "signal" ],
+                                    "patching_rect": [ 34.0, 67.0, 564.0, 253.0 ],
+                                    "rnbo_classname": "codebox~",
+                                    "rnbo_extra_attributes": {
+                                        "code": "function clamp(x, lowerlimit, upperlimit) {\n  if (x < lowerlimit) return lowerlimit;\n  if (x > upperlimit) return upperlimit;\n  return x;\n}\n\nfunction smootheststep(edge0, edge1, x) {\n  x = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
+                                        "nocache": 0,
+                                        "expr": "",
+                                        "safemath": 1
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "codebox~_obj-1",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "reset": {
+                                                "attrOrProp": 1,
+                                                "digest": "Reset all state and params to initial values",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bang"
+                                            },
+                                            "in1": {
+                                                "attrOrProp": 1,
+                                                "digest": "in1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "out1": {
+                                                "attrOrProp": 1,
+                                                "digest": "out1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "signal"
+                                            },
+                                            "expr": {
+                                                "attrOrProp": 2,
+                                                "digest": "expr",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "safemath": {
+                                                "attrOrProp": 2,
+                                                "digest": "Use safe math expressions (e.g.: division by 0 will not crash).",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "true"
+                                            },
+                                            "nocache": {
+                                                "attrOrProp": 2,
+                                                "digest": "Do not use parsing cache. This is only useful with very very big code sizes. Code generation will then take a looooong time.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "false"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "in1",
+                                                "type": "auto",
+                                                "digest": "in1",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "out1",
+                                                "type": "signal",
+                                                "digest": "out1",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "codebox~",
+                                        "aliasOf": "expr~",
+                                        "classname": "codebox~",
+                                        "operator": 0,
+                                        "versionId": 527839773,
+                                        "changesPatcherIO": 0
+                                    }
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-3", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 1033.0, 1381.0, 117.0, 23.0 ],
+                    "rnbo_classname": "p",
+                    "rnbo_extra_attributes": {
+                        "uidstyle": "auto",
+                        "polyphony": -1.0,
+                        "notecontroller": 0,
+                        "voicecontrol": "simple",
+                        "receivemode": "local",
+                        "exposevoiceparams": 0,
+                        "args": []
+                    },
+                    "rnbo_serial": 3,
+                    "rnbo_uniqueid": "p_obj-21",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "target": {
+                                "attrOrProp": 1,
+                                "digest": "target",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "mute": {
+                                "attrOrProp": 1,
+                                "digest": "mute",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number"
+                            },
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "in1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "__probingout1": {
+                                "attrOrProp": 1,
+                                "digest": "__probingout1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "signal"
+                            },
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "out1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "polyphony": {
+                                "attrOrProp": 2,
+                                "digest": "Polyphony of the subpatcher.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "-1"
+                            },
+                            "exposevoiceparams": {
+                                "attrOrProp": 2,
+                                "digest": "Expose per voice versions of the contained parameters (only valid in polyphonic subpatchers).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "false"
+                            },
+                            "title": {
+                                "attrOrProp": 2,
+                                "digest": "Title of the subpatcher",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "file": {
+                                "attrOrProp": 2,
+                                "digest": "rnbo file to load",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "voicecontrol": {
+                                "attrOrProp": 2,
+                                "digest": "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "simple", "user" ],
+                                "type": "enum",
+                                "defaultValue": "simple"
+                            },
+                            "notecontroller": {
+                                "attrOrProp": 2,
+                                "digest": "DEPRECATED. Use voicecontrol instead.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "receivemode": {
+                                "attrOrProp": 2,
+                                "digest": "Do receive~ objects get the signal from a send~ inside the patcher directly (without latency), or compensated (with latency, aligned with all other voices).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "local", "compensated" ],
+                                "type": "enum",
+                                "defaultValue": "local"
+                            },
+                            "args": {
+                                "attrOrProp": 2,
+                                "digest": "Replacement args for the subpatcher, everything named #1, #2 etc. will be replaced with the according argument.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "uidstyle": {
+                                "attrOrProp": 2,
+                                "digest": "Behavior of #0 unique ID. auto (default) means abstractions get a local UID, local: start a new local UID, parent: use the one from the parent patcher",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "auto", "local", "parent", "global" ],
+                                "type": "enum",
+                                "defaultValue": "auto"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "in1",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "signal",
+                                "digest": "out1",
+                                "displayName": "",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "patcher",
+                        "aliasOf": "rnbo",
+                        "classname": "p",
+                        "operator": 0,
+                        "versionId": 426236520,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "p @file smoothstep3"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-112",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 1,
+                            "revision": 5,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "rnbo",
+                        "rect": [ 818.0, 282.0, 1000.0, 780.0 ],
+                        "default_fontname": "Lato",
+                        "title": "smoothstep3",
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "linecount": 2,
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 83.0, 22.0, 467.0, 35.0 ],
+                                    "text": "zero 1st, 2nd, and 3rd derivatives at both x=0 and x=1\nhttps://en.wikipedia.org/wiki/Smoothstep#Generalization_to_higher-order_equations"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-3",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 34.0, 343.0, 43.0, 23.0 ],
+                                    "rnbo_classname": "out~",
+                                    "rnbo_extra_attributes": {
+                                        "meta": "",
+                                        "comment": ""
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "out~_obj-3",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "in1": {
+                                                "attrOrProp": 1,
+                                                "digest": "signal sent to outlet with index 1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "signal"
+                                            },
+                                            "index": {
+                                                "attrOrProp": 2,
+                                                "digest": "outlet number",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "mandatory": 1
+                                            },
+                                            "comment": {
+                                                "attrOrProp": 2,
+                                                "digest": "mouse over comment",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "meta": {
+                                                "attrOrProp": 2,
+                                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "defaultValue": "",
+                                                "label": "Metadata",
+                                                "displayorder": 3
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "in1",
+                                                "type": "signal",
+                                                "digest": "signal sent to outlet with index 1",
+                                                "displayName": "",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [],
+                                        "helpname": "out~",
+                                        "aliasOf": "out~",
+                                        "classname": "out~",
+                                        "operator": 0,
+                                        "versionId": 1989326771,
+                                        "changesPatcherIO": 1
+                                    },
+                                    "text": "out~ 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "signal" ],
+                                    "patching_rect": [ 34.0, 22.0, 35.0, 23.0 ],
+                                    "rnbo_classname": "in~",
+                                    "rnbo_extra_attributes": {
+                                        "meta": "",
+                                        "comment": ""
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "in~_obj-2",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "out1": {
+                                                "attrOrProp": 1,
+                                                "digest": "signal from inlet with index 1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 0,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "signal"
+                                            },
+                                            "index": {
+                                                "attrOrProp": 2,
+                                                "digest": "inlet number",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "number",
+                                                "mandatory": 1
+                                            },
+                                            "comment": {
+                                                "attrOrProp": 2,
+                                                "digest": "mouse over comment",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "meta": {
+                                                "attrOrProp": 2,
+                                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol",
+                                                "defaultValue": "",
+                                                "label": "Metadata",
+                                                "displayorder": 3
+                                            }
+                                        },
+                                        "inputs": [],
+                                        "outputs": [
+                                            {
+                                                "name": "out1",
+                                                "type": "signal",
+                                                "digest": "signal from inlet with index 1",
+                                                "displayName": "",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "in~",
+                                        "aliasOf": "in~",
+                                        "classname": "in~",
+                                        "operator": 0,
+                                        "versionId": -1654556303,
+                                        "changesPatcherIO": 1
+                                    },
+                                    "text": "in~ 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "code": "function clamp(x, lowerlimit, upperlimit) {\n  if (x < lowerlimit) return lowerlimit;\n  if (x > upperlimit) return upperlimit;\n  return x;\n}\n\nfunction smootheststep(edge0, edge1, x) {\n  x = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
+                                    "fontface": 0,
+                                    "fontname": "<Monospaced>",
+                                    "fontsize": 12.0,
+                                    "id": "obj-1",
+                                    "maxclass": "codebox~",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "signal" ],
+                                    "patching_rect": [ 34.0, 67.0, 564.0, 253.0 ],
+                                    "rnbo_classname": "codebox~",
+                                    "rnbo_extra_attributes": {
+                                        "code": "function clamp(x, lowerlimit, upperlimit) {\n  if (x < lowerlimit) return lowerlimit;\n  if (x > upperlimit) return upperlimit;\n  return x;\n}\n\nfunction smootheststep(edge0, edge1, x) {\n  x = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
+                                        "nocache": 0,
+                                        "expr": "",
+                                        "safemath": 1
+                                    },
+                                    "rnbo_serial": 1,
+                                    "rnbo_uniqueid": "codebox~_obj-1",
+                                    "rnboinfo": {
+                                        "needsInstanceInfo": 1,
+                                        "argnames": {
+                                            "reset": {
+                                                "attrOrProp": 1,
+                                                "digest": "Reset all state and params to initial values",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 1,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bang"
+                                            },
+                                            "in1": {
+                                                "attrOrProp": 1,
+                                                "digest": "in1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "inlet": 1,
+                                                "type": "number"
+                                            },
+                                            "out1": {
+                                                "attrOrProp": 1,
+                                                "digest": "out1",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "outlet": 1,
+                                                "type": "signal"
+                                            },
+                                            "expr": {
+                                                "attrOrProp": 2,
+                                                "digest": "expr",
+                                                "defaultarg": 1,
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "symbol"
+                                            },
+                                            "safemath": {
+                                                "attrOrProp": 2,
+                                                "digest": "Use safe math expressions (e.g.: division by 0 will not crash).",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "true"
+                                            },
+                                            "nocache": {
+                                                "attrOrProp": 2,
+                                                "digest": "Do not use parsing cache. This is only useful with very very big code sizes. Code generation will then take a looooong time.",
+                                                "isalias": 0,
+                                                "aliases": [],
+                                                "settable": 1,
+                                                "attachable": 0,
+                                                "isparam": 0,
+                                                "deprecated": 0,
+                                                "touched": 0,
+                                                "type": "bool",
+                                                "defaultValue": "false"
+                                            }
+                                        },
+                                        "inputs": [
+                                            {
+                                                "name": "in1",
+                                                "type": "auto",
+                                                "digest": "in1",
+                                                "hot": 1,
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "outputs": [
+                                            {
+                                                "name": "out1",
+                                                "type": "signal",
+                                                "digest": "out1",
+                                                "docked": 0
+                                            }
+                                        ],
+                                        "helpname": "codebox~",
+                                        "aliasOf": "expr~",
+                                        "classname": "codebox~",
+                                        "operator": 0,
+                                        "versionId": 527839773,
+                                        "changesPatcherIO": 0
+                                    }
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-3", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 252.0, 1399.0, 117.0, 23.0 ],
+                    "rnbo_classname": "p",
+                    "rnbo_extra_attributes": {
+                        "uidstyle": "auto",
+                        "polyphony": -1.0,
+                        "notecontroller": 0,
+                        "voicecontrol": "simple",
+                        "receivemode": "local",
+                        "exposevoiceparams": 0,
+                        "args": []
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "p_obj-112",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "target": {
+                                "attrOrProp": 1,
+                                "digest": "target",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "mute": {
+                                "attrOrProp": 1,
+                                "digest": "mute",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number"
+                            },
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "in1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "__probingout1": {
+                                "attrOrProp": 1,
+                                "digest": "__probingout1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "signal"
+                            },
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "out1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "polyphony": {
+                                "attrOrProp": 2,
+                                "digest": "Polyphony of the subpatcher.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "-1"
+                            },
+                            "exposevoiceparams": {
+                                "attrOrProp": 2,
+                                "digest": "Expose per voice versions of the contained parameters (only valid in polyphonic subpatchers).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "false"
+                            },
+                            "title": {
+                                "attrOrProp": 2,
+                                "digest": "Title of the subpatcher",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "file": {
+                                "attrOrProp": 2,
+                                "digest": "rnbo file to load",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "voicecontrol": {
+                                "attrOrProp": 2,
+                                "digest": "Chooses the way that polyphonic voices are controlled. 'simple' (or 'midi') will automatically allocate voices for \tincoming MIDI notes. Setting it to 'user' (or 'none') will switch off MIDI \tvoice allocation and start with all voices unmuted.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "simple", "user" ],
+                                "type": "enum",
+                                "defaultValue": "simple"
+                            },
+                            "notecontroller": {
+                                "attrOrProp": 2,
+                                "digest": "DEPRECATED. Use voicecontrol instead.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "receivemode": {
+                                "attrOrProp": 2,
+                                "digest": "Do receive~ objects get the signal from a send~ inside the patcher directly (without latency), or compensated (with latency, aligned with all other voices).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "local", "compensated" ],
+                                "type": "enum",
+                                "defaultValue": "local"
+                            },
+                            "args": {
+                                "attrOrProp": 2,
+                                "digest": "Replacement args for the subpatcher, everything named #1, #2 etc. will be replaced with the according argument.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "doNotShowInMaxInspector": 1
+                            },
+                            "uidstyle": {
+                                "attrOrProp": 2,
+                                "digest": "Behavior of #0 unique ID. auto (default) means abstractions get a local UID, local: start a new local UID, parent: use the one from the parent patcher",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "auto", "local", "parent", "global" ],
+                                "type": "enum",
+                                "defaultValue": "auto"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "in1",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "signal",
+                                "digest": "out1",
+                                "displayName": "",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "patcher",
+                        "aliasOf": "rnbo",
+                        "classname": "p",
+                        "operator": 0,
+                        "versionId": 426236520,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "p @file smoothstep3"
+                }
+            },
             {
                 "box": {
                     "id": "obj-15",
@@ -155,9 +1327,9 @@
                     "rnbo_classname": "codebox~",
                     "rnbo_extra_attributes": {
                         "code": "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
-                        "safemath": 1,
+                        "nocache": 0,
                         "expr": "",
-                        "nocache": 0
+                        "safemath": 1
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "codebox~_obj-57",
@@ -517,8 +1689,8 @@
                     "patching_rect": [ 1033.0, 541.0, 52.0, 23.0 ],
                     "rnbo_classname": "list.reg",
                     "rnbo_extra_attributes": {
-                        "preset": 0,
-                        "order": ""
+                        "order": "",
+                        "preset": 0
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "list.reg_obj-60",
@@ -535,8 +1707,8 @@
                     "patching_rect": [ 1066.0, 504.0, 65.0, 23.0 ],
                     "rnbo_classname": "pak",
                     "rnbo_extra_attributes": {
-                        "length": 0.0,
-                        "list": ""
+                        "list": "",
+                        "length": 0.0
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "pak_obj-61",
@@ -1310,127 +2482,6 @@
             },
             {
                 "box": {
-                    "id": "obj-81",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
-                    "patching_rect": [ 1033.0, 1382.8333333333337, 113.0, 23.0 ],
-                    "rnbo_classname": "ease~",
-                    "rnbo_serial": 1,
-                    "rnbo_uniqueid": "ease~_obj-81",
-                    "rnboinfo": {
-                        "needsInstanceInfo": 1,
-                        "argnames": {
-                            "function": {
-                                "attrOrProp": 1,
-                                "digest": "Initial easing function to use.",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "enum": [ "linear", "in_back", "in_bounce", "in_circular", "in_cubic", "in_elastic", "in_exponential", "in_quadratic", "in_quartic", "in_quintic", "in_sine", "in_out_back", "in_out_bounce", "in_out_circular", "in_out_cubic", "in_out_elastic", "in_out_exponential", "in_out_quadratic", "in_out_quartic", "in_out_quintic", "in_out_sine", "out_back", "out_bounce", "out_circular", "out_cubic", "out_elastic", "out_exponential", "out_quadratic", "out_quartic", "out_quintic", "out_sine" ],
-                                "type": "enum",
-                                "defaultValue": "linear"
-                            },
-                            "syncupdate": {
-                                "attrOrProp": 1,
-                                "digest": "Synchronise easing function updates",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "type": "bool",
-                                "defaultValue": "false"
-                            },
-                            "input_range": {
-                                "attrOrProp": 1,
-                                "digest": "Scale the input value",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "type": "list",
-                                "defaultValue": "0,1"
-                            },
-                            "output_range": {
-                                "attrOrProp": 1,
-                                "digest": "Scale the output value",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "type": "list",
-                                "defaultValue": "0,1"
-                            },
-                            "in1": {
-                                "attrOrProp": 1,
-                                "digest": "Input value",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 0,
-                                "attachable": 0,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "inlet": 1,
-                                "type": "signal"
-                            },
-                            "out1": {
-                                "attrOrProp": 1,
-                                "digest": "Eased output",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 0,
-                                "attachable": 0,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "outlet": 1,
-                                "type": "signal"
-                            }
-                        },
-                        "inputs": [
-                            {
-                                "name": "in1",
-                                "type": "signal",
-                                "digest": "Input value",
-                                "hot": 1,
-                                "docked": 0
-                            }
-                        ],
-                        "outputs": [
-                            {
-                                "name": "out1",
-                                "type": "signal",
-                                "digest": "Eased output",
-                                "docked": 0
-                            }
-                        ],
-                        "helpname": "ease~",
-                        "aliasOf": "ease~",
-                        "classname": "ease~",
-                        "operator": 0,
-                        "versionId": -327368447,
-                        "changesPatcherIO": 0
-                    },
-                    "text": "ease~ @function 20"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-2",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -1646,8 +2697,8 @@
                     "patching_rect": [ 402.0, 1285.5, 24.0, 24.0 ],
                     "rnbo_classname": "toggle",
                     "rnbo_extra_attributes": {
-                        "preset": 0,
-                        "order": ""
+                        "order": "",
+                        "preset": 0
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "toggle_obj-10"
@@ -1713,9 +2764,9 @@
                     "rnbo_classname": "codebox~",
                     "rnbo_extra_attributes": {
                         "code": "// https://cycling74.com/forums/math-behind-function-curve#reply-63e9aa007fd8db00146eabc8\n// this emulates max's function object with three, countem, three curved lines\n\nlet x = in1;\n\nlet firstY = in2;\nlet firstX = in3;\n\nlet midY = in4;\nlet midX = in5;\nlet firstCurve = in6;\n\nlet endY = in7;\nlet endX = in8;\nlet secondCurve = in9;\n\nlet finalY = in10;\nlet finalX = in11;\nlet thirdCurve = in12;\n\nif (x < midX) {\n    // First segment (first point to middle point)\n    let tmpRange = midY - firstY;\n    let tmpDomain = midX - firstX;\n    \n    if (abs(firstCurve) < 0.001) {\n        out1 = ((x - firstX) / tmpDomain) * tmpRange + firstY;\n    }\n    \n    if (firstCurve < 0.0) {\n        let gx = (midX - x) / tmpDomain;\n        let hp = pow((1e-20 - firstCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = midY - gp * tmpRange;\n    } else {\n        let gx = (x - firstX) / tmpDomain;\n        let hp = pow((firstCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + firstY;\n    }\n} \nelse if (x < endX) {\n    // Second segment (middle point to end point)\n    let tmpRange = endY - midY;\n    let tmpDomain = endX - midX;\n\n    if (abs(secondCurve) < 0.001) {\n        out1 = ((x - midX) / tmpDomain) * tmpRange + midY;\n    }\n    \n    if (secondCurve < 0.0) {\n        let gx = (endX - x) / tmpDomain;\n        let hp = pow((1e-20 - secondCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = endY - gp * tmpRange;\n    } else {\n        let gx = (x - midX) / tmpDomain;\n        let hp = pow((secondCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + midY;    \n    }\n}\nelse {\n    // Third segment (end point to final point)\n    let tmpRange = finalY - endY;\n    let tmpDomain = finalX - endX;\n\n    if (abs(thirdCurve) < 0.001) {\n        out1 = ((x - endX) / tmpDomain) * tmpRange + endY;\n    }\n    \n    if (thirdCurve < 0.0) {\n        let gx = (finalX - x) / tmpDomain;\n        let hp = pow((1e-20 - thirdCurve) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = finalY - gp * tmpRange;\n    } else {\n        let gx = (x - endX) / tmpDomain;\n        let hp = pow((thirdCurve + 1e-20) * 1.2, 0.41) * 0.91;\n        let fp = hp / (1.0 - hp);\n        let gp = (exp(fp * gx) - 1.0) / (exp(fp) - 1.0);\n        \n        out1 = gp * tmpRange + endY;    \n    }\n}",
-                        "safemath": 1,
+                        "nocache": 0,
                         "expr": "",
-                        "nocache": 0
+                        "safemath": 1
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "codebox~_obj-80",
@@ -2075,8 +3126,8 @@
                     "patching_rect": [ 252.0, 541.0, 52.0, 23.0 ],
                     "rnbo_classname": "list.reg",
                     "rnbo_extra_attributes": {
-                        "preset": 0,
-                        "order": ""
+                        "order": "",
+                        "preset": 0
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "list.reg_obj-32",
@@ -2093,8 +3144,8 @@
                     "patching_rect": [ 285.0, 448.0, 65.0, 23.0 ],
                     "rnbo_classname": "pak",
                     "rnbo_extra_attributes": {
-                        "length": 0.0,
-                        "list": ""
+                        "list": "",
+                        "length": 0.0
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "pak_obj-30",
@@ -2578,8 +3629,8 @@
                     "patching_rect": [ 641.0, 101.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "comment": "",
-                        "meta": ""
+                        "meta": "",
+                        "comment": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "in~_obj-8",
@@ -3101,127 +4152,6 @@
             },
             {
                 "box": {
-                    "id": "obj-377",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "signal" ],
-                    "patching_rect": [ 252.0, 1368.0, 113.0, 23.0 ],
-                    "rnbo_classname": "ease~",
-                    "rnbo_serial": 2,
-                    "rnbo_uniqueid": "ease~_obj-377",
-                    "rnboinfo": {
-                        "needsInstanceInfo": 1,
-                        "argnames": {
-                            "function": {
-                                "attrOrProp": 1,
-                                "digest": "Initial easing function to use.",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "enum": [ "linear", "in_back", "in_bounce", "in_circular", "in_cubic", "in_elastic", "in_exponential", "in_quadratic", "in_quartic", "in_quintic", "in_sine", "in_out_back", "in_out_bounce", "in_out_circular", "in_out_cubic", "in_out_elastic", "in_out_exponential", "in_out_quadratic", "in_out_quartic", "in_out_quintic", "in_out_sine", "out_back", "out_bounce", "out_circular", "out_cubic", "out_elastic", "out_exponential", "out_quadratic", "out_quartic", "out_quintic", "out_sine" ],
-                                "type": "enum",
-                                "defaultValue": "linear"
-                            },
-                            "syncupdate": {
-                                "attrOrProp": 1,
-                                "digest": "Synchronise easing function updates",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "type": "bool",
-                                "defaultValue": "false"
-                            },
-                            "input_range": {
-                                "attrOrProp": 1,
-                                "digest": "Scale the input value",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "type": "list",
-                                "defaultValue": "0,1"
-                            },
-                            "output_range": {
-                                "attrOrProp": 1,
-                                "digest": "Scale the output value",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 1,
-                                "attachable": 1,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "type": "list",
-                                "defaultValue": "0,1"
-                            },
-                            "in1": {
-                                "attrOrProp": 1,
-                                "digest": "Input value",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 0,
-                                "attachable": 0,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "inlet": 1,
-                                "type": "signal"
-                            },
-                            "out1": {
-                                "attrOrProp": 1,
-                                "digest": "Eased output",
-                                "isalias": 0,
-                                "aliases": [],
-                                "settable": 0,
-                                "attachable": 0,
-                                "isparam": 0,
-                                "deprecated": 0,
-                                "touched": 0,
-                                "outlet": 1,
-                                "type": "signal"
-                            }
-                        },
-                        "inputs": [
-                            {
-                                "name": "in1",
-                                "type": "signal",
-                                "digest": "Input value",
-                                "hot": 1,
-                                "docked": 0
-                            }
-                        ],
-                        "outputs": [
-                            {
-                                "name": "out1",
-                                "type": "signal",
-                                "digest": "Eased output",
-                                "docked": 0
-                            }
-                        ],
-                        "helpname": "ease~",
-                        "aliasOf": "ease~",
-                        "classname": "ease~",
-                        "operator": 0,
-                        "versionId": -327368447,
-                        "changesPatcherIO": 0
-                    },
-                    "text": "ease~ @function 20"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-384",
                     "maxclass": "newobj",
                     "numinlets": 3,
@@ -3264,7 +4194,13 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-377", 0 ],
+                    "destination": [ "obj-9", 0 ],
+                    "source": [ "obj-112", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-112", 0 ],
                     "source": [ "obj-12", 0 ]
                 }
             },
@@ -3322,6 +4258,12 @@
                 "patchline": {
                     "destination": [ "obj-390", 0 ],
                     "source": [ "obj-208", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-49", 0 ],
+                    "source": [ "obj-21", 0 ]
                 }
             },
             {
@@ -3415,12 +4357,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-9", 0 ],
-                    "source": [ "obj-377", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-23", 0 ],
                     "source": [ "obj-384", 0 ]
                 }
@@ -3489,7 +4425,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-81", 0 ],
+                    "destination": [ "obj-21", 0 ],
                     "source": [ "obj-56", 0 ]
                 }
             },
@@ -3715,12 +4651,6 @@
                 "patchline": {
                     "destination": [ "obj-185", 0 ],
                     "source": [ "obj-80", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-49", 0 ],
-                    "source": [ "obj-81", 0 ]
                 }
             },
             {
