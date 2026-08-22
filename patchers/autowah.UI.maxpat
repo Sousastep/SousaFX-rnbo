@@ -9,12 +9,45 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 3.0, 641.0, 379.0, 797.0 ],
+        "rect": [ 426.0, 44.0, 379.0, 797.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "bassline parameters",
         "boxes": [
+            {
+                "box": {
+                    "fontname": "Ableton Sans Medium",
+                    "fontsize": 33.69249358145463,
+                    "hidden": 1,
+                    "id": "obj-85",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 36.5, 138.75, 122.0, 47.0 ],
+                    "text": "soloing",
+                    "textjustification": 1
+                }
+            },
+            {
+                "box": {
+                    "angle": 270.0,
+                    "bgcolor": [ 0.0, 0.0, 0.0, 0.76 ],
+                    "bordercolor": [ 0.619607843137255, 0.745098039215686, 0.952941176470588, 0.0 ],
+                    "hidden": 1,
+                    "id": "obj-66",
+                    "maxclass": "panel",
+                    "mode": 0,
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 6.5, 37.75, 184.0, 266.5 ],
+                    "proportion": 0.5
+                }
+            },
             {
                 "box": {
                     "appearance": 1,
@@ -49,7 +82,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 3483.0, 679.0, 135.0, 22.0 ],
-                    "restore": [ 50.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -102,39 +135,6 @@
                     "numoutlets": 0,
                     "patching_rect": [ 3446.0, 627.0, 150.0, 20.0 ],
                     "text": "harmonic_dry_amt"
-                }
-            },
-            {
-                "box": {
-                    "fontname": "Ableton Sans Medium",
-                    "fontsize": 33.69249358145463,
-                    "hidden": 1,
-                    "id": "obj-85",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 36.5, 138.75, 122.0, 47.0 ],
-                    "text": "soloing",
-                    "textjustification": 1
-                }
-            },
-            {
-                "box": {
-                    "angle": 270.0,
-                    "bgcolor": [ 0.0, 0.0, 0.0, 0.76 ],
-                    "bordercolor": [ 0.619607843137255, 0.745098039215686, 0.952941176470588, 0.0 ],
-                    "hidden": 1,
-                    "id": "obj-66",
-                    "maxclass": "panel",
-                    "mode": 0,
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 6.5, 37.75, 184.0, 266.5 ],
-                    "proportion": 0.5
                 }
             },
             {
@@ -1955,7 +1955,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.42 ],
+                    "restore": [ 0.45 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1972,7 +1972,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 449.5, 1139.5, 40.0, 22.0 ],
-                    "restore": [ 0.05 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2593,7 +2593,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1609.5, 789.0, 92.0, 22.0 ],
-                    "restore": [ 12.0 ],
+                    "restore": [ 16.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -3054,7 +3054,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 823.0, 408.0, 124.0, 22.0 ],
-                    "restore": [ 62.0 ],
+                    "restore": [ 55.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -3095,7 +3095,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 686.0, 244.0, 121.0, 22.0 ],
-                    "restore": [ 22.0 ],
+                    "restore": [ 20.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0

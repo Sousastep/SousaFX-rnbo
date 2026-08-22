@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1290.0, 156.0, 446.0, 473.0 ],
+        "rect": [ 476.0, 237.0, 446.0, 473.0 ],
         "openinpresentation": 1,
         "default_fontsize": 11.595187,
         "toolbarvisible": 0,
@@ -292,7 +292,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 4,
+                            "revision": 5,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -3783,7 +3783,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 4,
+                                            "revision": 5,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -4113,7 +4113,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 4,
+                                            "revision": 5,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -4454,7 +4454,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 4,
+                                            "revision": 5,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -8661,7 +8661,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1732.2000788022062, 382.0, 231.0, 43.0 ],
-                    "text": "loadmess 0.11.6"
+                    "text": "loadmess 0.11.7"
                 }
             },
             {
@@ -8675,7 +8675,7 @@
                     "patching_rect": [ 1763.8500394011032, 474.5, 109.0, 21.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 281.0, 14.146141468715944, 109.0, 21.0 ],
-                    "text": "Version 0.11.6",
+                    "text": "Version 0.11.7",
                     "textcolor": [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
                 }
             },
@@ -9543,7 +9543,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 4,
+                            "revision": 5,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -13456,7 +13456,7 @@
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 110.0, 362.0, 77.0, 28.0 ],
-                    "textcolor": [ 0.3999999999999999, 1.0, 0.936470588235294, 1.0 ],
+                    "textcolor": [ 0.847059, 0.847059, 0.847059, 1.0 ],
                     "varname": "github"
                 }
             },
