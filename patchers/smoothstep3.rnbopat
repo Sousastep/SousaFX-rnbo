@@ -11,7 +11,7 @@
         "classnamespace": "rnbo",
         "rect": [ 818.0, 282.0, 1000.0, 780.0 ],
         "default_fontname": "Lato",
-        "title": "untitled",
+        "title": "smoothstep3",
         "boxes": [
             {
                 "box": {
@@ -30,7 +30,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 34.0, 343.0, 43.0, 23.0 ],
+                    "patching_rect": [ 34.0, 236.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
                         "meta": "",
@@ -212,7 +212,7 @@
             },
             {
                 "box": {
-                    "code": "function clamp(x, lowerlimit, upperlimit) {\n  if (x < lowerlimit) return lowerlimit;\n  if (x > upperlimit) return upperlimit;\n  return x;\n}\n\nfunction smootheststep(edge0, edge1, x) {\n  x = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
+                    "code": "function smootheststep(edge0, edge1, x) {\n  x = clip((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -221,15 +221,15 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 34.0, 67.0, 564.0, 253.0 ],
+                    "patching_rect": [ 34.0, 67.0, 562.0, 149.0 ],
                     "rnbo_classname": "codebox~",
                     "rnbo_extra_attributes": {
-                        "code": "function clamp(x, lowerlimit, upperlimit) {\n  if (x < lowerlimit) return lowerlimit;\n  if (x > upperlimit) return upperlimit;\n  return x;\n}\n\nfunction smootheststep(edge0, edge1, x) {\n  x = clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
+                        "safemath": 1,
                         "nocache": 0,
-                        "expr": "",
-                        "safemath": 1
+                        "code": "function smootheststep(edge0, edge1, x) {\n  x = clip((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nlet result = smootheststep(0.0, 1.0, in1);\nout1 = result;",
+                        "expr": ""
                     },
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "codebox~_obj-1",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
