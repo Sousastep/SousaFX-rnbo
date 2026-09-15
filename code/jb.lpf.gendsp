@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
@@ -46,7 +46,7 @@
             },
             {
                 "box": {
-                    "code": "// Based on Warren Moore's easing C source code\r\n// https://github.com/warrenm/AHEasing/blob/master/AHEasing/easing.c\r\n// Modeled after half sine wave\nSineEaseInOut(value)\n{\n\treturn 0.5 * (1 - cos(value * PI));\n}\r\nout1 = SineEaseInOut(in1);",
+                    "code": "smootheststep(edge0, edge1, x) {\n  x = clip((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nout1 = smootheststep(0.0, 1.0, in1);",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
@@ -55,7 +55,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 292.0, 464.0, 560.0, 170.0 ]
+                    "patching_rect": [ 292.0, 464.0, 578.0, 134.0 ]
                 }
             },
             {
@@ -130,8 +130,8 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 308.0, 441.0, 336.0, 20.0 ],
-                    "text": "reduce resonance as frequency approaches 100 from above"
+                    "patching_rect": [ 308.0, 441.0, 562.0, 20.0 ],
+                    "text": "reduce resonance as frequency approaches 100 from above, via 3rd order smoothstep function"
                 }
             },
             {
