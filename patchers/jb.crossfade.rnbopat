@@ -4,15 +4,353 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 860.0, 87.0, 1921.0, 1319.0 ],
+        "rect": [ 605.0, 87.0, 1921.0, 1319.0 ],
         "default_fontname": "Lato",
         "title": "jb.crossfade",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-3",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 877.0, 1796.0, 126.0, 23.0 ],
+                    "rnbo_classname": "xfade~",
+                    "rnbo_extra_attributes": {
+                        "positionmode": "phase",
+                        "boundmode": "clip",
+                        "inputs": 2.0
+                    },
+                    "rnbo_serial": 6,
+                    "rnbo_uniqueid": "xfade~_obj-3",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "out": {
+                                "attrOrProp": 1,
+                                "digest": "The resultant crossfaded value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "in1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal",
+                                "defaultValue": "0"
+                            },
+                            "in2": {
+                                "attrOrProp": 1,
+                                "digest": "in2",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal",
+                                "defaultValue": "0"
+                            },
+                            "pos": {
+                                "attrOrProp": 1,
+                                "digest": "The crossfade position value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "inputs": {
+                                "attrOrProp": 2,
+                                "digest": "The number of input channels",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "2"
+                            },
+                            "fademode": {
+                                "attrOrProp": 2,
+                                "digest": "Fade curve mode",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "lin", "eqpower", "cos" ],
+                                "type": "enum",
+                                "defaultValue": "eqpower"
+                            },
+                            "positionmode": {
+                                "attrOrProp": 2,
+                                "digest": "Fade position mode",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "phase", "channel" ],
+                                "type": "enum",
+                                "defaultValue": "phase"
+                            },
+                            "boundmode": {
+                                "attrOrProp": 2,
+                                "digest": "Fade bound mode",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "wrap", "clip", "ignore" ],
+                                "type": "enum",
+                                "defaultValue": "clip"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "in1",
+                                "hot": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "in2",
+                                "type": "signal",
+                                "digest": "in2",
+                                "docked": 0
+                            },
+                            {
+                                "name": "pos",
+                                "type": "auto",
+                                "digest": "The crossfade position value",
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out",
+                                "type": "signal",
+                                "digest": "The resultant crossfaded value",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "xfade~",
+                        "aliasOf": "xfade",
+                        "classname": "xfade~",
+                        "operator": 0,
+                        "versionId": -759993777,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "xfade~ @fademode lin"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-42",
+                    "maxclass": "newobj",
+                    "numinlets": 3,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 710.0, 1796.0, 126.0, 23.0 ],
+                    "rnbo_classname": "xfade~",
+                    "rnbo_extra_attributes": {
+                        "positionmode": "phase",
+                        "boundmode": "clip",
+                        "inputs": 2.0
+                    },
+                    "rnbo_serial": 5,
+                    "rnbo_uniqueid": "xfade~_obj-42",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "out": {
+                                "attrOrProp": 1,
+                                "digest": "The resultant crossfaded value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "in1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal",
+                                "defaultValue": "0"
+                            },
+                            "in2": {
+                                "attrOrProp": 1,
+                                "digest": "in2",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal",
+                                "defaultValue": "0"
+                            },
+                            "pos": {
+                                "attrOrProp": 1,
+                                "digest": "The crossfade position value",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "inputs": {
+                                "attrOrProp": 2,
+                                "digest": "The number of input channels",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "2"
+                            },
+                            "fademode": {
+                                "attrOrProp": 2,
+                                "digest": "Fade curve mode",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "lin", "eqpower", "cos" ],
+                                "type": "enum",
+                                "defaultValue": "eqpower"
+                            },
+                            "positionmode": {
+                                "attrOrProp": 2,
+                                "digest": "Fade position mode",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "phase", "channel" ],
+                                "type": "enum",
+                                "defaultValue": "phase"
+                            },
+                            "boundmode": {
+                                "attrOrProp": 2,
+                                "digest": "Fade bound mode",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "enum": [ "wrap", "clip", "ignore" ],
+                                "type": "enum",
+                                "defaultValue": "clip"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "in1",
+                                "hot": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "in2",
+                                "type": "signal",
+                                "digest": "in2",
+                                "docked": 0
+                            },
+                            {
+                                "name": "pos",
+                                "type": "auto",
+                                "digest": "The crossfade position value",
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out",
+                                "type": "signal",
+                                "digest": "The resultant crossfaded value",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "xfade~",
+                        "aliasOf": "xfade",
+                        "classname": "xfade~",
+                        "operator": 0,
+                        "versionId": -759993777,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "xfade~ @fademode lin"
+                }
+            },
             {
                 "box": {
                     "id": "obj-6",
@@ -22,7 +360,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 861.0, 1528.0, 67.0, 23.0 ],
                     "rnbo_classname": "clamp~",
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "clamp~_obj-6",
                     "text": "clamp~ 0 1"
                 }
@@ -36,7 +374,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 563.0, 807.0, 61.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "r~_obj-166",
                     "text": "r~ lfo_env"
                 }
@@ -71,8 +409,8 @@
                     "rnbo_classname": "number~",
                     "rnbo_extra_attributes": {
                         "interval": 100.0,
-                        "initialMode": "monitor",
-                        "displaymode": "first"
+                        "displaymode": "first",
+                        "initialMode": "monitor"
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "number~_obj-46",
@@ -95,8 +433,8 @@
                     "rnbo_classname": "number~",
                     "rnbo_extra_attributes": {
                         "interval": 100.0,
-                        "initialMode": "monitor",
-                        "displaymode": "first"
+                        "displaymode": "first",
+                        "initialMode": "monitor"
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "number~_obj-44",
@@ -119,8 +457,8 @@
                     "rnbo_classname": "number~",
                     "rnbo_extra_attributes": {
                         "interval": 100.0,
-                        "initialMode": "monitor",
-                        "displaymode": "first"
+                        "displaymode": "first",
+                        "initialMode": "monitor"
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "number~_obj-43",
@@ -143,8 +481,8 @@
                     "rnbo_classname": "number~",
                     "rnbo_extra_attributes": {
                         "interval": 100.0,
-                        "initialMode": "monitor",
-                        "displaymode": "first"
+                        "displaymode": "first",
+                        "initialMode": "monitor"
                     },
                     "rnbo_serial": 4,
                     "rnbo_uniqueid": "number~_obj-41",
@@ -167,8 +505,8 @@
                     "rnbo_classname": "number~",
                     "rnbo_extra_attributes": {
                         "interval": 100.0,
-                        "initialMode": "monitor",
-                        "displaymode": "first"
+                        "displaymode": "first",
+                        "initialMode": "monitor"
                     },
                     "rnbo_serial": 5,
                     "rnbo_uniqueid": "number~_obj-40",
@@ -186,8 +524,8 @@
                     "patching_rect": [ 105.0, 1983.0, 163.0, 97.0 ],
                     "rnbo_classname": "scope~",
                     "rnbo_extra_attributes": {
-                        "bufsize": 128.0,
-                        "calccount": 256.0
+                        "calccount": 256.0,
+                        "bufsize": 128.0
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "scope~_obj-37"
@@ -204,8 +542,8 @@
                     "patching_rect": [ 105.0, 1874.0, 163.0, 97.0 ],
                     "rnbo_classname": "scope~",
                     "rnbo_extra_attributes": {
-                        "bufsize": 128.0,
-                        "calccount": 256.0
+                        "calccount": 256.0,
+                        "bufsize": 128.0
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "scope~_obj-36"
@@ -222,8 +560,8 @@
                     "patching_rect": [ 105.0, 1766.0, 163.0, 97.0 ],
                     "rnbo_classname": "scope~",
                     "rnbo_extra_attributes": {
-                        "bufsize": 128.0,
-                        "calccount": 256.0
+                        "calccount": 256.0,
+                        "bufsize": 128.0
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "scope~_obj-35"
@@ -240,8 +578,8 @@
                     "patching_rect": [ 104.0, 1657.0, 163.0, 97.0 ],
                     "rnbo_classname": "scope~",
                     "rnbo_extra_attributes": {
-                        "bufsize": 128.0,
-                        "calccount": 256.0
+                        "calccount": 256.0,
+                        "bufsize": 128.0
                     },
                     "rnbo_serial": 4,
                     "rnbo_uniqueid": "scope~_obj-26"
@@ -258,8 +596,8 @@
                     "patching_rect": [ 104.0, 1440.0, 163.0, 97.0 ],
                     "rnbo_classname": "scope~",
                     "rnbo_extra_attributes": {
-                        "bufsize": 128.0,
-                        "calccount": 256.0
+                        "calccount": 256.0,
+                        "bufsize": 128.0
                     },
                     "rnbo_serial": 5,
                     "rnbo_uniqueid": "scope~_obj-25"
@@ -276,8 +614,8 @@
                     "patching_rect": [ 104.0, 1319.0, 163.0, 110.0 ],
                     "rnbo_classname": "scope~",
                     "rnbo_extra_attributes": {
-                        "bufsize": 128.0,
-                        "calccount": 256.0
+                        "calccount": 256.0,
+                        "bufsize": 128.0
                     },
                     "rnbo_serial": 6,
                     "rnbo_uniqueid": "scope~_obj-12"
@@ -294,8 +632,8 @@
                     "patching_rect": [ 105.0, 1199.0, 162.0, 108.0 ],
                     "rnbo_classname": "scope~",
                     "rnbo_extra_attributes": {
-                        "bufsize": 128.0,
-                        "calccount": 256.0
+                        "calccount": 256.0,
+                        "bufsize": 128.0
                     },
                     "rnbo_serial": 7,
                     "rnbo_uniqueid": "scope~_obj-7"
@@ -338,11 +676,11 @@
                     "patching_rect": [ 526.0, 1796.0, 160.0, 23.0 ],
                     "rnbo_classname": "xfade~",
                     "rnbo_extra_attributes": {
-                        "inputs": 2.0,
+                        "positionmode": "phase",
                         "boundmode": "clip",
-                        "positionmode": "phase"
+                        "inputs": 2.0
                     },
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "xfade~_obj-39",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -507,11 +845,11 @@
                     "patching_rect": [ 359.0, 1796.0, 160.0, 23.0 ],
                     "rnbo_classname": "xfade~",
                     "rnbo_extra_attributes": {
-                        "inputs": 2.0,
+                        "positionmode": "phase",
                         "boundmode": "clip",
-                        "positionmode": "phase"
+                        "inputs": 2.0
                     },
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "xfade~_obj-38",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -678,11 +1016,11 @@
                     "patching_rect": [ 874.0, 1196.0, 50.0, 23.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "initialFormat": "integer",
                         "maximum": "<none>",
+                        "order": "",
+                        "initialFormat": "integer",
                         "minimum": "<none>",
-                        "preset": 0,
-                        "order": ""
+                        "preset": 0
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "number_obj-30"
@@ -747,11 +1085,11 @@
                     "patching_rect": [ 874.0, 1390.0, 63.0, 23.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "initialFormat": "float",
                         "maximum": "<none>",
+                        "order": "",
+                        "initialFormat": "float",
                         "minimum": "<none>",
-                        "preset": 0,
-                        "order": ""
+                        "preset": 0
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "number_obj-29"
@@ -1092,22 +1430,22 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 575.0, 845.3333333333334, 149.0, 37.0 ],
+                    "patching_rect": [ 575.0, 845.3333333333334, 150.0, 37.0 ],
                     "rnbo_classname": "param",
                     "rnbo_extra_attributes": {
-                        "exponent": 1.0,
+                        "displayorder": "-",
+                        "unit": "",
+                        "sendinit": 1,
+                        "tonormalized": "",
+                        "order": "0",
                         "enum": "",
                         "preset": 1,
-                        "unit": "",
                         "steps": 0.0,
                         "meta": "",
-                        "order": "0",
-                        "displayorder": "-",
-                        "displayname": "",
-                        "ctlin": -1.0,
                         "fromnormalized": "",
-                        "sendinit": 1,
-                        "tonormalized": ""
+                        "ctlin": -1.0,
+                        "displayname": "",
+                        "exponent": 1.0
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "xfade_env_sens",
@@ -1527,11 +1865,11 @@
                     "patching_rect": [ 621.0, 897.6666666666667, 50.0, 23.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "initialFormat": "float",
                         "maximum": "<none>",
+                        "order": "",
+                        "initialFormat": "float",
                         "minimum": "<none>",
-                        "preset": 0,
-                        "order": ""
+                        "preset": 0
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "number_obj-11"
@@ -1700,7 +2038,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 526.0, 1830.0, 43.0, 23.0 ],
+                    "patching_rect": [ 728.0, 1948.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
                         "comment": "",
@@ -1794,7 +2132,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 430.0, 1761.0, 35.0, 23.0 ],
+                    "patching_rect": [ 744.0, 1761.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
                         "comment": "",
@@ -1887,7 +2225,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 597.0, 1761.0, 35.0, 23.0 ],
+                    "patching_rect": [ 913.0, 1761.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
                         "comment": "",
@@ -2499,8 +2837,8 @@
                     "patching_rect": [ 966.0, 684.0, 49.0, 23.0 ],
                     "rnbo_classname": "pak",
                     "rnbo_extra_attributes": {
-                        "list": "",
-                        "length": 0.0
+                        "length": 0.0,
+                        "list": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "pak_obj-695",
@@ -2654,8 +2992,8 @@
                     "patching_rect": [ 777.0, 684.0, 49.0, 23.0 ],
                     "rnbo_classname": "pak",
                     "rnbo_extra_attributes": {
-                        "list": "",
-                        "length": 0.0
+                        "length": 0.0,
+                        "list": ""
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "pak_obj-694",
@@ -2968,11 +3306,11 @@
                     "presentation_rect": [ 675.9485031174454, 341.82918285590995, 104.0, 53.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "initialFormat": "float",
                         "maximum": 100.0,
+                        "order": "",
+                        "initialFormat": "float",
                         "minimum": 0.0,
-                        "preset": 0,
-                        "order": ""
+                        "preset": 0
                     },
                     "rnbo_serial": 4,
                     "rnbo_uniqueid": "env_bottom_",
@@ -3001,11 +3339,11 @@
                     "presentation_rect": [ 675.9485031174454, 144.1625142024218, 104.0, 53.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "initialFormat": "float",
                         "maximum": 100.0,
+                        "order": "",
+                        "initialFormat": "float",
                         "minimum": 0.0,
-                        "preset": 0,
-                        "order": ""
+                        "preset": 0
                     },
                     "rnbo_serial": 5,
                     "rnbo_uniqueid": "env_top_",
@@ -3080,7 +3418,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 1156.0, 1513.0, 67.0, 23.0 ],
                     "rnbo_classname": "clamp~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "clamp~_obj-555",
                     "text": "clamp~ 0 1"
                 }
@@ -3198,9 +3536,9 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 785.0, 906.0, 101.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 3,
+                    "rnbo_serial": 5,
                     "rnbo_uniqueid": "slide~_obj-589",
-                    "text": "slide~ 4800 4800"
+                    "text": "slide~ 2400 2400"
                 }
             },
             {
@@ -3212,9 +3550,9 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 966.0, 950.0, 101.0, 23.0 ],
                     "rnbo_classname": "slide~",
-                    "rnbo_serial": 4,
+                    "rnbo_serial": 6,
                     "rnbo_uniqueid": "slide~_obj-590",
-                    "text": "slide~ 4800 4800"
+                    "text": "slide~ 2400 2400"
                 }
             },
             {
@@ -3319,7 +3657,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 292.0, 761.0, 141.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "r~_obj-535",
                     "text": "r~ main_noisegate_active"
                 }
@@ -3376,7 +3714,7 @@
                     "outlettype": [ "signal" ],
                     "patching_rect": [ 512.0, 591.0, 109.0, 23.0 ],
                     "rnbo_classname": "r~",
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 3,
                     "rnbo_uniqueid": "r~_obj-528",
                     "text": "r~ env_pre-smooth"
                 }
@@ -3573,7 +3911,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 359.0, 1830.0, 43.0, 23.0 ],
+                    "patching_rect": [ 561.0, 1948.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
                         "comment": "",
@@ -3849,6 +4187,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-8", 0 ],
+                    "source": [ "obj-3", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-255", 0 ],
                     "source": [ "obj-30", 0 ]
                 }
@@ -3899,8 +4243,14 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-38", 1 ],
+                    "destination": [ "obj-42", 1 ],
                     "source": [ "obj-4", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-707", 0 ],
+                    "source": [ "obj-42", 0 ]
                 }
             },
             {
@@ -3925,7 +4275,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-39", 1 ],
+                    "destination": [ "obj-3", 1 ],
                     "source": [ "obj-5", 0 ]
                 }
             },
@@ -3958,28 +4308,42 @@
             {
                 "patchline": {
                     "destination": [ "obj-1", 0 ],
-                    "order": 1,
-                    "source": [ "obj-534", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-37", 0 ],
                     "order": 3,
                     "source": [ "obj-534", 0 ]
                 }
             },
             {
                 "patchline": {
+                    "destination": [ "obj-3", 2 ],
+                    "order": 0,
+                    "source": [ "obj-534", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-37", 0 ],
+                    "order": 5,
+                    "source": [ "obj-534", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-38", 2 ],
-                    "order": 2,
+                    "order": 4,
                     "source": [ "obj-534", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-39", 2 ],
-                    "order": 0,
+                    "order": 2,
+                    "source": [ "obj-534", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-42", 2 ],
+                    "order": 1,
                     "source": [ "obj-534", 0 ]
                 }
             },
