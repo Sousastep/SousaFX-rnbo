@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -943,7 +943,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 2414.5, 1317.0, 62.0, 22.0 ],
-                    "text": "1, 5. 1200"
+                    "text": "1, 4. 1200"
                 }
             },
             {
@@ -3624,11 +3624,11 @@
                 "box": {
                     "id": "obj-367",
                     "maxclass": "newobj",
-                    "numinlets": 7,
-                    "numoutlets": 7,
-                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-                    "patching_rect": [ 2347.0, 1180.0, 100.0, 22.0 ],
-                    "text": "select 1 2 3 4 5 6"
+                    "numinlets": 6,
+                    "numoutlets": 6,
+                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "" ],
+                    "patching_rect": [ 2357.7, 1185.0, 90.0, 22.0 ],
+                    "text": "select 1 2 3 4 5"
                 }
             },
             {
@@ -3711,7 +3711,7 @@
                     "numoutlets": 7,
                     "outlettype": [ "int", "int", "int", "int", "int", "int", "int" ],
                     "patching_rect": [ 2124.0, 884.0, 380.0, 23.0 ],
-                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🔌", "Audio", "IO", "Status...", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "item", 6, 4, "🪟", "Save", "Window", "Layout", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
+                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Compressor", ";", "#X", "item", 5, 2, "Bassline", ";", "#X", "item", 5, 3, "Mixbus", ";", "#X", "item", 5, 4, "Delay", ";", "#X", "item", 5, 5, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🔌", "Audio", "IO", "Status...", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "item", 6, 4, "🪟", "Save", "Window", "Layout", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
                     "text": "menubar 7"
                 }
             },
@@ -8028,7 +8028,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-367", 0 ],
-                    "midpoints": [ 2424.0, 1469.0, 2330.0, 1469.0, 2330.0, 1162.0, 2356.5, 1162.0 ],
+                    "midpoints": [ 2424.0, 1469.0, 2330.0, 1469.0, 2330.0, 1162.0, 2367.2, 1162.0 ],
                     "source": [ "obj-182", 0 ]
                 }
             },
@@ -9526,37 +9526,31 @@
             {
                 "patchline": {
                     "destination": [ "obj-157", 0 ],
-                    "source": [ "obj-367", 5 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-285", 0 ],
-                    "source": [ "obj-367", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-346", 0 ],
-                    "source": [ "obj-367", 3 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-350", 0 ],
                     "source": [ "obj-367", 4 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-378", 0 ],
+                    "destination": [ "obj-285", 0 ],
+                    "source": [ "obj-367", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-346", 0 ],
                     "source": [ "obj-367", 2 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-59", 0 ],
-                    "source": [ "obj-367", 0 ]
+                    "destination": [ "obj-350", 0 ],
+                    "source": [ "obj-367", 3 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-378", 0 ],
+                    "source": [ "obj-367", 1 ]
                 }
             },
             {
@@ -11300,10 +11294,7 @@
             "obj-377::obj-165": [ "octaver enable[1]", "octaver enable", 0 ],
             "obj-377::obj-169": [ "live.dial[61]", "harmonic mod peak", 0 ],
             "obj-377::obj-176": [ "live.dial[63]", "harmonic output", 0 ],
-            "obj-377::obj-183": [ "live.dial[64]", "dry amt", 0 ],
             "obj-377::obj-2": [ "high boost", "high boost", 0 ],
-            "obj-377::obj-20": [ "live.dial[9]", "tuba drive", 0 ],
-            "obj-377::obj-21": [ "live.dial[10]", "mix", 0 ],
             "obj-377::obj-24": [ "octaver volume", "volume", 0 ],
             "obj-377::obj-25": [ "octaver compression", "compress", 0 ],
             "obj-377::obj-26": [ "octaver enable", "octaver enable", 0 ],
