@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1577.0, 168.0, 395.0, 813.0 ],
+        "rect": [ 425.0, 44.0, 379.0, 732.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
@@ -26,7 +26,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 372.0, 777.0, 122.0, 47.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 36.5, 138.75, 122.0, 47.0 ],
+                    "presentation_rect": [ 37.0, 149.0, 122.0, 47.0 ],
                     "text": "soloing",
                     "textjustification": 1
                 }
@@ -44,7 +44,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 369.0, 769.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 6.5, 37.75, 184.0, 266.5 ],
+                    "presentation_rect": [ 6.0, 80.0, 184.0, 169.0 ],
                     "proportion": 0.5
                 }
             },
@@ -58,8 +58,6 @@
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
                     "patching_rect": [ 3055.0, 713.0, 25.0, 36.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 121.0, 84.5, 52.0, 36.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[60]",
@@ -101,8 +99,6 @@
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
                     "patching_rect": [ 3193.0, 976.0, 25.0, 36.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 75.0, 153.0, 91.0, 36.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[63]",
@@ -155,8 +151,6 @@
                     "outlettype": [ "", "float" ],
                     "parameter_enable": 1,
                     "patching_rect": [ 2985.0, 563.0, 25.0, 36.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 75.0, 72.0, 91.0, 36.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[61]",
@@ -222,7 +216,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2620.0, 1711.0, 142.0, 18.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 248.0, 56.0, 118.0, 18.0 ],
+                    "presentation_rect": [ 104.5, 52.5, 54.0, 18.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -315,7 +309,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2335.0, 1711.0, 142.0, 18.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 215.5, 495.0, 100.5, 18.0 ],
+                    "presentation_rect": [ 214.0, 432.0, 100.5, 18.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -396,7 +390,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2001.0, 1693.0, 35.0, 31.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 120.5, 491.0, 25.0, 25.0 ],
+                    "presentation_rect": [ 119.0, 428.0, 25.0, 25.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -478,7 +472,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1711.0, 1707.0, 142.0, 18.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 248.0, 36.0, 119.0, 18.0 ],
+                    "presentation_rect": [ 104.5, 30.5, 54.0, 18.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -598,7 +592,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1396.0, 1695.0, 35.0, 31.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 333.0, 491.0, 25.0, 25.0 ],
+                    "presentation_rect": [ 331.0, 428.0, 25.0, 25.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -701,7 +695,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 2474.0, 1211.0, 909.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 258.5, 353.5, 48.0, 21.0 ],
+                    "presentation_rect": [ 257.0, 291.0, 48.0, 21.0 ],
                     "text": "Enable:",
                     "textjustification": 2
                 }
@@ -715,7 +709,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 2459.0, 1196.0, 909.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 228.5, 317.0, 137.5, 21.0 ],
+                    "presentation_rect": [ 227.0, 254.0, 137.5, 21.0 ],
                     "text": "Octaver",
                     "textjustification": 1
                 }
@@ -783,7 +777,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1172.0, 1701.0, 35.0, 31.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 303.5, 351.5, 25.0, 25.0 ],
+                    "presentation_rect": [ 302.0, 289.0, 25.0, 25.0 ],
                     "saved_attribute_attributes": {
                         "activebgcolor": {
                             "expression": ""
@@ -810,7 +804,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1392.0, 1983.0, 61.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 293.5, 398.0, 61.0, 48.0 ],
+                    "presentation_rect": [ 292.0, 335.0, 61.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "octaver compression",
@@ -834,7 +828,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1162.0, 1982.0, 61.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 242.0, 398.0, 50.0, 48.0 ],
+                    "presentation_rect": [ 240.0, 335.0, 50.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "octaver volume",
@@ -953,7 +947,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 3285.0, 1266.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 32.0, 398.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 30.0, 335.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low boost[1]",
@@ -977,7 +971,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 3055.0, 1266.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 142.0, 398.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 140.0, 335.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low Q[1]",
@@ -1001,7 +995,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2910.0, 1266.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 87.0, 398.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 85.0, 335.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "low freq[1]",
@@ -1058,7 +1052,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 2444.0, 1181.0, 909.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 41.0, 317.0, 158.0, 21.0 ],
+                    "presentation_rect": [ 39.0, 254.0, 158.0, 21.0 ],
                     "text": "Bassline EQs",
                     "textjustification": 1
                 }
@@ -1124,7 +1118,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2780.0, 1271.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 32.0, 340.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 30.0, 277.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid trim",
@@ -1149,7 +1143,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2600.0, 1273.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 142.0, 340.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 140.0, 277.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid Q",
@@ -1173,7 +1167,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2478.0, 1271.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 87.0, 340.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 85.0, 277.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid freq",
@@ -1313,7 +1307,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2658.0, 827.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 11.0, 195.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 9.0, 120.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high boost[1]",
@@ -1337,7 +1331,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2318.0, 827.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 121.0, 195.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 119.0, 120.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high Q[1]",
@@ -1361,7 +1355,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2027.0, 827.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 66.0, 195.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 64.0, 120.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high freq[1]",
@@ -1471,7 +1465,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2647.0, 669.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 11.0, 247.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 9.0, 180.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid trim[2]",
@@ -1496,7 +1490,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2318.0, 671.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 121.0, 247.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 119.0, 180.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid Q[2]",
@@ -1520,7 +1514,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2018.0, 675.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 66.0, 247.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 64.0, 180.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid freq[2]",
@@ -1629,7 +1623,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2496.0, 328.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 194.5, 183.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 193.0, 120.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high boost",
@@ -1653,7 +1647,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2181.0, 330.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 304.5, 183.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 303.0, 120.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high Q",
@@ -1677,7 +1671,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1865.0, 328.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 249.5, 183.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 248.0, 120.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "high freq",
@@ -1787,7 +1781,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2485.0, 170.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 194.5, 243.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 193.0, 180.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid trim[1]",
@@ -1812,7 +1806,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 2156.0, 172.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 304.5, 243.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 303.0, 180.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid Q[1]",
@@ -1836,7 +1830,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1856.0, 176.0, 66.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 249.5, 243.0, 66.0, 48.0 ],
+                    "presentation_rect": [ 248.0, 180.0, 66.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "mid freq[1]",
@@ -1892,7 +1886,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.6 ],
+                    "restore": [ 0.52 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1909,7 +1903,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 449.5, 1139.5, 40.0, 22.0 ],
-                    "restore": [ 0.0 ],
+                    "restore": [ 0.05 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1929,7 +1923,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 536.5, 1143.0, 44.0, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 101.0, 748.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 99.0, 685.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.numbox[41]",
@@ -1954,7 +1948,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 460.0, 1181.5, 44.0, 15.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 52.0, 748.0, 44.0, 15.0 ],
+                    "presentation_rect": [ 50.0, 685.0, 44.0, 15.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.numbox[40]",
@@ -2055,7 +2049,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 474.0, 212.0, 159.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 190.0, 659.0, 175.0, 21.0 ],
+                    "presentation_rect": [ 188.0, 596.0, 175.0, 21.0 ],
                     "text": "Low Amp Modulation",
                     "textjustification": 1
                 }
@@ -2069,7 +2063,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 459.0, 187.0, 159.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 191.0, 468.0, 175.0, 21.0 ],
+                    "presentation_rect": [ 189.0, 405.0, 175.0, 21.0 ],
                     "text": "LPF Freq Modulation",
                     "textjustification": 1
                 }
@@ -2084,7 +2078,7 @@
                     "outlettype": [ "bang" ],
                     "patching_rect": [ 100.0, 673.0, 184.0, 68.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 190.0, 659.0, 176.0, 109.0 ],
+                    "presentation_rect": [ 188.0, 596.0, 176.0, 109.0 ],
                     "range": [ -0.1, 1.1 ]
                 }
             },
@@ -2098,7 +2092,7 @@
                     "outlettype": [ "bang" ],
                     "patching_rect": [ 42.0, 588.0, 184.0, 68.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 190.0, 491.0, 176.0, 163.0 ],
+                    "presentation_rect": [ 188.0, 428.0, 176.0, 163.0 ],
                     "range": [ -0.1, 1.1 ]
                 }
             },
@@ -2295,7 +2289,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 203.0, 909.0, 50.0, 63.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 172.5, 14.0, 90.0, 63.0 ],
+                    "presentation_rect": [ 23.0, 10.5, 90.0, 63.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[22]",
@@ -2329,7 +2323,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 444.0, 163.0, 159.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 199.0, 92.0, 167.0, 21.0 ],
+                    "presentation_rect": [ 197.0, 29.0, 167.0, 21.0 ],
                     "text": "detune",
                     "textjustification": 1
                 }
@@ -2395,7 +2389,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1474.0, 251.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 227.5, 115.0, 35.0, 48.0 ],
+                    "presentation_rect": [ 226.0, 52.0, 35.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[18]",
@@ -2419,7 +2413,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1474.0, 86.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 262.5, 115.0, 40.0, 48.0 ],
+                    "presentation_rect": [ 261.0, 52.0, 40.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[20]",
@@ -2444,7 +2438,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1474.0, 411.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 302.5, 115.0, 43.0, 48.0 ],
+                    "presentation_rect": [ 301.0, 52.0, 43.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[21]",
@@ -2500,7 +2494,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 429.0, 138.0, 159.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.5, 45.0, 166.0, 21.0 ],
+                    "presentation_rect": [ 13.0, 87.0, 166.0, 21.0 ],
                     "text": "pre-LPF overdrive",
                     "textjustification": 1
                 }
@@ -2644,7 +2638,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 667.0, 87.0, 84.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 56.0, 474.0, 84.0, 48.0 ],
+                    "presentation_rect": [ 54.0, 411.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[7]",
@@ -2707,7 +2701,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1245.0, 1210.0, 172.00000512599945, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 12.0, 582.0, 172.0, 48.0 ],
+                    "presentation_rect": [ 10.0, 519.0, 172.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[6]",
@@ -2771,7 +2765,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1138.0, 1046.0, 172.00000512599945, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 12.0, 528.0, 172.0, 48.0 ],
+                    "presentation_rect": [ 10.0, 465.0, 172.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[5]",
@@ -2824,7 +2818,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1028.5, 577.0, 84.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 16.0, 635.0, 84.0, 48.0 ],
+                    "presentation_rect": [ 14.0, 572.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[3]",
@@ -2865,7 +2859,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1108.5, 713.0, 84.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 102.0, 635.0, 84.0, 48.0 ],
+                    "presentation_rect": [ 100.0, 572.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[2]",
@@ -2906,7 +2900,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 876.0, 444.0, 84.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 102.0, 689.0, 84.0, 48.0 ],
+                    "presentation_rect": [ 100.0, 626.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[1]",
@@ -2947,7 +2941,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 737.0, 285.0, 84.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 16.0, 689.0, 84.0, 48.0 ],
+                    "presentation_rect": [ 14.0, 626.0, 84.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial",
@@ -3018,7 +3012,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 405.5, 69.0, 40.0, 40.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 66.0, 468.0, 65.0, 65.0 ],
+                    "presentation_rect": [ 64.0, 405.0, 65.0, 65.0 ],
                     "size": 1.0
                 }
             },
@@ -3036,7 +3030,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 928.0, 104.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 227.0, 317.0, 139.0, 138.0 ],
+                    "presentation_rect": [ 225.0, 254.0, 139.0, 138.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -3060,7 +3054,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 913.0, 89.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.0, 317.0, 198.0, 138.0 ],
+                    "presentation_rect": [ 13.0, 254.0, 198.0, 138.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -3084,7 +3078,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 898.0, 73.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.0, 468.0, 351.0, 313.0 ],
+                    "presentation_rect": [ 13.0, 405.0, 351.0, 313.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -3108,7 +3102,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 898.0, 74.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 199.0, 91.0, 167.0, 213.0 ],
+                    "presentation_rect": [ 197.0, 28.0, 167.0, 213.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -3132,7 +3126,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 883.0, 59.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 15.0, 45.0, 167.0, 259.0 ],
+                    "presentation_rect": [ 13.0, 87.0, 167.0, 154.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -3159,7 +3153,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 362.0, 558.0, 215.0, 54.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 10.0, 6.0, 360.0, 33.25 ],
+                    "presentation_rect": [ 10.0, 6.0, 360.0, 72.0 ],
                     "size": 1.0
                 }
             },
@@ -3177,7 +3171,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 210.0, 123.0, 79.0, 83.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 0.0, 0.0, 379.0, 797.5 ],
+                    "presentation_rect": [ 0.0, 0.0, 379.0, 732.0 ],
                     "proportion": 0.5,
                     "rounded": 0
                 }
