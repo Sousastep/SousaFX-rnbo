@@ -1955,11 +1955,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-rnbopat.maxpat",
+                    "name": "sousaFX-external.maxpat",
                     "numinlets": 1,
                     "numoutlets": 18,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
