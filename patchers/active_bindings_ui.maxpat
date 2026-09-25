@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 2560.0, 176.0, 2540.0, 1367.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -729,7 +729,7 @@
             {
                 "box": {
                     "coll_data": {
-                        "count": 74,
+                        "count": 75,
                         "data": [
                             {
                                 "key": 1,
@@ -797,7 +797,7 @@
                             },
                             {
                                 "key": 17,
-                                "value": [ 0.0 ]
+                                "value": [ 0.0, 0 ]
                             },
                             {
                                 "key": 18,
@@ -893,7 +893,7 @@
                             },
                             {
                                 "key": 41,
-                                "value": [ 0.0 ]
+                                "value": [ 0.0, 0 ]
                             },
                             {
                                 "key": 42,
@@ -905,11 +905,11 @@
                             },
                             {
                                 "key": 44,
-                                "value": [ 0.6001299999999999, 0 ]
+                                "value": [ 0.5, 0 ]
                             },
                             {
                                 "key": 45,
-                                "value": [ 0.579643, 0 ]
+                                "value": [ 0.5, 0 ]
                             },
                             {
                                 "key": 46,
@@ -937,7 +937,7 @@
                             },
                             {
                                 "key": 52,
-                                "value": [ 0.0 ]
+                                "value": [ 0.0, 0 ]
                             },
                             {
                                 "key": 53,
@@ -1021,10 +1021,14 @@
                             },
                             {
                                 "key": 77,
-                                "value": [ 0.0625, 0 ]
+                                "value": [ 0.125, 0 ]
                             },
                             {
                                 "key": 78,
+                                "value": [ 0.0, 0 ]
+                            },
+                            {
+                                "key": 79,
                                 "value": [ 0.0, 0 ]
                             }
                         ]
@@ -1087,7 +1091,7 @@
             },
             {
                 "box": {
-                    "code": "1, \"Main Stutter Enable\";\n2, \"Main Stutter Accel\";\n3, \"Main Stutter Autopan\";\n4, \"Main Stutter Reverse\";\n5, \"solo Stutter Enable\";\n6, \"solo Stutter Accel\";\n7, \"solo Stutter Autopan\";\n8, \"solo Stutter Reverse\";\n9, \"drum Stutter Enable\";\n10, \"drum Stutter Accel\";\n11, \"drum Stutter Autopan\";\n12, \"drum Stutter Reverse\";\n13, \"looper Stutter Enable\";\n14, \"looper Stutter Accel\";\n15, \"looper Stutter Autopan\";\n16, \"looper Stutter Reverse\";\n17, \"looper scatter enable\";\n18, \"Main Delay Send\";\n19, \"Main Delay Fdbk\";\n20, \"Main Delay Fdbk amt held\";\n21, \"Main Delay Freq\";\n22, \"Main Delay Out Vol\";\n23, \"looper Delay Send\";\n24, \"looper Delay Fdbk\";\n25, \"looper Delay Fdbk amt held\";\n26, \"looper Delay Freq\";\n27, \"looper Delay Out Vol\";\n28, \"solo Delay Send\";\n29, \"solo Delay Fdbk\";\n30, \"solo Delay Fdbk amt held\";\n31, \"solo Delay Freq\";\n32, \"solo Delay Out Vol\";\n33, \"drum Delay Send\";\n34, \"drum Delay Fdbk\";\n35, \"drum Delay Fdbk amt held\";\n36, \"drum Delay Freq\";\n37, \"drum Delay Out Vol\";\n38, \"Envelope Crossfade Position\";\n39, \"enable envelope crossfade\";\n40, \"enable transient helper\";\n41, \"pitchshift transpose\";\n42, \"LFO shape\";\n43, \"LFO Main Speed\";\n44, \"LFO Floor Envelope Sensitivity\";\n45, \"LFO Ceiling Envelope Sensitivity\";\n46, \"LFO pow\";\n47, \"LPF resonance\";\n48, \"Swing Amount\";\n49, \"auto-wah enable\";\n50, \"auto-wah adjust\";\n51, \"ADSR enable\";\n52, \"toggle bumper drumming\";\n53, \"bumper drumming enabled\";\n54, \"kit preset number\";\n55, \"trigger tom\";\n56, \"trigger clap\";\n57, \"trigger snare\";\n58, \"trigger kick\";\n59, \"drum groove rate\";\n60, \"tap tempo\";\n61, \"toggle metronome\";\n62, \"set time sig numerator\";\n63, \"kickduck status\";\n64, \"main looper length bars\";\n65, \"drum looper length bars\";\n66, \"Main Reverb Send\";\n67, \"Looper Reverb Send\";\n68, \"Drum Reverb Send\";\n69, \"main looper button\";\n70, \"drum looper button\";\n71, \"looper filtersweep\";\n72, \"drum filtersweep\";\n73, \"RV post-deadzone\";\n74, \"RH post-deadzone\";\n75, \"LV post-deadzone\";\n76, \"LH post-deadzone\";\n77, \"main subdiv\";\n78, \"subdiv phase reset\";\r\n79, \"talkback enable\";\r\n80, \"disable env mod of lpf freq\";\r\n81, \"LFO Free Speed\";\n82, \"LFO Sync-Free Crossfade\";\n83, \"Octaver Enable\";\n84, \"autoswing_enable\";\n85, \"crossfade_mode\";\n86, \"lpf freq mod mode\";\n87, \"crossfade binding mode\";\n88, \"tremolo depth\";\n89, \"tremolo duty\";\n90, \"tremolo accel\";\n91, \"tremolo autopan\";",
+                    "code": "1, \"Main Stutter Enable\";\n2, \"Main Stutter Accel\";\n3, \"Main Stutter Autopan\";\n4, \"Main Stutter Reverse\";\n5, \"solo Stutter Enable\";\n6, \"solo Stutter Accel\";\n7, \"solo Stutter Autopan\";\n8, \"solo Stutter Reverse\";\n9, \"drum Stutter Enable\";\n10, \"drum Stutter Accel\";\n11, \"drum Stutter Autopan\";\n12, \"drum Stutter Reverse\";\n13, \"looper Stutter Enable\";\n14, \"looper Stutter Accel\";\n15, \"looper Stutter Autopan\";\n16, \"looper Stutter Reverse\";\n17, \"looper scatter enable\";\n18, \"Main Delay Send\";\n19, \"Main Delay Fdbk\";\n20, \"Main Delay Fdbk amt held\";\n21, \"Main Delay Freq\";\n22, \"Main Delay Out Vol\";\n23, \"looper Delay Send\";\n24, \"looper Delay Fdbk\";\n25, \"looper Delay Fdbk amt held\";\n26, \"looper Delay Freq\";\n27, \"looper Delay Out Vol\";\n28, \"solo Delay Send\";\n29, \"solo Delay Fdbk\";\n30, \"solo Delay Fdbk amt held\";\n31, \"solo Delay Freq\";\n32, \"solo Delay Out Vol\";\n33, \"drum Delay Send\";\n34, \"drum Delay Fdbk\";\n35, \"drum Delay Fdbk amt held\";\n36, \"drum Delay Freq\";\n37, \"drum Delay Out Vol\";\n38, \"Envelope Crossfade Position\";\n39, \"enable envelope crossfade\";\n40, \"enable transient helper\";\n41, \"pitchshift transpose\";\n42, \"LFO shape\";\n43, \"LFO Main Speed\";\n44, \"LFO Floor Envelope Sensitivity\";\n45, \"LFO Ceiling Envelope Sensitivity\";\n46, \"LFO pow\";\n47, \"LPF resonance\";\n48, \"Swing Amount\";\n49, \"auto-wah enable\";\n50, \"auto-wah adjust\";\n51, \"ADSR enable\";\n52, \"toggle bumper drumming\";\n53, \"bumper drumming enabled\";\n54, \"kit preset number\";\n55, \"trigger tom\";\n56, \"trigger clap\";\n57, \"trigger snare\";\n58, \"trigger kick\";\n59, \"drum groove rate\";\n60, \"tap tempo\";\n61, \"toggle metronome\";\n62, \"set time sig numerator\";\n63, \"kickduck status\";\n64, \"main looper length bars\";\n65, \"drum looper length bars\";\n66, \"Main Reverb Send\";\n67, \"Looper Reverb Send\";\n68, \"Drum Reverb Send\";\n69, \"main looper button\";\n70, \"drum looper button\";\n71, \"looper filtersweep\";\n72, \"drum filtersweep\";\n73, \"RV post-deadzone\";\n74, \"RH post-deadzone\";\n75, \"LV post-deadzone\";\n76, \"LH post-deadzone\";\n77, \"main subdiv\";\n78, \"subdiv phase reset\";\r\n79, \"talkback enable\";\r\n80, \"disable env mod of lpf freq\";\r\n81, \"LFO Free Speed\";\n82, \"LFO Sync-Free Crossfade\";\n83, \"Octaver Enable\";\n84, \"autoswing_enable\";\n85, \"crossfade_mode\";\n86, \"lpf freq mod mode\";\n87, \"crossfade binding mode\";\n88, \"tremolo depth\";\n89, \"tremolo duty\";\n90, \"tremolo accel\";\n91, \"tremolo autopan\";\r\n92, \"idle enable\";\r\n93, \"distortion selection\";",
                     "fontface": 0,
                     "fontname": "<Monospaced>",
                     "fontsize": 12.0,
