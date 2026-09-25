@@ -9,13 +9,24 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 51.0, 91.0, 445.0, 586.0 ],
+        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-488",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 4815.5, 2602.0, 51.0, 22.0 ],
+                    "text": "delete 3"
+                }
+            },
             {
                 "box": {
                     "activebgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
@@ -1955,11 +1966,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-rnbopat.maxpat",
+                    "name": "sousaFX-external.maxpat",
                     "numinlets": 1,
                     "numoutlets": 18,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -6544,10 +6555,10 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 4572.5, 2642.0, 291.0, 23.0 ],
                     "saved_object_attributes": {
-                        "client_rect": [ 100, 159, 532, 396 ],
+                        "client_rect": [ 4, 44, 358, 172 ],
                         "parameter_enable": 0,
                         "parameter_mappable": 0,
-                        "storage_rect": [ 1574, 87, 2050, 1373 ]
+                        "storage_rect": [ 574, 129, 1025, 257 ]
                     },
                     "text": "pattrstorage sousaFX-rnbo @greedy 0 @savemode 0",
                     "varname": "sousaFX-rnbo"
@@ -10631,6 +10642,12 @@
                 "patchline": {
                     "destination": [ "obj-489", 0 ],
                     "source": [ "obj-487", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-52", 0 ],
+                    "source": [ "obj-488", 0 ]
                 }
             },
             {
