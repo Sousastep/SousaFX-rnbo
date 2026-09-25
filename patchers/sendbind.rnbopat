@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
@@ -15,19 +15,101 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-8",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 17.0, 296.0, 74.0, 23.0 ],
+                    "rnbo_classname": "loadmess",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "loadmess_obj-8",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Bang to trigger message.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "bang"
+                            },
+                            "message": {
+                                "attrOrProp": 1,
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "list",
+                                "defaultValue": ""
+                            },
+                            "startupbang": {
+                                "attrOrProp": 1,
+                                "digest": "startupbang",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "bang",
+                                "digest": "Bang to trigger message.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "message",
+                                "type": "list",
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "loadmess",
+                        "aliasOf": "loadmess",
+                        "classname": "loadmess",
+                        "operator": 0,
+                        "versionId": -361086158,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "loadmess #1"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-5",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 96.0, 101.0, 94.0, 23.0 ],
+                    "patching_rect": [ 98.0, 100.0, 73.0, 23.0 ],
                     "rnbo_classname": "round",
                     "rnbo_extra_attributes": {
                         "hot": 0
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "round_obj-5",
-                    "text": "round 0.000001"
+                    "text": "round 0.001"
                 }
             },
             {
@@ -37,7 +119,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 117.0, 296.6666666666667, 23.0, 23.0 ],
+                    "patching_rect": [ 179.0, 284.0, 23.0, 23.0 ],
                     "rnbo_classname": "t",
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "t_obj-7",
@@ -106,7 +188,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 106.5, 333.0, 56.0, 23.0 ],
+                    "patching_rect": [ 158.0, 321.0, 56.0, 23.0 ],
                     "rnbo_classname": "change",
                     "rnbo_extra_attributes": {
                         "mode": "default"
@@ -123,7 +205,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 117.0, 254.55555555555557, 130.0, 23.0 ],
+                    "patching_rect": [ 179.0, 242.0, 130.0, 23.0 ],
                     "rnbo_classname": "delay",
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "delay_obj-4",
@@ -137,7 +219,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 96.0, 184.0, 40.0, 23.0 ],
+                    "patching_rect": [ 98.0, 183.0, 40.0, 23.0 ],
                     "rnbo_classname": "t",
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "t_obj-3",
@@ -246,11 +328,11 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 96.0, 61.0, 72.0, 23.0 ],
+                    "patching_rect": [ 98.0, 60.0, 79.0, 23.0 ],
                     "rnbo_classname": "speedlim",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 2,
                     "rnbo_uniqueid": "speedlim_obj-2",
-                    "text": "speedlim 64"
+                    "text": "speedlim 100"
                 }
             },
             {
@@ -260,7 +342,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 96.0, 143.0, 56.0, 23.0 ],
+                    "patching_rect": [ 98.0, 142.0, 56.0, 23.0 ],
                     "rnbo_classname": "change",
                     "rnbo_extra_attributes": {
                         "mode": "default"
@@ -273,12 +355,11 @@
             {
                 "box": {
                     "id": "obj-403",
-                    "linecount": 3,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.5, 445.0, 238.0, 50.0 ],
-                    "text": "#1 is the parameter name, in quotes\n\n#2 is the parameter number, from 1 to 76"
+                    "patching_rect": [ 154.0, 373.0, 167.0, 21.0 ],
+                    "text": "param number, value, isActive "
                 }
             },
             {
@@ -288,13 +369,13 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 64.5, 373.0, 61.0, 23.0 ],
+                    "patching_rect": [ 98.0, 372.0, 50.0, 23.0 ],
                     "rnbo_classname": "pak",
                     "rnbo_extra_attributes": {
                         "length": 0.0,
                         "list": ""
                     },
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "pak_obj-401",
                     "rnboinfo": {
                         "needsInstanceInfo": 1,
@@ -416,7 +497,7 @@
                         "versionId": 1331432417,
                         "changesPatcherIO": 0
                     },
-                    "text": "pak #2 f 0"
+                    "text": "pak i f 0"
                 }
             },
             {
@@ -425,7 +506,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 64.5, 413.0, 84.0, 23.0 ],
+                    "patching_rect": [ 98.0, 422.0, 84.0, 23.0 ],
                     "rnbo_classname": "s",
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "s_obj-400",
@@ -439,11 +520,11 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 96.0, 19.0, 28.0, 23.0 ],
+                    "patching_rect": [ 98.0, 18.0, 28.0, 23.0 ],
                     "rnbo_classname": "in",
                     "rnbo_extra_attributes": {
-                        "comment": "",
-                        "meta": ""
+                        "meta": "",
+                        "comment": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "in_obj-399",
@@ -578,6 +659,12 @@
                 "patchline": {
                     "destination": [ "obj-6", 0 ],
                     "source": [ "obj-7", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-401", 0 ],
+                    "source": [ "obj-8", 0 ]
                 }
             }
         ]
