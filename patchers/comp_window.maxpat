@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 923.0, 446.0, 713.0, 547.0 ],
+        "rect": [ 0.0, 53.0, 2127.0, 1387.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -20,6 +20,29 @@
         "enabletransparentbgwithtitlebar": 1,
         "title": "compressor parameters",
         "boxes": [
+            {
+                "box": {
+                    "args": [ "post-xfade" ],
+                    "bgmode": 0,
+                    "border": 0,
+                    "clickthrough": 0,
+                    "enablehscroll": 0,
+                    "enablevscroll": 0,
+                    "id": "obj-3",
+                    "lockeddragscroll": 0,
+                    "lockedsize": 0,
+                    "maxclass": "bpatcher",
+                    "name": "comp_ui.maxpat",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "offset": [ 0.0, 0.0 ],
+                    "patching_rect": [ 281.0, 298.0, 229.0, 189.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 477.0, 348.0, 229.0, 189.0 ],
+                    "varname": "post-xfade",
+                    "viewvisibility": 1
+                }
+            },
             {
                 "box": {
                     "id": "obj-374",
@@ -102,7 +125,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 409.0, 516.0, 189.60000282526016, 139.20000207424164 ],
                     "presentation": 1,
-                    "presentation_rect": [ 508.0, 387.0, 189.60000282526016, 139.20000207424164 ],
+                    "presentation_rect": [ 383.0, 10.800000190734863, 189.60000282526016, 139.20000207424164 ],
                     "varname": "limiter_ui[1]",
                     "viewvisibility": 1
                 }
@@ -169,7 +192,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 1028.0, 113.0, 189.60000282526016, 139.20000207424164 ],
                     "presentation": 1,
-                    "presentation_rect": [ 261.6999985873699, 10.800000190734863, 189.60000282526016, 139.20000207424164 ],
+                    "presentation_rect": [ 144.0, 10.800000190734863, 189.60000282526016, 139.20000207424164 ],
                     "varname": "limiter_ui",
                     "viewvisibility": 1
                 }
@@ -239,7 +262,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 522.0, 298.0, 229.0, 189.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 242.0, 348.0, 229.0, 189.0 ],
+                    "presentation_rect": [ 240.9000000357628, 348.0, 229.0, 189.0 ],
                     "varname": "final",
                     "viewvisibility": 1
                 }
