@@ -47,7 +47,7 @@
                         "valueof": {
                             "parameter_initial": [ 12 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox[24]",
+                            "parameter_longname": "live.numbox[43]",
                             "parameter_mmax": 100.0,
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.numbox[23]",
@@ -95,7 +95,7 @@
                         "valueof": {
                             "parameter_initial": [ 220 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox[23]",
+                            "parameter_longname": "live.numbox[42]",
                             "parameter_mmax": 8000.0,
                             "parameter_modmode": 4,
                             "parameter_shortname": "live.numbox[23]",
@@ -1966,11 +1966,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
                     "numoutlets": 18,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -11241,6 +11241,16 @@
             "obj-281::obj-2::obj-20": [ "live.dial[30]", "release", 0 ],
             "obj-281::obj-2::obj-3": [ "live.dial[31]", "lookahead", 0 ],
             "obj-281::obj-2::obj-4": [ "live.dial[32]", "input gain", 0 ],
+            "obj-281::obj-3::obj-10": [ "live.numbox[39]", "live.numbox[2]", 0 ],
+            "obj-281::obj-3::obj-12": [ "live.numbox[24]", "live.numbox[2]", 0 ],
+            "obj-281::obj-3::obj-13": [ "live.numbox[40]", "live.numbox[2]", 0 ],
+            "obj-281::obj-3::obj-2": [ "lookahead[5]", "lookahead", 0 ],
+            "obj-281::obj-3::obj-20": [ "live.numbox[23]", "live.numbox[2]", 0 ],
+            "obj-281::obj-3::obj-3": [ "comp amt[10]", "comp amt", 0 ],
+            "obj-281::obj-3::obj-4": [ "attack[11]", "attack", 0 ],
+            "obj-281::obj-3::obj-5": [ "release[10]", "release", 0 ],
+            "obj-281::obj-3::obj-6": [ "himidfq[11]", "hi mid freq", 0 ],
+            "obj-281::obj-3::obj-7": [ "himid[2]", "hi mid gain", 0 ],
             "obj-344::obj-14": [ "delay vol[1]", "delay vol", 0 ],
             "obj-344::obj-15": [ "dry vol[1]", "dry vol", 0 ],
             "obj-344::obj-172": [ "Kick Volume", "Kick", 0 ],
@@ -11337,7 +11347,7 @@
             "obj-377::obj-88": [ "mid Q[1]", "mid Q", 0 ],
             "obj-377::obj-89": [ "mid freq[1]", "mid freq", 0 ],
             "obj-377::obj-9": [ "high freq", "high freq", 0 ],
-            "obj-377::obj-91": [ "live.numbox[40]", "live.numbox[39]", 0 ],
+            "obj-377::obj-91": [ "live.numbox[25]", "live.numbox[39]", 0 ],
             "obj-377::obj-94": [ "live.numbox[41]", "live.numbox[39]", 0 ],
             "obj-425": [ "BassMono", "BassMono", 0 ],
             "obj-428": [ "Freq", "Freq", 0 ],
@@ -11345,8 +11355,8 @@
             "obj-441": [ "live.numbox[35]", "live.numbox", 0 ],
             "obj-451": [ "live.numbox[36]", "live.numbox", 0 ],
             "obj-485": [ "live.toggle", "live.toggle", 0 ],
-            "obj-489": [ "live.numbox[23]", "live.numbox[23]", 0 ],
-            "obj-495": [ "live.numbox[24]", "live.numbox[23]", 0 ],
+            "obj-489": [ "live.numbox[42]", "live.numbox[23]", 0 ],
+            "obj-495": [ "live.numbox[43]", "live.numbox[23]", 0 ],
             "parameterbanks": {
                 "0": {
                     "index": 0,
@@ -11507,6 +11517,36 @@
                 },
                 "obj-281::obj-2::obj-4": {
                     "parameter_longname": "live.dial[32]"
+                },
+                "obj-281::obj-3::obj-10": {
+                    "parameter_longname": "live.numbox[39]"
+                },
+                "obj-281::obj-3::obj-12": {
+                    "parameter_longname": "live.numbox[24]"
+                },
+                "obj-281::obj-3::obj-13": {
+                    "parameter_longname": "live.numbox[40]"
+                },
+                "obj-281::obj-3::obj-2": {
+                    "parameter_longname": "lookahead[5]"
+                },
+                "obj-281::obj-3::obj-20": {
+                    "parameter_longname": "live.numbox[23]"
+                },
+                "obj-281::obj-3::obj-3": {
+                    "parameter_longname": "comp amt[10]"
+                },
+                "obj-281::obj-3::obj-4": {
+                    "parameter_longname": "attack[11]"
+                },
+                "obj-281::obj-3::obj-5": {
+                    "parameter_longname": "release[10]"
+                },
+                "obj-281::obj-3::obj-6": {
+                    "parameter_longname": "himidfq[11]"
+                },
+                "obj-281::obj-3::obj-7": {
+                    "parameter_longname": "himid[2]"
                 },
                 "obj-344::obj-172": {
                     "parameter_longname": "Kick Volume"
@@ -11741,7 +11781,7 @@
                     "parameter_longname": "high freq"
                 },
                 "obj-377::obj-91": {
-                    "parameter_longname": "live.numbox[40]"
+                    "parameter_longname": "live.numbox[25]"
                 },
                 "obj-377::obj-94": {
                     "parameter_longname": "live.numbox[41]"
