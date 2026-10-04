@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 4,
+            "revision": 5,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 497.0, 343.0 ],
+        "rect": [ 555.0, 311.0, 497.0, 347.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -94,7 +94,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1305.0, 634.5, 110.0, 22.0 ],
-                    "restore": [ 8000.0 ],
+                    "restore": [ 10000.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -237,7 +237,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1798.0, 490.0, 85.0, 22.0 ],
-                    "restore": [ -11.0 ],
+                    "restore": [ -15.771653543307082 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -261,7 +261,7 @@
                         "valueof": {
                             "parameter_longname": "Clap Volume",
                             "parameter_mmax": 0.0,
-                            "parameter_mmin": -22.0,
+                            "parameter_mmin": -48.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Clap",
                             "parameter_type": 0,
@@ -290,7 +290,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1777.0, 395.0, 83.0, 22.0 ],
-                    "restore": [ -8.0 ],
+                    "restore": [ -15.771653543307082 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -314,7 +314,7 @@
                         "valueof": {
                             "parameter_longname": "Tom Volume",
                             "parameter_mmax": 0.0,
-                            "parameter_mmin": -22.0,
+                            "parameter_mmin": -48.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Tom",
                             "parameter_type": 0,
@@ -343,7 +343,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1762.0, 295.0, 93.0, 22.0 ],
-                    "restore": [ -8.0 ],
+                    "restore": [ -22.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -367,7 +367,7 @@
                         "valueof": {
                             "parameter_longname": "Snare Volume",
                             "parameter_mmax": 0.0,
-                            "parameter_mmin": -22.0,
+                            "parameter_mmin": -48.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Snare",
                             "parameter_type": 0,
@@ -449,7 +449,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1744.0, 195.0, 84.00000250339508, 22.0 ],
-                    "restore": [ -5.0 ],
+                    "restore": [ -14.236220472440934 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -466,7 +466,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1802.0, 588.0, 94.0000028014183, 22.0 ],
-                    "restore": [ -5.0 ],
+                    "restore": [ -12.543307086614162 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -526,7 +526,7 @@
                         "valueof": {
                             "parameter_longname": "Kick Volume",
                             "parameter_mmax": 0.0,
-                            "parameter_mmin": -22.0,
+                            "parameter_mmin": -48.0,
                             "parameter_modmode": 3,
                             "parameter_shortname": "Kick",
                             "parameter_type": 0,
@@ -947,7 +947,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 762.0, 602.0, 108.0, 22.0 ],
-                    "restore": [ -15.0 ],
+                    "restore": [ -16.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1071,7 +1071,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 797.0, 219.0, 92.0, 22.0 ],
-                    "restore": [ 3.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1127,7 +1127,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 656.0, 181.0, 75.0, 22.0 ],
-                    "restore": [ -3.5 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
