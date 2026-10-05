@@ -4821,7 +4821,7 @@
                             "parameter_unitstyle": 9
                         }
                     },
-                    "textcolor": [ 0.513725, 0.529412, 0.545098, 1.0 ],
+                    "textcolor": [ 0.9, 0.9, 0.9, 1.0 ],
                     "textjustification": 0,
                     "varname": "live.numbox[1]"
                 }
