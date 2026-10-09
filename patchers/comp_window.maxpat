@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2127.0, 1387.0 ],
+        "rect": [ 923.0, 446.0, 713.0, 547.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -38,7 +38,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 281.0, 298.0, 229.0, 189.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 477.0, 348.0, 229.0, 189.0 ],
+                    "presentation_rect": [ 4.800000071525574, 348.0, 229.0, 189.0 ],
                     "varname": "post-xfade",
                     "viewvisibility": 1
                 }
@@ -125,7 +125,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 409.0, 516.0, 189.60000282526016, 139.20000207424164 ],
                     "presentation": 1,
-                    "presentation_rect": [ 383.0, 10.800000190734863, 189.60000282526016, 139.20000207424164 ],
+                    "presentation_rect": [ 376.0, 11.0, 189.60000282526016, 139.20000207424164 ],
                     "varname": "limiter_ui[1]",
                     "viewvisibility": 1
                 }
@@ -262,7 +262,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 522.0, 298.0, 229.0, 189.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 240.9000000357628, 348.0, 229.0, 189.0 ],
+                    "presentation_rect": [ 478.0, 348.0, 229.0, 189.0 ],
                     "varname": "final",
                     "viewvisibility": 1
                 }
@@ -285,7 +285,7 @@
                     "offset": [ 0.0, 0.0 ],
                     "patching_rect": [ 761.0, 100.0, 229.0, 189.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 4.800000071525574, 348.0, 229.0, 189.0 ],
+                    "presentation_rect": [ 242.0, 348.0, 229.0, 189.0 ],
                     "varname": "solo",
                     "viewvisibility": 1
                 }
