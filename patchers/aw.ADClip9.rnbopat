@@ -1,0 +1,1621 @@
+{
+    "patcher": {
+        "fileversion": 1,
+        "appversion": {
+            "major": 9,
+            "minor": 1,
+            "revision": 5,
+            "architecture": "x64",
+            "modernui": 1
+        },
+        "classnamespace": "rnbo",
+        "rect": [ 59.0, 106.0, 1498.0, 780.0 ],
+        "default_fontname": "Lato",
+        "title": "untitled",
+        "boxes": [
+            {
+                "box": {
+                    "code": "/* ADClip9 — standalone RNBO codebox~ port\n * in1/in2: left/right; out1/out2: left/right.\n * Controls use original normalized VST values (0..1).\n * Double-precision DSP path; no added output dither.\n * Paste this entire file into codebox~ inside rnbo~.\n * MIT License\n * \n * Copyright (c) 2018 Chris Johnson\n * \n * Permission is hereby granted, free of charge, to any person obtaining a copy\n * of this software and associated documentation files (the \"Software\"), to deal\n * in the Software without restriction, including without limitation the rights\n * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n * copies of the Software, and to permit persons to whom the Software is\n * furnished to do so, subject to the following conditions:\n * \n * The above copyright notice and this permission notice shall be included in all\n * copies or substantial portions of the Software.\n * \n * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n * SOFTWARE.\n * \n */\n\n// VST A: Boost\n@param({ min: 0, max: 1 }) p_boost = 0.0;\n// VST B: Match\n@param({ min: 0, max: 1 }) p_match = 0.0;\n// VST C: Noise\n@param({ min: 0, max: 1 }) p_noise = 0.7;\n// VST D: Ceiling\n@param({ min: 0, max: 1 }) p_ceiling = 0.75;\n// VST E: Mode\n@param({ min: 0, max: 1 }) p_mode = 0.0;\n\n@state lastSampleL = 0;\n@state lastDryL = 0;\n@state intermediateL = new FixedFloat64Array(18);\n@state slewL = new FixedFloat64Array(34);\n@state wasPosClipL = 0;\n@state wasNegClipL = 0;\n@state lastSampleR = 0;\n@state lastDryR = 0;\n@state intermediateR = new FixedFloat64Array(18);\n@state slewR = new FixedFloat64Array(34);\n@state wasPosClipR = 0;\n@state wasNegClipR = 0;\n@state fpdL = 305419896.0;\n@state fpdR = 2271560481.0;\n@state overallscale = 0;\n@state spacing: Int = 0;\n@state inputGain = 0;\n@state match = 0;\n@state noiseLevel = 0;\n@state ceiling = 0;\n@state mode: Int = 0;\n@state frame: Int = 0;\n// Xorshift32 with explicit unsigned wrapping (fixed, reproducible seeds).\nfunction unsigned32(x) {\n    return x - floor(x / 4294967296.0) * 4294967296.0;\n}\nfunction advanceRandom(x) {\n    let a: Int = x;\n    let left: Int = unsigned32(x * 8192.0);\n    let b: Int = unsigned32(a ^ left);\n    let shifted: Int = floor(b / 131072.0);\n    let c: Int = unsigned32(b ^ shifted);\n    left = unsigned32(c * 32.0);\n    return unsigned32(c ^ left);\n}\nfunction toIndex(x) {\n    let result: Int = trunc(x);\n    return result;\n}\n\nfunction init() {\n\n\tlastSampleL = 0.0;\n\twasPosClipL = 0;\n\twasNegClipL = 0;\n\tlastSampleR = 0.0;\n\twasPosClipR = 0;\n\twasNegClipR = 0;\n\tfor (let x: Int = 0; x < 17; x++) {intermediateL[x] = 0.0; intermediateR[x] = 0.0;}\n\tfor (let x: Int = 0; x < 33; x++) {slewL[x] = 0.0; slewR[x] = 0.0;}\n\n}\nfunction dspsetup() { frame = 0; }\n\nif (frame == 0) {\noverallscale = 1.0;\n\toverallscale /= 44100.0;\n\toverallscale *= samplerate();\n\n\tspacing = floor(overallscale); \n\tif (spacing < 1) spacing = 1; if (spacing > 16) spacing = 16;\n\t\n\tinputGain = pow(10.0,(p_boost*18.0)/20.0);\n\tmatch = pow(10.0,(p_match*18.0)/20.0);\n\tnoiseLevel = 1.0-pow(1.0-p_noise,2.0);\n\tceiling = 1.0-pow(1.0-p_ceiling,2.0);\n\tmode = toIndex(p_mode*2.999)+1;\n\n}\nlet sampleFrames = vectorsize() - frame - 1;\nlet inFramesToProcess = vectorsize();\n\n\t\tlet inputSampleL = in1;\n\t\tlet inputSampleR = in2;\n\t\tif (abs(inputSampleL)<1.18e-23) inputSampleL = fpdL * 1.18e-17;\n\t\tif (abs(inputSampleR)<1.18e-23) inputSampleR = fpdR * 1.18e-17;\n\t\t\n\t\tswitch (mode)\n\t\t{\n\t\t\tcase 1: inputSampleL *= inputGain; inputSampleR *= inputGain; break; \n\t\t\tcase 2: inputSampleL *= match; inputSampleR *= match; break; \n\t\t\tcase 3: inputSampleL *= inputGain; inputSampleR *= inputGain; break; \n\t\t}\n\n\t\tlet overshootL = lastDryL;\n\t\tlastDryL = inputSampleL;\n\t\tlet overshootR = lastDryR;\n\t\tlastDryR = inputSampleR;\n\n\t\tlet noise = 1.0-(((fpdL)/4294967295.0)*(1.0-noiseLevel));\n\t\tif (wasPosClipL == 1) { \n\t\t\tif (inputSampleL<lastSampleL) lastSampleL=(noiseLevel*noise)+(inputSampleL*(1.0-noise));\n\t\t\telse lastSampleL = ceiling;\n\t\t} wasPosClipL = 0;\n\t\tif (inputSampleL>noiseLevel) {wasPosClipL=1;inputSampleL=(noiseLevel*noise)+(lastSampleL*(1.0-noise));}\n\t\tif (wasNegClipL == 1) { \n\t\t\tif (inputSampleL > lastSampleL) lastSampleL=(-noiseLevel*noise)+(inputSampleL*(1.0-noise));\n\t\t\telse lastSampleL = -ceiling;\n\t\t} wasNegClipL = 0;\n\t\tif (inputSampleL<-noiseLevel) {wasNegClipL=1;inputSampleL=(-noiseLevel*noise)+(lastSampleL*(1.0-noise));}\n\t\tslewL[spacing*2] = abs(lastSampleL-inputSampleL);\n\t\tfor (let x: Int = spacing*2; x > 0; x--) slewL[x-1] = slewL[x];\n\t\tintermediateL[spacing] = inputSampleL; inputSampleL = lastSampleL;\n\t\t\n\t\tfor (let x: Int = spacing; x > 0; x--) {intermediateL[x-1] = intermediateL[x];} lastSampleL = intermediateL[0];\n\t\tif (wasPosClipL || wasNegClipL) {\n\t\t\tfor (let x: Int = spacing; x > 0; x--) lastSampleL += intermediateL[x];\n\t\t\tlastSampleL /= spacing;\n\t\t} let finalSlew = 0.0;\n\t\tfor (let x: Int = spacing*2; x >= 0; x--) if (finalSlew < slewL[x]) finalSlew = slewL[x];\n\t\tlet postclip = ceiling / (1.0+(finalSlew*1.3986013));\n\t\tif (inputSampleL > postclip) inputSampleL = postclip; if (inputSampleL < -postclip) inputSampleL = -postclip;\n\t\t\n\t\tnoise = 1.0-(((fpdR)/4294967295.0)*(1.0-noiseLevel));\n\t\tif (wasPosClipR == 1) { \n\t\t\tif (inputSampleR<lastSampleR) lastSampleR=(noiseLevel*noise)+(inputSampleR*(1.0-noise));\n\t\t\telse lastSampleR = ceiling;\n\t\t} wasPosClipR = 0;\n\t\tif (inputSampleR>noiseLevel) {wasPosClipR=1;inputSampleR=(noiseLevel*noise)+(lastSampleR*(1.0-noise));}\n\t\tif (wasNegClipR == 1) { \n\t\t\tif (inputSampleR > lastSampleR) lastSampleR=(-noiseLevel*noise)+(inputSampleR*(1.0-noise));\n\t\t\telse lastSampleR = -ceiling;\n\t\t} wasNegClipR = 0;\n\t\tif (inputSampleR<-noiseLevel) {wasNegClipR=1;inputSampleR=(-noiseLevel*noise)+(lastSampleR*(1.0-noise));}\n\t\tslewR[spacing*2] = abs(lastSampleR-inputSampleR);\n\t\tfor (let x: Int = spacing*2; x > 0; x--) slewR[x-1] = slewR[x];\n\t\tintermediateR[spacing] = inputSampleR; inputSampleR = lastSampleR;\n\t\t\n\t\tfor (let x: Int = spacing; x > 0; x--) {intermediateR[x-1] = intermediateR[x];} lastSampleR = intermediateR[0];\n\t\tif (wasPosClipR || wasNegClipR) {\n\t\t\tfor (let x: Int = spacing; x > 0; x--) lastSampleR += intermediateR[x];\n\t\t\tlastSampleR /= spacing;\n\t\t} finalSlew = 0.0;\n\t\tfor (let x: Int = spacing*2; x >= 0; x--) if (finalSlew < slewR[x]) finalSlew = slewR[x];\n\t\tpostclip = ceiling / (1.0+(finalSlew*1.3986013));\n\t\tif (inputSampleR > postclip) inputSampleR = postclip; if (inputSampleR < -postclip) inputSampleR = -postclip;\n\n\t\tswitch (mode)\n\t\t{\n\t\t\tcase 1: break; \n\t\t\tcase 2: inputSampleL /= match; inputSampleR /= match; break; \n\t\t\tcase 3: inputSampleL = (inputSampleL-overshootL)/inputGain; inputSampleR = (inputSampleR-overshootR)/inputGain; break; \n\t\t}\n\n\t\tfpdL = advanceRandom(fpdL);\n\n\t\tfpdR = advanceRandom(fpdR);\n\t\tif (unsigned32(fpdL-fpdR) < 1073741824 || unsigned32(fpdR-fpdL) < 1073741824) {\n\t\t\tfpdR = advanceRandom(fpdR);}\n\nout1 = inputSampleL;\nout2 = inputSampleR;\nframe++;\nif (frame >= vectorsize()) frame = 0;\n",
+                    "fontface": 0,
+                    "fontname": "<Monospaced>",
+                    "fontsize": 12.0,
+                    "id": "obj-2",
+                    "maxclass": "codebox~",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "signal", "signal" ],
+                    "patching_rect": [ 30.0, 110.0, 620.0, 360.0 ],
+                    "rnbo_classname": "codebox~",
+                    "rnbo_extra_attributes": {
+                        "nocache": 0,
+                        "code": "/* ADClip9 — standalone RNBO codebox~ port\n * in1/in2: left/right; out1/out2: left/right.\n * Controls use original normalized VST values (0..1).\n * Double-precision DSP path; no added output dither.\n * Paste this entire file into codebox~ inside rnbo~.\n * MIT License\n * \n * Copyright (c) 2018 Chris Johnson\n * \n * Permission is hereby granted, free of charge, to any person obtaining a copy\n * of this software and associated documentation files (the \"Software\"), to deal\n * in the Software without restriction, including without limitation the rights\n * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n * copies of the Software, and to permit persons to whom the Software is\n * furnished to do so, subject to the following conditions:\n * \n * The above copyright notice and this permission notice shall be included in all\n * copies or substantial portions of the Software.\n * \n * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n * SOFTWARE.\n * \n */\n\n// VST A: Boost\n@param({ min: 0, max: 1 }) p_boost = 0.0;\n// VST B: Match\n@param({ min: 0, max: 1 }) p_match = 0.0;\n// VST C: Noise\n@param({ min: 0, max: 1 }) p_noise = 0.7;\n// VST D: Ceiling\n@param({ min: 0, max: 1 }) p_ceiling = 0.75;\n// VST E: Mode\n@param({ min: 0, max: 1 }) p_mode = 0.0;\n\n@state lastSampleL = 0;\n@state lastDryL = 0;\n@state intermediateL = new FixedFloat64Array(18);\n@state slewL = new FixedFloat64Array(34);\n@state wasPosClipL = 0;\n@state wasNegClipL = 0;\n@state lastSampleR = 0;\n@state lastDryR = 0;\n@state intermediateR = new FixedFloat64Array(18);\n@state slewR = new FixedFloat64Array(34);\n@state wasPosClipR = 0;\n@state wasNegClipR = 0;\n@state fpdL = 305419896.0;\n@state fpdR = 2271560481.0;\n@state overallscale = 0;\n@state spacing: Int = 0;\n@state inputGain = 0;\n@state match = 0;\n@state noiseLevel = 0;\n@state ceiling = 0;\n@state mode: Int = 0;\n@state frame: Int = 0;\n// Xorshift32 with explicit unsigned wrapping (fixed, reproducible seeds).\nfunction unsigned32(x) {\n    return x - floor(x / 4294967296.0) * 4294967296.0;\n}\nfunction advanceRandom(x) {\n    let a: Int = x;\n    let left: Int = unsigned32(x * 8192.0);\n    let b: Int = unsigned32(a ^ left);\n    let shifted: Int = floor(b / 131072.0);\n    let c: Int = unsigned32(b ^ shifted);\n    left = unsigned32(c * 32.0);\n    return unsigned32(c ^ left);\n}\nfunction toIndex(x) {\n    let result: Int = trunc(x);\n    return result;\n}\n\nfunction init() {\n\n\tlastSampleL = 0.0;\n\twasPosClipL = 0;\n\twasNegClipL = 0;\n\tlastSampleR = 0.0;\n\twasPosClipR = 0;\n\twasNegClipR = 0;\n\tfor (let x: Int = 0; x < 17; x++) {intermediateL[x] = 0.0; intermediateR[x] = 0.0;}\n\tfor (let x: Int = 0; x < 33; x++) {slewL[x] = 0.0; slewR[x] = 0.0;}\n\n}\nfunction dspsetup() { frame = 0; }\n\nif (frame == 0) {\noverallscale = 1.0;\n\toverallscale /= 44100.0;\n\toverallscale *= samplerate();\n\n\tspacing = floor(overallscale); \n\tif (spacing < 1) spacing = 1; if (spacing > 16) spacing = 16;\n\t\n\tinputGain = pow(10.0,(p_boost*18.0)/20.0);\n\tmatch = pow(10.0,(p_match*18.0)/20.0);\n\tnoiseLevel = 1.0-pow(1.0-p_noise,2.0);\n\tceiling = 1.0-pow(1.0-p_ceiling,2.0);\n\tmode = toIndex(p_mode*2.999)+1;\n\n}\nlet sampleFrames = vectorsize() - frame - 1;\nlet inFramesToProcess = vectorsize();\n\n\t\tlet inputSampleL = in1;\n\t\tlet inputSampleR = in2;\n\t\tif (abs(inputSampleL)<1.18e-23) inputSampleL = fpdL * 1.18e-17;\n\t\tif (abs(inputSampleR)<1.18e-23) inputSampleR = fpdR * 1.18e-17;\n\t\t\n\t\tswitch (mode)\n\t\t{\n\t\t\tcase 1: inputSampleL *= inputGain; inputSampleR *= inputGain; break; \n\t\t\tcase 2: inputSampleL *= match; inputSampleR *= match; break; \n\t\t\tcase 3: inputSampleL *= inputGain; inputSampleR *= inputGain; break; \n\t\t}\n\n\t\tlet overshootL = lastDryL;\n\t\tlastDryL = inputSampleL;\n\t\tlet overshootR = lastDryR;\n\t\tlastDryR = inputSampleR;\n\n\t\tlet noise = 1.0-(((fpdL)/4294967295.0)*(1.0-noiseLevel));\n\t\tif (wasPosClipL == 1) { \n\t\t\tif (inputSampleL<lastSampleL) lastSampleL=(noiseLevel*noise)+(inputSampleL*(1.0-noise));\n\t\t\telse lastSampleL = ceiling;\n\t\t} wasPosClipL = 0;\n\t\tif (inputSampleL>noiseLevel) {wasPosClipL=1;inputSampleL=(noiseLevel*noise)+(lastSampleL*(1.0-noise));}\n\t\tif (wasNegClipL == 1) { \n\t\t\tif (inputSampleL > lastSampleL) lastSampleL=(-noiseLevel*noise)+(inputSampleL*(1.0-noise));\n\t\t\telse lastSampleL = -ceiling;\n\t\t} wasNegClipL = 0;\n\t\tif (inputSampleL<-noiseLevel) {wasNegClipL=1;inputSampleL=(-noiseLevel*noise)+(lastSampleL*(1.0-noise));}\n\t\tslewL[spacing*2] = abs(lastSampleL-inputSampleL);\n\t\tfor (let x: Int = spacing*2; x > 0; x--) slewL[x-1] = slewL[x];\n\t\tintermediateL[spacing] = inputSampleL; inputSampleL = lastSampleL;\n\t\t\n\t\tfor (let x: Int = spacing; x > 0; x--) {intermediateL[x-1] = intermediateL[x];} lastSampleL = intermediateL[0];\n\t\tif (wasPosClipL || wasNegClipL) {\n\t\t\tfor (let x: Int = spacing; x > 0; x--) lastSampleL += intermediateL[x];\n\t\t\tlastSampleL /= spacing;\n\t\t} let finalSlew = 0.0;\n\t\tfor (let x: Int = spacing*2; x >= 0; x--) if (finalSlew < slewL[x]) finalSlew = slewL[x];\n\t\tlet postclip = ceiling / (1.0+(finalSlew*1.3986013));\n\t\tif (inputSampleL > postclip) inputSampleL = postclip; if (inputSampleL < -postclip) inputSampleL = -postclip;\n\t\t\n\t\tnoise = 1.0-(((fpdR)/4294967295.0)*(1.0-noiseLevel));\n\t\tif (wasPosClipR == 1) { \n\t\t\tif (inputSampleR<lastSampleR) lastSampleR=(noiseLevel*noise)+(inputSampleR*(1.0-noise));\n\t\t\telse lastSampleR = ceiling;\n\t\t} wasPosClipR = 0;\n\t\tif (inputSampleR>noiseLevel) {wasPosClipR=1;inputSampleR=(noiseLevel*noise)+(lastSampleR*(1.0-noise));}\n\t\tif (wasNegClipR == 1) { \n\t\t\tif (inputSampleR > lastSampleR) lastSampleR=(-noiseLevel*noise)+(inputSampleR*(1.0-noise));\n\t\t\telse lastSampleR = -ceiling;\n\t\t} wasNegClipR = 0;\n\t\tif (inputSampleR<-noiseLevel) {wasNegClipR=1;inputSampleR=(-noiseLevel*noise)+(lastSampleR*(1.0-noise));}\n\t\tslewR[spacing*2] = abs(lastSampleR-inputSampleR);\n\t\tfor (let x: Int = spacing*2; x > 0; x--) slewR[x-1] = slewR[x];\n\t\tintermediateR[spacing] = inputSampleR; inputSampleR = lastSampleR;\n\t\t\n\t\tfor (let x: Int = spacing; x > 0; x--) {intermediateR[x-1] = intermediateR[x];} lastSampleR = intermediateR[0];\n\t\tif (wasPosClipR || wasNegClipR) {\n\t\t\tfor (let x: Int = spacing; x > 0; x--) lastSampleR += intermediateR[x];\n\t\t\tlastSampleR /= spacing;\n\t\t} finalSlew = 0.0;\n\t\tfor (let x: Int = spacing*2; x >= 0; x--) if (finalSlew < slewR[x]) finalSlew = slewR[x];\n\t\tpostclip = ceiling / (1.0+(finalSlew*1.3986013));\n\t\tif (inputSampleR > postclip) inputSampleR = postclip; if (inputSampleR < -postclip) inputSampleR = -postclip;\n\n\t\tswitch (mode)\n\t\t{\n\t\t\tcase 1: break; \n\t\t\tcase 2: inputSampleL /= match; inputSampleR /= match; break; \n\t\t\tcase 3: inputSampleL = (inputSampleL-overshootL)/inputGain; inputSampleR = (inputSampleR-overshootR)/inputGain; break; \n\t\t}\n\n\t\tfpdL = advanceRandom(fpdL);\n\n\t\tfpdR = advanceRandom(fpdR);\n\t\tif (unsigned32(fpdL-fpdR) < 1073741824 || unsigned32(fpdR-fpdL) < 1073741824) {\n\t\t\tfpdR = advanceRandom(fpdR);}\n\nout1 = inputSampleL;\nout2 = inputSampleR;\nframe++;\nif (frame >= vectorsize()) frame = 0;\n",
+                        "safemath": 1,
+                        "expr": ""
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "effect_code",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "reset": {
+                                "attrOrProp": 1,
+                                "digest": "Reset all state and params to initial values",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            },
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "in1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number"
+                            },
+                            "in2": {
+                                "attrOrProp": 1,
+                                "digest": "in2",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "number"
+                            },
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "out1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "out2": {
+                                "attrOrProp": 1,
+                                "digest": "out2",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "p_boost": {
+                                "attrOrProp": 1,
+                                "digest": "p_boost",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "p_match": {
+                                "attrOrProp": 1,
+                                "digest": "p_match",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "p_noise": {
+                                "attrOrProp": 1,
+                                "digest": "p_noise",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0.7"
+                            },
+                            "p_ceiling": {
+                                "attrOrProp": 1,
+                                "digest": "p_ceiling",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0.75"
+                            },
+                            "p_mode": {
+                                "attrOrProp": 1,
+                                "digest": "p_mode",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 1,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "defaultValue": "0"
+                            },
+                            "expr": {
+                                "attrOrProp": 2,
+                                "digest": "expr",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "safemath": {
+                                "attrOrProp": 2,
+                                "digest": "Use safe math expressions (e.g.: division by 0 will not crash).",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "true"
+                            },
+                            "nocache": {
+                                "attrOrProp": 2,
+                                "digest": "Do not use parsing cache. This is only useful with very very big code sizes. Code generation will then take a looooong time.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bool",
+                                "defaultValue": "false"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "auto",
+                                "digest": "in1",
+                                "hot": 1,
+                                "docked": 0
+                            },
+                            {
+                                "name": "in2",
+                                "type": "auto",
+                                "digest": "in2",
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "signal",
+                                "digest": "out1",
+                                "docked": 0
+                            },
+                            {
+                                "name": "out2",
+                                "type": "signal",
+                                "digest": "out2",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "codebox~",
+                        "aliasOf": "expr~",
+                        "classname": "codebox~",
+                        "operator": 0,
+                        "versionId": 527839773,
+                        "changesPatcherIO": 0
+                    },
+                    "varname": "effect_code"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 30.0, 20.0, 620.0, 21.0 ],
+                    "text": "ADClip9"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 30.0, 70.0, 70.0, 23.0 ],
+                    "rnbo_classname": "in~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "audio_in_1",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "signal from inlet with index 1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "inlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "signal",
+                                "digest": "signal from inlet with index 1",
+                                "displayName": "",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "in~",
+                        "aliasOf": "in~",
+                        "classname": "in~",
+                        "operator": 0,
+                        "versionId": -1654556303,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "in~ 1",
+                    "varname": "audio_in_1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-6",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "signal" ],
+                    "patching_rect": [ 605.0, 70.0, 70.0, 23.0 ],
+                    "rnbo_classname": "in~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "audio_in_2",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "out1": {
+                                "attrOrProp": 1,
+                                "digest": "signal from inlet with index 2",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "inlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [],
+                        "outputs": [
+                            {
+                                "name": "out1",
+                                "type": "signal",
+                                "digest": "signal from inlet with index 2",
+                                "displayName": "",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "in~",
+                        "aliasOf": "in~",
+                        "classname": "in~",
+                        "operator": 0,
+                        "versionId": -1654556303,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "in~ 2",
+                    "varname": "audio_in_2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 30.0, 520.0, 70.0, 23.0 ],
+                    "rnbo_classname": "out~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "audio_out_1",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "signal sent to outlet with index 1",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "outlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "signal sent to outlet with index 1",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [],
+                        "helpname": "out~",
+                        "aliasOf": "out~",
+                        "classname": "out~",
+                        "operator": 0,
+                        "versionId": 1989326771,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "out~ 1",
+                    "varname": "audio_out_1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-8",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 605.0, 520.0, 70.0, 23.0 ],
+                    "rnbo_classname": "out~",
+                    "rnbo_extra_attributes": {
+                        "meta": "",
+                        "comment": ""
+                    },
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "audio_out_2",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "in1": {
+                                "attrOrProp": 1,
+                                "digest": "signal sent to outlet with index 2",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "signal"
+                            },
+                            "index": {
+                                "attrOrProp": 2,
+                                "digest": "outlet number",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "number",
+                                "mandatory": 1
+                            },
+                            "comment": {
+                                "attrOrProp": 2,
+                                "digest": "mouse over comment",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol"
+                            },
+                            "meta": {
+                                "attrOrProp": 2,
+                                "digest": "A JSON formatted string containing metadata for use by the exported code",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "defaultValue": "",
+                                "label": "Metadata",
+                                "displayorder": 3
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "in1",
+                                "type": "signal",
+                                "digest": "signal sent to outlet with index 2",
+                                "displayName": "",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [],
+                        "helpname": "out~",
+                        "aliasOf": "out~",
+                        "classname": "out~",
+                        "operator": 0,
+                        "versionId": 1989326771,
+                        "changesPatcherIO": 1
+                    },
+                    "text": "out~ 2",
+                    "varname": "audio_out_2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-10",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 700.0, 65.0, 175.0, 21.0 ],
+                    "text": "p_boost"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 700.0, 115.0, 100.0, 23.0 ],
+                    "rnbo_classname": "number",
+                    "rnbo_extra_attributes": {
+                        "minimum": "<none>",
+                        "initialFormat": "float",
+                        "order": "",
+                        "preset": 0,
+                        "maximum": "<none>"
+                    },
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "value_p_boost",
+                    "varname": "value_p_boost"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-13",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 700.0, 143.0, 175.0, 23.0 ],
+                    "rnbo_classname": "setparam",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "set_p_boost",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "name": {
+                                "attrOrProp": 2,
+                                "digest": "attribute/param to control",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "mandatory": 1
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "attribute or parameter value (bang, number, list)",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "connect to first inlet of gen or subpatcher",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "set",
+                        "aliasOf": "set",
+                        "classname": "setparam",
+                        "operator": 0,
+                        "versionId": 1197449671,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "setparam p_boost",
+                    "varname": "set_p_boost"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-14",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 700.0, 92.0, 175.0, 23.0 ],
+                    "rnbo_classname": "loadmess",
+                    "rnbo_serial": 1,
+                    "rnbo_uniqueid": "load_p_boost",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Bang to trigger message.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "bang"
+                            },
+                            "message": {
+                                "attrOrProp": 1,
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "list",
+                                "defaultValue": ""
+                            },
+                            "startupbang": {
+                                "attrOrProp": 1,
+                                "digest": "startupbang",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "bang",
+                                "digest": "Bang to trigger message.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "message",
+                                "type": "list",
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "loadmess",
+                        "aliasOf": "loadmess",
+                        "classname": "loadmess",
+                        "operator": 0,
+                        "versionId": -361086158,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "loadmess 0",
+                    "varname": "load_p_boost"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-16",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 890.0, 65.0, 175.0, 21.0 ],
+                    "text": "p_match"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-18",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 890.0, 115.0, 100.0, 23.0 ],
+                    "rnbo_classname": "number",
+                    "rnbo_extra_attributes": {
+                        "minimum": "<none>",
+                        "initialFormat": "float",
+                        "order": "",
+                        "preset": 0,
+                        "maximum": "<none>"
+                    },
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "value_p_match",
+                    "varname": "value_p_match"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-19",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 890.0, 143.0, 175.0, 23.0 ],
+                    "rnbo_classname": "setparam",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "set_p_match",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "name": {
+                                "attrOrProp": 2,
+                                "digest": "attribute/param to control",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "mandatory": 1
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "attribute or parameter value (bang, number, list)",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "connect to first inlet of gen or subpatcher",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "set",
+                        "aliasOf": "set",
+                        "classname": "setparam",
+                        "operator": 0,
+                        "versionId": 1197449671,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "setparam p_match",
+                    "varname": "set_p_match"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 890.0, 92.0, 175.0, 23.0 ],
+                    "rnbo_classname": "loadmess",
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "load_p_match",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Bang to trigger message.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "bang"
+                            },
+                            "message": {
+                                "attrOrProp": 1,
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "list",
+                                "defaultValue": ""
+                            },
+                            "startupbang": {
+                                "attrOrProp": 1,
+                                "digest": "startupbang",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "bang",
+                                "digest": "Bang to trigger message.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "message",
+                                "type": "list",
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "loadmess",
+                        "aliasOf": "loadmess",
+                        "classname": "loadmess",
+                        "operator": 0,
+                        "versionId": -361086158,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "loadmess 0",
+                    "varname": "load_p_match"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-22",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1080.0, 65.0, 175.0, 21.0 ],
+                    "text": "p_noise"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-24",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1080.0, 115.0, 100.0, 23.0 ],
+                    "rnbo_classname": "number",
+                    "rnbo_extra_attributes": {
+                        "minimum": "<none>",
+                        "initialFormat": "float",
+                        "order": "",
+                        "preset": 0,
+                        "maximum": "<none>"
+                    },
+                    "rnbo_serial": 3,
+                    "rnbo_uniqueid": "value_p_noise",
+                    "varname": "value_p_noise"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-25",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1080.0, 143.0, 175.0, 23.0 ],
+                    "rnbo_classname": "setparam",
+                    "rnbo_serial": 3,
+                    "rnbo_uniqueid": "set_p_noise",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "name": {
+                                "attrOrProp": 2,
+                                "digest": "attribute/param to control",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "mandatory": 1
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "attribute or parameter value (bang, number, list)",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "connect to first inlet of gen or subpatcher",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "set",
+                        "aliasOf": "set",
+                        "classname": "setparam",
+                        "operator": 0,
+                        "versionId": 1197449671,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "setparam p_noise",
+                    "varname": "set_p_noise"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-26",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1080.0, 92.0, 175.0, 23.0 ],
+                    "rnbo_classname": "loadmess",
+                    "rnbo_serial": 3,
+                    "rnbo_uniqueid": "load_p_noise",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Bang to trigger message.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "bang"
+                            },
+                            "message": {
+                                "attrOrProp": 1,
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "list",
+                                "defaultValue": ""
+                            },
+                            "startupbang": {
+                                "attrOrProp": 1,
+                                "digest": "startupbang",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "bang",
+                                "digest": "Bang to trigger message.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "message",
+                                "type": "list",
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "loadmess",
+                        "aliasOf": "loadmess",
+                        "classname": "loadmess",
+                        "operator": 0,
+                        "versionId": -361086158,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "loadmess 0.7",
+                    "varname": "load_p_noise"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-28",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1270.0, 65.0, 175.0, 21.0 ],
+                    "text": "p_ceiling"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-30",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1270.0, 115.0, 100.0, 23.0 ],
+                    "rnbo_classname": "number",
+                    "rnbo_extra_attributes": {
+                        "minimum": "<none>",
+                        "initialFormat": "float",
+                        "order": "",
+                        "preset": 0,
+                        "maximum": "<none>"
+                    },
+                    "rnbo_serial": 4,
+                    "rnbo_uniqueid": "value_p_ceiling",
+                    "varname": "value_p_ceiling"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-31",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1270.0, 143.0, 175.0, 23.0 ],
+                    "rnbo_classname": "setparam",
+                    "rnbo_serial": 4,
+                    "rnbo_uniqueid": "set_p_ceiling",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "name": {
+                                "attrOrProp": 2,
+                                "digest": "attribute/param to control",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "mandatory": 1
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "attribute or parameter value (bang, number, list)",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "connect to first inlet of gen or subpatcher",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "set",
+                        "aliasOf": "set",
+                        "classname": "setparam",
+                        "operator": 0,
+                        "versionId": 1197449671,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "setparam p_ceiling",
+                    "varname": "set_p_ceiling"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-32",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1270.0, 92.0, 175.0, 23.0 ],
+                    "rnbo_classname": "loadmess",
+                    "rnbo_serial": 4,
+                    "rnbo_uniqueid": "load_p_ceiling",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Bang to trigger message.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "bang"
+                            },
+                            "message": {
+                                "attrOrProp": 1,
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "list",
+                                "defaultValue": ""
+                            },
+                            "startupbang": {
+                                "attrOrProp": 1,
+                                "digest": "startupbang",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "bang",
+                                "digest": "Bang to trigger message.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "message",
+                                "type": "list",
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "loadmess",
+                        "aliasOf": "loadmess",
+                        "classname": "loadmess",
+                        "operator": 0,
+                        "versionId": -361086158,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "loadmess 0.75",
+                    "varname": "load_p_ceiling"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-34",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 700.0, 180.0, 175.0, 21.0 ],
+                    "text": "p_mode"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-36",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 700.0, 230.0, 100.0, 23.0 ],
+                    "rnbo_classname": "number",
+                    "rnbo_extra_attributes": {
+                        "minimum": "<none>",
+                        "initialFormat": "float",
+                        "order": "",
+                        "preset": 0,
+                        "maximum": "<none>"
+                    },
+                    "rnbo_serial": 5,
+                    "rnbo_uniqueid": "value_p_mode",
+                    "varname": "value_p_mode"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-37",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 700.0, 258.0, 175.0, 23.0 ],
+                    "rnbo_classname": "setparam",
+                    "rnbo_serial": 5,
+                    "rnbo_uniqueid": "set_p_mode",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "name": {
+                                "attrOrProp": 2,
+                                "digest": "attribute/param to control",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "symbol",
+                                "mandatory": 1
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "attribute or parameter value (bang, number, list)",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "output",
+                                "type": [ "bang", "number", "list", "signal" ],
+                                "digest": "connect to first inlet of gen or subpatcher",
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "set",
+                        "aliasOf": "set",
+                        "classname": "setparam",
+                        "operator": 0,
+                        "versionId": 1197449671,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "setparam p_mode",
+                    "varname": "set_p_mode"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-38",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 700.0, 207.0, 175.0, 23.0 ],
+                    "rnbo_classname": "loadmess",
+                    "rnbo_serial": 5,
+                    "rnbo_uniqueid": "load_p_mode",
+                    "rnboinfo": {
+                        "needsInstanceInfo": 1,
+                        "argnames": {
+                            "input": {
+                                "attrOrProp": 1,
+                                "digest": "Bang to trigger message.",
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 0,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "inlet": 1,
+                                "type": "bang"
+                            },
+                            "message": {
+                                "attrOrProp": 1,
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "isalias": 0,
+                                "aliases": [],
+                                "settable": 1,
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "outlet": 1,
+                                "type": "list",
+                                "defaultValue": ""
+                            },
+                            "startupbang": {
+                                "attrOrProp": 1,
+                                "digest": "startupbang",
+                                "isalias": 0,
+                                "aliases": [],
+                                "attachable": 0,
+                                "isparam": 0,
+                                "deprecated": 0,
+                                "touched": 0,
+                                "type": "bang"
+                            }
+                        },
+                        "inputs": [
+                            {
+                                "name": "input",
+                                "type": "bang",
+                                "digest": "Bang to trigger message.",
+                                "hot": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "name": "message",
+                                "type": "list",
+                                "digest": "Message when patcher is loaded.",
+                                "defaultarg": 1,
+                                "docked": 0
+                            }
+                        ],
+                        "helpname": "loadmess",
+                        "aliasOf": "loadmess",
+                        "classname": "loadmess",
+                        "operator": 0,
+                        "versionId": -361086158,
+                        "changesPatcherIO": 0
+                    },
+                    "text": "loadmess 0",
+                    "varname": "load_p_mode"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-3",
+                    "linecount": 42,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 30.0, 553.0, 460.0, 626.0 ],
+                    "text": "ADClip9 — Airwindows (Chris Johnson)\nPage: https://www.airwindows.com/adclip9/\n\nWhat it is: modernized Airwindows soft-clip clipper. Adds smooth DC coupling\nand a chosen way to relate the clip ceiling to the processed signal. In this\nRNBO port all controls use the original normalized 0..1 values, exactly like\nthe source VST parameters.\n\nParameters (p_boost lastSample... declared order):\n\n- p_boost  (Boost)     0..1, default 0.0\n  Input gain into the clipper. Linearized approximately by ear: internally\n  maps to a 0 to +18 dB range (pow(10, p*18/20)). Useful to push audio into\n  the clipper; 0.5 ≈ +9 dB.\n\n- p_match  (Match)     0..1, default 0.0\n  Same 0 to +18 dB mapping. In mode \"Match\" the plugin applies this gain,\n  clips, then removes the same amount of level so the result is loud but\n  stays level-matched to the input for A/B purposes.\n\n- p_noise  (Noise)     0..1, default 0.7\n  Mix of randomized dither used when reconstructing clipped tops. Built with\n  a squared curve: noiseLevel = 1 - (1-p)^2, so the perceived change ramps up\n  quickly at first. At 0 the clip is fully deterministic; toward 1 the tops\n  are effectively dithered, which lets some \"over\" detail survive clipping.\n\n- p_ceiling (Ceiling)  0..1, default 0.75\n  Absolute clip target applied to the processed signal, same squared taper\n  1 - (1-p)^2 so high settings change little while low settings pull down\n  dramatically. Also scales the slew-limiting post-clip behavior. Practical\n  musical effect: lower values = more aggressive, duller clipping.\n\n- p_mode   (Mode)      0..1, default 0.0 (3 discrete positions, thirds)\n  0.0-0.33  Boost  - just the boosted clipped signal\n  0.33-0.67 Match  - boosted clip, level-matched back down (does not use the\n                     Boost gain for the audible path)\n  0.67-1.0  ClipOnly - outputs the clipped signal minus the dry input scaled\n                     by the gain (the \"difference\" clip, for parallel or\n                     novelty setups)\n\nMusical notes: designed for master/2-buss loudness. Start with mode = Boost,\nraise Boost until the mix gets flatter, then use Noise/Ceiling to taste.\n",
+                    "varname": "paraminfo_comment"
+                }
+            }
+        ],
+        "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-13", 0 ],
+                    "source": [ "obj-12", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 0 ],
+                    "source": [ "obj-13", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-12", 0 ],
+                    "source": [ "obj-14", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-19", 0 ],
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 0 ],
+                    "source": [ "obj-19", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-8", 0 ],
+                    "source": [ "obj-2", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-18", 0 ],
+                    "source": [ "obj-20", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-25", 0 ],
+                    "source": [ "obj-24", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 0 ],
+                    "source": [ "obj-25", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-24", 0 ],
+                    "source": [ "obj-26", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-31", 0 ],
+                    "source": [ "obj-30", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 0 ],
+                    "source": [ "obj-31", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-30", 0 ],
+                    "source": [ "obj-32", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-37", 0 ],
+                    "source": [ "obj-36", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 0 ],
+                    "source": [ "obj-37", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-36", 0 ],
+                    "source": [ "obj-38", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 0 ],
+                    "source": [ "obj-5", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 1 ],
+                    "source": [ "obj-6", 0 ]
+                }
+            }
+        ]
+    }
+}
