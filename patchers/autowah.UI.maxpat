@@ -3,18 +3,72 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 5,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 1803.0, 388.0, 379.0, 732.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "bassline parameters",
         "boxes": [
+            {
+                "box": {
+                    "bgmode": 0,
+                    "border": 0,
+                    "clickthrough": 0,
+                    "enablehscroll": 0,
+                    "enablevscroll": 0,
+                    "id": "obj-3",
+                    "lockeddragscroll": 0,
+                    "lockedsize": 0,
+                    "maxclass": "bpatcher",
+                    "name": "12-fx-umenu.maxpat",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "offset": [ 0.0, 0.0 ],
+                    "patching_rect": [ 1621.0, 1074.0, 135.0, 30.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 198.5, 87.0, 166.5, 30.0 ],
+                    "viewvisibility": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-19",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 1621.0, 1034.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 1621.0, 997.0, 113.0, 22.0 ],
+                    "text": "route dry_fx_choice"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-280",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1621.0, 959.0, 93.0, 22.0 ],
+                    "text": "r more_outports"
+                }
+            },
             {
                 "box": {
                     "fontname": "Ableton Sans Medium",
@@ -1731,7 +1785,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 526.5, 1101.0, 40.0, 22.0 ],
-                    "restore": [ 0.48 ],
+                    "restore": [ 0.52 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -2168,7 +2222,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 444.0, 163.0, 159.0, 21.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 197.0, 29.0, 167.0, 21.0 ],
+                    "presentation_rect": [ 197.0, 6.0, 167.0, 21.0 ],
                     "text": "detune",
                     "textjustification": 1
                 }
@@ -2234,7 +2288,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1474.0, 251.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 226.0, 52.0, 35.0, 48.0 ],
+                    "presentation_rect": [ 226.0, 29.0, 35.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[18]",
@@ -2258,7 +2312,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1474.0, 86.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 261.0, 52.0, 40.0, 48.0 ],
+                    "presentation_rect": [ 261.0, 29.0, 40.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[20]",
@@ -2283,7 +2337,7 @@
                     "parameter_enable": 1,
                     "patching_rect": [ 1474.0, 411.0, 86.0, 48.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 301.0, 52.0, 43.0, 48.0 ],
+                    "presentation_rect": [ 301.0, 29.0, 43.0, 48.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_longname": "live.dial[21]",
@@ -2867,7 +2921,7 @@
                     "background": 1,
                     "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
                     "border": 2,
-                    "bordercolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+                    "bordercolor": [ 0.5763683678354504, 0.5763682295406116, 0.5763682656792625, 1.0 ],
                     "id": "obj-37",
                     "maxclass": "panel",
                     "mode": 0,
@@ -2891,7 +2945,7 @@
                     "background": 1,
                     "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
                     "border": 2,
-                    "bordercolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+                    "bordercolor": [ 0.5763683678354504, 0.5763682295406116, 0.5763682656792625, 1.0 ],
                     "id": "obj-137",
                     "maxclass": "panel",
                     "mode": 0,
@@ -2915,7 +2969,7 @@
                     "background": 1,
                     "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
                     "border": 2,
-                    "bordercolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+                    "bordercolor": [ 0.5763683678354504, 0.5763682295406116, 0.5763682656792625, 1.0 ],
                     "id": "obj-96",
                     "maxclass": "panel",
                     "mode": 0,
@@ -2939,7 +2993,7 @@
                     "background": 1,
                     "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
                     "border": 2,
-                    "bordercolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+                    "bordercolor": [ 0.5763683678354504, 0.5763682295406116, 0.5763682656792625, 1.0 ],
                     "id": "obj-57",
                     "maxclass": "panel",
                     "mode": 0,
@@ -2947,7 +3001,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 898.0, 74.0, 128.0, 128.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 197.0, 28.0, 167.0, 213.0 ],
+                    "presentation_rect": [ 197.0, 6.0, 167.0, 235.0 ],
                     "proportion": 0.5,
                     "rounded": 46,
                     "saved_attribute_attributes": {
@@ -2963,7 +3017,7 @@
                     "background": 1,
                     "bgcolor": [ 0.0, 0.0, 0.0, 0.12 ],
                     "border": 2,
-                    "bordercolor": [ 0.57636836783545, 0.576368229540612, 0.576368265679262, 1.0 ],
+                    "bordercolor": [ 0.5763683678354504, 0.5763682295406116, 0.5763682656792625, 1.0 ],
                     "id": "obj-44",
                     "maxclass": "panel",
                     "mode": 0,
@@ -3434,8 +3488,20 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-3", 0 ],
+                    "source": [ "obj-19", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-12", 0 ],
                     "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-19", 0 ],
+                    "source": [ "obj-20", 0 ]
                 }
             },
             {
@@ -3502,6 +3568,12 @@
                 "patchline": {
                     "destination": [ "obj-83", 0 ],
                     "source": [ "obj-275", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-280", 0 ]
                 }
             },
             {

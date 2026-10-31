@@ -3,19 +3,56 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 5,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
+        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
+            {
+                "box": {
+                    "bgcolor": [ 0.0, 0.0, 0.0, 0.52 ],
+                    "hint": "show compressor parameters window",
+                    "id": "obj-64",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "outlinecolor": [ 0.137255, 0.137255, 0.137255, 0.231373 ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 3376.0, 1805.0, 74.0, 74.0 ],
+                    "varname": "12 FX"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-89",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 3376.0, 1764.0, 116.0, 22.0 ],
+                    "text": "hover_bang \"12 FX\""
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-63",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2853.5, 736.0, 85.0, 22.0 ],
+                    "text": "12_fx_window",
+                    "varname": "12_fx_window"
+                }
+            },
             {
                 "box": {
                     "id": "obj-488",
@@ -3570,11 +3607,11 @@
                 "box": {
                     "id": "obj-367",
                     "maxclass": "newobj",
-                    "numinlets": 7,
-                    "numoutlets": 7,
-                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-                    "patching_rect": [ 2357.7, 1185.0, 100.0, 22.0 ],
-                    "text": "select 1 2 3 4 5 6"
+                    "numinlets": 8,
+                    "numoutlets": 8,
+                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+                    "patching_rect": [ 2357.7, 1185.0, 110.0, 22.0 ],
+                    "text": "select 1 2 3 4 5 6 7"
                 }
             },
             {
@@ -3657,7 +3694,7 @@
                     "numoutlets": 7,
                     "outlettype": [ "int", "int", "int", "int", "int", "int", "int" ],
                     "patching_rect": [ 2124.0, 884.0, 380.0, 23.0 ],
-                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🔌", "Audio", "IO", "Status...", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "item", 6, 4, "🪟", "Save", "Window", "Layout", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
+                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Twelve", "FX", ";", "#X", "item", 5, 7, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🔌", "Audio", "IO", "Status...", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "item", 6, 4, "🪟", "Save", "Window", "Layout", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
                     "text": "menubar 7"
                 }
             },
@@ -3899,8 +3936,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 5,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4239,8 +4276,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 5,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4408,8 +4445,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 5,
+                            "minor": 2,
+                            "revision": 0,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -5800,7 +5837,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2019.5, 1590.0, 144.0, 22.0 ],
-                    "restore": [ 5.0 ],
+                    "restore": [ 4.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6477,6 +6514,8 @@
             {
                 "box": {
                     "active": {
+                        "about_SousaFX": 0,
+                        "about_SousaFX::sousafx-rnbo_updates": 0,
                         "Background Color Preference1": 0,
                         "Background Color Preference1::Background Color Preference": 0,
                         "audio_io_status": 0,
@@ -6493,7 +6532,7 @@
                         "client_rect": [ 4, 44, 358, 172 ],
                         "parameter_enable": 0,
                         "parameter_mappable": 0,
-                        "storage_rect": [ 574, 129, 1025, 257 ]
+                        "storage_rect": [ 574, 129, 1789, 1178 ]
                     },
                     "text": "pattrstorage sousaFX-rnbo @greedy 0 @savemode 0",
                     "varname": "sousaFX-rnbo"
@@ -8746,7 +8785,7 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3303.5, 193.0, 3129.0, 193.0, 3129.0, 95.0, 1522.5, 95.0 ],
-                    "order": 9,
+                    "order": 10,
                     "source": [ "obj-288", 0 ]
                 }
             },
@@ -8761,6 +8800,13 @@
                 "patchline": {
                     "destination": [ "obj-75", 0 ],
                     "order": 7,
+                    "source": [ "obj-288", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-89", 0 ],
+                    "order": 9,
                     "source": [ "obj-288", 0 ]
                 }
             },
@@ -8817,7 +8863,7 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3510.5, 238.0, 3462.0, 238.0, 3462.0, 208.0, 3113.0, 208.0, 3113.0, 113.0, 1522.5, 113.0 ],
-                    "order": 9,
+                    "order": 10,
                     "source": [ "obj-289", 0 ]
                 }
             },
@@ -8832,6 +8878,13 @@
                 "patchline": {
                     "destination": [ "obj-75", 0 ],
                     "order": 7,
+                    "source": [ "obj-289", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-89", 0 ],
+                    "order": 9,
                     "source": [ "obj-289", 0 ]
                 }
             },
@@ -9472,7 +9525,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-157", 0 ],
-                    "source": [ "obj-367", 5 ]
+                    "source": [ "obj-367", 6 ]
                 }
             },
             {
@@ -9503,6 +9556,12 @@
                 "patchline": {
                     "destination": [ "obj-59", 0 ],
                     "source": [ "obj-367", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-64", 0 ],
+                    "source": [ "obj-367", 5 ]
                 }
             },
             {
@@ -10798,6 +10857,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-89", 1 ],
+                    "source": [ "obj-64", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-56", 0 ],
                     "source": [ "obj-68", 0 ]
                 }
@@ -11014,6 +11079,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-64", 0 ],
+                    "source": [ "obj-89", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-5", 0 ],
                     "source": [ "obj-90", 0 ]
                 }
@@ -11071,78 +11142,6 @@
             "obj-183::obj-155": [ "live.numbox[37]", "live.numbox[1]", 0 ],
             "obj-183::obj-94": [ "live.numbox[38]", "live.numbox[1]", 0 ],
             "obj-19::obj-155": [ "live.menu[3]", "live.menu", 0 ],
-            "obj-281::obj-22::obj-12": [ "live.numbox[29]", "live.numbox[2]", 0 ],
-            "obj-281::obj-22::obj-14": [ "live.dial[27]", "thresh", 0 ],
-            "obj-281::obj-22::obj-16": [ "live.dial[28]", "attack", 0 ],
-            "obj-281::obj-22::obj-20": [ "live.dial[29]", "release", 0 ],
-            "obj-281::obj-22::obj-3": [ "live.dial[26]", "lookahead", 0 ],
-            "obj-281::obj-22::obj-4": [ "live.dial[25]", "input gain", 0 ],
-            "obj-281::obj-268::obj-10": [ "live.numbox[4]", "live.numbox[2]", 0 ],
-            "obj-281::obj-268::obj-12": [ "live.numbox[2]", "live.numbox[2]", 0 ],
-            "obj-281::obj-268::obj-13": [ "live.numbox[3]", "live.numbox[2]", 0 ],
-            "obj-281::obj-268::obj-2": [ "lookahead", "lookahead", 0 ],
-            "obj-281::obj-268::obj-20": [ "live.numbox[5]", "live.numbox[2]", 0 ],
-            "obj-281::obj-268::obj-3": [ "comp amt", "comp amt", 0 ],
-            "obj-281::obj-268::obj-4": [ "attack", "attack", 0 ],
-            "obj-281::obj-268::obj-5": [ "release", "release", 0 ],
-            "obj-281::obj-268::obj-6": [ "himidfq", "hi mid freq", 0 ],
-            "obj-281::obj-268::obj-7": [ "himid", "hi mid gain", 0 ],
-            "obj-281::obj-272::obj-10": [ "live.numbox[8]", "live.numbox[2]", 0 ],
-            "obj-281::obj-272::obj-12": [ "live.numbox[7]", "live.numbox[2]", 0 ],
-            "obj-281::obj-272::obj-13": [ "live.numbox[9]", "live.numbox[2]", 0 ],
-            "obj-281::obj-272::obj-2": [ "lookahead[1]", "lookahead", 0 ],
-            "obj-281::obj-272::obj-20": [ "live.numbox[6]", "live.numbox[2]", 0 ],
-            "obj-281::obj-272::obj-3": [ "comp amt[1]", "comp amt", 0 ],
-            "obj-281::obj-272::obj-4": [ "attack[7]", "attack", 0 ],
-            "obj-281::obj-272::obj-5": [ "release[1]", "release", 0 ],
-            "obj-281::obj-272::obj-6": [ "himidfq[7]", "hi mid freq", 0 ],
-            "obj-281::obj-272::obj-7": [ "himid[1]", "hi mid gain", 0 ],
-            "obj-281::obj-274::obj-10": [ "live.numbox[12]", "live.numbox[2]", 0 ],
-            "obj-281::obj-274::obj-12": [ "live.numbox[11]", "live.numbox[2]", 0 ],
-            "obj-281::obj-274::obj-13": [ "live.numbox[15]", "live.numbox[2]", 0 ],
-            "obj-281::obj-274::obj-2": [ "lookahead[2]", "lookahead", 0 ],
-            "obj-281::obj-274::obj-20": [ "live.numbox[10]", "live.numbox[2]", 0 ],
-            "obj-281::obj-274::obj-3": [ "comp amt[7]", "comp amt", 0 ],
-            "obj-281::obj-274::obj-4": [ "attack[8]", "attack", 0 ],
-            "obj-281::obj-274::obj-5": [ "release[7]", "release", 0 ],
-            "obj-281::obj-274::obj-6": [ "himidfq[8]", "hi mid freq", 0 ],
-            "obj-281::obj-274::obj-7": [ "himid[7]", "hi mid gain", 0 ],
-            "obj-281::obj-275::obj-10": [ "live.numbox[18]", "live.numbox[2]", 0 ],
-            "obj-281::obj-275::obj-12": [ "live.numbox[16]", "live.numbox[2]", 0 ],
-            "obj-281::obj-275::obj-13": [ "live.numbox[17]", "live.numbox[2]", 0 ],
-            "obj-281::obj-275::obj-2": [ "lookahead[3]", "lookahead", 0 ],
-            "obj-281::obj-275::obj-20": [ "live.numbox[13]", "live.numbox[2]", 0 ],
-            "obj-281::obj-275::obj-3": [ "comp amt[8]", "comp amt", 0 ],
-            "obj-281::obj-275::obj-4": [ "attack[9]", "attack", 0 ],
-            "obj-281::obj-275::obj-5": [ "release[8]", "release", 0 ],
-            "obj-281::obj-275::obj-6": [ "himidfq[9]", "hi mid freq", 0 ],
-            "obj-281::obj-275::obj-7": [ "himid[8]", "hi mid gain", 0 ],
-            "obj-281::obj-276::obj-10": [ "live.numbox[22]", "live.numbox[2]", 0 ],
-            "obj-281::obj-276::obj-12": [ "live.numbox[19]", "live.numbox[2]", 0 ],
-            "obj-281::obj-276::obj-13": [ "live.numbox[21]", "live.numbox[2]", 0 ],
-            "obj-281::obj-276::obj-2": [ "lookahead[4]", "lookahead", 0 ],
-            "obj-281::obj-276::obj-20": [ "live.numbox[20]", "live.numbox[2]", 0 ],
-            "obj-281::obj-276::obj-3": [ "comp amt[9]", "comp amt", 0 ],
-            "obj-281::obj-276::obj-4": [ "attack[10]", "attack", 0 ],
-            "obj-281::obj-276::obj-5": [ "release[9]", "release", 0 ],
-            "obj-281::obj-276::obj-6": [ "himidfq[10]", "hi mid freq", 0 ],
-            "obj-281::obj-276::obj-7": [ "himid[9]", "hi mid gain", 0 ],
-            "obj-281::obj-2::obj-12": [ "live.numbox[30]", "live.numbox[2]", 0 ],
-            "obj-281::obj-2::obj-14": [ "live.dial[34]", "thresh", 0 ],
-            "obj-281::obj-2::obj-16": [ "live.dial[33]", "attack", 0 ],
-            "obj-281::obj-2::obj-20": [ "live.dial[30]", "release", 0 ],
-            "obj-281::obj-2::obj-3": [ "live.dial[31]", "lookahead", 0 ],
-            "obj-281::obj-2::obj-4": [ "live.dial[32]", "input gain", 0 ],
-            "obj-281::obj-3::obj-10": [ "live.numbox[39]", "live.numbox[2]", 0 ],
-            "obj-281::obj-3::obj-12": [ "live.numbox[24]", "live.numbox[2]", 0 ],
-            "obj-281::obj-3::obj-13": [ "live.numbox[40]", "live.numbox[2]", 0 ],
-            "obj-281::obj-3::obj-2": [ "lookahead[5]", "lookahead", 0 ],
-            "obj-281::obj-3::obj-20": [ "live.numbox[23]", "live.numbox[2]", 0 ],
-            "obj-281::obj-3::obj-3": [ "comp amt[10]", "comp amt", 0 ],
-            "obj-281::obj-3::obj-4": [ "attack[11]", "attack", 0 ],
-            "obj-281::obj-3::obj-5": [ "release[10]", "release", 0 ],
-            "obj-281::obj-3::obj-6": [ "himidfq[11]", "hi mid freq", 0 ],
-            "obj-281::obj-3::obj-7": [ "himid[2]", "hi mid gain", 0 ],
             "obj-344::obj-14": [ "delay vol[1]", "delay vol", 0 ],
             "obj-344::obj-15": [ "dry vol[1]", "dry vol", 0 ],
             "obj-344::obj-172": [ "Kick Volume", "Kick", 0 ],
@@ -11161,43 +11160,19 @@
             "obj-344::obj-50": [ "mic lowpass", "lowpass", 0 ],
             "obj-344::obj-53": [ "tremolo boost", "tremolo boost", 0 ],
             "obj-344::obj-59": [ "Alert Volume", "Loop Alert", 0 ],
-            "obj-344::obj-7": [ "min solo vol", "minimum solo reverb volume", 0 ],
-            "obj-348::obj-10::obj-12": [ "live.numbox[34]", "live.numbox[2]", 0 ],
-            "obj-348::obj-10::obj-14": [ "live.dial[55]", "thresh", 0 ],
-            "obj-348::obj-10::obj-16": [ "live.dial[58]", "attack", 0 ],
-            "obj-348::obj-10::obj-20": [ "live.dial[56]", "release", 0 ],
-            "obj-348::obj-10::obj-3": [ "live.dial[57]", "lookahead", 0 ],
-            "obj-348::obj-10::obj-4": [ "live.dial[59]", "input gain", 0 ],
-            "obj-348::obj-22::obj-12": [ "live.numbox[27]", "live.numbox[2]", 0 ],
-            "obj-348::obj-22::obj-14": [ "live.dial[36]", "thresh", 0 ],
-            "obj-348::obj-22::obj-16": [ "live.dial[35]", "attack", 0 ],
-            "obj-348::obj-22::obj-20": [ "live.dial[37]", "release", 0 ],
-            "obj-348::obj-22::obj-3": [ "live.dial[39]", "lookahead", 0 ],
-            "obj-348::obj-22::obj-4": [ "live.dial[38]", "input gain", 0 ],
-            "obj-348::obj-2::obj-13": [ "live.toggle[2]", "live.toggle", 0 ],
-            "obj-348::obj-2::obj-2": [ "spread", "spread", 0 ],
-            "obj-348::obj-2::obj-4": [ "size[3]", "output volume", 0 ],
-            "obj-348::obj-3::obj-12": [ "live.numbox[31]", "live.numbox[2]", 0 ],
-            "obj-348::obj-3::obj-14": [ "live.dial[44]", "thresh", 0 ],
-            "obj-348::obj-3::obj-16": [ "live.dial[41]", "attack", 0 ],
-            "obj-348::obj-3::obj-20": [ "live.dial[43]", "release", 0 ],
-            "obj-348::obj-3::obj-3": [ "live.dial[40]", "lookahead", 0 ],
-            "obj-348::obj-3::obj-4": [ "live.dial[42]", "input gain", 0 ],
-            "obj-348::obj-4::obj-12": [ "live.numbox[32]", "live.numbox[2]", 0 ],
-            "obj-348::obj-4::obj-14": [ "live.dial[49]", "thresh", 0 ],
-            "obj-348::obj-4::obj-16": [ "live.dial[45]", "attack", 0 ],
-            "obj-348::obj-4::obj-20": [ "live.dial[46]", "release", 0 ],
-            "obj-348::obj-4::obj-3": [ "live.dial[48]", "lookahead", 0 ],
-            "obj-348::obj-4::obj-4": [ "live.dial[47]", "input gain", 0 ],
-            "obj-348::obj-6::obj-13": [ "live.toggle[4]", "live.toggle", 0 ],
-            "obj-348::obj-6::obj-2": [ "spread[1]", "spread", 0 ],
-            "obj-348::obj-6::obj-4": [ "output volume", "output volume", 0 ],
-            "obj-348::obj-8::obj-13": [ "live.toggle[6]", "live.toggle", 0 ],
-            "obj-348::obj-8::obj-2": [ "spread[2]", "spread", 0 ],
-            "obj-348::obj-8::obj-4": [ "output volume[1]", "output volume", 0 ],
-            "obj-348::obj-9::obj-13": [ "live.toggle[9]", "live.toggle", 0 ],
-            "obj-348::obj-9::obj-2": [ "spread[4]", "spread", 0 ],
-            "obj-348::obj-9::obj-4": [ "output volume[3]", "output volume", 0 ],
+            "obj-344::obj-7": [ "min solo vol", "min rev vol", 0 ],
+            "obj-348::obj-10::obj-8::obj-13": [ "live.toggle[11]", "live.toggle", 0 ],
+            "obj-348::obj-10::obj-8::obj-2": [ "spread[10]", "spread", 0 ],
+            "obj-348::obj-10::obj-8::obj-4": [ "output volume[9]", "output volume", 0 ],
+            "obj-348::obj-5::obj-8::obj-13": [ "live.toggle[6]", "live.toggle", 0 ],
+            "obj-348::obj-5::obj-8::obj-2": [ "spread[2]", "spread", 0 ],
+            "obj-348::obj-5::obj-8::obj-4": [ "output volume[1]", "output volume", 0 ],
+            "obj-348::obj-7::obj-8::obj-13": [ "live.toggle[9]", "live.toggle", 0 ],
+            "obj-348::obj-7::obj-8::obj-2": [ "spread[6]", "spread", 0 ],
+            "obj-348::obj-7::obj-8::obj-4": [ "output volume[6]", "output volume", 0 ],
+            "obj-348::obj-8::obj-8::obj-13": [ "live.toggle[10]", "live.toggle", 0 ],
+            "obj-348::obj-8::obj-8::obj-2": [ "spread[9]", "spread", 0 ],
+            "obj-348::obj-8::obj-8::obj-4": [ "output volume[8]", "output volume", 0 ],
             "obj-366": [ "live.numbox[14]", "live.numbox", 0 ],
             "obj-377::obj-10": [ "mid trim", "mid trim", 0 ],
             "obj-377::obj-105": [ "high boost[1]", "high boost", 0 ],
@@ -11269,174 +11244,6 @@
                     "parameter_type": 2,
                     "parameter_unitstyle": 10
                 },
-                "obj-281::obj-272::obj-10": {
-                    "parameter_longname": "live.numbox[8]"
-                },
-                "obj-281::obj-272::obj-12": {
-                    "parameter_longname": "live.numbox[7]"
-                },
-                "obj-281::obj-272::obj-13": {
-                    "parameter_longname": "live.numbox[9]"
-                },
-                "obj-281::obj-272::obj-2": {
-                    "parameter_longname": "lookahead[1]"
-                },
-                "obj-281::obj-272::obj-20": {
-                    "parameter_longname": "live.numbox[6]"
-                },
-                "obj-281::obj-272::obj-3": {
-                    "parameter_longname": "comp amt[1]"
-                },
-                "obj-281::obj-272::obj-4": {
-                    "parameter_longname": "attack[7]"
-                },
-                "obj-281::obj-272::obj-5": {
-                    "parameter_longname": "release[1]"
-                },
-                "obj-281::obj-272::obj-6": {
-                    "parameter_longname": "himidfq[7]"
-                },
-                "obj-281::obj-272::obj-7": {
-                    "parameter_longname": "himid[1]"
-                },
-                "obj-281::obj-274::obj-10": {
-                    "parameter_longname": "live.numbox[12]"
-                },
-                "obj-281::obj-274::obj-12": {
-                    "parameter_longname": "live.numbox[11]"
-                },
-                "obj-281::obj-274::obj-13": {
-                    "parameter_longname": "live.numbox[15]"
-                },
-                "obj-281::obj-274::obj-2": {
-                    "parameter_longname": "lookahead[2]"
-                },
-                "obj-281::obj-274::obj-20": {
-                    "parameter_longname": "live.numbox[10]"
-                },
-                "obj-281::obj-274::obj-3": {
-                    "parameter_longname": "comp amt[7]"
-                },
-                "obj-281::obj-274::obj-4": {
-                    "parameter_longname": "attack[8]"
-                },
-                "obj-281::obj-274::obj-5": {
-                    "parameter_longname": "release[7]"
-                },
-                "obj-281::obj-274::obj-6": {
-                    "parameter_longname": "himidfq[8]"
-                },
-                "obj-281::obj-274::obj-7": {
-                    "parameter_longname": "himid[7]"
-                },
-                "obj-281::obj-275::obj-10": {
-                    "parameter_longname": "live.numbox[18]"
-                },
-                "obj-281::obj-275::obj-12": {
-                    "parameter_longname": "live.numbox[16]"
-                },
-                "obj-281::obj-275::obj-13": {
-                    "parameter_longname": "live.numbox[17]"
-                },
-                "obj-281::obj-275::obj-2": {
-                    "parameter_longname": "lookahead[3]"
-                },
-                "obj-281::obj-275::obj-20": {
-                    "parameter_longname": "live.numbox[13]"
-                },
-                "obj-281::obj-275::obj-3": {
-                    "parameter_longname": "comp amt[8]"
-                },
-                "obj-281::obj-275::obj-4": {
-                    "parameter_longname": "attack[9]"
-                },
-                "obj-281::obj-275::obj-5": {
-                    "parameter_longname": "release[8]"
-                },
-                "obj-281::obj-275::obj-6": {
-                    "parameter_longname": "himidfq[9]"
-                },
-                "obj-281::obj-275::obj-7": {
-                    "parameter_longname": "himid[8]"
-                },
-                "obj-281::obj-276::obj-10": {
-                    "parameter_longname": "live.numbox[22]"
-                },
-                "obj-281::obj-276::obj-12": {
-                    "parameter_longname": "live.numbox[19]"
-                },
-                "obj-281::obj-276::obj-13": {
-                    "parameter_longname": "live.numbox[21]"
-                },
-                "obj-281::obj-276::obj-2": {
-                    "parameter_longname": "lookahead[4]"
-                },
-                "obj-281::obj-276::obj-20": {
-                    "parameter_longname": "live.numbox[20]"
-                },
-                "obj-281::obj-276::obj-3": {
-                    "parameter_longname": "comp amt[9]"
-                },
-                "obj-281::obj-276::obj-4": {
-                    "parameter_longname": "attack[10]"
-                },
-                "obj-281::obj-276::obj-5": {
-                    "parameter_longname": "release[9]"
-                },
-                "obj-281::obj-276::obj-6": {
-                    "parameter_longname": "himidfq[10]"
-                },
-                "obj-281::obj-276::obj-7": {
-                    "parameter_longname": "himid[9]"
-                },
-                "obj-281::obj-2::obj-12": {
-                    "parameter_longname": "live.numbox[30]"
-                },
-                "obj-281::obj-2::obj-14": {
-                    "parameter_longname": "live.dial[34]"
-                },
-                "obj-281::obj-2::obj-16": {
-                    "parameter_longname": "live.dial[33]"
-                },
-                "obj-281::obj-2::obj-20": {
-                    "parameter_longname": "live.dial[30]"
-                },
-                "obj-281::obj-2::obj-3": {
-                    "parameter_longname": "live.dial[31]"
-                },
-                "obj-281::obj-2::obj-4": {
-                    "parameter_longname": "live.dial[32]"
-                },
-                "obj-281::obj-3::obj-10": {
-                    "parameter_longname": "live.numbox[39]"
-                },
-                "obj-281::obj-3::obj-12": {
-                    "parameter_longname": "live.numbox[24]"
-                },
-                "obj-281::obj-3::obj-13": {
-                    "parameter_longname": "live.numbox[40]"
-                },
-                "obj-281::obj-3::obj-2": {
-                    "parameter_longname": "lookahead[5]"
-                },
-                "obj-281::obj-3::obj-20": {
-                    "parameter_longname": "live.numbox[23]"
-                },
-                "obj-281::obj-3::obj-3": {
-                    "parameter_longname": "comp amt[10]"
-                },
-                "obj-281::obj-3::obj-4": {
-                    "parameter_longname": "attack[11]"
-                },
-                "obj-281::obj-3::obj-5": {
-                    "parameter_longname": "release[10]"
-                },
-                "obj-281::obj-3::obj-6": {
-                    "parameter_longname": "himidfq[11]"
-                },
-                "obj-281::obj-3::obj-7": {
-                    "parameter_longname": "himid[2]"
-                },
                 "obj-344::obj-172": {
                     "parameter_longname": "Kick Volume"
                 },
@@ -11475,109 +11282,34 @@
                     "parameter_initial": -24,
                     "parameter_initial_enable": 1,
                     "parameter_range": [ -96.0, 0.0 ],
-                    "parameter_shortname": "minimum solo reverb volume"
+                    "parameter_shortname": "min rev vol"
                 },
-                "obj-348::obj-10::obj-12": {
-                    "parameter_longname": "live.numbox[34]"
+                "obj-348::obj-10::obj-8::obj-13": {
+                    "parameter_longname": "live.toggle[11]"
                 },
-                "obj-348::obj-10::obj-14": {
-                    "parameter_longname": "live.dial[55]"
+                "obj-348::obj-10::obj-8::obj-2": {
+                    "parameter_longname": "spread[10]"
                 },
-                "obj-348::obj-10::obj-16": {
-                    "parameter_longname": "live.dial[58]"
+                "obj-348::obj-10::obj-8::obj-4": {
+                    "parameter_longname": "output volume[9]"
                 },
-                "obj-348::obj-10::obj-20": {
-                    "parameter_longname": "live.dial[56]"
-                },
-                "obj-348::obj-10::obj-3": {
-                    "parameter_longname": "live.dial[57]"
-                },
-                "obj-348::obj-10::obj-4": {
-                    "parameter_longname": "live.dial[59]"
-                },
-                "obj-348::obj-22::obj-12": {
-                    "parameter_longname": "live.numbox[27]"
-                },
-                "obj-348::obj-22::obj-14": {
-                    "parameter_longname": "live.dial[36]"
-                },
-                "obj-348::obj-22::obj-16": {
-                    "parameter_longname": "live.dial[35]"
-                },
-                "obj-348::obj-22::obj-20": {
-                    "parameter_longname": "live.dial[37]"
-                },
-                "obj-348::obj-22::obj-3": {
-                    "parameter_longname": "live.dial[39]"
-                },
-                "obj-348::obj-22::obj-4": {
-                    "parameter_longname": "live.dial[38]"
-                },
-                "obj-348::obj-2::obj-13": {
-                    "parameter_longname": "live.toggle[2]"
-                },
-                "obj-348::obj-2::obj-4": {
-                    "parameter_longname": "size[3]"
-                },
-                "obj-348::obj-3::obj-12": {
-                    "parameter_longname": "live.numbox[31]"
-                },
-                "obj-348::obj-3::obj-14": {
-                    "parameter_longname": "live.dial[44]"
-                },
-                "obj-348::obj-3::obj-16": {
-                    "parameter_longname": "live.dial[41]"
-                },
-                "obj-348::obj-3::obj-20": {
-                    "parameter_longname": "live.dial[43]"
-                },
-                "obj-348::obj-3::obj-3": {
-                    "parameter_longname": "live.dial[40]"
-                },
-                "obj-348::obj-3::obj-4": {
-                    "parameter_longname": "live.dial[42]"
-                },
-                "obj-348::obj-4::obj-12": {
-                    "parameter_longname": "live.numbox[32]"
-                },
-                "obj-348::obj-4::obj-14": {
-                    "parameter_longname": "live.dial[49]"
-                },
-                "obj-348::obj-4::obj-16": {
-                    "parameter_longname": "live.dial[45]"
-                },
-                "obj-348::obj-4::obj-20": {
-                    "parameter_longname": "live.dial[46]"
-                },
-                "obj-348::obj-4::obj-3": {
-                    "parameter_longname": "live.dial[48]"
-                },
-                "obj-348::obj-4::obj-4": {
-                    "parameter_longname": "live.dial[47]"
-                },
-                "obj-348::obj-6::obj-13": {
-                    "parameter_longname": "live.toggle[4]"
-                },
-                "obj-348::obj-6::obj-2": {
-                    "parameter_longname": "spread[1]"
-                },
-                "obj-348::obj-8::obj-13": {
-                    "parameter_longname": "live.toggle[6]"
-                },
-                "obj-348::obj-8::obj-2": {
-                    "parameter_longname": "spread[2]"
-                },
-                "obj-348::obj-8::obj-4": {
-                    "parameter_longname": "output volume[1]"
-                },
-                "obj-348::obj-9::obj-13": {
+                "obj-348::obj-7::obj-8::obj-13": {
                     "parameter_longname": "live.toggle[9]"
                 },
-                "obj-348::obj-9::obj-2": {
-                    "parameter_longname": "spread[4]"
+                "obj-348::obj-7::obj-8::obj-2": {
+                    "parameter_longname": "spread[6]"
                 },
-                "obj-348::obj-9::obj-4": {
-                    "parameter_longname": "output volume[3]"
+                "obj-348::obj-7::obj-8::obj-4": {
+                    "parameter_longname": "output volume[6]"
+                },
+                "obj-348::obj-8::obj-8::obj-13": {
+                    "parameter_longname": "live.toggle[10]"
+                },
+                "obj-348::obj-8::obj-8::obj-2": {
+                    "parameter_longname": "spread[9]"
+                },
+                "obj-348::obj-8::obj-8::obj-4": {
+                    "parameter_longname": "output volume[8]"
                 },
                 "obj-377::obj-10": {
                     "parameter_longname": "mid trim"

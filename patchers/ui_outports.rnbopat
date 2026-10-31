@@ -3,16 +3,76 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 2,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 1325.0, 194.0, 1077.0, 1102.0 ],
+        "rect": [ 971.0, 143.0, 1077.0, 1102.0 ],
         "default_fontname": "Lato",
         "title": "ui_outports",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-61",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 664.0, 620.0, 124.0, 23.0 ],
+                    "rnbo_classname": "outport",
+                    "rnbo_extra_attributes": {
+                        "meta": ""
+                    },
+                    "rnbo_serial": 25,
+                    "rnbo_uniqueid": "outport_obj-61",
+                    "text": "outport dry_fx_choice"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-60",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 521.0, 620.0, 128.0, 23.0 ],
+                    "rnbo_classname": "outport",
+                    "rnbo_extra_attributes": {
+                        "meta": ""
+                    },
+                    "rnbo_serial": 23,
+                    "rnbo_uniqueid": "outport_obj-60",
+                    "text": "outport solo_fx_choice"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-272",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 664.0, 584.0, 88.0, 23.0 ],
+                    "rnbo_classname": "r",
+                    "rnbo_serial": 30,
+                    "rnbo_uniqueid": "r_obj-272",
+                    "text": "r dry_fx_choice"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-271",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 521.0, 584.0, 93.0, 23.0 ],
+                    "rnbo_classname": "r",
+                    "rnbo_serial": 29,
+                    "rnbo_uniqueid": "r_obj-271",
+                    "text": "r solo_fx_choice"
+                }
+            },
             {
                 "box": {
                     "id": "obj-57",
@@ -22,8 +82,8 @@
                     "patching_rect": [ 897.5, 462.0, 36.0, 23.0 ],
                     "rnbo_classname": "out",
                     "rnbo_extra_attributes": {
-                        "comment": "",
-                        "meta": ""
+                        "meta": "",
+                        "comment": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "out_obj-57",
@@ -2955,6 +3015,18 @@
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
                     "source": [ "obj-270", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-60", 0 ],
+                    "source": [ "obj-271", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-61", 0 ],
+                    "source": [ "obj-272", 0 ]
                 }
             },
             {

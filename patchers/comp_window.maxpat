@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 554.0, 373.0, 966.0, 653.0 ],
+        "rect": [ 569.0, 75.0, 942.0, 621.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -28,7 +28,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1375.0, 479.0, 131.0, 22.0 ],
-                    "restore": [ 0, -18, 4, 10, 0.3, 0.65, 85, 0.35, 1, 0 ],
+                    "restore": [ -3.718309859154928, -18, 4, 10, 0.3, 0.65, 85, 0.35, 1, 0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -44,8 +44,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1348.0, 450.0, 158.0, 22.0 ],
-                    "text": "loadmess post_xfade_comp"
+                    "patching_rect": [ 1348.0, 450.0, 243.0, 22.0 ],
+                    "text": "loadmess scripting_name post_xfade_comp"
                 }
             },
             {
@@ -119,8 +119,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1778.0, 421.0, 121.0, 22.0 ],
-                    "text": "loadmess final_comp"
+                    "patching_rect": [ 1778.0, 421.0, 206.0, 22.0 ],
+                    "text": "loadmess scripting_name final_comp"
                 }
             },
             {
@@ -194,8 +194,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 989.0, 898.0, 144.0, 22.0 ],
-                    "text": "loadmess lowband_comp"
+                    "patching_rect": [ 989.0, 898.0, 229.0, 22.0 ],
+                    "text": "loadmess scripting_name lowband_comp"
                 }
             },
             {
@@ -262,8 +262,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 828.0, 450.0, 140.0, 22.0 ],
-                    "text": "loadmess pre_xfade_dry"
+                    "patching_rect": [ 828.0, 450.0, 225.0, 22.0 ],
+                    "text": "loadmess scripting_name pre_xfade_dry"
                 }
             },
             {
@@ -337,8 +337,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1059.0, 450.0, 142.0, 22.0 ],
-                    "text": "loadmess pre_xfade_wet"
+                    "patching_rect": [ 1059.0, 450.0, 227.0, 22.0 ],
+                    "text": "loadmess scripting_name pre_xfade_wet"
                 }
             },
             {
@@ -412,8 +412,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1045.0, 25.0, 121.0, 22.0 ],
-                    "text": "loadmess solo_comp"
+                    "patching_rect": [ 1045.0, 25.0, 206.0, 22.0 ],
+                    "text": "loadmess scripting_name solo_comp"
                 }
             },
             {
@@ -480,8 +480,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 448.0, 230.0, 115.0, 22.0 ],
-                    "text": "loadmess init_comp"
+                    "patching_rect": [ 448.0, 230.0, 199.0, 22.0 ],
+                    "text": "loadmess scripting_name init_comp"
                 }
             },
             {
