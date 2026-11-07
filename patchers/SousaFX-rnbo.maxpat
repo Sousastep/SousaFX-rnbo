@@ -4,44 +4,18 @@
         "appversion": {
             "major": 9,
             "minor": 2,
-            "revision": 0,
+            "revision": 1,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 449.0, 591.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "enabletransparentbgwithtitlebar": 1,
         "title": "sousafx",
         "boxes": [
-            {
-                "box": {
-                    "bgcolor": [ 0.0, 0.0, 0.0, 0.52 ],
-                    "hint": "show compressor parameters window",
-                    "id": "obj-64",
-                    "maxclass": "button",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "outlinecolor": [ 0.137255, 0.137255, 0.137255, 0.231373 ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 3376.0, 1805.0, 74.0, 74.0 ],
-                    "varname": "12 FX"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-89",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 3376.0, 1764.0, 116.0, 22.0 ],
-                    "text": "hover_bang \"12 FX\""
-                }
-            },
             {
                 "box": {
                     "id": "obj-63",
@@ -3607,11 +3581,11 @@
                 "box": {
                     "id": "obj-367",
                     "maxclass": "newobj",
-                    "numinlets": 8,
-                    "numoutlets": 8,
-                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-                    "patching_rect": [ 2357.7, 1185.0, 110.0, 22.0 ],
-                    "text": "select 1 2 3 4 5 6 7"
+                    "numinlets": 7,
+                    "numoutlets": 7,
+                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+                    "patching_rect": [ 2357.7, 1185.0, 100.0, 22.0 ],
+                    "text": "select 1 2 3 4 5 6"
                 }
             },
             {
@@ -3694,7 +3668,7 @@
                     "numoutlets": 7,
                     "outlettype": [ "int", "int", "int", "int", "int", "int", "int" ],
                     "patching_rect": [ 2124.0, 884.0, 380.0, 23.0 ],
-                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Twelve", "FX", ";", "#X", "item", 5, 7, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🔌", "Audio", "IO", "Status...", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "item", 6, 4, "🪟", "Save", "Window", "Layout", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
+                    "save": [ "#N", "menubar", 7, 0, ";", "#X", "about", "About", "SousaFX…", ";", "#X", "saveas", 9, ";", "#X", "closeitem", ";", "#X", "menutitle", 5, "🔊", "FX", "Parameters", ";", "#X", "item", 5, 1, "Active", "Bindings", ";", "#X", "item", 5, 2, "Compressor", ";", "#X", "item", 5, 3, "Bassline", ";", "#X", "item", 5, 4, "Mixbus", ";", "#X", "item", 5, 5, "Delay", ";", "#X", "item", 5, 6, "Open", "All", ";", "#X", "menutitle", 6, "⚙️", "Settings", ";", "#X", "item", 6, 1, "🔈", "Audio", "Status...", ";", "#X", "item", 6, 2, "🔌", "Audio", "IO", "Status...", ";", "#X", "item", 6, 3, "🎨", "Background", "Color", ";", "#X", "item", 6, 4, "🪟", "Save", "Window", "Layout", ";", "#X", "menutitle", 7, "🛟", "Support", ";", "#X", "item", 7, 1, "📙", "Documentation", ";", "#X", "item", 7, 2, "-", ";", "#X", "item", 7, 3, "🐞", "Report", "a", "Bug", ";", "#X", "item", 7, 4, "-", ";", "#X", "item", 7, 5, "👾", "Join", "the", "Discord", ";", "#X", "item", 7, 6, "-", ";", "#X", "item", 7, 7, "🥺", "Donate", ";", "#X", "end", ";" ],
                     "text": "menubar 7"
                 }
             },
@@ -3937,7 +3911,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4277,7 +4251,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4446,7 +4420,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -8785,7 +8759,7 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3303.5, 193.0, 3129.0, 193.0, 3129.0, 95.0, 1522.5, 95.0 ],
-                    "order": 10,
+                    "order": 9,
                     "source": [ "obj-288", 0 ]
                 }
             },
@@ -8800,13 +8774,6 @@
                 "patchline": {
                     "destination": [ "obj-75", 0 ],
                     "order": 7,
-                    "source": [ "obj-288", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-89", 0 ],
-                    "order": 9,
                     "source": [ "obj-288", 0 ]
                 }
             },
@@ -8863,7 +8830,7 @@
                 "patchline": {
                     "destination": [ "obj-394", 0 ],
                     "midpoints": [ 3510.5, 238.0, 3462.0, 238.0, 3462.0, 208.0, 3113.0, 208.0, 3113.0, 113.0, 1522.5, 113.0 ],
-                    "order": 10,
+                    "order": 9,
                     "source": [ "obj-289", 0 ]
                 }
             },
@@ -8878,13 +8845,6 @@
                 "patchline": {
                     "destination": [ "obj-75", 0 ],
                     "order": 7,
-                    "source": [ "obj-289", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-89", 0 ],
-                    "order": 9,
                     "source": [ "obj-289", 0 ]
                 }
             },
@@ -9525,7 +9485,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-157", 0 ],
-                    "source": [ "obj-367", 6 ]
+                    "source": [ "obj-367", 5 ]
                 }
             },
             {
@@ -9556,12 +9516,6 @@
                 "patchline": {
                     "destination": [ "obj-59", 0 ],
                     "source": [ "obj-367", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-64", 0 ],
-                    "source": [ "obj-367", 5 ]
                 }
             },
             {
@@ -10857,12 +10811,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-89", 1 ],
-                    "source": [ "obj-64", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-56", 0 ],
                     "source": [ "obj-68", 0 ]
                 }
@@ -11075,12 +11023,6 @@
                 "patchline": {
                     "destination": [ "obj-28", 0 ],
                     "source": [ "obj-88", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-64", 0 ],
-                    "source": [ "obj-89", 0 ]
                 }
             },
             {
