@@ -35,3 +35,14 @@ SousaFX-rnbo ports [SousaFX](https://sousastep.github.io/SousaFX-docs/index.html
 # :scroll: Scripts
 
 The python scripts for converting gamepad to osc, and osc to serial, [are available in the sousaFX-rpi-scripts repository](https://github.com/Sousastep/sousaFX-rpi-scripts).
+
+<a href="#house_with_garden-repositories">![rainbow](./media/rainbow.png)</a>
+
+# :house_with_garden: Repositories
+
+- [SousaFX-rnbo](https://github.com/Sousastep/SousaFX-rnbo): 				audio effects
+- [SousaFX-rnbo-docs](https://github.com/Sousastep/SousaFX-rnbo-docs): 		documentation
+- [sousaFX-rpi-scripts](https://github.com/Sousastep/sousaFX-rpi-scripts): 	raspberry pi scripts
+- [sousaVFX-teensy](https://github.com/Sousastep/sousaVFX-teensy): 			visual effects
+- [SousaPlayback-rnbo](https://github.com/Sousastep/SousaPlayback-rnbo): 	ableton project
+- [sousa_fx_generator](https://github.com/Sousastep/sousa_fx_generator): 	rnbo codebox~ generator
