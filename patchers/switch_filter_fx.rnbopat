@@ -4,15 +4,36 @@
         "appversion": {
             "major": 9,
             "minor": 2,
-            "revision": 0,
+            "revision": 1,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 1269.0, 88.0, 1000.0, 780.0 ],
+        "rect": [ 586.0, 328.0, 1000.0, 780.0 ],
         "default_fontname": "Lato",
-        "title": "/Users/jbaylies/Documents/Max 8/Projects/SousaFX-rnbo/patchers/switch_filter_fx.rnbopat",
+        "title": "switch_filter_fx.rnbopat",
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-21",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 576.0, 391.0, 50.0, 23.0 ],
+                    "rnbo_classname": "number",
+                    "rnbo_extra_attributes": {
+                        "maximum": "<none>",
+                        "minimum": "<none>",
+                        "preset": 0,
+                        "initialFormat": "float",
+                        "order": ""
+                    },
+                    "rnbo_serial": 2,
+                    "rnbo_uniqueid": "number_obj-21"
+                }
+            },
             {
                 "box": {
                     "id": "obj-17",
@@ -20,11 +41,11 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 501.0, 353.0, 38.0, 23.0 ],
+                    "patching_rect": [ 501.0, 353.0, 40.0, 23.0 ],
                     "rnbo_classname": "*~",
-                    "rnbo_serial": 1,
+                    "rnbo_serial": 4,
                     "rnbo_uniqueid": "*~_obj-17",
-                    "text": "*~ 16"
+                    "text": "*~ 2.5"
                 }
             },
             {
@@ -219,7 +240,7 @@
                             "appversion": {
                                 "major": 9,
                                 "minor": 2,
-                                "revision": 0,
+                                "revision": 1,
                                 "architecture": "x64",
                                 "modernui": 1
                             },
@@ -263,13 +284,13 @@
                                     "box": {
                                         "maxclass": "codebox",
                                         "patching_rect": [ 275.0, 134.0, 578.0, 134.0 ],
-                                        "fontname": "<Monospaced>",
                                         "outlettype": [ "" ],
-                                        "fontface": 0,
                                         "id": "obj-41",
-                                        "numinlets": 1,
                                         "fontsize": 12.0,
+                                        "numinlets": 1,
+                                        "fontname": "<Monospaced>",
                                         "numoutlets": 1,
+                                        "fontface": 0,
                                         "code": "smootheststep(edge0, edge1, x) {\n  x = clip((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nout1 = smootheststep(0.0, 1.0, in1);"
                                     }
                                 },
@@ -1067,12 +1088,12 @@
                             "appversion": {
                                 "major": 9,
                                 "minor": 2,
-                                "revision": 0,
+                                "revision": 1,
                                 "architecture": "x64",
                                 "modernui": 1
                             },
                             "classnamespace": "dsp.gen",
-                            "rect": [ 897.0, 268.0, 1009.0, 921.0 ],
+                            "rect": [ 1251.0, 364.0, 1009.0, 921.0 ],
                             "boxes": [
                                 {
                                     "box": {
@@ -1111,13 +1132,13 @@
                                     "box": {
                                         "maxclass": "codebox",
                                         "patching_rect": [ 275.0, 134.0, 578.0, 134.0 ],
-                                        "fontname": "<Monospaced>",
                                         "outlettype": [ "" ],
-                                        "fontface": 0,
                                         "id": "obj-41",
-                                        "numinlets": 1,
                                         "fontsize": 12.0,
+                                        "numinlets": 1,
+                                        "fontname": "<Monospaced>",
                                         "numoutlets": 1,
+                                        "fontface": 0,
                                         "code": "smootheststep(edge0, edge1, x) {\n  x = clip((x - edge0) / (edge1 - edge0), 0.0, 1.0);\n  return x * x * x * x * (x * (x * (-20.0 * x + 70.0) - 84.0) + 35.0);\n}\n\nout1 = smootheststep(0.0, 1.0, in1);"
                                     }
                                 },
@@ -1944,7 +1965,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1967,10 +1988,10 @@
                                     "patching_rect": [ 30.0, 110.0, 620.0, 360.0 ],
                                     "rnbo_classname": "codebox~",
                                     "rnbo_extra_attributes": {
-                                        "nocache": 0,
-                                        "expr": "",
+                                        "code": "// ============================================================================\n// yoi_cascade_formants.txt — five two-pole formant resonators in series\n//                            (all-pole cascade, unity gain at DC) following\n//                            U -> O -> I as in3 rises: a vowel with the\n//                            natural formant tilt of a vocal tract\n//\n// From: P. R. Cook, \"Toward the Perfect Audio Morph? Singing Voice Synthesis\n//       and Processing\", DAFx-98 COO62 (formants as the longitudinal modes\n//       of the vocal tract tube below ~4 kHz; all-pole formant filter);\n//       C. Traube, N. D'Alessandro, DAFx-05 P_104 §1.5 (vowels in the\n//       (F1, F2) plane, Fig. 8 / Fig. 11).\n//\n// Signal (per channel):\n//   v      = clamp(log2(f_in3 / 200) / 4, 0, 1)    200 Hz U, 800 O, 3200 I\n//   F1..3  = log-interpolated  U (300, 870, 2240) -> O (570, 840, 2410)\n//                              -> I (270, 2290, 3010) Hz; F4 3300, F5 3750\n//            (all x formant shift)\n//   y      = R5(R4(R3(R2(R1(x)))))     R = TPT SVF lowpass\n//                                      w^2 / (s^2 + (w/Q) s + w^2):\n//                                      unity at DC, peak ~Q at its formant\n//   Q      = 2 * 15^in4 (2 .. 30)\n//   out    = y * 0.7 * (Q / 2)^-0.4     (the tuba's low end passes at unity,\n//                                       only the formant peaks grow)\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: vowel position as a frequency in Hz (held when <= 1 Hz; 800 Hz = O\n//        at start)\n//   in4: resonance 0..1 (formant sharpness)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo filter, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Moves all five formants (semitones): - = bigger mouth, + = smaller\n@param({ min: -12, max: 12 }) formant_shift_st = 0;\n// Vowel position offset from in3 (semitones; 24 st = U to O)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): formant-shifted side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// resonator states: slot = channel * 5 + formant (0 L, 1 R, 2 side copy)\n@state ic1 = new FixedSampleArray(15);\n@state ic2 = new FixedSampleArray(15);\n@state fHold = 800.0;\n@state fSm = 800.0;\n@state resSm = 0.0;\n\n// TPT SVF lowpass (unity DC, damping kd = 1/Q) on slot idx\nfunction svfLp(idx: Int, x: number, g: number, kd: number): number {\n\tlet a1 = 1.0 / (1.0 + g * (g + kd));\n\tlet a2 = g * a1;\n\tlet a3 = g * a2;\n\tlet v3 = x - ic2[idx];\n\tlet v1 = a1 * ic1[idx] + a2 * v3;\n\tlet v2 = ic2[idx] + a2 * ic1[idx] + a3 * v3;\n\tic1[idx] = 2.0 * v1 - ic1[idx];\n\tic2[idx] = 2.0 * v2 - ic2[idx];\n\treturn v2;\n}\n\n// Prewarped TPT gain for formant frequency 2^l2f Hz\nfunction tptG(l2f: number, sr: number): number {\n\treturn tan(pi * clamp(exp2(l2f), 20.0, sr * 0.45) / sr);\n}\n\n// Five formants in series, channel ch (log2 frequencies l1..l5)\nfunction cascade(ch: Int, x: number, l1: number, l2: number, l3: number, l4: number, l5: number, kd: number, sr: number): number {\n\tlet b: Int = ch * 5;\n\tlet y = svfLp(b, x, tptG(l1, sr), kd);\n\ty = svfLp(b + 1, y, tptG(l2, sr), kd);\n\ty = svfLp(b + 2, y, tptG(l3, sr), kd);\n\ty = svfLp(b + 3, y, tptG(l4, sr), kd);\n\treturn svfLp(b + 4, y, tptG(l5, sr), kd);\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 vowel position (held), in4 resonance, 5 ms smoothing ------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), 20.0, 20000.0);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\n// --- Vowel path U -> O -> I, interpolated in log2(Hz) ------------------------\nlet v = clamp(log2(fSm / 200.0) * 0.25, 0.0, 1.0);\nlet lo = (v < 0.5) ? 1.0 : 0.0;\nlet t = (v < 0.5) ? 2.0 * v : 2.0 * v - 1.0;\nlet shift = clamp(formant_shift_st, -12.0, 12.0) / 12.0;\nlet l1 = shift + lo * linearinterp(t, 8.2288, 9.1548) + (1.0 - lo) * linearinterp(t, 9.1548, 8.0768);\nlet l2 = shift + lo * linearinterp(t, 9.7649, 9.7142) + (1.0 - lo) * linearinterp(t, 9.7142, 11.1611);\nlet l3 = shift + lo * linearinterp(t, 11.1293, 11.2348) + (1.0 - lo) * linearinterp(t, 11.2348, 11.5555);\n// F4 3300 Hz, F5 3750 Hz\nlet l4 = shift + 11.6883;\nlet l5 = shift + 11.8727;\n\nlet q = 2.0 * pow(15.0, resSm);\nlet kd = 1.0 / q;\nlet makeup = 0.7 * pow(q * 0.5, -0.4);\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\n\n// --- Filter: L, R, and a side copy on the mono sum shifted up to +1 octave --\nlet yL = cascade(0, xL, l1, l2, l3, l4, l5, kd, sr);\nlet yR = cascade(1, xR, l1, l2, l3, l4, l5, kd, sr);\nlet yD = cascade(2, 0.5 * (xL + xR), l1 + wd, l2 + wd, l3 + wd, l4 + wd, l5 + wd, kd, sr);\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n",
                                         "safemath": 1,
-                                        "code": "// ============================================================================\n// yoi_cascade_formants.txt — five two-pole formant resonators in series\n//                            (all-pole cascade, unity gain at DC) following\n//                            U -> O -> I as in3 rises: a vowel with the\n//                            natural formant tilt of a vocal tract\n//\n// From: P. R. Cook, \"Toward the Perfect Audio Morph? Singing Voice Synthesis\n//       and Processing\", DAFx-98 COO62 (formants as the longitudinal modes\n//       of the vocal tract tube below ~4 kHz; all-pole formant filter);\n//       C. Traube, N. D'Alessandro, DAFx-05 P_104 §1.5 (vowels in the\n//       (F1, F2) plane, Fig. 8 / Fig. 11).\n//\n// Signal (per channel):\n//   v      = clamp(log2(f_in3 / 200) / 4, 0, 1)    200 Hz U, 800 O, 3200 I\n//   F1..3  = log-interpolated  U (300, 870, 2240) -> O (570, 840, 2410)\n//                              -> I (270, 2290, 3010) Hz; F4 3300, F5 3750\n//            (all x formant shift)\n//   y      = R5(R4(R3(R2(R1(x)))))     R = TPT SVF lowpass\n//                                      w^2 / (s^2 + (w/Q) s + w^2):\n//                                      unity at DC, peak ~Q at its formant\n//   Q      = 2 * 15^in4 (2 .. 30)\n//   out    = y * 0.7 * (Q / 2)^-0.4     (the tuba's low end passes at unity,\n//                                       only the formant peaks grow)\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: vowel position as a frequency in Hz (held when <= 1 Hz; 800 Hz = O\n//        at start)\n//   in4: resonance 0..1 (formant sharpness)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo filter, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Moves all five formants (semitones): - = bigger mouth, + = smaller\n@param({ min: -12, max: 12 }) formant_shift_st = 0;\n// Vowel position offset from in3 (semitones; 24 st = U to O)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): formant-shifted side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// resonator states: slot = channel * 5 + formant (0 L, 1 R, 2 side copy)\n@state ic1 = new FixedSampleArray(15);\n@state ic2 = new FixedSampleArray(15);\n@state fHold = 800.0;\n@state fSm = 800.0;\n@state resSm = 0.0;\n\n// TPT SVF lowpass (unity DC, damping kd = 1/Q) on slot idx\nfunction svfLp(idx: Int, x: number, g: number, kd: number): number {\n\tlet a1 = 1.0 / (1.0 + g * (g + kd));\n\tlet a2 = g * a1;\n\tlet a3 = g * a2;\n\tlet v3 = x - ic2[idx];\n\tlet v1 = a1 * ic1[idx] + a2 * v3;\n\tlet v2 = ic2[idx] + a2 * ic1[idx] + a3 * v3;\n\tic1[idx] = 2.0 * v1 - ic1[idx];\n\tic2[idx] = 2.0 * v2 - ic2[idx];\n\treturn v2;\n}\n\n// Prewarped TPT gain for formant frequency 2^l2f Hz\nfunction tptG(l2f: number, sr: number): number {\n\treturn tan(pi * clamp(exp2(l2f), 20.0, sr * 0.45) / sr);\n}\n\n// Five formants in series, channel ch (log2 frequencies l1..l5)\nfunction cascade(ch: Int, x: number, l1: number, l2: number, l3: number, l4: number, l5: number, kd: number, sr: number): number {\n\tlet b: Int = ch * 5;\n\tlet y = svfLp(b, x, tptG(l1, sr), kd);\n\ty = svfLp(b + 1, y, tptG(l2, sr), kd);\n\ty = svfLp(b + 2, y, tptG(l3, sr), kd);\n\ty = svfLp(b + 3, y, tptG(l4, sr), kd);\n\treturn svfLp(b + 4, y, tptG(l5, sr), kd);\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 vowel position (held), in4 resonance, 5 ms smoothing ------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), 20.0, 20000.0);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\n// --- Vowel path U -> O -> I, interpolated in log2(Hz) ------------------------\nlet v = clamp(log2(fSm / 200.0) * 0.25, 0.0, 1.0);\nlet lo = (v < 0.5) ? 1.0 : 0.0;\nlet t = (v < 0.5) ? 2.0 * v : 2.0 * v - 1.0;\nlet shift = clamp(formant_shift_st, -12.0, 12.0) / 12.0;\nlet l1 = shift + lo * linearinterp(t, 8.2288, 9.1548) + (1.0 - lo) * linearinterp(t, 9.1548, 8.0768);\nlet l2 = shift + lo * linearinterp(t, 9.7649, 9.7142) + (1.0 - lo) * linearinterp(t, 9.7142, 11.1611);\nlet l3 = shift + lo * linearinterp(t, 11.1293, 11.2348) + (1.0 - lo) * linearinterp(t, 11.2348, 11.5555);\n// F4 3300 Hz, F5 3750 Hz\nlet l4 = shift + 11.6883;\nlet l5 = shift + 11.8727;\n\nlet q = 2.0 * pow(15.0, resSm);\nlet kd = 1.0 / q;\nlet makeup = 0.7 * pow(q * 0.5, -0.4);\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\n\n// --- Filter: L, R, and a side copy on the mono sum shifted up to +1 octave --\nlet yL = cascade(0, xL, l1, l2, l3, l4, l5, kd, sr);\nlet yR = cascade(1, xR, l1, l2, l3, l4, l5, kd, sr);\nlet yD = cascade(2, 0.5 * (xL + xR), l1 + wd, l2 + wd, l3 + wd, l4 + wd, l5 + wd, kd, sr);\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n"
+                                        "expr": "",
+                                        "nocache": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "effect_code",
@@ -2204,8 +2225,8 @@
                                     "patching_rect": [ 30.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_in_1",
@@ -2298,8 +2319,8 @@
                                     "patching_rect": [ 221.66666666666666, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_in_2",
@@ -2392,8 +2413,8 @@
                                     "patching_rect": [ 413.3333333333333, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "audio_in_3",
@@ -2486,8 +2507,8 @@
                                     "patching_rect": [ 605.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "audio_in_4",
@@ -2579,8 +2600,8 @@
                                     "patching_rect": [ 30.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_out_1",
@@ -2673,8 +2694,8 @@
                                     "patching_rect": [ 605.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_out_2",
@@ -2779,11 +2800,11 @@
                                     "patching_rect": [ 700.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "value_formant_shift_st",
@@ -2857,18 +2878,18 @@
                                     "patching_rect": [ 700.0, 92.0, 284.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 1,
@@ -3287,11 +3308,11 @@
                                     "patching_rect": [ 1008.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "value_freq_offset_st",
@@ -3365,18 +3386,18 @@
                                     "patching_rect": [ 1008.0, 92.0, 272.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 2,
@@ -3795,11 +3816,11 @@
                                     "patching_rect": [ 1304.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "value_width",
@@ -3873,18 +3894,18 @@
                                     "patching_rect": [ 1304.0, 92.0, 213.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 3,
@@ -4391,13 +4412,13 @@
                     "patching_rect": [ 286.0, 553.0, 174.0, 23.0 ],
                     "rnbo_classname": "p",
                     "rnbo_extra_attributes": {
-                        "uidstyle": "auto",
-                        "voicecontrol": "simple",
-                        "notecontroller": 0,
-                        "args": [],
+                        "receivemode": "local",
                         "polyphony": -1.0,
+                        "args": [],
                         "exposevoiceparams": 0,
-                        "receivemode": "local"
+                        "uidstyle": "auto",
+                        "notecontroller": 0,
+                        "voicecontrol": "simple"
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "p_obj-15",
@@ -4741,7 +4762,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4764,10 +4785,10 @@
                                     "patching_rect": [ 30.0, 110.0, 620.0, 360.0 ],
                                     "rnbo_classname": "codebox~",
                                     "rnbo_extra_attributes": {
-                                        "nocache": 0,
-                                        "expr": "",
+                                        "code": "// ============================================================================\n// lp_pole_mixing_ota.txt — 4-stage OTA one-pole cascade with resonance\n//                          feedback; mixing the five stage taps morphs the\n//                          response LP4 -> LP2 -> BP2 -> HP2\n//\n// From: R. Trausmuth, A. Huovilainen, \"POWERWAVE - A High Performance Single\n//       Chip Interpolating Wavetable Synthesizer\", DAFx-05 P_293 §filter\n//       (mixing the outputs of the individual ladder stages gives the other\n//       responses; only the last tap = the original Moog lowpass);\n//       A. Huovilainen, \"Non-Linear Digital Implementation of the Moog\n//       Ladder Filter\", DAFx-04 P_061 §3-5 (OTA / transistor stage\n//       saturation at the input differential pair, feedback k up to 4);\n//       R. McClellan, \"Stability Analysis of Time-Varying Virtual Analog\n//       Filters\", DAFx-26 paper 28 §ladder (stable time-varying k range).\n//\n// Signal (per channel):\n//   y1..y4 = four TPT one-pole lowpasses in series, y0 = stage-1 input\n//   u      = x - k y4_est     (zero-delay solve of the linear loop)\n//   y0     = tanh(drive u) / drive\n//   out    = c0 y0 + c1 y1 + c2 y2 + c3 y3 + c4 y4   (pole mixing)\n//            LP4 (0,0,0,0,1)  LP2 (0,0,1,0,0)  BP2 (0,2,-2,0,0)\n//            HP2 (1,-2,1,0,0), crossfaded by shape\n//   k      = 4 * in4 (self-oscillation at 1)\n//   makeup = (1 + k)^(share / 2), share 1 (LP4) -> 0.5 (LP2) -> 0 (BP2,\n//            HP2): the y2 tap already rings 6 dB more than y4\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: cutoff in Hz (held when <= 1 Hz; 600 Hz until the first value)\n//   in4: resonance 0..1 (1 = edge of self-oscillation)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo filter, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Response: 0 LP4, 0.33 LP2, 0.67 BP2, 1 HP2 (crossfades in between)\n@param({ min: 0, max: 1 }) shape = 0;\n// Input stage saturation drive (dB)\n@param({ min: 0, max: 24 }) drive_db = 3;\n// Cutoff offset from in3 (semitones)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): detuned side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// one-pole states: slot = channel * 4 + stage (0 L, 1 R, 2 side copy)\n@state s = new FixedSampleArray(12);\n@state fHold = 600.0;\n@state fSm = 600.0;\n@state resSm = 0.0;\n\n// TPT one-pole lowpass on slot idx, gg = g / (1 + g)\nfunction lp1(idx: Int, x: number, gg: number): number {\n\tlet v = (x - s[idx]) * gg;\n\tlet y = v + s[idx];\n\ts[idx] = y + v;\n\treturn y;\n}\n\n// Pole-mixed 4-stage cascade, channel ch\nfunction poleMix(ch: Int, x: number, gg: number, k: number, drv: number, c0: number, c1: number, c2: number, c4: number): number {\n\tlet b: Int = ch * 4;\n\tlet h = 1.0 - gg;\n\t// y4 = gg^4 u + sum, from the four states\n\tlet sum = gg * gg * gg * h * s[b] + gg * gg * h * s[b + 1] + gg * h * s[b + 2] + h * s[b + 3];\n\tlet g4 = gg * gg * gg * gg;\n\tlet y4Est = (g4 * x + sum) / (1.0 + k * g4);\n\tlet y0 = tanh(drv * (x - k * y4Est)) / drv;\n\tlet y1 = lp1(b, y0, gg);\n\tlet y2 = lp1(b + 1, y1, gg);\n\tlet y3 = lp1(b + 2, y2, gg);\n\tlet y4 = lp1(b + 3, y3, gg);\n\treturn c0 * y0 + c1 * y1 + c2 * y2 + c4 * y4;\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 cutoff (held), in4 resonance, 5 ms smoothing --------------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), 20.0, sr * 0.45);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\nlet k = 4.0 * resSm;\nlet drv = dbtoa(clamp(drive_db, 0.0, 24.0));\n\n// --- Pole-mixing coefficients (the y3 tap is unused by these four modes) ----\nlet m = clamp(shape, 0.0, 1.0) * 3.0;\nlet c0 = 0.0;\nlet c1 = 0.0;\nlet c2 = 0.0;\nlet c4 = 0.0;\nif (m < 1.0) {\n\tc2 = m;\n\tc4 = 1.0 - m;\n} else if (m < 2.0) {\n\tlet t = m - 1.0;\n\tc1 = 2.0 * t;\n\tc2 = 1.0 - 3.0 * t;\n} else {\n\tlet t = m - 2.0;\n\tc0 = t;\n\tc1 = 2.0 - 4.0 * t;\n\tc2 = -2.0 + 3.0 * t;\n}\nlet lpShare = clamp(1.0 - 0.5 * m, 0.0, 1.0);\nlet makeup = pow(1.0 + k, 0.5 * lpShare);\n\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\nlet g = tan(pi * fSm / sr);\nlet gg = g / (1.0 + g);\nlet gD = tan(pi * minimum(fSm * exp2(wd), sr * 0.45) / sr);\nlet ggD = gD / (1.0 + gD);\n\n// --- Filter: L, R, and a side copy on the mono sum tuned up to +1 octave ----\nlet yL = poleMix(0, xL, gg, k, drv, c0, c1, c2, c4);\nlet yR = poleMix(1, xR, gg, k, drv, c0, c1, c2, c4);\nlet yD = poleMix(2, 0.5 * (xL + xR), ggD, k, drv, c0, c1, c2, c4);\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n",
                                         "safemath": 1,
-                                        "code": "// ============================================================================\n// lp_pole_mixing_ota.txt — 4-stage OTA one-pole cascade with resonance\n//                          feedback; mixing the five stage taps morphs the\n//                          response LP4 -> LP2 -> BP2 -> HP2\n//\n// From: R. Trausmuth, A. Huovilainen, \"POWERWAVE - A High Performance Single\n//       Chip Interpolating Wavetable Synthesizer\", DAFx-05 P_293 §filter\n//       (mixing the outputs of the individual ladder stages gives the other\n//       responses; only the last tap = the original Moog lowpass);\n//       A. Huovilainen, \"Non-Linear Digital Implementation of the Moog\n//       Ladder Filter\", DAFx-04 P_061 §3-5 (OTA / transistor stage\n//       saturation at the input differential pair, feedback k up to 4);\n//       R. McClellan, \"Stability Analysis of Time-Varying Virtual Analog\n//       Filters\", DAFx-26 paper 28 §ladder (stable time-varying k range).\n//\n// Signal (per channel):\n//   y1..y4 = four TPT one-pole lowpasses in series, y0 = stage-1 input\n//   u      = x - k y4_est     (zero-delay solve of the linear loop)\n//   y0     = tanh(drive u) / drive\n//   out    = c0 y0 + c1 y1 + c2 y2 + c3 y3 + c4 y4   (pole mixing)\n//            LP4 (0,0,0,0,1)  LP2 (0,0,1,0,0)  BP2 (0,2,-2,0,0)\n//            HP2 (1,-2,1,0,0), crossfaded by shape\n//   k      = 4 * in4 (self-oscillation at 1)\n//   makeup = (1 + k)^(share / 2), share 1 (LP4) -> 0.5 (LP2) -> 0 (BP2,\n//            HP2): the y2 tap already rings 6 dB more than y4\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: cutoff in Hz (held when <= 1 Hz; 600 Hz until the first value)\n//   in4: resonance 0..1 (1 = edge of self-oscillation)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo filter, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Response: 0 LP4, 0.33 LP2, 0.67 BP2, 1 HP2 (crossfades in between)\n@param({ min: 0, max: 1 }) shape = 0;\n// Input stage saturation drive (dB)\n@param({ min: 0, max: 24 }) drive_db = 3;\n// Cutoff offset from in3 (semitones)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): detuned side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// one-pole states: slot = channel * 4 + stage (0 L, 1 R, 2 side copy)\n@state s = new FixedSampleArray(12);\n@state fHold = 600.0;\n@state fSm = 600.0;\n@state resSm = 0.0;\n\n// TPT one-pole lowpass on slot idx, gg = g / (1 + g)\nfunction lp1(idx: Int, x: number, gg: number): number {\n\tlet v = (x - s[idx]) * gg;\n\tlet y = v + s[idx];\n\ts[idx] = y + v;\n\treturn y;\n}\n\n// Pole-mixed 4-stage cascade, channel ch\nfunction poleMix(ch: Int, x: number, gg: number, k: number, drv: number, c0: number, c1: number, c2: number, c4: number): number {\n\tlet b: Int = ch * 4;\n\tlet h = 1.0 - gg;\n\t// y4 = gg^4 u + sum, from the four states\n\tlet sum = gg * gg * gg * h * s[b] + gg * gg * h * s[b + 1] + gg * h * s[b + 2] + h * s[b + 3];\n\tlet g4 = gg * gg * gg * gg;\n\tlet y4Est = (g4 * x + sum) / (1.0 + k * g4);\n\tlet y0 = tanh(drv * (x - k * y4Est)) / drv;\n\tlet y1 = lp1(b, y0, gg);\n\tlet y2 = lp1(b + 1, y1, gg);\n\tlet y3 = lp1(b + 2, y2, gg);\n\tlet y4 = lp1(b + 3, y3, gg);\n\treturn c0 * y0 + c1 * y1 + c2 * y2 + c4 * y4;\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 cutoff (held), in4 resonance, 5 ms smoothing --------------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), 20.0, sr * 0.45);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\nlet k = 4.0 * resSm;\nlet drv = dbtoa(clamp(drive_db, 0.0, 24.0));\n\n// --- Pole-mixing coefficients (the y3 tap is unused by these four modes) ----\nlet m = clamp(shape, 0.0, 1.0) * 3.0;\nlet c0 = 0.0;\nlet c1 = 0.0;\nlet c2 = 0.0;\nlet c4 = 0.0;\nif (m < 1.0) {\n\tc2 = m;\n\tc4 = 1.0 - m;\n} else if (m < 2.0) {\n\tlet t = m - 1.0;\n\tc1 = 2.0 * t;\n\tc2 = 1.0 - 3.0 * t;\n} else {\n\tlet t = m - 2.0;\n\tc0 = t;\n\tc1 = 2.0 - 4.0 * t;\n\tc2 = -2.0 + 3.0 * t;\n}\nlet lpShare = clamp(1.0 - 0.5 * m, 0.0, 1.0);\nlet makeup = pow(1.0 + k, 0.5 * lpShare);\n\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\nlet g = tan(pi * fSm / sr);\nlet gg = g / (1.0 + g);\nlet gD = tan(pi * minimum(fSm * exp2(wd), sr * 0.45) / sr);\nlet ggD = gD / (1.0 + gD);\n\n// --- Filter: L, R, and a side copy on the mono sum tuned up to +1 octave ----\nlet yL = poleMix(0, xL, gg, k, drv, c0, c1, c2, c4);\nlet yR = poleMix(1, xR, gg, k, drv, c0, c1, c2, c4);\nlet yD = poleMix(2, 0.5 * (xL + xR), ggD, k, drv, c0, c1, c2, c4);\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n"
+                                        "expr": "",
+                                        "nocache": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "effect_code",
@@ -5014,8 +5035,8 @@
                                     "patching_rect": [ 30.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_in_1",
@@ -5108,8 +5129,8 @@
                                     "patching_rect": [ 221.66666666666666, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_in_2",
@@ -5202,8 +5223,8 @@
                                     "patching_rect": [ 413.3333333333333, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "audio_in_3",
@@ -5296,8 +5317,8 @@
                                     "patching_rect": [ 605.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "audio_in_4",
@@ -5389,8 +5410,8 @@
                                     "patching_rect": [ 30.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_out_1",
@@ -5483,8 +5504,8 @@
                                     "patching_rect": [ 605.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_out_2",
@@ -5589,11 +5610,11 @@
                                     "patching_rect": [ 700.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "value_shape",
@@ -5667,18 +5688,18 @@
                                     "patching_rect": [ 700.0, 92.0, 194.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 1,
@@ -6097,11 +6118,11 @@
                                     "patching_rect": [ 918.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "value_drive_db",
@@ -6175,18 +6196,18 @@
                                     "patching_rect": [ 918.0, 92.0, 220.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 2,
@@ -6605,11 +6626,11 @@
                                     "patching_rect": [ 1162.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "value_freq_offset_st",
@@ -6683,18 +6704,18 @@
                                     "patching_rect": [ 1162.0, 92.0, 272.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 3,
@@ -7113,11 +7134,11 @@
                                     "patching_rect": [ 1458.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "value_width",
@@ -7191,18 +7212,18 @@
                                     "patching_rect": [ 1458.0, 92.0, 213.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 4,
@@ -7727,13 +7748,13 @@
                     "patching_rect": [ 236.0, 503.0, 160.0, 23.0 ],
                     "rnbo_classname": "p",
                     "rnbo_extra_attributes": {
-                        "uidstyle": "auto",
-                        "voicecontrol": "simple",
-                        "notecontroller": 0,
-                        "args": [],
+                        "receivemode": "local",
                         "polyphony": -1.0,
+                        "args": [],
                         "exposevoiceparams": 0,
-                        "receivemode": "local"
+                        "uidstyle": "auto",
+                        "notecontroller": 0,
+                        "voicecontrol": "simple"
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "p_obj-14",
@@ -8086,8 +8107,8 @@
                     "patching_rect": [ 116.0, 718.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
-                        "comment": "",
-                        "meta": ""
+                        "meta": "",
+                        "comment": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "out~_obj-13",
@@ -8179,8 +8200,8 @@
                     "patching_rect": [ 96.0, 752.0, 43.0, 23.0 ],
                     "rnbo_classname": "out~",
                     "rnbo_extra_attributes": {
-                        "comment": "",
-                        "meta": ""
+                        "meta": "",
+                        "comment": ""
                     },
                     "rnbo_serial": 2,
                     "rnbo_uniqueid": "out~_obj-12",
@@ -8273,8 +8294,8 @@
                     "patching_rect": [ 847.0, 63.5, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "comment": "",
-                        "meta": ""
+                        "meta": "",
+                        "comment": ""
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "in~_obj-11",
@@ -8366,8 +8387,8 @@
                     "patching_rect": [ 824.0, 29.0, 35.0, 23.0 ],
                     "rnbo_classname": "in~",
                     "rnbo_extra_attributes": {
-                        "comment": "",
-                        "meta": ""
+                        "meta": "",
+                        "comment": ""
                     },
                     "rnbo_serial": 4,
                     "rnbo_uniqueid": "in~_obj-10",
@@ -8461,7 +8482,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -8484,10 +8505,10 @@
                                     "patching_rect": [ 30.0, 110.0, 620.0, 360.0 ],
                                     "rnbo_classname": "codebox~",
                                     "rnbo_extra_attributes": {
-                                        "nocache": 0,
-                                        "expr": "",
+                                        "code": "// ============================================================================\n// lp_cat_dual_svf_ladder.txt — Octave CAT style 24 dB/oct lowpass: two\n//                              2-pole state-variable sections in cascade\n//                              inside one global (saturated) feedback loop\n//\n// From: K. J. Werner, R. McClellan, \"Moog Ladder Filter Generalizations Based\n//       on State Variable Filters\", DAFx-20 paper 70: §2 Eq. 2-6 (Moog loop,\n//       passband gain gdc = 1/(1 + 4k)), §3.1 Eq. 9-10 (CAT = two SVF\n//       sections H = wc^2 / (s^2 + 2 r wc s + wc^2) with global feedback,\n//       \"~CAT\" equal damping r ~ 1.064);\n//       R. McClellan, \"Stability Analysis of Time-Varying Virtual Analog\n//       Filters\", DAFx-26 paper 28: §SVF and ladder sections (trapezoidal\n//       SVF stays stable under audio-rate cutoff / resonance changes).\n//\n// Signal (per channel):\n//   G, S       = TPT SVF lowpass as y = G x + S (per section, from its state)\n//   K          = 4 r^2 k             (self-oscillation exactly at k = 1)\n//   u          = x - K y_est          (zero-delay solve of the linear loop)\n//   u          = tanh(drive u) / drive\n//   y          = SVF(SVF(u))\n//   out        = y * sqrt(1 + K) * peakComp(r)\n//     sqrt(1 + K): makes up half of the passband loss (in dB) that the\n//     feedback causes, so turning resonance up never gets louder overall;\n//     peakComp undoes half of the section peaks when r < 0.707.\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: cutoff in Hz (held when <= 1 Hz; 600 Hz until the first value)\n//   in4: resonance 0..1 (k; 1 = edge of self-oscillation)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo filter, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Section damping r (low = peaky sections, 1.064 = original CAT)\n@param({ min: 0.2, max: 1.2 }) damping = 0.7;\n// Loop saturation drive (dB)\n@param({ min: 0, max: 24 }) drive_db = 6;\n// Cutoff offset from in3 (semitones)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): detuned side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// SVF integrator states: slot = channel * 2 + section (0 L, 1 R, 2 side copy)\n@state ic1 = new FixedSampleArray(6);\n@state ic2 = new FixedSampleArray(6);\n@state fHold = 600.0;\n@state fSm = 600.0;\n@state resSm = 0.0;\n\n// One TPT SVF lowpass step on state slot idx\nfunction svfLp(idx: Int, x: number, a1: number, a2: number, a3: number): number {\n\tlet v3 = x - ic2[idx];\n\tlet v1 = a1 * ic1[idx] + a2 * v3;\n\tlet v2 = ic2[idx] + a2 * ic1[idx] + a3 * v3;\n\tic1[idx] = 2.0 * v1 - ic1[idx];\n\tic2[idx] = 2.0 * v2 - ic2[idx];\n\treturn v2;\n}\n\n// Two SVF sections in a saturated global loop, channel ch\nfunction catLp(ch: Int, x: number, g: number, kd: number, kfb: number, drv: number): number {\n\tlet a1 = 1.0 / (1.0 + g * (g + kd));\n\tlet a2 = g * a1;\n\tlet a3 = g * a2;\n\tlet i0: Int = ch * 2;\n\tlet i1: Int = i0 + 1;\n\t// each section is y = a3 x + s\n\tlet s1 = ic2[i0] * (1.0 - a3) + a2 * ic1[i0];\n\tlet s2 = ic2[i1] * (1.0 - a3) + a2 * ic1[i1];\n\tlet yEst = (a3 * a3 * x + a3 * s1 + s2) / (1.0 + kfb * a3 * a3);\n\tlet u = tanh(drv * (x - kfb * yEst)) / drv;\n\tlet y1 = svfLp(i0, u, a1, a2, a3);\n\treturn svfLp(i1, y1, a1, a2, a3);\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 cutoff (held), in4 resonance, 5 ms smoothing --------------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), 20.0, sr * 0.45);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\nlet r = clamp(damping, 0.2, 1.2);\nlet kd = 2.0 * r;\nlet kfb = 4.0 * r * r * resSm;\nlet drv = dbtoa(clamp(drive_db, 0.0, 24.0));\nlet peakComp = (r < 0.7071) ? 2.0 * r * sqrt(1.0 - r * r) : 1.0;\nlet makeup = sqrt(1.0 + kfb) * peakComp;\n\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\nlet g = tan(pi * fSm / sr);\nlet gD = tan(pi * minimum(fSm * exp2(wd), sr * 0.45) / sr);\n\n// --- Filter: L, R, and a side copy on the mono sum tuned up to +1 octave ----\nlet yL = catLp(0, xL, g, kd, kfb, drv);\nlet yR = catLp(1, xR, g, kd, kfb, drv);\nlet yD = catLp(2, 0.5 * (xL + xR), gD, kd, kfb, drv);\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n",
                                         "safemath": 1,
-                                        "code": "// ============================================================================\n// lp_cat_dual_svf_ladder.txt — Octave CAT style 24 dB/oct lowpass: two\n//                              2-pole state-variable sections in cascade\n//                              inside one global (saturated) feedback loop\n//\n// From: K. J. Werner, R. McClellan, \"Moog Ladder Filter Generalizations Based\n//       on State Variable Filters\", DAFx-20 paper 70: §2 Eq. 2-6 (Moog loop,\n//       passband gain gdc = 1/(1 + 4k)), §3.1 Eq. 9-10 (CAT = two SVF\n//       sections H = wc^2 / (s^2 + 2 r wc s + wc^2) with global feedback,\n//       \"~CAT\" equal damping r ~ 1.064);\n//       R. McClellan, \"Stability Analysis of Time-Varying Virtual Analog\n//       Filters\", DAFx-26 paper 28: §SVF and ladder sections (trapezoidal\n//       SVF stays stable under audio-rate cutoff / resonance changes).\n//\n// Signal (per channel):\n//   G, S       = TPT SVF lowpass as y = G x + S (per section, from its state)\n//   K          = 4 r^2 k             (self-oscillation exactly at k = 1)\n//   u          = x - K y_est          (zero-delay solve of the linear loop)\n//   u          = tanh(drive u) / drive\n//   y          = SVF(SVF(u))\n//   out        = y * sqrt(1 + K) * peakComp(r)\n//     sqrt(1 + K): makes up half of the passband loss (in dB) that the\n//     feedback causes, so turning resonance up never gets louder overall;\n//     peakComp undoes half of the section peaks when r < 0.707.\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: cutoff in Hz (held when <= 1 Hz; 600 Hz until the first value)\n//   in4: resonance 0..1 (k; 1 = edge of self-oscillation)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo filter, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Section damping r (low = peaky sections, 1.064 = original CAT)\n@param({ min: 0.2, max: 1.2 }) damping = 0.7;\n// Loop saturation drive (dB)\n@param({ min: 0, max: 24 }) drive_db = 6;\n// Cutoff offset from in3 (semitones)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): detuned side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// SVF integrator states: slot = channel * 2 + section (0 L, 1 R, 2 side copy)\n@state ic1 = new FixedSampleArray(6);\n@state ic2 = new FixedSampleArray(6);\n@state fHold = 600.0;\n@state fSm = 600.0;\n@state resSm = 0.0;\n\n// One TPT SVF lowpass step on state slot idx\nfunction svfLp(idx: Int, x: number, a1: number, a2: number, a3: number): number {\n\tlet v3 = x - ic2[idx];\n\tlet v1 = a1 * ic1[idx] + a2 * v3;\n\tlet v2 = ic2[idx] + a2 * ic1[idx] + a3 * v3;\n\tic1[idx] = 2.0 * v1 - ic1[idx];\n\tic2[idx] = 2.0 * v2 - ic2[idx];\n\treturn v2;\n}\n\n// Two SVF sections in a saturated global loop, channel ch\nfunction catLp(ch: Int, x: number, g: number, kd: number, kfb: number, drv: number): number {\n\tlet a1 = 1.0 / (1.0 + g * (g + kd));\n\tlet a2 = g * a1;\n\tlet a3 = g * a2;\n\tlet i0: Int = ch * 2;\n\tlet i1: Int = i0 + 1;\n\t// each section is y = a3 x + s\n\tlet s1 = ic2[i0] * (1.0 - a3) + a2 * ic1[i0];\n\tlet s2 = ic2[i1] * (1.0 - a3) + a2 * ic1[i1];\n\tlet yEst = (a3 * a3 * x + a3 * s1 + s2) / (1.0 + kfb * a3 * a3);\n\tlet u = tanh(drv * (x - kfb * yEst)) / drv;\n\tlet y1 = svfLp(i0, u, a1, a2, a3);\n\treturn svfLp(i1, y1, a1, a2, a3);\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 cutoff (held), in4 resonance, 5 ms smoothing --------------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), 20.0, sr * 0.45);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\nlet r = clamp(damping, 0.2, 1.2);\nlet kd = 2.0 * r;\nlet kfb = 4.0 * r * r * resSm;\nlet drv = dbtoa(clamp(drive_db, 0.0, 24.0));\nlet peakComp = (r < 0.7071) ? 2.0 * r * sqrt(1.0 - r * r) : 1.0;\nlet makeup = sqrt(1.0 + kfb) * peakComp;\n\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\nlet g = tan(pi * fSm / sr);\nlet gD = tan(pi * minimum(fSm * exp2(wd), sr * 0.45) / sr);\n\n// --- Filter: L, R, and a side copy on the mono sum tuned up to +1 octave ----\nlet yL = catLp(0, xL, g, kd, kfb, drv);\nlet yR = catLp(1, xR, g, kd, kfb, drv);\nlet yD = catLp(2, 0.5 * (xL + xR), gD, kd, kfb, drv);\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n"
+                                        "expr": "",
+                                        "nocache": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "effect_code",
@@ -8734,8 +8755,8 @@
                                     "patching_rect": [ 30.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_in_1",
@@ -8828,8 +8849,8 @@
                                     "patching_rect": [ 221.66666666666666, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_in_2",
@@ -8922,8 +8943,8 @@
                                     "patching_rect": [ 413.3333333333333, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "audio_in_3",
@@ -9016,8 +9037,8 @@
                                     "patching_rect": [ 605.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "audio_in_4",
@@ -9109,8 +9130,8 @@
                                     "patching_rect": [ 30.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_out_1",
@@ -9203,8 +9224,8 @@
                                     "patching_rect": [ 605.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_out_2",
@@ -9309,11 +9330,11 @@
                                     "patching_rect": [ 700.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "value_damping",
@@ -9387,18 +9408,18 @@
                                     "patching_rect": [ 700.0, 92.0, 246.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 1,
@@ -9817,11 +9838,11 @@
                                     "patching_rect": [ 970.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "value_drive_db",
@@ -9895,18 +9916,18 @@
                                     "patching_rect": [ 970.0, 92.0, 220.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 2,
@@ -10325,11 +10346,11 @@
                                     "patching_rect": [ 1214.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "value_freq_offset_st",
@@ -10403,18 +10424,18 @@
                                     "patching_rect": [ 1214.0, 92.0, 272.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 3,
@@ -10833,11 +10854,11 @@
                                     "patching_rect": [ 1510.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "value_width",
@@ -10911,18 +10932,18 @@
                                     "patching_rect": [ 1510.0, 92.0, 213.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 4,
@@ -11447,13 +11468,13 @@
                     "patching_rect": [ 182.0, 454.0, 177.0, 23.0 ],
                     "rnbo_classname": "p",
                     "rnbo_extra_attributes": {
-                        "uidstyle": "auto",
-                        "voicecontrol": "simple",
-                        "notecontroller": 0,
-                        "args": [],
+                        "receivemode": "local",
                         "polyphony": -1.0,
+                        "args": [],
                         "exposevoiceparams": 0,
-                        "receivemode": "local"
+                        "uidstyle": "auto",
+                        "notecontroller": 0,
+                        "voicecontrol": "simple"
                     },
                     "rnbo_serial": 3,
                     "rnbo_uniqueid": "p_obj-9",
@@ -11809,7 +11830,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -11832,10 +11853,10 @@
                                     "patching_rect": [ 30.0, 110.0, 620.0, 360.0 ],
                                     "rnbo_classname": "codebox~",
                                     "rnbo_extra_attributes": {
-                                        "nocache": 0,
-                                        "expr": "",
+                                        "code": "// ============================================================================\n// comb_tanh_scream.txt — feedback comb with a tanh saturator inside the\n//                        loop: below unity loop gain a resonant comb that\n//                        grits up as it rings, above it a bounded,\n//                        screaming self-oscillation locked to in3\n//\n// From: J. Chowdhury, \"Stable Structures for Nonlinear Biquad Filters\",\n//       DAFx-20 paper 3: §2.2 Eq. 10-11 (saturating base nonlinearity,\n//       slope <= 1), §4 (nonlinear feedback structure: a saturator in the\n//       feedback path keeps the state bounded; large states pull the\n//       effective loop gain down);\n//       V. Norilo, \"Exploring the Vectored Time Variant Comb Filter\",\n//       DAFx-14 §3 (comb filters with nonlinear feedback as a family of\n//       modulation-delay effects).\n//\n// Signal (per channel):\n//   v   = x + tanh(drive * c * LP(AP(v[n - N]))) / drive\n//   c   = 1.08 * in4 * polarity             (|c| > 1 self-oscillates; the\n//                                            tanh bounds it at 1/drive)\n//   N   = sr / f for polarity >= 0 (peaks f, 2f, 3f ...)\n//         sr / 2f for polarity < 0 (negative feedback: peaks f, 3f, 5f ...)\n//   out = v * (1 - cm)^0.3 * (1 + cm)^0.25, cm = min(|c|, 0.95): half the\n//         plain-comb makeup exponents, since the tanh caps the feedback\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: comb pitch in Hz (held when <= 1 Hz; 600 Hz until the first)\n//   in4: resonance 0..1 (above ~0.93 the loop self-oscillates)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo comb, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Feedback polarity: -1 odd harmonics (hollow), +1 all harmonics\n@param({ min: -1, max: 1 }) polarity = 1;\n// Loop saturation drive (dB): more = grittier ring, quieter scream\n@param({ min: 0, max: 24 }) drive_db = 12;\n// Comb pitch offset from in3 (semitones)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): detuned side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// ring buffers: 3 x 10000 samples (0 L, 1 R, 2 side copy)\n@state buf = new FixedSampleArray(30000);\n@state wpos: Int = 0;\n@state apX1 = new FixedSampleArray(3);\n@state apY1 = new FixedSampleArray(3);\n@state lpS = new FixedSampleArray(3);\n@state fHold = 600.0;\n@state fSm = 600.0;\n@state resSm = 0.0;\n\n// Saturated comb, channel ch: loop delay d samples, loop coefficient c, LP pole p\nfunction scomb(ch: Int, x: number, d: number, c: number, p: number, drv: number): number {\n\tlet n: Int = clamp(trunc(d - 0.5), 1, 9990);\n\tlet fr = clamp(d - n, 0.0, 1.5);\n\tlet a = (1.0 - fr) / (1.0 + fr);\n\tlet base: Int = ch * 10000;\n\tlet tap = buf[base + ((wpos - n + 10000) % 10000)];\n\tlet ap = a * tap + apX1[ch] - a * apY1[ch];\n\tapX1[ch] = tap;\n\tapY1[ch] = ap;\n\tlpS[ch] = (1.0 - p) * ap + p * lpS[ch];\n\tlet v = x + tanh(drv * c * lpS[ch]) / drv;\n\tbuf[base + wpos] = v;\n\treturn v;\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 pitch (held), in4 resonance, 5 ms smoothing ---------------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fMin = sr / 9990.0;\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), fMin, sr * 0.125);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\nlet pol = clamp(polarity, -1.0, 1.0);\nlet c = 1.08 * resSm * pol;\nlet cm = minimum(abs(c), 0.95);\nlet makeup = pow(1.0 - cm, 0.3) * pow(1.0 + cm, 0.25);\nlet drv = dbtoa(clamp(drive_db, 0.0, 24.0));\n// fixed loop lowpass (6 kHz) and its phase delay at the comb pitch\nlet p = exp(-2.0 * pi * minimum(6000.0, sr * 0.45) / sr);\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\n\n// --- Loop delays: full period (positive) or half period (negative) ----------\nlet half = (pol < 0.0) ? 0.5 : 1.0;\nlet w = 2.0 * pi * fSm / sr;\nlet d = half * sr / fSm - atan2(p * sin(w), 1.0 - p * cos(w)) / w;\nlet fD = minimum(fSm * exp2(wd), sr * 0.125);\nlet wD = 2.0 * pi * fD / sr;\nlet dD = half * sr / fD - atan2(p * sin(wD), 1.0 - p * cos(wD)) / wD;\n\n// --- Comb: L, R, and a side copy on the mono sum tuned up to +1 octave ------\nlet yL = scomb(0, xL, d, c, p, drv);\nlet yR = scomb(1, xR, d, c, p, drv);\nlet yD = scomb(2, 0.5 * (xL + xR), dD, c, p, drv);\nwpos = (wpos + 1) % 10000;\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n",
                                         "safemath": 1,
-                                        "code": "// ============================================================================\n// comb_tanh_scream.txt — feedback comb with a tanh saturator inside the\n//                        loop: below unity loop gain a resonant comb that\n//                        grits up as it rings, above it a bounded,\n//                        screaming self-oscillation locked to in3\n//\n// From: J. Chowdhury, \"Stable Structures for Nonlinear Biquad Filters\",\n//       DAFx-20 paper 3: §2.2 Eq. 10-11 (saturating base nonlinearity,\n//       slope <= 1), §4 (nonlinear feedback structure: a saturator in the\n//       feedback path keeps the state bounded; large states pull the\n//       effective loop gain down);\n//       V. Norilo, \"Exploring the Vectored Time Variant Comb Filter\",\n//       DAFx-14 §3 (comb filters with nonlinear feedback as a family of\n//       modulation-delay effects).\n//\n// Signal (per channel):\n//   v   = x + tanh(drive * c * LP(AP(v[n - N]))) / drive\n//   c   = 1.08 * in4 * polarity             (|c| > 1 self-oscillates; the\n//                                            tanh bounds it at 1/drive)\n//   N   = sr / f for polarity >= 0 (peaks f, 2f, 3f ...)\n//         sr / 2f for polarity < 0 (negative feedback: peaks f, 3f, 5f ...)\n//   out = v * (1 - cm)^0.3 * (1 + cm)^0.25, cm = min(|c|, 0.95): half the\n//         plain-comb makeup exponents, since the tanh caps the feedback\n//\n// Inlets:\n//   in1 / in2: stereo audio\n//   in3: comb pitch in Hz (held when <= 1 Hz; 600 Hz until the first)\n//   in4: resonance 0..1 (above ~0.93 the loop self-oscillates)\n// Outlets:\n//   out1 / out2: stereo (mono sum = plain stereo comb, see width)\n// No safety limiter, no metering.\n// ============================================================================\n\n// Feedback polarity: -1 odd harmonics (hollow), +1 all harmonics\n@param({ min: -1, max: 1 }) polarity = 1;\n// Loop saturation drive (dB): more = grittier ring, quieter scream\n@param({ min: 0, max: 24 }) drive_db = 12;\n// Comb pitch offset from in3 (semitones)\n@param({ min: -36, max: 36 }) freq_offset_st = 0;\n// Width (%): detuned side copy, cancels exactly in mono\n@param({ min: 0, max: 100 }) width = 50;\n\n// ring buffers: 3 x 10000 samples (0 L, 1 R, 2 side copy)\n@state buf = new FixedSampleArray(30000);\n@state wpos: Int = 0;\n@state apX1 = new FixedSampleArray(3);\n@state apY1 = new FixedSampleArray(3);\n@state lpS = new FixedSampleArray(3);\n@state fHold = 600.0;\n@state fSm = 600.0;\n@state resSm = 0.0;\n\n// Saturated comb, channel ch: loop delay d samples, loop coefficient c, LP pole p\nfunction scomb(ch: Int, x: number, d: number, c: number, p: number, drv: number): number {\n\tlet n: Int = clamp(trunc(d - 0.5), 1, 9990);\n\tlet fr = clamp(d - n, 0.0, 1.5);\n\tlet a = (1.0 - fr) / (1.0 + fr);\n\tlet base: Int = ch * 10000;\n\tlet tap = buf[base + ((wpos - n + 10000) % 10000)];\n\tlet ap = a * tap + apX1[ch] - a * apY1[ch];\n\tapX1[ch] = tap;\n\tapY1[ch] = ap;\n\tlpS[ch] = (1.0 - p) * ap + p * lpS[ch];\n\tlet v = x + tanh(drv * c * lpS[ch]) / drv;\n\tbuf[base + wpos] = v;\n\treturn v;\n}\n\nlet sr = maximum(samplerate(), 1.0);\nlet xL = in1;\nlet xR = in2;\nlet aSm = 1.0 - exp(-200.0 / sr);\n\n// --- Controls: in3 pitch (held), in4 resonance, 5 ms smoothing ---------------\nif (in3 > 1.0) {\n\tfHold = in3;\n}\nlet fMin = sr / 9990.0;\nlet fTarget = clamp(fHold * exp2(clamp(freq_offset_st, -36.0, 36.0) / 12.0), fMin, sr * 0.125);\nfSm = fSm + (fTarget - fSm) * aSm;\nresSm = resSm + (clamp(in4, 0.0, 1.0) - resSm) * aSm;\n\nlet pol = clamp(polarity, -1.0, 1.0);\nlet c = 1.08 * resSm * pol;\nlet cm = minimum(abs(c), 0.95);\nlet makeup = pow(1.0 - cm, 0.3) * pow(1.0 + cm, 0.25);\nlet drv = dbtoa(clamp(drive_db, 0.0, 24.0));\n// fixed loop lowpass (6 kHz) and its phase delay at the comb pitch\nlet p = exp(-2.0 * pi * minimum(6000.0, sr * 0.45) / sr);\nlet wd = clamp(width, 0.0, 100.0) * 0.01;\n\n// --- Loop delays: full period (positive) or half period (negative) ----------\nlet half = (pol < 0.0) ? 0.5 : 1.0;\nlet w = 2.0 * pi * fSm / sr;\nlet d = half * sr / fSm - atan2(p * sin(w), 1.0 - p * cos(w)) / w;\nlet fD = minimum(fSm * exp2(wd), sr * 0.125);\nlet wD = 2.0 * pi * fD / sr;\nlet dD = half * sr / fD - atan2(p * sin(wD), 1.0 - p * cos(wD)) / wD;\n\n// --- Comb: L, R, and a side copy on the mono sum tuned up to +1 octave ------\nlet yL = scomb(0, xL, d, c, p, drv);\nlet yR = scomb(1, xR, d, c, p, drv);\nlet yD = scomb(2, 0.5 * (xL + xR), dD, c, p, drv);\nwpos = (wpos + 1) % 10000;\nlet side = wd * (yD - 0.5 * (yL + yR));\n\nout1 = (yL + side) * makeup;\nout2 = (yR - side) * makeup;\n"
+                                        "expr": "",
+                                        "nocache": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "effect_code",
@@ -12082,8 +12103,8 @@
                                     "patching_rect": [ 30.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_in_1",
@@ -12176,8 +12197,8 @@
                                     "patching_rect": [ 221.66666666666666, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_in_2",
@@ -12270,8 +12291,8 @@
                                     "patching_rect": [ 413.3333333333333, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "audio_in_3",
@@ -12364,8 +12385,8 @@
                                     "patching_rect": [ 605.0, 70.0, 70.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "audio_in_4",
@@ -12457,8 +12478,8 @@
                                     "patching_rect": [ 30.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_out_1",
@@ -12551,8 +12572,8 @@
                                     "patching_rect": [ 605.0, 520.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_out_2",
@@ -12657,11 +12678,11 @@
                                     "patching_rect": [ 700.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "value_polarity",
@@ -12735,18 +12756,18 @@
                                     "patching_rect": [ 700.0, 92.0, 220.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 1,
@@ -13165,11 +13186,11 @@
                                     "patching_rect": [ 944.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "value_drive_db",
@@ -13243,18 +13264,18 @@
                                     "patching_rect": [ 944.0, 92.0, 226.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 2,
@@ -13673,11 +13694,11 @@
                                     "patching_rect": [ 1194.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "value_freq_offset_st",
@@ -13751,18 +13772,18 @@
                                     "patching_rect": [ 1194.0, 92.0, 272.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 3,
@@ -14181,11 +14202,11 @@
                                     "patching_rect": [ 1490.0, 115.0, 100.0, 23.0 ],
                                     "rnbo_classname": "number",
                                     "rnbo_extra_attributes": {
-                                        "order": "",
-                                        "preset": 0,
+                                        "maximum": "<none>",
                                         "minimum": "<none>",
+                                        "preset": 0,
                                         "initialFormat": "float",
-                                        "maximum": "<none>"
+                                        "order": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "value_width",
@@ -14259,18 +14280,18 @@
                                     "patching_rect": [ 1490.0, 92.0, 213.0, 23.0 ],
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
-                                        "order": "0",
-                                        "preset": 1,
-                                        "displayorder": "-",
-                                        "displayname": "",
-                                        "steps": 0.0,
                                         "fromnormalized": "",
                                         "ctlin": 0.0,
-                                        "sendinit": 1,
-                                        "enum": "",
                                         "exponent": 1.0,
-                                        "unit": "",
+                                        "enum": "",
                                         "meta": "",
+                                        "preset": 1,
+                                        "displayorder": "-",
+                                        "unit": "",
+                                        "sendinit": 1,
+                                        "displayname": "",
+                                        "steps": 0.0,
+                                        "order": "0",
                                         "tonormalized": ""
                                     },
                                     "rnbo_serial": 4,
@@ -14795,13 +14816,13 @@
                     "patching_rect": [ 140.0, 404.0, 160.0, 23.0 ],
                     "rnbo_classname": "p",
                     "rnbo_extra_attributes": {
-                        "uidstyle": "auto",
-                        "voicecontrol": "simple",
-                        "notecontroller": 0,
-                        "args": [],
+                        "receivemode": "local",
                         "polyphony": -1.0,
+                        "args": [],
                         "exposevoiceparams": 0,
-                        "receivemode": "local"
+                        "uidstyle": "auto",
+                        "notecontroller": 0,
+                        "voicecontrol": "simple"
                     },
                     "rnbo_serial": 4,
                     "rnbo_uniqueid": "p_obj-8",
@@ -15157,7 +15178,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -15176,8 +15197,8 @@
                                     "patching_rect": [ 76.0, 110.0, 35.0, 23.0 ],
                                     "rnbo_classname": "in",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "in_obj-1",
@@ -15260,10 +15281,10 @@
                                     "patching_rect": [ 350.0, 522.0, 620.0, 360.0 ],
                                     "rnbo_classname": "codebox~",
                                     "rnbo_extra_attributes": {
-                                        "nocache": 0,
-                                        "expr": "",
+                                        "code": "// ============================================================================\n// selector_ramp_24.txt — selector~ 24 @ramptime with a working linear ramp\n//\n// From: utility, no paper. Models Max/RNBO [selector~ 24 @ramptime <ms>], whose\n// ramptime is broken in RNBO. Choosing a new input crossfades linearly from\n// whatever is sounding now to the new input over ramp_ms.\n//\n// A change snapshots the current per-input gains and then moves every gain in a\n// straight line from its snapshot to its new target (1 for the selected input,\n// 0 for the others) with one shared ramp position. The gains therefore always\n// sum to 1 (or fall linearly to 0 when selecting 0 = off), and a change made\n// mid-ramp restarts a full ramp_ms crossfade from the current mix without a\n// jump.\n//\n// IO contract exception: this is a mono router, not a stereo effect.\n// Inlets:\n//   in1..in24: signal inputs 1..24\n// Outlets:\n//   out1: the selected input (crossfaded while ramping)\n// ============================================================================\n\n// Selected input (0 = off)\n@param({ min: 0, max: 24, steps: 25 }) selection = 1;\n// Ramp time\n@param({ min: 0.0, max: 5000.0, exponent: 3 }) ramp_ms = 200.0;\n\n@state gain = new FixedSampleArray(24);\n@state startGain = new FixedSampleArray(24);\n@state lastSel = -1;\n@state rampPos = 1.0;\n\nlet sr = maximum(samplerate(), 1.0);\nlet sel: Int = clamp(floor(selection + 0.5), 0, 24);\n\nif (sel != lastSel) {\n    if (lastSel < 0) {\n        // first sample: start on the selected input, no fade-in\n        for (let i: Int = 0; i < 24; i++) {\n            gain[i] = (i + 1 == sel) ? 1.0 : 0.0;\n        }\n        rampPos = 1.0;\n    } else {\n        for (let i: Int = 0; i < 24; i++) {\n            startGain[i] = gain[i];\n        }\n        rampPos = 0.0;\n    }\n    lastSel = sel;\n}\n\nif (rampPos < 1.0) {\n    let rampSamps = ramp_ms * 0.001 * sr;\n    let inc = rampSamps > 1.0 ? 1.0 / rampSamps : 1.0;\n    rampPos = minimum(rampPos + inc, 1.0);\n    for (let i: Int = 0; i < 24; i++) {\n        let tgt = (i + 1 == sel) ? 1.0 : 0.0;\n        let st = startGain[i];\n        gain[i] = st + (tgt - st) * rampPos;\n    }\n}\n\nout1 = gain[0] * in1\n     + gain[1] * in2\n     + gain[2] * in3\n     + gain[3] * in4\n     + gain[4] * in5\n     + gain[5] * in6\n     + gain[6] * in7\n     + gain[7] * in8\n     + gain[8] * in9\n     + gain[9] * in10\n     + gain[10] * in11\n     + gain[11] * in12\n     + gain[12] * in13\n     + gain[13] * in14\n     + gain[14] * in15\n     + gain[15] * in16\n     + gain[16] * in17\n     + gain[17] * in18\n     + gain[18] * in19\n     + gain[19] * in20\n     + gain[20] * in21\n     + gain[21] * in22\n     + gain[22] * in23\n     + gain[23] * in24;\n",
                                         "safemath": 1,
-                                        "code": "// ============================================================================\n// selector_ramp_24.txt — selector~ 24 @ramptime with a working linear ramp\n//\n// From: utility, no paper. Models Max/RNBO [selector~ 24 @ramptime <ms>], whose\n// ramptime is broken in RNBO. Choosing a new input crossfades linearly from\n// whatever is sounding now to the new input over ramp_ms.\n//\n// A change snapshots the current per-input gains and then moves every gain in a\n// straight line from its snapshot to its new target (1 for the selected input,\n// 0 for the others) with one shared ramp position. The gains therefore always\n// sum to 1 (or fall linearly to 0 when selecting 0 = off), and a change made\n// mid-ramp restarts a full ramp_ms crossfade from the current mix without a\n// jump.\n//\n// IO contract exception: this is a mono router, not a stereo effect.\n// Inlets:\n//   in1..in24: signal inputs 1..24\n// Outlets:\n//   out1: the selected input (crossfaded while ramping)\n// ============================================================================\n\n// Selected input (0 = off)\n@param({ min: 0, max: 24, steps: 25 }) selection = 1;\n// Ramp time\n@param({ min: 0.0, max: 5000.0, exponent: 3 }) ramp_ms = 200.0;\n\n@state gain = new FixedSampleArray(24);\n@state startGain = new FixedSampleArray(24);\n@state lastSel = -1;\n@state rampPos = 1.0;\n\nlet sr = maximum(samplerate(), 1.0);\nlet sel: Int = clamp(floor(selection + 0.5), 0, 24);\n\nif (sel != lastSel) {\n    if (lastSel < 0) {\n        // first sample: start on the selected input, no fade-in\n        for (let i: Int = 0; i < 24; i++) {\n            gain[i] = (i + 1 == sel) ? 1.0 : 0.0;\n        }\n        rampPos = 1.0;\n    } else {\n        for (let i: Int = 0; i < 24; i++) {\n            startGain[i] = gain[i];\n        }\n        rampPos = 0.0;\n    }\n    lastSel = sel;\n}\n\nif (rampPos < 1.0) {\n    let rampSamps = ramp_ms * 0.001 * sr;\n    let inc = rampSamps > 1.0 ? 1.0 / rampSamps : 1.0;\n    rampPos = minimum(rampPos + inc, 1.0);\n    for (let i: Int = 0; i < 24; i++) {\n        let tgt = (i + 1 == sel) ? 1.0 : 0.0;\n        let st = startGain[i];\n        gain[i] = st + (tgt - st) * rampPos;\n    }\n}\n\nout1 = gain[0] * in1\n     + gain[1] * in2\n     + gain[2] * in3\n     + gain[3] * in4\n     + gain[4] * in5\n     + gain[5] * in6\n     + gain[6] * in7\n     + gain[7] * in8\n     + gain[8] * in9\n     + gain[9] * in10\n     + gain[10] * in11\n     + gain[11] * in12\n     + gain[12] * in13\n     + gain[13] * in14\n     + gain[14] * in15\n     + gain[15] * in16\n     + gain[16] * in17\n     + gain[17] * in18\n     + gain[18] * in19\n     + gain[19] * in20\n     + gain[20] * in21\n     + gain[21] * in22\n     + gain[22] * in23\n     + gain[23] * in24;\n"
+                                        "expr": "",
+                                        "nocache": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "effect_code",
@@ -15846,8 +15867,8 @@
                                     "patching_rect": [ 216.0, 257.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_in_1",
@@ -15940,8 +15961,8 @@
                                     "patching_rect": [ 267.0, 263.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_in_2",
@@ -16034,8 +16055,8 @@
                                     "patching_rect": [ 318.0, 269.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "audio_in_3",
@@ -16128,8 +16149,8 @@
                                     "patching_rect": [ 369.0, 275.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "audio_in_4",
@@ -16222,8 +16243,8 @@
                                     "patching_rect": [ 420.0, 281.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 5,
                                     "rnbo_uniqueid": "audio_in_5",
@@ -16316,8 +16337,8 @@
                                     "patching_rect": [ 471.0, 287.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 6,
                                     "rnbo_uniqueid": "audio_in_6",
@@ -16410,8 +16431,8 @@
                                     "patching_rect": [ 523.0, 293.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 7,
                                     "rnbo_uniqueid": "audio_in_7",
@@ -16504,8 +16525,8 @@
                                     "patching_rect": [ 574.0, 299.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 8,
                                     "rnbo_uniqueid": "audio_in_8",
@@ -16598,8 +16619,8 @@
                                     "patching_rect": [ 625.0, 305.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 9,
                                     "rnbo_uniqueid": "audio_in_9",
@@ -16692,8 +16713,8 @@
                                     "patching_rect": [ 676.0, 311.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 10,
                                     "rnbo_uniqueid": "audio_in_10",
@@ -16786,8 +16807,8 @@
                                     "patching_rect": [ 727.0, 317.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 11,
                                     "rnbo_uniqueid": "audio_in_11",
@@ -16880,8 +16901,8 @@
                                     "patching_rect": [ 778.0, 323.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 12,
                                     "rnbo_uniqueid": "audio_in_12",
@@ -16974,8 +16995,8 @@
                                     "patching_rect": [ 829.0, 329.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 13,
                                     "rnbo_uniqueid": "audio_in_13",
@@ -17068,8 +17089,8 @@
                                     "patching_rect": [ 880.0, 334.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 14,
                                     "rnbo_uniqueid": "audio_in_14",
@@ -17162,8 +17183,8 @@
                                     "patching_rect": [ 931.0, 340.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 15,
                                     "rnbo_uniqueid": "audio_in_15",
@@ -17256,8 +17277,8 @@
                                     "patching_rect": [ 982.0, 346.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 16,
                                     "rnbo_uniqueid": "audio_in_16",
@@ -17350,8 +17371,8 @@
                                     "patching_rect": [ 1033.0, 352.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 17,
                                     "rnbo_uniqueid": "audio_in_17",
@@ -17444,8 +17465,8 @@
                                     "patching_rect": [ 1084.0, 358.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 18,
                                     "rnbo_uniqueid": "audio_in_18",
@@ -17538,8 +17559,8 @@
                                     "patching_rect": [ 1136.0, 364.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 19,
                                     "rnbo_uniqueid": "audio_in_19",
@@ -17632,8 +17653,8 @@
                                     "patching_rect": [ 1187.0, 370.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 20,
                                     "rnbo_uniqueid": "audio_in_20",
@@ -17726,8 +17747,8 @@
                                     "patching_rect": [ 1238.0, 376.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 21,
                                     "rnbo_uniqueid": "audio_in_21",
@@ -17820,8 +17841,8 @@
                                     "patching_rect": [ 1289.0, 382.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 22,
                                     "rnbo_uniqueid": "audio_in_22",
@@ -17914,8 +17935,8 @@
                                     "patching_rect": [ 1340.0, 388.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 23,
                                     "rnbo_uniqueid": "audio_in_23",
@@ -18008,8 +18029,8 @@
                                     "patching_rect": [ 1391.0, 394.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 24,
                                     "rnbo_uniqueid": "audio_in_24",
@@ -18101,8 +18122,8 @@
                                     "patching_rect": [ 350.0, 898.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_out_1",
@@ -18576,13 +18597,13 @@
                     "patching_rect": [ 116.0, 671.0, 756.0, 23.0 ],
                     "rnbo_classname": "p",
                     "rnbo_extra_attributes": {
-                        "uidstyle": "auto",
-                        "voicecontrol": "simple",
-                        "notecontroller": 0,
-                        "args": [],
+                        "receivemode": "local",
                         "polyphony": -1.0,
+                        "args": [],
                         "exposevoiceparams": 0,
-                        "receivemode": "local"
+                        "uidstyle": "auto",
+                        "notecontroller": 0,
+                        "voicecontrol": "simple"
                     },
                     "rnbo_serial": 5,
                     "rnbo_uniqueid": "p_obj-7",
@@ -20385,11 +20406,11 @@
                     "patching_rect": [ 915.0, 108.0, 50.0, 23.0 ],
                     "rnbo_classname": "number",
                     "rnbo_extra_attributes": {
-                        "order": "",
-                        "preset": 0,
+                        "maximum": "<none>",
                         "minimum": "<none>",
+                        "preset": 0,
                         "initialFormat": "integer",
-                        "maximum": "<none>"
+                        "order": ""
                     },
                     "rnbo_serial": 1,
                     "rnbo_uniqueid": "number_obj-3"
@@ -20407,7 +20428,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 2,
-                            "revision": 0,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -20426,8 +20447,8 @@
                                     "patching_rect": [ 76.0, 110.0, 35.0, 23.0 ],
                                     "rnbo_classname": "in",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "in_obj-1",
@@ -20510,10 +20531,10 @@
                                     "patching_rect": [ 350.0, 522.0, 620.0, 360.0 ],
                                     "rnbo_classname": "codebox~",
                                     "rnbo_extra_attributes": {
-                                        "nocache": 0,
-                                        "expr": "",
+                                        "code": "// ============================================================================\n// selector_ramp_24.txt — selector~ 24 @ramptime with a working linear ramp\n//\n// From: utility, no paper. Models Max/RNBO [selector~ 24 @ramptime <ms>], whose\n// ramptime is broken in RNBO. Choosing a new input crossfades linearly from\n// whatever is sounding now to the new input over ramp_ms.\n//\n// A change snapshots the current per-input gains and then moves every gain in a\n// straight line from its snapshot to its new target (1 for the selected input,\n// 0 for the others) with one shared ramp position. The gains therefore always\n// sum to 1 (or fall linearly to 0 when selecting 0 = off), and a change made\n// mid-ramp restarts a full ramp_ms crossfade from the current mix without a\n// jump.\n//\n// IO contract exception: this is a mono router, not a stereo effect.\n// Inlets:\n//   in1..in24: signal inputs 1..24\n// Outlets:\n//   out1: the selected input (crossfaded while ramping)\n// ============================================================================\n\n// Selected input (0 = off)\n@param({ min: 0, max: 24, steps: 25 }) selection = 1;\n// Ramp time\n@param({ min: 0.0, max: 5000.0, exponent: 3 }) ramp_ms = 200.0;\n\n@state gain = new FixedSampleArray(24);\n@state startGain = new FixedSampleArray(24);\n@state lastSel = -1;\n@state rampPos = 1.0;\n\nlet sr = maximum(samplerate(), 1.0);\nlet sel: Int = clamp(floor(selection + 0.5), 0, 24);\n\nif (sel != lastSel) {\n    if (lastSel < 0) {\n        // first sample: start on the selected input, no fade-in\n        for (let i: Int = 0; i < 24; i++) {\n            gain[i] = (i + 1 == sel) ? 1.0 : 0.0;\n        }\n        rampPos = 1.0;\n    } else {\n        for (let i: Int = 0; i < 24; i++) {\n            startGain[i] = gain[i];\n        }\n        rampPos = 0.0;\n    }\n    lastSel = sel;\n}\n\nif (rampPos < 1.0) {\n    let rampSamps = ramp_ms * 0.001 * sr;\n    let inc = rampSamps > 1.0 ? 1.0 / rampSamps : 1.0;\n    rampPos = minimum(rampPos + inc, 1.0);\n    for (let i: Int = 0; i < 24; i++) {\n        let tgt = (i + 1 == sel) ? 1.0 : 0.0;\n        let st = startGain[i];\n        gain[i] = st + (tgt - st) * rampPos;\n    }\n}\n\nout1 = gain[0] * in1\n     + gain[1] * in2\n     + gain[2] * in3\n     + gain[3] * in4\n     + gain[4] * in5\n     + gain[5] * in6\n     + gain[6] * in7\n     + gain[7] * in8\n     + gain[8] * in9\n     + gain[9] * in10\n     + gain[10] * in11\n     + gain[11] * in12\n     + gain[12] * in13\n     + gain[13] * in14\n     + gain[14] * in15\n     + gain[15] * in16\n     + gain[16] * in17\n     + gain[17] * in18\n     + gain[18] * in19\n     + gain[19] * in20\n     + gain[20] * in21\n     + gain[21] * in22\n     + gain[22] * in23\n     + gain[23] * in24;\n",
                                         "safemath": 1,
-                                        "code": "// ============================================================================\n// selector_ramp_24.txt — selector~ 24 @ramptime with a working linear ramp\n//\n// From: utility, no paper. Models Max/RNBO [selector~ 24 @ramptime <ms>], whose\n// ramptime is broken in RNBO. Choosing a new input crossfades linearly from\n// whatever is sounding now to the new input over ramp_ms.\n//\n// A change snapshots the current per-input gains and then moves every gain in a\n// straight line from its snapshot to its new target (1 for the selected input,\n// 0 for the others) with one shared ramp position. The gains therefore always\n// sum to 1 (or fall linearly to 0 when selecting 0 = off), and a change made\n// mid-ramp restarts a full ramp_ms crossfade from the current mix without a\n// jump.\n//\n// IO contract exception: this is a mono router, not a stereo effect.\n// Inlets:\n//   in1..in24: signal inputs 1..24\n// Outlets:\n//   out1: the selected input (crossfaded while ramping)\n// ============================================================================\n\n// Selected input (0 = off)\n@param({ min: 0, max: 24, steps: 25 }) selection = 1;\n// Ramp time\n@param({ min: 0.0, max: 5000.0, exponent: 3 }) ramp_ms = 200.0;\n\n@state gain = new FixedSampleArray(24);\n@state startGain = new FixedSampleArray(24);\n@state lastSel = -1;\n@state rampPos = 1.0;\n\nlet sr = maximum(samplerate(), 1.0);\nlet sel: Int = clamp(floor(selection + 0.5), 0, 24);\n\nif (sel != lastSel) {\n    if (lastSel < 0) {\n        // first sample: start on the selected input, no fade-in\n        for (let i: Int = 0; i < 24; i++) {\n            gain[i] = (i + 1 == sel) ? 1.0 : 0.0;\n        }\n        rampPos = 1.0;\n    } else {\n        for (let i: Int = 0; i < 24; i++) {\n            startGain[i] = gain[i];\n        }\n        rampPos = 0.0;\n    }\n    lastSel = sel;\n}\n\nif (rampPos < 1.0) {\n    let rampSamps = ramp_ms * 0.001 * sr;\n    let inc = rampSamps > 1.0 ? 1.0 / rampSamps : 1.0;\n    rampPos = minimum(rampPos + inc, 1.0);\n    for (let i: Int = 0; i < 24; i++) {\n        let tgt = (i + 1 == sel) ? 1.0 : 0.0;\n        let st = startGain[i];\n        gain[i] = st + (tgt - st) * rampPos;\n    }\n}\n\nout1 = gain[0] * in1\n     + gain[1] * in2\n     + gain[2] * in3\n     + gain[3] * in4\n     + gain[4] * in5\n     + gain[5] * in6\n     + gain[6] * in7\n     + gain[7] * in8\n     + gain[8] * in9\n     + gain[9] * in10\n     + gain[10] * in11\n     + gain[11] * in12\n     + gain[12] * in13\n     + gain[13] * in14\n     + gain[14] * in15\n     + gain[15] * in16\n     + gain[16] * in17\n     + gain[17] * in18\n     + gain[18] * in19\n     + gain[19] * in20\n     + gain[20] * in21\n     + gain[21] * in22\n     + gain[22] * in23\n     + gain[23] * in24;\n"
+                                        "expr": "",
+                                        "nocache": 0
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "effect_code",
@@ -21096,8 +21117,8 @@
                                     "patching_rect": [ 216.0, 257.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_in_1",
@@ -21190,8 +21211,8 @@
                                     "patching_rect": [ 267.0, 263.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 2,
                                     "rnbo_uniqueid": "audio_in_2",
@@ -21284,8 +21305,8 @@
                                     "patching_rect": [ 318.0, 269.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 3,
                                     "rnbo_uniqueid": "audio_in_3",
@@ -21378,8 +21399,8 @@
                                     "patching_rect": [ 369.0, 275.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 4,
                                     "rnbo_uniqueid": "audio_in_4",
@@ -21472,8 +21493,8 @@
                                     "patching_rect": [ 420.0, 281.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 5,
                                     "rnbo_uniqueid": "audio_in_5",
@@ -21566,8 +21587,8 @@
                                     "patching_rect": [ 471.0, 287.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 6,
                                     "rnbo_uniqueid": "audio_in_6",
@@ -21660,8 +21681,8 @@
                                     "patching_rect": [ 523.0, 293.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 7,
                                     "rnbo_uniqueid": "audio_in_7",
@@ -21754,8 +21775,8 @@
                                     "patching_rect": [ 574.0, 299.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 8,
                                     "rnbo_uniqueid": "audio_in_8",
@@ -21848,8 +21869,8 @@
                                     "patching_rect": [ 625.0, 305.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 9,
                                     "rnbo_uniqueid": "audio_in_9",
@@ -21942,8 +21963,8 @@
                                     "patching_rect": [ 676.0, 311.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 10,
                                     "rnbo_uniqueid": "audio_in_10",
@@ -22036,8 +22057,8 @@
                                     "patching_rect": [ 727.0, 317.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 11,
                                     "rnbo_uniqueid": "audio_in_11",
@@ -22130,8 +22151,8 @@
                                     "patching_rect": [ 778.0, 323.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 12,
                                     "rnbo_uniqueid": "audio_in_12",
@@ -22224,8 +22245,8 @@
                                     "patching_rect": [ 829.0, 329.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 13,
                                     "rnbo_uniqueid": "audio_in_13",
@@ -22318,8 +22339,8 @@
                                     "patching_rect": [ 880.0, 334.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 14,
                                     "rnbo_uniqueid": "audio_in_14",
@@ -22412,8 +22433,8 @@
                                     "patching_rect": [ 931.0, 340.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 15,
                                     "rnbo_uniqueid": "audio_in_15",
@@ -22506,8 +22527,8 @@
                                     "patching_rect": [ 982.0, 346.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 16,
                                     "rnbo_uniqueid": "audio_in_16",
@@ -22600,8 +22621,8 @@
                                     "patching_rect": [ 1033.0, 352.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 17,
                                     "rnbo_uniqueid": "audio_in_17",
@@ -22694,8 +22715,8 @@
                                     "patching_rect": [ 1084.0, 358.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 18,
                                     "rnbo_uniqueid": "audio_in_18",
@@ -22788,8 +22809,8 @@
                                     "patching_rect": [ 1136.0, 364.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 19,
                                     "rnbo_uniqueid": "audio_in_19",
@@ -22882,8 +22903,8 @@
                                     "patching_rect": [ 1187.0, 370.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 20,
                                     "rnbo_uniqueid": "audio_in_20",
@@ -22976,8 +22997,8 @@
                                     "patching_rect": [ 1238.0, 376.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 21,
                                     "rnbo_uniqueid": "audio_in_21",
@@ -23070,8 +23091,8 @@
                                     "patching_rect": [ 1289.0, 382.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 22,
                                     "rnbo_uniqueid": "audio_in_22",
@@ -23164,8 +23185,8 @@
                                     "patching_rect": [ 1340.0, 388.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 23,
                                     "rnbo_uniqueid": "audio_in_23",
@@ -23258,8 +23279,8 @@
                                     "patching_rect": [ 1391.0, 394.0, 43.0, 23.0 ],
                                     "rnbo_classname": "in~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 24,
                                     "rnbo_uniqueid": "audio_in_24",
@@ -23351,8 +23372,8 @@
                                     "patching_rect": [ 350.0, 898.0, 70.0, 23.0 ],
                                     "rnbo_classname": "out~",
                                     "rnbo_extra_attributes": {
-                                        "comment": "",
-                                        "meta": ""
+                                        "meta": "",
+                                        "comment": ""
                                     },
                                     "rnbo_serial": 1,
                                     "rnbo_uniqueid": "audio_out_1",
@@ -23826,13 +23847,13 @@
                     "patching_rect": [ 96.0, 636.0, 756.0, 23.0 ],
                     "rnbo_classname": "p",
                     "rnbo_extra_attributes": {
-                        "uidstyle": "auto",
-                        "voicecontrol": "simple",
-                        "notecontroller": 0,
-                        "args": [],
+                        "receivemode": "local",
                         "polyphony": -1.0,
+                        "args": [],
                         "exposevoiceparams": 0,
-                        "receivemode": "local"
+                        "uidstyle": "auto",
+                        "notecontroller": 0,
+                        "voicecontrol": "simple"
                     },
                     "rnbo_serial": 6,
                     "rnbo_uniqueid": "p_obj-1",
@@ -24626,6 +24647,12 @@
                 "patchline": {
                     "destination": [ "obj-1", 0 ],
                     "source": [ "obj-207", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-17", 1 ],
+                    "source": [ "obj-21", 0 ]
                 }
             },
             {
