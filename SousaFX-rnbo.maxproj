@@ -2,8 +2,8 @@
     "name": "SousaFX-rnbo",
     "version": 1,
     "creationdate": 3827413226,
-    "modificationdate": 3860072481,
-    "viewrect": [ 498.0, 87.0, 289.0, 614.0 ],
+    "modificationdate": 3877188866,
+    "viewrect": [ 979.0, 257.0, 289.0, 614.0 ],
     "autoorganize": 0,
     "hideprojectwindow": 1,
     "showdependencies": 1,
@@ -13,7 +13,8 @@
             "SousaFX-rnbo.maxpat": {
                 "kind": "patcher",
                 "local": 1,
-                "toplevel": 1
+                "toplevel": 1,
+                "disclosed": 0
             }
         },
         "media": {        },
@@ -36,7 +37,24 @@
         "other": {        }
     },
     "layout": {    },
-    "searchpath": {    },
+    "searchpath": {
+        "0": {
+            "bootpath": "~/Documents/Max 8/Projects/sousa_fx_generator/generated_rnbopat",
+            "projectrelativepath": "../sousa_fx_generator/generated_rnbopat",
+            "label": "",
+            "recursive": 1,
+            "enabled": 1,
+            "includeincollective": 0
+        },
+        "1": {
+            "bootpath": "~/Documents/Max 8/Projects/sousa_fx_generator/generated_v8ui",
+            "projectrelativepath": "../sousa_fx_generator/generated_v8ui",
+            "label": "",
+            "recursive": 1,
+            "enabled": 1,
+            "includeincollective": 0
+        }
+    },
     "detailsvisible": 0,
     "amxdtype": 0,
     "readonly": 0,

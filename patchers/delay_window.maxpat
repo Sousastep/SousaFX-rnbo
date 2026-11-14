@@ -3,13 +3,13 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 2,
+            "minor": 2,
+            "revision": 1,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 235.0, 329.0, 1417.0, 751.0 ],
+        "rect": [ 818.0, 64.0, 807.0, 908.0 ],
         "openinpresentation": 1,
         "toolbarvisible": 0,
         "lefttoolbarpinned": 2,
@@ -86,7 +86,7 @@
             },
             {
                 "box": {
-                    "args": [ "solo1" ],
+                    "args": [ "solo_del" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -109,7 +109,7 @@
             },
             {
                 "box": {
-                    "args": [ "solo1/limiter", "solo", "Solo" ],
+                    "args": [ "solo_del/limiter", "solo", "Solo" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -132,7 +132,7 @@
             },
             {
                 "box": {
-                    "args": [ "drum" ],
+                    "args": [ "drum_del" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -155,7 +155,7 @@
             },
             {
                 "box": {
-                    "args": [ "looper" ],
+                    "args": [ "loop_del" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -178,7 +178,7 @@
             },
             {
                 "box": {
-                    "args": [ "drum/limiter", "drum", "Drums" ],
+                    "args": [ "drum_del/limiter", "drum", "Drums" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -201,7 +201,7 @@
             },
             {
                 "box": {
-                    "args": [ "looper/limiter", "looper", "Looper" ],
+                    "args": [ "loop_del/limiter", "looper", "Looper" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -224,7 +224,7 @@
             },
             {
                 "box": {
-                    "args": [ "main/limiter", "main", "Bassline" ],
+                    "args": [ "main_del/limiter", "main", "Bassline" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,
@@ -247,7 +247,7 @@
             },
             {
                 "box": {
-                    "args": [ "main" ],
+                    "args": [ "main_del" ],
                     "bgmode": 0,
                     "border": 0,
                     "clickthrough": 0,

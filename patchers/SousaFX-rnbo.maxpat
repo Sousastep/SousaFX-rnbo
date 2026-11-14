@@ -3,13 +3,13 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 5,
+            "minor": 2,
+            "revision": 1,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 5.0, 53.0, 418.0, 556.0 ],
+        "rect": [ 0.0, 53.0, 2560.0, 1387.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -351,71 +351,6 @@
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 271.0, 241.0, 24.0, 24.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-94",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1027.5, 1475.0, 105.0, 22.0 ],
-                    "text": "prepend message"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-93",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 1027.5, 1512.0, 89.0, 22.0 ],
-                    "text": "s rnbo_params"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-63",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "float", "float" ],
-                    "patching_rect": [ 985.5, 1364.0, 61.0, 22.0 ],
-                    "text": "unpack f f"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-64",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 985.5, 1438.0, 102.0, 22.0 ],
-                    "text": "prepend pitchfreq"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-89",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1027.5, 1401.0, 104.0, 22.0 ],
-                    "text": "prepend pitchconf"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-91",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "patching_rect": [ 985.5, 1327.0, 642.0, 22.0 ],
-                    "text": "fluid.pitch~ @maxfftsize 4096 @latency 4096 @fftsettings 4096 @minfreq 30 @maxfreq 400 @fftsettings 4096 1024 -1"
                 }
             },
             {
@@ -1249,7 +1184,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 941.5, 1162.0, 121.0, 22.0 ],
+                    "patching_rect": [ 941.5, 1402.0, 121.0, 22.0 ],
                     "text": "r main_audio_source"
                 }
             },
@@ -1260,7 +1195,7 @@
                     "maxclass": "comment",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 1139.5, 1238.0, 105.0, 21.0 ],
+                    "patching_rect": [ 1139.5, 1478.0, 105.0, 21.0 ],
                     "suppressinlet": 1,
                     "text": "clip-on mic DAW"
                 }
@@ -1272,7 +1207,7 @@
                     "maxclass": "comment",
                     "numinlets": 0,
                     "numoutlets": 0,
-                    "patching_rect": [ 1061.5, 1203.0, 99.40904038734607, 21.0 ],
+                    "patching_rect": [ 1061.5, 1443.0, 99.40904038734607, 21.0 ],
                     "suppressinlet": 1,
                     "text": "clip-on mic Live"
                 }
@@ -1284,7 +1219,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 1088.5, 1237.0, 45.0, 22.0 ],
+                    "patching_rect": [ 1088.5, 1477.0, 45.0, 22.0 ],
                     "text": "adc~ 2"
                 }
             },
@@ -1295,7 +1230,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 1015.5, 1203.0, 45.0, 22.0 ],
+                    "patching_rect": [ 1015.5, 1443.0, 45.0, 22.0 ],
                     "text": "adc~ 1"
                 }
             },
@@ -1306,7 +1241,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 941.5, 1203.0, 29.5, 22.0 ],
+                    "patching_rect": [ 941.5, 1443.0, 29.5, 22.0 ],
                     "text": "+ 1"
                 }
             },
@@ -1317,7 +1252,7 @@
                     "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "signal" ],
-                    "patching_rect": [ 941.5, 1271.0, 166.0, 22.0 ],
+                    "patching_rect": [ 941.5, 1511.0, 166.0, 22.0 ],
                     "text": "selector~ 2 1 @ramptime 200"
                 }
             },
@@ -1966,11 +1901,11 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "sousaFX-external.maxpat",
+                    "name": "sousaFX-rnbopat.maxpat",
                     "numinlets": 1,
                     "numoutlets": 18,
                     "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "", "" ],
+                    "outlettype": [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "", "int", "list" ],
                     "patching_rect": [ 941.5, 1644.0, 651.3333333333333, 51.0 ],
                     "varname": "sousaFX-switcher",
                     "viewvisibility": 1
@@ -3964,8 +3899,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 5,
+                            "minor": 2,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4304,8 +4239,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 5,
+                            "minor": 2,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4473,8 +4408,8 @@
                         "fileversion": 1,
                         "appversion": {
                             "major": 9,
-                            "minor": 1,
-                            "revision": 5,
+                            "minor": 2,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -5169,7 +5104,7 @@
                     "numoutlets": 1,
                     "offcolor": [ 0.0, 0.0, 0.0, 0.12156862745098 ],
                     "outlettype": [ "float" ],
-                    "patching_rect": [ 834.5, 1058.0, 45.0, 166.0 ],
+                    "patching_rect": [ 834.5, 1298.0, 45.0, 166.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 367.0, 59.0, 26.0, 116.0 ]
                 }
@@ -10570,21 +10505,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-118", 0 ],
-                    "order": 1,
+                    "order": 0,
                     "source": [ "obj-480", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-400", 0 ],
-                    "order": 2,
-                    "source": [ "obj-480", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-91", 0 ],
-                    "order": 0,
+                    "order": 1,
                     "source": [ "obj-480", 0 ]
                 }
             },
@@ -10870,24 +10798,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-64", 0 ],
-                    "source": [ "obj-63", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-89", 0 ],
-                    "source": [ "obj-63", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-94", 0 ],
-                    "source": [ "obj-64", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-56", 0 ],
                     "source": [ "obj-68", 0 ]
                 }
@@ -11104,20 +11014,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-94", 0 ],
-                    "source": [ "obj-89", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-5", 0 ],
                     "source": [ "obj-90", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-63", 0 ],
-                    "source": [ "obj-91", 0 ]
                 }
             },
             {
@@ -11136,12 +11034,6 @@
                 "patchline": {
                     "destination": [ "obj-162", 0 ],
                     "source": [ "obj-939", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-93", 0 ],
-                    "source": [ "obj-94", 0 ]
                 }
             },
             {
